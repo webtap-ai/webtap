@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="webtap",
-    version="0.1.5.1",
+    version="0.1.5.2",
     packages=find_packages(),
     include_package_data=True,
     package_data={'': ['*.json', '*.txt']},
