@@ -7,5 +7,4 @@ setup(
     author="Stefano Pochet",
     author_email="stefanopochet@gmail.com",
     description="Accessing the Web's Deep Data Aquifers with a Simple Tap",
-    url="https://github.com/webtap-ai/webtap.git",  # Substitute with the actual URL
-)
+    url="https://github.com/webtap-ai/webtap.git", )

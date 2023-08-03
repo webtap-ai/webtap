@@ -1,0 +1,100 @@
+I want you to act as a an experienced and skilled JSON input writer for {actor_name}
+
+
+*** {actor_name} OUTPUT RETURN FIELDS ***
+
+Following is the full list of fields that will be returned by {actor_name}. If an item is not here it won't be returned.
+If an item is here it will be 100% returned (regardless of any privacy or any other limit)
+
+{list_of_returned_fields}
+
+*** FINAL JSON OBJECT RESPONSE SCHEMA ***
+
+{{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {{
+        "inputCompatibility": {{
+            "type": "string",
+            "enum": [
+                "Only using the params provided in {actor_name} INPUT SCHEMA and in {actor_name} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
+                "Only using the params provided in {actor_name} INPUT SCHEMA and in {actor_name} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task"
+            ]
+        }},
+        "outputCompatibility": {{
+            "type": "string",
+            "enum": [
+                "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between TASK REQUESTED DATA and {actor_name} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS",
+                "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between TASK REQUESTED DATA and {actor_name} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS"
+            ]
+        }},
+        "can_fulfill": {{
+            "type": "boolean",
+            "description": "True if both inputCompatibility and outputCompatibility are \"...Yes, I am 100% sure...\". False otherwise."
+        }},
+        "explanation": {{
+            "type": "string",
+            "description": "Explain in one sentence why you can fulfill or not."
+        }},
+        "input_params": {{
+            "type": "object",
+            "description": "JSON input of params needed to run the Actor. This field is included only if can_fulfill is true.",
+            "properties": {{}},
+            "additionalProperties": true
+        }},
+        "alternative_fulfillable_data_request": {{
+            "type": "string",
+            "description": "Proposes an alternative data task that can 100% be fulfilled. This field is included only if can_fulfill is false."
+        }}
+    }},
+    "required": ["inputCompatibility", "outputCompatibility", "can_fulfill", "explanation"],
+    "additionalProperties": false
+}}
+
+*** {actor_name} INPUT SCHEMA ***
+{input_json_schema}
+
+*** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
+ 
+Read and think sentence by sentence carefully.
+Given the above {actor_name} INPUT SCHEMA, {actor_name} OUTPUT RETURN FIELDS and a TASK REQUESTED DATA I want you to return an explanation about wether it's possible to build a json (compatible with the above {actor_name} INPUT SCHEMA and the above {actor_name} OUTPUT RETURN FIELDS) that can return data as asked in TASK REQUESTED DATA.
+
+Be clear, specific and coincise in the response.
+Do not be speculative, only base your answer on compatibility between TASK REQUESTED DATA and {actor_name} INPUT SCHEMA/{actor_name} OUTPUT RETURN FIELDS.
+Do not propose me alternative solutions, like customizations or more data parsing after the request.
+1. Specifically return me wether it's possible to get the given TASK REQUESTED DATA with the only and just the params proposed in {actor_name} INPUT SCHEMA.
+2. Specifically return me wether it's possible to get all the fields of the given TASK REQUESTED DATA assuming as reliable the list of fields listed in {actor_name} OUTPUT RETURN FIELDS.
+
+At the very end return me a JSON object respecting the above FINAL JSON OBJECT RESPONSE SCHEMA, summarizing your answer as the following:
+
+{{
+    "inputCompatibility": (one of)
+     "Only using the params provided in {actor_name} INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task"
+     or
+     "Only using the params provided in {actor_name} INPUT SCHEMA: Yes I am 100% 100% sure that I can fulfill the params required by given task"
+    "outputCompatibility" : (one of)
+    "Assuming data returned by {actor_name} is reliable and solely based on compatibility between TASK REQUESTED DATA and {actor_name} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS"
+    or
+    "Assuming data returned by {actor_name} is reliable and solely based on compatibility between TASK REQUESTED DATA and {actor_name} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS"
+    "can_fulfill": false // True if both inputCompatibility outputCompatibility are "... Yes I am 100% sure ..."
+    "explanation": "Explain in one sentence why you can fulfill or not",
+    "input_params" : // only if can_fulfill is true, a JSON input of params needed to run the Actor
+    "alternative_fulfillable_data_request": "restaurants in Miami" // only if can_fulfill is false
+}}
+
+*** MORE THINGS TO REMEBER ***
+{special_instructions}
+
+*** TASK REQUESTED DATA ***
+This is the TASK REQUESTED DATA:  {task_requested_data}
+
+*** FINAL SUMMARY ***
+Summarizing: 
+
+Given the RETURN FIELDS: {list_of_returned_fields}
+
+and given list of INPUT: {actor_input_summary}
+
+Remembering MORE THINGS TO REMEBER and to answer in the FINAL JSON OBJECT RESPONSE SCHEMA 
+
+Can you tell me if it's possible to get the following TASK REQUESTED DATA: {task_requested_data} ?
