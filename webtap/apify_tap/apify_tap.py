@@ -1,7 +1,11 @@
 from pydantic import BaseModel, validator
 from webtap.base_tap import BaseTap, BaseTapReturn, DataModel
 from langchain import PromptTemplate, OpenAI, LLMChain
+from langchain.chains import create_extraction_chain
 import json, logging, os, openai, re
+from langchain.chat_models import ChatOpenAI
+from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+
 
 class Actor(BaseModel):
     ''' 
@@ -57,7 +61,7 @@ class ApifyTapReturn(BaseTapReturn):
     '''
     ApifyTapReturn is the abstract schema rappresentation of the return value of a tap.
     '''
-    data_model : ApifyDataModel
+    data_model : ApifyDataModel = None
 
 class ApifyTapActor(BaseModel):
     '''
@@ -112,7 +116,33 @@ class ApifyTap(BaseTap):
         prompt_template = self.prompt_template
 
         # generate a chain
-        chain = LLMChain(prompt=prompt_template, llm=OpenAI(temperature=0, max_tokens=-1), verbose=verbose)
+        
+        llm = ChatOpenAI(temperature=0, model="gpt-4", verbose=True, max_tokens=200)
+        
+        human_template="Data task: {data_task}"
+        human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template.template)
+
+        chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
+        chat_prompt_formatted = chat_prompt.format_prompt(
+            actor_name = self.apify_tap_actor.actor.name,
+            list_of_returned_fields = self.apify_tap_actor.output_fields,
+            input_json_schema = self.apify_tap_actor.input_body_schema,
+            special_instructions = self.apify_tap_actor.special_instructions,
+            task_requested_data = data_task,
+            actor_input_summary = self.apify_tap_actor.input_body_summary
+        )
+        messages = chat_prompt_formatted.to_messages()
+        chat = ChatOpenAI()
+        chain_output = chat( messages )
+        chain_output = chain_output.content
+
+        '''
+
+        # define the llm
+        #llm = ChatOpenAI(temperature=0, model="gpt-4")
+        chain = LLMChain(prompt=prompt_template, llm=OpenAI(temperature=0, max_tokens=-1,model="gpt-4"), verbose=True) 
+
+        #chain = LLMChain(prompt=prompt_template, llm=OpenAI(temperature=0, max_tokens=-1,model="gpt-4"), verbose=verbose)
 
         # call the chain
         chain_output = chain.run( 
@@ -123,10 +153,12 @@ class ApifyTap(BaseTap):
             task_requested_data = data_task,
             actor_input_summary = self.apify_tap_actor.input_body_summary
         )
-
+        '''
 
         # log prompt response
         logger.info("Chain executed correctly, chain plain response: %s", chain_output)
+
+        
 
         # extract list of json values from chain_output
         try:
