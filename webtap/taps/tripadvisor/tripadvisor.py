@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from webtap.base_tap import BaseTap
 from webtap.apify_tap.apify_tap import ApifyTap, Actor, ApifyTapActor
 from pydantic import BaseModel
-import json
+import json, os
 from langchain.prompts import load_prompt
 
 class TripAdvisorTap(ApifyTap):
@@ -12,6 +12,11 @@ class TripAdvisorTap(ApifyTap):
     '''
 
     def load_json_data(self, json_file):
+        # generate absolute path for json file
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        # Create the path to the JSON file
+        json_file = os.path.join(dir_path, json_file)
+
         with open(json_file, 'r') as file:
             data = json.load(file)
         return data
@@ -19,15 +24,21 @@ class TripAdvisorTap(ApifyTap):
     def __init__(self, *args, **kwargs):
 
         data_templates: dict = {
-            "actor_description" : "webtap/taps/tripadvisor/data/actor-description.json",
-            "actor_input_json_schema" : "webtap/taps/tripadvisor/data/actor-input-json-schema.json",
-            "actor_input_summary" : "webtap/taps/tripadvisor/data/actor-input-summary.json",
-            "actor_output_fields" : "webtap/taps/tripadvisor/data/actor-output-fields.json",
-            "prompt" : "webtap/taps/tripadvisor/data/prompt.json",
-            "tap_description" : "examples/apify_tap_example_data/tap-description.json"
+            "actor_description" : "data/actor-description.json",
+            "actor_input_json_schema" : "data/actor-input-json-schema.json",
+            "actor_input_summary" : "data/actor-input-summary.json",
+            "actor_output_fields" : "data/actor-output-fields.json",
+            "prompt" : "data/prompt.json",
+            "tap_description" : "data/tap-description.json"
         }
 
-        prompt_template = load_prompt(data_templates.get('prompt'))
+        prompt_template_location = data_templates.get('prompt')
+        # generate absolute path for json file
+        dir_path = os.path.dirname(os.path.realpath(__file__))
+        # Create the path to the JSON file
+        prompt_template_location = os.path.join(dir_path, prompt_template_location)
+
+        prompt_template = load_prompt(prompt_template_location)
         actor_description = self.load_json_data(data_templates['actor_description'])
         actor_input_schema = self.load_json_data(data_templates['actor_input_json_schema'])
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
@@ -45,8 +56,3 @@ class TripAdvisorTap(ApifyTap):
                 output_fields = actor_output_fields
             )
         )
-    
-    def load_json_data(self, json_file):
-        with open(json_file, 'r') as file:
-            data = json.load(file)
-        return data
