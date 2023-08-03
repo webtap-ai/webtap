@@ -124,6 +124,10 @@ class ApifyTap(BaseTap):
             actor_input_summary = self.apify_tap_actor.input_body_summary
         )
 
+
+        # log prompt response
+        logger.info("Chain executed correctly, chain plain response: %s", chain_output)
+
         # extract list of json values from chain_output
         try:
             prompt_response = self.extract_last_json_object(chain_output)
@@ -134,12 +138,15 @@ class ApifyTap(BaseTap):
         if( "can_fulfill" not in prompt_response or "explanation" not in prompt_response):
             raise ValueError("Data returned from LLM doesn't contain can_fulfill or explanation")
         
+        '''
+        TEMPORARY DISABLE THIS CHECK
         # check that prompt response contains input_params or alternative_fulfillable_data_request
         if( "input_params" not in prompt_response and "alternative_fulfillable_data_request" not in prompt_response):
             raise ValueError("Data returned from LLM doesn't contain input_params or alternative_fulfillable_data_request")
-        
+        '''
         # log prompt response
         logger.info("Prompt executed correctly, prompt response: %s", prompt_response) 
+
 
         data_model = None
         if prompt_response["can_fulfill"]:
