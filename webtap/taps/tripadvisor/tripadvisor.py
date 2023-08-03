@@ -3,7 +3,7 @@ from webtap.base_tap import BaseTap
 from webtap.apify_tap.apify_tap import ApifyTap, Actor, ApifyTapActor
 from pydantic import BaseModel
 import json, os
-from langchain.prompts import load_prompt
+from langchain.prompts import load_prompt, PromptTemplate
 
 class TripAdvisorTap(ApifyTap):
     '''
@@ -28,7 +28,7 @@ class TripAdvisorTap(ApifyTap):
             "actor_input_json_schema" : "data/actor-input-json-schema.json",
             "actor_input_summary" : "data/actor-input-summary.json",
             "actor_output_fields" : "data/actor-output-fields.json",
-            "prompt" : "data/prompt.json",
+            "prompt" : "data/prompt.txt",
             "tap_description" : "data/tap-description.json"
         }
 
@@ -38,7 +38,12 @@ class TripAdvisorTap(ApifyTap):
         # Create the path to the JSON file
         prompt_template_location = os.path.join(dir_path, prompt_template_location)
 
-        prompt_template = load_prompt(prompt_template_location)
+        # set template as text content of file (prompt.txt)
+        with open(prompt_template_location, 'r') as file:
+            template = file.read()
+
+        prompt_template = PromptTemplate(template=template, input_variables=["actor_name", "list_of_returned_fields","input_json_schema","special_instructions","task_requested_data","actor_input_summary"])
+        
         actor_description = self.load_json_data(data_templates['actor_description'])
         actor_input_schema = self.load_json_data(data_templates['actor_input_json_schema'])
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
