@@ -2,9 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name="webtap",
-    version="0.1.2",
+    version="0.1.3",
     packages=find_packages(),
-    include_package_data=True,
     author="Stefano Pochet",
     author_email="stefanopochet@gmail.com",
     description="Accessing the Web's Deep Data Aquifers with a Simple Tap",
