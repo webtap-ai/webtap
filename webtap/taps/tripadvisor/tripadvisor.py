@@ -1,8 +1,9 @@
+import json, os
+from importlib.resources import files
 from abc import ABC, abstractmethod
 from webtap.base_tap import BaseTap
 from webtap.apify_tap.apify_tap import ApifyTap, Actor, ApifyTapActor
 from pydantic import BaseModel
-import json, os
 from langchain.prompts import load_prompt, PromptTemplate
 
 class TripAdvisorTap(ApifyTap):
@@ -11,14 +12,9 @@ class TripAdvisorTap(ApifyTap):
     It is inherited from ApifyTap, so it basically works by simply defining info about the actor and the prompt template, in this case a collection of json files is used to define the actor info and the prompt template.
     '''
 
-    def load_json_data(self, json_file):
-        # generate absolute path for json file
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-        # Create the path to the JSON file
-        json_file = os.path.join(dir_path, json_file)
-
-        with open(json_file, 'r') as file:
-            data = json.load(file)
+    def load_json_data(self, json_file):        
+        file_content = (files(__package__) / json_file ).read_text()
+        data = json.loads(file_content)
         return data
 
     def __init__(self, *args, **kwargs):
@@ -32,18 +28,11 @@ class TripAdvisorTap(ApifyTap):
             "tap_description" : "data/tap-description.json"
         }
 
-        prompt_template_location = data_templates.get('prompt')
-        # generate absolute path for json file
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-        # Create the path to the JSON file
-        prompt_template_location = os.path.join(dir_path, prompt_template_location)
-
-        # set template as text content of file (prompt.txt)
-        with open(prompt_template_location, 'r') as file:
-            template = file.read()
-
+        # load prompt file
+        template = (files(__package__) / data_templates['prompt']).read_text()
         prompt_template = PromptTemplate(template=template, input_variables=["actor_name", "list_of_returned_fields","input_json_schema","special_instructions","task_requested_data","actor_input_summary"])
         
+        # load json files
         actor_description = self.load_json_data(data_templates['actor_description'])
         actor_input_schema = self.load_json_data(data_templates['actor_input_json_schema'])
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]

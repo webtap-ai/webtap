@@ -1,2 +1,0 @@
-recursive-include webtap *.json
-recursive-include webtap *.txt
