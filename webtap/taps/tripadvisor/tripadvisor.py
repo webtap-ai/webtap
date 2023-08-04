@@ -29,8 +29,7 @@ class TripAdvisorTap(ApifyTap):
         }
 
         # load prompt file
-        template = (files(__package__) / data_templates['prompt']).read_text()
-        prompt_template = PromptTemplate(template=template, input_variables=["actor_name", "list_of_returned_fields","input_json_schema","special_instructions","task_requested_data","actor_input_summary"])
+        prompt_template = (files(__package__) / data_templates['prompt']).read_text()
         
         # load json files
         actor_description = self.load_json_data(data_templates['actor_description'])

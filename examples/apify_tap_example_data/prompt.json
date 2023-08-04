@@ -1,5 +1,0 @@
-{
-    "_type": "prompt",
-    "input_variables": ["actor_name", "list_of_returned_fields","input_json_schema","special_instructions","task_requested_data","actor_input_summary"],
-    "template_path": "webtap/taps/tripadvisor/data/prompt.txt"
-}

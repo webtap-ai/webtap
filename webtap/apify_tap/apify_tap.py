@@ -82,7 +82,7 @@ class ApifyTap(BaseTap):
 
     name: str = "Apify Base Actor Tap"
     description: str = "Tap to operate on lots of Apify Actors by simply defining some data input"
-    prompt_template: PromptTemplate
+    prompt_template: str
     apify_tap_actor: ApifyTapActor
 
     def __init__(self, *args, **kwargs):
@@ -120,7 +120,7 @@ class ApifyTap(BaseTap):
         llm = ChatOpenAI(temperature=0, model="gpt-4", verbose=True, max_tokens=200)
         
         human_template="Data task: {data_task}"
-        human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template.template)
+        human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template)
 
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(

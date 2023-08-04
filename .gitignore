@@ -1,1 +1,18 @@
+# .gitignore
+*.pyc
+*.pyo
+*.egg-info/
+__pycache__/
+*.pyd
+*.swp
+*.swo
+*.swn
+*.log
+*.sqlite
+*.pid
+*.pyc
 .DS_Store
+.env
+.venv/
+*.env
+build/

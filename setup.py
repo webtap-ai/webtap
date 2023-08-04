@@ -2,8 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="webtap",
-    version="0.1.1.1",
+    version="0.1.1.3",
     packages=find_packages(),
+    install_requires=[
+        'langchain==0.0.251', 
+        'openai==0.27.8',
+        'tiktoken==0.4.0'
+    ],
     include_package_data=True,
     package_data={'': ['*.json', '*.txt']},
     author="Stefano Pochet",
