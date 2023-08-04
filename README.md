@@ -20,7 +20,7 @@ Setting up a Virtual Environment (Optional)
 You must have an openai key set in your environment. You can add one in your ~/.zshrc file
 ```bash
 export OPENAI_API_KEY="{your api key}"
-```bash
+```
 
 3. Optionally you can setup Langsmith for LLM debugging by adding the following enviroment variables
 ```bash
@@ -28,7 +28,7 @@ export LANGCHAIN_TRACING_V2=true
 export LANGCHAIN_PROJECT="{Your dev environment project}"
 export LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
 export LANGCHAIN_API_KEY={your api_key}
-```bash
+```
 
 3. pip install .
 
