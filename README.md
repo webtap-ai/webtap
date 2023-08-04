@@ -16,13 +16,23 @@ Webtap requires Python 3.9
 Setting up a Virtual Environment (Optional)
 
 1. It is recommended, though not mandatory, to create a virtual environment for your project. Virtual environments make it easier to manage packages and ensure that your project's dependencies are isolated from other Python projects.
-2. pip install -r requirements.txt
+2. Setup openai key
+You must have an openai key set in your environment. You can add one in your ~/.zshrc file
+export OPENAI_API_KEY="{your api key}"
+
+3. Optionally you can setup Langsmith for LLM debugging by adding the following enviroment variables
+export LANGCHAIN_TRACING_V2=true
+export LANGCHAIN_PROJECT="{Your dev environment project}"
+export LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+export LANGCHAIN_API_KEY={your api_key}
+
+3. pip install .
 
 # Usage
 Usage is pretty straihghtforward, init a tap, given a data_task (data you would like to get) ask for a "data model" (a way to get that data through this tap)
-# Initialize a Tap
+## Initialize a Tap
 trip_advisor_tap = TripAdvisorTap()
-# get a data model for given data_task
+## get a data model for given data_task
 data_task = "Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses"
 return = trip_advisor_tap.getDataModel(data_task) # return will be a dict containing the data model and few more info
 

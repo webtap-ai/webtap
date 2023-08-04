@@ -109,6 +109,10 @@ class ApifyTap(BaseTap):
         
         # init logging, openai
         logger = logging.getLogger(__name__)
+        # check if openai os env variable is set
+        if "OPENAI_API_KEY" not in os.environ:
+            raise ValueError("OPENAI_API_KEY env variable is not set")
+        
         openai.api_key = os.environ["OPENAI_API_KEY"]
         # set verbose to true if loggin level is info or above
         verbose = logger.getEffectiveLevel() <= logging.INFO
