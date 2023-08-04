@@ -16,8 +16,8 @@ Webtap requires Python 3.9
 Setting up a Virtual Environment (Optional)
 
 1. It is recommended, though not mandatory, to create a virtual environment for your project. Virtual environments make it easier to manage packages and ensure that your project's dependencies are isolated from other Python projects.
-2. Setup openai key
-You must have an openai key set in your environment. You can add one in your ~/.zshrc file
+2. Setup openai key: 
+You must have an openai key set in your environment. You can setup one by adding the following in your ~/.zshrc file
 ```bash
 export OPENAI_API_KEY="{your api key}"
 ```
