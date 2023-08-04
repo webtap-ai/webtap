@@ -5,6 +5,7 @@ from langchain.chains import create_extraction_chain
 import json, logging, os, openai, re
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from langchain.callbacks.manager import tracing_v2_enabled
 
 
 class Actor(BaseModel):
@@ -106,22 +107,14 @@ class ApifyTap(BaseTap):
 
     def getDataModel(self, data_task : str) -> ApifyTapReturn:
         
-        # init logging and openai
+        # init logging, openai
         logger = logging.getLogger(__name__)
         openai.api_key = os.environ["OPENAI_API_KEY"]
         # set verbose to true if loggin level is info or above
         verbose = logger.getEffectiveLevel() <= logging.INFO
 
-        # get the prompt
-        prompt_template = self.prompt_template
-
-        # generate a chain
-        
-        llm = ChatOpenAI(temperature=0, model="gpt-4", verbose=True, max_tokens=200)
-        
-        human_template="Data task: {data_task}"
-        human_message_prompt = HumanMessagePromptTemplate.from_template(prompt_template)
-
+        # generate the chat messages
+        human_message_prompt = HumanMessagePromptTemplate.from_template(self.prompt_template)
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(
             actor_name = self.apify_tap_actor.actor.name,
@@ -132,37 +125,22 @@ class ApifyTap(BaseTap):
             actor_input_summary = self.apify_tap_actor.input_body_summary
         )
         messages = chat_prompt_formatted.to_messages()
-        chat = ChatOpenAI()
-        chain_output = chat( messages )
-        chain_output = chain_output.content
 
-        '''
-
-        # define the llm
-        #llm = ChatOpenAI(temperature=0, model="gpt-4")
-        chain = LLMChain(prompt=prompt_template, llm=OpenAI(temperature=0, max_tokens=-1,model="gpt-4"), verbose=True) 
-
-        #chain = LLMChain(prompt=prompt_template, llm=OpenAI(temperature=0, max_tokens=-1,model="gpt-4"), verbose=verbose)
-
-        # call the chain
-        chain_output = chain.run( 
-            actor_name = self.apify_tap_actor.actor.name,
-            list_of_returned_fields = self.apify_tap_actor.output_fields,
-            input_json_schema = self.apify_tap_actor.input_body_schema,
-            special_instructions = self.apify_tap_actor.special_instructions,
-            task_requested_data = data_task,
-            actor_input_summary = self.apify_tap_actor.input_body_summary
-        )
-        '''
+        # define and run the llm
+        
+        llm = ChatOpenAI(temperature=0, model="gpt-4", verbose=verbose)
+        chain_output = llm( messages )
 
         # log prompt response
-        logger.info("Chain executed correctly, chain plain response: %s", chain_output)
+        logger.info("Chain executed correctly, chain plain response: %s", chain_output)        
 
-        
+        # check that chain_output is not empty and is object with content property
+        if( chain_output is None or not hasattr(chain_output, "content")):
+            raise ValueError("Data returned from LLM is empty or doesn't contain content property")
 
         # extract list of json values from chain_output
         try:
-            prompt_response = self.extract_last_json_object(chain_output)
+            prompt_response = self.extract_last_json_object(chain_output.content)
         except ValueError:
             raise ValueError("Data returned from LLM doesn't contain a valid json")
 
@@ -170,15 +148,8 @@ class ApifyTap(BaseTap):
         if( "can_fulfill" not in prompt_response or "explanation" not in prompt_response):
             raise ValueError("Data returned from LLM doesn't contain can_fulfill or explanation")
         
-        '''
-        TEMPORARY DISABLE THIS CHECK
-        # check that prompt response contains input_params or alternative_fulfillable_data_request
-        if( "input_params" not in prompt_response and "alternative_fulfillable_data_request" not in prompt_response):
-            raise ValueError("Data returned from LLM doesn't contain input_params or alternative_fulfillable_data_request")
-        '''
         # log prompt response
         logger.info("Prompt executed correctly, prompt response: %s", prompt_response) 
-
 
         data_model = None
         if prompt_response["can_fulfill"]:
