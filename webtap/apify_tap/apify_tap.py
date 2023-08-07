@@ -2,7 +2,7 @@ from pydantic import BaseModel, validator
 from webtap.base_tap import BaseTap, BaseTapReturn, DataModel
 from langchain import PromptTemplate, OpenAI, LLMChain
 from langchain.chains import create_extraction_chain
-import json, logging, os, openai, re
+import json, logging, os, openai, re, time
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from langchain.callbacks.manager import tracing_v2_enabled
@@ -109,6 +109,7 @@ class ApifyTap(BaseTap):
         
         # init logging, openai
         logger = logging.getLogger(__name__)
+        execution_start_time = time.time()
         # check if openai os env variable is set
         if "OPENAI_API_KEY" not in os.environ:
             raise ValueError("OPENAI_API_KEY env variable is not set")
@@ -171,6 +172,10 @@ class ApifyTap(BaseTap):
             data_model=data_model, 
             alternative_fulfillable_data_request=prompt_response.get("alternative_fulfillable_data_request", None)
         )
+
+
+        execution_time = time.time() - execution_start_time
+        logger.info("Tap execution time: %s", execution_time)
 
         return tapReturn
 
