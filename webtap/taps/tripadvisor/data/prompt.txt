@@ -82,7 +82,7 @@ At the very end return me a JSON object respecting the above FINAL JSON OBJECT R
     "alternative_fulfillable_data_request": "restaurants in Miami" // only if can_fulfill is false
 }}
 
-*** MORE THINGS TO REMEBER ***
+*** IMPORTANT THINGS TO KNOW AND REMEBER ***
 {special_instructions}
 
 *** TASK REQUESTED DATA ***

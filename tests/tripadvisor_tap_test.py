@@ -30,7 +30,7 @@ class TestApifyTap(unittest.TestCase):
                         'language': 'es', 
                         'locationFullName': 'Paris', 
                         'maxItems': 0, 
-                        'proxyConfiguration': {'useApifyProxy': False}
+                        'proxyConfiguration': {'useApifyProxy': True}
                     }
                 )
             ), 

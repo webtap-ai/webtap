@@ -1,4 +1,4 @@
 {
     "entities" : "Hotels, Tours, Restaurants, Vacation rentals, Things to do, Attractions, Hotel ratings",
-    "special_instructions" : "Tripadvisor actor provides email addresses of the business (hotel, restaurant and any other listing)\nVacation rentals are not Airbnb"
+    "special_instructions" : "Tripadvisor actor provides email addresses of the business (hotel, restaurant and any other listing)\nVacation rentals are not Airbnb\nAlways set proxyConfiguration : {  \"useApifyProxy\": true    }"
 }

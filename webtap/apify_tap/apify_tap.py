@@ -173,7 +173,6 @@ class ApifyTap(BaseTap):
             alternative_fulfillable_data_request=prompt_response.get("alternative_fulfillable_data_request", None)
         )
 
-
         execution_time = time.time() - execution_start_time
         logger.info("Tap execution time: %s", execution_time)
 
