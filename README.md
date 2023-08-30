@@ -4,8 +4,8 @@ Webtap is a Python library designed to access any type of web data by using natu
 
 # Example queries that can fulfilled by webtap
 
-1. List of restaurants in Paris, with email addresses and phone number
-2. Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses
+1. (Using Tripdvisor Tap) Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses
+2. (Using Twitter Tap) Tweets from @ZelenskyyUa
 
 # Requirements
 
