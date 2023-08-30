@@ -54,7 +54,7 @@ Include the library in your pip requirements.txt (make sure that you git environ
 ```bash
     webtap @ git+https://github.com/webtap-ai/webtap.git
 ```
-
+After that include and use the library in the following way:
 ```python
     from webtap.tap_manager import TapManager
     # Load tap_manager
@@ -74,8 +74,8 @@ Include the library in your pip requirements.txt (make sure that you git environ
 
 # Creating a new Apify Tap by instantiating a new apify_tap object
 
-In order to see how to create a standard new ApifyTap (using json definition) see docs/taps_definition/GUIDE.md
+In order to see how to create a standard new ApifyTap (using json definition) see [GUIDE.md](docs/taps_definition/GUIDE.md)
 
 # Creating a new Apify Tap by extending the ApifyTap class
 
-In order to see how to create a standard new ApifyTap (using json definition) see docs/taps_definition/CUSTOM_GUIDE.md
+In order to see how to create a standard new ApifyTap (using json definition) see [CUSTOM_GUIDE.md](docs/taps_definition/CUSTOM_GUIDE.md)
