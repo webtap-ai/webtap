@@ -48,9 +48,15 @@ You can run tests by using the following command:
     python -m tests.apify_tap_test --apify_tap_id={actor_id} --model=gpt-3.5-turbo --test_num={test_num}
 ```
 
-# Usage from another project
+# Usage from third party project
 Usage is pretty straihghtforward, init a tap, given a data_task (data you would like to get) ask for a "retriever" (a way to get that data through this tap) and than run it
+Include the library in your pip requirements.txt (make sure that you git environment is correctly setup so that you can clone git private repos without typing password)
+```bash
+    webtap @ git+https://github.com/webtap-ai/webtap.git
+```
+
 ```python
+    from webtap.tap_manager import TapManager
     # Load tap_manager
     tap_manager = TapManager()
     # get tap "tripadvisor"
