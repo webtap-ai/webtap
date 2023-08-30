@@ -1,0 +1,70 @@
+[
+    {
+        "data_task": "Tweets from Twitter User @ZelenskyyUa",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by the given task",
+            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Twitter API OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Twitter API provides all the necessary parameters and fields to retrieve the data requested in the given task.",
+            "input_params": {
+                "handles": ["ZelenskyyUa"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "data_task": "Hello World",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: No, I am not 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS:No, I am not 100% sure that I can fulfill the given tas",
+            "can_fulfill": false,
+            "explanation": "The input you have provided is not a valid Twitter User Handle.",
+            "alternative_fulfillable_data_task": "Tweets from @cnn"
+        }
+    },
+    {
+        "data_task": "Tweets from the hashtag #ForzaNapoliSempre",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: No, I am not 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS:No, I am not 100% sure that I can fulfill the given tas",
+            "can_fulfill": false,
+            "explanation": "Twitter API does not provide the necessary fields and parameters to retrieve tweets from a hashtag.",
+            "alternative_fulfillable_data_task": "Tweets from @sscnapoli"
+        }
+    },
+    {
+        "data_task": "Tweets from the profile url https://twitter.com/BillGates",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by the given task",
+            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Twitter API OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Twitter API provides all the necessary fields and parameters to retrieve tweets from a specific profile URL.",
+            "input_params": {
+                "handles": ["BillGates"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "data_task": "Tweets from the following url https://www.cnn.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: No, I am not 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS:No, I am not 100% sure that I can fulfill the given tas",
+            "can_fulfill": false,
+            "explanation": "Twitter API does not provide the necessary fields and parameters to retrieve tweets from a generic web URL.",
+            "alternative_fulfillable_data_task": "Tweets from @sscnapoli"
+        }
+    }
+]

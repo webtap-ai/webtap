@@ -1,0 +1,44 @@
+[
+    {
+        "data_task": "Data about the Facebook page on url https://www.facebook.com/Google/",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Facebook Pages Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Pages Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Pages Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Pages Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Facebook Pages Scraper INPUT SCHEMA provides the necessary parameters to scrape data from a Facebook page. The Facebook Pages Scraper OUTPUT RETURN FIELDS include all the required fields to fulfill the given task of retrieving data about the Facebook page on the specified URL.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.facebook.com/Google/"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "data_task" : "Facebook page handle is nike",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Facebook Pages Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Pages Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Pages Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Pages Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Facebook Pages Scraper INPUT SCHEMA provides the necessary parameters to scrape data from a Facebook page. The Facebook Pages Scraper OUTPUT RETURN FIELDS include all the required fields to fulfill the given task of retrieving data about the Facebook page with the handle 'nike'.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.facebook.com/nike/"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "data_task" : "Facebook user profile of John Doe",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Facebook Pages Scraper INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Pages Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Pages Scraper OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given Facebook Pages Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": false,
+            "explanation": "The Facebook Pages Scraper does not provide a direct way to retrieve a Facebook user profile. It is designed to scrape data from Facebook pages, not personal profiles.",
+            "alternative_fulfillable_data_task": "Facebook page CNN"
+        }
+    }
+]

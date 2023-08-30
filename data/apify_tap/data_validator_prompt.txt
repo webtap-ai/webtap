@@ -1,0 +1,35 @@
+I want you to act as a skilled data validator for {actor_name}.
+Following is the full context.
+
+
+*** SAMPLE DATA RETURNED ***
+This is the data that we got in response:
+{data_sample}
+
+*** INPUT DATA TASK ***
+This is a text description of the data that we wanted to get:
+{data_task}
+
+*** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
+ 
+Given the above SAMPLE DATA RETURNED and the INPUT DATA TASK I want you to return an explanation about whether the SAMPLE DATA RETURNED is coherent (is an expected sample of data) returned given the INPUT DATA TASK.
+
+Be clear, specific and concise in the response.
+Do not be speculative, only base your answer on wether the SAMPLE DATA RETURNED is coherent withb given SAMPLE DATA RETURNED.
+
+At the very end return me a JSON object respecting the above FINAL JSON OBJECT RESPONSE SCHEMA, summarizing your answer as the following:
+
+{{
+    "explanation": "Explain in one sentence why the data is valid or not"
+    "data_valid": (one of)
+     "No, the data returned is not valid according to the {actor_name} OUTPUT RETURN FIELDS"
+     or
+     "Yes, the data returned is valid according to the {actor_name} OUTPUT RETURN FIELDS"
+     "is_valid": false // True if data_valid is "... Yes I am 100% sure ..." false otherwise
+}}
+
+*** FINAL SUMMARY ***
+Summarizing: 
+
+
+Can you tell me if the SAMPLE DATA RETURNED is an expexted sample of data for the INPUT DATA TASK {data_task}?

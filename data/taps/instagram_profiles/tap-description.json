@@ -1,0 +1,9 @@
+{
+    "entities" : [ "Instagram pages" ],
+    "filters" :
+        [ "Instagram usernames"],
+    "options" :
+        [ ],
+    "chat_presentation" : "Hi, I'm Instagram profiles TAP. I can help you to get data about Instagram profiles. You can get results by providing a Instagram profile username (no other filter is supported).",
+    "special_instructions" : []
+}

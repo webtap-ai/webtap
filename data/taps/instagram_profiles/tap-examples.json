@@ -1,0 +1,36 @@
+[
+    {
+        "data_task" : "Data about instagram profile @leomessi",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Instagram profile scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram profile scraper is reliable and solely based on compatibility between DATA TASK and Instagram profile scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram profile scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Instagram profile scraper can retrieve all the necessary data fields (id, username, url, fullName, biography, externalUrl, externalUrlShimmed, followersCount, followsCount, hasChannel, highlightReelCount, isBusinessAccount, joinedRecently, businessCategoryName, private, verified, profilePicUrl, profilePicUrlHD, facebookPage, igtvVideoCount, relatedProfiles) for the given DATA TASK using the provided usernames as input.",
+            "input_params": {
+                "usernames": ["leomessi"]
+            }
+        }
+    },
+    {
+        "data_task" : "Hi! How are you doing?",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Instagram profile scraper INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram profile scraper is reliable and solely based on compatibility between DATA TASK and Instagram profile scraper OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given Instagram profile scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": false,
+            "explanation": "The Instagram profile scraper can only handle requests about Instagram profiles and your inputn 'Hi! How are you doing?' is not a valid Instagram profile username.",
+            "alternative_fulfillable_data_task": "data about the Instagram profile's biography"
+        }
+    },
+    {
+        "data_task" : "https://www.instagram.com/natgeo",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Instagram profile scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram profile scraper is reliable and solely based on compatibility between DATA TASK and Instagram profile scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram profile scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The Instagram profile scraper can retrieve all the necessary data fields (id, username, url, fullName, biography, externalUrl, externalUrlShimmed, followersCount, followsCount, hasChannel, highlightReelCount, isBusinessAccount, joinedRecently, businessCategoryName, private, verified, profilePicUrl, profilePicUrlHD, facebookPage, igtvVideoCount, relatedProfiles) for the given DATA TASK using the provided username as input.",
+            "input_params": {
+                "usernames": ["natgeo"]
+            }
+        }
+    }
+]

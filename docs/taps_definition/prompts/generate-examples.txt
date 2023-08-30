@@ -1,0 +1,114 @@
+I want you to generate an example json input given a json test case for the same data.
+I will give you the test case and you will have to generate the input json for the same.
+
+*** This is json input schema ***
+
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "data_task": {
+        "type": "string"
+      },
+      "final_json_response": {
+        "type": "object",
+        "properties": {
+          "inputCompatibility": {
+            "type": "string"
+          },
+          "outputCompatibility": {
+            "type": "string"
+          },
+          "can_fulfill": {
+            "type": "boolean"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "input_params": {
+            "type": "object",
+          },
+          "alternative_fulfillable_data_task": {
+            "type": ["string", "null"]
+          }
+        },
+        "required": [
+          "inputCompatibility",
+          "outputCompatibility",
+          "can_fulfill",
+          "explanation",
+        ]
+      }
+    },
+    "required": ["data_task", "final_json_response"]
+  }
+}
+
+
+
+*** This is the test case ***
+
+[
+    {
+        "data_task": "Tweets from Twitter User @ZelenskyyUa",
+        "expected_output": {
+            "can_fulfill": true,
+            "explanation": "The Twitter API provides all the necessary parameters and fields to retrieve the data requested in the given task.",
+            "input_params": {
+                "handles": ["ZelenskyyUa"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Tweets from the hashtag #ForzaNapoliSempre",
+        "expected_output": {
+            "can_fulfill": false,
+            "alternative_fulfillable_data_task": "Tweets from @ForzaNapoliSempre"
+        }
+    },
+    {
+        "data_task": "Tweets from the profile url https://twitter.com/BillGates",
+        "expected_output": {
+            "can_fulfill": true,
+            "explanation": "The Twitter API provides all the necessary fields and parameters to retrieve tweets from a specific profile URL.",
+            "input_params": {
+                "handles": ["BillGates"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Tweets from the following url https://www.cnn.com",
+        "expected_output": {
+            "can_fulfill": true,
+            "explanation": "The Twitter API provides all the necessary fields and parameters to retrieve tweets from a specific profile URL.",
+            "input_params": {
+                "handles": ["cnn"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    }
+]
+
+***
+
+
+Generate the example json input for the above test case.

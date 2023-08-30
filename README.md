@@ -9,7 +9,7 @@ Webtap is a Python library designed to access any type of web data by using natu
 
 # Requirements
 
-Webtap has been developed and tested with Python 3.9
+Webtap has been developed and tested with Python 3.11
 
 # Installing Webtap library
 
@@ -21,7 +21,12 @@ You must have an openai key set in your environment. You can setup one by adding
 export OPENAI_API_KEY="{your api key}"
 ```
 
-3. Optionally you can setup Langsmith for LLM debugging by adding the following enviroment variables
+3. Optionally you can setup:
+Apify to run Apify actors (and get actual data)
+```bash
+export APIFY_API_TOKEN="{your api key}"
+```
+and LangSmith for LLM debugging by adding the following enviroment variables
 ```bash
 export LANGCHAIN_TRACING_V2=true
 export LANGCHAIN_PROJECT="{Your dev environment project}"
@@ -31,30 +36,40 @@ export LANGCHAIN_API_KEY={your api_key}
 
 3. pip install .
 
-# Usage
-Usage is pretty straihghtforward, init a tap, given a data_task (data you would like to get) ask for a "data model" (a way to get that data through this tap)
-## Initialize a Tap
-```
-trip_advisor_tap = TripAdvisorTap()
-```
-## get a data model for given data_task
-```
-data_task = "Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses"
-return = trip_advisor_tap.getDataModel(data_task) # return will be a dict containing the data model and few more info
-```
-
 # Run examples
 
-After installation you can run examples using the following command:
+After installation you can run an example using the following command:
+```bash
 python -m examples.apify_tap_example
-python -m examples.tripadvisor_tap_example
+```
+# Run tests
+You can run tests by using the following command:
+```bash
+    python -m tests.apify_tap_test --apify_tap_id={actor_id} --model=gpt-3.5-turbo --test_num={test_num}
+```
+
+# Usage from another project
+Usage is pretty straihghtforward, init a tap, given a data_task (data you would like to get) ask for a "retriever" (a way to get that data through this tap) and than run it
+```python
+    # Load tap_manager
+    tap_manager = TapManager()
+    # get tap "tripadvisor"
+    tap = tap_manager.get_tap("tripadvisor")
+    # Get data for a specific data task
+    sample_data_return = tap.retrieve_sample_data("Restaurants in Miami")
+    logging.info("Apify tap sample data return: %s", sample_data_return)
+    sample_data = sample_data_return["data"]
+
+    # validate data
+    validate_data_return = tap.validate_data(data_task, sample_data)
+    logging.info("Apify tap validate data return: %s", validate_data_return)
+
+```
 
 # Creating a new Apify Tap by instantiating a new apify_tap object
 
-You can create a new Apify Tap by simply defining information about how the Tap/Actor will work
-See examples/apify_tap_example.py for an explanation about how to do so
+In order to see how to create a standard new ApifyTap (using json definition) see docs/taps_definition/GUIDE.md
 
 # Creating a new Apify Tap by extending the ApifyTap class
 
-You can create a new Apify Tap by extending an ApifyTap class and add the custom logic in it
-See webtap/taps/tripadvisor/tripadvisor.py for an explanation about how to do so and examples/tripadvisor_tap_example.py about how to instantiate and use a custom object
+In order to see how to create a standard new ApifyTap (using json definition) see docs/taps_definition/CUSTOM_GUIDE.md

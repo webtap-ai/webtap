@@ -1,10 +1,10 @@
 from pydantic import BaseModel, Field
-from typing import Any
+from typing import Any, List, Dict, Optional
 from abc import abstractmethod
 
-class DataModel(BaseModel):
+class Retriever(BaseModel):
     '''
-    DataModel is the rappresentation of a how the data task can be delivered.
+    DataRetrieverModel is the rappresentation of a how the data task can be can_fulfilled.
     For apify model type will be apify, model id will be the Apify actor id, as exposed on Apify API documentation.
     '''
     
@@ -12,14 +12,14 @@ class DataModel(BaseModel):
     id: str
     input: Any = None
 
-class BaseTapReturn(BaseModel):
+class RetrieverResult(BaseModel):
     '''
     BaseTapReturn is the schema rappresentation of the return value of a tap.
     '''
-    can_deliver: bool
+    can_fulfill: bool
     explanation: str
-    data_model: DataModel = None
-    alternative_fulfillable_data_request: str = None
+    retriever: Retriever = None
+    alternative_fulfillable_data_task: str = None
 
 class BaseTap(BaseModel):
     """
@@ -30,9 +30,13 @@ class BaseTap(BaseModel):
     description: str
 
     @abstractmethod
-    def getDataModel(self, aData_task : str) -> BaseTapReturn:
+    def get_retriever(self, aData_task : str) -> Retriever:
         pass
 
     @abstractmethod
-    def validateData(self, aData_task : str, aData_sample : str) -> str:
+    def validate_data(self, aData_task : str, aData_sample : str) -> str:
+        pass
+
+    @abstractmethod
+    def get_retriever_and_run(self, aData_task : str) -> dict:
         pass

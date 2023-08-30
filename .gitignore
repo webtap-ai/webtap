@@ -8,6 +8,7 @@ __pycache__/
 *.swo
 *.swn
 *.log
+logs/
 *.sqlite
 *.pid
 *.pyc
@@ -15,4 +16,6 @@ __pycache__/
 .env
 .venv/
 *.env
+dist/
 build/
+venv/

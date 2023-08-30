@@ -1,0 +1,44 @@
+[
+    {
+        "data_task": "Tweets from Twitter User @ZelenskyyUa",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "handles": ["ZelenskyyUa"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Tweets from the hashtag #ForzaNapoliSempre",
+        "expected_output": {
+            "can_fulfill": false
+        }
+    },
+    {
+        "data_task": "Tweets from the profile url https://twitter.com/BillGates",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "handles": ["BillGates"],
+                "tweetsDesired": 100,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Tweets from the following url https://www.cnn.com",
+        "expected_output": {
+            "can_fulfill": false
+        }
+    }
+]

@@ -5,9 +5,11 @@ setup(
     version="0.1.1.7",
     packages=find_packages(),
     install_requires=[
+        'aiohttp==3.8.3',
         'langchain==0.0.251', 
         'openai==0.27.8',
-        'tiktoken==0.4.0'
+        'tiktoken==0.4.0',
+        'apify-client==1.3.1',
     ],
     include_package_data=True,
     package_data={'': ['*.json', '*.txt']},

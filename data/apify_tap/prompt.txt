@@ -1,0 +1,65 @@
+I want you to act as a an experienced and skilled JSON input writer for {actor_name}.
+In summary: I will give you a DATA TASK and I want you to return a FINAL JSON RESPONSE in order to get the data requested in DATA TASK from given {actor_name}.
+I will now present you the full context of your task.
+
+*** DATA TASK ***
+Following is a natural language request of data:
+{data_task}
+
+*** EXAMPLES OF DATA TASK/FINAL JSON RESPONSE ABOUT HOW I WANT YOU TO RESPOND ***
+Following are few examples of the behaviour I want you to perform. I will present you a list of DATA TASK (the task that explains what type of data I am looking for) and the related FINAL JSON RESPONSE (an example of a valid response I would like you to give for the given DATA TASK):
+{examples}
+
+*** FINAL JSON RESPONSE SCHEMA ***
+Following is a json schema about the FINAL JSON RESPONSE I want you to return to me:
+{output_response_schema}
+
+*** {actor_name} OUTPUT RETURN FIELDS ***
+Following is the full list of fields that will be returned by {actor_name}. If an item is not here it won't be returned.
+If an item is here it will be 100% returned (regardless of any privacy or any other limit)
+{list_of_returned_fields}
+
+*** {actor_name} INPUT SCHEMA ***
+Following is the json schema representation of the the input for {actor_name}. 
+{input_json_schema}
+
+*** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
+Read and think sentence by sentence carefully.
+Given the above {actor_name} INPUT SCHEMA, {actor_name} OUTPUT RETURN FIELDS and a DATA TASK I want you to return an explanation about wether it's possible to build a json (compatible with the above {actor_name} INPUT SCHEMA and the above {actor_name} OUTPUT RETURN FIELDS) that can return data as requested in DATA TASK.
+
+Be clear, specific and coincise in the response.
+Do not be speculative, only base your answer on compatibility between DATA TASK and {actor_name} INPUT SCHEMA/{actor_name} OUTPUT RETURN FIELDS.
+Do not propose me alternative solutions, like customizations or more data parsing after the request.
+1. Specifically return me wether it's possible to get the given DATA TASK with the only and just the params proposed in {actor_name} INPUT SCHEMA.
+2. Specifically return me wether it's possible to get all the fields of the given DATA TASK assuming as reliable the list of fields listed in {actor_name} OUTPUT RETURN FIELDS.
+
+At the very end return me a JSON object respecting the above FINAL JSON RESPONSE SCHEMA, summarizing your answer as the following:
+
+{{
+    "inputCompatibility": (one of)
+     "Only using the params provided in {actor_name} INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task"
+     or
+     "Only using the params provided in {actor_name} INPUT SCHEMA: Yes I am 100% 100% sure that I can fulfill the params required by given task"
+    "outputCompatibility" : (one of)
+    "Assuming data returned by {actor_name} is reliable and solely based on compatibility between DATA TASK and {actor_name} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS"
+    or
+    "Assuming data returned by {actor_name} is reliable and solely based on compatibility between DATA TASK and {actor_name} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given {actor_name} OUTPUT RETURN FIELDS"
+    "can_fulfill": false // True if both inputCompatibility outputCompatibility are "... Yes I am 100% sure ..."
+    "explanation": "Explain in one sentence why you can fulfill or not",
+    "input_params" : // only if can_fulfill is true, a JSON input of params needed to run the Actor
+    "alternative_fulfillable_data_task": "restaurants in Miami" // only if can_fulfill is false
+}}
+
+*** IMPORTANT THINGS TO KNOW AND REMEBER ***
+{special_instructions}
+
+*** FINAL SUMMARY ***
+Summarizing: 
+
+Given the RETURN FIELDS: {list_of_returned_fields}
+
+and given list of INPUT: {actor_input_summary}
+
+Remembering IMPORTANT THINGS TO REMEBER and to answer in the FINAL JSON RESPONSE SCHEMA 
+
+Can you tell me if it's possible to get the following DATA TASK: {data_task} ?

@@ -1,0 +1,17 @@
+{
+    "entities" : [ "hotel", "restaurant", "attraction", "vacation rental"],
+    "filters" :
+        [ "Location", "Tripadvisor url"],
+    "options" :
+        [ "Max results", "Hotel checkin date", "Hotel checkout date", "Hotels include price", "Language", "Currency" ],
+    "chat_presentation" : "Hi, I'm Tripadvisor TAP. I can help you to get data on hotels, restaurants, attractions and vacation rentals. You can filter results location or a tripadvisor url and set the following options: start_url, max_results, hotel_checkin_date, hotel_checkout_date, hotels_include_price, language, currency.",
+    "special_instructions" :
+        [
+            "{{actor_name}} provides email addresses of the business (hotel, restaurant and any other listing)",
+            "{{actor_name}} can't filter result using entities listings",
+            "{{actor_name}} can't filter by 'cats' frienly or '5 stars hotel only'",
+            "IMPORTANT: Rememeber that {{actor_name}} provides email address in the  output fields",
+            "A vacation rental is not an Airbnb",
+            "Always set proxyConfiguration : {  \"useApifyProxy\": true    }"
+        ]
+}

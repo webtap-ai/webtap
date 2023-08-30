@@ -1,0 +1,58 @@
+*** This is a json object of the output fields of a Apify TripAdvisor Actor ***
+
+Twitter profile(s)
+handles
+Optional
+
+Array
+
+You can add the twitter handles of specific profiles you want to scrape. This is a shortcut so that you don't have to add a full username URLs such as https://twitter.com/username
+
+Maximum number of tweets (per profile)
+tweetsDesired
+Optional
+
+Integer
+
+This value lets you set the maximum number of tweets to retrieve per search query
+
+Add user information
+addUserInfo
+Optional
+
+Boolean
+
+Extends the tweets with user information. You can decrease the size of your dataset by turning this off.
+
+Or use direct tweet URL(s)
+startUrls
+Optional
+
+Array
+
+This lets you tell the scraper where to start. You can enter Twitter URLs one by one. You can also link to or upload a text file with a list of URLs.
+
+Proxy configuration
+proxyConfig
+Required
+
+Object
+
+*** This is JSON example usage ***
+
+{
+  "handles": [
+    "Apify"
+  ],
+  "tweetsDesired": 100,
+  "addUserInfo": true,
+  "startUrls": [],
+  "proxyConfig": {
+    "useApifyProxy": true
+  }
+}
+
+***
+
+Can you write me a JSON schema of this json?
+Be detailed and specific, add one (or more) example usage and a short description about how to use the field.

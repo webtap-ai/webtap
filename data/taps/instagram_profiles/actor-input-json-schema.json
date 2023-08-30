@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "usernames": {
+      "type": "array",
+      "description": "Provide one or several Instagram usernames you want to scrape the posts from. The actor will also handle user name IDs.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": ["usernames"],
+  "examples": [
+    {
+      "usernames": ["humansofny"]
+    },
+    {
+      "usernames": ["humansofny", "example_user"]
+    }
+  ]
+}

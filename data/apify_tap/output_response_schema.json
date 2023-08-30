@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "inputCompatibility": {
+            "type": "string",
+            "enum": [
+                "Only using the params provided in {{actor_name}} INPUT SCHEMA and in {{actor_name}} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
+                "Only using the params provided in {{actor_name}} INPUT SCHEMA and in {{actor_name}} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task"
+            ]
+        },
+        "outputCompatibility": {
+            "type": "string",
+            "enum": [
+                "Assuming data returned by {{actor_name}} is reliable and solely based on compatibility between DATA TASK and {{actor_name}} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given {{actor_name}} OUTPUT RETURN FIELDS",
+                "Assuming data returned by {{actor_name}} is reliable and solely based on compatibility between DATA TASK and {{actor_name}} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given {{actor_name}} OUTPUT RETURN FIELDS"
+            ]
+        },
+        "can_fulfill": {
+            "type": "boolean",
+            "description": "True if both inputCompatibility and outputCompatibility are \"...Yes, I am 100% sure...\". False otherwise."
+        },
+        "explanation": {
+            "type": "string",
+            "description": "Explain in one sentence why you can fulfill the DATA TASK or not."
+        },
+        "input_params": {
+            "type": "object",
+            "description": "{{actor_name}} INPUT (compatible with FINAL JSON RESPONSE SCHEMA) needed to run {{actor_name}} in order to fulfill the given task. This field is included only if can_fulfill is true.",
+            "properties": {},
+            "additionalProperties": true
+        },
+        "alternative_fulfillable_data_task": {
+            "type": "string",
+            "description": "Proposes an alternative data task that can 100% be fulfilled. This field is included only if can_fulfill is false."
+        }
+    },
+    "required": ["inputCompatibility", "outputCompatibility", "can_fulfill", "explanation"],
+    "additionalProperties": false
+}
