@@ -19,3 +19,4 @@ logs/
 dist/
 build/
 venv/
+create-init-files.sh

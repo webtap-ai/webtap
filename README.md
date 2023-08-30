@@ -59,8 +59,9 @@ You can run tests by using the following command:
 ```
 
 # Usage from third party project
-Usage is pretty straihghtforward, init a tap, given a data_task (data you would like to get) ask for a "retriever" (a way to get that data through this tap) and than run it
-Include the library in your pip requirements.txt (make sure that you git environment is correctly setup so that you can clone git private repos without typing password)
+Usage is pretty straihghtforward: get a tap from Tap Manager, given a data_task (data you would like to get) retriever sample data (a way to get that data through this tap.
+
+Include the library in your pip requirements.txt (make sure that you git environment is correctly setup so that you can clone git private repos without typing password):
 ```bash
     webtap @ git+https://github.com/webtap-ai/webtap.git
 ```
