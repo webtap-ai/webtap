@@ -10,19 +10,26 @@ Webtap is a Python library designed to access any type of web data by using natu
 # Requirements
 
 Webtap has been developed and tested with Python 3.11
+Make sure that your python version is >= 3.11
 
 # Installing Webtap library
 
-1. It is recommended, though not mandatory, to create a virtual environment for your project.
-Virtual environments make it easier to manage packages and ensure that your project's dependencies are isolated from other Python projects.
+1. Clone the repo
+```bash 
+git clone https://github.com/webtap-ai/webtap.git
+```
+2. It is recommended, though not mandatory, to create a virtual environment for your project.
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 2. Setup openai key: 
 You must have an openai key set in your environment. You can setup one by adding the following in your ~/.zshrc file
 ```bash
 export OPENAI_API_KEY="{your api key}"
 ```
-
 3. Optionally you can setup:
-Apify to run Apify actors (and get actual data)
+Apify to run Apify actors (you need it to get actual data and run tests)
 ```bash
 export APIFY_API_TOKEN="{your api key}"
 ```
@@ -33,8 +40,10 @@ export LANGCHAIN_PROJECT="{Your dev environment project}"
 export LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
 export LANGCHAIN_API_KEY={your api_key}
 ```
-
-3. pip install .
+4. Install requirements
+```bash
+pip install -r requirements.txt
+```
 
 # Run examples
 
