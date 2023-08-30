@@ -43,7 +43,7 @@ export LANGCHAIN_API_KEY={your api_key}
 ```
 4. Install requirements
 ```bash
-pip install -r requirements.txt
+pip setup.py .
 ```
 
 # Run examples
