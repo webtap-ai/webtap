@@ -17,6 +17,7 @@ Make sure that your python version is >= 3.11
 1. Clone the repo
 ```bash 
 git clone https://github.com/webtap-ai/webtap.git
+cd webtap
 ```
 2. It is recommended, though not mandatory, to create a virtual environment for your project.
 ```bash
