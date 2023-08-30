@@ -81,10 +81,10 @@ After that include and use the library in the following way:
 
 ```
 
-# Creating a new Apify Tap by instantiating a new apify_tap object
+# Creating a new standard Apify Tap using json definition
 
 In order to see how to create a standard new ApifyTap (using json definition) see [GUIDE.md](docs/taps_definition/GUIDE.md)
 
-# Creating a new Apify Tap by extending the ApifyTap class
+# Creating a new Custom Apify Tap by extending the ApifyTap class
 
 In order to see how to create a standard new ApifyTap (using json definition) see [CUSTOM_GUIDE.md](docs/taps_definition/CUSTOM_GUIDE.md)
