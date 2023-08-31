@@ -1,4 +1,6 @@
 {
+    "name": "Facebook Pages Scraper Tap",
+    "description": "Facebook scraping tool to crawl and extract basic data from one or multiple Facebook Pages. Extract Facebook page name, page URL address, category, likes, check-ins, and other public data. Download data in JSON, CSV, Excel and use it in apps, spreadsheets, and reports.",
     "entities" : [ "Facebook pages" ],
     "filters" :
         [ "Facebool page URL"],

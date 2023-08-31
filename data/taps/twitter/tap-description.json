@@ -1,4 +1,6 @@
 {
+    "name": "Twitter Scraper Tap",
+    "description": "Scrape tweets from any Twitter user profile. Top Twitter API alternative to scrape Twitter hashtags, threads, replies, followers, images, videos, statistics, and Twitter history. Download your data in any format, including JSON and Excel. Seamless integration with apps, reports, and databases.",
     "entities" : [ "Tweets" ],
     "filters" :
         [ "Twitter handle", "Twitter profile url"],
