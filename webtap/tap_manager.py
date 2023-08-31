@@ -40,6 +40,9 @@ class TapsIndex(BaseModel):
     __root__: Dict[str, TapParams]
 
 class TapManager:
+    '''
+    TapManager is a singleton class that loads all the taps defined in the taps_index.json file.
+    '''
     tap_index_file = files(__package__).joinpath('../data/tap_manager/taps_index.json')
     tap_index: TapsIndex = None
     taps = Dict[str, ApifyTap]
