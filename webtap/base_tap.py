@@ -28,6 +28,7 @@ class BaseTap(BaseModel):
     """
     name: str
     description: str
+    chat_presentation : str
 
     @abstractmethod
     def get_retriever(self, aData_task : str) -> Retriever:
