@@ -42,7 +42,7 @@ class TapsIndex(BaseModel):
 class TapManager:
     tap_index_file = files(__package__).joinpath('../data/tap_manager/taps_index.json')
     tap_index: TapsIndex = None
-    taps = []
+    taps = Dict[str, ApifyTap]
 
     def load_json_data(self,json_file):
         with open(json_file) as f:
