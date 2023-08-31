@@ -91,6 +91,8 @@ class TapManager:
 
         # create apify_tap and init all values
         tap = ApifyTap(
+            name = tap_description['name'],
+            description = tap_description['description'],
             examples = examples,
             test_cases = test_cases,
             apify_tap_actor = ApifyTapActor( 
