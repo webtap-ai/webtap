@@ -42,6 +42,7 @@ class TapsIndex(BaseModel):
 class TapManager:
     '''
     TapManager is a singleton class that loads all the taps defined in the taps_index.json file.
+    It also loads all the data templates for each tap.
     '''
     tap_index_file = files(__package__).joinpath('../data/tap_manager/taps_index.json')
     tap_index: TapsIndex = None
