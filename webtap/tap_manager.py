@@ -93,6 +93,7 @@ class TapManager:
         tap = ApifyTap(
             name = tap_description['name'],
             description = tap_description['description'],
+            chat_presentation = tap_description['chat_presentation'],
             examples = examples,
             test_cases = test_cases,
             apify_tap_actor = ApifyTapActor( 
