@@ -1,0 +1,14 @@
+{
+    "name": "Airbnb Scraper Tap",
+    "entities" : [ "airbnb listing"],
+    "filters" :
+        [ "Destination", "Airbnb place url", "Check-in date", "Check-out date (YYYY-MM-DD)", "Minimum price", "Maximum price"],
+    "options" :
+        [ "Number of results", "Keep the dataset Excel friendly", "Include reviews", "Number of reviews", "Availability for next months", "Include host info" , "Locale", "Currency"],
+    "special_instructions" :
+        [
+            "If minPrice is not set, the minimum price will be 0",
+            "If maxPrice is not set, the maximum price will be 1000000",
+            "Always set proxyConfiguration : {  \"useApifyProxy\": true    }"
+        ]
+}

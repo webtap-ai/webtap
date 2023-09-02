@@ -1,4 +1,4 @@
-from pydantic import BaseModel, validator, PrivateAttr
+from pydantic import BaseModel, validator, PrivateAttr, root_validator
 from webtap.base_tap import BaseTap, RetrieverResult, Retriever
 from langchain import PromptTemplate, OpenAI, LLMChain
 from langchain.chains import create_extraction_chain
@@ -8,7 +8,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from typing import Any, Optional
 from pathlib import Path
-import re, json
+import re, json, requests
 from typing import List, Dict
 from apify_client import ApifyClient
 
@@ -80,9 +80,9 @@ class ApifyTap(BaseTap):
     Apify Tap is a generic tap that is able to manage/scrape/validate data from an Apify Actor.
     It works by simply defining info about the actor and the prompt template
     """
-
-    name: str = "Apify Base Actor Tap"
-    description: str = "Tap to operate on lots of Apify Actors by simply defining some data input"
+    entities : List[str]
+    filters : List[str]
+    options : List[str]
     examples: list
     test_cases: list
     apify_tap_actor: ApifyTapActor
@@ -108,12 +108,32 @@ class ApifyTap(BaseTap):
         # set langchanin verbose to true if loggin level is info or above
         verbose = self._logger.getEffectiveLevel() <= logging.INFO
         self._llm = ChatOpenAI(temperature=0, model=self.openai_model, verbose=verbose)
-    
+        
     def __init__(self, *args, **kwargs):
+        # Extract the necessary attributes from kwargs
+        name = kwargs.get('name')
+        entities = kwargs.get('entities')
+        filters = kwargs.get('filters')
+        options = kwargs.get('options')
+
+        # Generate the description
+        # This is done before calling the super init function to ensure that the description is available for use in the parent class's init function
+        description = f"This is {name}, it can return you data about {', '.join(entities)}, filtering results by {', '.join(filters)}. Following options are accepted: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
+        
+        # Generate the chat presentation
+        # This is done before calling the super init function to ensure that the chat presentation is available for use in the parent class's init function
+        chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
+
+        # Add the description and chat presentation to kwargs
+        kwargs['description'] = description
+        kwargs['chat_presentation'] = chat_presentation
+
+        # Call the parent class's init function
         super().__init__(*args, **kwargs)
-        # init logger
+
+        # Init logger
         self._logger = logging.getLogger(__name__)
-        # init llm
+        # Init llm
         self.load_llm()
     
     def set_llm_model( self, model_name: str ):
@@ -235,7 +255,7 @@ class ApifyTap(BaseTap):
         self._logger.info("Tap execution time: %s", execution_time)
 
         return tapReturn
-    
+    '''
     def run_actor(self, actor_input : ActorInput, max_items: int = 5) -> List[str]:
         # Initialize the ApifyClient with API token
         if not "APIFY_API_TOKEN" in os.environ:
@@ -257,8 +277,102 @@ class ApifyTap(BaseTap):
         # Fetch results from the actor's default dataset
         dataset_items = client.dataset(actor_call['defaultDatasetId']).list_items().items
 
+        # dataset_items = self.run_actor_http(actor_input, max_items)
+
+        return dataset_items
+    '''
+
+    def run_actor(self, actor_input: ActorInput, max_items: int = 5) -> List[str]:
+        # Initialize the ApifyClient with API token
+        if "APIFY_API_TOKEN" not in os.environ:
+            self._logger.error("APIFY_API_TOKEN env variable is not set")
+            raise ValueError("APIFY_API_TOKEN env variable is not set")
+        apify_api_token = os.environ["APIFY_API_TOKEN"]
+
+        # Set maxItems in the actor input body to the provided parameter value
+        actor_input.body["maxItems"] = max_items
+
+        client = ApifyClient(apify_api_token)
+        # Start the actor and immediately return the Run object
+        actor_run = client.actor(self.apify_tap_actor.actor.id).start(run_input=actor_input.body)
+        self._logger.info("Actor started, waiting for it to finish...")
+
+        self._logger.info(f"Actor run: {actor_run}")
+
+        # Loop until the actor run is finished
+        actor_run_id = actor_run['id']
+        while True:
+            # Get the current actor run state
+            # Initialize the RunClient with the actor run ID
+            run_client = client.run(actor_run_id)
+        
+            run_data = run_client.get()
+            actor_run_state = run_data['status']
+
+            # If the actor run is still running or has succeeded, fetch the items from the dataset
+            if actor_run_state in ['RUNNING', 'SUCCEEDED']:
+                dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
+                self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
+
+                # If the number of items fetched is greater than or equal to max_items, return the items
+                if len(dataset_items) >= max_items:
+                    # abort the actor run
+                    run_client.abort()
+                    self._logger.info("More than or equal to max_items fetched, aborting actor run")
+                    self._logger.info(f"Actor run aborted")
+                    return dataset_items
+
+            # If the actor run is not running and not succeeded, log an error and raise an exception
+            elif actor_run_state not in ['RUNNING', 'SUCCEEDED']:
+                self._logger.error(f"Actor run failed with state: {actor_run_state}")
+                raise Exception(f"Actor run failed with state: {actor_run_state}")
+
+            # Wait for a while before checking the actor run state again
+            time.sleep(5)
+    '''
+    def run_actor_http(self, actor_input: ActorInput, max_items: int = 5) -> List[str]:
+        # Check if APIFY_API_TOKEN is set in environment variables
+        if "APIFY_API_TOKEN" not in os.environ:
+            raise ValueError("APIFY_API_TOKEN env variable is not set")
+        apify_api_token = os.environ["APIFY_API_TOKEN"]
+
+        # Set maxItems in the actor input body to the provided parameter value
+        actor_input.body["maxItems"] = max_items
+
+        # Define the URL for the Apify actor
+        url = f"https://api.apify.com/v2/actors/{self.apify_tap_actor.actor.id}/runs?token={apify_api_token}"
+
+        # Define the headers for the HTTP request
+        headers = {'Content-Type': 'application/json'}
+
+        # Define the body for the HTTP request
+        body = json.dumps(actor_input.body)
+
+        # Send the HTTP request and get the response
+        response = requests.post(url, headers=headers, data=body)
+
+        # Check if the request was successful
+        if response.status_code != 200:
+            raise ValueError(f"Request failed with status code {response.status_code}")
+
+        # Get the actor run data from the response
+        actor_run_data = response.json()
+
+        # Fetch results from the actor's default dataset
+        dataset_url = f"https://api.apify.com/v2/datasets/{actor_run_data['defaultDatasetId']}/items?token={apify_api_token}"
+        dataset_response = requests.get(dataset_url)
+
+        # Check if the request was successful
+        if dataset_response.status_code != 200:
+            raise ValueError(f"Request failed with status code {dataset_response.status_code}")
+
+        # Get the dataset items from the response
+        dataset_items = dataset_response.json()
+
         return dataset_items
     
+    '''
+
     def truncate_returned_data(self, data: List) -> List:
         MAX_CHARS = 1000
         MAX_ITEMS = 5

@@ -1,58 +1,149 @@
 *** This is a json object of the output fields of an Apify TripAdvisor Actor ***
 Following is the json object
 
-[
-  {
-  "categories": [
-    "Hotel"
-  ],
-  "info": [
-    "Hilton Garden Inn Montreal Airport, Ville Saint Laurent, Quebec. 558 likes",
-    "5 talking about this",
-    "7,513 were here. The Hilton Garden Inn Montreal..."
-  ],
-  "likes": 558,
-  "messenger": "https://m.me/228151500028",
-  "posts": [],
-  "title": "Hilton Garden Inn Montreal Airport",
-  "address": "7880 Cote de Liesse, Ville Saint Laurent, QC, Canada +1 514-788-5120",
-  "pageId": "228151500028",
-  "pageName": "HiltonGardenInnMontrealAirport",
-  "pageUrl": "https://www.facebook.com/HiltonGardenInnMontrealAirport/",
-  "phone": "+15147885120"
-},
 {
-  "categories": [],
-  "info": [
-    "The Copper Kettle Restaurant, Regina, Saskatchewan. 2,275 likes",
-    "58 talking about this",
-    "994 were here. Longstanding local restaurant. Mediterranean..."
+  "url": "https://www.airbnb.com/rooms/24402632",
+  "name": "RIAD BAB 23☀️ PISCINE CHAUFFÉE",
+  "stars": 4.85,
+  "numberOfGuests": 10,
+  "address": "Marrakech, Marrakech-Safi, Morocco",
+  "roomType": "Entire townhouse",
+  "location": {
+    "lat": 31.63399,
+    "lng": -7.99043
+  },
+  "reviews": [
+    {
+      "author": {
+        "firstName": "Jan",
+        "hasProfilePic": true,
+        "id": "7983682",
+        "pictureUrl": "https://a0.muscache.com/im/pictures/user/ef5ec630-b9d9-4b33-b8df-dd1220e7c24d.jpg?aki_policy=profile_x_medium",
+        "smartName": "Jan",
+        "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/ef5ec630-b9d9-4b33-b8df-dd1220e7c24d.jpg?aki_policy=profile_small"
+      },
+      "comments": "Chloé's Riad BAB23 was a wonderful place to stay.<br/><br/>Right inside of the Marrakesh Medina, with endless opportunities to explore the city and its markets, palaces, gardens, and museums on foot - which we had planned to do.<br/><br/>There's a huge selection of walkable place to eat around the house. Additionally, breakfast and dinner can be arranged at the Riad itself - and we absolutely loved the food made by the riad's own crew. So much so that we kept the breakfast going throughout and had several Moroccon dinners at the house. Exquisite.<br/><br/>Speaking of crew, Chloé was extremely helpful organizing our stay and excursions - and always friendly and reactive. But, even bigger kudos go to the riad's house crew, Aziz & Mohammed who managed things day to day - and the wonderfully friendly and happy cleaning and kitchen crew.<br/><br/>We love Marrakesh and we loved this stay at Chloé's riad. Absolutely wonderful experience. We will be back.",
+      "createdAt": "2023-01-20T15:50:54Z",
+      "id": "808603544614385458",
+      "collectionTag": null,
+      "rating": 5,
+      "recipient": {
+        "firstName": "Chloé",
+        "hasProfilePic": true,
+        "id": "26426272",
+        "pictureUrl": "https://a0.muscache.com/im/pictures/user/b4110954-81a1-4358-adc8-4201b44154bc.jpg?aki_policy=profile_x_medium",
+        "smartName": "Chloé",
+        "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/b4110954-81a1-4358-adc8-4201b44154bc.jpg?aki_policy=profile_small"
+      },
+      "response": null,
+      "localizedDate": "January 2023",
+      "localizedReview": null
+    }
   ],
-  "likes": 2275,
-  "messenger": null,
-  "posts": [],
-  "title": "The Copper Kettle Restaurant | Regina SK",
-  "pageId": "100064027242849",
-  "pageName": "copperkettleyqr",
-  "pageUrl": "https://www.facebook.com/copperkettleyqr/",
-  "followers": 2511
-},
-{
-  "categories": [],
-  "info": [
-    "Humans of New York, New York, NY. 17,682,252 likes",
-    "55,738 talking about this. New York City, one story at a time."
+  "pricing": {
+    "rate": {
+      "amount": 260.4,
+      "amountFormatted": "$260.4",
+      "currency": "USD",
+      "isMicrosAccuracy": false,
+      "displayedPrice": 217,
+      "displayedPriceFormatted": "$217"
+    },
+    "rateType": "nightly",
+    "rateBreakdown": [
+      {
+        "date": "7/23/2023",
+        "price": 217,
+        "priceFormatted": "$217"
+      },
+      {
+        "date": "7/24/2023",
+        "price": 217,
+        "priceFormatted": "$217"
+      },
+      {
+        "date": "7/25/2023",
+        "price": 217,
+        "priceFormatted": "$217"
+      },
+      {
+        "date": "7/26/2023",
+        "price": 217,
+        "priceFormatted": "$217"
+      },
+      {
+        "date": "7/27/2023",
+        "price": 219,
+        "priceFormatted": "$219"
+      }
+    ],
+    "nights": 5,
+    "totalPrice": {
+      "amount": 1302,
+      "amountFormatted": "$1,302",
+      "accommodation": 1087,
+      "cleaningFee": 54,
+      "guestFee": 161,
+      "currency": "USD"
+    }
+  },
+  "photos": [
+    {
+      "caption": "Patio Bab Vingt-Trois",
+      "pictureUrl": "https://a0.muscache.com/im/pictures/807af64a-c3ba-4075-9b76-e1f09531c974.jpg?aki_policy=large",
+      "thumbnailUrl": "https://a0.muscache.com/im/pictures/807af64a-c3ba-4075-9b76-e1f09531c974.jpg?aki_policy=small"
+    },
+    {
+      "caption": "Patio Bab Vingt-Trois",
+      "pictureUrl": "https://a0.muscache.com/im/pictures/ef9ae79b-f360-4a31-adf1-9eb4edede987.jpg?aki_policy=large",
+      "thumbnailUrl": "https://a0.muscache.com/im/pictures/ef9ae79b-f360-4a31-adf1-9eb4edede987.jpg?aki_policy=small"
+    }
   ],
-  "likes": 17682252,
-  "messenger": null,
-  "posts": [],
-  "title": "Humans of New York | New York NY",
-  "pageId": "100050429952420",
-  "pageName": "humansofnewyork",
-  "pageUrl": "https://www.facebook.com/humansofnewyork/",
-  "followers": 17691051
+  "primaryHost": {
+    "id": 26426272,
+    "firstName": "Chloé",
+    "isSuperHost": true,
+    "hasProfilePic": true,
+    "smartName": "Chloé",
+    "about": "Amoureuse de marrakech, des voyages, de déco et de l’art de recevoir. \n\nJe propose 2 riads dans la medina de marrakech à la location pour des longs week-end en famille ou entre amis ! ",
+    "memberSince": "Joined in January 2015",
+    "languages": [
+      "English",
+      "Français",
+      "Italiano"
+    ],
+    "responseRate": "100%",
+    "responseTime": "within an hour",
+    "hasInclusionBadge": false,
+    "badges": [
+      "224 Reviews",
+      "Identity verified"
+    ],
+    "hostUrl": "https://www.airbnb.com/users/show/26426272",
+    "pictureUrl": "https://a0.muscache.com/im/pictures/user/b4110954-81a1-4358-adc8-4201b44154bc.jpg?aki_policy=profile_large",
+    "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/b4110954-81a1-4358-adc8-4201b44154bc.jpg?aki_policy=profile_small",
+    "listingsCount": 2,
+    "totalListingsCount": 2
+  },
+  "additionalHosts": [
+    {
+      "id": 7002687,
+      "firstName": "Lambert",
+      "isSuperHost": false,
+      "hasProfilePic": true,
+      "smartName": "Lambert",
+      "about": "",
+      "memberSince": "Joined in June 2013",
+      "languages": [],
+      "hasInclusionBadge": false,
+      "badges": [],
+      "hostUrl": "https://www.airbnb.com/users/show/7002687",
+      "pictureUrl": "https://a0.muscache.com/im/pictures/user/3ed4129e-75c6-487b-b6a4-719cb8e6a6f7.jpg?aki_policy=profile_large",
+      "thumbnailUrl": "https://a0.muscache.com/im/pictures/user/3ed4129e-75c6-487b-b6a4-719cb8e6a6f7.jpg?aki_policy=profile_small"
+    }
+  ],
+  "isHostedBySuperhost": true
 }
-]
 
 
 ***

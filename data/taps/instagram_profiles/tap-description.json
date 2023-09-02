@@ -1,11 +1,9 @@
 {
     "name": "Instagram profile scraper TAP",
-    "description": "Scrape all Instagram profile info. Add one or more Instagram usernames and extract number of followers & follows, URLs, bio, posts, likes, counts, related profiles, captions, highlight reels, and more. Download structured data in JSON, CSV, XML, Excel, and HTML to use in applications and reports.",
     "entities" : [ "Instagram pages" ],
     "filters" :
         [ "Instagram usernames"],
     "options" :
         [ ],
-    "chat_presentation" : "Hi, I'm Instagram profiles TAP. I can help you to get data about Instagram profiles. You can get results by providing a Instagram profile username (no other filter is supported).",
     "special_instructions" : []
 }

@@ -1,0 +1,3 @@
+{
+    "actor_input_summary" : "locationQuery, maxListings, simple, startUrls, includeReviews, maxReviews, calendarMonths, addMoreHostInfo, locale, currency, minPrice, maxPrice, checkIn, checkOut, proxyConfiguration, maxConcurrency, limitPoints, timeoutMs, debugLog"
+}

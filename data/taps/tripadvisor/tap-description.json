@@ -1,12 +1,10 @@
 {
     "name": "Tripadvisor Scraper Tap",
-    "description": "Tripadvisor API is a data extraction tool able to get data on hotels, restaurants, things to do, vacation rentals, attractions, tours, and public trips. Get pricing, contact details, amenities, awards, ratings, and more. Download your data in Excel, JSON, CSV, and other formats.",
     "entities" : [ "hotel", "restaurant", "attraction", "vacation rental"],
     "filters" :
         [ "Location", "Tripadvisor url"],
     "options" :
         [ "Max results", "Hotel checkin date", "Hotel checkout date", "Hotels include price", "Language", "Currency" ],
-    "chat_presentation" : "Hi, I'm Tripadvisor TAP. I can help you to get data on hotels, restaurants, attractions and vacation rentals. You can filter results location or a tripadvisor url and set the following options: start_url, max_results, hotel_checkin_date, hotel_checkout_date, hotels_include_price, language, currency.",
     "special_instructions" :
         [
             "{{actor_name}} provides email addresses of the business (hotel, restaurant and any other listing)",

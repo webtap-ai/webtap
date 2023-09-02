@@ -1,0 +1,5 @@
+{
+    "id": "dtrungtin~airbnb-scraper",
+    "name": "Airbnb Scraper",
+    "description": "Scrape whole cities or extract data from hundreds of Airbnb rentals in seconds. Extract host information, addresses, locations, prices, availability, stars, reviews, images, and host/guest details for free. Download scraped data in various formats including HTML, JSON and Excel."
+}

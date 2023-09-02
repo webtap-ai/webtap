@@ -1,55 +1,176 @@
-*** This is a json object of the output fields of a Apify TripAdvisor Actor ***
+*** This is a json object of the input datta of an Apify Actor ***
 
-Twitter profile(s)
-handles
+Destination
+locationQuery
 Optional
 
-Array
+String
 
-You can add the twitter handles of specific profiles you want to scrape. This is a shortcut so that you don't have to add a full username URLs such as https://twitter.com/username
+Location name as you would search it on Airbnb.
 
-Maximum number of tweets (per profile)
-tweetsDesired
+Number of results
+maxListings
 Optional
 
 Integer
 
-This value lets you set the maximum number of tweets to retrieve per search query
+Limit the amount of results you want. Higher limits will take longer to scrape.
 
-Add user information
-addUserInfo
+Keep the dataset Excel friendly
+simple
 Optional
 
 Boolean
 
-Extends the tweets with user information. You can decrease the size of your dataset by turning this off.
+The scraper will get only core listing data from the Airbnb search result page.
 
-Or use direct tweet URL(s)
+Link to an Airbnb Place
 startUrls
 Optional
 
 Array
 
-This lets you tell the scraper where to start. You can enter Twitter URLs one by one. You can also link to or upload a text file with a list of URLs.
+Link to a room, house, flat, or apartment. When using this field, the scraper will ignore the Destination field and will get results only for specific listings.
+
+Include reviews
+includeReviews
+Optional
+
+Boolean
+
+Do you want to scrape reviews as well?
+
+Number of reviews
+maxReviews
+Optional
+
+Integer
+
+Limit the number of reviews per listing. A higher number of reviews will take longer to scrape. If you leave this field undefined, all available reviews will be extracted. You can also use maxReviews: -1 to denote explicitly that you want to get all reviews.
+
+Availability for next months
+calendarMonths
+Optional
+
+Integer
+
+Scrape the host's calendar to monitor the listing's availability for future months. E.g. set 12 to get data for the whole year, set 0 to skip the calendar altogether.
+
+Include host info
+addMoreHostInfo
+Optional
+
+Boolean
+
+Scrape primary host info such as host URL and number of listings. This works in sync with the Keep the dataset Excel friendly toggle ↑
+
+Locale
+locale
+Optional
+
+Enum
+
+Localization that should be used for listing details and review comments. If unset, localization is inferred from each Airbnb start URL or is set to English if no start URLs are provided.
+
+
+Currency
+currency
+Required
+
+Enum
+
+Currency for displayed prices.
+
+
+Minimum price
+minPrice
+Optional
+
+Integer
+
+Filter listings based on a minimum price per night.
+
+Maximum price
+maxPrice
+Optional
+
+Integer
+
+Filter listings based on a maximum price per night.
+
+Check-in date (YYYY-MM-DD)
+checkIn
+Optional
+
+String
+
+Check-out date (YYYY-MM-DD)
+checkOut
+Optional
+
+String
 
 Proxy configuration
-proxyConfig
+proxyConfiguration
 Required
 
 Object
 
+Use Apify Proxy or your custom Proxy.
+
+Max concurrency
+maxConcurrency
+Optional
+
+Integer
+
+Defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. Use this option to set a hard limit.
+
+Limit points
+limitPoints
+Optional
+
+Integer
+
+Limits the number of geo points returned by the reverse API. The higher the number, the longer it takes. There's no upper limit.
+
+Timeout milliseconds
+timeoutMs
+Optional
+
+Integer
+
+Override the default 60s (60.000ms) timeout when not using Link to Airbnb Place.
+
+Debug Log
+debugLog
+Optional
+
+Boolean
+
+Shows additional debugging information.
+
 *** This is JSON example usage ***
 
 {
-  "handles": [
-    "Apify"
-  ],
-  "tweetsDesired": 100,
-  "addUserInfo": true,
+  "locationQuery": "Sacramento, California",
+  "maxListings": 10,
+  "simple": false,
   "startUrls": [],
-  "proxyConfig": {
+  "includeReviews": true,
+  "maxReviews": 10,
+  "calendarMonths": 0,
+  "addMoreHostInfo": false,
+  "currency": "USD",
+  "checkIn": "YYYY-MM-DD",
+  "checkOut": "YYYY-MM-DD",
+  "proxyConfiguration": {
     "useApifyProxy": true
-  }
+  },
+  "maxConcurrency": 50,
+  "limitPoints": 100,
+  "timeoutMs": 300000,
+  "debugLog": false
 }
 
 ***

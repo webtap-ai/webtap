@@ -15,13 +15,13 @@ def apify_tap_with_tap_manager_example():
     tap_manager = TapManager()
     print("Tap manager", tap_manager)
     # get tap "tripadvisor"
-    tap = tap_manager.get_tap("tripadvisor")
+    tap = tap_manager.get_tap("twitter")
     print("Tap", tap)
     # set tap to use gpt4
     # tap.openai_model = "gpt-4"
 
     # Get data for a specific data task
-    data_task = "Restaurants in Miami"
+    data_task = "Tweets by @elonmusk"
 
     # get sample data
     sample_data_return = tap.retrieve_sample_data(data_task)

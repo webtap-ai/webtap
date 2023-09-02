@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Airbnb in Miami's Coconut Grove",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Airbnb in Napoli, first weekend October 2023, max 100 USD",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Availibility of this Airbnb in October 2023 https://www.airbnb.it/rooms/904328986888115645",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Places to sleep in Paris",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Hotels in Paris",
+        "expected_output": {
+            "can_fulfill": false
+        }
+    }
+]

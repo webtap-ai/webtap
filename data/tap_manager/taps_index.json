@@ -10,5 +10,8 @@
     },
     "instagram_profiles" : {
         "config_dir": "instagram_profiles"
+    },
+    "airbnb" : {
+        "config_dir": "airbnb"
     }
 }

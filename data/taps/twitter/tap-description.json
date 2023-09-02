@@ -1,12 +1,10 @@
 {
     "name": "Twitter Scraper Tap",
-    "description": "Scrape tweets from any Twitter user profile. Top Twitter API alternative to scrape Twitter hashtags, threads, replies, followers, images, videos, statistics, and Twitter history. Download your data in any format, including JSON and Excel. Seamless integration with apps, reports, and databases.",
     "entities" : [ "Tweets" ],
     "filters" :
         [ "Twitter handle", "Twitter profile url"],
     "options" :
         [ "Maximum number of tweets", "Add user information" ],
-        "chat_presentation" : "Hi, I'm Twitter TAP. I can help you to get data on tweets. You can filter by Twitter handle or Twitter profile URl; other URLs (hashtag, mentions or search urls, etc..) are not supported. You can set the following options: Maximum number of tweets, Add user information.",
     "special_instructions" :
         [
             "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
