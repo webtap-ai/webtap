@@ -1,0 +1,14 @@
+{
+    "name": "Twitter Search Scraper Tap",
+    "entities" : [ "Tweets" ],
+    "filters" :
+        [ "Twitter handle", "Twitter profile url"],
+    "options" :
+        [ "Maximum number of tweets", "Add user information" ],
+    "special_instructions" :
+        [
+            "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
+            "Twitter API support only Twitter profile URLs as input",
+            "Twitter API doesn't support #hashtajs or @mentions"
+        ]
+}

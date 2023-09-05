@@ -1,0 +1,220 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Apify Actor Input Schema",
+  "description": "Schema for the input data of an Apify Actor for scraping tweets based on various criteria.",
+  "properties": {
+    "searchQueries": {
+      "description": "List of search queries to use for finding tweets. Use the 'near' parameter to search near a location.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "career"
+      ]
+    },
+    "tweetsDesired": {
+      "description": "Maximum number of tweets to scrape per query.",
+      "type": "integer",
+      "example": 100
+    },
+    "repliesDepth": {
+      "description": "Levels of replies to scrape. 0 for no replies, 1 for the tweet and its replies, etc.",
+      "type": "integer",
+      "minimum": 0,
+      "example": 2
+    },
+    "includeUserId": {
+      "description": "Include user ID in the tweet result. Useful for identifying the profile of each tweet.",
+      "type": "boolean",
+      "example": false
+    },
+    "since": {
+      "description": "Oldest date of tweets to extract. Use relative ('1 month', '2 days') or absolute ('2020-02-29') dates.",
+      "type": "string",
+      "example": "2020-02-29"
+    },
+    "until": {
+      "description": "Newest date of tweets to extract. Use relative or absolute dates.",
+      "type": "string",
+      "example": "2021-01-01"
+    },
+    "minReplies": {
+      "description": "Minimum number of replies a tweet must have to be scraped.",
+      "type": "integer",
+      "minimum": 0,
+      "example": 0
+    },
+    "minRetweets": {
+      "description": "Minimum number of retweets a tweet must have to be scraped.",
+      "type": "integer",
+      "minimum": 0,
+      "example": 10
+    },
+    "minLikes": {
+      "description": "Minimum number of likes a tweet must have to be scraped.",
+      "type": "integer",
+      "minimum": 0,
+      "example": 5
+    },
+    "fromTheseAccounts": {
+      "description": "Scrape tweets specifically from these accounts.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "example": [
+        "accountName1",
+        "accountName2"
+      ]
+    },
+    "toTheseAccounts": {
+      "description": "Scrape tweets sent to these accounts.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "example": []
+    },
+    "mentioningTheseAccounts": {
+      "description": "Scrape tweets that mention these accounts.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "example": []
+    },
+    "nativeRetweets": {
+      "description": "Include only native retweets (retweeted without comment).",
+      "type": "boolean",
+      "example": false
+    },
+    "media": {
+      "description": "Include only tweets that contain media like images, videos, gifs, etc.",
+      "type": "boolean",
+      "example": true
+    },
+    "images": {
+      "description": "Include only tweets that contain images.",
+      "type": "boolean",
+      "example": false
+    },
+    "videos": {
+      "description": "Include only tweets that contain videos.",
+      "type": "boolean",
+      "example": true
+    },
+    "news": {
+      "description": "Include only tweets that contain news.",
+      "type": "boolean",
+      "example": false
+    },
+    "verified": {
+      "description": "Include only tweets from verified users.",
+      "type": "boolean",
+      "example": false
+    },
+    "nativeVideo": {
+      "description": "Include only tweets that contain native video.",
+      "type": "boolean",
+      "example": false
+    },
+    "replies": {
+      "description": "Include only reply-tweets.",
+      "type": "boolean",
+      "example": false
+    },
+    "links": {
+      "description": "Include only tweets that contain links.",
+      "type": "boolean",
+      "example": true
+    },
+    "safe": {
+      "description": "Include only tweets marked as potentially sensitive.",
+      "type": "boolean",
+      "example": false
+    },
+    "quote": {
+      "description": "Include only tweets that quote other tweets.",
+      "type": "boolean",
+      "example": false
+    },
+    "proVideo": {
+      "description": "Include only tweets that contain pro video.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeNativeRetweets": {
+      "description": "Exclude native retweets from the results.",
+      "type": "boolean",
+      "example": true
+    },
+    "excludeMedia": {
+      "description": "Exclude tweets containing any media.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeImages": {
+      "description": "Exclude tweets containing images.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeVideos": {
+      "description": "Exclude tweets containing videos.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeNews": {
+      "description": "Exclude tweets containing news.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeVerified": {
+      "description": "Exclude tweets from verified users.",
+      "type": "boolean",
+      "example": true
+    },
+    "excludeNativeVideo": {
+      "description": "Exclude tweets containing native video.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeReplies": {
+      "description": "Exclude reply-tweets from the results.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeLinks": {
+      "description": "Exclude tweets containing links.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeSafe": {
+      "description": "Exclude tweets marked as potentially sensitive.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeQuote": {
+      "description": "Exclude tweets that quote other tweets.",
+      "type": "boolean",
+      "example": false
+    },
+    "excludeProVideo": {
+      "description": "Exclude tweets containing pro video.",
+      "type": "boolean",
+      "example": false
+    },
+    "language": {
+      "description": "Language in which tweets are written. Use the provided options.",
+      "type": "string",
+      "enum": [
+        "any", "ar", "ar-x-fm", "bn", "cs", "da", "de", "el", "en", "es", "fa", "fi", "fil", "fr", "he", "hi", "hu", "id", "it", "ja", "ko", "msa", "nl", "no", "pl", "pt", "ro", "ru", "sv", "ta", "th", "tr", "uk", "ur", "vi", "zh-cn", "zh-tw"
+      ],
+      "example": "en"
+    }
+  },
+  "required": [
+    "searchQueries", "tweetsDesired"
+  ]
+}
