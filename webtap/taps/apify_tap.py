@@ -255,32 +255,6 @@ class ApifyTap(BaseTap):
         self._logger.info("Tap execution time: %s", execution_time)
 
         return tapReturn
-    '''
-    def run_actor(self, actor_input : ActorInput, max_items: int = 5) -> List[str]:
-        # Initialize the ApifyClient with API token
-        if not "APIFY_API_TOKEN" in os.environ:
-            raise ValueError("APIFY_API_TOKEN env variable is not set")
-        apify_api_token = os.environ["APIFY_API_TOKEN"]
-
-        # Set maxItems in the actor input body to the provided parameter value
-        actor_input.body["maxItems"] = max_items
-
-        client = ApifyClient(apify_api_token)
-        # Run the actor and wait for it to finish
-        actor_call_params = {
-            "run_input": actor_input.body,
-            "content_type": None,
-            "memory_mbytes": "1024"
-        }
-
-        actor_call = client.actor(self.apify_tap_actor.actor.id).call(**actor_call_params)
-        # Fetch results from the actor's default dataset
-        dataset_items = client.dataset(actor_call['defaultDatasetId']).list_items().items
-
-        # dataset_items = self.run_actor_http(actor_input, max_items)
-
-        return dataset_items
-    '''
 
     def run_actor(self, actor_input: ActorInput, max_items: int = 5) -> List[str]:
         # Initialize the ApifyClient with API token
@@ -301,16 +275,26 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
+        MAX_LOOP = 30
+        loops = 0
         while True:
+            loops += 1
+            if loops > MAX_LOOP:
+                self._logger.error(f"Actor run didn't finish in {MAX_LOOP} loops")
+                raise Exception(f"Actor run didn't finish in {MAX_LOOP} loops")
+                
+
             # Get the current actor run state
             # Initialize the RunClient with the actor run ID
             run_client = client.run(actor_run_id)
         
             run_data = run_client.get()
             actor_run_state = run_data['status']
+            self._logger.info(f"# {loops}")
+            self._logger.info(f"Actor run state is: {actor_run_state}")
 
             # If the actor run is still running or has succeeded, fetch the items from the dataset
-            if actor_run_state in ['RUNNING', 'SUCCEEDED']:
+            if actor_run_state in ['RUNNING']:
                 dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
                 self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
 
@@ -322,6 +306,11 @@ class ApifyTap(BaseTap):
                     self._logger.info(f"Actor run aborted")
                     return dataset_items
 
+            if actor_run_state in ['SUCCEEDED']:
+                dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
+                self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
+                return dataset_items
+
             # If the actor run is not running and not succeeded, log an error and raise an exception
             elif actor_run_state not in ['RUNNING', 'SUCCEEDED']:
                 self._logger.error(f"Actor run failed with state: {actor_run_state}")
@@ -329,49 +318,6 @@ class ApifyTap(BaseTap):
 
             # Wait for a while before checking the actor run state again
             time.sleep(5)
-    '''
-    def run_actor_http(self, actor_input: ActorInput, max_items: int = 5) -> List[str]:
-        # Check if APIFY_API_TOKEN is set in environment variables
-        if "APIFY_API_TOKEN" not in os.environ:
-            raise ValueError("APIFY_API_TOKEN env variable is not set")
-        apify_api_token = os.environ["APIFY_API_TOKEN"]
-
-        # Set maxItems in the actor input body to the provided parameter value
-        actor_input.body["maxItems"] = max_items
-
-        # Define the URL for the Apify actor
-        url = f"https://api.apify.com/v2/actors/{self.apify_tap_actor.actor.id}/runs?token={apify_api_token}"
-
-        # Define the headers for the HTTP request
-        headers = {'Content-Type': 'application/json'}
-
-        # Define the body for the HTTP request
-        body = json.dumps(actor_input.body)
-
-        # Send the HTTP request and get the response
-        response = requests.post(url, headers=headers, data=body)
-
-        # Check if the request was successful
-        if response.status_code != 200:
-            raise ValueError(f"Request failed with status code {response.status_code}")
-
-        # Get the actor run data from the response
-        actor_run_data = response.json()
-
-        # Fetch results from the actor's default dataset
-        dataset_url = f"https://api.apify.com/v2/datasets/{actor_run_data['defaultDatasetId']}/items?token={apify_api_token}"
-        dataset_response = requests.get(dataset_url)
-
-        # Check if the request was successful
-        if dataset_response.status_code != 200:
-            raise ValueError(f"Request failed with status code {dataset_response.status_code}")
-
-        # Get the dataset items from the response
-        dataset_items = dataset_response.json()
-
-        return dataset_items
-    
-    '''
 
     def truncate_returned_data(self, data: List) -> List:
         MAX_CHARS = 1000

@@ -1,107 +1,77 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "{actor_name} Configuration",
     "type": "object",
-    "description": "Configuration input for the {actor_name}.",
     "properties": {
-        "checkInDate": {
-            "type": "string",
-            "format": "date",
-            "description": "Hotel rooms prices will be calculated for this check-in date. Use the format YYYY-MM-DD. For example, '2023-09-03'.",
-            "example": "2023-09-03"
-        },
-        "checkOutDate": {
-            "type": "string",
-            "format": "date",
-            "description": "Hotel rooms prices will be calculated for this check-out date. Use the format YYYY-MM-DD. For example, '2023-09-09'.",
-            "example": "2023-09-09"
-        },
-        "currency": {
-            "type": "string",
-            "description": "Select the desired currency. For example, 'USD'.",
-            "example": "USD"
-        },
-        "includeAttractions": {
-            "type": "boolean",
-            "description": "If checked, the results will include attractions/things to do for a given location.",
-            "default": false,
-            "example": false
-        },
-        "includeHotels": {
-            "type": "boolean",
-            "description": "If checked, the results will include hotels for a given location.",
-            "default": false,
-            "example": false
-        },
-        "includePriceOffers": {
-            "type": "boolean",
-            "description": "Check this field if you want to extract price offers for hotel listings.",
-            "example": true
-        },
-        "includeRestaurants": {
-            "type": "boolean",
-            "description": "If checked, the results will include restaurants for a given location.",
-            "default": false,
-            "example": false
-        },
-        "includeTags": {
-            "type": "boolean",
-            "description": "Include review tags.",
-            "example": true
-        },
-        "includeVacationRentals": {
-            "type": "boolean",
-            "description": "If checked, the results will include vacation rentals for a given location.",
-            "default": false,
-            "example": false
-        },
-        "language": {
-            "type": "string",
-            "description": "Select the desired language. For example, 'en'.",
-            "example": "en"
-        },
-        "locationFullName": {
-            "type": "string",
-            "description": "This is the location name as you would enter it in a Tripadvisor search. The scraper takes the first result as the desired location. Insert countries, cities, or neighborhoods. For example, 'New York'.",
-            "example": "New York"
-        },
-        "startUrls": {
-            "type": "array",
-            "description": "Array of URLs to start with...",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "url": {
-                        "type": "string",
-                        "format": "uri",
-                        "description": "The URL to start with."
-                    }
-                },
-                "required": ["url"]
-            },
-            "example": [
-                {
-                    "url": "https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html"
-                }
-            ]
-        },        
-        "maxItems": {
-            "type": "integer",
-            "description": "Limit the number of places to be scraped. Leave this field blank or use '0' to get unlimited number of places.",
-            "example": 10
-        },
-        "proxyConfiguration": {
-            "type": "object",
-            "description": "Optionally use Proxy.",
-            "properties": {
-                "useApifyProxy": {
-                    "type": "boolean",
-                    "description": "Set to true to use Proxy.",
-                    "example": true
-                }
-            },
-            "required": ["useApifyProxy"]
-        }
+      "queries": {
+        "type": "string",
+        "description": "Google Search terms and/or full URLs. Enter one item per line.",
+        "examples": ["food in NYC", "https://www.google.com/search?q=food+NYC"]
+      },
+      "maxPagesPerQuery": {
+        "type": "integer",
+        "description": "Maximum number of Google Search result pages to be crawled for each search term or URL.",
+        "examples": [1, 5, 10],
+        "default": 1
+      },
+      "resultsPerPage": {
+        "type": "integer",
+        "enum": [10, 20, 30, 40, 50, 100],
+        "description": "Number of search results for each Google result page.",
+        "examples": [10, 100],
+        "default": 10
+      },
+      "mobileResults": {
+        "type": "boolean",
+        "description": "If true, results for the mobile version of Google search are returned. Otherwise, desktop results are returned.",
+        "examples": [true, false],
+        "default": false
+      },
+      "countryCode": {
+        "type": "string",
+        "description": "Country code determining the IP address of the proxy used for the search and the Google Search domain.",
+        "examples": ["us", "es", "it"]
+      },
+      "languageCode": {
+        "type": "string",
+        "description": "Language code for the search results.",
+        "examples": ["en", "es", "it"]
+      },
+      "locationUule": {
+        "type": "string",
+        "description": "The code for the exact location for the Google search. Use the UULE code generator for this value.",
+        "examples": ["w+CAIQICIbR2xhc2dvcmRhLkdvcmRvbiwgR2xhc2dvdywgVW5pdGVkIEtpbmdkb20="]
+      },
+      "maxConcurrency": {
+        "type": "integer",
+        "description": "Maximum number of search results pages the scraper will load simultaneously.",
+        "examples": [5, 10, 20],
+        "default": 1
+      },
+      "saveHtml": {
+        "type": "boolean",
+        "description": "If true, the HTML of the Google Search results pages will be stored to the default dataset.",
+        "examples": [true, false],
+        "default": false
+      },
+      "saveHtmlToKeyValueStore": {
+        "type": "boolean",
+        "description": "If true, the HTML of the Google Search results pages will be stored to the default key-value store.",
+        "examples": [true, false],
+        "default": false
+      },
+      "includeUnfilteredResults": {
+        "type": "boolean",
+        "description": "If true, low-quality results that Google filters out will be included.",
+        "examples": [true, false],
+        "default": false
+      },
+      "customDataFunction": {
+        "type": "string",
+        "description": "Custom JavaScript function to extract additional data from the HTML of the Google result pages.",
+        "examples": ["async ({ input, $, request, response, html }) => { return { pageTitle: $('title').text(), }; };"]
+      }
     },
-    "required": ["proxyConfiguration", "includeHotels", "includeRestaurants", "includeAttractions", "includeVacationRentals"]
-}
+    "required": ["queries"],
+    "additionalProperties": false
+  }
+  

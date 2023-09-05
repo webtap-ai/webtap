@@ -54,6 +54,7 @@ Alternatively it's possible to define a new Apify Tap by extending the ApifyTap 
    - For the first test run it is useful to not define any input params, for the final test definition you should define as well input_params.   
    
    For each test:   
+   
    8.1. Manually define a base test-case like the following example:   
       ```json   
       {   
@@ -63,15 +64,18 @@ Alternatively it's possible to define a new Apify Tap by extending the ApifyTap 
           }   
       }   
       ```   
-    8.2. Run the test (source `venv/bin/activate` if you are not in the virtual env):   
+   
+   8.2. Run the test (source `venv/bin/activate` if you are not in the virtual env):   
       ```bash   
       python -m tests.apify_tap_test --apify_tap_id={newactor_id} --model=gpt-3.5-turbo --test_num={test_num}   
       ```   
       (example: `python -m tests.apify_tap_test --apify_tap_id=tripadvisor --model=gpt-3.5-turbo --test_num=0`)`   
+
    8.3. Check the logs `logs/{newactor_id}/{today_datetime}/{test_num}.log`. If it has failed (see the log last line):   
       - Have a look at the LangSmith output log; specifically check the prompt text returned before and after the JSON.   
       - Usually, you can "fix" it by adding the "solution" as special instructions and/or as an example.   
       If it says passed, still manually check the test log output (specifically the data returned) to check that it is actually valid and move to (9.d).   
+
    8.4. Paste examples and tests data:   
       - For examples:   
         - Create a new JSON item with two properties `data_task` and `final_json_response`; manually set `data_task` to your given data_task.   
@@ -84,6 +88,7 @@ Alternatively it's possible to define a new Apify Tap by extending the ApifyTap 
           - Manually set `retriever` id and `actorId`.   
           - Set `body` from the `input_params` of the LangSmith JSON returned.   
         - If test is `can_fulfill` false no more work is needed.   
+   
    8.5. Rerun the test case.   
    
 9. **Final Test**: Once all tests/examples are defined run a final test:   

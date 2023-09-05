@@ -1,5 +1,5 @@
 {
-    "id": "maxcopell~tripadvisor",
-    "name": "Tripadvisor API",
-    "description": "Tripadvisor API is a data extraction tool able to get data on hotels, restaurants, things to do, vacation rentals, attractions, tours, and public trips. Get pricing, contact details, amenities, awards, ratings, and more. Download your data in Excel, JSON, CSV, and other formats."
+    "id": "apify~google-search-scraper",
+    "name": "Google Search TAP",
+    "description": "This Google Scraper enables you to scrape Google Search Engine Results Pages (SERPs) and extract organic and paid results, ads, queries, People Also Ask, prices, reviews, like a Google SERP API. Select country or language and extraction of custom attributes, and download your data, no coding needed."
 }

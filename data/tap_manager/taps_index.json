@@ -16,5 +16,8 @@
     },
     "twitter_search" : {
         "config_dir": "twitter_search"
+    },
+    "google" : {
+        "config_dir": "google"
     }
 }

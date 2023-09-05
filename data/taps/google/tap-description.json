@@ -1,17 +1,10 @@
 {
-    "name": "Tripadvisor Scraper Tap",
-    "entities" : [ "hotel", "restaurant", "attraction", "vacation rental"],
+    "name": "Google Scraper Tap",
+    "entities" : [ "google search result", "google seach ads", "google search related queries"],
     "filters" :
-        [ "Location", "Tripadvisor url"],
+        [ "keyword", "Google search URL"],
     "options" :
-        [ "Max results", "Hotel checkin date", "Hotel checkout date", "Hotels include price", "Language", "Currency" ],
+        [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ],
     "special_instructions" :
-        [
-            "{{actor_name}} provides email addresses of the business (hotel, restaurant and any other listing)",
-            "{{actor_name}} can't filter result using entities listings",
-            "{{actor_name}} can't filter by 'cats' frienly or '5 stars hotel only'",
-            "IMPORTANT: Rememeber that {{actor_name}} provides email address in the  output fields",
-            "A vacation rental is not an Airbnb",
-            "Always set proxyConfiguration : {  \"useApifyProxy\": true    }"
-        ]
+        []
 }

@@ -1,157 +1,62 @@
 [
-    {
-        "data_task": "Restaurants in London",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The task can be fulfilled by using the given parameters.",
-            "input_params": {
-                "includeRestaurants": true,
-                "includeHotels": false,
-                "includeAttractions": false,
-                "includeVacationRentals": false,
-                "locationFullName": "London",
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "data_task" : "Things to do in Rome",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The task can be fulfilled by using the given parameters.",
-            "input_params": {
-                "includeRestaurants": false,
-                "includeHotels": false,
-                "includeAttractions": true,
-                "includeVacationRentals": false,
-                "locationFullName": "Rome",
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "data_task" : "Hotels in New York",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The task can be fulfilled by using the given parameters.",
-            "input_params": {
-                "includeRestaurants": false,
-                "includeHotels": true,
-                "includeAttractions": false,
-                "includeVacationRentals": false,
-                "locationFullName": "New York",
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "data_task" : "Listings from the following page https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html",
+    {   
+        "data_task": "Google search results with keyword 'AI Marketing blogs' ",
         "final_json_response" : {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-            "outputCompatibility": "Assuming data returned by Tripadvisor API is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
             "can_fulfill": true,
-            "explanation": "The task can be fulfilled by using the given parameters.",
+            "explanation": "The task can be fulfilled by using the 'queries' parameter in the INPUT SCHEMA to input the keyword 'AI Marketing blogs' and the OUTPUT RETURN FIELDS can provide the search results related to the keyword.",
             "input_params": {
-                "includeRestaurants": true,
-                "includeHotels": true,
-                "includeAttractions": true,
-                "includeVacationRentals": true,
-                "startUrls": [
-                    {
-                        "url": "https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html"
-                    }
-                ],
-                "proxyConfiguration": {
-                    "useApifyProxy": true
-                }
-            },
-            "alternative_fulfillable_data_task": null
+                "queries": "AI Marketing blogs",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            }
         }
     },
-    {
-        "data_task": "Hey, how are you doing?",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": false,
-            "explanation": "You seem to have sent a message that is not a request for data. Sorry, I can only fulfill requests for data.",
-            "alternative_fulfillable_data_task": "Pizza places in New York"
-        }
-    },
-    {
-        "data_task": "Restaurants in London, with email addresses",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
+    {   
+        "data_task": "Google search results of this page https://www.google.com/search?q=food+NYC",   
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
             "can_fulfill": true,
-            "explanation": "The task can be fulfilled by using the given parameters.",
+            "explanation": "The given DATA TASK can be fulfilled by using the 'queries' parameter in the Google Search TAP INPUT SCHEMA to input the URL and the Google Search TAP OUTPUT RETURN FIELDS will return the search results.",
             "input_params": {
-                "includeRestaurants": true,
-                "includeHotels": false,
-                "includeAttractions": false,
-                "includeVacationRentals": false,
-                "locationFullName": "London",
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
+                "queries": "https://www.google.com/search?q=food+NYC",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            }
         }
     },
-    {
-        "data_task": "Pizza places in Mars",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": false,
-            "explanation": "The location is not supported.",
-            "alternative_fulfillable_data_task": "Pizza places in New York"
-        }
-    },
-    {
-        "data_task": "Restaurants in Tokyo, kids friendly only",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": false,
-            "explanation": "There is no filter to filter out any restaurants that are not kids friendly.",
-            "alternative_fulfillable_data_task": "Restaurants in Tokyo"
-        }
-    },
-    {
-        "data_task": "Hotels in Tokyo, 5 stars only",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": false,
-            "explanation": "There is no filter to filter out any hotels that is not 5 stars.",
-            "alternative_fulfillable_data_task": "Hotels in Tokyo"
-        }
-    },
-    {
-        "data_task": "Hotels in London, don't include tags",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
+    {   
+        "data_task": "AI Blog", 
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
             "can_fulfill": true,
-            "explanation": "The task can be fulfilled as the includeTags parameter exists and can be set to false.",
+            "explanation": "The task can be fulfilled by using the 'queries' input parameter to search for 'AI Blog' and the output fields will provide the necessary data related to the search results.",
             "input_params": {
-                "includeRestaurants": true,
-                "includeHotels": false,
-                "includeAttractions": false,
-                "includeVacationRentals": false,
-                "locationFullName": "London",
-                "includeTags" : false,
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
+                "queries": "AI Blog",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            }
         }
-    }
+    },   
+    {   
+    "data_task": "Google search results with keyword 'Food bloggers', set country as Israel, language as Spanish and include unfiltered results '",   "final_json_response" : 
+        {
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The given DATA TASK can be fulfilled as the required parameters are available in the Google Search TAP INPUT SCHEMA and the expected output is included in the Google Search TAP OUTPUT RETURN FIELDS.",
+            "input_params": {
+                "queries": "Food bloggers",
+                "countryCode": "il",
+                "languageCode": "es",
+                "includeUnfilteredResults": true
+            }
+        }
+    }   
 ]
