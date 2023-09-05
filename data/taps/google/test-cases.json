@@ -1,0 +1,155 @@
+[
+    {
+        "data_task": "Restaurants in Miami",
+        "expected_output": {
+            "can_fulfill": true,
+            "retriever": {
+                "type": "apify",
+                "id": "maxcopell~tripadvisor",
+                "data_task": {
+                    "parameters": {
+                        "actorId": "maxcopell~tripadvisor"
+                    },
+                    "body": {
+                        "includeAttractions": false,
+                        "includeHotels": false,
+                        "includeRestaurants": true,
+                        "includeVacationRentals": false,
+                        "locationFullName": "Miami",
+                        "proxyConfiguration": {
+                            "useApifyProxy": true
+                        }
+                    }
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "data_task": "Things to do in Naples, Italy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task" : "Listings from the following page https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Hello World",
+        "expected_output": { "can_fulfill": false }
+    },
+    {
+        "data_task": "Restaurants on the moon",
+        "expected_output": { "can_fulfill": false }
+    },
+    {
+        "data_task": "Restaurant in Miami with email addresses",
+        "expected_output": {
+            "can_fulfill": true,
+            "retriever": {
+                "type": "apify",
+                "id": "maxcopell~tripadvisor",
+                "data_task": {
+                    "parameters": { "actorId": "maxcopell~tripadvisor" },
+                    "body": {
+                        "includeRestaurants": true,
+                        "locationFullName": "Miami",
+                        "proxyConfiguration": { "useApifyProxy": true }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Airbnbs in Mallorca",
+        "expected_output": { "can_fulfill": false }
+    },
+    {
+        "data_task": "Restaurants in Miami, dogs friendly only",
+        "expected_output": { "can_fulfill": false }
+    },
+    {
+        "data_task": "Hotels in Paris, 5 stars only",
+        "expected_output": { "can_fulfill": false }
+    },
+    {
+        "data_task": "Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish",
+        "expected_output": {
+            "can_fulfill": true,
+            "retriever": {
+                "type": "apify",
+                "id": "maxcopell~tripadvisor",
+                "data_task": {
+                    "parameters": { "actorId": "maxcopell~tripadvisor" },
+                    "body": {
+                        "checkInDate": "2023-09-01",
+                        "checkOutDate": "2023-09-07",
+                        "currency": "EUR",
+                        "includeHotels": true,
+                        "includeVacationRentals": true,
+                        "language": "es",
+                        "locationFullName": "Paris",
+                        "proxyConfiguration": { "useApifyProxy": true }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses",
+        "expected_output": {
+            "can_fulfill": true,
+            "retriever": {
+                "type": "apify",
+                "id": "maxcopell~tripadvisor",
+                "data_task": {
+                    "parameters": { "actorId": "maxcopell~tripadvisor" },
+                    "body": {
+                        "checkInDate": "2023-09-01",
+                        "checkOutDate": "2023-09-07",
+                        "currency": "EUR",
+                        "includeHotels": true,
+                        "includeVacationRentals": true,
+                        "language": "es",
+                        "locationFullName": "Paris",
+                        "proxyConfiguration": { "useApifyProxy": true }
+                    }
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Hotels or vacation rentals in Paris, first week of November 2023, currency in EUR, language in Spanish, with email addresses",
+        "expected_output": {
+            "can_fulfill": true,
+            "retriever": {
+                "type": "apify", 
+                "id": "maxcopell~tripadvisor", 
+                "data_task": {
+                    "parameters": {
+                        "actorId": "maxcopell~tripadvisor"
+                    }, 
+                    "body": {
+                        "checkInDate": "2023-11-01", 
+                        "checkOutDate": "2023-11-07", 
+                        "currency": "EUR", 
+                        "includeAttractions": false, 
+                        "includeHotels": true, 
+                        "includePriceOffers": true, 
+                        "includeRestaurants": false, 
+                        "includeVacationRentals": true, 
+                        "language": "es", 
+                        "locationFullName": "Paris", 
+                        "proxyConfiguration": {
+                            "useApifyProxy": true
+                        }
+                    }
+                }
+            }, 
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]
