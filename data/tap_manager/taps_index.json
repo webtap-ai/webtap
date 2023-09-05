@@ -13,5 +13,8 @@
     },
     "airbnb" : {
         "config_dir": "airbnb"
+    },
+    "twitter_search" : {
+        "config_dir": "twitter_search"
     }
 }

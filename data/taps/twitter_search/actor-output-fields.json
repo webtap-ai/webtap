@@ -1,3 +1,3 @@
 {
-    "actor_output_fields" : "user, id, conversation_id, full_text, reply_count, retweet_count, favorite_count, hashtags, symbols, user_mentions, urls, media, url, created_at, view_count, quote_count, is_quote_tweet, is_retweet, is_pinned, is_truncated, startUrl"
+    "actor_output_fields" : "id, text, likes, replies, retweets, quotes, timestamp, url, images"
 }

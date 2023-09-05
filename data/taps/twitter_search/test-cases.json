@@ -1,1 +1,47 @@
-[]
+[
+    {
+        "data_task": "Latest tweets about chatbotui",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "searchQueries": ["chatbotui"],
+                "tweetsDesired": 10,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Latest nothing here",
+        "expected_output": {
+            "can_fulfill": false
+        }
+    },
+    {
+        "data_task": "Mentions of @cnn",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "searchQueries": ["@cnn"],
+                "tweetsDesired": 10,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    },
+    {
+        "data_task": "Twenty tweets mentioning @cnn",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "searchQueries": ["@cnn"],
+                "tweetsDesired": 20,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
+    }
+]
