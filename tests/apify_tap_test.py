@@ -161,6 +161,7 @@ class TestWebtap(unittest.TestCase):
 
         test_num = os.environ.get("TESTRUN_TEST_NUM", None)
         print(f'TESTRUN_TEST_NUM: {test_num}')
+        main_log.info(f"Check logs in the directory: {str(self.logger_main_dir)}")
         if test_num is not None:
             main_log.info(f'Running single test {test_num}...')
             test_num = int(test_num)
