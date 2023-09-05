@@ -1,0 +1,3 @@
+{
+    "actor_input_summary" : "searchQueries, tweetsDesired, repliesDepth, includeUserId, since, until, minReplies, minRetweets, minLikes, fromTheseAccounts, toTheseAccounts, mentioningTheseAccounts, nativeRetweets, media, images, videos, news, verified, nativeVideo, replies, links, safe, quote, proVideo, excludeNativeRetweets, excludeMedia, excludeImages, excludeVideos, excludeNews, excludeVerified, excludeNativeVideo, excludeReplies, excludeLinks, excludeSafe, excludeQuote, excludeProVideo,language"
+}
