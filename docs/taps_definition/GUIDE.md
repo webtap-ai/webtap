@@ -71,24 +71,17 @@ Alternatively it's possible to define a new Apify Tap by extending the ApifyTap 
       ```   
       (example: `python -m tests.apify_tap_test --apify_tap_id=tripadvisor --model=gpt-3.5-turbo --test_num=0`)`   
 
-   8.3. Check the logs `logs/{newactor_id}/{today_datetime}/{test_num}.log`. If it has failed (see the log last line):   
+   8.3. Review the logs and check that the test has passed and it returned correct data.
+      Check the logs `logs/{newactor_id}/{today_datetime}/{test_num}.log` and If it has failed (see the log last line):   
       - Have a look at the LangSmith output log; specifically check the prompt text returned before and after the JSON.   
       - Usually, you can "fix" it by adding the "solution" as special instructions and/or as an example.   
       If it says passed, still manually check the test log output (specifically the data returned) to check that it is actually valid and move to (9.d).   
 
-   8.4. Paste examples and tests data:   
-      - For examples:   
-        - Create a new JSON item with two properties `data_task` and `final_json_response`; manually set `data_task` to your given data_task.   
-        - Open LangSmith, copy the JSON returned by the prompt it into the given `examples.json` `final_json_response`.   
-        - Review and eventually edit the explanation and `alternative_fulfillable_data_task`.   
-      - For test-cases:   
-        - If test is `can_fulfill` true:   
-          - Add property `alternative_fulfillable_data_task` to null.   
-          - Add property `retriever` (take one from another test case - if it's the first take from another tap's test case).   
-          - Manually set `retriever` id and `actorId`.   
-          - Set `body` from the `input_params` of the LangSmith JSON returned.   
-        - If test is `can_fulfill` false no more work is needed.   
-   
+   8.4. Fill in the given examples / tests cases
+      - Check the lates line of the log, right before the "Test passed" line. You will find and example and a test-case template. For each you will find instructions about what should be personalized in the output.
+      - Compile the example and a test-case
+      - Copy and paste the example and test-case into `tap-examples.json` and `test-cases.json` respectively.
+         
    8.5. Rerun the test case.   
    
 9. **Final Test**: Once all tests/examples are defined run a final test:   

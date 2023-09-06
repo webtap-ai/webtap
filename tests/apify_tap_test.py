@@ -72,6 +72,45 @@ class TestWebtap(unittest.TestCase):
         if retriever_result.can_fulfill is False:
             # if can_fulfill
             if test_case['expected_output']["can_fulfill"] is False:
+                
+                # generate example template
+                example_template = {
+                    "data_task": test_case['data_task'],
+                    "final_json_response": {
+                        "inputCompatibility": f"Only using the params provided {tap.name} INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task",
+                        "outputCompatibility": f"Assuming data returned by {tap.name} is reliable and solely based on compatibility between DATA TASK and {tap.name} OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task given {tap.name} OUTPUT RETURN FIELDS",
+                        "can_fulfill": False,
+                        "explanation": f"The data task requested can't be fulfilled {tap.name}.",
+                        "input_params": None,
+                        "alternative_fulfillable_data_request": ""
+                    }
+                }
+                
+                test_case_template = {
+                    "data_task": test_case['data_task'],
+                    "expected_output": {
+                        "can_fulfill": False,
+                        "input_params" : None
+                    }
+                }
+
+                json_test_case_template = json.dumps(test_case_template, indent=4)
+                logger.info("")
+                logger.info("***** Test Case Template to copy in test_cases.json: *****")
+                logger.info(json_test_case_template)
+                logger.info("")
+
+                json_example_template = json.dumps(example_template, indent=4)
+                logger.info("")
+                logger.info("***** Example Template to copy in tap-examples.json: *****")
+                logger.info("(1) Check if one of inputCompatibility or outputCompatibility should be 'Yes', if so correct it")
+                logger.info("(2) Customize explanation")
+                logger.info("(3) Add a custom alternative_fulfillable_data_request")
+                logger.info("")
+                logger.info(json_example_template)
+                logger.info("")
+
+
                 logger.info(f'Test {i} PASSED.')
                 self.results[i] = True
             else:
@@ -86,6 +125,28 @@ class TestWebtap(unittest.TestCase):
             self.results[i] = False
             return
         else:                
+            # generate example template
+            example_template = {
+                "data_task": test_case['data_task'],
+                "final_json_response": {
+                    "inputCompatibility": f"Only using the params provided {tap.name} INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+                    "outputCompatibility": f"Assuming data returned by {tap.name} is reliable and solely based on compatibility between DATA TASK and {tap.name} OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given {tap.name} OUTPUT RETURN FIELDS",
+                    "can_fulfill": True,
+                    "explanation": f"The data task requested can be fulfilled: {tap.name} has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+                    "input_params": retriever_result.retriever.input.body,
+                    "alternative_fulfillable_data_request": None
+                }
+            }
+            
+            test_case_template = {
+                "data_task": test_case['data_task'],
+                "expected_output": {
+                    "can_fulfill": True,
+                    "input_params" : retriever_result.retriever.input.body,
+                    "alternative_fulfillable_data_request": None
+                }
+            }
+            
             tap._logger.info(f"***** Step 2. Testing retrieving sample data *****")
             try :
                 final_data = tap.run_actor(retriever_result.retriever.input)
@@ -103,7 +164,25 @@ class TestWebtap(unittest.TestCase):
                'body' not in test_case['expected_output']['retriever']['data_task'] or \
                not test_case['expected_output']['retriever']['data_task']['body']:
                 tap._logger.info(f"Fields are missing or body doesn't contain any parameters, skipping testing validation of final data.")
+
+                json_test_case_template = json.dumps(test_case_template, indent=4)
+                logger.info("")
+                logger.info("***** Test Case Template to copy in test_cases.json: *****")
+                logger.info("Remove from the input_params any field that is not needed to fulfill the given task (for example maxItems)")
+                logger.info("")
+                logger.info(json_test_case_template)
+                logger.info("")
+
+                json_example_template = json.dumps(example_template, indent=4)
+                logger.info("")
+                logger.info("***** Example Template to copy in tap-examples.json: *****")
+                logger.info("Edit (remove it or set it differently) any input_params that may not to be related to the specif task (for example maxItems)")
+                logger.info("")
+                logger.info(json_example_template)
+                logger.info("")
+                # test has passed            
                 logger.info(f'Test {i} PASSED.')
+
                 self.results[i] = True
                 return
             
@@ -121,6 +200,21 @@ class TestWebtap(unittest.TestCase):
             validate_data_return = tap.validate_data(test_case['data_task'], sample_data)
             logger.info(f'Validation Result: {validate_data_return}')
 
+            json_test_case_template = json.dumps(test_case_template, indent=4)
+            logger.info("")
+            logger.info("***** Test Case Template to copy in test_cases.json: *****")
+            logger.info("Remove from the input_params any field that is not required by the actor and it's not needed to fulfill the given task (for example maxItems)")
+            logger.info("")
+            logger.info(json_test_case_template)
+            logger.info("")
+
+            json_example_template = json.dumps(example_template, indent=4)
+            logger.info("")
+            logger.info("***** Example Template to copy in tap-examples.json: *****")
+            logger.info("Edit (remove it or set it differently) any input_params that may not to be related to the specif task (for example maxItems)")
+            logger.info("")
+            logger.info(json_example_template)
+            logger.info("")
             # test has passed            
             logger.info(f'Test {i} PASSED.')
 

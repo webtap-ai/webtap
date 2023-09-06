@@ -1,12 +1,12 @@
 [
     {
-        "data_task": "Airbnb in Miami's Coconut Grove",
+        "data_task": "Airbnbs in Vallejo, California",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Airbnb in Napoli, first weekend October 2023, max 100 USD",
+        "data_task": "Airbnbs in Napoli, first weekend October 2023, max 100 USD",
         "expected_output": {
             "can_fulfill": true
         }

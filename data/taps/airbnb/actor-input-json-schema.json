@@ -97,7 +97,7 @@
       "limitPoints": {
         "type": "integer",
         "description": "Limits the number of geo points returned by the reverse API.",
-        "example": 100
+        "example": 1
       },
       "timeoutMs": {
         "type": "integer",
