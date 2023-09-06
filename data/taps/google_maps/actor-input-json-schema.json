@@ -1,0 +1,171 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "searchStringsArray": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Array containing the search terms you'd use on Google Maps. Each term requires equal processing time. Use unique terms for efficiency.",
+            "example": ["restaurant", "coffee shop"]
+        },
+        "locationQuery": {
+            "type": "string",
+            "description": "Text location definition. Use with country name if providing Zip codes. Can also use geolocation fields for more specific location input.",
+            "example": "New York, USA"
+        },
+        "maxCrawledPlacesPerSearch": {
+            "type": "integer",
+            "description": "Maximum number of results for each search term. Higher values result in longer scrape times.",
+            "example": 50
+        },
+        "language": {
+            "type": "string",
+            "description": "Language in which result details will be shown.",
+            "example": "en"
+        },
+        "onlyDataFromSearchPage": {
+            "type": "boolean",
+            "description": "If true, only data from the Google Maps search page will be scraped, speeding up the process.",
+            "example": false
+        },
+        "includeWebResults": {
+            "type": "boolean",
+            "description": "If true, it will extract the bottom 'Web results' section of place data.",
+            "example": false
+        },
+        "deeperCityScrape": {
+            "type": "boolean",
+            "description": "If enabled, extracts more places from larger areas by focusing on individual cities inside the region.",
+            "example": false
+        },
+        "oneReviewPerRow": {
+            "type": "boolean",
+            "description": "If true, each review gets its own row in the results. Useful for CSV-friendly results.",
+            "example": false
+        },
+        "reviewsSort": {
+            "type": "string",
+            "enum": ["newest", "mostRelevant", "highestRanking", "lowestRanking"],
+            "description": "Defines the order in which reviews should be sorted.",
+            "example": "newest"
+        },
+        "reviewsFilterString": {
+            "type": "string",
+            "description": "Keyword filter for reviews. Only reviews containing the keyword(s) will be scraped.",
+            "example": "delicious"
+        },
+        "scrapeReviewerName": {
+            "type": "boolean",
+            "description": "If true, the reviewer's name will be extracted.",
+            "example": true
+        },
+        "scrapeReviewerId": {
+            "type": "boolean",
+            "description": "If true, the reviewer's ID will be extracted.",
+            "example": true
+        },
+        "scrapeReviewerUrl": {
+            "type": "boolean",
+            "description": "If true, the reviewer's URL will be extracted.",
+            "example": true
+        },
+        "scrapeReviewId": {
+            "type": "boolean",
+            "description": "If true, the review's ID will be extracted.",
+            "example": true
+        },
+        "scrapeReviewUrl": {
+            "type": "boolean",
+            "description": "If true, the review's URL will be extracted.",
+            "example": true
+        },
+        "scrapeResponseFromOwnerText": {
+            "type": "boolean",
+            "description": "If true, any responses from the business owner to reviews will be extracted.",
+            "example": true
+        },
+        "searchMatching": {
+            "type": "string",
+            "enum": ["all", "only_includes", "only_exact"],
+            "description": "Restrict what places are scraped based on title matching with provided search term.",
+            "example": "all"
+        },
+        "skipClosedPlaces": {
+            "type": "boolean",
+            "description": "If true, skips places that are marked as closed.",
+            "example": false
+        },
+        "maxImages": {
+            "description": "Maximum number of images per place. Set to '0' or leave empty for no images. For all images, use '99999'.",
+            "type": "integer",
+            "example": 5
+        },
+        "zoom": {
+            "description": "Sets the zoom level. It's usually auto-selected based on the location. Manual change may cause cost variation.",
+            "type": "integer",
+            "example": 5
+        },
+        "countryCode": {
+            "description": "Set the country for the search. If used without other geolocation parameters, it scans the whole country.",
+            "type": "string",
+            "example": "us"
+        },
+        "city": {
+            "description": "Set the city for the search. Only use one city name without state or country.",
+            "type": "string",
+            "example": "Pittsburgh"
+        },
+        "state": {
+            "description": "Set the state for the search, mainly for US addresses.",
+            "type": "string",
+            "example": "Pennsylvania"
+        },
+        "county": {
+            "description": "Set the US county for the search.",
+            "type": "string",
+            "example": "Allegheny"
+        },
+        "postalCode": {
+            "description": "Set the postal code of the search area, combined with country. Only one postal code at a time.",
+            "type": "string",
+            "example": "15213"
+        },
+        "customGeolocation": {
+            "description": "Define exact search area using coordinates in [longitude, latitude] format.",
+            "type": "object",
+            "properties": {
+            "longitude": {
+                "type": "number",
+                "example": 40.4406
+            },
+            "latitude": {
+                "type": "number",
+                "example": 79.9959
+            }
+            }
+        },
+        "placeMinimumStars": {
+            "description": "Only scrape places with a minimum rating. Places without reviews are skipped. Limiting reviews can lower places found per credits spent.",
+            "type": "string",
+            "enum": ["two", "twoAndHalf", "three", "threeAndHalf", "four", "fourAndHalf"],
+            "example": "three"
+        },
+        "startUrls": {
+            "description": "Provide a Google Maps URL for search. Use either /maps/search or /maps/place in URL.",
+            "type": "array",
+            "items": {
+            "type": "string",
+            "example": "https://www.google.com/maps/search/falafel+new+york/"
+            }
+        },
+        "allPlacesNoSearchAction": {
+            "description": "Scrape all visible places on the map based on zoom level.",
+            "type": "string",
+            "enum": ["all_places_no_search_ocr", "all_places_no_search_mouse"],
+            "example": "all_places_no_search_mouse"
+        }
+    },
+    "required": []
+}

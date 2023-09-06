@@ -1,0 +1,8 @@
+[
+    {   
+    "data_task": "Restaurants in New York, USA",   
+    "expected_output": {   
+        "can_fulfill": true   
+    }   
+}   
+]
