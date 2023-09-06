@@ -40,5 +40,20 @@
         "expected_output": {
             "can_fulfill": false
         }
+    },
+    {
+        "data_task": "@cnn @ZelenskyyUa",
+        "expected_output": {
+            "can_fulfill": true,
+            "input_params": {
+                "handles": ["cnn", "ZelenskyyUa"],
+                "tweetsDesired": 10,
+                "addUserInfo": true,
+                "startUrls": [],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            }
+        }
     }
 ]
