@@ -19,11 +19,23 @@
       },
       "startUrls": {
         "type": "array",
-        "description": "Array of URLs to specific Airbnb listings. Overrides 'locationQuery'.",
+        "description": "Array of objects containing URLs to specific Airbnb listings. Overrides 'locationQuery'.",
         "items": {
-          "type": "string"
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The URL to a specific Airbnb listing."
+                }
+            },
+            "required": ["url"]
         },
-        "example": []
+        "example": [
+            {
+                "url": "https://www.airbnb.it/rooms/904328986888115645"
+            }
+        ]
       },
       "includeReviews": {
         "type": "boolean",

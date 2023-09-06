@@ -12,21 +12,46 @@
         }
     },
     {
-        "data_task": "Availibility of this Airbnb in October 2023 https://www.airbnb.it/rooms/904328986888115645",
+        "data_task": "Availibility of this Airbnb in next month https://www.airbnb.it/rooms/904328986888115645",
         "expected_output": {
-            "can_fulfill": true
+            "can_fulfill": true,
+            "input_params": {
+                    "startUrls": [
+                    {
+                        "url": "https://www.airbnb.it/rooms/904328986888115645"
+                    }
+                ],
+                "minPrice": 0,
+                "maxPrice": 1000000,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "limitPoints": 1
+            },
+            "alternative_fulfillable_data_request": null
         }
     },
     {
         "data_task": "Places to sleep in Paris",
         "expected_output": {
-            "can_fulfill": true
+            "can_fulfill": true,
+            "input_params": {
+                "locationQuery": "Paris",
+                "startUrls": [],
+                "minPrice": 0,
+                "maxPrice": 1000000,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_request": null
         }
     },
     {
         "data_task": "Hotels in Paris",
         "expected_output": {
-            "can_fulfill": false
+            "can_fulfill": false,
+            "input_params": null
         }
     }
 ]

@@ -86,6 +86,7 @@ class TapManager:
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
         actor_output_fields = self.load_json_data(data_templates['actor_output_fields'])["actor_output_fields"]
         tap_description = self.load_json_data(data_templates['tap_description'])
+        # generating temporoary a list of list of examples since it looks like in this way GPT returns better results
         examples = self.load_json_data(data_templates['examples']),
         test_cases = self.load_json_data(data_templates['test_cases'])
 

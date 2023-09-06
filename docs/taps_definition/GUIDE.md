@@ -82,7 +82,7 @@ Alternatively it's possible to define a new Apify Tap by extending the ApifyTap 
       - Compile the example and a test-case
       - Copy and paste the example and test-case into `tap-examples.json` and `test-cases.json` respectively.
          
-   8.5. Rerun the test case.   
+   8.5. Rerun the test case and re-check that it passes and the data returned is valid.
    
 9. **Final Test**: Once all tests/examples are defined run a final test:   
     ```bash   

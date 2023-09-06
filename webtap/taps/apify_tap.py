@@ -267,7 +267,7 @@ class ApifyTap(BaseTap):
         #actor_input.body["maxItems"] = max_items
         # set memory to 1024 MB
         MEMORY_MB = 1024
-
+        
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
         actor_run = client.actor(self.apify_tap_actor.actor.id).start(memory_mbytes=MEMORY_MB,run_input=actor_input.body)
@@ -277,7 +277,7 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
-        MAX_LOOP = 10
+        MAX_LOOP = 30
         loops = 0
         while True:
             loops += 1
