@@ -66,5 +66,24 @@
             "explanation": "Twitter API does not provide the necessary fields and parameters to retrieve tweets from a generic web URL.",
             "alternative_fulfillable_data_task": "Tweets from @sscnapoli"
         }
+    },
+    {
+        "data_task": "@cnn @ZelenskyyUa",
+        "final_json_response": {
+          "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by the given task",
+          "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Twitter API OUTPUT RETURN FIELDS",
+          "can_fulfill": true,
+          "explanation": "The Twitter API provides all the necessary fields and parameters to retrieve tweets from a specific profile URL.",
+          "input_params": {
+              "handles": ["cnn","ZelenskyyUa"],
+              "tweetsDesired": 10,
+              "addUserInfo": true,
+              "startUrls": [],
+              "proxyConfig": {
+                  "useApifyProxy": true
+              }
+          },
+          "alternative_fulfillable_data_task": null
+        }
     }
 ]
