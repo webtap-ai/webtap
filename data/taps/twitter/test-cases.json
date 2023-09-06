@@ -4,20 +4,24 @@
         "expected_output": {
             "can_fulfill": true,
             "input_params": {
-                "handles": ["ZelenskyyUa"],
+                "handles": [
+                    "ZelenskyyUa"
+                ],
                 "tweetsDesired": 100,
                 "addUserInfo": true,
                 "startUrls": [],
                 "proxyConfig": {
                     "useApifyProxy": true
                 }
-            }
+            },
+            "alternative_fulfillable_data_request": null
         }
     },
     {
         "data_task": "Tweets from the hashtag #ForzaNapoliSempre",
         "expected_output": {
-            "can_fulfill": false
+            "can_fulfill": false,
+            "input_params": null
         }
     },
     {

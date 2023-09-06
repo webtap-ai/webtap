@@ -9,6 +9,7 @@
         [
             "If minPrice is not set, the minimum price will be 0",
             "If maxPrice is not set, the maximum price will be 1000000",
+            "Hotels are not Airbnb, if user asks for hotels return can_fulfill false",
             "Always set proxyConfiguration : {  \"useApifyProxy\": true    }"
         ]
 }

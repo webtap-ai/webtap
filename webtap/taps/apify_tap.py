@@ -264,11 +264,13 @@ class ApifyTap(BaseTap):
         apify_api_token = os.environ["APIFY_API_TOKEN"]
 
         # Set maxItems in the actor input body to the provided parameter value
-        actor_input.body["maxItems"] = max_items
-
+        #actor_input.body["maxItems"] = max_items
+        # set memory to 1024 MB
+        MEMORY_MB = 1024
+        
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
-        actor_run = client.actor(self.apify_tap_actor.actor.id).start(run_input=actor_input.body)
+        actor_run = client.actor(self.apify_tap_actor.actor.id).start(memory_mbytes=MEMORY_MB,run_input=actor_input.body)
         self._logger.info("Actor started, waiting for it to finish...")
 
         self._logger.info(f"Actor run: {actor_run}")

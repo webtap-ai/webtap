@@ -1,21 +1,21 @@
 [
     {
         "data_task": "Tweets from Twitter User @ZelenskyyUa",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by the given task",
-            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Twitter API OUTPUT RETURN FIELDS",
+        "expected_output": {
             "can_fulfill": true,
-            "explanation": "The Twitter API provides all the necessary parameters and fields to retrieve the data requested in the given task.",
             "input_params": {
-                "handles": ["ZelenskyyUa"],
+                "handles": [
+                    "ZelenskyyUa"
+                ],
                 "tweetsDesired": 100,
                 "addUserInfo": true,
                 "startUrls": [],
                 "proxyConfig": {
                     "useApifyProxy": true
-                }
+                },
+                "maxItems": 5
             },
-            "alternative_fulfillable_data_task": null
+            "alternative_fulfillable_data_request": null
         }
     },
     {
@@ -31,11 +31,12 @@
     {
         "data_task": "Tweets from the hashtag #ForzaNapoliSempre",
         "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Twitter API INPUT SCHEMA: No, I am not 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by Twitter API is reliable and solely based on compatibility between DATA TASK and Twitter API OUTPUT RETURN FIELDS:No, I am not 100% sure that I can fulfill the given tas",
+            "inputCompatibility": "Only using the params provided Twitter Scraper Tap INPUT SCHEMA: No, I am not 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Twitter Scraper Tap is reliable and solely based on compatibility between DATA TASK and Twitter Scraper Tap OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Twitter Scraper Tap OUTPUT RETURN FIELDS",
             "can_fulfill": false,
-            "explanation": "Twitter API does not provide the necessary fields and parameters to retrieve tweets from a hashtag.",
-            "alternative_fulfillable_data_task": "Tweets from @sscnapoli"
+            "explanation": "The data task requested can't be fulfilled Twitter Scraper Tap as Twitter scraper doesn't support filter by hashtag.",
+            "input_params": null,
+            "alternative_fulfillable_data_request": "Tweets from @sscnapoli"
         }
     },
     {
