@@ -8,7 +8,7 @@
     "special_instructions" :
         [
             "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
-            "Twitter API support only Twitter profile URLs as input",
-            "Twitter API doesn't support #hashtajs or @mentions"
+            "Twitter Search Scraper Tap supports only Twitter profile URLs as input",
+            "Twitter Search Scraper Tap doesn't support #hashtajs or @mentions"
         ]
 }
