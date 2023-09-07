@@ -19,5 +19,8 @@
     },
     "google" : {
         "config_dir": "google"
+    },
+    "google_maps" : {
+        "config_dir": "google_maps"
     }
 }

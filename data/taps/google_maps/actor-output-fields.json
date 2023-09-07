@@ -1,0 +1,3 @@
+{
+    "actor_output_fields" : "url, searchString, rank, searchPageUrl, searchPageLoadedUrl, isAdvertisement, title, description, price, categoryName, address, neighborhood, street, city, postalCode, state, countryCode, website, phone, phoneUnformatted, claimThisBusiness, location, locatedIn, plusCode, menu, totalScore, permanentlyClosed, temporarilyClosed, placeId, categories, cid, reviewsCount, reviewsDistribution, imagesCount, scrapedAt, reserveTableUrl, googleFoodUrl, hotelStars, hotelDescription, checkInDate, checkOutDate, similarHotelsNearby, openingHours, peopleAlsoSearch, placesTags, reviewsTags, additionalInfo, gasPrices, questionsAndAnswers, updatesFromCustomers, webResults, orderBy, imageUrls, reviews"
+}
