@@ -1,0 +1,35 @@
+[
+    {
+        "data_task": "Instagram posts by @zelenskiy_official",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Instagram Profile Post Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram Profile Post Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Profile Post Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Profile Post Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Instagram Profile Post Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "username": [
+                    "zelenskiy_official"
+                ],
+                "resultsLimit": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "data_task": "Instagram posts by @leomessi and @cristiano, return 100 posts",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Instagram Profile Post Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram Profile Post Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Profile Post Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Profile Post Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Instagram Profile Post Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "username": [
+                    "leomessi",
+                    "cristiano"
+                ],
+                "resultsLimit": 100
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

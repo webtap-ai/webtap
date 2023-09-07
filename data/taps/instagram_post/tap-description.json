@@ -1,0 +1,12 @@
+{
+    "name": "Instagram Profile Post Scraper",
+    "entities" : [ "Instagram post"],
+    "filters" :
+        [ "Instagram username"],
+    "options" :
+        [ "Maximum posts per profile"],
+    "special_instructions" :
+        [
+            "Always set username as an array of strings, even if you only want to scrape one profile."
+        ]
+}

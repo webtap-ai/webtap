@@ -22,5 +22,8 @@
     },
     "google_maps" : {
         "config_dir": "google_maps"
+    },
+    "instagram_post" : {
+        "config_dir": "instagram_post"
     }
 }

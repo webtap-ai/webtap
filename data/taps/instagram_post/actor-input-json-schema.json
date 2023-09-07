@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Apify Actor Instagram Input Schema",
+    "description": "This schema represents the input data for an Apify Actor that scrapes Instagram profiles.",
+    "properties": {
+      "username": {
+        "type": "array",
+        "description": "An array of Instagram usernames or profile URLs. Use this field to specify the profiles you want to scrape.",
+        "items": {
+          "type": "string",
+          "description": "Instagram username or profile URL."
+        },
+        "minItems": 1,
+        "examples": ["zelenskiy_official", "instagram"]
+      },
+      "resultsLimit": {
+        "type": "integer",
+        "description": "The maximum number of posts you want to scrape per profile. For example, if set to 5, you'll get 5 posts for each profile provided in the 'username' array.",
+        "minimum": 1,
+        "examples": [30]
+      }
+    },
+    "required": ["username"]
+  }
