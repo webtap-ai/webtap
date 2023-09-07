@@ -1,14 +1,20 @@
 [
     {
     "data_task": "Restaurants in New York, USA",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+    "data_task": "Google Maps listings from page https://www.google.com/maps/search/falafel+new+york/",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+    "data_task": "Thai Restaurants SF",
     "expected_output": {
         "can_fulfill": true
     }
-  },
-  {
-  "data_task": "Thai Restaurants SF",
-  "expected_output": {
-      "can_fulfill": true
   }
-}
 ]

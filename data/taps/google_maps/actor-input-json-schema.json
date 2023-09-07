@@ -151,14 +151,26 @@
             "type": "string",
             "enum": ["two", "twoAndHalf", "three", "threeAndHalf", "four", "fourAndHalf"],
             "example": "three"
-        },
+        },        
         "startUrls": {
-            "description": "Provide a Google Maps URL for search. Use either /maps/search or /maps/place in URL.",
             "type": "array",
+            "description": "Array of objects containing URLs to specific Google Maps search page. Overrides 'locationQuery'.",
             "items": {
-            "type": "string",
-            "example": "https://www.google.com/maps/search/falafel+new+york/"
-            }
+                "type": "object",
+                "properties": {
+                    "url": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "The URL to a specific Google Maps Search."
+                    }
+                },
+                "required": ["url"]
+            },
+            "example": [
+                {
+                    "url": "https://www.google.com/maps/search/falafel+new+york/"
+                }
+            ]
         },
         "allPlacesNoSearchAction": {
             "description": "Scrape all visible places on the map based on zoom level.",

@@ -277,12 +277,15 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
-        MAX_LOOP = 30
+        MAX_LOOP = 60
         loops = 0
         while True:
             loops += 1
             if loops > MAX_LOOP:
                 self._logger.error(f"Actor run didn't finish in {MAX_LOOP} loops")
+                # abort the actor run
+                run_client.abort()
+                self._logger.info(f"Aborting actor run")
                 raise Exception(f"Actor run didn't finish in {MAX_LOOP} loops")
 
 
@@ -296,7 +299,7 @@ class ApifyTap(BaseTap):
             self._logger.info(f"Actor run state is: {actor_run_state}")
 
             # If the actor run is still running or has succeeded, fetch the items from the dataset
-            if actor_run_state in ['RUNNING']:
+            if actor_run_state in ['RUNNING','READY']:
                 dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
                 self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
 

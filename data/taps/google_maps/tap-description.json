@@ -1,5 +1,5 @@
 {
-    "name": "Google Maps Tap",
+    "name": "Google Maps",
     "entities" : [ "Places", "Restaurants", "Hotels", "Stores"],
     "filters" :
         [ "Search terms", "Location"],
@@ -9,6 +9,8 @@
         [
             "Never add the customGeolocation param, simply skip it",
             "Never add the zoom param, simply skip it",
-            "Set countryCode to lowercase, e.g. \"us\" instead of \"US\""
+            "Set countryCode to lowercase, e.g. \"us\" instead of \"US\"",
+            "If you input an URL skip searchStringsArray and locationQuery",
+            "If a URL is requested use start url and skip searchStringsArray and locationQuery"
         ]
 }
