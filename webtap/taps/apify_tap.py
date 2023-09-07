@@ -277,7 +277,7 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
-        MAX_LOOP = 30
+        MAX_LOOP = 60
         loops = 0
         while True:
             loops += 1
