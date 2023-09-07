@@ -87,7 +87,7 @@ class ApifyTap(BaseTap):
     test_cases: list
     apify_tap_actor: ApifyTapActor
     openai_model : str = "gpt-3.5-turbo"
-    MESSAGE_LENGTH_USE_16k : int = 30000
+    MESSAGE_LENGTH_USE_16k : int = 15000
     data_file_dir : Path = Path(files(__package__).joinpath("../../data/apify_tap/"))
     prompt_file : Path = data_file_dir.joinpath("prompt.txt")
     output_response_schema_file : Path = data_file_dir.joinpath("output_response_schema.json")
@@ -277,15 +277,12 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
-        MAX_LOOP = 60
+        MAX_LOOP = 30
         loops = 0
         while True:
             loops += 1
             if loops > MAX_LOOP:
                 self._logger.error(f"Actor run didn't finish in {MAX_LOOP} loops")
-                # abort the actor run
-                run_client.abort()
-                self._logger.info(f"Aborting actor run")
                 raise Exception(f"Actor run didn't finish in {MAX_LOOP} loops")
 
 
@@ -299,7 +296,7 @@ class ApifyTap(BaseTap):
             self._logger.info(f"Actor run state is: {actor_run_state}")
 
             # If the actor run is still running or has succeeded, fetch the items from the dataset
-            if actor_run_state in ['RUNNING','READY']:
+            if actor_run_state in ['RUNNING']:
                 dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
                 self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
 
