@@ -82,7 +82,7 @@ class TestWebtap(unittest.TestCase):
                         "can_fulfill": False,
                         "explanation": f"The data task requested can't be fulfilled {tap.name}.",
                         "input_params": None,
-                        "alternative_fulfillable_data_request": ""
+                        "alternative_fulfillable_data_task": ""
                     }
                 }
                 
@@ -105,7 +105,7 @@ class TestWebtap(unittest.TestCase):
                 logger.info("***** Example Template to copy in tap-examples.json: *****")
                 logger.info("(1) Check if one of inputCompatibility or outputCompatibility should be 'Yes', if so correct it")
                 logger.info("(2) Customize explanation")
-                logger.info("(3) Add a custom alternative_fulfillable_data_request")
+                logger.info("(3) Add a custom alternative_fulfillable_data_task")
                 logger.info("")
                 logger.info(json_example_template)
                 logger.info("")
@@ -134,7 +134,7 @@ class TestWebtap(unittest.TestCase):
                     "can_fulfill": True,
                     "explanation": f"The data task requested can be fulfilled: {tap.name} has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
                     "input_params": retriever_result.retriever.input.body,
-                    "alternative_fulfillable_data_request": None
+                    "alternative_fulfillable_data_task": None
                 }
             }
             
@@ -143,7 +143,7 @@ class TestWebtap(unittest.TestCase):
                 "expected_output": {
                     "can_fulfill": True,
                     "input_params" : retriever_result.retriever.input.body,
-                    "alternative_fulfillable_data_request": None
+                    "alternative_fulfillable_data_task": None
                 }
             }
             
@@ -264,6 +264,11 @@ class TestWebtap(unittest.TestCase):
         else:
             # existing code to run all tests
             main_log.info(f'Running {len(test_cases)} tests in parallel...')
+
+            # check at least 1 test is present
+            if len(test_cases) < 1:
+                main_log.error(f"No tests have been found for {apify_tap_id}")
+                return
 
             futures = []
             with ThreadPoolExecutor() as executor:

@@ -15,7 +15,7 @@
                 },
                 "maxItems": 5
             },
-            "alternative_fulfillable_data_request": null
+            "alternative_fulfillable_data_task": null
         }
     },
     {
@@ -36,7 +36,7 @@
             "can_fulfill": false,
             "explanation": "The data task requested can't be fulfilled Twitter Scraper Tap as Twitter scraper doesn't support filter by hashtag.",
             "input_params": null,
-            "alternative_fulfillable_data_request": "Tweets from @sscnapoli"
+            "alternative_fulfillable_data_task": "Tweets from @sscnapoli"
         }
     },
     {

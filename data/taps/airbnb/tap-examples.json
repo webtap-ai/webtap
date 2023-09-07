@@ -30,7 +30,7 @@
                 "debugLog": false,
                 "maxItems": 5
             },
-            "alternative_fulfillable_data_request": null
+            "alternative_fulfillable_data_task": null
         }
     },
     {
@@ -64,7 +64,7 @@
                 "debugLog": false,
                 "maxItems": 5
             },
-            "alternative_fulfillable_data_request": null
+            "alternative_fulfillable_data_task": null
         }
     },
     {
@@ -101,7 +101,7 @@
                 "timeoutMs": 60000,
                 "debugLog": false
             },
-            "alternative_fulfillable_data_request": null
+            "alternative_fulfillable_data_task": null
         }
     },
     {
@@ -134,7 +134,7 @@
                 "timeoutMs": 60000,
                 "debugLog": false
             },
-            "alternative_fulfillable_data_request": null
+            "alternative_fulfillable_data_task": null
         }
     },
     {
@@ -145,7 +145,7 @@
             "can_fulfill": false,
             "explanation": "The data task requested can't be fulfilled Airbnb Scraper Tap as it doesn't return hotels",
             "input_params": null,
-            "alternative_fulfillable_data_request": "Airbnbs in Paris"
+            "alternative_fulfillable_data_task": "Airbnbs in Paris"
         }
     }
 ]
