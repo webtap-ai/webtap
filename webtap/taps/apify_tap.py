@@ -13,7 +13,7 @@ from typing import List, Dict
 from apify_client import ApifyClient
 
 class Actor(BaseModel):
-    ''' 
+    '''
     Actor is a representation of an Apify Actor: it contains original Apify Actor data
     '''
     id : str
@@ -22,12 +22,12 @@ class Actor(BaseModel):
 
 class ActorParameters(BaseModel):
     '''
-    ActorParameters is a representation of an Apify Actor API parameters as they are described in Apify API documentation 
+    ActorParameters is a representation of an Apify Actor API parameters as they are described in Apify API documentation
     (They are usually added as a query string to the actor api url)
     '''
     actorId: str  # Actor ID or a tilde-separated owner's username and actor name.
     timeout: int = None  # Optional timeout for the run, in seconds.
-    memory: int = None  # Memory limit for the run, in megabytes. 
+    memory: int = None  # Memory limit for the run, in megabytes.
     maxItems: int = None  # The maximum number of items that the actor run should return.
     build: str = None  # Specifies the actor build to run.
     waitForFinish: int = None  # The maximum number of seconds the server waits for the run to finish.
@@ -75,7 +75,7 @@ class ApifyTapActor(BaseModel):
     output_fields: str
 
 class ApifyTap(BaseTap):
-    
+
     """
     Apify Tap is a generic tap that is able to manage/scrape/validate data from an Apify Actor.
     It works by simply defining info about the actor and the prompt template
@@ -99,7 +99,7 @@ class ApifyTap(BaseTap):
     def output_response_schema(self):
         with open(self.output_response_schema_file) as f:
             return json.load(f)
-    
+
     def load_llm(self):
         # check if openai os env variable is set
         if "OPENAI_API_KEY" not in os.environ:
@@ -108,7 +108,7 @@ class ApifyTap(BaseTap):
         # set langchanin verbose to true if loggin level is info or above
         verbose = self._logger.getEffectiveLevel() <= logging.INFO
         self._llm = ChatOpenAI(temperature=0, model=self.openai_model, verbose=verbose)
-        
+
     def __init__(self, *args, **kwargs):
         # Extract the necessary attributes from kwargs
         name = kwargs.get('name')
@@ -119,7 +119,7 @@ class ApifyTap(BaseTap):
         # Generate the description
         # This is done before calling the super init function to ensure that the description is available for use in the parent class's init function
         description = f"This is {name}, it can return you data about {', '.join(entities)}, filtering results by {', '.join(filters)}. Following options are accepted: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
-        
+
         # Generate the chat presentation
         # This is done before calling the super init function to ensure that the chat presentation is available for use in the parent class's init function
         chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
@@ -135,12 +135,12 @@ class ApifyTap(BaseTap):
         self._logger = logging.getLogger(__name__)
         # Init llm
         self.load_llm()
-    
+
     def set_llm_model( self, model_name: str ):
         self.openai_model = model_name
         # regenerate LLM
         self.load_llm()
-        
+
     def extract_last_json_object(self, text):
         stack = []
         json_end = None
@@ -155,7 +155,7 @@ class ApifyTap(BaseTap):
                     return json.loads(text[i:json_end+1])
 
         raise ValueError('No valid JSON object found in the text.')
-    
+
     def format_json(self, json_obj, **kwargs):
         """
         Formats a JSON object by replacing placeholders with actual values.
@@ -175,7 +175,7 @@ class ApifyTap(BaseTap):
         formatted_json_obj = json.loads(json_str)
 
         return formatted_json_obj
-    
+
     def generate_prompt_messages(self, data_task: str) -> List[str]:
         # generate the chat messages
         human_message_prompt = HumanMessagePromptTemplate.from_template(self.prompt_template)
@@ -192,30 +192,30 @@ class ApifyTap(BaseTap):
         )
         messages = chat_prompt_formatted.to_messages()
         return messages
-    
+
     def get_retriever(self, data_task : str) -> ApifyRetrieverResult:
-        
-        # init execution start time 
+
+        # init execution start time
         execution_start_time = time.time()
         self._logger.info(" **** Starting retriever retrieval ****")
-        
-        
+
+
         # generate the chat messages
         messages = self.generate_prompt_messages(data_task)
         # log the full chat prompt
         self._logger.info("Full chat prompt: %s", messages)
-        
+
         # run the chain
         # if with gpt3.5 messages length is over 2000 chars use gpt 16k
         messages_length = len("".join(str(message) for message in messages))
         if self.openai_model == "gpt-3.5-turbo" and messages_length > self.MESSAGE_LENGTH_USE_16k:
             self._logger.info("Chat prompt length is over %s, using gpt-3.5-turbo-16k", self.MESSAGE_LENGTH_USE_16k)
             self.set_llm_model("gpt-3.5-turbo-16k")
-        
+
         chain_output = self._llm( messages )
 
         # log prompt response
-        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)        
+        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)
 
         # check that chain_output is not empty and is object with content property
         if( chain_output is None or not hasattr(chain_output, "content")):
@@ -230,24 +230,24 @@ class ApifyTap(BaseTap):
         # check that prompt_response contains can_fulfill and explanation
         if( "can_fulfill" not in prompt_response or "explanation" not in prompt_response):
             raise ValueError("Data returned from LLM doesn't contain can_fulfill or explanation")
-        
+
         # log prompt response
-        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response) 
+        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response)
 
         retriever = None
         if prompt_response["can_fulfill"]:
             retriever = ApifyRetriever(
-                id=self.apify_tap_actor.actor.id, 
-                input=ActorInput(parameters=ActorParameters(actorId=self.apify_tap_actor.actor.id), 
+                id=self.apify_tap_actor.actor.id,
+                input=ActorInput(parameters=ActorParameters(actorId=self.apify_tap_actor.actor.id),
                 body=prompt_response["input_params"]
                 )
             )
 
         # create tap return
         tapReturn = ApifyRetrieverResult(
-            can_fulfill=prompt_response["can_fulfill"], 
-            explanation=prompt_response["explanation"], 
-            retriever=retriever, 
+            can_fulfill=prompt_response["can_fulfill"],
+            explanation=prompt_response["explanation"],
+            retriever=retriever,
             alternative_fulfillable_data_task=prompt_response.get("alternative_fulfillable_data_task", None)
         )
 
@@ -267,7 +267,7 @@ class ApifyTap(BaseTap):
         #actor_input.body["maxItems"] = max_items
         # set memory to 1024 MB
         MEMORY_MB = 1024
-        
+
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
         actor_run = client.actor(self.apify_tap_actor.actor.id).start(memory_mbytes=MEMORY_MB,run_input=actor_input.body)
@@ -277,29 +277,26 @@ class ApifyTap(BaseTap):
 
         # Loop until the actor run is finished
         actor_run_id = actor_run['id']
-        MAX_LOOP = 60
+        MAX_LOOP = 30
         loops = 0
         while True:
             loops += 1
             if loops > MAX_LOOP:
                 self._logger.error(f"Actor run didn't finish in {MAX_LOOP} loops")
-                # abort the actor run
-                run_client.abort()
-                self._logger.info(f"Aborting actor run")
                 raise Exception(f"Actor run didn't finish in {MAX_LOOP} loops")
-                
+
 
             # Get the current actor run state
             # Initialize the RunClient with the actor run ID
             run_client = client.run(actor_run_id)
-        
+
             run_data = run_client.get()
             actor_run_state = run_data['status']
             self._logger.info(f"# {loops}")
             self._logger.info(f"Actor run state is: {actor_run_state}")
 
             # If the actor run is still running or has succeeded, fetch the items from the dataset
-            if actor_run_state in ['RUNNING','READY']:
+            if actor_run_state in ['RUNNING']:
                 dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
                 self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
 
@@ -343,10 +340,10 @@ class ApifyTap(BaseTap):
                 # Delete the first key from the keys_to_delete list
                 del item[keys_to_delete[0]]
                 json_str = json.dumps(item)  # Update the json string
-            
+
             # if json_str is still too long, eliminate the last property
             while len(json_str) > MAX_CHARS:
-                # get the last item of item.items()                
+                # get the last item of item.items()
                 if len(item.items()) == 0:
                     break
                 last_item = list(item.items())[-1]
@@ -355,7 +352,7 @@ class ApifyTap(BaseTap):
                 json_str = json.dumps(item)  # Update the json string
 
         return data
-    
+
     def get_retriever_and_run(self, data_task : str) -> Dict:
         '''
         Given a data task, gets a retriever and then runs the Apify actor with provided model to get the data
@@ -369,7 +366,7 @@ class ApifyTap(BaseTap):
 
         if retriever_result.can_fulfill is False:
             return result
-        
+
         # run actor
         try :
             actor_return = self.run_actor(retriever_result.retriever.input)
@@ -401,9 +398,9 @@ class ApifyTap(BaseTap):
         '''
         # init logging, openai
         execution_start_time = time.time()
-        
+
         self._logger.info(" **** Starting data validation ****")
-        
+
         # load the prompt from the external file
         data_validator_prompt_file = self.data_file_dir.joinpath("data_validator_prompt.txt")
         data_validator_prompt = data_validator_prompt_file.read_text()
@@ -424,7 +421,7 @@ class ApifyTap(BaseTap):
         chain_output = self._llm( messages )
 
         # log prompt response
-        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)        
+        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)
 
         # check that chain_output is not empty and is object with content property
         if( chain_output is None or not hasattr(chain_output, "content")):
@@ -435,18 +432,18 @@ class ApifyTap(BaseTap):
             prompt_response = self.extract_last_json_object(chain_output.content)
         except ValueError:
             raise ValueError("Data returned from LLM doesn't contain a valid json")
-        
+
         # log prompt response
-        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response) 
+        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response)
 
         execution_time = time.time() - execution_start_time
         self._logger.info("Validation execution time: %s", execution_time)
-        
+
         # check that prompt_response contains is_valid and explanation
         if( "is_valid" not in prompt_response or "explanation" not in prompt_response):
             raise ValueError("Data returned from LLM doesn't contain is_valid or explanation")
-        
+
         return ValidateDataResult(
-            is_valid=prompt_response["is_valid"], 
+            is_valid=prompt_response["is_valid"],
             explanation=prompt_response["explanation"]
         )
