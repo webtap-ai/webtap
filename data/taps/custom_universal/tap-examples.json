@@ -22,6 +22,28 @@
     }
 }, 
 {
+    "data_task": "List of subcategories from this url https://dmoz-odp.org/Arts/, return json with fields category_name, category_url",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://dmoz-odp.org/Arts/"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Return a list of subcategories in JSON format with fields category_name and category_url.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
+},
+{
     "data_task": "Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",
     "final_json_response": {
         "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",

@@ -6,6 +6,12 @@
         }   
     },
     {   
+        "data_task": "List of subcategories from this url https://dmoz-odp.org/Arts/, return json with fields category_name, category_url",
+        "expected_output": {   
+            "can_fulfill": true   
+        }
+    },
+    {   
         "data_task": "Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",   
         "expected_output": {   
             "can_fulfill": true   
