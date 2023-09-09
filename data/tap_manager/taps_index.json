@@ -25,5 +25,8 @@
     },
     "instagram_post" : {
         "config_dir": "instagram_post"
+    },
+    "universal" : {
+        "class_" : "webtap.taps.custom.universal_tap.UniversalTap"
     }
 }

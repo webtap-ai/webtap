@@ -1,0 +1,3 @@
+{
+    "actor_input_summary" : "startUrls, globs, linkSelector, openaiApiKey, instructions, model, targetSelector, maxCrawlingDepth, maxPagesPerCrawl, useStructureOutput, schema, proxyConfiguration"
+}

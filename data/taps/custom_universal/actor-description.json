@@ -1,0 +1,5 @@
+{
+    "id": "drobnikj~extended-gpt-scraper",
+    "name": "Extended GPT Scraper",
+    "description": "Extract data from any website and feed it into GPT via the OpenAI API. Use ChatGPT to proofread content, analyze sentiment, summarize reviews, extract contact details, and much more."
+}

@@ -293,6 +293,10 @@ class TestWebtap(unittest.TestCase):
                 else:
                     main_log.warning(f'Test {i} NOT PASSED.')
             # Continue with scoring logic
+            # check if at least 1 test has been executed
+            if len(self.results) < 1:
+                main_log.error(f"No test has been executed")
+                return
             score = sum(self.results.values()) / len(self.results) * 100
             main_log.info(f'Final score for this tap is: {score}/100 with {sum(self.results.values())} passed tests out of {len(self.results)}.')
 

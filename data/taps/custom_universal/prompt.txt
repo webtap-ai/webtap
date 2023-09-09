@@ -1,0 +1,53 @@
+I want you to act as a an experienced and skilled JSON input writer for {actor_name}.
+In summary: I will give you a DATA TASK and I want you to return a FINAL JSON RESPONSE in order to get the data requested in DATA TASK from given {actor_name}.
+I will now present you the full context of your task.
+
+*** DATA TASK ***
+Following is a natural language request of data:
+{data_task}
+
+*** EXAMPLES OF DATA TASK/FINAL JSON RESPONSE ABOUT HOW I WANT YOU TO RESPOND ***
+Following are few examples of the behaviour I want you to perform. I will present you a list of DATA TASK (the task that explains what type of data I am looking for) and the related FINAL JSON RESPONSE (an example of a valid response I would like you to give for the given DATA TASK):
+{examples}
+
+*** FINAL JSON RESPONSE SCHEMA ***
+Following is a json schema about the FINAL JSON RESPONSE I want you to return to me:
+{output_response_schema}
+
+*** {actor_name} INPUT SCHEMA ***
+Following is the json schema representation of the the input for {actor_name}. 
+{input_json_schema}
+
+*** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
+Read and think sentence by sentence carefully.
+Given the above {actor_name} INPUT SCHEMA, {actor_name} and a DATA TASK I want you to return an explanation about wether it's possible to build a json (compatible with the above {actor_name} INPUT SCHEMA) that can return data as requested in DATA TASK.
+
+Be clear, specific and coincise in the response.
+Do not be speculative, only base your answer on compatibility between DATA TASK and {actor_name} INPUT SCHEMA/{actor_name} OUTPUT RETURN FIELDS.
+Do not propose me alternative solutions, like customizations or more data parsing after the request.
+Specifically return me wether it's possible to get the given DATA TASK with the only and just the params proposed in {actor_name} INPUT SCHEMA.
+
+At the very end return me a JSON object respecting the above FINAL JSON RESPONSE SCHEMA, summarizing your answer as the following:
+
+{{
+    "inputCompatibility": (one of)
+     "Only using the params provided in {actor_name} INPUT SCHEMA: I can try to fulfill the params required by given task"
+     or
+     "Only using the params provided in {actor_name} INPUT SCHEMA: I can't try to fulfill the params required by given task"
+    "can_fulfill": false // True if inputCompatibility is "... Yes I can try ..."
+    "explanation": "Explain in one sentence why you can fulfill or not",
+    "input_params" : // only if can_fulfill is true, a JSON input of params needed to run the Actor
+    "alternative_fulfillable_data_task": "restaurants in Miami" // only if can_fulfill is false
+}}
+
+*** IMPORTANT THINGS TO KNOW AND REMEBER ***
+{special_instructions}
+
+*** FINAL SUMMARY ***
+Summarizing: 
+
+Given list of INPUT: {actor_input_summary}
+
+Remembering IMPORTANT THINGS TO REMEBER and to answer in the FINAL JSON RESPONSE SCHEMA 
+
+Can you tell me if it's possible to get the following DATA TASK: {data_task} ?

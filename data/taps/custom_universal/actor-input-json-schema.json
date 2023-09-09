@@ -1,0 +1,132 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "startUrls": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "A static list of URLs to scrape."
+            }
+          },
+          "required": ["url"]
+        },
+        "description": "An array of URLs to begin scraping from. Each URL should be an object with a 'url' key.",
+        "example": [{"url": "https://news.ycombinator.com/"}]
+      },
+      "globs": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "description": "Glob pattern to match links on the page."
+        },
+        "description": "An array of glob patterns to match against links on a page.",
+        "example": ["*.html", "/news/*"]
+      },
+      "linkSelector": {
+        "type": "string",
+        "description": "CSS selector to target specific links on the page.",
+        "example": "a[href]"
+      },
+      "openaiApiKey": {
+        "type": "string",
+        "description": "API key to access OpenAI.",
+        "example": "YOUR_OPENAI_API_KEY"
+      },
+      "instructions": {
+        "type": "string",
+        "description": "Specific instructions for GPT.",
+        "example": "Summarize this page in three sentences."
+      },
+      "model": {
+        "type": "string",
+        "enum": ["gpt-3.5-turbo", "gpt-3.5-turbo-16k", "gpt-4", "gpt-4-32k", "text-davinci-003"],
+        "description": "The specific GPT model to use.",
+        "example": "gpt-3.5-turbo"
+      },
+      "targetSelector": {
+        "type": "string",
+        "description": "A CSS selector of the HTML element on the page to focus on for instructions.",
+        "example": "div#content"
+      },
+      "maxCrawlingDepth": {
+        "type": "integer",
+        "description": "Specifies how deep the scraper will go relative to the start URL. If set to 0, there's no limit.",
+        "example": 2
+      },
+      "maxPagesPerCrawl": {
+        "type": "integer",
+        "description": "Maximum number of pages the scraper will open. 0 means unlimited.",
+        "example": 10
+      },
+      "useStructureOutput": {
+        "type": "boolean",
+        "description": "Transforms the answer into a structured format if true.",
+        "example": true
+      },
+      "schema": {
+        "type": "object",
+        "description": "Defines the structured format for output. Uses JSON Schema specification.",
+        "properties": {
+          "type": {
+            "type": "string",
+            "example": "object"
+          },
+          "properties": {
+            "type": "object",
+            "description": "Defines the properties of the object.",
+            "example": {
+              "title": {
+                "type": "string",
+                "description": "Page title"
+              },
+              "description": {
+                "type": "string",
+                "description": "Page description"
+              }
+            }
+          },
+          "required": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": ["title", "description"]
+          }
+        },
+        "example": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "description": "Page title"
+            },
+            "description": {
+              "type": "string",
+              "description": "Page description"
+            }
+          },
+          "required": ["title", "description"]
+        }
+      },
+      "proxyConfiguration": {
+        "type": "object",
+        "properties": {
+          "useApifyProxy": {
+            "type": "boolean",
+            "description": "Specifies if the Apify Proxy is used.",
+            "example": true
+          }
+        },
+        "description": "Configuration details for the proxy server used by the scraper.",
+        "example": {
+          "useApifyProxy": true
+        }
+      }
+    },
+    "required": ["startUrls", "openaiApiKey", "instructions", "model"]
+  }

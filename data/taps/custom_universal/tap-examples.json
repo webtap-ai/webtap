@@ -1,0 +1,145 @@
+[
+  {
+    "data_task": "Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://news.ycombinator.com/"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Return a list of posts in JSON format with the post title, post URL, and points count.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
+}, 
+{
+    "data_task": "Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://news.ycombinator.com/"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Go to the page and find the post with the most points. Return the post title, post URL, and points count in JSON format.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
+  },
+  {
+    "data_task": "Go to page https://github.com/search?q=lang+chain&type=repositories, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://github.com/search?q=lang+chain&type=repositories"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Return a list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
+},
+{
+  "data_task": "Go to page https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21, return list of books in JSON format. Follow all pagination links (https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=26, https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=51), max crawling depth 5",
+  "final_json_response": {
+      "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+      "can_fulfill": true,
+      "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+      "input_params": {
+          "startUrls": [
+              {
+                  "url": "https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21"
+              }
+          ],
+          "openaiApiKey": "{{openai_api_key}}",
+          "instructions": "Return a list of books in JSON format.",
+          "model": "gpt-3.5-turbo-16k",
+          "linkSelector": "a[href]",
+          "globs": [
+              "**/ebooks/search/?query=psychology&submit_search=Go%21&start_index=*"
+          ],
+          "maxCrawlingDepth": 5,
+          "proxyConfiguration": {
+              "useApifyProxy": true
+          }
+      },
+      "alternative_fulfillable_data_task": null
+  }
+},
+{
+  "data_task": "Go to the first 10 result pages of the following search page https://github.com/search?q=lang+chain&type=repositories&p=1, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
+  "final_json_response": {
+      "inputCompatibility": "Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+      "can_fulfill": true,
+      "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+      "input_params": {
+          "startUrls": [
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=1"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=2"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=3"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=4"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=5"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=6"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=7"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=8"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=9"
+              },
+              {
+                  "url": "https://github.com/search?q=lang+chain&type=repositories&p=10"
+              }
+          ],
+          "openaiApiKey": "{{openai_api_key}}",
+          "instructions": "Return a list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
+          "model": "gpt-3.5-turbo-16k",
+          "proxyConfiguration": {
+              "useApifyProxy": true
+          }
+      },
+      "alternative_fulfillable_data_task": null
+  }
+}
+
+]
