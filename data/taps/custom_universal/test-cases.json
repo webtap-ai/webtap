@@ -38,7 +38,13 @@
     {
         "data_task": "Go to the page https://craft.co/search?layout=list&order=relevance&q=&bsizes%5B0%5D=0&bsizes%5B1%5D=200&locations%5B0%5D=US&tags%5B0%5D=technology, return list of companies in JSON format with fields company_url, company_name, company_hq, company_description",
         "expected_output": {
-        "can_fulfill": true
+          "can_fulfill": true
         }
-    }
+    },
+    {
+        "data_task": "Go to the page https://www.quora.com/search?q=llm&time=day, return list of posts in JSON format with fields post_url, post_title, post_text, post_author, post_upvotes",
+        "expected_output": {
+          "can_fulfill": true
+        }
+  }
 ]
