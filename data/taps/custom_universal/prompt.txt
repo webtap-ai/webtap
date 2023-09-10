@@ -15,7 +15,7 @@ Following is a json schema about the FINAL JSON RESPONSE I want you to return to
 {output_response_schema}
 
 *** {actor_name} INPUT SCHEMA ***
-Following is the json schema representation of the the input for {actor_name}. 
+Following is the json schema representation of the the input for {actor_name}.
 {input_json_schema}
 
 *** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
@@ -40,14 +40,14 @@ At the very end return me a JSON object respecting the above FINAL JSON RESPONSE
     "alternative_fulfillable_data_task": "restaurants in Miami" // only if can_fulfill is false
 }}
 
-*** IMPORTANT THINGS TO KNOW AND REMEBER ***
+*** IMPORTANT THINGS TO KNOW AND REMEMBER ***
 {special_instructions}
 
 *** FINAL SUMMARY ***
-Summarizing: 
+Summarizing:
 
 Given list of INPUT: {actor_input_summary}
 
-Remembering IMPORTANT THINGS TO REMEBER and to answer in the FINAL JSON RESPONSE SCHEMA 
+Remembering IMPORTANT THINGS TO REMEBER and to answer in the FINAL JSON RESPONSE SCHEMA
 
 Can you tell me if it's possible to get the following DATA TASK: {data_task} ?
