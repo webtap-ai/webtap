@@ -52,5 +52,18 @@
         "expected_output": {
           "can_fulfill": true
         }
-    }
+    },
+  {
+      "data_task": "Go to the page https://www.sec.gov/cgi-bin/current?q1=0&q2=5&q3=, return list of filings in JSON format with fields form_url, form, date_filed, cik_code, company_name, seq, description, document, type. Follow all pagination links found on form_url.  Max crawling depth 2",
+      "expected_output": {
+        "can_fulfill": true
+      }
+  },
+  {
+      "data_task": "Go to the page https://www.sec.gov/Archives/edgar/data/730255/000119312523231600/d539055dexfilingfees.htm return list of filing in JSON format with fields title, body_text",
+      "expected_output": {
+        "can_fulfill": true
+      }
+  }
+
 ]
