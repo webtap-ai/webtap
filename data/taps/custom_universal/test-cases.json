@@ -1,38 +1,69 @@
 [
-    {   
-        "data_task": "Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",   
-        "expected_output": {   
-            "can_fulfill": true   
-        }   
+    {
+        "data_task": "Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",
+        "expected_output": {
+            "can_fulfill": true
+        }
     },
-    {   
+    {
         "data_task": "List of subcategories from this url https://dmoz-odp.org/Arts/, return json with fields category_name, category_url",
-        "expected_output": {   
-            "can_fulfill": true   
+        "expected_output": {
+            "can_fulfill": true
         }
     },
-    {   
-        "data_task": "Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",   
-        "expected_output": {   
-            "can_fulfill": true   
-        }   
+    {
+        "data_task": "Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",
+        "expected_output": {
+            "can_fulfill": true
+        }
     },
-    {   
+    {
         "data_task": "Go to page https://github.com/search?q=lang+chain&type=repositories, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars",
-        "expected_output": {   
-            "can_fulfill": true   
-        }   
-    },
-    {   
-        "data_task": "Go to page https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21, return list of books in JSON format. Follow all pagination links (https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=26, https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=51), max crawling depth 5",
-        "expected_output": {   
-            "can_fulfill": true   
-        }   
-    },
-    {   
-        "data_task": "Go to the first 10 result pages of the following search page https://github.com/search?q=lang+chain&type=repositories&p=1, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
-        "expected_output": {   
-            "can_fulfill": true   
+        "expected_output": {
+            "can_fulfill": true
         }
-    }
+    },
+    {
+        "data_task": "Go to page https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21, return list of books in JSON format. Follow all pagination links (https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=26, https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=51), max crawling depth 5",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Go to the first 10 result pages of the following search page https://github.com/search?q=lang+chain&type=repositories&p=1, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Go to the page https://craft.co/search?layout=list&order=relevance&q=&bsizes%5B0%5D=0&bsizes%5B1%5D=200&locations%5B0%5D=US&tags%5B0%5D=technology, return list of companies in JSON format with fields company_url, company_name, company_hq, company_description",
+        "expected_output": {
+          "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Go to the page https://www.quora.com/search?q=llm&time=day, return list of posts in JSON format with fields post_url, post_title, post_text, post_author, post_upvotes",
+        "expected_output": {
+          "can_fulfill": true
+        }
+      },
+    {
+        "data_task": "Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
+        "expected_output": {
+          "can_fulfill": true
+        }
+    },
+  {
+      "data_task": "Go to the page https://www.sec.gov/cgi-bin/current?q1=0&q2=5&q3=, return list of filings in JSON format with fields form_url, form, date_filed, cik_code, company_name, seq, description, document, type. Follow all pagination links found on form_url.  Max crawling depth 2",
+      "expected_output": {
+        "can_fulfill": true
+      }
+  },
+  {
+      "data_task": "Go to the page https://www.sec.gov/Archives/edgar/data/730255/000119312523231600/d539055dexfilingfees.htm return list of filing in JSON format with fields title, body_text",
+      "expected_output": {
+        "can_fulfill": true
+      }
+  }
+
 ]

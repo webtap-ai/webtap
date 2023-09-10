@@ -20,7 +20,7 @@
         },
         "alternative_fulfillable_data_task": null
     }
-}, 
+},
 {
     "data_task": "List of subcategories from this url https://dmoz-odp.org/Arts/, return json with fields category_name, category_url",
     "final_json_response": {
@@ -162,6 +162,52 @@
       },
       "alternative_fulfillable_data_task": null
   }
+},
+{
+    "data_task": "Go to the page https://craft.co/search?layout=list&order=relevance&q=&bsizes%5B0%5D=0&bsizes%5B1%5D=200&locations%5B0%5D=US&tags%5B0%5D=technology, return list of companies in JSON format with fields company_url, company_name, company_hq, company_description",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+        "outputCompatibility": "Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://craft.co/search?layout=list&order=relevance&q=&bsizes%5B0%5D=0&bsizes%5B1%5D=200&locations%5B0%5D=US&tags%5B0%5D=technology"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Return a list of companies in JSON format with fields company_url, company_name, company_hq, company_description.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
+},
+{
+    "data_task": "Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
+    "final_json_response": {
+        "inputCompatibility": "Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+        "outputCompatibility": "Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+        "can_fulfill": true,
+        "explanation": "The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+        "input_params": {
+            "startUrls": [
+                {
+                    "url": "https://www.reddit.com/search/?q=llm&type=link&t=week"
+                }
+            ],
+            "openaiApiKey": "{{openai_api_key}}",
+            "instructions": "Return a list of posts in JSON format with the post_url, post_title, post_author, post_upvotes, and post_comments.",
+            "model": "gpt-3.5-turbo-16k",
+            "proxyConfiguration": {
+                "useApifyProxy": true
+            }
+        },
+        "alternative_fulfillable_data_task": null
+    }
 }
 
 ]
