@@ -46,5 +46,11 @@
         "expected_output": {
           "can_fulfill": true
         }
-  }
+      },
+    {
+        "data_task": "Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
+        "expected_output": {
+          "can_fulfill": true
+        }
+    }
 ]
