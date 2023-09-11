@@ -28,5 +28,8 @@
     },
     "universal" : {
         "class_" : "webtap.taps.custom.universal_tap.UniversalTap"
+    },
+    "contact_details" : {
+        "config_dir": "contact_details"
     }
 }

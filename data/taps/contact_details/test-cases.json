@@ -1,0 +1,14 @@
+[
+    {   
+    "data_task": "Emails and social profiles of website https://sscnapoli.it/",   
+    "expected_output": {   
+            "can_fulfill": true   
+        }   
+    },
+    {   
+    "data_task": "Emails and social profiles of website https://www.realmadrid.com/ and https://www.fcbarcelona.com/ ; crawl maximumum 10 pages per website, follow links for max 2 levels of depth, the whole scrape should be maximum 18 pages, don't stay within domain and don't read iframes",   
+    "expected_output": {   
+            "can_fulfill": true   
+        }   
+    }
+]

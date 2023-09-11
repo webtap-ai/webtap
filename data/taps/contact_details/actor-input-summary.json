@@ -1,0 +1,3 @@
+{
+    "actor_input_summary" : "startUrls, url, maxRequestsPerStartUrl, maxDepth, maxRequests, sameDomain, considerChildFrames, proxyConfig, useApifyProxy"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "Website contact details",
+    "entities" : [ "Email addresses",
+    "Phone numbers (from phone links or extracted from text)",
+    "LinkedIn profiles",
+    "Twitter handles",
+    "Instagram profiles",
+    "Facebook user profiles or pages",
+    "YouTube accounts"],
+    "filters" :
+        [ "Start URLs"],
+    "options" :
+        [ "Maximum pages per start URL", "Maximum link depth", "Maximum pages for whole scrape", "Stay within domain", "Probe frames"],
+    "special_instructions" :
+        [
+            "Given a start URL {{actor_name}} will find all the contact details on the website.",
+            "Data task must contain at least one correct start url in order to have the task to be fulfilled.",
+            "If the task requires not to stay within the domain set sameDomain to false",
+            "If the task requires to not read iframes set considerChildFrames to false",
+            "Always set proxyConfiguration : {  \"useApifyProxy\": true    }"
+        ]
+}

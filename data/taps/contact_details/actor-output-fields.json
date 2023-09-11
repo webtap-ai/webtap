@@ -1,0 +1,3 @@
+{
+    "actor_output_fields" : "url, domain, depth, originalStartUrl, referrerUrl, emails, phones, phonesUncertain, linkedIns, twitters, instagrams, facebooks"
+}

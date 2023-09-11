@@ -1,0 +1,55 @@
+[
+    {
+        "data_task": "Emails and social profiles of website https://sscnapoli.it/",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website contact details INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website contact details is reliable and solely based on compatibility between DATA TASK and Website contact details OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website contact details OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website contact details has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                  {
+                    "url": "https://apify.com"
+                  }
+                ],
+                "maxRequestsPerStartUrl": 20,
+                "maxDepth": 2,
+                "maxRequests": 9999999,
+                "sameDomain": true,
+                "considerChildFrames": true,
+                "proxyConfig": {
+                  "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "data_task": "Emails and social profiles of website https://www.realmadrid.com/ and https://www.fcbarcelona.com/ ; crawl maximumum 10 pages per website, follow links for max 2 levels of depth, the whole scrape should be maximum 18 pages, don't stay within domain and don't read iframes",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website contact details INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website contact details is reliable and solely based on compatibility between DATA TASK and Website contact details OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website contact details OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website contact details has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.realmadrid.com/"
+                    },
+                    {
+                        "url": "https://www.fcbarcelona.com/"
+                    }
+                ],
+                "maxRequestsPerStartUrl": 10,
+                "maxDepth": 2,
+                "maxRequests": 18,
+                "sameDomain": false,
+                "considerChildFrames": false,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]
