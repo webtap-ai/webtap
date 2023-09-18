@@ -1,5 +1,7 @@
 [
     {   
+        "public":true,
+        "post_run_chat_message" : "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Google search results with keyword 'AI Marketing blogs' ",
         "final_json_response" : {
             "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
