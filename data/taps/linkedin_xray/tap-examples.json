@@ -56,7 +56,7 @@
     {
         "title": "Writers & Bloggers",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Content writers or bloggers in San Francisco.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -72,7 +72,7 @@
     {
         "title": "Awards & Recognitions",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Professionals in London who have received industry awards.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -89,7 +89,7 @@
     {
         "title": "Niche Technology Experts",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Quantum computing experts in Boston.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -105,7 +105,7 @@
     {
         "title": "Frequent Speakers",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Professionals in London who frequently speak at conferences.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -122,7 +122,7 @@
     {
         "title": "Remote Work Advocates",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Advocates of remote work in New York.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -138,7 +138,7 @@
     {
         "title": "Recent Job Changers",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Professionals in Manchester who changed jobs in the last 6 months.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
@@ -155,7 +155,7 @@
     {
         "title": "Charity & Volunteering",
         "public": true,
-        "post_run_chat_message": "Execute 'Table transformer' for structured results.",
+        "post_run_chat_message": "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Professionals in Los Angeles involved in charity or volunteering.",
         "final_json_response": {
             "inputCompatibility": "Yes, I can fulfill the params required by given task.",
