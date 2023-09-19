@@ -11,6 +11,7 @@ from pathlib import Path
 import re, json, requests
 from typing import List, Dict
 from apify_client import ApifyClient
+import copy
 
 class Actor(BaseModel):
     '''
@@ -133,6 +134,8 @@ class ApifyTap(BaseTap):
 
         # Init logger
         self._logger = logging.getLogger(__name__)
+        # sanitize examples
+        self.sanitize_examples()
         # Init llm
         self.load_llm()
 
@@ -175,6 +178,35 @@ class ApifyTap(BaseTap):
         formatted_json_obj = json.loads(json_str)
 
         return formatted_json_obj
+    
+    def sanitize_examples(self):
+        """
+        Sanitize the examples
+        """
+        # iterate examples
+        for example in self.examples:
+            # sanitize example
+            # build missing optional fields
+            if "public" not in example:
+                example["public"] = True
+            if "post_run_chat_message" not in example:
+                example["post_run_chat_message"] = None
+            if "title" not in example or example["title"] is None:
+                example["title"] = example["data_task"]
+
+            
+    # return a list of examples suitable for use in the prompt: without public, post_run_chat_message and title fields    
+    def get_prompt_examples(self) -> List[str]:
+        prompt_examples = copy.deepcopy(self.examples)
+        for example in prompt_examples:
+            # remove public, post_run_chat_message and title fields
+            if "public" in example:
+                del example["public"]
+            if "post_run_chat_message" in example:
+                del example["post_run_chat_message"]
+            if "title" in example:
+                del example["title"]
+        return prompt_examples
 
     def generate_prompt_messages(self, data_task: str) -> List[str]:
         # generate the chat messages
@@ -182,7 +214,7 @@ class ApifyTap(BaseTap):
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(
             actor_name = self.apify_tap_actor.actor.name,
-            examples = self.examples,
+            examples = self.get_prompt_examples(),
             output_response_schema = self.format_json(self.output_response_schema, actor_name=self.apify_tap_actor.actor.name),
             list_of_returned_fields = self.apify_tap_actor.output_fields,
             input_json_schema = self.apify_tap_actor.input_body_schema,
@@ -265,7 +297,6 @@ class ApifyTap(BaseTap):
 
         # Set maxItems in the actor input body to the provided parameter value
         #actor_input.body["maxItems"] = max_items
-        # set memory to 1024 MB
         MEMORY_MB = 1024
 
         client = ApifyClient(apify_api_token)
@@ -314,7 +345,8 @@ class ApifyTap(BaseTap):
                 return dataset_items
 
             # If the actor run is not running and not succeeded, log an error and raise an exception
-            elif actor_run_state not in ['RUNNING', 'SUCCEEDED']:
+            # If the actor run is ready, simply wait 5 seconds and continue the loop
+            elif actor_run_state not in ['RUNNING', 'SUCCEEDED', 'READY']:
                 self._logger.error(f"Actor run failed with state: {actor_run_state}")
                 raise Exception(f"Actor run failed with state: {actor_run_state}")
 

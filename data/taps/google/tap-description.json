@@ -1,10 +1,12 @@
 {
-    "name": "Google Scraper Tap",
+    "name": "Google Search",
     "entities" : [ "google search result", "google seach ads", "google search related queries"],
     "filters" :
         [ "keyword", "Google search URL"],
     "options" :
         [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ],
     "special_instructions" :
-        []
+        [
+            "Google default country is US, so if you want to search in US simply don't input any country"
+        ]
 }

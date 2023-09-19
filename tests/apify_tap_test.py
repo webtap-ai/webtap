@@ -127,6 +127,9 @@ class TestWebtap(unittest.TestCase):
         else:                
             # generate example template
             example_template = {
+                "title" : None,
+                "public": True,
+                "post_run_chat_message" : None,
                 "data_task": test_case['data_task'],
                 "final_json_response": {
                     "inputCompatibility": f"Only using the params provided {tap.name} INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",

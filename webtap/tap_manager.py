@@ -86,8 +86,7 @@ class TapManager:
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
         actor_output_fields = self.load_json_data(data_templates['actor_output_fields'])["actor_output_fields"]
         tap_description = self.load_json_data(data_templates['tap_description'])
-        # generating a list of list of examples since (for very unexplainable reason - maybe there is some kind of history in GPT and now it's "trained" over our own tests run with list of list property) it looks like in this way GPT returns better results (compared to a list of examples)
-        examples = self.load_json_data(data_templates['examples']),
+        examples = self.load_json_data(data_templates['examples'])
         test_cases = self.load_json_data(data_templates['test_cases'])
 
         # create apify_tap and init all values

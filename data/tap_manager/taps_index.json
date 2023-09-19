@@ -1,4 +1,13 @@
 {
+    "universal" : {
+        "class_" : "webtap.taps.custom.universal_tap.UniversalTap"
+    },
+    "google" : {
+        "config_dir": "google"
+    },
+    "linkedin_xray" : {
+        "config_dir": "linkedin_xray"
+    },
     "tripadvisor": {
         "config_dir": "tripadvisor"
     },
@@ -17,17 +26,11 @@
     "twitter_search" : {
         "config_dir": "twitter_search"
     },
-    "google" : {
-        "config_dir": "google"
-    },
     "google_maps" : {
         "config_dir": "google_maps"
     },
     "instagram_post" : {
         "config_dir": "instagram_post"
-    },
-    "universal" : {
-        "class_" : "webtap.taps.custom.universal_tap.UniversalTap"
     },
     "contact_details" : {
         "config_dir": "contact_details"

@@ -10,8 +10,6 @@ from typing import List, Any, Optional
 
 class UniversalTap(ApifyTap):
     '''
-    TripAdvisorTap is a Tap that is able to manage/scrape/validate data from a TripAdvisor Actor.
-    It is inherited from ApifyTap, so it basically works by simply defining info about the actor and the prompt template, in this case a collection of json files is used to define the actor info and the prompt template.
     '''
     output_response_schema_custom: Optional[dict] = None
 
@@ -51,8 +49,7 @@ class UniversalTap(ApifyTap):
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
         actor_output_fields = self.load_json_data(data_templates['actor_output_fields'])["actor_output_fields"]
         tap_description = self.load_json_data(data_templates['tap_description'])
-        # generating a list of list of examples since (for very unexplainable reason - maybe there is some kind of history in GPT and now it's "trained" over our own tests run with list of list property) it looks like in this way GPT returns better results (compared to a list of examples)
-        examples = self.load_json_data(data_templates['examples']),
+        examples = self.load_json_data(data_templates['examples'])
         test_cases = self.load_json_data(data_templates['test_cases'])
 
         super().__init__( 
@@ -90,7 +87,7 @@ class UniversalTap(ApifyTap):
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(
             actor_name = self.apify_tap_actor.actor.name,
-            examples = self.format_json(self.examples, openai_api_key=openai_api_key),
+            examples = self.format_json(self.get_prompt_examples(), openai_api_key=openai_api_key),
             output_response_schema = self.format_json(self.output_response_schema_custom, actor_name=self.apify_tap_actor.actor.name),
             list_of_returned_fields = self.apify_tap_actor.output_fields,
             input_json_schema = self.apify_tap_actor.input_body_schema,
