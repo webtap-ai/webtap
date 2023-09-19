@@ -11,7 +11,7 @@
             "If the data task is not about a LinkedIn profile search return can fulfill false",
             "Google default country is US, so if you want to search in US simply don't input any country",
             "Incorporate advanced Google search operators when attempting to find LinkedIn profiles",
-            "Append 'site:linkedin.com' to all search queries to restrict results to LinkedIn.",
+            "Append (site:linkedin.com/in/ OR site:linkedin.com/pub/) to all search queries to restrict results to LinkedIn profiles",
             "Utilize Boolean search operators to refine search results.",
             "Apply operators such as quotation marks for exact matches, NOT to exclude terms, AND to combine terms, and brackets for grouped terms.",
             "Search for the phrase 'changed jobs' to identify profiles signaling recent job transitions.",

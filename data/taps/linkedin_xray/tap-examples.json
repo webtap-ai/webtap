@@ -10,7 +10,7 @@
             "can_fulfill": true,
             "explanation": "The data task requested can be fulfilled: Linkedin X-Ray Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
-                "queries": "site:linkedin.com 'software engineer' 'London Area' 'fluent in Italian' 'fluent in English' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'software engineer' 'London Area' 'fluent in Italian' 'fluent in English' -inurl:directory/",
                 "countryCode": "gb",
                 "includeUnfilteredResults": true
             },
@@ -28,7 +28,7 @@
             "can_fulfill": true,
             "explanation": "The data task requested can be fulfilled: Linkedin X-Ray Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
-                "queries": "site:linkedin.com 'Imperial College London' 'employee at Google' 'London Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'Imperial College London' 'employee at Google' 'London Area' -inurl:directory/",
                 "countryCode": "gb",
                 "includeUnfilteredResults": true
             },
@@ -46,7 +46,7 @@
             "can_fulfill": true,
             "explanation": "The data task requested can be fulfilled: Linkedin X-Ray Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
-                "queries": "site:linkedin.com 'background in psychology' 'software engineer' 'Paris Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'background in psychology' 'software engineer' 'Paris Area' -inurl:directory/",
                 "countryCode": "fr",
                 "includeUnfilteredResults": true
             },
@@ -64,7 +64,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'content writer' OR 'blogger' 'San Francisco Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'content writer' OR 'blogger' 'San Francisco Area' -inurl:directory/",
                 "includeUnfilteredResults": true
             }
         }
@@ -80,7 +80,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'award' 'London Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'award' 'London Area' -inurl:directory/",
                 "countryCode": "gb",
                 "includeUnfilteredResults": true
             }
@@ -97,7 +97,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'quantum computing' 'Boston Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'quantum computing' 'Boston Area' -inurl:directory/",
                 "includeUnfilteredResults": true
             }
         }
@@ -113,7 +113,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'conference speaker' 'London Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'conference speaker' 'London Area' -inurl:directory/",
                 "countryCode": "gb",
                 "includeUnfilteredResults": true
             }
@@ -130,7 +130,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'remote work advocate' 'New York Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'remote work advocate' 'New York Area' -inurl:directory/",
                 "includeUnfilteredResults": true
             }
         }
@@ -146,7 +146,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'changed jobs' 'last 6 months' 'Manchester Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'changed jobs' 'last 6 months' 'Manchester Area' -inurl:directory/",
                 "countryCode": "gb",
                 "includeUnfilteredResults": true
             }
@@ -163,7 +163,7 @@
             "can_fulfill": true,
             "explanation": "The data task can be fulfilled.",
             "input_params": {
-                "queries": "site:linkedin.com 'charity' OR 'volunteering' 'Los Angeles Area' -inurl:directory/",
+                "queries": "(site:linkedin.com/in/ OR site:linkedin.com/pub/) 'charity' OR 'volunteering' 'Los Angeles Area' -inurl:directory/",
                 "includeUnfilteredResults": true
             }
         }
