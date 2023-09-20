@@ -1,4 +1,16 @@
 [
+   {
+      "title":"",
+      "public":false,
+      "post_run_chat_message" : "",
+      "data_task":"Return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can not try to fulfill the params required by given task",
+         "can_fulfill": false,
+         "explanation":"The data task requested can not be fulfilled: you must input at least one starting url in order to run Universal scraper",
+         "alternative_fulfillable_data_task":"Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount"
+      }
+   },
     {
        "title":"Single page example: get HN list of posts",
        "public":true,
@@ -225,5 +237,99 @@
           },
           "alternative_fulfillable_data_task":null
        }
-    }
+    },
+    {
+      "title":"'Show Hacker News' recent links with emails",
+      "public":true,
+      "post_run_chat_message" : "If you would like to get link url emails run 'Email ennricher' over postUrl column",
+      "data_task":"Go to the first 5 result pages of the following search page https://news.ycombinator.com/show?p=1, return list of posts in JSON format with fields: postTitle, pointsCount, postUrl",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls": [
+               {
+                 "url": "https://news.ycombinator.com/show?p=1"
+               },
+               {
+                 "url": "https://news.ycombinator.com/show?p=2"
+               },
+               {
+                 "url": "https://news.ycombinator.com/show?p=3"
+               },
+               {
+                 "url": "https://news.ycombinator.com/show?p=4"
+               },
+               {
+                 "url": "https://news.ycombinator.com/show?p=5"
+               }
+             ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Return a list of posts in JSON format with the post title, post URL, and points count.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
+      "title":"Get pain points from 'Ask Hacker News' posts",
+      "public":true,
+      "post_run_chat_message" : "",
+      "data_task":"Go to page https://news.ycombinator.com/ask. Follow all items links (example https://news.ycombinator.com/item?id=37564768). Max pages 30. Get from the page a summary about subjects, products, pain points and return json post with fields post_id, url, subjects, products_name, pain_points",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls": [
+              {
+                "url": "https://news.ycombinator.com/ask"
+              }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions": "Get from the page a summary about subjects, products, pain points. Return json post with fields post_id, url, subjects, products_name, pain_points.",
+            "model": "gpt-3.5-turbo-16k",
+            "linkSelector": "a[href]",
+            "globs": [
+              "**/item?id=*"
+            ],
+            "maxCrawlingDepth": 30,
+            "proxyConfiguration": {
+              "useApifyProxy": true
+            },
+            "maxItems": 5,
+            "maxPagesPerCrawl": 10
+          },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
+      "title":"Product hunt most followed launches in hiring software category",
+      "public":true,
+      "post_run_chat_message" : "",
+      "data_task":"Go to page https://www.producthunt.com/categories/hiring-software?order=most_followed, Return a list of products in JSON format with fields product_name (The name of the product), count_reviews (The number of reviews for the product), product_listing_url (The URL that directs to the product's page within our website, product_external_url The URL that directs to the product's page on an external website or manufacturer's site (e.g., 'www.externalmanufacturer.com'). Ensure this is not the same as the product_listing_url.",
+      "final_json_response": {
+         "instructions": "Return a list of products in JSON format with fields product_name (The name of the product), count_reviews (The number of reviews for the product), product_listing_url (The URL that directs to the product's page within our website, product_external_url The URL that directs to the product's page on an external website or manufacturer's site (e.g., 'www.externalmanufacturer.com'). Ensure this is not the same as the product_listing_url.",
+         "maxCrawlingDepth": 0,
+         "maxItems": 5,
+         "maxPagesPerCrawl": 10,
+         "model": "gpt-3.5-turbo-16k",
+         "openaiApiKey":"{{openai_api_key}}",
+         "proxyConfiguration": {
+         "useApifyProxy": true
+         },
+         "startUrls": [
+         {
+            "url": "https://www.producthunt.com/categories/hiring-software?order=most_followed"
+         }
+         ],
+         "useStructureOutput": false,
+         "globs": []
+      },
+      "alternative_fulfillable_data_task":null
+   }
  ]
