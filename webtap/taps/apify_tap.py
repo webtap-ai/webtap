@@ -297,7 +297,7 @@ class ApifyTap(BaseTap):
 
         # Set maxItems in the actor input body to the provided parameter value
         #actor_input.body["maxItems"] = max_items
-        MEMORY_MB = 1024
+        MEMORY_MB = 2048
 
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object

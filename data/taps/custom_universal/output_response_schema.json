@@ -5,8 +5,8 @@
         "inputCompatibility": {
             "type": "string",
             "enum": [
-                "Only using the params provided in {{actor_name}} INPUT SCHEMA No, I can't find a way to can fulfill the given task",
-                "Only using the params provided in {{actor_name}} INPUT SCHEMA Yes, I can find a way to fulfill the given task"
+                "Only using the params provided in {{actor_name}} INPUT SCHEMA: No, I can't find a way to can fulfill the given task",
+                "Only using the params provided in {{actor_name}} INPUT SCHEMA: Yes, I can find a way to fulfill the given task"
             ]
         },
         "can_fulfill": {

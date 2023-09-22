@@ -5,19 +5,19 @@
       "post_run_chat_message" : "",
       "data_task":"Return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can not try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: No, I can't find a way to can fulfill the given task",
          "can_fulfill": false,
          "explanation":"The data task requested can not be fulfilled: you must input at least one starting url in order to run Universal scraper",
-         "alternative_fulfillable_data_task":"Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount"
+         "alternative_fulfillable_data_task":"Go to page https://news.ycombinator.com/, return list of posts in JSON with fields:\npostTitle\npostUrl\npointsCount"
       }
    },
     {
        "title":"Single page example: get HN list of posts",
        "public":true,
        "post_run_chat_message" : "If you would like to get 1 post per column execute 'Table transformer' feature over jsonAnswer column",
-       "data_task":"Go to page https://news.ycombinator.com/, return list of posts in JSON in format:\npostTitle\npostUrl\npointsCount ",
+       "data_task":"Go to page https://news.ycombinator.com/, return list of posts in JSON with fields:\npostTitle\npostUrl\npointsCount",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
@@ -27,7 +27,7 @@
                 }
              ],
              "openaiApiKey":"{{openai_api_key}}",
-             "instructions":"Return a list of posts in JSON format with the post title, post URL, and points count.",
+             "instructions":"Return a list of posts in JSON format with fields post title, post URL, and points count.",
              "model":"gpt-3.5-turbo-16k",
              "proxyConfiguration":{
                 "useApifyProxy":true
@@ -39,9 +39,9 @@
     {
        "title":"Single page elaboration + scraping: Get HN top post",
        "public":true,
-       "data_task":"Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns it as JSON in format:\npostTitle\npostUrl\npointsCount ",
+       "data_task":"Go to page https://news.ycombinator.com/, get from the page the post with the most points and returns as JSON in format:\npostTitle\npostUrl\npointsCount ",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
@@ -51,7 +51,7 @@
                 }
              ],
              "openaiApiKey":"{{openai_api_key}}",
-             "instructions":"Go to the page and find the post with the most points. Return the post title, post URL, and points count in JSON format.",
+             "instructions":"Get the post with the most points. Return the post in JSON format, with fields post_title, post_url, and post_points",
              "model":"gpt-3.5-turbo-16k",
              "proxyConfiguration":{
                 "useApifyProxy":true
@@ -63,9 +63,9 @@
     {
        "title":"Follow pagination by links: Gutenberg list of books",
        "public":true,
-       "data_task":"Go to page https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21, return list of books in JSON format. Follow all pagination links (https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=26, https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=51), max crawling depth 5",
+       "data_task":"Go to page https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21. Follow all pagination links (https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=26, https://www.gutenberg.org/ebooks/search/?query=psychology&submit_search=Go%21&start_index=51), max crawling depth 5. Return list of books in JSON format",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
@@ -75,7 +75,7 @@
                 }
              ],
              "openaiApiKey":"{{openai_api_key}}",
-             "instructions":"Return a list of books in JSON format.",
+             "instructions":"Return list of books in JSON format",
              "model":"gpt-3.5-turbo-16k",
              "linkSelector":"a[href]",
              "globs":[
@@ -94,7 +94,7 @@
        "public":true,
        "data_task":"Go to the first 10 result pages of the following search page https://github.com/search?q=lang+chain&type=repositories&p=1, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
@@ -141,12 +141,44 @@
        }
     },
    {
+      "title":"Example with full list of options: GPT-powered analysis of webtap.ai website",
+      "public":true,
+      "post_run_chat_message" : "",
+      "data_task":"Go to page https://webtap.ai. Follow all links in the same original domain. Follow links depth for 3 levels. Scrape maximum 30 pages. Get from the page a summary about company mission, company products', features, company founders, testimonials return json info with fields company_mission, product_names, features, founders, testimonials",
+      "final_json_response": {
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "instructions": "Get from the page a summary about company mission, company products', features, company founders, testimonials. Return json info with fields company_mission, product_names, features, founders, testimonials.",
+            "maxCrawlingDepth": 3,
+            "maxPagesPerCrawl": 30,
+            "model": "gpt-3.5-turbo-16k",
+            "openaiApiKey":"{{openai_api_key}}",
+            "proxyConfiguration": {
+               "useApifyProxy": true
+            },
+            "startUrls": [
+            {
+               "url": "https://webtap.ai"
+            }
+            ],
+            "useStructureOutput": false,
+            "linkSelector": "a[href]",
+            "globs": [
+               "https://webtap.ai/**"
+             ]
+         },
+         "alternative_fulfillable_data_task" : null
+      }
+   },
+    {
       "title":"Extract insights from discussion board: get pain points from 'Ask Hacker News' posts",
       "public":true,
       "post_run_chat_message" : "",
       "data_task":"Go to page https://news.ycombinator.com/ask. Follow all items links (example https://news.ycombinator.com/item?id=37564768). Max pages 30. Get from the page a summary about subjects, products, pain points and return json post with fields post_id, url, subjects, products_name, pain_points",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -162,11 +194,11 @@
             "globs": [
               "**/item?id=*"
             ],
-            "maxCrawlingDepth": 30,
+            "maxCrawlingDepth": 0,
             "proxyConfiguration": {
               "useApifyProxy": true
             },
-            "maxPagesPerCrawl": 10
+            "maxPagesPerCrawl": 30
           },
          "alternative_fulfillable_data_task":null
       }
@@ -177,7 +209,7 @@
       "post_run_chat_message" : "If you would like to get link url emails run 'Email ennricher' over postUrl column",
       "data_task":"Go to the first 5 result pages of the following search page https://news.ycombinator.com/show?p=1, return list of posts in JSON format with fields: postTitle, pointsCount, postUrl",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -199,7 +231,7 @@
                }
              ],
             "openaiApiKey":"{{openai_api_key}}",
-            "instructions":"Return a list of posts in JSON format with the post title, post URL, and points count.",
+            "instructions":"Return a list of posts in JSON format with fields: post_title, post_url, and post_points.",
             "model":"gpt-3.5-turbo-16k",
             "proxyConfiguration":{
                "useApifyProxy":true
@@ -213,9 +245,9 @@
       "title":"Website competitor analysis: OpenAI mission, products, features, pricing and clients",
       "public":true,
       "post_run_chat_message" : "",
-      "data_task":"Go to page https://openai.com/. Follow 30 links. Get from the page a summary about company mission, company products', features, pricing structure and main clients return json info with fields company_mission, product_names, features, pricing, clients",
+      "data_task":"Go to page https://openai.com/. Follow 30 links. Stay on domain. Get from the page a summary about company mission, company products', features, pricing structure and main clients return json info with fields company_mission, product_names, features, pricing, clients",
       "final_json_response": {
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -233,7 +265,9 @@
             }
             ],
             "useStructureOutput": false,
-            "globs": []
+            "globs": [
+               "https://openai.com/**"
+             ]
          },
          "alternative_fulfillable_data_task":null
       }
@@ -243,7 +277,7 @@
       "public":true,
       "data_task":"Go to page https://github.com/langchain-ai/langchain/stargazers, return list of stargazers in JSON format with fields github_username, github_url, name, company_name, joined_on, is_pro, location",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -265,12 +299,11 @@
    {
       "title":"Outreach Reddit users talking about specific topics: List of reddit users talking from a thread",
       "public":true,
-      "data_task":"Go to the page https://www.reddit.com/r/sales/comments/155pb2m/perspective_for_cold_emailers/, get the list of users who commented in the post with fields user handle (example tomrangerusa) and user full url (example https://www.reddit.com/user/tomrangerusa/) , return list of users in JSON format with fields user_handle, user full url",
+      "data_task":"Go to the page https://www.reddit.com/r/sales/comments/155pb2m/perspective_for_cold_emailers/, get the list of users who commented in the post with fields user handle (example tomrangerusa) and user full url (example https://www.reddit.com/user/tomrangerusa/), return list of users in JSON format with fields user_handle, user full url",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-         "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
-         "explanation":"Return a list of users who commented on the post in JSON format with fields user handle and user full url.",
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
             "startUrls":[
                {
@@ -278,7 +311,7 @@
                }
             ],
             "openaiApiKey":"{{openai_api_key}}",
-            "instructions":"Return a list of posts in JSON format with the post_url, post_title, post_author, post_upvotes, and post_comments.",
+            "instructions":"Get the list of users who commented in the post with fields user handle (example tomrangerusa) and user full url (example https://www.reddit.com/user/tomrangerusa/), return list of users in JSON format with fields user_handle, user_full_url",
             "model":"gpt-3.5-turbo-16k",
             "proxyConfiguration":{
                "useApifyProxy":true
@@ -292,7 +325,7 @@
       "public":true,
       "data_task":"Go to page https://github.com/search?q=lang+chain&type=repositories, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -312,18 +345,40 @@
       }
    },
    {
+      "title":"Structured data for your software: top 50 US cities from Wikipedia in json",
+      "public":true,
+      "data_task":"Go to https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population, extract list of top 50 US cities, return json with 50 cities with fields citi_name, state, population",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls":[
+               {
+                  "url":"https://en.wikipedia.org/wiki/List_of_United_States_cities_by_population"
+               }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Extract the list of top 50 US cities and return a JSON with the fields city_name, state, and population.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
       "title":"Product hunt most followed launches in hiring software category",
       "public":true,
       "post_run_chat_message" : "",
       "data_task":"Go to page https://www.producthunt.com/categories/hiring-software?order=most_followed, Return a list of products in JSON format with fields product_name (The name of the product), count_reviews (The number of reviews for the product), product_listing_url (The URL that directs to the product's page within our website, product_external_url The URL that directs to the product's page on an external website or manufacturer's site (e.g., 'www.externalmanufacturer.com'). Ensure this is not the same as the product_listing_url.",
       "final_json_response": {
-         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
-            "instructions": "Return a list of products in JSON format with fields product_name (The name of the product), count_reviews (The number of reviews for the product), product_listing_url (The URL that directs to the product's page within our website, product_external_url The URL that directs to the product's page on an external website or manufacturer's site (e.g., 'www.externalmanufacturer.com'). Ensure this is not the same as the product_listing_url.",
-            "maxCrawlingDepth": 0,
-            "maxPagesPerCrawl": 10,
+            "instructions": "Return a list of products in JSON format with fields product_name (The name of the product), count_reviews (The number of reviews for the product), product_listing_url (The URL that directs to the product's page within our website, product_external_url The URL that directs to the product's page on an external website or manufacturer's site (e.g., 'www.externalmanufacturer.com' - Ensure this is not the same as the product_listing_url)",
             "model": "gpt-3.5-turbo-16k",
             "openaiApiKey":"{{openai_api_key}}",
             "proxyConfiguration": {
@@ -334,8 +389,7 @@
                "url": "https://www.producthunt.com/categories/hiring-software?order=most_followed"
             }
             ],
-            "useStructureOutput": false,
-            "globs": []
+            "useStructureOutput": false
          },
          "alternative_fulfillable_data_task":null
       }
@@ -345,8 +399,7 @@
       "public":true,
       "data_task":"Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
       "final_json_response":{
-         "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-         "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
          "can_fulfill":true,
          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
          "input_params":{
@@ -370,7 +423,7 @@
        "public":true,
        "data_task":"List of subcategories from this url https://dmoz-odp.org/Arts/, return json with fields category_name, category_url",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
@@ -394,8 +447,7 @@
        "public":true,
        "data_task":"Go to the page https://craft.co/search?layout=list&order=relevance&q=&bsizes%5B0%5D=0&bsizes%5B1%5D=200&locations%5B0%5D=US&tags%5B0%5D=technology, return list of companies in JSON format with fields company_url, company_name, company_hq, company_description",
        "final_json_response":{
-          "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-          "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: Yes, I can find a way to fulfill the given task",
           "can_fulfill":true,
           "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
           "input_params":{
