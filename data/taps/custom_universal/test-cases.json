@@ -64,6 +64,12 @@
       "expected_output": {
         "can_fulfill": true
       }
+  },
+  {
+      "data_task": "Go to page https://github.com/langchain-ai/langchain/stargazers, return list of stargazers in JSON format with fields github_username, github_url, name, company_name, joined_on, is_pro, location",
+      "expected_output": {
+        "can_fulfill": true
+      }
   }
 
 ]

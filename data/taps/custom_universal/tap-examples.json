@@ -239,6 +239,79 @@
       }
    },
    {
+      "title":"Outreach tech entusiast: users who starred of LangChain Github repo",
+      "public":true,
+      "data_task":"Go to page https://github.com/langchain-ai/langchain/stargazers, return list of stargazers in JSON format with fields github_username, github_url, name, company_name, joined_on, is_pro, location",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls":[
+               {
+                  "url":"https://github.com/langchain-ai/langchain/stargazers"
+               }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Return list of stargazers in JSON format with fields github_username, github_url, name, company_name, joined_on, is_pro, location.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
+      "title":"Outreach Reddit users talking about specific topics: List of reddit users talking from a thread",
+      "public":true,
+      "data_task":"Go to the page https://www.reddit.com/r/sales/comments/155pb2m/perspective_for_cold_emailers/, get the list of users who commented in the post with fields user handle (example tomrangerusa) and user full url (example https://www.reddit.com/user/tomrangerusa/) , return list of users in JSON format with fields user_handle, user full url",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+         "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+         "can_fulfill":true,
+         "explanation":"Return a list of users who commented on the post in JSON format with fields user handle and user full url.",
+         "input_params":{
+            "startUrls":[
+               {
+                  "url":"https://www.reddit.com/r/sales/comments/155pb2m/perspective_for_cold_emailers/"
+               }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Return a list of posts in JSON format with the post_url, post_title, post_author, post_upvotes, and post_comments.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
+      "title":"Outreach companies using specific technologies: GitHub repositories using LangChain",
+      "public":true,
+      "data_task":"Go to page https://github.com/search?q=lang+chain&type=repositories, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls":[
+               {
+                  "url":"https://github.com/search?q=lang+chain&type=repositories"
+               }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Return a list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
+   {
       "title":"Product hunt most followed launches in hiring software category",
       "public":true,
       "post_run_chat_message" : "",
@@ -267,31 +340,31 @@
          "alternative_fulfillable_data_task":null
       }
    },
-    {
-       "title":"Reddit posts by search url",
-       "public":true,
-       "data_task":"Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
-       "final_json_response":{
-          "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-          "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
-          "can_fulfill":true,
-          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-          "input_params":{
-             "startUrls":[
-                {
-                   "url":"https://www.reddit.com/search/?q=llm&type=link&t=week"
-                }
-             ],
-             "openaiApiKey":"{{openai_api_key}}",
-             "instructions":"Return a list of posts in JSON format with the post_url, post_title, post_author, post_upvotes, and post_comments.",
-             "model":"gpt-3.5-turbo-16k",
-             "proxyConfiguration":{
-                "useApifyProxy":true
-             }
-          },
-          "alternative_fulfillable_data_task":null
-       }
-    },
+   {
+      "title":"List of posts from Reddit",
+      "public":true,
+      "data_task":"Go to the page https://www.reddit.com/search/?q=llm&type=link&t=week, return list of posts in JSON format with fields post_url, post_title, post_author, post_upvotes, post_comments",
+      "final_json_response":{
+         "inputCompatibility":"Only using the params provided Universal Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+         "outputCompatibility":"Assuming data returned by Universal Scraper is reliable and solely based on compatibility between DATA TASK and Universal Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Universal Scraper OUTPUT RETURN FIELDS",
+         "can_fulfill":true,
+         "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+         "input_params":{
+            "startUrls":[
+               {
+                  "url":"https://www.reddit.com/search/?q=llm&type=link&t=week"
+               }
+            ],
+            "openaiApiKey":"{{openai_api_key}}",
+            "instructions":"Return a list of posts in JSON format with the post_url, post_title, post_author, post_upvotes, and post_comments.",
+            "model":"gpt-3.5-turbo-16k",
+            "proxyConfiguration":{
+               "useApifyProxy":true
+            }
+         },
+         "alternative_fulfillable_data_task":null
+      }
+   },
     {
        "title":"Dmoz subcategories",
        "public":true,
@@ -308,30 +381,6 @@
              ],
              "openaiApiKey":"{{openai_api_key}}",
              "instructions":"Return a list of subcategories in JSON format with fields category_name and category_url.",
-             "model":"gpt-3.5-turbo-16k",
-             "proxyConfiguration":{
-                "useApifyProxy":true
-             }
-          },
-          "alternative_fulfillable_data_task":null
-       }
-    },
-    {
-       "title":"Get Github repositories by search url",
-       "public":true,
-       "data_task":"Go to page https://github.com/search?q=lang+chain&type=repositories, return list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars",
-       "final_json_response":{
-          "inputCompatibility":"Only using the params provided in Extended GPT Scraper INPUT SCHEMA: I can try to fulfill the params required by given task",
-          "can_fulfill":true,
-          "explanation":"The data task requested can be fulfilled: Universal Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-          "input_params":{
-             "startUrls":[
-                {
-                   "url":"https://github.com/search?q=lang+chain&type=repositories"
-                }
-             ],
-             "openaiApiKey":"{{openai_api_key}}",
-             "instructions":"Return a list of repositories in JSON format with fields repository_url, technology, tags, last_update, number_of_stars.",
              "model":"gpt-3.5-turbo-16k",
              "proxyConfiguration":{
                 "useApifyProxy":true
