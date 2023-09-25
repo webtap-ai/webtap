@@ -1,6 +1,9 @@
 [
     {
-        "data_task": "Restaurants in London",
+        "title" : "Restaurants by city: resturants in London",
+        "public" : true,
+        "post_run_chat_message" : null,
+        "data_task": "Restaurants by in London",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
             "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
@@ -18,6 +21,9 @@
         }
     },
     {
+        "title" : "Things to do by location: Things to do in Rome",
+        "public" : true,
+        "post_run_chat_message" : null,
         "data_task" : "Things to do in Rome",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
@@ -36,7 +42,10 @@
         }
     },
     {
-        "data_task" : "Hotels in New York",
+        "title" : "Hotels by borough: hotels in Brooklyn",
+        "public" : true,
+        "post_run_chat_message" : null,
+        "data_task" : "Hotels in Brooklyn",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
             "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
@@ -54,6 +63,9 @@
         }
     },
     {
+        "title" : "Listing by page URL: listings in Vallejo",
+        "public" : true,
+        "post_run_chat_message" : null,
         "data_task" : "Listings from the following page https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html",
         "final_json_response" : {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
@@ -78,6 +90,106 @@
         }
     },
     {
+        "title": "Restaurants with custom currency and language: restaurants in Madrid, currency in EUR, language in Spanish",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Restaurants in Madrid, currency in EUR, language in Spanish",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tripadvisor Scraper Tap INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tripadvisor Scraper Tap is reliable and solely based on compatibility between DATA TASK and Tripadvisor Scraper Tap OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor Scraper Tap OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tripadvisor Scraper Tap has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "includeRestaurants": true,
+                "includeHotels": false,
+                "includeAttractions": false,
+                "includeVacationRentals": false,
+                "locationFullName": "Madrid",
+                "currency": "EUR",
+                "language": "es",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": "Hotels and vacation rentals search with options: hotels or vacation rentals in Paris",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Hotels or vacation rentals in Paris, first weekend of January 2024, currency in EUR, language in Spanish, include price offers",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tripadvisor Scraper Tap INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tripadvisor Scraper Tap is reliable and solely based on compatibility between DATA TASK and Tripadvisor Scraper Tap OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor Scraper Tap OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tripadvisor Scraper Tap has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "checkInDate": "2024-01-06",
+                "checkOutDate": "2024-01-08",
+                "currency": "EUR",
+                "includeHotels": true,
+                "includePriceOffers": true,
+                "includeVacationRentals": true,
+                "language": "es",
+                "locationFullName": "Paris",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+
+        "title" : "Hotels without review tags: hotels in London without review tags",
+        "public" : true,
+        "post_run_chat_message" : null,
+        "data_task": "Hotels in London, don't include tags",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The task can be fulfilled as the includeTags parameter exists and can be set to false.",
+            "input_params": {
+                "includeRestaurants": true,
+                "includeHotels": false,
+                "includeAttractions": false,
+                "includeVacationRentals": false,
+                "locationFullName": "London",
+                "includeTags" : false,
+                "proxyConfiguration": { "useApifyProxy": true }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+
+        "title" : "Hotels without review tags: hotels in London without review tags",
+        "public" : true,
+        "post_run_chat_message" : null,
+        "data_task": "Hotels in London, don't include tags",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The task can be fulfilled as the includeTags parameter exists and can be set to false.",
+            "input_params": {
+                "includeRestaurants": true,
+                "includeHotels": false,
+                "includeAttractions": false,
+                "includeVacationRentals": false,
+                "locationFullName": "London",
+                "includeTags" : false,
+                "proxyConfiguration": { "useApifyProxy": true }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title" : null,
+        "public" : false,
+        "post_run_chat_message" : null,
         "data_task": "Hey, how are you doing?",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
@@ -88,6 +200,9 @@
         }
     },
     {
+        "title" : null,
+        "public" : false,
+        "post_run_chat_message" : null,
         "data_task": "Restaurants in London, with email addresses",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
@@ -106,6 +221,9 @@
         }
     },
     {
+        "title" : null,
+        "public" : false,
+        "post_run_chat_message" : null,
         "data_task": "Pizza places in Mars",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
@@ -116,6 +234,9 @@
         }
     },
     {
+        "title" : null,
+        "public" : false,
+        "post_run_chat_message" : null,
         "data_task": "Restaurants in Tokyo, kids friendly only",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
@@ -126,6 +247,9 @@
         }
     },
     {
+        "title" : null,
+        "public" : false,
+        "post_run_chat_message" : null,
         "data_task": "Hotels in Tokyo, 5 stars only",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: No, I am not 100% sure that I can fulfill the given task",
@@ -133,25 +257,6 @@
             "can_fulfill": false,
             "explanation": "There is no filter to filter out any hotels that is not 5 stars.",
             "alternative_fulfillable_data_task": "Hotels in Tokyo"
-        }
-    },
-    {
-        "data_task": "Hotels in London, don't include tags",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
-            "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The task can be fulfilled as the includeTags parameter exists and can be set to false.",
-            "input_params": {
-                "includeRestaurants": true,
-                "includeHotels": false,
-                "includeAttractions": false,
-                "includeVacationRentals": false,
-                "locationFullName": "London",
-                "includeTags" : false,
-                "proxyConfiguration": { "useApifyProxy": true }
-            },
-            "alternative_fulfillable_data_task": null
         }
     }
 ]

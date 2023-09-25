@@ -151,5 +151,17 @@
             }, 
             "alternative_fulfillable_data_task": null
         }
+    },
+    {
+        "data_task": "Restaurants in Madrid, currency in EUR, language in Spanish",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Hotels or vacation rentals in Paris, first weekend of January 2024, currency in EUR, language in Spanish, include price offers",
+        "expected_output": {
+            "can_fulfill": true
+        }
     }
 ]
