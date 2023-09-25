@@ -1,6 +1,6 @@
 [
     {   
-        "title" : "Search by keyword example",
+        "title" : "Search by keyword example: Ai marketing blogs SERP",
         "public":true,
         "post_run_chat_message" : "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
         "data_task": "Google search results with keyword 'AI Marketing blogs'",
@@ -18,7 +18,7 @@
         }
     },
     {   
-        "title" : "Search by URL example",
+        "title" : "Search by URL example: food NYC results",
         "public":true,
         "data_task": "Google search results of this page https://www.google.com/search?q=food+NYC",   
         "final_json_response" : {
@@ -35,7 +35,7 @@
         }
     },
     {
-        "title": "Example with multiple pages",
+        "title": "Example with multiple pages: 300 results for keyword 'Food bloggers'",
         "public": true,
         "post_run_chat_message": null,
         "data_task": "Google search results with keyword 'Food bloggers', 100 results per page, get 5 pages",
@@ -53,7 +53,7 @@
         }
     },
     {
-        "title": "Example with multiple keywords",
+        "title": "Example with multiple keywords: results for keywords 'Artificial intelligence', 'Machine learning', 'Deep learning'",
         "public": true,
         "post_run_chat_message": null,
         "data_task": "Google search results with keywords 'Artificial intelligence', 'Machine learning', 'Deep learning'",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "title": "Example getting SERP in specific country and language",
+        "title": "Example getting SERP in specific country and languag: 'Trip to Paris', country France, language Spanish'",
         "public": true,
         "post_run_chat_message": null,
         "data_task": "Google search results with keyword 'Trip to Paris', set country as France, language as Spanish'",
@@ -90,10 +90,10 @@
         }
     },
     {
-        "title": "Example with full list of options",
+        "title": "Example with full list of options: tailored iPhone16 SERP",
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Google search results with keyword 'Food bloggers', set country as Israel, language as Spanish, use mobile results view, set UULE as w+CAIQICIFcGFyaXM= and include unfiltered results '",
+        "data_task": "Google search results with keyword 'iPhone 16', set country as Israel, language as Spanish, use mobile results view, set UULE as w+CAIQICIFcGFyaXM= and include unfiltered results '",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Google Search INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Google Search is reliable and solely based on compatibility between DATA TASK and Google Search OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search OUTPUT RETURN FIELDS",
