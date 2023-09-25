@@ -7,6 +7,7 @@
         [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ],
     "special_instructions" :
         [
+            "One of keyword or Google search URL must be provided, if it is not provided return can_fulfill false and explain accordingly",
             "Google default country is US, so if you want to search in US simply don't input any country"
         ]
 }
