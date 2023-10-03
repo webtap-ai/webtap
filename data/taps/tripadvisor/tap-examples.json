@@ -3,7 +3,7 @@
         "title" : "Restaurants by city: resturants in London",
         "public" : true,
         "post_run_chat_message" : null,
-        "data_task": "Restaurants by in London",
+        "data_task": "Restaurants in London",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided in Tripadvisor API INPUT SCHEMA and in Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
             "outputCompatibility": "Assuming data returned by TRIP_ADVISOR is reliable and solely based on compatibility between DATA TASK and Tripadvisor API OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tripadvisor API OUTPUT RETURN FIELDS",

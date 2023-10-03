@@ -1,0 +1,113 @@
+[
+    {   
+        "title" : "Search by keyword example: Ai marketing blogs SERP",
+        "public":true,
+        "post_run_chat_message" : "If you would like to get 1 search result per column execute 'Table transformer' feature over organicResults column",
+        "data_task": "Google search results with keyword 'AI Marketing blogs'",
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The task can be fulfilled by using the 'queries' parameter in the INPUT SCHEMA to input the keyword 'AI Marketing blogs' and the OUTPUT RETURN FIELDS can provide the search results related to the keyword.",
+            "input_params": {
+                "queries": "AI Marketing blogs",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            }
+        }
+    },
+    {   
+        "title" : "Search by URL example: food NYC results",
+        "public":true,
+        "data_task": "Google search results of this page https://www.google.com/search?q=food+NYC",   
+        "final_json_response" : {
+            "inputCompatibility": "Only using the params provided in Google Search TAP INPUT SCHEMA and in Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task",
+            "outputCompatibility": "Assuming data returned by Google Search TAP is reliable and solely based on compatibility between DATA TASK and Google Search TAP OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search TAP OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The given DATA TASK can be fulfilled by using the 'queries' parameter in the Google Search TAP INPUT SCHEMA to input the URL and the Google Search TAP OUTPUT RETURN FIELDS will return the search results.",
+            "input_params": {
+                "queries": "https://www.google.com/search?q=food+NYC",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            }
+        }
+    },
+    {
+        "title": "Example with multiple pages: 300 results for keyword 'Food bloggers'",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results with keyword 'Food bloggers', 100 results per page, get 5 pages",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Google Search INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Google Search is reliable and solely based on compatibility between DATA TASK and Google Search OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Google Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": "Food bloggers",
+                "maxPagesPerQuery": 5,
+                "resultsPerPage": 100
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": "Example with multiple keywords: results for keywords 'Artificial intelligence', 'Machine learning', 'Deep learning'",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results with keywords 'Artificial intelligence', 'Machine learning', 'Deep learning'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Google Search INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Google Search is reliable and solely based on compatibility between DATA TASK and Google Search OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Google Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": "Artificial intelligence\nMachine learning\nDeep learning",
+                "maxPagesPerQuery": 1,
+                "resultsPerPage": 10,
+                "mobileResults": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": "Example getting SERP in specific country and languag: 'Trip to Paris', country France, language Spanish'",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results with keyword 'Trip to Paris', set country as France, language as Spanish'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Google Search INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Google Search is reliable and solely based on compatibility between DATA TASK and Google Search OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Google Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": "Trip to Paris",
+                "countryCode": "fr",
+                "languageCode": "es"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": "Example with full list of options: tailored iPhone16 SERP",
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results with keyword 'iPhone 16', set country as Israel, language as Spanish, use mobile results view, set UULE as w+CAIQICIFcGFyaXM= and include unfiltered results '",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Google Search INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Google Search is reliable and solely based on compatibility between DATA TASK and Google Search OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Google Search OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Google Search has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": "Food bloggers",
+                "countryCode": "il",
+                "languageCode": "es",
+                "mobileResults": true,
+                "locationUule": "w+CAIQICIFcGFyaXM=",
+                "includeUnfilteredResults": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

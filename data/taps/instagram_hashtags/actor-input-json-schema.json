@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "queries": {
+        "type": "string",
+        "description": "Google Search terms and/or full URLs. Enter one item per line.",
+        "examples": ["food in NYC", "https://www.google.com/search?q=food+NYC"]
+      },
+      "maxPagesPerQuery": {
+        "type": "integer",
+        "description": "Maximum number of Google Search result pages to be crawled for each search term or URL.",
+        "examples": [1, 5, 10],
+        "default": 1
+      },
+      "resultsPerPage": {
+        "type": "integer",
+        "enum": [10, 20, 30, 40, 50, 100],
+        "description": "Number of search results for each Google result page.",
+        "examples": [10, 100],
+        "default": 10
+      },
+      "mobileResults": {
+        "type": "boolean",
+        "description": "If true, results for the mobile version of Google search are returned. Otherwise, desktop results are returned.",
+        "examples": [true, false],
+        "default": false
+      },
+      "countryCode": {
+        "type": "string",
+        "description": "Country code determining the IP address of the proxy used for the search and the Google Search domain.",
+        "examples": ["us", "es", "it"]
+      },
+      "languageCode": {
+        "type": "string",
+        "description": "Language code for the search results.",
+        "examples": ["en", "es", "it"]
+      },
+      "locationUule": {
+        "type": "string",
+        "description": "The code for the exact location for the Google search. Use the UULE code generator for this value.",
+        "examples": ["w+CAIQICIbR2xhc2dvcmRhLkdvcmRvbiwgR2xhc2dvdywgVW5pdGVkIEtpbmdkb20="]
+      },
+      "maxConcurrency": {
+        "type": "integer",
+        "description": "Maximum number of search results pages the scraper will load simultaneously.",
+        "examples": [5, 10, 20],
+        "default": 1
+      },
+      "saveHtml": {
+        "type": "boolean",
+        "description": "If true, the HTML of the Google Search results pages will be stored to the default dataset.",
+        "examples": [true, false],
+        "default": false
+      },
+      "saveHtmlToKeyValueStore": {
+        "type": "boolean",
+        "description": "If true, the HTML of the Google Search results pages will be stored to the default key-value store.",
+        "examples": [true, false],
+        "default": false
+      },
+      "includeUnfilteredResults": {
+        "type": "boolean",
+        "description": "If true, low-quality results that Google filters out will be included.",
+        "examples": [true, false],
+        "default": false
+      },
+      "customDataFunction": {
+        "type": "string",
+        "description": "Custom JavaScript function to extract additional data from the HTML of the Google result pages.",
+        "examples": ["async ({ input, $, request, response, html }) => { return { pageTitle: $('title').text(), }; };"]
+      }
+    },
+    "required": ["queries"],
+    "additionalProperties": false
+  }
+  
