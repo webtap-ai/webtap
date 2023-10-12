@@ -1,0 +1,69 @@
+I want you to act as a an experienced and skilled DATA TASK input writer for {actor_name}.
+A data task is a human readable description of a task that can be run with an Apify Actor.
+In summary: I will give you information about an Apify Actor and I want you to return examples DATA TASK that can be set for the Actor.
+I will now present you the full context of your task.
+
+*** EXAMPLE DATA TASKS FOR OTHER ACTORS ***
+Following is a list of examples data tasks for other actors:
+Actor: Google
+Data tasks:
+1. Google search results with keyword 'AI Marketing blogs'
+2. Google search results of this page https://www.google.com/search?q=food+NYC
+3. Google search results with keyword 'Food bloggers', 100 results per page, get 5 pages
+Actor: TripAdvisor
+Data tasks:
+1. Things to do in Rome
+2. Hotels in Brooklyn
+3. Restaurants in Madrid, currency in EUR, language in Spanish, currency in EUR, language in Spanish
+
+
+*** EXAMPLE INPUT FOR {actor_name} ***
+Following is an example input that works with {actor_name}:
+{example_input}
+
+*** FINAL JSON RESPONSE SCHEMA ***
+Following is a json schema about the FINAL JSON RESPONSE I want you to return to me:
+{output_response_schema}
+
+*** {actor_name} OUTPUT RETURN FIELDS ***
+Following is the full list of fields that will be returned by {actor_name}. If an item is not here it won't be returned.
+If an item is here it will be 100% returned (regardless of any privacy or any other limit)
+{list_of_returned_fields}
+
+*** {actor_name} INPUT SCHEMA ***
+Following is the json schema representation of the the input for {actor_name}. 
+{input_json_schema}
+
+*** {actor_name} DESCRIPTION ***
+Following is a description of what {actor_name} does:
+{description}
+
+*** {actor_name} README ***
+Following is an excerpt of the README of {actor_name}:
+{readme}
+
+*** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
+Read and think sentence by sentence carefully.
+Given the above {actor_name} README, {actor_name} DESCRIPTION, {actor_name} INPUT SCHEMA, {actor_name} OUTPUT RETURN FIELDS and {actor_name} EXAMPLE INPUT, I want you to return me a list of examples DATA TASKS that can be run with {actor_name}.
+
+At the very end return me a JSON object with key data task and value a list of data tasks that can be run with {actor_name}. Here is an example of the output I got from TripAdvisor Actor:
+
+{{
+    "data_task": [
+        "Restaurants in London",
+        "Things to do in Rome",
+        "Hotels in Brooklyn",
+        "Listings from the following page https://www.tripadvisor.com/Restaurants-g33212-Vallejo_California.html",
+        "Restaurants in Madrid, currency in EUR, language in Spanish, currency in EUR, language in Spanish",
+        "Hotels in London, don't include tags",
+        "Hotels or vacation rentals in Paris, first weekend of January 2024, currency in EUR, language in Spanish, include price offers, include review tags",
+        "Restaurants in London, with email addresses",
+        "Restaurants in Tokyo, kids friendly only",
+        "Hotels in Tokyo, 5 stars only"
+    ]
+}}
+
+
+The very first data task should be about the EXAMPLE INPUT FOR {actor_name} I gave you above.
+Return 25 data tasks in total.
+The list of data tasks should cover all the possible use cases of {actor_name} (see {actor_name} README and {actor_name} INPUT SCHEMA).

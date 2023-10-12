@@ -1,0 +1,14 @@
+*** This is a json object of the input data of an Apify Actor ***
+
+{json_definition}
+
+*** This is JSON example usage ***
+
+{example_input}
+
+***
+
+Can you write me a JSON schema of this json?
+Be detailed and specific, add one (or more) example usage and a short description about how to use the field.
+
+At the very end return the schema in json format

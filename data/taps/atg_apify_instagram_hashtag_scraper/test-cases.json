@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape 100 posts with the hashtag 'food'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 40 posts with the hashtags 'art' and 'design'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 80 posts with the hashtags 'news' and 'politics'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 90 posts with the hashtags 'business' and 'entrepreneurship'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 15 posts with the hashtags 'education' and 'learning'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 35 posts with the hashtags 'health' and 'wellness'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 55 posts with the hashtags 'movies' and 'cinema'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 75 posts with the hashtags 'pets' and 'animals'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 95 posts with the hashtags 'cooking' and 'recipes'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 5 posts with the hashtags 'architecture' and 'buildings'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,110 @@
+I need you to act as an experienced and skilled software engineer with deep JSON knowledge.
+I am developing an LLM tool: this tool will let the LLM access the Apify {actor_name}.
+I need you to create a "TAP DESCRIPTION" object that will be the core of this tool, this json will contain clear instructions about how to acccess and use the Apify {actor_name}.
+TAP DESCRIPTION I want you to return will be a JSON object with 5 fields name, entities, filters, options
+
+Following is the context: 
+*** {actor_name} APIFY ORIGINAL DESCRIPTION ON APIFY STORE ***
+{actor_description}
+
+*** {actor_name} INPUT SCHEMA ***
+Following is the json schema representation of the the input for {actor_name}. 
+{input_json_schema}
+
+*** {actor_name} OUTPUT RETURN FIELDS ***
+Following is the full list of fields that will be returned by {actor_name}. If an item is not here it won't be returned.
+If an item is here it will be 100% returned (regardless of any privacy or any other limit)
+{list_of_returned_fields}
+
+** A good and well written example: TAP DESCRIPTION for Google TAP  **
+{{
+    "name": "Google Search",
+    "entities" : [ "google search result", "google seach ads", "google search related queries"],
+    "filters" :
+        [ "keyword", "Google search URL"],
+    "options" :
+        [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ]
+    "special_instructions" :
+        [
+            "One of keyword or Google search URL must be provided, if it is not provided return can_fulfill false and explain accordingly",
+            "Google default country is US, so if you want to search in US simply don't input any country"
+        ]
+}}
+
+** Another good and well written example: TAP DESCRIPTION for TripAdvisor TAP  **
+{{
+    "name": "Tripadvisor",
+    "entities" : [ "hotel", "restaurant", "attraction", "vacation rental"],
+    "filters" :
+        [ "Location", "Tripadvisor url"],
+    "options" :
+        [ "Max results", "Hotel checkin date", "Hotel checkout date", "Hotels include price", "Language", "Currency" ],
+    "special_instructions" :
+        [
+            "TripAdvisor Actor provides email addresses of the business (hotel, restaurant and any other listing)",
+            "TripAdvisor Actor can't filter result using entities listings",
+            "TripAdvisor Actor can't filter by 'cats' frienly or '5 stars hotel only'",
+            "IMPORTANT: Rememeber that TripAdvisor Actor provides email address in the  output fields",
+            "A vacation rental is not an Airbnb",
+            "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+        ]
+}}
+
+****
+
+Instructions about what I want you to do:
+
+I need you to create a JSON file that will be the core of this tool, this json will contain clear and sufficient instructions about how to acccess and use the Apify API {actor_name}.
+
+So here are the information I need you to organize:
+1. name 
+ - A descriptive and clear name for this tool.
+You have to remove any reference to Apify, API, Actor, Scraper and simply a generic name that describes the tool.
+Some examples:
+For Google Scraper: "Google Search"
+For Tripadvisor Scraper: "Tripadvisor"
+
+2. entities
+A list of the 'entities' that will be returned by the tool.
+By entity I mean the main type objects that will be returned by the tool.
+Some examples:
+For Google: "google search result", "google seach ads", "google search related queries"
+For TripAdvisor: "hotel", "restaurant", "attraction", "vacation rental"
+For Facebook Pages: "Facebook pages"
+
+3. filters
+A list of all the filters that can be applied to select data for the tool.
+Basically you can iterate for each of the options available into Apify API "Instagram Hashtag" Input and if they are a way to filter data you can add them to the list.
+Some examples:
+For Google: "keyword", "Google search URL"
+For TripAdvisor: "Location", "Tripadvisor url"
+
+4. options
+A list of all the options that the end of user of the LLM can apply Any option that is related to the internal logic of the tool (for example use proxy) should not be present here.
+Basically you can iterate for each of the options available into Apify API "Instagram Hashtag" Input and if (1) they are not a way to filter data, and (2) are options that the end user can apply, you can add them to the list.
+Some examples:
+For Google: [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ]
+For TripAdvisor: [ "Max results", "Hotel checkin date", "Hotel checkout date", "Hotels include price", "Language", "Currency" ]
+
+5. special_instructions
+A list of special instructions that the LLM should follow to use the Actor.
+In special instructions do not mention anything about privacy, policy, legal or anything that is not related to the technical use of the tool.
+Some examples:
+For Google:
+"special_instructions" :
+        [
+            "One of keyword or Google search URL must be provided, if it is not provided return can_fulfill false and explain accordingly",
+            "Google default country is US, so if you want to search in US simply don't input any country"
+        ]
+For TripAdvisor
+"special_instructions" :
+        [
+            "TripAdvisor Actor provides email addresses of the business (hotel, restaurant and any other listing)",
+            "TripAdvisor Actor can't filter result using entities listings",
+            "TripAdvisor Actor can't filter by 'cats' frienly or '5 stars hotel only'",
+            "IMPORTANT: Rememeber that TripAdvisor Actor provides email address in the  output fields",
+            "A vacation rental is not an Airbnb",
+            "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+        ]
+
+Return me a json object compatible with the above schema with these 5 params (name, entities, filters, options, filters, special_instructions):

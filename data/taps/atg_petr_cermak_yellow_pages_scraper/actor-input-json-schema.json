@@ -1,0 +1,7 @@
+{
+    "name": "location",
+    "type": "string",
+    "required": false,
+    "param_name": "location",
+    "description": "Location to search entries in"
+}

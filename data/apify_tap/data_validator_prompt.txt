@@ -1,7 +1,6 @@
 I want you to act as a skilled data validator for {actor_name}.
 Following is the full context.
 
-
 *** SAMPLE DATA RETURNED ***
 This is the data that we got in response:
 {data_sample}
@@ -12,24 +11,27 @@ This is a text description of the data that we wanted to get:
 
 *** INSTRUCTIONS ABOUT WHAT I WANT YOU TO DO ***
  
-Given the above SAMPLE DATA RETURNED and the INPUT DATA TASK I want you to return an explanation about whether the SAMPLE DATA RETURNED is coherent (is an expected sample of data) returned given the INPUT DATA TASK.
+Given the above SAMPLE DATA RETURNED and the INPUT DATA TASK I want you to return an explanation about whether the SAMPLE DATA RETURNED is an expected sample of data returned for given INPUT DATA TASK.
 
 Be clear, specific and concise in the response.
-Do not be speculative, only base your answer on wether the SAMPLE DATA RETURNED is coherent withb given SAMPLE DATA RETURNED.
+Do not be speculative, only base your answer on wether the SAMPLE DATA RETURNED is coherent withb given INPUT DATA TASK.
 
-At the very end return me a JSON object respecting the above FINAL JSON OBJECT RESPONSE SCHEMA, summarizing your answer as the following:
+IMPORTANT:
+1. Sample data is just a sample, so if a data is missing you can assume that it is not present in the sample data and can consider it as a valid sample data.
+2. Otherwise if sample data contains a data totally unexpected for the given input data task, you can assume that the sample data is not valid.
+
+At the very end return me a JSON object respecting the following FINAL JSON OBJECT RESPONSE SCHEMA, summarizing your answer as the following:
 
 {{
-    "explanation": "Explain in one sentence why the data is valid or not"
+    "explanation": "Explain in one sentence why the sample data might be a valid sample of data for the given input data task"
     "data_valid": (one of)
-     "No, the data returned is not valid according to the {actor_name} OUTPUT RETURN FIELDS"
+     "No, the data returned is not a valid sample data for {actor_name}"
      or
-     "Yes, the data returned is valid according to the {actor_name} OUTPUT RETURN FIELDS"
-     "is_valid": false // True if data_valid is "... Yes I am 100% sure ..." false otherwise
+     "Yes, the data returned might be a valid sample data for {actor_name}"
+     "is_valid": false // True if data_valid is "... Yes, the data returned might be ..." false otherwise
 }}
 
 *** FINAL SUMMARY ***
 Summarizing: 
 
-
-Can you tell me if the SAMPLE DATA RETURNED is an expexted sample of data for the INPUT DATA TASK {data_task}?
+Can you tell me if the SAMPLE DATA RETURNED might be an expexted sample of data for the INPUT DATA TASK {data_task}?

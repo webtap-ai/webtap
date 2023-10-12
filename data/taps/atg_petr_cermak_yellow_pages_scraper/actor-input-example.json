@@ -1,0 +1,6 @@
+{
+    "import": {
+        "ApifyClient": "apify-client"
+    },
+    "code": "// Initialize the ApifyClient with API token\nconst client = new ApifyClient({\n    token: '<YOUR_API_TOKEN>',\n});\n\n// Prepare Actor input\nconst input = {\n    \"hashtags\": [\n        \"webscraping\"\n    ],\n    \"resultsLimit\": 20\n};\n\n(async () => {\n    // Run the Actor and wait for it to finish\n    const run = await client.actor(\"apify/instagram-hashtag-scraper\").call(input);\n\n    // Fetch and print Actor results from the run's dataset (if any)\n    console.log('Results from dataset');\n    const { items } = await client.dataset(run.defaultDatasetId).listItems();\n    items.forEach((item) => {\n        console.dir(item);\n    });\n})();"
+}

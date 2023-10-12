@@ -79,15 +79,24 @@ class TapManager:
             except json.decoder.JSONDecodeError:
                 raise ValueError(f"{template_name} is not a valid json file")
 
-
-        # load templates
+        # load templates and check json indexes
         actor_description = self.load_json_data(data_templates['actor_description'])
         actor_input_schema = self.load_json_data(data_templates['actor_input_json_schema'])
-        actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
-        actor_output_fields = self.load_json_data(data_templates['actor_output_fields'])["actor_output_fields"]
+
+        actor_input_summary_data = self.load_json_data(data_templates['actor_input_summary'])
+        if "actor_input_summary" not in actor_input_summary_data:
+            raise ValueError("actor_input_summary index does not exist in the actor_input_summary JSON file")
+        actor_input_body_summary = actor_input_summary_data["actor_input_summary"]
+
+        actor_output_fields_data = self.load_json_data(data_templates['actor_output_fields'])
+        if "actor_output_fields" not in actor_output_fields_data:
+            raise ValueError("actor_output_fields index does not exist in the actor_output_fields JSON file")
+        actor_output_fields = actor_output_fields_data["actor_output_fields"]
+
         tap_description = self.load_json_data(data_templates['tap_description'])
         examples = self.load_json_data(data_templates['examples'])
         test_cases = self.load_json_data(data_templates['test_cases'])
+
 
         # create apify_tap and init all values
         tap = ApifyTap(

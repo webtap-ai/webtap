@@ -1,0 +1,11 @@
+*** This is a an example output returned by an Apify Actor ***
+
+{example_output}
+
+***
+
+Make a comma separated list of all the output fields of the actor.
+Return me a json object with 1 single element; key actor_output_fields and value a comma separated string with all the output fields, for example:
+{{
+    "actor_output_fields" : "url,name,stars,numberOfGuests,address"
+}}

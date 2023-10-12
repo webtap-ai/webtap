@@ -1,0 +1,25 @@
+{
+    "name": "Yellow Pages Business Listings",
+    "entities": [
+        "business listing",
+        "business ad",
+        "business categories"
+    ],
+    "filters": [
+        "search term",
+        "location"
+    ],
+    "options": [
+        "Max items",
+        "Start URLs",
+        "Extend output function"
+    ],
+    "special_instructions": [
+        "One of search term or location must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The 'Extend output function' is a JavaScript function that takes jQuery instance and a data object as input, and extends the data object with new fields",
+        "The 'Start URLs' is an array of URLs where the actor should start the scraping. This is useful if you want to scrape a specific set of businesses",
+        "The 'Max items' is the maximum number of business listings that the actor should scrape",
+        "Always set proxyConfiguration : {  \"useApifyProxy\": false    } unless you have a specific need to use a proxy",
+        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+    ]
+}

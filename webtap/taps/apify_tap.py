@@ -8,10 +8,9 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from typing import Any, Optional
 from pathlib import Path
-import re, json, requests
+import re, json, copy, demjson3
 from typing import List, Dict
 from apify_client import ApifyClient
-import copy
 
 class Actor(BaseModel):
     '''
@@ -20,6 +19,12 @@ class Actor(BaseModel):
     id : str
     name : str
     description: str
+    users: str = None
+    run: Optional[str] = None
+    author: Optional[str] = None
+    example_output_response: Optional[dict] = None
+    example_input: Optional[dict] = None
+    full_readme_text: Optional[str] = None
 
 class ActorParameters(BaseModel):
     '''
@@ -385,12 +390,27 @@ class ApifyTap(BaseTap):
 
         return data
 
+    def load_json_data(self, data):
+        '''
+        Load JSON data using demjson3. If loading fails due to the presence of the ellipsis character,
+        the character is removed and loading is attempted again.
+        '''
+        try:
+            # Try to load the data as JSON
+            loaded_data = demjson3.decode(data)
+        except:
+            # If loading fails, remove the ellipsis character and try again
+            data = data.replace('…', '')
+            loaded_data = demjson3.decode(data)
+        
+        # Return the loaded data
+        return loaded_data
+
     def get_retriever_and_run(self, data_task : str) -> Dict:
         '''
         Given a data task, gets a retriever and then runs the Apify actor with provided model to get the data
         '''
         # get retriever
-
         retriever_result = self.get_retriever(data_task)
         result = {
             "retriever_result": retriever_result
@@ -403,11 +423,16 @@ class ApifyTap(BaseTap):
         try :
             actor_return = self.run_actor(retriever_result.retriever.input)
         except Exception as e:
-            self._logger.error("Error while running Apify Aactor: %s", e)
+            self._logger.error("Error while running Apify Actor: %s", e)
             raise e
         # log actor return
         self._logger.info("Actor data returned: %s", actor_return)
-        result["data"] = actor_return
+        
+        # Load the actor return data using the new method
+        loaded_data = self.load_json_data(actor_return)
+        
+        # Convert the loaded data back to a JSON string
+        result["data"] = json.dumps(loaded_data)
 
         return result
 

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="webtap",
-    version="0.3.14",
+    version="0.3.15",
     packages=find_packages(),
     install_requires=[
         'aiohttp==3.8.3',
@@ -10,6 +10,7 @@ setup(
         'openai==0.27.8',
         'tiktoken==0.4.0',
         'apify-client==1.3.1',
+        'demjson3',
     ],
     include_package_data=True,
     package_data={'': ['*.json', '*.txt']},

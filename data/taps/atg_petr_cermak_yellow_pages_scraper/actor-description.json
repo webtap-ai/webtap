@@ -1,0 +1,37 @@
+{
+    "id": "yellow-pages-scraper",
+    "name": "Yellow Pages Scraper",
+    "description": "Scrape addresses, phone numbers, categories, and names from Yellow Page listings. Customizable Yellow Pages API to crawl and download all contact data.",
+    "users": "2.3k",
+    "run": "68.2k",
+    "author": "Petr Cermak",
+    "example_output_json_response": {
+        "isAd": true,
+        "url": "https://www.yellowpages.com/compton-ca/mip/golden-state-dental-group-18768214?lid=1001760866489",
+        "name": "Golden State Dental Group",
+        "address": "1601 N Long Beach Blvd, Compton, CA 90221",
+        "phone": "(310) 507-7718",
+        "rating": 4,
+        "ratingCount": 6,
+        "infoSnippet": "*Please contact us for more information",
+        "image": "https://i4.ypcdn.com/blob/00a40d49e577606be9d82ced5404696022a7e2a0",
+        "categories": [
+            "Dentists",
+            "Implant Dentistry",
+            "Pediatric Dentistry",
+            "Periodontists",
+            "Cosmetic Dentistry"
+        ]
+    },
+    "example_json_input": {
+        "search": "Dentist",
+        "location": "Los Angeles",
+        "startUrls": [],
+        "maxItems": 200,
+        "extendOutputFunction": "($, record) => { return {}; }",
+        "proxyConfiguration": {
+            "useApifyProxy": false
+        }
+    },
+    "full_readme_text": "Yellow Pages Scraper is an Apify actor for scraping information from Yellow Pages listings. It allows you to search records based on a combination of search term and location or a list of URLs. It is build on top of Apify SDK and you can run it both on Apify platform and locally. For more information, please refer to the [README](/petr_cermak/yellow-pages-scraper)."
+}

@@ -1,0 +1,11 @@
+*** This is a json schema definition of the input of an Apify Actor ***
+
+{json_schema}
+
+***
+
+Make a comma separated list of all the input fields of the actor.
+Return me a json object with 1 single element; key actor_input_summary and value a comma separated string with all the input fields, for example:
+{{
+    "actor_input_summary" : "locationQuery, maxListings, startUrls"
+}}

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "search",
+        "type": "string",
+        "required": false,
+        "param_name": "search",
+        "description": "Query to search on Yellow Pages"
+    },
+    {
+        "name": "location",
+        "type": "string",
+        "required": false,
+        "param_name": "location",
+        "description": "Location to search entries in"
+    },
+    {
+        "name": "startUrls",
+        "type": "array",
+        "required": false,
+        "param_name": "startUrls",
+        "description": "List of URLs that will be crawled."
+    },
+    {
+        "name": "maxItems",
+        "type": "integer",
+        "required": false,
+        "param_name": "maxItems",
+        "description": "Maximum number of outputted results"
+    },
+    {
+        "name": "extendOutputFunction",
+        "type": "string",
+        "required": false,
+        "param_name": "extendOutputFunction",
+        "description": "A function which result will get merged with the default result"
+    },
+    {
+        "name": "proxyConfiguration",
+        "type": "object",
+        "required": false,
+        "param_name": "proxyConfiguration",
+        "description": "In this case the best option is usually no proxy. Otherwise US or UK proxies work best."
+    }
+]

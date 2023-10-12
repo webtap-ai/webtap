@@ -1,11 +1,11 @@
 {
-    "universal" : {
-        "class_" : "webtap.taps.custom.universal_tap.UniversalTap"
+    "universal": {
+        "class_": "webtap.taps.custom.universal_tap.UniversalTap"
     },
-    "google" : {
+    "google": {
         "config_dir": "google"
     },
-    "linkedin_xray" : {
+    "linkedin_xray": {
         "config_dir": "linkedin_xray"
     },
     "tripadvisor": {
@@ -17,22 +17,28 @@
     "facebook_pages": {
         "config_dir": "facebook_pages"
     },
-    "instagram_profiles" : {
+    "instagram_profiles": {
         "config_dir": "instagram_profiles"
     },
-    "airbnb" : {
+    "airbnb": {
         "config_dir": "airbnb"
     },
-    "twitter_search" : {
+    "twitter_search": {
         "config_dir": "twitter_search"
     },
-    "google_maps" : {
+    "google_maps": {
         "config_dir": "google_maps"
     },
-    "instagram_post" : {
+    "instagram_post": {
         "config_dir": "instagram_post"
     },
-    "contact_details" : {
+    "contact_details": {
         "config_dir": "contact_details"
+    },
+    "atg_apify_instagram_hashtag_scraper": {
+        "config_dir": "atg_apify_instagram_hashtag_scraper"
+    },
+    "atg_petr_cermak_yellow_pages_scraper": {
+        "config_dir": "atg_petr_cermak_yellow_pages_scraper"
     }
 }

@@ -1,0 +1,33 @@
+{
+    "name": "Instagram Hashtag Search",
+    "entities": [
+        "Instagram post",
+        "Instagram image",
+        "Instagram user",
+        "Instagram location",
+        "Instagram timestamp"
+    ],
+    "filters": [
+        "Hashtags",
+        "Results limit"
+    ],
+    "options": [
+        "Scrape posts",
+        "Scrape images",
+        "Scrape URLs",
+        "Scrape comments",
+        "Scrape likes",
+        "Scrape users",
+        "Scrape locations",
+        "Scrape timestamps"
+    ],
+    "special_instructions": [
+        "One or more hashtags must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Results limit is optional, if not provided, the tool will scrape all available posts",
+        "The tool will return structured data in JSON format",
+        "The tool can't filter by specific users or locations",
+        "The tool can't filter by 'likes' or 'comments' count",
+        "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
+        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+    ]
+}

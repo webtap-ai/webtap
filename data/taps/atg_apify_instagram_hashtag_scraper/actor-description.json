@@ -1,0 +1,46 @@
+{
+    "id": "apify/instagram-hashtag-scraper",
+    "name": "Instagram Hashtag Scraper",
+    "description": "Scrape Instagram hashtags the fast and easy way. Just add one or more hashtags and the scraper will extract posts, images, URLs, comments, likes, users, locations, timestamps, and more. Download structured data in JSON, CSV, XML, Excel, and HTML to use in applications, reports, and spreadsheets.",
+    "users": "7.3k",
+    "run": "339.9k",
+    "author": "Apify",
+    "example_output_json_response": [
+        {
+            "id": "2968381439079951049",
+            "type": "Image",
+            "shortCode": "CkxzzESOSrJ",
+            "caption": "Something to walk with\u2026 warm.. \u2018to go\u2019.\u2060\n#WinterWarmer #Pastry & #Coffee \u2615\ufe0f\ud83e\udd0d\u2060\n\u2060\n\u2060\n#coffeeshop #walking #coffeelover #bakery #latte #cafe #coffeetime #coffeeaddict #latteart #coffeegram #barista #caffeine #instacoffee #coffeelovers #cappuccino #coffeelove #pastry #butcher #baker #savoury #sweet #artisan #artisanbakery",
+            "hashtags": [
+                "WinterWarmer",
+                "Pastry",
+                "Coffee",
+                "coffeeshop"
+            ],
+            "mentions": [],
+            "url": "https://www.instagram.com/p/CkxzzESOSrJ/",
+            "commentsCount": 0,
+            "firstComment": "",
+            "latestComments": [],
+            "dimensionsHeight": 1334,
+            "dimensionsWidth": 1080,
+            "displayUrl": "https://instagram.ftpa1-2.fna.fbcdn.net/v/t51.2885-15/314813380_3353123594960112_7939201600927436601_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.ftpa1-2.fna.fbcdn.net&_nc_cat=100&_nc_ohc=vQbODwsDgF0AX83Zh0w&edm=AA0rjkIBAAAA&ccb=7-5&oh=00_AfCr7AxXzveU1ZeAUWswNEG_KxrrR9b5tQJIjNcKJQ-bKw&oe=637255A2&_nc_sid=d997c6",
+            "images": [],
+            "alt": null,
+            "likesCount": 0,
+            "timestamp": "2022-11-10T11:11:15.000Z",
+            "childPosts": [],
+            "ownerId": "51571511280"
+        }
+    ],
+    "example_json_input": {
+        "hashtags": [
+            "WinterWarmer  ",
+            "Pastry",
+            "Coffee",
+            "coffeeshop"
+        ],
+        "resultsLimit": 20
+    },
+    "full_readme_text": "## What is Instagram Hashtag Scraper?\n\nIt's a simple tool that allows you to web scrape full data from Instagram posts based on hashtag search. To scrape every post that mentions a specific hashtag, just indicate the hashtag, the number of posts to scrape, and click the \"Save & Start\" button at the bottom of the page.\n\n## How to scrape Instagram hashtags\n\nInstagram Hashtag Scraper is designed to be fast and easy to use, so there aren't too many parameters or settings. Just follow the steps below:\n\n1. Create a free Apify account.\n2. Open Instagram Hashtag Scraper.\n3. Add one or more Instagram hashtags to scrape.\n4. Click \"Save & Start\" and wait for the datasets to be extracted.\n5. Download your data in JSON, XML, CSV, Excel, or HTML.\n\n..."
+}
