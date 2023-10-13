@@ -1,3 +1,8 @@
 {
-    "actor_output_fields": "isAd,url,name,address,phone,rating,ratingCount,infoSnippet,image,categories"
+    "actor_output_fields": "isAd,url,name,address,phone,rating,ratingCount,infoSnippet,image,categories",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }

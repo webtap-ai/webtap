@@ -1,3 +1,14 @@
 {
-    "actor_output_fields" : "searchQuery, url, hasNextPage, serpProviderCode, resultsTotal, relatedQueries, paidResults, paidProducts, organicResults, peopleAlsoAsk, customData"
+    "actor_output_fields" : "searchQuery, url, hasNextPage, serpProviderCode, resultsTotal, relatedQueries, paidResults, paidProducts, organicResults, peopleAlsoAsk, customData",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        },
+        "organic_results": {
+            "title": "Organic Results"
+        },
+        "paid_results": {
+            "title": "Paid Results (if any)"
+        }
+    }
 }

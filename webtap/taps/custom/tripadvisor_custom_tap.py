@@ -35,7 +35,9 @@ class TripAdvisorCustomTap(ApifyTap):
         actor_description = self.load_json_data(data_templates['actor_description'])
         actor_input_schema = self.load_json_data(data_templates['actor_input_json_schema'])
         actor_input_body_summary = self.load_json_data(data_templates['actor_input_summary'])["actor_input_summary"]
-        actor_output_fields = self.load_json_data(data_templates['actor_output_fields'])["actor_output_fields"]
+        actor_output_fields_data = self.load_json_data(data_templates['actor_output_fields'])
+        actor_output_fields = actor_output_fields_data["actor_output_fields"]
+        actor_output_views = actor_output_fields_data["actor_output_views"]
         tap_description = self.load_json_data(data_templates['tap_description'])
         examples = self.load_json_data(data_templates['examples'])
         test_cases = self.load_json_data(data_templates['test_cases'])
@@ -49,6 +51,7 @@ class TripAdvisorCustomTap(ApifyTap):
                 actor = Actor(**actor_description),
                 input_body_schema = actor_input_schema,
                 input_body_summary = actor_input_body_summary,
-                output_fields = actor_output_fields
+                output_fields = actor_output_fields,
+                output_views = actor_output_views
             )
         )

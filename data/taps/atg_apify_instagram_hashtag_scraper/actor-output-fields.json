@@ -1,3 +1,8 @@
 {
-    "actor_output_fields": "id,type,shortCode,caption,hashtags,mentions,url,commentsCount,firstComment,latestComments,dimensionsHeight,dimensionsWidth,displayUrl,images,alt,likesCount,timestamp,childPosts,ownerId"
+    "actor_output_fields": "id,type,shortCode,caption,hashtags,mentions,url,commentsCount,firstComment,latestComments,dimensionsHeight,dimensionsWidth,displayUrl,images,alt,likesCount,timestamp,childPosts,ownerId",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }

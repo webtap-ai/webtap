@@ -1,3 +1,8 @@
 {
-    "actor_output_fields" : "id,username,url,fullName,biography,externalUrl,externalUrlShimmed,followersCount,followsCount,hasChannel,highlightReelCount,isBusinessAccount,joinedRecently,businessCategoryName,private,verified,profilePicUrl,profilePicUrlHD,facebookPage,igtvVideoCount,relatedProfiles"
+    "actor_output_fields" : "id,username,url,fullName,biography,externalUrl,externalUrlShimmed,followersCount,followsCount,hasChannel,highlightReelCount,isBusinessAccount,joinedRecently,businessCategoryName,private,verified,profilePicUrl,profilePicUrlHD,facebookPage,igtvVideoCount,relatedProfiles",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }
