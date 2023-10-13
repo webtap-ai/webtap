@@ -79,6 +79,7 @@ class ApifyTapActor(BaseModel):
     input_body_schema : dict
     input_body_summary: str
     output_fields: str
+    output_views: dict
 
 class ApifyTap(BaseTap):
 

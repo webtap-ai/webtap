@@ -1,3 +1,8 @@
 {
-    "actor_output_fields" : "searchQuery, url, hasNextPage, serpProviderCode, resultsTotal, relatedQueries, paidResults, paidProducts, organicResults, peopleAlsoAsk, customData"
+    "actor_output_fields" : "searchQuery, url, hasNextPage, serpProviderCode, resultsTotal, relatedQueries, paidResults, paidProducts, organicResults, peopleAlsoAsk, customData",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }

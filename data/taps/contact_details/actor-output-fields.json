@@ -1,3 +1,8 @@
 {
-    "actor_output_fields" : "url, domain, depth, originalStartUrl, referrerUrl, emails, phones, phonesUncertain, linkedIns, twitters, instagrams, facebooks"
+    "actor_output_fields" : "url, domain, depth, originalStartUrl, referrerUrl, emails, phones, phonesUncertain, linkedIns, twitters, instagrams, facebooks",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }

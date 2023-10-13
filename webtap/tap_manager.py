@@ -92,6 +92,7 @@ class TapManager:
         if "actor_output_fields" not in actor_output_fields_data:
             raise ValueError("actor_output_fields index does not exist in the actor_output_fields JSON file")
         actor_output_fields = actor_output_fields_data["actor_output_fields"]
+        actor_output_views = actor_output_fields_data["actor_output_views"]
 
         tap_description = self.load_json_data(data_templates['tap_description'])
         examples = self.load_json_data(data_templates['examples'])
@@ -112,7 +113,8 @@ class TapManager:
                 actor = Actor(**actor_description),
                 input_body_schema = actor_input_schema,
                 input_body_summary = actor_input_body_summary,
-                output_fields = actor_output_fields
+                output_fields = actor_output_fields,
+                output_views = actor_output_views
             )
         )
         return tap

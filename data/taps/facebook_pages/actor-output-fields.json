@@ -1,3 +1,8 @@
 {
-    "actor_output_fields" : "categories,info,likes,messenger,posts,title,address,pageId,pageName,pageUrl,phone,followers"
+    "actor_output_fields" : "categories,info,likes,messenger,posts,title,address,pageId,pageName,pageUrl,phone,followers",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }

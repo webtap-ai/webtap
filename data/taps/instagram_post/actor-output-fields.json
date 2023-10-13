@@ -1,3 +1,8 @@
 {
-    "actor_output_fields" : "queryUsername, position, id, type, shortCode, caption, hashtags, mentions, url, commentsCount, firstComment, latestComments, dimensionsHeight, dimensionsWidth, displayUrl, images, alt, likesCount, timestamp, childPosts, locationName, locationId, ownerFullName, ownerUsername, ownerId"
+    "actor_output_fields" : "queryUsername, position, id, type, shortCode, caption, hashtags, mentions, url, commentsCount, firstComment, latestComments, dimensionsHeight, dimensionsWidth, displayUrl, images, alt, likesCount, timestamp, childPosts, locationName, locationId, ownerFullName, ownerUsername, ownerId",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
 }
