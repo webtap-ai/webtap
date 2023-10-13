@@ -1,14 +1,15 @@
-*** This is a json object of the input data of an Apify Actor ***
-
-{json_definition}
-
-*** This is JSON example usage ***
+*** This is an actual json example input of an Apify Actor ***
 
 {example_input}
 
 ***
 
+*** This is a json definition of the input data of an Apify Actor ***
+
+{json_definition}
+
+
 Can you write me a JSON schema of this json?
 Be detailed and specific, add one (or more) example usage and a short description about how to use the field.
 
-At the very end return the schema in json format
+VERY IMPORTANT: Return ONLY the JSON schema as the final response. Do NOT append any examples or additional information after the schema.

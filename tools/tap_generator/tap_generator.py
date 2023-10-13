@@ -218,8 +218,10 @@ class TapGenerator:
         required_keys = ["id", "name", "description", "example_output_json_response"]
         
         actor_data = self._webtap_universal_scraper(data_task, required_keys)
-        self.logger.info("Actor data: " + str(actor_data))
+        actor_data['id'] = self.actor_id
 
+        self.logger.info("Actor data: " + str(actor_data))
+        
         # Check if example_output_json_response and example_json_input are JSON strings
         for key in ["example_output_json_response", "example_json_input"]:
             if isinstance(actor_data[key], str):
@@ -252,25 +254,25 @@ class TapGenerator:
         self.logger.info("Data successfully stored in actor-description.json")
 
     
-    def generate_actor_input(self):
-        actor_input_path = self.tap_dir / 'actor-input.json'
+    def generate_raw_actor_input(self):
+        actor_input_path = self.tap_dir / '_actor-input.json'
         
         # Check if actor-input.json already contains an array with at least one item
         if actor_input_path.exists():
             with open(actor_input_path, 'r') as json_file:
                 actor_input = json.load(json_file)
                 if isinstance(actor_input, list) and len(actor_input) > 0:
-                    self.logger.info("Actor input already exists for tap " + self.actor_id)
+                    self.logger.info("Raw actor input already exists for tap " + self.actor_id)
                     return
 
-        self.logger.info("Retrieving input schema for tap " + self.actor_id)
+        self.logger.info("Retrieving raw input schema for tap " + self.actor_id)
         self.logger.info("This may take a few minutes...")
         # Define the data_task
         data_task = f"Go to https://apify.com/{self.actor_id}/input-schema, extract input schema fields, return json with list of schema_fields, each with fields: name, type, required, param_name, description"
         required_keys = []
 
         actor_input_data_scraped = self._webtap_universal_scraper(data_task, required_keys)
-        self.logger.info("Actor input data: " + str(actor_input_data_scraped))
+        self.logger.info("Actor raw input data: " + str(actor_input_data_scraped))
 
         actor_input_data = actor_input_data_scraped["schema_fields"]
         # Check if the returned data is an array and contains at least 1 item
@@ -281,7 +283,7 @@ class TapGenerator:
         with open(actor_input_path, 'w') as json_file:
             json.dump(actor_input_data, json_file, indent=4)
 
-        self.logger.info("Data successfully stored in actor-input.json")
+        self.logger.info("Data successfully stored in _actor-input.json")
 
     def generate_actor_input_example(self):
         actor_input_example_path = self.tap_dir / 'actor-input-example.json'
@@ -297,7 +299,8 @@ class TapGenerator:
         self.logger.info("Retrieving input example for tap " + self.actor_id)
         self.logger.info("This may take a few minutes...")
         # Define the data_task
-        data_task = f"Go to https://apify.com/apify/instagram-hashtag-scraper/api/client/nodejs; extract the json input you find in page; return JSON object input"
+        data_task = f"Go to https://apify.com/{self.actor_id}/api/client/nodejs; extract the Actor `const input` object you find in page; return JSON object of the input"
+        self.logger.info("Data task: " + data_task)
         required_keys = []
 
         actor_input_example_data_scraped = self._webtap_universal_scraper(data_task, required_keys)
@@ -340,7 +343,7 @@ class TapGenerator:
                     return
 
         # Load actor_input and input_example
-        with open(self.tap_dir / 'actor-input.json', 'r') as file:
+        with open(self.tap_dir / '_actor-input.json', 'r') as file:
             json_definition = json.load(file)
         with open(self.tap_dir / 'actor-input-example.json', 'r') as file:
             example_input = json.load(file)
@@ -557,6 +560,33 @@ class TapGenerator:
             else:
                 self.logger.info("Tap already exists in taps_index.json")
 
+    def delete_tap_index(self):
+        # Update taps_index.json
+        taps_index_path = Path(__file__).parent.parent.parent / 'data' / 'tap_manager' / 'taps_index.json'
+        with open(taps_index_path, 'r+') as f:
+            taps_index = json.load(f)
+            if self.tap_id in taps_index:
+                # Remove tap_id from the taps_index
+                del taps_index[self.tap_id]
+                # Write the updated taps_index back to the file
+                f.seek(0)
+
+    def init_tap(self):
+        try:
+            # Generate tap index
+            self.generate_tap_index()
+
+            # Instantiate TapManager and initialize tap
+            tap_manager = TapManager()
+            tap = tap_manager.get_tap(self.tap_id)
+
+            return tap
+        except Exception as e:
+            # If an exception is thrown, delete tap index and re-raise the exception
+            self.delete_tap_index()
+            self.logger.error(f"Error while initializing tap: {str(e)}")
+            raise
+
     def generate_test_examples(self):
         tap_raw_test_cases_path = self.tap_dir / '_test-cases.json'
         tap_test_cases_path = self.tap_dir / 'test-cases.json'
@@ -692,14 +722,14 @@ class TapGenerator:
         methods = [
             self.generate_folders_and_flow,
             self.generate_actor_original_data,
-            self.generate_actor_input,
+            self.generate_raw_actor_input,
             self.generate_actor_input_example,
             self.generate_actor_input_schema,
             self.generate_actor_output_fields,
             self.generate_actor_input_summary,
             self.generate_tap_description,
+            self.init_tap,
             self.generate_raw_test_examples,
-            self.generate_tap_index,
             self.generate_test_examples
         ]
 
@@ -711,8 +741,10 @@ class TapGenerator:
                     method()
                     break  # If the method is successful, break the loop and move to the next method
                 except Exception as e:
-                    self.logger.error(f"Error while running {method.__name__}, attempt {attempt + 1} of {max_attempts}, error: {str(e)}")
+                    self.logger.error(f"Error while running {method.__name__}, attempt {attempt + 1} of {max_attempts}", exc_info=True)
                     if attempt == max_attempts - 1:  # If this was the last attempt
+                        # Delete tap index and exit
+                        self.delete_tap_index()
                         self.logger.error(f"Exiting after {max_attempts} failed attempts on method {method.__name__}")
                         return
                     

@@ -1,7 +1,61 @@
 {
-    "name": "location",
-    "type": "string",
-    "required": false,
-    "param_name": "location",
-    "description": "Location to search entries in"
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Apify Actor Input",
+    "description": "Schema for the input of an Apify Actor",
+    "type": "object",
+    "properties": {
+        "search": {
+            "description": "Query to search on Yellow Pages",
+            "type": "string"
+        },
+        "location": {
+            "description": "Location to search entries in",
+            "type": "string"
+        },
+        "startUrls": {
+            "description": "List of URLs that will be crawled.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "maxItems": {
+            "description": "Maximum number of outputted results",
+            "type": "integer"
+        },
+        "extendOutputFunction": {
+            "description": "A function which result will get merged with the default result",
+            "type": "string"
+        },
+        "proxyConfiguration": {
+            "description": "In this case the best option is usually no proxy. Otherwise US or UK proxies work best.",
+            "type": "object",
+            "properties": {
+                "useApifyProxy": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "useApifyProxy"
+            ]
+        }
+    },
+    "required": [
+        "search",
+        "location",
+        "maxItems",
+        "extendOutputFunction",
+        "proxyConfiguration"
+    ],
+    "examples": [
+        {
+            "search": "Dentist",
+            "location": "Los Angeles",
+            "maxItems": 200,
+            "extendOutputFunction": "($, record) => {\n        return {};\n    }",
+            "proxyConfiguration": {
+                "useApifyProxy": false
+            }
+        }
+    ]
 }

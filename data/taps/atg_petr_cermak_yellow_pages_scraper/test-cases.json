@@ -1,1 +1,62 @@
-[]
+[
+    {
+        "data_task": "Scrape Yellow Pages for 'Dentists' in 'New York City'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Restaurants' in 'Los Angeles'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Hotels' in 'Chicago'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Car Dealerships' in 'Houston'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Real Estate Agents' in 'Phoenix'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Lawyers' in 'Philadelphia'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Plumbers' in 'San Diego'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Electricians' in 'Dallas'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Gyms' in 'Jacksonville'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yellow Pages for 'Bakeries' in 'San Francisco'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

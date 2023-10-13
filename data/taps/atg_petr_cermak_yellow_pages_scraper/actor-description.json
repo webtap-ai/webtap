@@ -1,5 +1,5 @@
 {
-    "id": "yellow-pages-scraper",
+    "id": "petr_cermak/yellow-pages-scraper",
     "name": "Yellow Pages Scraper",
     "description": "Scrape addresses, phone numbers, categories, and names from Yellow Page listings. Customizable Yellow Pages API to crawl and download all contact data.",
     "users": "2.3k",
@@ -33,5 +33,5 @@
             "useApifyProxy": false
         }
     },
-    "full_readme_text": "Yellow Pages Scraper is an Apify actor for scraping information from Yellow Pages listings. It allows you to search records based on a combination of search term and location or a list of URLs. It is build on top of Apify SDK and you can run it both on Apify platform and locally. For more information, please refer to the [README](/petr_cermak/yellow-pages-scraper)."
+    "full_readme_text": "Yellow Pages Scraper is an Apify actor for scraping information from Yellow Pages listings...."
 }
