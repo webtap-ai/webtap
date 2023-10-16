@@ -40,5 +40,8 @@
     },
     "atg_petr_cermak_yellow_pages_scraper": {
         "config_dir": "atg_petr_cermak_yellow_pages_scraper"
+    },
+    "atg_shanes_tweet_flash": {
+        "config_dir": "atg_shanes_tweet_flash"
     }
 }

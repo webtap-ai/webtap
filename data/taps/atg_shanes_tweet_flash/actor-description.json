@@ -1,0 +1,40 @@
+{
+    "id": "shanes/tweet-flash",
+    "name": "Tweet Flash - Twitter Scraper",
+    "description": "Search, Filter, URL, User: This All-In-One Twitter Scraper delivers tweets at Blazing Fast Speeds with Historical Search and Other Unique Features. Search is no longer limited by date!",
+    "users": 1800,
+    "run": 1800000,
+    "author": "Jonathan Larson",
+    "example_output_json_response": {
+        "tweets": [
+            {
+                "id": "123456789",
+                "text": "This is a sample tweet",
+                "user": {
+                    "id": "987654321",
+                    "name": "John Doe"
+                },
+                "date": "2022-10-01"
+            },
+            {
+                "id": "987654321",
+                "text": "Another sample tweet",
+                "user": {
+                    "id": "123456789",
+                    "name": "Jane Smith"
+                },
+                "date": "2022-10-02"
+            }
+        ]
+    },
+    "example_json_input": {
+        "search_query": "web scraping",
+        "filter_options": {
+            "language": "en",
+            "verified_users": true
+        },
+        "url": "https://twitter.com/apify",
+        "user_id": "123456789"
+    },
+    "full_readme_text": "# Tweet Flash - Twitter Scraper (Working Again as of 10/1)\n\nshanes/tweet-flash\n\n[Try for free](https://console.apify.com/actors/wHMoznVs94gOcxcZl/?addFromActorId=wHMoznVs94gOcxcZl#/console)\n\nPay **$0.10** for 1,000 tweets\n\nSearch, Filter, URL, User: This All-In-One Twitter Scraper delivers tweets at Blazing Fast Speeds with Historical Search and Other Unique Features. Search is no longer limited by date!\n\n*   [README](/shanes/tweet-flash)\n*   [Input](/shanes/tweet-flash/input-schema)\n*   [API](/shanes/tweet-flash/api)\n*   [Related Actors](/shanes/tweet-flash/related-actors)"
+}

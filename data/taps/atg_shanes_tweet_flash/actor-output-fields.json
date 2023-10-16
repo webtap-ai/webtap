@@ -1,0 +1,8 @@
+{
+    "actor_output_fields": "tweets, id, text, user, date",
+    "actor_output_views": {
+        "overview": {
+            "title": "Overview"
+        }
+    }
+}

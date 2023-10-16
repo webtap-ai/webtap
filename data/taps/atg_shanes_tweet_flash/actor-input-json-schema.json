@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Apify Actor Input",
+    "description": "Schema for the input of an Apify Actor",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "description": "The name of the input field",
+                "type": "string"
+            },
+            "type": {
+                "description": "The type of the input field",
+                "type": "string"
+            },
+            "required": {
+                "description": "Indicates whether the field is required",
+                "type": "boolean"
+            },
+            "param_name": {
+                "description": "The parameter name of the input field",
+                "type": "string"
+            },
+            "description": {
+                "description": "A description of the input field",
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "type",
+            "required",
+            "param_name",
+            "description"
+        ],
+        "additionalProperties": false
+    },
+    "examples": [
+        {
+            "name": "Search Terms",
+            "type": "array",
+            "required": false,
+            "param_name": "queries",
+            "description": "Enter your search queries here. For example search queries, refer to [https://github.com/igorbrigadir/twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)."
+        },
+        {
+            "name": "Max Tweets Per Query/Profile/URL",
+            "type": "integer",
+            "required": false,
+            "param_name": "max_tweets",
+            "description": "Set the maximum number of tweets to scrape per query, profile, or URL. For instance, if you set a maximum of 50 for 3 search terms, the total tweet limit will be 150."
+        }
+    ]
+}

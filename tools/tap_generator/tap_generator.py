@@ -27,61 +27,76 @@ class TapGenerator:
         # set langchanin verbose to true if loggin level is info or above
         verbose = self.logger.getEffectiveLevel() <= logging.INFO
         self._llm = ChatOpenAI(temperature=0, model=self.openai_model, verbose=verbose)
+    
+    def init_logging(self):
+        # Set up logging
+        self.logger = logging.getLogger(__name__)
+        self.logger.setLevel(logging.DEBUG)  # Set root logger to DEBUG level
+
+        # Create a file handler for info level
+        current_date_time = datetime.now().strftime("%Y%m%d_%H%M%S")
+        log_dir = Path(__file__).parent.parent.parent / 'logs' / self.tap_id / current_date_time / 'atg'
+        log_dir.mkdir(parents=True, exist_ok=True)
+        info_log_path = log_dir / 'results.log'
+        info_handler = logging.FileHandler(info_log_path)
+        info_handler.setLevel(logging.INFO)  # Set handler to INFO level
+
+        # Create a file handler for debug level
+        debug_log_path = log_dir / 'debug_trace.log'
+        debug_handler = logging.FileHandler(debug_log_path)
+        debug_handler.setLevel(logging.DEBUG)  # Set handler to DEBUG level
+
+        # Create a logging format
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        info_handler.setFormatter(formatter)
+        debug_handler.setFormatter(formatter)
+
+        # Create a stdout handler
+        stdout_handler = logging.StreamHandler()
+        stdout_handler.setLevel(logging.INFO)  # Set handler to INFO level
+        stdout_handler.setFormatter(formatter)
+
+        # Add the handlers to the logger
+        self.logger.addHandler(info_handler)
+        self.logger.addHandler(debug_handler)
+        self.logger.addHandler(stdout_handler)
+
+        # Add ANSI escape sequences for colored output
+        logging.addLevelName(logging.DEBUG, "\033[1;34m%s\033[1;0m" % logging.getLevelName(logging.DEBUG))
+        logging.addLevelName(logging.INFO, "\033[1;32m%s\033[1;0m" % logging.getLevelName(logging.INFO))
+        logging.addLevelName(logging.WARNING, "\033[1;33m%s\033[1;0m" % logging.getLevelName(logging.WARNING))
+        logging.addLevelName(logging.ERROR, "\033[1;31m%s\033[1;0m" % logging.getLevelName(logging.ERROR))
+        logging.addLevelName(logging.CRITICAL, "\033[1;41m%s\033[1;0m" % logging.getLevelName(logging.CRITICAL))
+
+        # log info the log file created
+        self.logger.info("Log file created: " + str(info_log_path))
+        self.logger.info("Debug trace file created: " + str(debug_log_path))
+
+        self.logger.info("TapGenerator initialized for tap " + self.actor_id)
 
     def __init__(self, actor_id):
         self.actor_id = actor_id
         self.tap_id = self.generate_tap_id(actor_id)
         self.tap_dir = Path(__file__).parent.parent.parent / 'data' / 'taps' / self.tap_id
-        
-        # Set up logging
-        self.logger = logging.getLogger(__name__)
-        self.logger.setLevel(logging.INFO)
 
-        # set up LLM
+        # Initialize logging
+        self.init_logging()
+
+        # Set up LLM
         self.openai_model = "gpt-4"
         self.load_llm()
-
-        # Create a file handler
-        current_date_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-        log_dir = Path(__file__).parent.parent.parent / 'logs' / self.tap_id / current_date_time / 'atg'
-        log_dir.mkdir(parents=True, exist_ok=True)
-        log_path = log_dir / f'{self.tap_id}.log'
-        handler = logging.FileHandler(log_path)
-
-        # Create a logging format
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        handler.setFormatter(formatter)
-
-        # Create a stdout handler
-        stdout_handler = logging.StreamHandler()
-        stdout_handler.setFormatter(formatter)
-
-        # Add the stdout handler to the logger
-        self.logger.addHandler(stdout_handler)
-
-        # Add the handlers to the logger
-        self.logger.addHandler(handler)
-
-        self.logger.info("TapGenerator initialized for tap " + self.actor_id)
 
     def generate_folders_and_flow(self):
         # Create tap_dir if it doesn't exist
         self.tap_dir.mkdir(parents=True, exist_ok=True)
 
         # List of files to be created
-        files = [
-            "__init__.py",
-        ]
+        files = ["__init__.py"]
 
         # List of JSON files to be created with empty array
-        json_files = [
-            "_test-cases.json",
-            "tap-examples.json",
-            "test-cases.json"
-        ]
+        json_files = ["_test-cases.json", "tap-examples.json", "test-cases.json"]
 
         # List of JSON files to be created with empty object
-        # objects starting with _ are used doing the tap generator process but not required for the tap initialization
         json_object_files = [
             "_actor-input.json",
             "actor-output-fields.json",
@@ -92,32 +107,44 @@ class TapGenerator:
             "tap-description.json"
         ]
 
+        created_files = []
+        created_json_files = []
+        created_json_object_files = []
+
         # Create each file in the list
         for file in files:
             file_path = self.tap_dir / file
             if not file_path.exists():
                 # For these files, just create an empty file
-                self.logger.info("Creating file " + str(file_path))
+                self.logger.debug("Creating file " + str(file_path))
                 open(file_path, 'a').close()
+                created_files.append(str(file_path))
 
         # Create each JSON file in the list with an empty array
         for json_file in json_files:
             json_file_path = self.tap_dir / json_file
             if not json_file_path.exists():
                 # For these JSON files, create an empty JSON array
-                self.logger.info("Creating json file " + str(json_file_path))
+                self.logger.debug("Creating json file " + str(json_file_path))
                 with open(json_file_path, 'w') as f:
                     json.dump([], f)
+                created_json_files.append(str(json_file_path))
 
         # Create each JSON file in the list with an empty object
         for json_object_file in json_object_files:
             json_object_file_path = self.tap_dir / json_object_file
             if not json_object_file_path.exists():
                 # For these JSON files, create an empty JSON object
+                self.logger.debug("Creating json object file " + str(json_object_file_path))
                 with open(json_object_file_path, 'w') as f:
                     json.dump({}, f)
+                created_json_object_files.append(str(json_object_file_path))
 
-        self.logger.info("Folders and files generated for tap " + self.actor_id)
+        self.logger.debug("Created files: " + ", ".join(created_files))
+        self.logger.debug("Created json files with empty array: " + ", ".join(created_json_files))
+        self.logger.debug("Created json object files with empty object: " + ", ".join(created_json_object_files))
+
+        self.logger.info(f"Folders and files generated for tap {self.actor_id}. Created {len(created_files)} files, {len(created_json_files)} json files, and {len(created_json_object_files)} json object files.")
         
     def _webtap_universal_scraper(self, data_task, required_keys):
         # Instantiate TapManager and get the tap
@@ -125,7 +152,18 @@ class TapGenerator:
         tap = tap_manager.get_tap("universal")
 
         # Retrieve sample data
+        # set use gpt4
+        tap.set_llm_model("gpt-4")
         retriever_result = tap.get_retriever(data_task)
+        self.logger.info(f"Retriever result for data task.")
+        self.logger.debug(f"Retriever result for data task: {retriever_result}")
+
+        # If can_fulfill is False, log and return None
+        if not retriever_result.can_fulfill:
+            self.logger.info(f"Data task cannot be fulfilled.")
+            # raise exception
+            raise ValueError("Data task cannot be fulfilled")
+        
         try:
             data = tap.run_actor(retriever_result.retriever.input)
         except Exception as e:
@@ -165,13 +203,13 @@ class TapGenerator:
         messages = chat_prompt_formatted.to_messages()
         
         # log the full chat prompt
-        self.logger.info("Full chat prompt: %s", messages)
+        self.logger.debug("Full chat prompt: %s", messages)
 
         # run the chain
         # if with gpt3.5 messages length is over 2000 chars use gpt 16k
         messages_length = len("".join(str(message) for message in messages))
         if self.openai_model == "gpt-3.5-turbo" and messages_length > self.MESSAGE_LENGTH_USE_16k:
-            self.logger.info("Chat prompt length is over %s, using gpt-3.5-turbo-16k", self.MESSAGE_LENGTH_USE_16k)
+            self.logger.debug("Chat prompt length is over %s, using gpt-3.5-turbo-16k", self.MESSAGE_LENGTH_USE_16k)
             self.set_llm_model("gpt-3.5-turbo-16k")
 
         chain_output = self._llm( messages )
@@ -180,24 +218,30 @@ class TapGenerator:
         if chain_output is None or not hasattr(chain_output, "content"):
             raise ValueError("Data returned from LLM is empty or doesn't contain content property")
         
-        self.logger.info("Chain output: %s", chain_output.content)
+        self.logger.debug("Chain output: %s", chain_output.content)
 
         # Extract the last JSON object
-        return self.extract_last_json_object(chain_output.content)
+        last_json_object = self.extract_last_json_object(chain_output.content)
+        self.logger.debug("Last JSON object extracted: %s", last_json_object)
+        return last_json_object
     
     def load_json_example_data(self, json_string, key):
         # Remove the ellipsis character if json load doesn't work
         try:
             data = demjson3.decode(json_string)
+            self.logger.debug(f"Successfully loaded JSON example data for {key}.")
             return data
         except demjson3.JSONDecodeError as e:
+            self.logger.debug(f"Failed to load JSON example data for {key}. Attempting to clean the data.")
             cleaned_string = json_string.replace("…", "")
             try:
                 data = demjson3.decode(cleaned_string)
+                self.logger.debug(f"Successfully loaded cleaned JSON example data for {key}.")
                 return data
             except demjson3.JSONDecodeError as e:
                 #log and return
                 self.logger.error(f"Error while cleaning JSON example data for {key}: " + str(e))
+                self.logger.debuf(f"Failed to load cleaned JSON example data for {key}.")
                 return None
 
     def generate_actor_original_data(self):
@@ -220,7 +264,7 @@ class TapGenerator:
         actor_data = self._webtap_universal_scraper(data_task, required_keys)
         actor_data['id'] = self.actor_id
 
-        self.logger.info("Actor data: " + str(actor_data))
+        self.logger.debug("Actor data: " + str(actor_data))
         
         # Check if example_output_json_response and example_json_input are JSON strings
         for key in ["example_output_json_response", "example_json_input"]:
@@ -235,10 +279,10 @@ class TapGenerator:
                 # If the JSON data is not None, assign it back to the actor_data
                 actor_data[key] = json_data
                 
-                self.logger.info(f"{key} successfully transformed to JSON.")
+                self.logger.debug(f"{key} successfully transformed to JSON.")
             else:
                 # If the value of the key is not a string, log the information and keep the data as it is
-                self.logger.info(f"{key} is not a JSON string. Using the data as it is.")
+                self.logger.debug(f"{key} is not a JSON string. Using the data as it is.")
 
         # Try to initialize a new Actor object
         try:
@@ -272,7 +316,7 @@ class TapGenerator:
         required_keys = []
 
         actor_input_data_scraped = self._webtap_universal_scraper(data_task, required_keys)
-        self.logger.info("Actor raw input data: " + str(actor_input_data_scraped))
+        self.logger.debug("Actor raw input data: " + str(actor_input_data_scraped))
 
         actor_input_data = actor_input_data_scraped["schema_fields"]
         # Check if the returned data is an array and contains at least 1 item
@@ -299,7 +343,7 @@ class TapGenerator:
         self.logger.info("Retrieving input example for tap " + self.actor_id)
         self.logger.info("This may take a few minutes...")
         # Define the data_task
-        data_task = f"Go to https://apify.com/{self.actor_id}/api/client/nodejs; extract the Actor `const input` object you find in page; return JSON object of the input"
+        data_task = f"Go to https://apify.com/{self.actor_id}/api/client/nodejs; extract the Actor `const input` object you find in page; return JSON object of input object"
         self.logger.info("Data task: " + data_task)
         required_keys = []
 
@@ -317,18 +361,27 @@ class TapGenerator:
         self.logger.info("Data successfully stored in actor-input-example.json")
 
     def extract_last_json_object(self, text):
+        # Initialize stack and json_end
         stack = []
         json_end = None
+        # Loop through the text in reverse
         for i in reversed(range(len(text))):
             if text[i] == '}':
+                # If json_end is None, set it to the current index
                 if json_end is None:
                     json_end = i
+                # Append '}' to the stack
                 stack.append('}')
             elif text[i] == '{':
+                # Pop from the stack
                 stack.pop()
+                # If the stack is empty, return the JSON object
                 if len(stack) == 0:
+                    self.logger.debug("Extracted JSON object: " + text[i:json_end+1])
                     return json.loads(text[i:json_end+1])
 
+        # If no valid JSON object is found, raise an error
+        self.logger.error('No valid JSON object found in the text.')
         raise ValueError('No valid JSON object found in the text.')
 
     def generate_actor_input_schema(self):
@@ -340,6 +393,7 @@ class TapGenerator:
                 actor_input_schema = json.load(json_file)
                 if isinstance(actor_input_schema, dict) and len(actor_input_schema) > 0:
                     self.logger.info("Actor input schema already exists for tap " + self.actor_id)
+                    self.logger.debug("Existing actor input schema: " + str(actor_input_schema))
                     return
 
         # Load actor_input and input_example
@@ -351,11 +405,13 @@ class TapGenerator:
         # Run the prompt with LLM
         json_schema = self.run_json_prompt_llm('generate_input_schema.txt', {'json_definition': json_definition, 'example_input': example_input})
 
-        self.logger.info("Actor input schema json built: " + str(json_schema))
+        self.logger.debug("Actor input schema json built: " + str(json_schema))
+        self.logger.info("Actor input schema json built successfully.")
 
         # Save the JSON schema into actor-input-json-schema.json
         with open(actor_input_schema_path, 'w') as file:
             json.dump(json_schema, file, indent=4)
+        self.logger.info("Actor input schema saved successfully in actor-input-json-schema.json.")
     
     def generate_actor_input_summary(self):
         actor_input_summary_path = self.tap_dir / 'actor-input-summary.json'
@@ -366,6 +422,7 @@ class TapGenerator:
                 actor_input_summary = json.load(json_file)
                 if isinstance(actor_input_summary, dict) and len(actor_input_summary) > 0:
                     self.logger.info("Actor input summary already exists for tap " + self.actor_id)
+                    self.logger.debug("Existing actor input summary: " + str(actor_input_summary))
                     return
 
         # Load json_schema
@@ -380,11 +437,13 @@ class TapGenerator:
             self.logger.error("Returned data is not a JSON object or does not contain 'actor_input_summary' property")
             raise ValueError("Invalid data returned from LLM")
 
-        self.logger.info("Actor input summary json built: " + str(json_summary))
+        self.logger.debug("Actor input summary json built: " + str(json_summary))
+        self.logger.info("Actor input summary json built successfully.")
 
         # Save the JSON summary into actor-input-summary.json
         with open(actor_input_summary_path, 'w') as file:
             json.dump(json_summary, file, indent=4)
+        self.logger.info("Actor input summary saved successfully in actor-input-summary.json.")
     
     def generate_actor_output_fields(self):
         actor_output_fields_path = self.tap_dir / 'actor-output-fields.json'
@@ -395,6 +454,7 @@ class TapGenerator:
                 actor_output_fields = json.load(json_file)
                 if isinstance(actor_output_fields, dict) and len(actor_output_fields) > 0:
                     self.logger.info("Actor output fields already exists for tap " + self.actor_id)
+                    self.logger.debug("Existing actor output fields: " + str(actor_output_fields))
                     return
 
         # Load example_output from actor-description.json
@@ -409,18 +469,22 @@ class TapGenerator:
             self.logger.error("Returned data is not a JSON object or does not contain 'actor_output_fields' property")
             raise ValueError("Invalid data returned from LLM")
 
-        self.logger.info("Actor output fields json built: " + str(json_output_fields))
+        self.logger.debug("Actor output fields json built: " + str(json_output_fields))
+        self.logger.info("Actor output fields json built successfully.")
 
         # Save the JSON summary into actor-output-fields.json
         with open(actor_output_fields_path, 'w') as file:
             json.dump(json_output_fields, file, indent=4)
+        self.logger.info("Actor output fields saved successfully in actor-output-fields.json.")
 
     def contains_legal_ethical_policy_word(self, text):
         legal_ethical_policy_words = ['policy', 'privacy', 'legal', 'complian', 'ethic']
         text_lower = text.lower()
         for word in legal_ethical_policy_words:
             if word in text_lower:
+                self.logger.debug(f"Found legal/ethical/policy word '{word}' in text.")
                 return True
+        self.logger.debug("No legal/ethical/policy words found in text.")
         return False
     
     def contains_proxy_word(self, text):
@@ -428,7 +492,9 @@ class TapGenerator:
         text_lower = text.lower()
         for word in proxy_words:
             if word in text_lower:
+                self.logger.debug(f"Found proxy word '{word}' in text.")
                 return True
+        self.logger.debug("No proxy words found in text.")
         return False
 
     def generate_tap_description(self):
@@ -440,6 +506,7 @@ class TapGenerator:
                 tap_description = json.load(json_file)
                 if isinstance(tap_description, dict) and len(tap_description) > 0:
                     self.logger.info("Tap description already exists for tap " + self.actor_id)
+                    self.logger.debug("Existing tap description: " + str(tap_description))
                     return
 
         # Load necessary data from files
@@ -489,11 +556,13 @@ class TapGenerator:
         tap_description['special_instructions'].append("The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit")
         
 
-        self.logger.info("Tap description json built: " + str(tap_description))
+        self.logger.debug("Tap description json built: " + str(tap_description))
+        self.logger.info("Tap description json built successfully.")
 
         # Save the tap description into tap-description.json
         with open(tap_description_path, 'w') as file:
             json.dump(tap_description, file, indent=4)
+        self.logger.info("Tap description saved successfully in tap-description.json.")
 
     def generate_raw_test_examples(self):
         tap_test_cases_path = self.tap_dir / '_test-cases.json'
@@ -506,7 +575,7 @@ class TapGenerator:
                     self.logger.info("Test cases already exist for tap " + self.actor_id)
                     return
 
-        self.logger.info("Generating raw test input for tap " + self.actor_id)
+        self.logger.debug("Generating raw test input for tap " + self.actor_id)
 
         # Load necessary data from files
         with open(self.tap_dir / 'actor-description.json', 'r') as file:
@@ -538,11 +607,13 @@ class TapGenerator:
             self.logger.error("Returned data is not an array of strings")
             raise ValueError("Invalid data returned from LLM")
 
-        self.logger.info("Test cases generated: " + str(test_cases))
+        self.logger.debug("Test cases generated: " + str(test_cases))
+        self.logger.info("Test cases generated successfully.")
 
         # Save the test cases into _test-cases.json
         with open(tap_test_cases_path, 'w') as file:
             json.dump(test_cases, file, indent=4)
+        self.logger.debug("Test cases saved in _test-cases.json.")
 
     def generate_tap_index(self):
         # Update taps_index.json
@@ -557,8 +628,10 @@ class TapGenerator:
                 json.dump(taps_index, f, indent=4)
                 f.truncate()  # Remove remaining part
                 self.logger.info("Tap added to taps_index.json")
+                self.logger.debug(f"Tap {self.tap_id} added to taps_index.json with config_dir: {self.tap_id}")
             else:
                 self.logger.info("Tap already exists in taps_index.json")
+                self.logger.debug(f"Tap {self.tap_id} already exists in taps_index.json")
 
     def delete_tap_index(self):
         # Update taps_index.json
@@ -570,6 +643,8 @@ class TapGenerator:
                 del taps_index[self.tap_id]
                 # Write the updated taps_index back to the file
                 f.seek(0)
+                self.logger.info("Tap removed from taps_index.json")
+                self.logger.debug(f"Tap {self.tap_id} removed from taps_index.json")
 
     def init_tap(self):
         try:
@@ -580,11 +655,14 @@ class TapGenerator:
             tap_manager = TapManager()
             tap = tap_manager.get_tap(self.tap_id)
 
+            self.logger.info("Tap initialized successfully.")
+            self.logger.debug(f"Tap {self.tap_id} initialized successfully with TapManager.")
             return tap
         except Exception as e:
             # If an exception is thrown, delete tap index and re-raise the exception
             self.delete_tap_index()
             self.logger.error(f"Error while initializing tap: {str(e)}")
+            self.logger.debug(f"Error while initializing tap {self.tap_id}: {str(e)}")
             raise
 
     def generate_test_examples(self):
@@ -603,7 +681,8 @@ class TapGenerator:
 
         # Calculate the number of valid test cases already available
         valid_test_cases = len(existing_test_cases)
-        self.logger.info(f"{valid_test_cases} valid test cases are already available, generating another max {max_valid_test_cases - valid_test_cases} test cases.")
+        self.logger.info(f"Available valid test cases: {valid_test_cases}")
+        self.logger.debug(f"{valid_test_cases} valid test cases are already available, generating another max {max_valid_test_cases - valid_test_cases} test cases.")
 
         # Load raw_test_cases from given file tap_test_cases_path = self.tap_dir / '_test-cases.json'
         with open(tap_raw_test_cases_path, 'r') as json_file:
@@ -616,12 +695,14 @@ class TapGenerator:
         for i, test_case in enumerate(raw_test_cases):
             # Check if test case already exists
             if any(case['data_task'] == test_case for case in existing_test_cases):
-                self.logger.info(f"Test case {i} already exists, skipping...")
+                self.logger.info(f"Test case {i} exists.")
+                self.logger.debug(f"Test case {i} already exists, skipping...")
                 continue
 
             # Check if the total number of test cases (existing and new) exceeds the maximum limit
             if valid_test_cases >= max_valid_test_cases:
-                self.logger.info(f"Success: Maximum limit of {max_valid_test_cases} valid test cases reached.")
+                self.logger.info(f"Max limit of valid test cases reached.")
+                self.logger.debug(f"Success: Maximum limit of {max_valid_test_cases} valid test cases reached.")
                 return
 
             self.logger.info(f"Generating test example {i}...")
@@ -629,37 +710,45 @@ class TapGenerator:
                 if self.run_single_test_case(i, test_case, tap):
                     valid_test_cases += 1
             except Exception as e:
-                self.logger.error(f"Error while generating test example {i}: ", exc_info=True)
+                self.logger.error(f"Error in test example {i}.")
+                self.logger.debug(f"Error while generating test example {i}: ", exc_info=True)
 
         # Check if the total number of test cases (existing and new) is less than the minimum limit
         if valid_test_cases < min_test_cases:
-            self.logger.error("Less than 5 valid test cases are available")
+            self.logger.error("Insufficient valid test cases.")
+            self.logger.debug("Less than 5 valid test cases are available")
             raise ValueError("Less than 5 valid test cases are available.")
 
         # Log success message if the loop finished correctly with the number of valid test cases generated
-        self.logger.info(f"Success: {valid_test_cases} valid test cases generated.")
+        self.logger.info(f"Valid test cases generated: {valid_test_cases}")
+        self.logger.debug(f"Success: {valid_test_cases} valid test cases generated.")
 
     def run_single_test_case(self, i, test_case, tap):
         # Get retriever
         retriever_result = tap.get_retriever(test_case)
-        self.logger.info(f"Retriever result for test example {i}: {retriever_result}")
+        self.logger.info(f"Retriever result for test example {i}.")
+        self.logger.debug(f"Retriever result for test example {i}: {retriever_result}")
 
         # If can_fulfill is False, log and continue to next test case
         if not retriever_result.can_fulfill:
-            self.logger.info(f"Test case {i} cannot be fulfilled, skipping...")
+            self.logger.info(f"Test case {i} cannot be fulfilled.")
+            self.logger.debug(f"Test case {i} cannot be fulfilled, skipping...")
             return False
 
         # Run actor
         actor_return = tap.run_actor(retriever_result.retriever.input)
-        self.logger.info(f"Actor return for test example {i}: {actor_return}")
+        self.logger.info(f"Actor return for test example {i}.")
+        self.logger.debug(f"Actor return for test example {i}: {actor_return}")
 
         # Truncate returned data
         sample_data = tap.truncate_returned_data(actor_return)
-        self.logger.info(f"Sample data for test example {i}: {sample_data}")
+        self.logger.info(f"Sample data for test example {i}.")
+        self.logger.debug(f"Sample data for test example {i}: {sample_data}")
 
         # Validate data
         validate_data_return = tap.validate_data(test_case, sample_data)
-        self.logger.info(f"Validate data return for test example {i}: {validate_data_return}")
+        self.logger.info(f"Validate data return for test example {i}.")
+        self.logger.debug(f"Validate data return for test example {i}: {validate_data_return}")
         if validate_data_return.is_valid:
             self.materialize_example_test(i, test_case, retriever_result, sample_data)
             return True
@@ -706,6 +795,7 @@ class TapGenerator:
             file.seek(0)
             json.dump(data, file, indent=4)
             file.truncate()
+        self.logger.debug(f"Test case {i} saved in _test-cases.json.")
 
         # Save the example into tap-examples.json
         with open(tap_examples_path, 'r+') as file:
@@ -714,6 +804,7 @@ class TapGenerator:
             file.seek(0)
             json.dump(data, file, indent=4)
             file.truncate()
+        self.logger.debug(f"Example {i} saved in tap-examples.json.")
 
         self.logger.info(f"Test example {i} successfully generated.")
 
@@ -739,6 +830,7 @@ class TapGenerator:
             for attempt in range(max_attempts):
                 try:
                     method()
+                    self.logger.debug(f"Method {method.__name__} executed successfully.")
                     break  # If the method is successful, break the loop and move to the next method
                 except Exception as e:
                     self.logger.error(f"Error while running {method.__name__}, attempt {attempt + 1} of {max_attempts}", exc_info=True)

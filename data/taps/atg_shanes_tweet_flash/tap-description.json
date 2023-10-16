@@ -1,0 +1,27 @@
+{
+    "name": "Twitter Search",
+    "entities": [
+        "tweets",
+        "user",
+        "date"
+    ],
+    "filters": [
+        "search_query",
+        "filter_options",
+        "url",
+        "user_id"
+    ],
+    "options": [
+        "Max Tweets Per Query/Profile/URL",
+        "Search Terms"
+    ],
+    "special_instructions": [
+        "One of search_query or url must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The filter_options is an object that can contain language and verified_users as properties",
+        "The user_id is the id of the user whose tweets you want to scrape",
+        "The Search Terms is an array of search queries",
+        "The Max Tweets Per Query/Profile/URL is the maximum number of tweets to scrape per query, profile, or URL",
+        "The tool delivers tweets at Blazing Fast Speeds with Historical Search and Other Unique Features. Search is no longer limited by date!",
+        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+    ]
+}

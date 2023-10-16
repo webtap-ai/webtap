@@ -25,16 +25,17 @@ Given the above {actor_name} INPUT SCHEMA, {actor_name} and a DATA TASK I want y
 Be clear, specific and coincise in the response.
 Do not be speculative, only base your answer on compatibility between DATA TASK and {actor_name} INPUT SCHEMA/{actor_name} OUTPUT RETURN FIELDS.
 Do not propose me alternative solutions, like customizations or more data parsing after the request.
-Specifically return me wether it's possible to get the given DATA TASK with the only and just the params proposed in {actor_name} INPUT SCHEMA.
+Specifically return me wether it's possible to get the given DATA TASK.
+Return No, I can't try to fulfill the params required by given task if you are sure that it's not possible to get the given DATA TASK; if in doubt return Yes, I can try to fulfill the params required by given task.
 
 At the very end return me a JSON object respecting the above FINAL JSON RESPONSE SCHEMA, summarizing your answer as the following:
 
 {{
     "inputCompatibility": (one of)
-     "Only using the params provided in {actor_name} INPUT SCHEMA: I can try to fulfill the params required by given task"
+     "Yes, I can try to fulfill the params required by given task"
      or
-     "Only using the params provided in {actor_name} INPUT SCHEMA: I can't try to fulfill the params required by given task"
-    "can_fulfill": false // True if inputCompatibility is "... Yes I can try ..."
+     "No, I can't try to fulfill the params required by given task"
+    "can_fulfill": false // True if inputCompatibility is "Yes I can try ..."
     "explanation": "Explain in one sentence why you can fulfill or not",
     "input_params" : // only if can_fulfill is true, a JSON input of params needed to run the Actor
     "alternative_fulfillable_data_task": "restaurants in Miami" // only if can_fulfill is false

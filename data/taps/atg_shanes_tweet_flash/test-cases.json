@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape tweets with the search term 'AI Technology'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'COVID-19 Vaccine', maximum 200 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'Tesla Motors', maximum 400 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'SpaceX', maximum 500 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'Apple Inc.', maximum 600 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'Amazon', maximum 800 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'Instagram', maximum 200 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'Snapchat', maximum 300 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'TikTok', maximum 400 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape tweets with the search term 'LinkedIn', maximum 500 tweets",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]
