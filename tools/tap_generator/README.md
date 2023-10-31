@@ -1,5 +1,10 @@
 # Tap generator for webtap
 
+Tap generator is a tool that will help to generate taps for webtap. Please note:
+
+1. Tap generator is not intended to be able to automatically generate all actors
+2. Instead Tap Generator is intended to be able to assist tap generation by automating as much as possible any step
+
 ## Usage
 
 ```bash
@@ -9,7 +14,7 @@ python -m tap_generator.run {actor_id}
 Example run
 
 ```bash
-python -m tap_generator.run emastra/google-trends-scraper
+python -m tools.tap_generator.run apify/instagram-hashtag-scraper
 ```
 
 ## How the tap generator works
@@ -26,4 +31,4 @@ python -m tap_generator.run emastra/google-trends-scraper
 - If for some reason the tap generator is unable to fullfill a step, it will stop and communicate in the output the step that failed, a short description of the issue and **the name of the file that it hasn't been able to generate**.
 - If you want to fix the issue and continue the process, you can do one of the following options:
   a. Read the debug_trace.log and try to fix the issue.
-  b. **(Recommended)** Simply manually generaate the file that hasn't been generated and restart the process
+  b. **(Recommended)** Simply manually generate the file that hasn't been generated and restart the process
