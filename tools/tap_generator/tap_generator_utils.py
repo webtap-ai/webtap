@@ -2,8 +2,6 @@ import logging, demjson3, json, csv, sys, re, os, json, openai
 from pathlib import Path
 from webtap.tap_manager import TapManager
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
-import psycopg2, time
-from psycopg2 import sql
 from apify_client import ApifyClient
 from typing import List, Dict
 
