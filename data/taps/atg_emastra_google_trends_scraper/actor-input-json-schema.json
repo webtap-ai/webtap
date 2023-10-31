@@ -1,0 +1,228 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "searchTerms": {
+            "type": "array",
+            "description": "(Required if 'spreadsheetId' is not provided) List of search terms to be scraped.",
+            "example": [
+                "test term",
+                "another test term"
+            ]
+        },
+        "isMultiple": {
+            "type": "boolean",
+            "description": "If checked comma will be handled as search for multiple terms"
+        },
+        "timeRange": {
+            "type": "string",
+            "description": "Choose a predefined search's time range (defaults to 'Past 12 months')",
+            "example": "now 4-H",
+            "enum": [
+                "now 1-H",
+                "now 4-H",
+                "now 1-d",
+                "now 7-d",
+                "today 1-m",
+                "today 3-m",
+                "today 5-y",
+                "all"
+            ]
+        },
+        "geo": {
+            "type": "string",
+            "description": "Get results from a specific geo area (defaults to 'Worldwide')",
+            "enum": [
+                "AF",
+                "AL",
+                "DZ",
+                "AS",
+                "AD",
+                "AO",
+                "AI",
+                "AQ",
+                "AG",
+                "AR",
+                "AM",
+                "AW",
+                "AU",
+                "AT",
+                "AZ",
+                "BS",
+                "BH",
+                "BD",
+                "BB",
+                "BY",
+                "BE",
+                "BZ",
+                "BJ",
+                "BM",
+                "BT",
+                "BO",
+                "BQ",
+                "BA",
+                "BW",
+                "BV",
+                "BR",
+                "IO",
+                "BN",
+                "BG",
+                "BF",
+                "BI",
+                "CV",
+                "KH",
+                "CM",
+                "CA",
+                "KY",
+                "CF",
+                "TD",
+                "CL",
+                "CN",
+                "CX",
+                "..."
+            ]
+        },
+        "viewedFrom": {
+            "type": "string",
+            "description": "Country for residential proxies to ensure correct results",
+            "enum": [
+                "us",
+                "af",
+                "al",
+                "dz",
+                "as",
+                "ad",
+                "ao",
+                "ai",
+                "aq",
+                "ag",
+                "ar",
+                "am",
+                "aw",
+                "au",
+                "at",
+                "az",
+                "bs",
+                "bh",
+                "bd",
+                "bb",
+                "by",
+                "be",
+                "bz",
+                "bj",
+                "bm",
+                "bt",
+                "bo",
+                "ba",
+                "bw",
+                "bv",
+                "br",
+                "io",
+                "bn",
+                "bg",
+                "bf",
+                "bi",
+                "kh",
+                "cm",
+                "ca",
+                "cv",
+                "ky",
+                "cf",
+                "td",
+                "cl",
+                "cn",
+                "cx",
+                "cc",
+                "co",
+                "km",
+                "cg",
+                "..."
+            ]
+        },
+        "skipDebugScreen": {
+            "type": "boolean",
+            "description": "By default snapshot of each visited Google Trends page saved to KV Store"
+        },
+        "startUrls": {
+            "type": "array",
+            "description": "Copy a Google Trends URL and paste it here."
+        },
+        "spreadsheetId": {
+            "type": "string",
+            "description": "(Optional) Id of the google sheet from where search terms will be loaded. Spreadsheet must have only one column. Row 1 is considered the title of the column so it will not be loaded as a search term. ",
+            "example": "//spreadsheetId"
+        },
+        "isPublic": {
+            "type": "boolean",
+            "description": "If checked you can import a public spreadsheet without need for authorization. For importing private sheets, please read about authorization in the actor documentation.",
+            "example": true
+        },
+        "category": {
+            "type": "string",
+            "description": "Choose a category to filter the search for (defaults to 'All categories')",
+            "enum": [
+                "3",
+                "47",
+                "44",
+                "22",
+                "12",
+                "5",
+                "7",
+                "71",
+                "8",
+                "45",
+                "65",
+                "11",
+                "13",
+                "958",
+                "19",
+                "16",
+                "299",
+                "14",
+                "66",
+                "29",
+                "533",
+                "174",
+                "18",
+                "20",
+                "67"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit of product items to be scraped. Zero value means no limit.",
+            "example": 100
+        },
+        "customTimeRange": {
+            "type": "string",
+            "description": "Provide custom time range. If present, it takes precedence over regular timeRange. Format is: YYYY-MM-DD YYYY-MM-DD. See examples in the documentation.",
+            "example": "2020-03-24 2020-03-29"
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "A function which result will get merged with the default result. It must return an object.",
+            "example": "($) => { return { test: 1234, test2: 5678 } }"
+        },
+        "outputAsISODate": {
+            "type": "boolean",
+            "description": "Outputs date column as an ISO date time string"
+        },
+        "csvOutput": {
+            "type": "boolean",
+            "description": "Output columns will be as follows: date, keyword(s)..."
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "How many pages will be opened in parallel if enough CPU is available."
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "How many times will the actor retry a request if it fails."
+        },
+        "pageLoadTimeoutSecs": {
+            "type": "integer",
+            "description": "How long it will wait for page loading before it abandons the loading and tries again."
+        }
+    },
+    "required": []
+}

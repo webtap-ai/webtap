@@ -1,8 +1,3 @@
 {
-    "actor_output_fields": "tweets, id, text, user, date",
-    "actor_output_views": {
-        "overview": {
-            "title": "Overview"
-        }
-    }
+    "actor_output_fields": "tweet_avatar, tweet_id, url, query, text, username, fullname, timestamp, language, in_reply_to, replies, retweets, quotes, images, likes, banner_image, total_tweets, num_following, num_followers, total_likes, tweet_links, tweet_hashtags, tweet_mentions"
 }

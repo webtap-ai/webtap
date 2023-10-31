@@ -1,60 +1,42 @@
 [
     {
-        "data_task": "Scrape 100 posts with the hashtag 'food'",
+        "data_task": "Scrape Instagram posts with hashtag 'webscraping', limit results to 20",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 40 posts with the hashtags 'art' and 'design'",
+        "data_task": "Scrape Instagram posts with hashtag 'photography', limit results to 40",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 80 posts with the hashtags 'news' and 'politics'",
+        "data_task": "Scrape Instagram posts with hashtag 'music', limit results to 60",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 90 posts with the hashtags 'business' and 'entrepreneurship'",
+        "data_task": "Scrape Instagram posts with hashtags 'books', 'literature', 'reading', limit results to 25 for each hashtag",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 15 posts with the hashtags 'education' and 'learning'",
+        "data_task": "Scrape Instagram posts with hashtag 'gaming', limit results to 90",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 35 posts with the hashtags 'health' and 'wellness'",
+        "data_task": "Scrape Instagram posts with hashtag 'business', limit results to 100",
         "expected_output": {
             "can_fulfill": true
         }
     },
     {
-        "data_task": "Scrape 55 posts with the hashtags 'movies' and 'cinema'",
-        "expected_output": {
-            "can_fulfill": true
-        }
-    },
-    {
-        "data_task": "Scrape 75 posts with the hashtags 'pets' and 'animals'",
-        "expected_output": {
-            "can_fulfill": true
-        }
-    },
-    {
-        "data_task": "Scrape 95 posts with the hashtags 'cooking' and 'recipes'",
-        "expected_output": {
-            "can_fulfill": true
-        }
-    },
-    {
-        "data_task": "Scrape 5 posts with the hashtags 'architecture' and 'buildings'",
+        "data_task": "Scrape Instagram posts with hashtag 'comedy', limit results to 130",
         "expected_output": {
             "can_fulfill": true
         }

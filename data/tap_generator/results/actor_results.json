@@ -1,0 +1,30 @@
+{
+    "shanes/tweet-flash": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "clockworks/tiktok-scraper": {
+        "status": "failure",
+        "message": "Error in method test_run: You must rent a paid Actor in order to run it."
+    },
+    "emastra/google-trends-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "traffic-generator/input-schema": {
+        "status": "failure",
+        "message": "Error in method generate_example: 'Actor ID traffic-generator/input-schema does not exist in actor_apis'"
+    },
+    "epctex/traffic-generator": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: You must rent a paid Actor in order to run it."
+    },
+    "clockworks/free-tiktok-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "petr_cermak/yellow-pages-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    }
+}

@@ -1,11 +1,32 @@
-*** This is a an example output returned by an Apify Actor ***
+# Generate actor list output field names
 
+I want you to return me a descrptive list of all the output fields of the actor.
+
+## Context
+
+### Examples about how I want you to behave
+
+This is the list of actor output fields for TripAdvisor Scraper actor:
+```
+{{ "actor_output_fields": "id, email, type, category, subcategories, name, locationString, description, image, photoCount, awards, rankingPosition, rating, rawRanking, phone, address, addressObj, localName, localAddress, localLangCode, latitude, longitude, webUrl, website, rankingString, rankingDenominator, neighborhoodLocations, nearestMetroStations, ancestorLocations, ratingHistogram, numberOfReviews, reviewTags, reviews, hotelClass, hotelClassAttribution, amenities, numberOfRooms, priceLevel, priceRange, roomTips, checkInDate, checkOutDate, offers" }}
+```
+### Actor description
+{description}
+
+### Actor readme
+{readme}
+
+### This is the output returned by {actor_name} Apify Actor
 {example_output}
 
-***
+## Instructions
 
 Make a comma separated list of all the output fields of the actor.
+Make sure the list is descriptive of the fields returned by the actor.
+
 Return me a json object with 1 single element; key actor_output_fields and value a comma separated string with all the output fields, for example:
+```
 {{
     "actor_output_fields" : "url,name,stars,numberOfGuests,address"
 }}
+```

@@ -1,3 +1,7 @@
 {
-    "input": {}
+    "max_tweets": 500,
+    "language": "any",
+    "use_experimental_scraper": false,
+    "user_info": "user info and replying info",
+    "max_attempts": 5
 }

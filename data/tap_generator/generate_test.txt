@@ -21,10 +21,6 @@ Data tasks:
 Following is an example input that works with {actor_name}:
 {example_input}
 
-*** FINAL JSON RESPONSE SCHEMA ***
-Following is a json schema about the FINAL JSON RESPONSE I want you to return to me:
-{output_response_schema}
-
 *** {actor_name} OUTPUT RETURN FIELDS ***
 Following is the full list of fields that will be returned by {actor_name}. If an item is not here it won't be returned.
 If an item is here it will be 100% returned (regardless of any privacy or any other limit)

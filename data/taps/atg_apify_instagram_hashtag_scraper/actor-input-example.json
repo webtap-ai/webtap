@@ -1,8 +1,6 @@
 {
-    "input": {
-        "hashtags": [
-            "webscraping"
-        ],
-        "resultsLimit": 20
-    }
+    "hashtags": [
+        "webscraping"
+    ],
+    "resultsLimit": 20
 }

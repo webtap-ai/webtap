@@ -3,7 +3,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 100 posts with the hashtag 'food'",
+        "data_task": "Scrape Instagram posts with hashtag 'webscraping', limit results to 20",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -11,9 +11,9 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "food"
+                    "webscraping"
                 ],
-                "resultsLimit": 100
+                "resultsLimit": 20
             },
             "alternative_fulfillable_data_task": null
         }
@@ -22,7 +22,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 40 posts with the hashtags 'art' and 'design'",
+        "data_task": "Scrape Instagram posts with hashtag 'photography', limit results to 40",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -30,8 +30,7 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "art",
-                    "design"
+                    "photography"
                 ],
                 "resultsLimit": 40
             },
@@ -42,7 +41,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 80 posts with the hashtags 'news' and 'politics'",
+        "data_task": "Scrape Instagram posts with hashtag 'music', limit results to 60",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -50,10 +49,9 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "news",
-                    "politics"
+                    "music"
                 ],
-                "resultsLimit": 80
+                "resultsLimit": 60
             },
             "alternative_fulfillable_data_task": null
         }
@@ -62,7 +60,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 90 posts with the hashtags 'business' and 'entrepreneurship'",
+        "data_task": "Scrape Instagram posts with hashtags 'books', 'literature', 'reading', limit results to 25 for each hashtag",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -70,8 +68,28 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "business",
-                    "entrepreneurship"
+                    "books",
+                    "literature",
+                    "reading"
+                ],
+                "resultsLimit": 25
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Instagram posts with hashtag 'gaming', limit results to 90",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "gaming"
                 ],
                 "resultsLimit": 90
             },
@@ -82,7 +100,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 15 posts with the hashtags 'education' and 'learning'",
+        "data_task": "Scrape Instagram posts with hashtag 'business', limit results to 100",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -90,10 +108,9 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "education",
-                    "learning"
+                    "business"
                 ],
-                "resultsLimit": 15
+                "resultsLimit": 100
             },
             "alternative_fulfillable_data_task": null
         }
@@ -102,7 +119,7 @@
         "title": null,
         "public": true,
         "post_run_chat_message": null,
-        "data_task": "Scrape 35 posts with the hashtags 'health' and 'wellness'",
+        "data_task": "Scrape Instagram posts with hashtag 'comedy', limit results to 130",
         "final_json_response": {
             "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
             "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
@@ -110,90 +127,9 @@
             "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
             "input_params": {
                 "hashtags": [
-                    "health",
-                    "wellness"
+                    "comedy"
                 ],
-                "resultsLimit": 35
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "title": null,
-        "public": true,
-        "post_run_chat_message": null,
-        "data_task": "Scrape 55 posts with the hashtags 'movies' and 'cinema'",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-            "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-            "input_params": {
-                "hashtags": [
-                    "movies",
-                    "cinema"
-                ],
-                "resultsLimit": 55
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "title": null,
-        "public": true,
-        "post_run_chat_message": null,
-        "data_task": "Scrape 75 posts with the hashtags 'pets' and 'animals'",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-            "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-            "input_params": {
-                "hashtags": [
-                    "pets",
-                    "animals"
-                ],
-                "resultsLimit": 75
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "title": null,
-        "public": true,
-        "post_run_chat_message": null,
-        "data_task": "Scrape 95 posts with the hashtags 'cooking' and 'recipes'",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-            "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-            "input_params": {
-                "hashtags": [
-                    "cooking",
-                    "recipes"
-                ],
-                "resultsLimit": 95
-            },
-            "alternative_fulfillable_data_task": null
-        }
-    },
-    {
-        "title": null,
-        "public": true,
-        "post_run_chat_message": null,
-        "data_task": "Scrape 5 posts with the hashtags 'architecture' and 'buildings'",
-        "final_json_response": {
-            "inputCompatibility": "Only using the params provided Instagram Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
-            "outputCompatibility": "Assuming data returned by Instagram Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Instagram Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Instagram Hashtag Scraper OUTPUT RETURN FIELDS",
-            "can_fulfill": true,
-            "explanation": "The data task requested can be fulfilled: Instagram Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
-            "input_params": {
-                "hashtags": [
-                    "architecture",
-                    "buildings"
-                ],
-                "resultsLimit": 5
+                "resultsLimit": 130
             },
             "alternative_fulfillable_data_task": null
         }

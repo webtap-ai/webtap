@@ -1,55 +1,229 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Apify Actor Input",
-    "description": "Schema for the input of an Apify Actor",
-    "type": "array",
-    "items": {
-        "type": "object",
-        "properties": {
-            "name": {
-                "description": "The name of the input field",
-                "type": "string"
-            },
-            "type": {
-                "description": "The type of the input field",
-                "type": "string"
-            },
-            "required": {
-                "description": "Indicates whether the field is required",
-                "type": "boolean"
-            },
-            "param_name": {
-                "description": "The parameter name of the input field",
-                "type": "string"
-            },
-            "description": {
-                "description": "A description of the input field",
-                "type": "string"
-            }
-        },
-        "required": [
-            "name",
-            "type",
-            "required",
-            "param_name",
-            "description"
-        ],
-        "additionalProperties": false
-    },
-    "examples": [
-        {
-            "name": "Search Terms",
+    "type": "object",
+    "properties": {
+        "queries": {
             "type": "array",
-            "required": false,
-            "param_name": "queries",
-            "description": "Enter your search queries here. For example search queries, refer to [https://github.com/igorbrigadir/twitter-advanced-search](https://github.com/igorbrigadir/twitter-advanced-search)."
+            "description": "Enter your search queries here. For example search queries, refer to https://github.com/igorbrigadir/twitter-advanced-search.",
+            "example": [
+                "LinkedIn"
+            ]
         },
-        {
-            "name": "Max Tweets Per Query/Profile/URL",
+        "max_tweets": {
             "type": "integer",
-            "required": false,
-            "param_name": "max_tweets",
-            "description": "Set the maximum number of tweets to scrape per query, profile, or URL. For instance, if you set a maximum of 50 for 3 search terms, the total tweet limit will be 150."
+            "description": "Set the maximum number of tweets to scrape per query, profile, or URL. For instance, if you set a maximum of 50 for 3 search terms, the total tweet limit will be 150.",
+            "example": 500
+        },
+        "absolute_max_tweets": {
+            "type": "integer",
+            "description": "Set an overall limit for the number of tweets to scrape across all threads. Once this limit is reached, all threads will stop. This may lead to unequal numbers of tweets collected from each query. To "
+        },
+        "language": {
+            "type": "string",
+            "description": "Choose a specific language to filter tweets. If left as 'Any', tweets in all languages will be included.",
+            "example": "any",
+            "enum": [
+                "any",
+                "en",
+                "es",
+                "zh",
+                "am",
+                "ar",
+                "bg",
+                "bn",
+                "bo",
+                "ca",
+                "ch`",
+                "cs",
+                "da",
+                "de",
+                "dv",
+                "el",
+                "et",
+                "fa",
+                "fi",
+                "fr",
+                "gu",
+                "hi",
+                "ht",
+                "hu",
+                "hy",
+                "in",
+                "is",
+                "it",
+                "iu",
+                "iw",
+                "ja",
+                "ka",
+                "km",
+                "kn",
+                "ko",
+                "lo",
+                "lt",
+                "lv",
+                "ml",
+                "my",
+                "ne",
+                "nl",
+                "no",
+                "or",
+                "pa",
+                "pl",
+                "pt",
+                "ro",
+                "ru",
+                "..."
+            ]
+        },
+        "from_user": {
+            "type": "array",
+            "description": "Provide a list of Twitter profiles to scrape. The profiles should be written as 'username' or '@username'"
+        },
+        "use_experimental_scraper": {
+            "type": "boolean",
+            "description": "Activates an experimental profile scraper that uses the user timeline instead of search and should have a few months of history (can go back a few months rather than 10 days) but doesn't work with fil",
+            "example": false
+        },
+        "tweet_urls": {
+            "type": "array",
+            "description": "List the twitter search URLs you want to scape such as 'https://twitter.com/elonmusk/status/1656898688739057665' if your url contains more such as a cursor like 'https://twitter.com/elonmusk/status/16"
+        },
+        "user_info": {
+            "type": "string",
+            "description": "Options to either collect each tweet with all of its replies, only each tweet, or only the replies.",
+            "example": "user info and replying info",
+            "enum": [
+                "user info and replying info",
+                "only replying info",
+                "only user info"
+            ]
+        },
+        "search_urls": {
+            "type": "array",
+            "description": "List the full links to tweets you want to scape such as 'https://twitter.com/search?q=((MadMaxFuryRoad%20OR%20MadMax%20OR%20%22FuryRoad%22%20OR%20%22GeorgeMiller%22%20OR%20GeorgeMiller%20OR%20TomHardy"
+        },
+        "only_tweets": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets that are not retweets, replies, or quotes.",
+            "example": false
+        },
+        "filter:verified": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets from verified users",
+            "example": false
+        },
+        "filter:blue_verified": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets from verified users with Twitter Blue",
+            "example": false
+        },
+        "filter:nativeretweets": {
+            "type": "boolean",
+            "description": "Only retweets created using the retweet button. Works well combined with from: to show only retweets. Only works within the last 7-10 days or so.",
+            "example": false
+        },
+        "filter:retweets": {
+            "type": "boolean",
+            "description": "Old style retweets ('RT') + quoted tweets",
+            "example": false
+        },
+        "filter:replies": {
+            "type": "boolean",
+            "description": "Returns tweets that are a reply to another Tweet",
+            "example": false
+        },
+        "filter:quote": {
+            "type": "boolean",
+            "description": "Filters content to only return Quote Tweets",
+            "example": false
+        },
+        "filter:has_engagement": {
+            "type": "boolean",
+            "description": "Has some engagement (replies, favorites, retweets). Can be negated to find tweets with no engagement.",
+            "example": false
+        },
+        "filter:media": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets with any media type",
+            "example": false
+        },
+        "filter:images": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets with any image",
+            "example": false
+        },
+        "filter:videos": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets with any video type, including native Twitter video and external sources such as Youtube.",
+            "example": false
+        },
+        "filter:twimg": {
+            "type": "boolean",
+            "description": "Filters content to only return tweets with native Twitter images (pic.twitter.com links)",
+            "example": false
+        },
+        "filter:safe": {
+            "type": "boolean",
+            "description": "Filters out unsafe tweets",
+            "example": false
+        },
+        "from_": {
+            "type": "string",
+            "description": "Written by a particular user. Useful if you want to use multiple custom queries for a single user.'"
+        },
+        "to": {
+            "type": "string",
+            "description": "Geotagged in this place. Also supports Phrases, eg: near:'The Hague'"
+        },
+        "mentioning": {
+            "type": "string",
+            "description": "Geotagged in this place. Also supports Phrases, eg: near:'The Hague'"
+        },
+        "geo_near": {
+            "type": "string",
+            "description": "Geotagged in this place. Also supports Phrases, eg: near:'The Hague'"
+        },
+        "within_radius": {
+            "type": "string",
+            "description": "Within specific radius of the 'near' operator, to apply a limit. Can use km or mi. e.g. fire near:san-francisco within:10km"
+        },
+        "geocode": {
+            "type": "string",
+            "description": "To get tweets around a specific location, use geocode:lat,long,radius. E.g., to get tweets 10km around twitters hq, use geocode:37.7764685,-122.4172004,10km"
+        },
+        "place": {
+            "type": "string",
+            "description": "Search tweets by Place Object ID eg: USA Place ID is 96683cc9126741d1"
+        },
+        "min_retweets": {
+            "type": "integer",
+            "description": "Specify minimum number of Retweets a tweet should have to be included."
+        },
+        "min_faves": {
+            "type": "integer",
+            "description": "Specify minimum number of favorites a tweet should have to be included."
+        },
+        "min_replies": {
+            "type": "integer",
+            "description": "Specify minimum number of replies a tweet should have to be included."
+        },
+        "newer_than": {
+            "type": "string",
+            "description": "Specify the earliest date (inclusive) from which to start scraping tweets. The date should be in the 'YYYY-MM-DD' format."
+        },
+        "older_than": {
+            "type": "string",
+            "description": "Specify the latest date (exclusive) until which to scrape tweets. The date should be in the 'YYYY-MM-DD' format."
+        },
+        "max_attempts": {
+            "type": "integer",
+            "description": "Specify the maximum number of attempts to be made if a scrape operation fails. After reaching this limit, the failed operation will be skipped.",
+            "example": 5
+        },
+        "num_threads": {
+            "type": "integer",
+            "description": "Overrides the number of threads/workers automatically optimized for your memory amount. Could be useful for troubleshooting."
         }
-    ]
+    },
+    "required": []
 }

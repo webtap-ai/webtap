@@ -1,0 +1,48 @@
+{
+    "example_json_input": {
+        "resultsPerPage": 20,
+        "hashtags": [
+            "podcast"
+        ],
+        "maxRequestRetries": 10
+    },
+    "example_output_json_response": {
+        "id": "6885142885939825925",
+        "text": "Best Mashed Potatoes! #tiktokcooks #hellofall #comfortfood #homecooking #cookingwithshereen #fyp",
+        "createTime": 1603072290,
+        "authorMeta": {
+            "id": "6746332443361739782",
+            "name": "cookingwithshereen",
+            "nickName": "COOKING with SHEREEN",
+            "verified": true,
+            "signature": "YouTube & Insta \u2934\ufe0f\n\u2b07\ufe0f My CookBook & Merch! \u2b07\ufe0f",
+            "avatar": "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/750f43c1845b5a556207821b1a0d72c1~c5_720x720.jpeg?x-expires=1639000800&x-signature=gl7OpbhX1L9yhC6e2rm4rajLvZg%3D",
+            "following": 27,
+            "fans": 4400000,
+            "heart": 72300000,
+            "video": 185,
+            "digg": 910
+        },
+        "musicMeta": {
+            "musicName": "original sound",
+            "musicAuthor": "COOKING with SHEREEN",
+            "musicOriginal": true,
+            "musicAlbum": "",
+            "playUrl": "https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/6885142857766669062.mp3"
+        },
+        "webVideoUrl": "https://www.tiktok.com/@cookingwithshereen/video/6885142885939825925",
+        "videoUrl": "https://v16-web.tiktok.com/video/tos/useast2a/tos-useast2a-ve-0068c001/aaa32cd10cfc49d297adb7900f680551/?a=1988&br=3442&bt=1721&cd=0%7C0%7C1&ch=0&cr=0&cs=0&cv=1&dr=0&ds=3&er=&expire=1638937586&ft=wUyFfFGgkag3-I&l=202112072225270101890660492361F572&lr=tiktok_m&mime_type=video_mp4&net=0&pl=0&policy=3&qs=0&rc=Mzw2d2RobzZpeDMzNjczM0ApPDMzOzRpPDw6NzllNmlmNGdwLm9wZ2FyLzNfLS0vMTZzcy0yYy0xNDE1NDQvX2E2NGE6Yw%3D%3D&signature=30e50cb1af44c4eec84bca1b761180b9&tk=0&vl=&vr=",
+        "videoMeta": {
+            "height": 1024,
+            "width": 576,
+            "duration": 59
+        },
+        "diggCount": 3100000,
+        "shareCount": 91600,
+        "playCount": 21500000,
+        "commentCount": 24900,
+        "downloaded": false,
+        "mentions": [],
+        "hashtags": []
+    }
+}

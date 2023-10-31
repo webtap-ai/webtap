@@ -1,0 +1,30 @@
+{
+    "example_json_input": {
+        "search": "Dentist",
+        "location": "Los Angeles",
+        "startUrls": [],
+        "maxItems": 200,
+        "extendOutputFunction": "($, record) => { return {}; }",
+        "proxyConfiguration": {
+            "useApifyProxy": false
+        }
+    },
+    "example_output_json_response": {
+        "isAd": true,
+        "url": "https://www.yellowpages.com/compton-ca/mip/golden-state-dental-group-18768214?lid=1001760866489",
+        "name": "Golden State Dental Group",
+        "address": "1601 N Long Beach Blvd, Compton, CA 90221",
+        "phone": "(310) 507-7718",
+        "rating": 4,
+        "ratingCount": 6,
+        "infoSnippet": "*Please contact us for more information",
+        "image": "https://i4.ypcdn.com/blob/00a40d49e577606be9d82ced5404696022a7e2a0",
+        "categories": [
+            "Dentists",
+            "Implant Dentistry",
+            "Pediatric Dentistry",
+            "Periodontists",
+            "Cosmetic Dentistry"
+        ]
+    }
+}

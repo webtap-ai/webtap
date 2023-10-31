@@ -1,0 +1,51 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "hashtags": {
+            "type": "array",
+            "description": "Just add TikTok hashtags and the scraper will collect information about users, followers, likes, and more.",
+            "example": [
+                "podcast"
+            ]
+        },
+        "resultsPerPage": {
+            "type": "integer",
+            "description": "The number of results that will be scraped from every hashtag and profile. With this free version you can scrape maximum 20 videos in one go.",
+            "example": 20
+        },
+        "profiles": {
+            "type": "array",
+            "description": "Add the name of user you want to scrape."
+        },
+        "postURLs": {
+            "type": "array",
+            "description": "Add the URLs of posted videos you want to scrape. You can enter URLs one by one, or you can upload or link to a text file."
+        },
+        "shouldDownloadVideos": {
+            "type": "boolean",
+            "description": "Whether to download TikTok video files. Note that this will increase costs and time required for the scrape"
+        },
+        "shouldDownloadCovers": {
+            "type": "boolean",
+            "description": "Whether to download TikTok video cover images (i.e. thumbnails). Note that this will increase costs and time required for the scrape"
+        },
+        "shouldDownloadSlideshowImages": {
+            "type": "boolean",
+            "description": "Whether to download TikTok slideshow images. Note that this will increase costs and time required for the scrape"
+        },
+        "videoKvStoreIdOrName": {
+            "type": "string",
+            "description": "Name (or ID) of the Key Value Store where the videos and other media like thumbnails will be stored. Omit to store in the default one. Using this option will provide a named Key-Value store can help b"
+        },
+        "disableEnrichAuthorStats": {
+            "type": "boolean",
+            "description": "Sometimes Tiktok's API will not return author stats (their hearts, follower count etc) for profile/hashtag/sound pages, so an additional query will be needed. This will slow the scraper down"
+        },
+        "disableCheerioBoost": {
+            "type": "boolean",
+            "description": "If the requested number of posts is small, the Cheerio crawler (much faster) will be used. If for some reason you need to disable this, turn on this option"
+        }
+    },
+    "required": []
+}

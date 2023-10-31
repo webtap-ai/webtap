@@ -7,6 +7,9 @@ Following is the context:
 *** {actor_name} APIFY ORIGINAL DESCRIPTION ON APIFY STORE ***
 {actor_description}
 
+*** {actor_name} Readme summary ***
+{readme_summary}
+
 *** {actor_name} INPUT SCHEMA ***
 Following is the json schema representation of the the input for {actor_name}. 
 {input_json_schema}
@@ -80,7 +83,7 @@ For Google: "keyword", "Google search URL"
 For TripAdvisor: "Location", "Tripadvisor url"
 
 4. options
-A list of all the options that the end of user of the LLM can apply Any option that is related to the internal logic of the tool (for example use proxy) should not be present here.
+A list of all the options that the end of user of the LLM can apply. Any option that is related to the internal logic of the tool (e.g. `memory limit` or `use headless chrome`) should not be present here.
 Basically you can iterate for each of the options available into Apify API "Instagram Hashtag" Input and if (1) they are not a way to filter data, and (2) are options that the end user can apply, you can add them to the list.
 Some examples:
 For Google: [ "Max pages", "Result per google page", "Mobile Results", "Country", "Language", "Exact location", "Include unfiltered", "Return full html" ]
@@ -103,8 +106,7 @@ For TripAdvisor
             "TripAdvisor Actor can't filter result using entities listings",
             "TripAdvisor Actor can't filter by 'cats' frienly or '5 stars hotel only'",
             "IMPORTANT: Rememeber that TripAdvisor Actor provides email address in the  output fields",
-            "A vacation rental is not an Airbnb",
-            "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+            "A vacation rental is not an Airbnb"
         ]
 
 Return me a json object compatible with the above schema with these 5 params (name, entities, filters, options, filters, special_instructions):

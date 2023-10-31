@@ -12,12 +12,14 @@ import re, json, copy, demjson3
 from typing import List, Dict
 from apify_client import ApifyClient
 
+
 class Actor(BaseModel):
-    '''
+    """
     Actor is a representation of an Apify Actor: it contains original Apify Actor data
-    '''
-    id : str
-    name : str
+    """
+
+    id: str
+    name: str
     description: str
     users: str = None
     run: Optional[str] = None
@@ -26,79 +28,98 @@ class Actor(BaseModel):
     example_input: Optional[dict] = None
     full_readme_text: Optional[str] = None
 
+
 class ActorParameters(BaseModel):
-    '''
+    """
     ActorParameters is a representation of an Apify Actor API parameters as they are described in Apify API documentation
     (They are usually added as a query string to the actor api url)
-    '''
+    """
+
     actorId: str  # Actor ID or a tilde-separated owner's username and actor name.
     timeout: int = None  # Optional timeout for the run, in seconds.
     memory: int = None  # Memory limit for the run, in megabytes.
-    maxItems: int = None  # The maximum number of items that the actor run should return.
+    maxItems: int = (
+        None  # The maximum number of items that the actor run should return.
+    )
     build: str = None  # Specifies the actor build to run.
-    waitForFinish: int = None  # The maximum number of seconds the server waits for the run to finish.
+    waitForFinish: int = (
+        None  # The maximum number of seconds the server waits for the run to finish.
+    )
     webhooks: str = None  # Specifies optional webhooks associated with the actor run.
 
 
 class ActorInput(BaseModel):
-    '''
+    """
     ApifyInput is a representation of an Apify Actor input: it contains the parameters and the body of the actor
-    '''
+    """
+
     # set parameters as default ActorParameters with default values
-    parameters : ActorParameters
-    body : dict
+    parameters: ActorParameters
+    body: dict
+
 
 class ApifyRetriever(Retriever):
-    '''
+    """
     ApifyRetrieverModel is the rapresentation of a how the data task can be can_fulfilled.
     For apify type will be apify, model id will be the Apify actor id, as exposed on Apify API documentation.
-    '''
+    """
+
     type: str = "apify"
     input: ActorInput
 
+
 class ApifyRetrieverResult(RetrieverResult):
-    '''
+    """
     ApifyTapReturn is the abstract schema rappresentation of the return value of a tap.
-    '''
-    retriever : ApifyRetriever = None
+    """
+
+    retriever: ApifyRetriever = None
+
 
 class ValidateDataResult(BaseModel):
-    '''
+    """
     ValidateDataResult is the return value of a data validation
-    '''
-    is_valid : bool
-    explanation : str
+    """
+
+    is_valid: bool
+    explanation: str
+
 
 class ApifyTapActor(BaseModel):
-    '''
+    """
     ApifyTapActor is a Tap representation of an Apify Actor: it encapsulate an Apify Actor, its input data and has some additional data useful for Tap purposes
-    '''
-    entities : List[str]
-    special_instructions: List[str]
-    actor : Actor
-    input_body_schema : dict
+    """
+
+    actor: Actor
+    input_body_schema: dict
     input_body_summary: str
     output_fields: str
     output_views: dict = dict({})
+
 
 class ApifyTap(BaseTap):
 
     """
     Apify Tap is a generic tap that is able to manage/scrape/validate data from an Apify Actor.
-    It works by simply defining info about the actor and the prompt template
+    It works by defining info about the actor and the prompt template
     """
-    entities : List[str]
-    filters : List[str]
-    options : List[str]
+
+    entities: List[str]
+    filters: List[str]
+    options: List[str]
+    special_instructions: List[str]
     examples: list
     test_cases: list
     apify_tap_actor: ApifyTapActor
-    openai_model : str = "gpt-3.5-turbo"
-    MESSAGE_LENGTH_USE_16k : int = 15000
-    data_file_dir : Path = Path(files(__package__).joinpath("../../data/apify_tap/"))
-    prompt_file : Path = data_file_dir.joinpath("prompt.txt")
-    output_response_schema_file : Path = data_file_dir.joinpath("output_response_schema.json")
-    prompt_template : str = prompt_file.read_text()
+    memory_requirement: int = None
+    openai_model: str = "gpt-3.5-turbo"
+    MESSAGE_LENGTH_USE_16k: int = 15000
+    data_file_dir: Path = Path(files(__package__).joinpath("../../data/apify_tap/"))
+    prompt_file: Path = data_file_dir.joinpath("prompt.txt")
+    output_response_schema_file: Path = data_file_dir.joinpath(
+        "output_response_schema.json"
+    )
+    prompt_template: str = prompt_file.read_text()
     _llm: ChatOpenAI = PrivateAttr()
     _logger: logging.Logger = PrivateAttr()
 
@@ -118,10 +139,10 @@ class ApifyTap(BaseTap):
 
     def __init__(self, *args, **kwargs):
         # Extract the necessary attributes from kwargs
-        name = kwargs.get('name')
-        entities = kwargs.get('entities')
-        filters = kwargs.get('filters')
-        options = kwargs.get('options')
+        name = kwargs.get("name")
+        entities = kwargs.get("entities")
+        filters = kwargs.get("filters")
+        options = kwargs.get("options")
 
         # Generate the description
         # This is done before calling the super init function to ensure that the description is available for use in the parent class's init function
@@ -132,8 +153,8 @@ class ApifyTap(BaseTap):
         chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
 
         # Add the description and chat presentation to kwargs
-        kwargs['description'] = description
-        kwargs['chat_presentation'] = chat_presentation
+        kwargs["description"] = description
+        kwargs["chat_presentation"] = chat_presentation
 
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
@@ -145,7 +166,7 @@ class ApifyTap(BaseTap):
         # Init llm
         self.load_llm()
 
-    def set_llm_model( self, model_name: str ):
+    def set_llm_model(self, model_name: str):
         self.openai_model = model_name
         # regenerate LLM
         self.load_llm()
@@ -154,16 +175,16 @@ class ApifyTap(BaseTap):
         stack = []
         json_end = None
         for i in reversed(range(len(text))):
-            if text[i] == '}':
+            if text[i] == "}":
                 if json_end is None:
                     json_end = i
-                stack.append('}')
-            elif text[i] == '{':
+                stack.append("}")
+            elif text[i] == "{":
                 stack.pop()
                 if len(stack) == 0:
-                    return json.loads(text[i:json_end+1])
+                    return json.loads(text[i : json_end + 1])
 
-        raise ValueError('No valid JSON object found in the text.')
+        raise ValueError("No valid JSON object found in the text.")
 
     def format_json(self, json_obj, **kwargs):
         """
@@ -178,13 +199,13 @@ class ApifyTap(BaseTap):
 
         # Use a regular expression to replace placeholders with actual values
         for key, value in kwargs.items():
-            json_str = re.sub(r'\{\{' + key + r'\}\}', str(value), json_str)
+            json_str = re.sub(r"\{\{" + key + r"\}\}", str(value), json_str)
 
         # Convert the string back to a JSON object
         formatted_json_obj = json.loads(json_str)
 
         return formatted_json_obj
-    
+
     def sanitize_examples(self):
         """
         Sanitize the examples
@@ -200,8 +221,7 @@ class ApifyTap(BaseTap):
             if "title" not in example or example["title"] is None:
                 example["title"] = example["data_task"]
 
-            
-    # return a list of examples suitable for use in the prompt: without public, post_run_chat_message and title fields    
+    # return a list of examples suitable for use in the prompt: without public, post_run_chat_message and title fields
     def get_prompt_examples(self) -> List[str]:
         prompt_examples = copy.deepcopy(self.examples)
         for example in prompt_examples:
@@ -216,27 +236,34 @@ class ApifyTap(BaseTap):
 
     def generate_prompt_messages(self, data_task: str) -> List[str]:
         # generate the chat messages
-        human_message_prompt = HumanMessagePromptTemplate.from_template(self.prompt_template)
+        human_message_prompt = HumanMessagePromptTemplate.from_template(
+            self.prompt_template
+        )
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(
-            actor_name = self.apify_tap_actor.actor.name,
-            examples = self.get_prompt_examples(),
-            output_response_schema = self.format_json(self.output_response_schema, actor_name=self.apify_tap_actor.actor.name),
-            list_of_returned_fields = self.apify_tap_actor.output_fields,
-            input_json_schema = self.apify_tap_actor.input_body_schema,
-            special_instructions = "\n".join(self.format_json(self.apify_tap_actor.special_instructions, actor_name=self.apify_tap_actor.actor.name)),
-            data_task = data_task,
-            actor_input_summary = self.apify_tap_actor.input_body_summary
+            actor_name=self.apify_tap_actor.actor.name,
+            examples=self.get_prompt_examples(),
+            output_response_schema=self.format_json(
+                self.output_response_schema, actor_name=self.apify_tap_actor.actor.name
+            ),
+            list_of_returned_fields=self.apify_tap_actor.output_fields,
+            input_json_schema=self.apify_tap_actor.input_body_schema,
+            special_instructions="\n".join(
+                self.format_json(
+                    self.special_instructions,
+                    actor_name=self.apify_tap_actor.actor.name,
+                )
+            ),
+            data_task=data_task,
+            actor_input_summary=self.apify_tap_actor.input_body_summary,
         )
         messages = chat_prompt_formatted.to_messages()
         return messages
 
-    def get_retriever(self, data_task : str) -> ApifyRetrieverResult:
-
+    def get_retriever(self, data_task: str) -> ApifyRetrieverResult:
         # init execution start time
         execution_start_time = time.time()
         self._logger.info(" **** Starting retriever retrieval ****")
-
 
         # generate the chat messages
         messages = self.generate_prompt_messages(data_task)
@@ -246,18 +273,28 @@ class ApifyTap(BaseTap):
         # run the chain
         # if with gpt3.5 messages length is over 2000 chars use gpt 16k
         messages_length = len("".join(str(message) for message in messages))
-        if self.openai_model == "gpt-3.5-turbo" and messages_length > self.MESSAGE_LENGTH_USE_16k:
-            self._logger.info("Chat prompt length is over %s, using gpt-3.5-turbo-16k", self.MESSAGE_LENGTH_USE_16k)
+        if (
+            self.openai_model == "gpt-3.5-turbo"
+            and messages_length > self.MESSAGE_LENGTH_USE_16k
+        ):
+            self._logger.info(
+                "Chat prompt length is over %s, using gpt-3.5-turbo-16k",
+                self.MESSAGE_LENGTH_USE_16k,
+            )
             self.set_llm_model("gpt-3.5-turbo-16k")
 
-        chain_output = self._llm( messages )
+        chain_output = self._llm(messages)
 
         # log prompt response
-        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)
+        self._logger.info(
+            "Chain executed correctly, chain plain response: %s", chain_output
+        )
 
         # check that chain_output is not empty and is object with content property
-        if( chain_output is None or not hasattr(chain_output, "content")):
-            raise ValueError("Data returned from LLM is empty or doesn't contain content property")
+        if chain_output is None or not hasattr(chain_output, "content"):
+            raise ValueError(
+                "Data returned from LLM is empty or doesn't contain content property"
+            )
 
         # extract list of json values from chain_output
         try:
@@ -266,19 +303,24 @@ class ApifyTap(BaseTap):
             raise ValueError("Data returned from LLM doesn't contain a valid json")
 
         # check that prompt_response contains can_fulfill and explanation
-        if( "can_fulfill" not in prompt_response or "explanation" not in prompt_response):
-            raise ValueError("Data returned from LLM doesn't contain can_fulfill or explanation")
+        if "can_fulfill" not in prompt_response or "explanation" not in prompt_response:
+            raise ValueError(
+                "Data returned from LLM doesn't contain can_fulfill or explanation"
+            )
 
         # log prompt response
-        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response)
+        self._logger.info(
+            "Prompt executed correctly, prompt response: %s", prompt_response
+        )
 
         retriever = None
         if prompt_response["can_fulfill"]:
             retriever = ApifyRetriever(
                 id=self.apify_tap_actor.actor.id,
-                input=ActorInput(parameters=ActorParameters(actorId=self.apify_tap_actor.actor.id),
-                body=prompt_response["input_params"]
-                )
+                input=ActorInput(
+                    parameters=ActorParameters(actorId=self.apify_tap_actor.actor.id),
+                    body=prompt_response["input_params"],
+                ),
             )
 
         # create tap return
@@ -286,7 +328,9 @@ class ApifyTap(BaseTap):
             can_fulfill=prompt_response["can_fulfill"],
             explanation=prompt_response["explanation"],
             retriever=retriever,
-            alternative_fulfillable_data_task=prompt_response.get("alternative_fulfillable_data_task", None)
+            alternative_fulfillable_data_task=prompt_response.get(
+                "alternative_fulfillable_data_task", None
+            ),
         )
 
         execution_time = time.time() - execution_start_time
@@ -301,19 +345,22 @@ class ApifyTap(BaseTap):
             raise ValueError("APIFY_API_TOKEN env variable is not set")
         apify_api_token = os.environ["APIFY_API_TOKEN"]
 
-        # Set maxItems in the actor input body to the provided parameter value
-        #actor_input.body["maxItems"] = max_items
-        MEMORY_MB = 256
+        params = {}
+
+        if self.memory_requirement is not None:
+            params["memory_mbytes"] = self.memory_requirement
+
+        params["run_input"] = actor_input.body
 
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
-        actor_run = client.actor(self.apify_tap_actor.actor.id).start(memory_mbytes=MEMORY_MB,run_input=actor_input.body)
+        actor_run = client.actor(self.apify_tap_actor.actor.id).start(**params)
         self._logger.info("Actor started, waiting for it to finish...")
 
         self._logger.info(f"Actor run: {actor_run}")
 
         # Loop until the actor run is finished
-        actor_run_id = actor_run['id']
+        actor_run_id = actor_run["id"]
         MAX_LOOP = 60
         loops = 0
         while True:
@@ -322,37 +369,46 @@ class ApifyTap(BaseTap):
                 self._logger.error(f"Actor run didn't finish in {MAX_LOOP} loops")
                 raise Exception(f"Actor run didn't finish in {MAX_LOOP} loops")
 
-
             # Get the current actor run state
             # Initialize the RunClient with the actor run ID
             run_client = client.run(actor_run_id)
 
             run_data = run_client.get()
-            actor_run_state = run_data['status']
+            actor_run_state = run_data["status"]
             self._logger.info(f"# {loops}")
             self._logger.info(f"Actor run state is: {actor_run_state}")
 
             # If the actor run is still running or has succeeded, fetch the items from the dataset
-            if actor_run_state in ['RUNNING']:
-                dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
-                self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
+            if actor_run_state in ["RUNNING"]:
+                dataset_items = (
+                    client.dataset(actor_run["defaultDatasetId"]).list_items().items
+                )
+                self._logger.info(
+                    f"Fetched {len(dataset_items)} items from the dataset"
+                )
 
                 # If the number of items fetched is greater than or equal to max_items, return the items
                 if len(dataset_items) >= max_items:
                     # abort the actor run
                     run_client.abort()
-                    self._logger.info("More than or equal to max_items fetched, aborting actor run")
+                    self._logger.info(
+                        "More than or equal to max_items fetched, aborting actor run"
+                    )
                     self._logger.info(f"Actor run aborted")
                     return dataset_items
 
-            if actor_run_state in ['SUCCEEDED']:
-                dataset_items = client.dataset(actor_run['defaultDatasetId']).list_items().items
-                self._logger.info(f"Fetched {len(dataset_items)} items from the dataset")
+            if actor_run_state in ["SUCCEEDED"]:
+                dataset_items = (
+                    client.dataset(actor_run["defaultDatasetId"]).list_items().items
+                )
+                self._logger.info(
+                    f"Fetched {len(dataset_items)} items from the dataset"
+                )
                 return dataset_items
 
             # If the actor run is not running and not succeeded, log an error and raise an exception
             # If the actor run is ready, simply wait 5 seconds and continue the loop
-            elif actor_run_state not in ['RUNNING', 'SUCCEEDED', 'READY']:
+            elif actor_run_state not in ["RUNNING", "SUCCEEDED", "READY"]:
                 self._logger.error(f"Actor run failed with state: {actor_run_state}")
                 raise Exception(f"Actor run failed with state: {actor_run_state}")
 
@@ -392,52 +448,50 @@ class ApifyTap(BaseTap):
         return data
 
     def load_json_data(self, data):
-        '''
+        """
         Load JSON data using demjson3. If loading fails due to the presence of the ellipsis character,
         the character is removed and loading is attempted again.
-        '''
+        """
         try:
             # Try to load the data as JSON
             loaded_data = demjson3.decode(data)
         except:
             # If loading fails, remove the ellipsis character and try again
-            data = data.replace('…', '')
+            data = data.replace("…", "")
             loaded_data = demjson3.decode(data)
-        
+
         # Return the loaded data
         return loaded_data
 
-    def get_retriever_and_run(self, data_task : str) -> Dict:
-        '''
+    def get_retriever_and_run(self, data_task: str) -> Dict:
+        """
         Given a data task, gets a retriever and then runs the Apify actor with provided model to get the data
-        '''
+        """
         # get retriever
         retriever_result = self.get_retriever(data_task)
-        result = {
-            "retriever_result": retriever_result
-        }
+        result = {"retriever_result": retriever_result}
 
         if retriever_result.can_fulfill is False:
             return result
 
         # run actor
-        try :
+        try:
             actor_return = self.run_actor(retriever_result.retriever.input)
         except Exception as e:
             self._logger.error("Error while running Apify Actor: %s", e)
             raise e
         # log actor return
         self._logger.info("Actor data returned: %s", actor_return)
-        
+
         # Load the actor return data using the new method
         loaded_data = self.load_json_data(actor_return)
-        
+
         # Convert the loaded data back to a JSON string
         result["data"] = json.dumps(loaded_data)
 
         return result
 
-    def retrieve_sample_data(self, data_task : str) -> Dict:
+    def retrieve_sample_data(self, data_task: str) -> Dict:
         # Get the data
         result = self.get_retriever_and_run(data_task)
 
@@ -450,40 +504,48 @@ class ApifyTap(BaseTap):
 
         return result
 
-    def validate_data(self, data_task : str, data_sample : List) -> ValidateDataResult:
-        '''
+    def validate_data(self, data_task: str, data_sample: List) -> ValidateDataResult:
+        """
         Validates the data returned by Apify Actor using LLM Chain
-        '''
+        """
         # init logging, openai
         execution_start_time = time.time()
 
         self._logger.info(" **** Starting data validation ****")
 
         # load the prompt from the external file
-        data_validator_prompt_file = self.data_file_dir.joinpath("data_validator_prompt.txt")
+        data_validator_prompt_file = self.data_file_dir.joinpath(
+            "data_validator_prompt.txt"
+        )
         data_validator_prompt = data_validator_prompt_file.read_text()
 
         # generate the chat messages
-        human_message_prompt = HumanMessagePromptTemplate.from_template(data_validator_prompt)
+        human_message_prompt = HumanMessagePromptTemplate.from_template(
+            data_validator_prompt
+        )
         chat_prompt = ChatPromptTemplate.from_messages([human_message_prompt])
         chat_prompt_formatted = chat_prompt.format_prompt(
-            actor_name = self.apify_tap_actor.actor.name,
-            data_task = data_task,
-            data_sample = data_sample
+            actor_name=self.apify_tap_actor.actor.name,
+            data_task=data_task,
+            data_sample=data_sample,
         )
         messages = chat_prompt_formatted.to_messages()
         # log the full chat prompt
         self._logger.info("Full chat prompt: %s", messages)
 
         # run the chain
-        chain_output = self._llm( messages )
+        chain_output = self._llm(messages)
 
         # log prompt response
-        self._logger.info("Chain executed correctly, chain plain response: %s", chain_output)
+        self._logger.info(
+            "Chain executed correctly, chain plain response: %s", chain_output
+        )
 
         # check that chain_output is not empty and is object with content property
-        if( chain_output is None or not hasattr(chain_output, "content")):
-            raise ValueError("Data returned from LLM is empty or doesn't contain content property")
+        if chain_output is None or not hasattr(chain_output, "content"):
+            raise ValueError(
+                "Data returned from LLM is empty or doesn't contain content property"
+            )
 
         # extract list of json values from chain_output
         try:
@@ -492,16 +554,20 @@ class ApifyTap(BaseTap):
             raise ValueError("Data returned from LLM doesn't contain a valid json")
 
         # log prompt response
-        self._logger.info("Prompt executed correctly, prompt response: %s", prompt_response)
+        self._logger.info(
+            "Prompt executed correctly, prompt response: %s", prompt_response
+        )
 
         execution_time = time.time() - execution_start_time
         self._logger.info("Validation execution time: %s", execution_time)
 
         # check that prompt_response contains is_valid and explanation
-        if( "is_valid" not in prompt_response or "explanation" not in prompt_response):
-            raise ValueError("Data returned from LLM doesn't contain is_valid or explanation")
+        if "is_valid" not in prompt_response or "explanation" not in prompt_response:
+            raise ValueError(
+                "Data returned from LLM doesn't contain is_valid or explanation"
+            )
 
         return ValidateDataResult(
             is_valid=prompt_response["is_valid"],
-            explanation=prompt_response["explanation"]
+            explanation=prompt_response["explanation"],
         )

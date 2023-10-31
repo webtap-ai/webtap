@@ -35,6 +35,12 @@
     "contact_details": {
         "config_dir": "contact_details"
     },
+    "atg_emastra_google_trends_scraper": {
+        "config_dir": "atg_emastra_google_trends_scraper"
+    },
+    "atg_clockworks_free_tiktok_scraper": {
+        "config_dir": "atg_clockworks_free_tiktok_scraper"
+    },
     "atg_apify_instagram_hashtag_scraper": {
         "config_dir": "atg_apify_instagram_hashtag_scraper"
     },

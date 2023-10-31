@@ -1,0 +1,26 @@
+{
+    "example_json_input": {
+        "filter:blue_verified": false,
+        "filter:has_engagement": false,
+        "filter:images": false,
+        "filter:media": false,
+        "filter:nativeretweets": false,
+        "filter:quote": false,
+        "filter:replies": false,
+        "filter:retweets": false,
+        "filter:safe": false,
+        "filter:twimg": false,
+        "filter:verified": false,
+        "filter:videos": false,
+        "language": "any",
+        "max_attempts": 5,
+        "max_tweets": 500,
+        "only_tweets": false,
+        "queries": [
+            "LinkedIn"
+        ],
+        "use_experimental_scraper": false,
+        "user_info": "user info and replying info"
+    },
+    "example_output_json_response": {}
+}

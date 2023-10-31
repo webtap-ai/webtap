@@ -1,0 +1,195 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos with hashtag 'travel', maximum 20 videos",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "travel"
+                ],
+                "resultsPerPage": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'justinbieber'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "justinbieber"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'arianagrande', maximum 20 videos",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "arianagrande"
+                ],
+                "resultsPerPage": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos with hashtag 'fashion', and download the slideshow images",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "fashion"
+                ],
+                "resultsPerPage": 20,
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos with hashtag 'music', and disable the additional query for author stats",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "music"
+                ],
+                "resultsPerPage": 20,
+                "disableEnrichAuthorStats": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'selenagomez', and download the video files",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "selenagomez"
+                ],
+                "shouldDownloadVideos": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'therock', and download the video cover images",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "therock"
+                ],
+                "shouldDownloadCovers": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'charlidamelio', and download the slideshow images",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "charlidamelio"
+                ],
+                "shouldDownloadSlideshowImages": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'zachking', and disable the additional query for author stats",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "zachking"
+                ],
+                "disableEnrichAuthorStats": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok videos from user profile 'lorengray', and disable the Cheerio crawler",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free TikTok Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free TikTok Scraper is reliable and solely based on compatibility between DATA TASK and Free TikTok Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free TikTok Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free TikTok Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "profiles": [
+                    "lorengray"
+                ],
+                "disableCheerioBoost": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]
