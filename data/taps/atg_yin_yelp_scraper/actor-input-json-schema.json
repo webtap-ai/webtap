@@ -1,0 +1,94 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "searchTerms": {
+            "type": "array",
+            "description": "Here you can provide a search queries for Yelp bussinesses to scrape.\n\nChoose either of 'Search Terms' or 'Direct URLs'.",
+            "example": [
+                "Pizza"
+            ]
+        },
+        "locations": {
+            "type": "array",
+            "description": "Locations that will be searched for each search term.",
+            "example": [
+                "New York"
+            ]
+        },
+        "searchLimit": {
+            "type": "integer",
+            "description": "How many search results (eq. Yelp bussinesses) should be processed per search query",
+            "example": 10
+        },
+        "directUrls": {
+            "type": "array",
+            "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here.\n\nEither of 'Search' or 'Direct URLs' or both fields."
+        },
+        "maxImages": {
+            "type": "integer",
+            "description": "Maximum number of images per business",
+            "example": 1
+        },
+        "reviewLimit": {
+            "type": "integer",
+            "description": "How many reviews should be scraped per business",
+            "example": 5
+        },
+        "scrapeReviewerName": {
+            "type": "boolean",
+            "description": "Extract Reviewer name"
+        },
+        "scrapeReviewerUrl": {
+            "type": "boolean",
+            "description": "Extract Reviewer URL"
+        },
+        "reviewsLanguage": {
+            "type": "string",
+            "description": "Select language of reviews to scrape (Only the reviews in the selected language will be scraped)",
+            "example": "ALL",
+            "enum": [
+                "ALL",
+                "cs",
+                "da",
+                "de",
+                "en",
+                "es",
+                "fi",
+                "fil",
+                "fr",
+                "it",
+                "ja",
+                "ms",
+                "nb",
+                "nl",
+                "pl",
+                "pt",
+                "sv",
+                "tr",
+                "zh"
+            ]
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Proxy is required to run this actor! Either use Apify proxy, or provide your own proxy servers.",
+            "example": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": [
+                    "RESIDENTIAL"
+                ]
+            }
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "How many times a failed request is retried before thrown away. Requests usually failed when blocked by the target site."
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "If checked, the actor will log very detailed info into the output."
+        }
+    },
+    "required": [
+        "proxy"
+    ]
+}

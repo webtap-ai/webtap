@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Website URL",
+        "type": "String",
+        "required": "Required",
+        "param_name": "url",
+        "description": "Website URL",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyOptions",
+        "description": "Select proxies to be used by your actor.",
+        "value_options": null
+    },
+    {
+        "name": "Frame rate",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "frameRate",
+        "description": "Number of frames per second (fps)",
+        "value_options": null
+    },
+    {
+        "name": "Scroll down",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "scrollDown",
+        "description": "When selected the actor will scroll down the page and capture it to create the gif.",
+        "value_options": null
+    },
+    {
+        "name": "Scroll percentage",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "scrollPercentage",
+        "description": "Amount to scroll down determined as a percentage of the vierport height.\n\nFor example, if viewport height is 1000 pixels and scroll percentage is set to 10%. Then scroll down by 10% of viewport height: 1000 px = 100 px",
+        "value_options": null
+    },
+    {
+        "name": "Capture before action",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "recordingTimeBeforeAction",
+        "description": "Amount of time to capture the screen before doing any action like scrolling down or clicking.",
+        "value_options": null
+    },
+    {
+        "name": "Click selector",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "clickSelector",
+        "description": "Used to click an element and record it.",
+        "value_options": null
+    },
+    {
+        "name": "Time to record after click",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "recordingTimeAfterClick",
+        "description": "Amount of time to record the screen after clicking an element with the click selector.",
+        "value_options": null
+    },
+    {
+        "name": "Wait to load",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "waitToLoadPage",
+        "description": "Set time to wait in the beginning so that page is fully loaded. For example when there is loading bar in the beginning that you don't want in the recording.",
+        "value_options": null
+    },
+    {
+        "name": "Cookie window selector",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "cookieWindowSelector",
+        "description": "CSS selector for the cookie pop-up window that will be used to remove the element from the DOM.",
+        "value_options": null
+    },
+    {
+        "name": "Slow down animations",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "slowDownAnimations",
+        "description": "When selected it slows down animations on the page so they can be properly captured.",
+        "value_options": null
+    },
+    {
+        "name": "Lossy",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "lossyCompression",
+        "description": "Lossy LZW compression of GIF using Giflossy (part of Gifsicle now).",
+        "value_options": null
+    },
+    {
+        "name": "Losless",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "loslessCompression",
+        "description": "Losless compression of GIF using Gifsicle.",
+        "value_options": null
+    },
+    {
+        "name": "Viewport width",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "viewportWidth",
+        "description": "Inner width of browser window",
+        "value_options": null
+    },
+    {
+        "name": "Viewport height",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "viewportHeight",
+        "description": "Inner height browser window",
+        "value_options": null
+    }
+]

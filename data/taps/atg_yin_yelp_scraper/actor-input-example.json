@@ -1,0 +1,18 @@
+{
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    },
+    "locations": [
+        "New York"
+    ],
+    "maxImages": 1,
+    "reviewLimit": 5,
+    "searchLimit": 10,
+    "searchTerms": [
+        "Pizza"
+    ],
+    "reviewsLanguage": "ALL"
+}

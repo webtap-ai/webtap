@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: apify-shared
+Version: 1.0.4
+Summary: Tools and constants shared across Apify projects.
+Author-email: "Apify Technologies s.r.o." <support@apify.com>
+License: Apache Software License
+Project-URL: Apify Homepage, https://apify.com
+Project-URL: Changelog, https://github.com/apify/apify-shared-python/blob/master/CHANGELOG.md
+Project-URL: Issue tracker, https://github.com/apify/apify-shared-python/issues
+Project-URL: Source, https://github.com/apify/apify-shared-python
+Keywords: apify,api,shared,scraping,automation
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: autopep8 ~=2.0.4 ; extra == 'dev'
+Requires-Dist: build ~=1.0.3 ; extra == 'dev'
+Requires-Dist: filelock ~=3.12.4 ; extra == 'dev'
+Requires-Dist: flake8 ~=6.1.0 ; extra == 'dev'
+Requires-Dist: flake8-bugbear ~=23.9.16 ; extra == 'dev'
+Requires-Dist: flake8-comprehensions ~=3.14.0 ; extra == 'dev'
+Requires-Dist: flake8-datetimez ~=20.10.0 ; extra == 'dev'
+Requires-Dist: flake8-docstrings ~=1.7.0 ; extra == 'dev'
+Requires-Dist: flake8-encodings ~=0.5.0 ; extra == 'dev'
+Requires-Dist: flake8-isort ~=6.1.0 ; extra == 'dev'
+Requires-Dist: flake8-pytest-style ~=1.7.2 ; extra == 'dev'
+Requires-Dist: flake8-simplify ~=0.21.0 ; extra == 'dev'
+Requires-Dist: flake8-unused-arguments ~=0.0.13 ; extra == 'dev'
+Requires-Dist: isort ~=5.12.0 ; extra == 'dev'
+Requires-Dist: mypy ~=1.5.1 ; extra == 'dev'
+Requires-Dist: pep8-naming ~=0.13.3 ; extra == 'dev'
+Requires-Dist: pre-commit ~=3.4.0 ; extra == 'dev'
+Requires-Dist: pydoc-markdown ~=4.8.2 ; extra == 'dev'
+Requires-Dist: pytest ~=7.4.2 ; extra == 'dev'
+Requires-Dist: pytest-asyncio ~=0.21.0 ; extra == 'dev'
+Requires-Dist: pytest-only ~=2.0.0 ; extra == 'dev'
+Requires-Dist: pytest-timeout ~=2.2.0 ; extra == 'dev'
+Requires-Dist: pytest-xdist ~=3.3.1 ; extra == 'dev'
+Requires-Dist: respx ~=0.20.1 ; extra == 'dev'
+Requires-Dist: twine ~=4.0.2 ; extra == 'dev'
+Requires-Dist: flake8-commas ~=2.1.0 ; (python_version < "3.12") and extra == 'dev'
+Requires-Dist: flake8-noqa ~=1.3.1 ; (python_version < "3.12") and extra == 'dev'
+Requires-Dist: flake8-quotes ~=3.3.2 ; (python_version < "3.12") and extra == 'dev'
+
+# Apify Shared Python
+
+The `apify-shared-python` is a Python library for containing constants and utilities which are used across
+our other Python projects like [apify-client-python](https://github.com/apify/apify-client-python)
+and [apify-sdk-python](https://github.com/apify/apify-sdk-python).
+
+If you want to develop Apify Actors in Python,
+check out the [Apify SDK for Python](https://docs.apify.com/sdk/python) instead.
+
+## Installation
+
+Requires Python 3.8+
+
+You can install the package from its [PyPI listing](https://pypi.org/project/apify-shared).
+To do that, simply run `pip install apify-shared` in your terminal.

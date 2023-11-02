@@ -1,0 +1,9 @@
+{
+    "url": "https://crawlee.dev/",
+    "frameRate": 7,
+    "proxyOptions": {
+        "useApifyProxy": true
+    },
+    "scrollPercentage": 10,
+    "recordingTimeBeforeAction": 1000
+}

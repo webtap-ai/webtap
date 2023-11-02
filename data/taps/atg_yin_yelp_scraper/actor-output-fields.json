@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "businessName, address, phoneNumber, rating, reviewText, directUrl, bizId, name, since, phone, healthScore, website, type, primaryPhoto, priceRange, cuisine, aggregatedRating, reviewCount, scrapeFinishedAt"
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "data_task": "Scrape Yelp businesses in New York with search term 'Pizza', limit to 10 results, 1 image per business and 5 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Chicago with search term 'Coffee Shops', limit to 15 results, 3 images per business and 7 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Denver with search term 'Breweries', limit to 15 results, 3 images per business and 7 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Atlanta with search term 'Southern Cuisine', limit to 10 results, 1 image per business and 5 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Phoenix with search term 'Tacos', limit to 10 results, 1 image per business and 5 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Portland with search term 'Donuts', limit to 10 results, 1 image per business and 5 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Las Vegas with search term 'Buffets', limit to 20 results, 2 images per business and 10 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Detroit with search term 'Pizza', limit to 10 results, 1 image per business and 5 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Yelp businesses in Columbus with search term 'Pizza', limit to 20 results, 2 images per business and 10 reviews per business",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

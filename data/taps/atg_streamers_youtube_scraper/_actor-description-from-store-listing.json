@@ -1,0 +1,71 @@
+{
+    "example_json_input": {
+        "url": "https://www.youtube.com/watch?v=CW7gfrTlr0Y"
+    },
+    "example_output_json_response": {
+        "id": "CW7gfrTlr0Y",
+        "title": "Stromae - Sant\u00e9 (Live From The Tonight Show Starring Jimmy Fallon)",
+        "url": "https://www.youtube.com/watch?v=CW7gfrTlr0Y",
+        "thumbnailUrl": "https://i.ytimg.com/vi/CW7gfrTlr0Y/maxresdefault.jpg",
+        "viewCount": 35582192,
+        "date": "2021-12-21",
+        "likes": 512238,
+        "location": null,
+        "channelName": "StromaeVEVO",
+        "channelUrl": "http://www.youtube.com/@StromaeVEVO",
+        "numberOfSubscribers": 6930000,
+        "duration": "00:03:17",
+        "commentsCount": 14,
+        "text": "Stromae - Sant\u00e9 (Live From The Tonight Show Starring Jimmy Fallon on NBC)\nListen to \"La solassitude\" here: https://stromae.lnk.to/la-solassitude\nOrder my new album \"Multitude\" here: https://stromae.lnk.to/multitudeID\n--\nhttps://www.stromae.com/fr/\nhttps://www.tiktok.com/@stromae\nhttps://www.facebook.com/stromae\nhttps://www.instagram.com/stromae\nhttps://twitter.com/stromae\n   / @stromae  \n--\nMosaert\nPaul Van Haver (Stromae) : creative direction\nCoralie Barbier : creative direction and fashion design\nLuc Van Haver : creative direction\nGa\u00eblle Birenbaum : communication & project manager\nEvence Guinet-Dannonay : executive assistant\nGa\u00eblle Cools : content & community manager\nRoxane Hauzeur : textile product manager\nDiego Mitrugno : office manager\n\nPartizan\nProducer : Auguste Bas\nLine Producer : Z\u00e9lie Deletrain \nProduction coordinator : Lou Bardou-Jacquet \nProduction assistant : Hugo Dao\nProduction assistant : Adrien Bossa\nProduction assistant : Basile Jan\n\nDirector : Julien Soulier \n1st assistant director : Mathieu Perez \n2nd assistant director : Leila Gentet \n\nDirector of Photography : Kaname Onoyama \n1st assistant operator : Micaela albanese\n2nd assistant operator : Florian Rey \nDoP Mantee : Zhaopeng Zhong\nMaking of : Adryen Barreyat\n\nHead Gaffer : Sophie Delorme \nElectrician : Sacha Brauman\nElectrician: Tom Devianne\nLighting designer : Aur\u00e9lien Dayot\nPrelight electrician : Emmanuel Malherbe\n\nHead Grip : Diocl\u00e8s Desrieux \nBest Boy grip : Eloi Perrin \nPrelight Grip : Vladimir Duranovic \n\nLocation manager : L\u00e9o Rodriguez \nLocation manager assistant : Gr\u00e9goire D\u00e9catoire \nLocation manager assistant : Mathieu Barazer \n\nStylist : Sandra Gonzalez \nStylist assistant : Sarah Bernard\n\nMake Up and Hair Artist : Camille Roche \nMake up Artist : Carla Lange \nMake Up and Hair Artist : Victoria Pinto \n\nSound Engineer : Lionel Capouillez \nBackliner : Nicolas Fradet \n\nProduction Designer : Penelope Hemon \n\nChoreographer : Marion Motin \nChoreographer assistant : Jeanne Michel \n\nPost production : Royal Post\nPost-Production Director : Cindy Durand Paucsik\nEditor : Marco Novoa\nEditor assistant : T\u00e9rence Nury \nGrader : Vincent Amor\nVFX Supervisor : Julien Laudicina\nGraphic designer : Quentin Mesureux \nGraphic designer : Lucas Pon\u00e7on \nFilm Lab Assistant : Hadrian Kalmbach\n\nMusicians:\nFlorian Rossi \nManoli Avgoustinatos\nSimon Schoovaerts \nYoshi Masuda \n\nDancers: \nJuliana Casas\nLydie Alberto \nRobinson Cassarino\nYohann Hebi daher\nChris Fargeot \nAudrey Hurtis \nElodie Hilsum\nDaya jones \nTh\u00e9ophile Bensusan \nBrandon Masele \nJean Michel Premier \nKevin Bago\nAchraf Bouzefour\nPauline Journe \nCaroline Bouquet \nManon Bouquet\nAshley Biscette \nJocelyn Laurent \nOumrata Konan\nKylian Toto\nEnzo Lesne \nSalomon Mpondo-Dicka\nSandrine Monar \nKarl-Ruben Noel\n\n#Stromae #Sante #JimmyFallon",
+        "descriptionLinks": [
+            {
+                "url": "https://stromae.lnk.to/la-solassitude",
+                "text": "https://stromae.lnk.to/la-solassitude"
+            },
+            {
+                "url": "https://stromae.lnk.to/multitudeID",
+                "text": "https://stromae.lnk.to/multitudeID"
+            },
+            {
+                "url": "https://www.stromae.com/fr/",
+                "text": "https://www.stromae.com/fr/"
+            },
+            {
+                "url": "https://www.tiktok.com/@stromae",
+                "text": "https://www.tiktok.com/@stromae"
+            },
+            {
+                "url": "https://www.facebook.com/stromae",
+                "text": "https://www.facebook.com/stromae"
+            },
+            {
+                "url": "https://www.instagram.com/stromae",
+                "text": "https://www.instagram.com/stromae"
+            },
+            {
+                "url": "https://twitter.com/stromae",
+                "text": "https://twitter.com/stromae"
+            },
+            {
+                "url": "https://www.youtube.com/channel/UCXF0YCBWewAj3RytJUAivGA",
+                "text": "   / @stromae  "
+            },
+            {
+                "url": "https://www.youtube.com/hashtag/stromae",
+                "text": "#Stromae"
+            },
+            {
+                "url": "https://www.youtube.com/hashtag/sante",
+                "text": "#Sante"
+            },
+            {
+                "url": "https://www.youtube.com/hashtag/jimmyfallon",
+                "text": "#JimmyFallon"
+            }
+        ],
+        "subtitles": null,
+        "comments": null,
+        "isMonetized": true,
+        "commentsTurnedOff": false
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "example_json_input": {
+        "url": "https://www.franshalsmuseum.nl/en/",
+        "frameRate": 7,
+        "scrollDown": true,
+        "recordingTimeBeforeAction": 1500,
+        "cookieWindowSelector": ".cookiebar"
+    },
+    "example_output_json_response": {
+        "scrolling_gif_url": "https://images.apifyusercontent.com/a0V9NT-1dGLaJ9Sshied02mY7FBMqCuAToKOKuas92g/Li9zcmMvZ2lmLWV4YW1wbGVzL3d3dy5mcmFuc2hhbHNtdXNldW0ubmwtc2Nyb2xsX2xvc3N5LWNvbXAuZ2lm"
+    }
+}

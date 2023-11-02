@@ -1,0 +1,32 @@
+{
+    "name": "Yelp Business and Reviews",
+    "entities": [
+        "business details",
+        "business reviews"
+    ],
+    "filters": [
+        "search terms",
+        "locations",
+        "direct URLs"
+    ],
+    "options": [
+        "search limit",
+        "max images",
+        "review limit",
+        "scrape reviewer name",
+        "scrape reviewer URL",
+        "reviews language",
+        "max request retries",
+        "debug log"
+    ],
+    "special_instructions": [
+        "One of search terms or direct URLs must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The tool can return up to 240 results on average, but this may vary depending on various factors",
+        "The cost of scraping can be estimated by running a test scrape",
+        "The output of the tool is a JSON object with the business name, address, phone number, rating, and review text",
+        "If the tool doesn't meet your needs, you can build your own scraper using Apify's templates or open-source library",
+        "For any technical feedback or bugs, create an issue on the Actor\u2019s Issues tab in Apify Console",
+        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

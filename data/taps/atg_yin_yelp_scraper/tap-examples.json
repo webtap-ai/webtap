@@ -1,0 +1,272 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in New York with search term 'Pizza', limit to 10 results, 1 image per business and 5 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Pizza"
+                ],
+                "locations": [
+                    "New York"
+                ],
+                "searchLimit": 10,
+                "maxImages": 1,
+                "reviewLimit": 5,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Chicago with search term 'Coffee Shops', limit to 15 results, 3 images per business and 7 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Coffee Shops"
+                ],
+                "locations": [
+                    "Chicago"
+                ],
+                "searchLimit": 15,
+                "maxImages": 3,
+                "reviewLimit": 7,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Denver with search term 'Breweries', limit to 15 results, 3 images per business and 7 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Breweries"
+                ],
+                "locations": [
+                    "Denver"
+                ],
+                "searchLimit": 15,
+                "maxImages": 3,
+                "reviewLimit": 7,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Atlanta with search term 'Southern Cuisine', limit to 10 results, 1 image per business and 5 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Southern Cuisine"
+                ],
+                "locations": [
+                    "Atlanta"
+                ],
+                "searchLimit": 10,
+                "maxImages": 1,
+                "reviewLimit": 5,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Phoenix with search term 'Tacos', limit to 10 results, 1 image per business and 5 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Tacos"
+                ],
+                "locations": [
+                    "Phoenix"
+                ],
+                "searchLimit": 10,
+                "maxImages": 1,
+                "reviewLimit": 5,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Portland with search term 'Donuts', limit to 10 results, 1 image per business and 5 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Donuts"
+                ],
+                "locations": [
+                    "Portland"
+                ],
+                "searchLimit": 10,
+                "maxImages": 1,
+                "reviewLimit": 5,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Las Vegas with search term 'Buffets', limit to 20 results, 2 images per business and 10 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Buffets"
+                ],
+                "locations": [
+                    "Las Vegas"
+                ],
+                "searchLimit": 20,
+                "maxImages": 2,
+                "reviewLimit": 10,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Detroit with search term 'Pizza', limit to 10 results, 1 image per business and 5 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Pizza"
+                ],
+                "locations": [
+                    "Detroit"
+                ],
+                "searchLimit": 10,
+                "maxImages": 1,
+                "reviewLimit": 5,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Yelp businesses in Columbus with search term 'Pizza', limit to 20 results, 2 images per business and 10 reviews per business",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Yelp Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Yelp Scraper is reliable and solely based on compatibility between DATA TASK and Yelp Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Yelp Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Yelp Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchTerms": [
+                    "Pizza"
+                ],
+                "locations": [
+                    "Columbus"
+                ],
+                "searchLimit": 20,
+                "maxImages": 2,
+                "reviewLimit": 10,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

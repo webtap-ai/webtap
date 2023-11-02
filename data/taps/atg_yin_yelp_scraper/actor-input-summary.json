@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "searchTerms, locations, searchLimit, directUrls, maxImages, reviewLimit, scrapeReviewerName, scrapeReviewerUrl, reviewsLanguage, proxy, maxRequestRetries, debugLog"
+}

@@ -1,0 +1,14 @@
+{
+    "example_json_input": {
+        "url": "https://www.example.com",
+        "search_term": "example search term",
+        "location": "example location"
+    },
+    "example_output_json_response": {
+        "businessName": "Example Business",
+        "address": "123 Main St",
+        "phoneNumber": "(555) 555-1234",
+        "rating": 4.5,
+        "reviewText": "Great service and delicious food!"
+    }
+}

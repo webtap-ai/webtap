@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Search terms",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "searchTerms",
+        "description": "Here you can provide a search queries for Yelp bussinesses to scrape.\n\nChoose either of 'Search Terms' or 'Direct URLs'.",
+        "value_options": null
+    },
+    {
+        "name": "Locations",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "locations",
+        "description": "Locations that will be searched for each search term.",
+        "value_options": null
+    },
+    {
+        "name": "Search results limit",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "searchLimit",
+        "description": "How many search results (eq. Yelp bussinesses) should be processed per search query",
+        "value_options": null
+    },
+    {
+        "name": "Direct Yelp page URLs instead of search",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "directUrls",
+        "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here.\n\nEither of 'Search' or 'Direct URLs' or both fields.",
+        "value_options": null
+    },
+    {
+        "name": "Max images",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxImages",
+        "description": "Maximum number of images per business",
+        "value_options": null
+    },
+    {
+        "name": "Maximum reviews",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "reviewLimit",
+        "description": "How many reviews should be scraped per business",
+        "value_options": null
+    },
+    {
+        "name": "Reviewer name",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "scrapeReviewerName",
+        "description": "Extract Reviewer name",
+        "value_options": null
+    },
+    {
+        "name": "Reviewer URL",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "scrapeReviewerUrl",
+        "description": "Extract Reviewer URL",
+        "value_options": null
+    },
+    {
+        "name": "Reviews Language",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "reviewsLanguage",
+        "description": "Select language of reviews to scrape (Only the reviews in the selected language will be scraped)",
+        "value_options": "\"ALL\": string\n\"cs\": string\n\"da\": string\n\"de\": string\n\"en\": string\n\"es\": string\n\"fi\": string\n\"fil\": string\n\"fr\": string\n\"it\": string\n\"ja\": string\n\"ms\": string\n\"nb\": string\n\"nl\": string\n\"pl\": string\n\"pt\": string\n\"sv\": string\n\"tr\": string\n\"zh\": string"
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "Proxy is required to run this actor! Either use Apify proxy, or provide your own proxy servers.",
+        "value_options": null
+    },
+    {
+        "name": "Max page retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "How many times a failed request is retried before thrown away. Requests usually failed when blocked by the target site.",
+        "value_options": null
+    },
+    {
+        "name": "Debug Log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "If checked, the actor will log very detailed info into the output.",
+        "value_options": null
+    }
+]

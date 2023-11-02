@@ -49,5 +49,8 @@
     },
     "atg_shanes_tweet_flash": {
         "config_dir": "atg_shanes_tweet_flash"
+    },
+    "atg_yin_yelp_scraper": {
+        "config_dir": "atg_yin_yelp_scraper"
     }
 }
