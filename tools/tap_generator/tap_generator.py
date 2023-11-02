@@ -22,15 +22,6 @@ class TapGenerator:
         tap_id = f"atg_{actor_id_clean}"
         return tap_id
 
-    def load_llm(self):
-        # check if openai os env variable is set
-        if "OPENAI_API_KEY" not in os.environ:
-            raise ValueError("OPENAI_API_KEY env variable is not set")
-        openai.api_key = os.environ["OPENAI_API_KEY"]
-        # set langchanin verbose to true if loggin level is info or above
-        verbose = self.logger.getEffectiveLevel() <= logging.INFO
-        self.llm = ChatOpenAI(temperature=0, model=self.openai_model, verbose=verbose)
-
     def init_logging(self):
         # Set up logging
         self.logger = logging.getLogger(__name__)
@@ -155,6 +146,7 @@ class TapGenerator:
             "actor-input-json-schema.json",
             "actor-input-summary.json",
             "tap-description.json",
+            "_actor-description-from-store-listing.json",
         ]
 
         created_files = []
@@ -212,6 +204,8 @@ class TapGenerator:
         self.tap_dir = (
             Path(__file__).parent.parent.parent / "data" / "taps" / self.tap_id
         )
+        self.openai_model = "gpt-4"
+
         # Load actor_results from a JSON file
         with open(
             Path("data") / "tap_generator" / "results" / "actor_results.json",
@@ -223,10 +217,6 @@ class TapGenerator:
         self.init_logging()
 
         self.tap_generator_utils = TapGeneratorUtils(self.logger)
-
-        # Set up LLM
-        self.openai_model = "gpt-4"
-        self.load_llm()
 
         self.load_apify_actor_data()
 
@@ -282,10 +272,10 @@ class TapGenerator:
 
     def generate_tap(self):
         # Instantiate single generator classes
-        actor_input_generator = ActorInputGenerator(self.logger, self.llm)
+        actor_input_generator = ActorInputGenerator(self.logger)
         actor_test_run = ActorTestRun(self.logger)
-        actor_description_generator = ActorDescriptionGenerator(self.logger, self.llm)
-        tap_generator_example = TapGeneratorExample(self.logger, self.llm)
+        actor_description_generator = ActorDescriptionGenerator(self.logger)
+        tap_generator_example = TapGeneratorExample(self.logger)
 
         steps = [
             {
@@ -348,13 +338,6 @@ class TapGenerator:
                 "optional": False,
             },
             {
-                # This step will generate_raw_test_examples
-                "step": tap_generator_example.generate_raw_test_examples,
-                "params": (self.tap_dir, self.actor_id, self.openai_model),
-                "generated_files": ["tap-examples.json"],
-                "optional": False,
-            },
-            {
                 # This step will finally init the tap
                 "step": self.init_tap,
                 "params": (),
@@ -364,7 +347,7 @@ class TapGenerator:
             {
                 # This step will generate_test_examples
                 "step": tap_generator_example.generate_test_examples,
-                "params": (self.tap_dir, self.tap_id),
+                "params": (self.tap_dir, self.tap_id, self.openai_model),
                 "generated_files": ["test-cases.json", "tap-examples.json"],
                 "optional": False,
             },

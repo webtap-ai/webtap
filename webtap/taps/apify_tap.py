@@ -113,7 +113,9 @@ class ApifyTap(BaseTap):
     apify_tap_actor: ApifyTapActor
     memory_requirement: int = None
     openai_model: str = "gpt-3.5-turbo"
-    MESSAGE_LENGTH_USE_16k: int = 15000
+    # 1 token should be ~ 3.5 chars; to be safe setting each message length limit to token limit * 3
+    MESSAGE_LENGTH_GPT3_USE_16k: int = 4097 * 3
+    MESSAGE_LENGTH_GPT4_USE_32k: int = 8192 * 3
     data_file_dir: Path = Path(files(__package__).joinpath("../../data/apify_tap/"))
     prompt_file: Path = data_file_dir.joinpath("prompt.txt")
     output_response_schema_file: Path = data_file_dir.joinpath(
@@ -270,19 +272,33 @@ class ApifyTap(BaseTap):
         # log the full chat prompt
         self._logger.info("Full chat prompt: %s", messages)
 
-        # run the chain
         # if with gpt3.5 messages length is over 2000 chars use gpt 16k
+        # if with gpt4 messages length is over 32000 chars use gpt4-32k
         messages_length = len("".join(str(message) for message in messages))
         if (
             self.openai_model == "gpt-3.5-turbo"
-            and messages_length > self.MESSAGE_LENGTH_USE_16k
+            and messages_length > self.MESSAGE_LENGTH_GPT3_USE_16k
         ):
-            self._logger.info(
+            self._logger.debug(
                 "Chat prompt length is over %s, using gpt-3.5-turbo-16k",
-                self.MESSAGE_LENGTH_USE_16k,
+                self.MESSAGE_LENGTH_GPT3_USE_16k,
             )
-            self.set_llm_model("gpt-3.5-turbo-16k")
+            openai_model = "gpt-3.5-turbo-16k"
+            self.set_llm_model(openai_model)
+        elif (
+            self.openai_model == "gpt-4"
+            and messages_length > self.MESSAGE_LENGTH_GPT4_USE_32k
+        ):
+            self._logger.debug(
+                "Chat prompt length is over %s, using gpt-4-32k",
+                self.MESSAGE_LENGTH_GPT4_USE_32k,
+            )
+            openai_model = "gpt-4-32k"
+            # currently gpt-4-32k is not yet enabled to use
+            openai_model = "gpt-4"
+            self.set_llm_model(openai_model)
 
+        # run the chain
         chain_output = self._llm(messages)
 
         # log prompt response

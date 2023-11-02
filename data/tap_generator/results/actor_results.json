@@ -26,5 +26,17 @@
     "petr_cermak/yellow-pages-scraper": {
         "status": "success",
         "message": "All steps executed successfully"
+    },
+    "glenn/gif-scroll-animation": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "streamers/youtube-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "yin/yelp-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
     }
 }

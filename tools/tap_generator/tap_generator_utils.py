@@ -2,14 +2,18 @@ import logging, demjson3, json, csv, sys, re, os, json, openai, time
 from pathlib import Path
 from webtap.tap_manager import TapManager
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
+from webtap.taps.apify_tap import ApifyTap
 from apify_client import ApifyClient
 from typing import List, Dict
+from langchain.chat_models import ChatOpenAI
 
 
 class TapGeneratorUtils:
     def __init__(self, logger):
         self.logger = logger
-        self.MESSAGE_LENGTH_USE_16k = 15000
+        # 1 token should be ~ 3.5 chars; to be safe setting each message length limit to token limit * 3
+        self.MESSAGE_LENGTH_GPT3_USE_16k: int = 4097 * 3
+        self.MESSAGE_LENGTH_GPT4_USE_32k: int = 8192 * 3
 
     def load_data_from_json(self, file_path):
         # This function loads data from a given JSON file and returns it as a dictionary
@@ -47,7 +51,7 @@ class TapGeneratorUtils:
         self.logger.error("No valid JSON object found in the text.")
         raise ValueError("No valid JSON object found in the text.")
 
-    def run_json_prompt_llm(self, prompt_template_file, input_vars, llm, openai_model):
+    def run_json_prompt_llm(self, prompt_template_file, input_vars, openai_model):
         # Load the prompt template
         with open(
             Path(__file__).parent.parent.parent
@@ -65,21 +69,49 @@ class TapGeneratorUtils:
         messages = chat_prompt_formatted.to_messages()
 
         # log the full chat prompt
-        self.logger.debug("Full chat prompt: %s", messages)
 
-        # run the chain
+        debug_output = ""
+        for message in messages:
+            content_lines = message.content.split("\n")
+            for line in content_lines:
+                debug_output += line + "\n"
+        self.logger.debug("Chat prompt: \n" + debug_output)
+
         # if with gpt3.5 messages length is over 2000 chars use gpt 16k
+        # if with gpt4 messages length is over 32000 chars use gpt4-32k
         messages_length = len("".join(str(message) for message in messages))
         if (
             openai_model == "gpt-3.5-turbo"
-            and messages_length > self.MESSAGE_LENGTH_USE_16k
+            and messages_length > self.MESSAGE_LENGTH_GPT3_USE_16k
         ):
             self.logger.debug(
-                "Chat prompt length is over %s, using gpt-3.5-turbo-16k",
-                self.MESSAGE_LENGTH_USE_16k,
+                "Chat prompt length is over %s, using gpt-3.5-turbo-16k. Current total size of the string is %s",
+                self.MESSAGE_LENGTH_GPT3_USE_16k,
+                messages_length,
             )
             openai_model = "gpt-3.5-turbo-16k"
+        elif (
+            openai_model == "gpt-4"
+            and messages_length > self.MESSAGE_LENGTH_GPT4_USE_32k
+        ):
+            self.logger.debug(
+                "Chat prompt length is over %s, using gpt-4-32k. Current total size of the string is %s",
+                self.MESSAGE_LENGTH_GPT4_USE_32k,
+                messages_length,
+            )
+            openai_model = "gpt-4-32k"
+            # currently gpt-4-32k is not yet enabled to use
+            openai_model = "gpt-4"
 
+        # Init llm
+        if "OPENAI_API_KEY" not in os.environ:
+            raise ValueError("OPENAI_API_KEY env variable is not set")
+        openai.api_key = os.environ["OPENAI_API_KEY"]
+        # set langchanin verbose to true if loggin level is info or above
+        verbose = self.logger.getEffectiveLevel() <= logging.INFO
+        llm = ChatOpenAI(temperature=0, model=openai_model, verbose=verbose)
+
+        # run the chain
         chain_output = llm(messages)
 
         # Check that chain_output is not empty, is object with content property
@@ -125,7 +157,7 @@ class TapGeneratorUtils:
                 self.logger.error(
                     f"Error while cleaning JSON example data for {key}: " + str(e)
                 )
-                self.logger.debuf(
+                self.logger.debug(
                     f"Failed to load cleaned JSON example data for {key}."
                 )
                 return None

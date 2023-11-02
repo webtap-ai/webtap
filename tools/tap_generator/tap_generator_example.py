@@ -6,10 +6,11 @@ import os
 
 
 class TapGeneratorExample:
-    def __init__(self, logger, llm):
+    def __init__(self, logger):
         self.logger = logger
         self.tap_generator_utils = TapGeneratorUtils(logger)
-        self.llm = llm
+        self.MIN_TEST_CASES = 3
+        self.MAX_VALID_TEST_CASES = 10
 
     """
 
@@ -20,15 +21,8 @@ class TapGeneratorExample:
     def generate_raw_test_examples(self, tap_dir, actor_id, openai_model):
         tap_test_cases_path = tap_dir / "_test-cases.json"
 
-        # Check if _test-cases.json already contains an array
-        if tap_test_cases_path.exists():
-            with open(tap_test_cases_path, "r") as json_file:
-                tap_test_cases = json.load(json_file)
-                if isinstance(tap_test_cases, list) and len(tap_test_cases) > 0:
-                    self.logger.info("Test cases already exist for tap " + actor_id)
-                    return
-
-        self.logger.debug("Generating raw test input for tap " + actor_id)
+        # In this case we need every time to generate the raw test cases from scratch
+        self.logger.info("Generating raw test input for tap " + actor_id)
 
         # Load necessary data from files
         with open(tap_dir / "actor-description.json", "r") as file:
@@ -53,7 +47,7 @@ class TapGeneratorExample:
         # Run the prompt with LLM
         try:
             test_cases_response = self.tap_generator_utils.run_json_prompt_llm(
-                "generate_test.txt", variables, self.llm, openai_model
+                "generate_test.txt", variables, openai_model
             )
         except Exception as e:
             error_message = f"""An error occurred during the execution of `TapGeneratorExample.generate_raw_test_examples` while executing `self.tap_generator_utils.run_json_prompt_llm` the following error was raised: {e}"""
@@ -83,13 +77,12 @@ class TapGeneratorExample:
     Ran the single raw test cases and generate valid examples/test cases
     """
 
-    def generate_test_examples(self, tap_dir, tap_id):
+    def generate_test_examples(self, tap_dir, tap_id, openai_model):
         tap_raw_test_cases_path = tap_dir / "_test-cases.json"
         tap_test_cases_path = tap_dir / "test-cases.json"
 
-        # Define the minimum and maximum number of valid test cases
-        min_test_cases = 5
-        max_valid_test_cases = 10
+        min_test_cases = self.MIN_TEST_CASES
+        max_valid_test_cases = self.MAX_VALID_TEST_CASES
 
         # Load existing test cases
         existing_test_cases = []
@@ -99,10 +92,19 @@ class TapGeneratorExample:
 
         # Calculate the number of valid test cases already available
         valid_test_cases = len(existing_test_cases)
-        self.logger.info(f"Available valid test cases: {valid_test_cases}")
-        self.logger.debug(
-            f"{valid_test_cases} valid test cases are already available, generating another max {max_valid_test_cases - valid_test_cases} test cases."
-        )
+
+        if valid_test_cases < min_test_cases:
+            self.logger.info(
+                f"{valid_test_cases} valid test cases are already available, generating another max {max_valid_test_cases - valid_test_cases} test cases."
+            )
+        else:
+            self.logger.info(
+                f"Success: {valid_test_cases} valid test cases are already available."
+            )
+            return
+
+        # generate raw test cases
+        self.generate_raw_test_examples(tap_dir, tap_id, openai_model)
 
         # Load raw_test_cases from given file tap_test_cases_path = tap_dir / '_test-cases.json'
         with open(tap_raw_test_cases_path, "r") as json_file:
@@ -141,8 +143,7 @@ class TapGeneratorExample:
         # Check if the total number of test cases (existing and new) is less than the minimum limit
         if valid_test_cases < min_test_cases:
             error_message = "Less than 5 valid test cases are available."
-            self.logger.error(error_message)
-            self.logger.debug(error_message)
+            self.logger.warning(error_message)
             raise ValueError(error_message)
 
         # Log success message if the loop finished correctly with the number of valid test cases generated
@@ -152,7 +153,7 @@ class TapGeneratorExample:
     def run_single_test_case(self, tap_dir, i, test_case, tap):
         # Get retriever
         retriever_result = tap.get_retriever(test_case)
-        self.logger.info(f"Retriever result for test example {i}.")
+        self.logger.info(f"Retriever run ok for test example {i}.")
         self.logger.debug(f"Retriever result for test example {i}: {retriever_result}")
 
         # If can_fulfill is False, log and continue to next test case
@@ -168,21 +169,22 @@ class TapGeneratorExample:
 
         # Truncate returned data
         sample_data = tap.truncate_returned_data(actor_return)
-        self.logger.info(f"Sample data for test example {i}.")
+        self.logger.info(f"Sample data returned for test example {i}.")
         self.logger.debug(f"Sample data for test example {i}: {sample_data}")
 
         # Validate data
         validate_data_return = tap.validate_data(test_case, sample_data)
-        self.logger.info(f"Validate data return for test example {i}.")
         self.logger.debug(
             f"Validate data return for test example {i}: {validate_data_return}"
         )
         if validate_data_return.is_valid:
+            self.logger.info(f"Success: Test case {i} is valid.")
             self.materialize_example_test(
                 tap_dir, i, test_case, retriever_result, sample_data
             )
             return True
         else:
+            self.logger.info(f"Test case {i} is not valid.")
             return False
 
     def materialize_example_test(

@@ -47,7 +47,7 @@ class ActorTestRun:
 
     def test_run(self, tap_dir, actor_id, actor_apis, max_items: int = 5):
         actor_input_example_path = tap_dir / "actor-input-example.json"
-        secondary_actor_input_example_path = (
+        actor_description_from_listing_path = (
             tap_dir / "_actor-description-from-store-listing.json"
         )
         actor_output_path = tap_dir / "_actor_example_run_output.json"
@@ -61,21 +61,42 @@ class ActorTestRun:
                 )
                 return
 
-        # 1. Use the input defined in actor_input_example.json
-        with open(actor_input_example_path, "r") as file:
-            input_data = json.load(file)
+        # Try to load the primary example for the actor from actor-input-example.json
+        try:
+            with open(actor_input_example_path, "r") as json_file:
+                actor_primary_example = json.load(json_file)
+        except Exception as e:
+            error_message = f"An error occurred during the execution of `ActorTestRun.test_run` while executing `json.load` for primary example the following error was raised: {e}"
+            self.logger.warning(error_message)
+            actor_primary_example = None
 
-        # 1.1 Use the secondary input defined in _actor-description-from-store-listing.json
-        with open(secondary_actor_input_example_path, "r") as file:
-            secondary_input_data = json.load(file)["example_json_input"]
+        # Try to load the secondary example for the actor from _actor-description-from-store-listing.json
+        try:
+            with open(actor_description_from_listing_path, "r") as json_file:
+                actor_description_from_listing = json.load(json_file)
+                actor_secondary_example = actor_description_from_listing[
+                    "example_json_input"
+                ]
+        except Exception as e:
+            error_message = f"An error occurred during the execution of `ActorInputGenerator.generate_schema` while executing `json.load` for actor description from listing the following error was raised: {e}"
+            self.logger.warning(error_message)
+            actor_secondary_example = None
+
+        # if none of actor_primary_example and actor_secondary_example exist raise exception
+        if not actor_primary_example and not actor_secondary_example:
+            error_message = "Neither actor_primary_example (from actor-input-example.json) nor actor_secondary_example (from _actor-description-from-store-listing.json) exists"
+            self.logger.error(error_message)
+            raise ValueError(error_message)
 
         self.logger.info(
-            f"Going to run apify actor with primary input example: {input_data}"
+            f"Going to run apify actor with primary input example: {actor_primary_example}"
         )
-        self.logger.info(f"Secondary input example: {secondary_input_data}")
+        self.logger.info(f"Secondary input example: {actor_secondary_example}")
 
         # 2. With this input run actor on Apify, if it fails, retry with secondary input
-        result = self.apify_call_with_retry(actor_id, input_data, secondary_input_data)
+        result = self.apify_call_with_retry(
+            actor_id, actor_primary_example, actor_secondary_example
+        )
 
         # 3. Check that if at least 1 item has been returned
         if not result or len(result) == 0:

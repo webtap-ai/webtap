@@ -30,7 +30,8 @@ def apify_tap_with_tap_manager_example():
 
     # validate data
     validate_data_return = tap.validate_data(data_task, sample_data)
-    logging.info("Apify tap validate data return: %s", validate_data_return)
+    logging.info("Apify tap validate data return: %s", validate_data_return.is_valid)
+
 
 if __name__ == "__main__":
     apify_tap_with_tap_manager_example()

@@ -6,10 +6,18 @@ import os
 
 
 class ActorInputGenerator:
-    def __init__(self, logger, llm):
+    def __init__(self, logger):
         self.logger = logger
         self.tap_generator_utils = TapGeneratorUtils(logger)
-        self.llm = llm
+
+        self.compatible_types = [
+            "Integer",
+            "String",
+            "Enum",
+            "Boolean",
+            "Array",
+            "Object",
+        ]
 
     """
         Extract input example from actor api
@@ -68,7 +76,6 @@ class ActorInputGenerator:
     def generate_schema(self, tap_dir, data):
         """
         Example data:
-
         {
             "name": "Time range",
             "type": "Enum",
@@ -91,16 +98,16 @@ class ActorInputGenerator:
         actor_description_from_listing_path = (
             tap_dir / "_actor-description-from-store-listing.json"
         )
-        # Try to load the primary example for the actor
+        # Try to load the primary example for the actor from actor-input-example.json
         try:
             with open(actor_input_example_path, "r") as json_file:
                 actor_primary_example = json.load(json_file)
         except Exception as e:
             error_message = f"An error occurred during the execution of `ActorInputGenerator.generate_schema` while executing `json.load` for primary example the following error was raised: {e}"
-            self.logger.error(error_message)
-            raise Exception(error_message) from e
+            self.logger.warning(error_message)
+            actor_primary_example = None
 
-        # Try to load the actor description from the store listing
+        # Try to load the secondary example for the actor from _actor-description-from-store-listing.json
         try:
             with open(actor_description_from_listing_path, "r") as json_file:
                 actor_description_from_listing = json.load(json_file)
@@ -109,8 +116,14 @@ class ActorInputGenerator:
                 ]
         except Exception as e:
             error_message = f"An error occurred during the execution of `ActorInputGenerator.generate_schema` while executing `json.load` for actor description from listing the following error was raised: {e}"
+            self.logger.warning(error_message)
+            actor_secondary_example = None
+
+        # if none of actor_primary_example and actor_secondary_example exist raise exception
+        if not actor_primary_example and not actor_secondary_example:
+            error_message = "Neither actor_primary_example (from actor-input-example.json) nor actor_secondary_example (from _actor-description-from-store-listing.json) exists"
             self.logger.error(error_message)
-            raise Exception(error_message) from e
+            raise ValueError(error_message)
 
         schema = {
             "$schema": "http://json-schema.org/draft-07/schema#",
@@ -136,6 +149,8 @@ class ActorInputGenerator:
                 schema_type = "string"
             elif param_type == "Enum":
                 schema_type = "string"
+            elif param_type == "Object":
+                schema_type = "object"
             else:
                 schema_type = "null"
 
@@ -185,7 +200,6 @@ class ActorInputGenerator:
             raise Exception(error_message) from e
 
     def validate_and_minimize_actor_input_schema(self, actor_input_schema):
-        compatible_types = ["Integer", "String", "Enum", "Boolean", "Array"]
         minimized_schema = []
 
         for schema in actor_input_schema:
@@ -210,9 +224,9 @@ class ActorInputGenerator:
                 schema["description"] = schema["description"][:200]
 
             # Check type compatibility
-            if schema["type"] not in compatible_types:
+            if schema["type"] not in self.compatible_types:
                 raise ValueError(
-                    f"Type '{schema['type']}' is not compatible. Compatible types are {compatible_types}"
+                    f"Type '{schema['type']}' is not compatible. Compatible types are {self.compatible_types}"
                 )
 
             # Check value_options for Enum type
@@ -355,7 +369,7 @@ class ActorInputGenerator:
         # Prepare variables for the prompt
         variables = {
             "actor_name": actor_description["name"],
-            "actor_description": actor_description,
+            "actor_description": actor_description["description"],
             "input_json_schema": input_json_schema,
             "list_of_returned_fields": list_of_returned_fields,
             "readme_summary": actor_description["readme_summary"],
@@ -363,7 +377,7 @@ class ActorInputGenerator:
 
         # Run the prompt with LLM
         tap_description = self.tap_generator_utils.run_json_prompt_llm(
-            "generate_description.txt", variables, self.llm, openai_model
+            "generate_description.txt", variables, openai_model
         )
 
         # Check if the returned data is a JSON object and contains the required keys

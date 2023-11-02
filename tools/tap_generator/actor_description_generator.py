@@ -6,10 +6,9 @@ from tools.tap_generator.tap_generator_utils import TapGeneratorUtils
 
 
 class ActorDescriptionGenerator:
-    def __init__(self, logger, llm):
+    def __init__(self, logger):
         self.logger = logger
         self.tap_generator_utils = TapGeneratorUtils(logger)
-        self.llm = llm
 
     def generate_readme_summary(self, description, full_readme):
         # Convert the readme to markdown
@@ -31,7 +30,6 @@ class ActorDescriptionGenerator:
             readme_summary = self.tap_generator_utils.run_json_prompt_llm(
                 "generate_readme_summary.txt",
                 {"description": description, "readme": readme_truncated},
-                self.llm,
                 "gpt-3.5-turbo",
             )
         except Exception as e:
@@ -160,11 +158,13 @@ class ActorDescriptionGenerator:
         if actor_description_from_listing_path.exists():
             with open(actor_description_from_listing_path, "r") as json_file:
                 actor_description = demjson3.decode(json_file.read())
-                self.logger.info(
-                    "Actor description from store listing already exists for tap "
-                    + actor_id
-                )
-                return
+                # check if example_json_input key exists
+                if "example_json_input" in actor_description:
+                    self.logger.info(
+                        "Actor description from listing already exists for tap "
+                        + actor_id
+                    )
+                    return
 
         self.logger.info("Retrieving sample data for tap " + actor_id)
         self.logger.info("This may take a few minutes...")
@@ -285,7 +285,6 @@ class ActorDescriptionGenerator:
                 "readme": actor_description["readme_summary"],
                 "example_output": example_output,
             },
-            self.llm,
             openai_model,
         )
 
