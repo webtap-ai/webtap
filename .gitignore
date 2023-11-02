@@ -18,4 +18,5 @@ logs/
 *.env
 dist/
 build/
+your_env/
 venv/
