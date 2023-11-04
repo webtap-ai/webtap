@@ -1,0 +1,12 @@
+{
+    "pageDepth": 1,
+    "startUrls": [
+        {
+            "url": "https://www.transfermarkt.com/lionel-messi/profil/spieler/28003"
+        }
+    ],
+    "crawlDepth": 1,
+    "proxyConfig": {
+        "useApifyProxy": true
+    }
+}

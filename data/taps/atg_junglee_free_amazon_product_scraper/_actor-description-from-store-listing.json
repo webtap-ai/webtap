@@ -1,0 +1,110 @@
+{
+    "example_json_input": {
+        "title": "SanDisk 1TB Extreme microSDXC UHS-I Memory Card with Adapter - Up to 190MB/s, C10, U3, V30, 4K, 5K, A2, Micro SD Card- SDSQXAV-1T00-GN6MA",
+        "url": "https://www.amazon.com/dp/B09X7MPX8L",
+        "asin": "B09X7MPX8L",
+        "inStock": true,
+        "inStockText": "Only 8 left in stock - order soon. Only 8 left in stock - order soon.",
+        "brand": "SanDisk",
+        "price": {
+            "value": 145.5,
+            "currency": "$"
+        },
+        "listPrice": {
+            "value": 299.99,
+            "currency": "$"
+        },
+        "shippingPrice": null,
+        "stars": 4.8,
+        "starsBreakdown": {
+            "5star": 0.86,
+            "4star": 0.09,
+            "3star": 0.02,
+            "2star": 0.01,
+            "1star": 0.01
+        },
+        "reviewsCount": 36704,
+        "answeredQuestions": 151,
+        "breadCrumbs": "Electronics \u203a Computers & Accessories \u203a Computer Accessories & Peripherals \u203a Memory Cards \u203a Micro SD Cards",
+        "thumbnailImage": "https://m.media-amazon.com/images/I/716kSUlHouL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        "description": null,
+        "features": [
+            "Save time with card offload speeds of up to 190MB/s powered by SanDisk QuickFlow Technology (Up to 190MB/s read speeds, engineered with proprietary technology to reach speeds beyond UHS-I 104MB/s, requires compatible devices capable of reaching such speeds. Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes. SanDisk QuickFlow Technology is only available for 64GB, 128GB, 256GB, 400GB, 512GB, and 1TB capacities. 1GB=1,000,000,000 bytes and 1TB=1,000,000,000,000 bytes. Actual user storage less.)",
+            "Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately)",
+            "Up to 130MB/s write speeds for fast shooting (Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes.)",
+            "4K and 5K UHD-ready with UHS Speed Class 3 (U3) and Video Speed Class 30 (V30) (Compatible device required. Full HD (1920x1080), 4K UHD (3840 x 2160), and 5K UHD (5120 X 2880) support may vary based upon host device, file attributes and other factors. See HD page on SanDisk site. UHS Speed Class 3 (U3) designates a performance option designed to support real-time video recording with UHS-enabled host devices. Video Speed Class 30 (V30), sustained video capture rate of 30MB/s, designates a performance option designed to support real-time video recording with UHS-enabled host devices. See the SD Association\u2019s official website.)",
+            "Rated A2 for faster loading and in-app performance (A2 performance is 4000 read IOPS, 2000 write IOPS. Results may vary based on host device, app type and other factors)"
+        ],
+        "variantAsins": [],
+        "reviewsLink": "/SanDisk-Extreme-microSDXC-Memory-Adapter/product-reviews/B09X7MPX8L?reviewerType=all_reviews",
+        "delivery": "Thursday, January 26",
+        "fastestDelivery": "Sunday, January 22",
+        "returnPolicy": "Eligible for Return, Refund or Replacement within 30 days of receipt Eligible for Return, Refund or Replacement within 30 days of receipt",
+        "support": "Free Amazon tech support included",
+        "variantAttributes": [],
+        "priceVariants": null,
+        "seller": {
+            "name": "Direct Suppliers US",
+            "id": "A210SJF12S88M5",
+            "url": "/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A210SJF12S88M5&asin=B09X7MPX8L&ref_=dp_merchant_link&isAmazonFulfilled=1",
+            "reviewsCount": null,
+            "averageRating": null
+        },
+        "bestsellerRanks": null,
+        "locationText": "Select your address"
+    },
+    "example_output_json_response": {
+        "title": "SanDisk 1TB Extreme microSDXC UHS-I Memory Card with Adapter - Up to 190MB/s, C10, U3, V30, 4K, 5K, A2, Micro SD Card- SDSQXAV-1T00-GN6MA",
+        "url": "https://www.amazon.com/dp/B09X7MPX8L",
+        "asin": "B09X7MPX8L",
+        "inStock": true,
+        "inStockText": "Only 8 left in stock - order soon. Only 8 left in stock - order soon.",
+        "brand": "SanDisk",
+        "price": {
+            "value": 145.5,
+            "currency": "$"
+        },
+        "listPrice": {
+            "value": 299.99,
+            "currency": "$"
+        },
+        "shippingPrice": null,
+        "stars": 4.8,
+        "starsBreakdown": {
+            "5star": 0.86,
+            "4star": 0.09,
+            "3star": 0.02,
+            "2star": 0.01,
+            "1star": 0.01
+        },
+        "reviewsCount": 36704,
+        "answeredQuestions": 151,
+        "breadCrumbs": "Electronics \u203a Computers & Accessories \u203a Computer Accessories & Peripherals \u203a Memory Cards \u203a Micro SD Cards",
+        "thumbnailImage": "https://m.media-amazon.com/images/I/716kSUlHouL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        "description": null,
+        "features": [
+            "Save time with card offload speeds of up to 190MB/s powered by SanDisk QuickFlow Technology (Up to 190MB/s read speeds, engineered with proprietary technology to reach speeds beyond UHS-I 104MB/s, requires compatible devices capable of reaching such speeds. Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes. SanDisk QuickFlow Technology is only available for 64GB, 128GB, 256GB, 400GB, 512GB, and 1TB capacities. 1GB=1,000,000,000 bytes and 1TB=1,000,000,000,000 bytes. Actual user storage less.)",
+            "Pair with the SanDisk Professional PRO-READER SD and microSD to achieve maximum speeds (sold separately)",
+            "Up to 130MB/s write speeds for fast shooting (Based on internal testing; performance may be lower depending upon host device interface, usage conditions and other factors. 1MB=1,000,000 bytes.)",
+            "4K and 5K UHD-ready with UHS Speed Class 3 (U3) and Video Speed Class 30 (V30) (Compatible device required. Full HD (1920x1080), 4K UHD (3840 x 2160), and 5K UHD (5120 X 2880) support may vary based upon host device, file attributes and other factors. See HD page on SanDisk site. UHS Speed Class 3 (U3) designates a performance option designed to support real-time video recording with UHS-enabled host devices. Video Speed Class 30 (V30), sustained video capture rate of 30MB/s, designates a performance option designed to support real-time video recording with UHS-enabled host devices. See the SD Association\u2019s official website.)",
+            "Rated A2 for faster loading and in-app performance (A2 performance is 4000 read IOPS, 2000 write IOPS. Results may vary based on host device, app type and other factors)"
+        ],
+        "variantAsins": [],
+        "reviewsLink": "/SanDisk-Extreme-microSDXC-Memory-Adapter/product-reviews/B09X7MPX8L?reviewerType=all_reviews",
+        "delivery": "Thursday, January 26",
+        "fastestDelivery": "Sunday, January 22",
+        "returnPolicy": "Eligible for Return, Refund or Replacement within 30 days of receipt Eligible for Return, Refund or Replacement within 30 days of receipt",
+        "support": "Free Amazon tech support included",
+        "variantAttributes": [],
+        "priceVariants": null,
+        "seller": {
+            "name": "Direct Suppliers US",
+            "id": "A210SJF12S88M5",
+            "url": "/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A210SJF12S88M5&asin=B09X7MPX8L&ref_=dp_merchant_link&isAmazonFulfilled=1",
+            "reviewsCount": null,
+            "averageRating": null
+        },
+        "bestsellerRanks": null,
+        "locationText": "Select your address"
+    }
+}

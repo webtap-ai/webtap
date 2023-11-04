@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "product_name, author, description, price, url, categories, searchQuery, type, adPosition, title, displayedUrl, emphasizedKeywords, position, productInfo, date"
+}

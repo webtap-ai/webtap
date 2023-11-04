@@ -1,0 +1,6 @@
+{
+    "proxyConfig": {
+        "useApifyProxy": true
+    },
+    "maxRequestsPerStartUrl": 20
+}

@@ -1,0 +1,9 @@
+{
+    "type": "all",
+    "search": "Los Angeles",
+    "maxItems": 100,
+    "maxLevel": 1,
+    "customData": {},
+    "maxRetries": 10,
+    "maxConcurrency": 10
+}

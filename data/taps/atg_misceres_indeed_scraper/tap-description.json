@@ -1,0 +1,44 @@
+{
+    "name": "Indeed Job Search",
+    "entities": [
+        "job posting",
+        "company details",
+        "job location",
+        "job description",
+        "salary",
+        "company rating",
+        "reviews count",
+        "posting date",
+        "scraped date"
+    ],
+    "filters": [
+        "position",
+        "country",
+        "location",
+        "maxItems",
+        "parseCompanyDetails",
+        "saveOnlyUniqueItems",
+        "followApplyRedirects",
+        "maxConcurrency",
+        "startUrls"
+    ],
+    "options": [
+        "Position or keywords for search",
+        "Country for job search",
+        "City, zip code or locality for search",
+        "Limit of detail/product pages to be scraped",
+        "Navigate to company page of each job posting",
+        "Scrape only unique items",
+        "Follow redirects of Indeed's externalApplyLink",
+        "Concurrency limit",
+        "List of URLs that will be scraped or crawled"
+    ],
+    "special_instructions": [
+        "One of position or startUrls must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Default country is US, so if you want to search in US simply don't input any country",
+        "If startUrls are used, search position is disabled",
+        "Be nice to the website, don't go over 10 for maxConcurrency",
+        "If followApplyRedirects is true, will follow redirects of Indeed's externalApplyLink and output the final one",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

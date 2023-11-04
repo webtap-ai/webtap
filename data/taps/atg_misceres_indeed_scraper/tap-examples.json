@@ -1,0 +1,71 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape 150 'product manager' jobs in 'Berlin', DE with a maximum concurrency of 10",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Indeed Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Indeed Scraper is reliable and solely based on compatibility between DATA TASK and Indeed Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Indeed Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Indeed Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "position": "product manager",
+                "country": "DE",
+                "location": "Berlin",
+                "maxItems": 150,
+                "parseCompanyDetails": false,
+                "saveOnlyUniqueItems": false,
+                "followApplyRedirects": false,
+                "maxConcurrency": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape 200 'business analyst' jobs in 'Paris', FR with a maximum concurrency of 5",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Indeed Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Indeed Scraper is reliable and solely based on compatibility between DATA TASK and Indeed Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Indeed Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Indeed Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "position": "business analyst",
+                "country": "FR",
+                "location": "Paris",
+                "maxItems": 200,
+                "parseCompanyDetails": false,
+                "saveOnlyUniqueItems": false,
+                "followApplyRedirects": false,
+                "maxConcurrency": 5
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape 100 'sales manager' jobs in 'Amsterdam', NL with a maximum concurrency of 10",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Indeed Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Indeed Scraper is reliable and solely based on compatibility between DATA TASK and Indeed Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Indeed Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Indeed Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "position": "sales manager",
+                "country": "NL",
+                "location": "Amsterdam",
+                "maxItems": 100,
+                "parseCompanyDetails": false,
+                "saveOnlyUniqueItems": false,
+                "followApplyRedirects": false,
+                "maxConcurrency": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

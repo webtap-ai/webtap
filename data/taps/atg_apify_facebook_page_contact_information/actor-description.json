@@ -1,0 +1,19 @@
+{
+    "id": "apify/facebook-page-contact-information",
+    "url": "https://apify.com/apify/facebook-page-contact-information",
+    "title": "\ud83d\udcf1Scrape contact info from Facebook Pages \u00b7 Apify",
+    "name": "Facebook page contact info Scraper",
+    "pricing": "No credit card required",
+    "description": "Get Facebook pages addresses, email, likes, website, check-ins, and phone information",
+    "author_name": "Apify",
+    "maintained_by": "Maintained by Apify",
+    "count_users": "1.1k users",
+    "count_runs": "49.1k runs",
+    "last_modified": "Modified 4 days ago",
+    "categories": "Social media\nLead generation\nMarketing",
+    "full_readme": "Facebook Page Contact information\n\nExtract when available, address, email and phone from public Facebook pages\n\nExamples\nhttps://www.facebook.com/humansofnewyork\napifytech\nIntegrations and Facebook Page Contact Information Scraper\n\nLast but not least, Facebook Page Contact Information Scraper can be connected with almost any cloud service or web app thanks to integrations on the Apify platform. You can integrate with Make, Zapier, Slack, Airbyte, GitHub, Google Sheets, Google Drive, and more. Or you can use webhooks to carry out an action whenever an event occurs, e.g. get a notification whenever Instagram API Scraper successfully finishes a run.\n\nUsing Facebook Page Contact Information Scraper with the Apify API\n\nThe Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.\n\nTo access the API using Node.js, use the apify-client NPM package. To access the API using Python, use the apify-client PyPI package.\n\nCheck out the Apify API reference docs for full details or click on the API tab for code examples.",
+    "icon": "https://images.apifyusercontent.com/8zwZu09avc11rMIncQUtaaJyupzBH9fmTvfAGnbogWA/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9vSjQ4Y2VLTlk3dWVHUEdMMC9qOEhlTEVxSjIyV3FrTXFpbi1GYWNlYm9va19wYWdlX2NvbnRhY3RfaW5mb3JtYXRpb24ucG5n.webp",
+    "author_url": "https://apify.com/apify",
+    "author_avatar": "https://images.apifyusercontent.com/lI97nKRfQNn-301fZooeDiLELKwBtOreoKdvb-R9XnI/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9ac2NNd0ZSNUg3ZUN0V3R5aC9ZcXRrUW1FeFpwbU1kNmRKUS1hcGlmeV9zeW1ib2xfd2hpdGVfYmcucG5n.webp",
+    "readme_summary": "# Facebook Page Contact information\n\nExtract when available, address, email and phone from public Facebook pages"
+}

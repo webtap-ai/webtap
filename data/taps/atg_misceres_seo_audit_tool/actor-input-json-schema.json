@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrl": {
+            "type": "string",
+            "description": "URL of webpage, where we run SEO audit",
+            "example": "https://apify.com"
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Use proxies to access the given website",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "maxRequestsPerCrawl": {
+            "type": "integer",
+            "description": "Maximum number of pages to visit. Defaults to unlimited pages",
+            "example": 10
+        },
+        "maxDepth": {
+            "type": "integer",
+            "description": "Max depth to crawl. Defaults to unlimited depth"
+        },
+        "userAgent": {
+            "type": "string",
+            "description": "Provide a manual User-Agent to test against mobile and desktop browsers"
+        },
+        "viewPortWidth": {
+            "type": "integer",
+            "description": "Change the viewport width to trigger responsive breakpoints"
+        },
+        "viewPortHeight": {
+            "type": "integer",
+            "description": "Change the viewport height to trigger responsive breakpoints"
+        },
+        "pageTimeout": {
+            "type": "integer",
+            "description": "Change the page navigation timeout, in milliseconds"
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "How many retries before considering a failure"
+        },
+        "handlePageTimeoutSecs": {
+            "type": "integer",
+            "description": "Number in seconds for how long each page should wait for processing"
+        },
+        "seoParams": {
+            "type": "object",
+            "description": "Override the internal SEO params"
+        }
+    },
+    "required": [
+        "startUrl",
+        "proxy"
+    ]
+}

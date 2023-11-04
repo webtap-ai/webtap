@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "url, loadedUrl, title, softTitle, date, author, publisher, copyright, favicon, description, lang, canonicalLink, tags, image, videos, links, text, loadedDomain, referrer, startUrl, depth"
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Scrape 150 'product manager' jobs in 'Berlin', DE with a maximum concurrency of 10",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 200 'business analyst' jobs in 'Paris', FR with a maximum concurrency of 5",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 100 'sales manager' jobs in 'Amsterdam', NL with a maximum concurrency of 10",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,34 @@
+{
+    "name": "TikTok Profile Data",
+    "entities": [
+        "TikTok profile",
+        "TikTok video",
+        "TikTok music metadata",
+        "TikTok author stats"
+    ],
+    "filters": [
+        "Profile names",
+        "Results per page",
+        "Oldest post date",
+        "Scrape last N days"
+    ],
+    "options": [
+        "Download videos",
+        "Download cover images",
+        "Download slideshow images",
+        "Video Key Value Store ID or Name",
+        "Disable enrich author stats",
+        "Disable Cheerio boost"
+    ],
+    "special_instructions": [
+        "Profile names are required for the scraper to work. If not provided, the tool will not function properly.",
+        "The number of results per page can be set to 30 or lower for a faster scraping method that doesn't require scrolling.",
+        "The 'Oldest post date' filter allows you to scrape only posts uploaded after or on a specific date.",
+        "The 'Scrape last N days' filter allows you to specify how old scraped posts can be (in days).",
+        "The 'Download videos', 'Download cover images', and 'Download slideshow images' options will increase the time required for the scrape.",
+        "The 'Video Key Value Store ID or Name' option allows you to specify the Key Value Store where the videos and other media will be stored. Omit to store in the default one.",
+        "The 'Disable enrich author stats' option can be used if TikTok's API does not return author stats for profile/hashtag/sound pages. This will slow the scraper down.",
+        "The 'Disable Cheerio boost' option can be used to disable the Cheerio crawler, which is faster but may not be suitable for all use cases.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

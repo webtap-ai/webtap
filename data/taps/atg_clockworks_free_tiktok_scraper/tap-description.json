@@ -26,6 +26,6 @@
         "Downloading videos, covers, and slideshow images will increase costs and time required for the scrape",
         "If the requested number of posts is small, the Cheerio crawler (much faster) will be used. If for some reason you need to disable this, turn on the 'disableCheerioBoost' option",
         "Sometimes Tiktok's API will not return author stats (their hearts, follower count etc) for profile/hashtag/sound pages, so an additional query will be needed. This will slow the scraper down, to avoid this, turn on the 'disableEnrichAuthorStats' option",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit"
     ]
 }

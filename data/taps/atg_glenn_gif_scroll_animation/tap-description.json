@@ -1,1 +1,35 @@
-{}
+{
+    "name": "Web Page GIF Scroll Animation",
+    "entities": [
+        "scrolling_gif_url",
+        "gifUrlOriginal",
+        "gifUrlLossy"
+    ],
+    "filters": [
+        "Website URL",
+        "Proxy options"
+    ],
+    "options": [
+        "Frame rate",
+        "Scroll down",
+        "Scroll percentage",
+        "Recording time before action",
+        "Click selector",
+        "Recording time after click",
+        "Wait to load page",
+        "Cookie window selector",
+        "Slow down animations",
+        "Lossy compression",
+        "Lossless compression",
+        "Viewport width",
+        "Viewport height"
+    ],
+    "special_instructions": [
+        "The 'Scroll down' option, when selected, will make the tool scroll down the page and capture it to create the gif.",
+        "The 'Slow down animations' option, when selected, slows down animations on the page so they can be properly captured.",
+        "The 'Lossy compression' and 'Lossless compression' options are used to compress the GIF using Giflossy and Gifsicle respectively.",
+        "The 'Viewport width' and 'Viewport height' options are used to set the inner width and height of the browser window.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

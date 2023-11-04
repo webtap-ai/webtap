@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "Add a URL of a Facebook Page or Facebook Ad. You can add multiple URLs.",
+            "example": [
+                {
+                    "url": "https://www.facebook.com/drive4quantix/?ref=page_internal"
+                }
+            ]
+        },
+        "resultsLimit": {
+            "type": "integer",
+            "description": "If this limit is not set only initial page of results returned",
+            "example": 99999
+        },
+        "onlyTotal": {
+            "type": "boolean",
+            "description": "If this feature is used, only total count of ads will be saved per page scroll.\nThe output will be saved as a single dataset item per page."
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

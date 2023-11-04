@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "position": {
+            "type": "string",
+            "description": "Any combination of positions or keywords for search. If Start URLs are used, search position is disabled.",
+            "example": "web developer"
+        },
+        "country": {
+            "type": "string",
+            "description": "Country for job search",
+            "example": "US",
+            "enum": [
+                "AF",
+                "AL",
+                "DZ",
+                "AS",
+                "AD",
+                "AO",
+                "AI",
+                "AQ",
+                "AG",
+                "AR",
+                "AM",
+                "AW",
+                "AU",
+                "AT",
+                "AZ",
+                "BS",
+                "BH",
+                "BD",
+                "BB",
+                "BY",
+                "BE",
+                "BZ",
+                "BJ",
+                "BM",
+                "BT",
+                "BO",
+                "BQ",
+                "BA",
+                "BW",
+                "BV",
+                "BR",
+                "IO",
+                "VG",
+                "BN",
+                "BG",
+                "BF",
+                "BI",
+                "KH",
+                "CM",
+                "CA",
+                "CV",
+                "KY",
+                "CF",
+                "TD",
+                "CL",
+                "CN",
+                "CX",
+                "CC",
+                "CO",
+                "KM",
+                "..."
+            ]
+        },
+        "location": {
+            "type": "string",
+            "description": "Any combination of city, zip code or locality for search",
+            "example": "San Francisco"
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit of detail/product pages to be scraped",
+            "example": 50
+        },
+        "parseCompanyDetails": {
+            "type": "boolean",
+            "description": "If true, will also navigate to company page of each job posting, to scrape company info not available directly on job posting page"
+        },
+        "saveOnlyUniqueItems": {
+            "type": "boolean",
+            "description": "if true, only unique items will be scraped"
+        },
+        "followApplyRedirects": {
+            "type": "boolean",
+            "description": "if true, will follow redirects of Indeed's externalApplyLink and output the final one"
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Be nice to the website, don't go over 10",
+            "example": 5
+        },
+        "startUrls": {
+            "type": "array",
+            "description": "List of URLs that will be scraped or crawled. Can be main website URL, category/search URLs, company jobs URL (in the format of https://www.indeed.com/cmp/Google/jobs) or detail/product URLs. Using th"
+        }
+    },
+    "required": []
+}

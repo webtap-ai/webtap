@@ -1,0 +1,49 @@
+{
+    "name": "Google Maps Email Extractor",
+    "entities": [
+        "title",
+        "subTitle",
+        "description",
+        "price",
+        "menu",
+        "categoryName",
+        "address",
+        "locatedIn",
+        "neighborhood",
+        "street",
+        "city",
+        "postalCode",
+        "state",
+        "countryCode",
+        "plusCode",
+        "website",
+        "phone",
+        "temporarilyClosed",
+        "claimThisBusiness",
+        "location",
+        "permanentlyClosed",
+        "totalScore",
+        "placeId",
+        "categories",
+        "media",
+        "contactDetails"
+    ],
+    "filters": [
+        "googleMapsDatasetId",
+        "maxRequestsPerStartUrl",
+        "maxDepth",
+        "proxyConfig"
+    ],
+    "options": [
+        "maxRequestsPerStartUrl",
+        "maxDepth",
+        "proxyConfig"
+    ],
+    "special_instructions": [
+        "First run the Google Maps Scraper. Then provide the ID of the Google Maps Scraper dataset that will be enhanced with contact details.",
+        "The maximum number of pages that will be enqueued from each start URL you provide.",
+        "The maximum number of links away from the Start URLs that the actor will crawl. If 0, the scraper will not follow any links. If empty or null, the scraper will follow links to an arbitrary depth.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

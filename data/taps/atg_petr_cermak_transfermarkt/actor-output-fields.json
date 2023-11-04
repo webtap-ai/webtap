@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, url, type, nameInHomeCountry, dateOfBirth, placeOfBirth, age, height, citizenship, position, foot, playerAgent, currentClub, joined, contractExpires, contractOption, outfitter, socialMedia, transfers, careerStats"
+}

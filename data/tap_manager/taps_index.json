@@ -52,5 +52,56 @@
     },
     "atg_yin_yelp_scraper": {
         "config_dir": "atg_yin_yelp_scraper"
+    },
+    "atg_apify_instagram_comment_scraper": {
+        "config_dir": "atg_apify_instagram_comment_scraper"
+    },
+    "atg_petr_cermak_transfermarkt": {
+        "config_dir": "atg_petr_cermak_transfermarkt"
+    },
+    "atg_lukaskrivka_article_extractor_smart": {
+        "config_dir": "atg_lukaskrivka_article_extractor_smart"
+    },
+    "atg_misceres_seo_audit_tool": {
+        "config_dir": "atg_misceres_seo_audit_tool"
+    },
+    "atg_apify_facebook_ads_scraper": {
+        "config_dir": "atg_apify_facebook_ads_scraper"
+    },
+    "atg_trudax_reddit_scraper_lite": {
+        "config_dir": "atg_trudax_reddit_scraper_lite"
+    },
+    "atg_junglee_free_amazon_product_scraper": {
+        "config_dir": "atg_junglee_free_amazon_product_scraper"
+    },
+    "atg_hooli_easy_google_scraper": {
+        "config_dir": "atg_hooli_easy_google_scraper"
+    },
+    "atg_m0uka_bulk_image_downloader": {
+        "config_dir": "atg_m0uka_bulk_image_downloader"
+    },
+    "atg_maxcopell_zillow_api_scraper": {
+        "config_dir": "atg_maxcopell_zillow_api_scraper"
+    },
+    "atg_glenn_gif_scroll_animation": {
+        "config_dir": "atg_glenn_gif_scroll_animation"
+    },
+    "atg_apify_instagram_reel_scraper": {
+        "config_dir": "atg_apify_instagram_reel_scraper"
+    },
+    "atg_streamers_youtube_scraper": {
+        "config_dir": "atg_streamers_youtube_scraper"
+    },
+    "atg_lukaskrivka_google_maps_with_contact_details": {
+        "config_dir": "atg_lukaskrivka_google_maps_with_contact_details"
+    },
+    "atg_clockworks_tiktok_profile_scraper": {
+        "config_dir": "atg_clockworks_tiktok_profile_scraper"
+    },
+    "atg_misceres_indeed_scraper": {
+        "config_dir": "atg_misceres_indeed_scraper"
+    },
+    "atg_apify_facebook_page_contact_information": {
+        "config_dir": "atg_apify_facebook_page_contact_information"
     }
 }

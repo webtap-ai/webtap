@@ -1,0 +1,82 @@
+[
+    {
+        "name": "Profile(s)",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "profiles",
+        "description": "Add the name of user you want to scrape.",
+        "value_options": null
+    },
+    {
+        "name": "Max posts per profile (faster if 30 or lower)",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "resultsPerPage",
+        "description": "The number of posts that will be scraped from every profile. If set to 30 or lower, the scraper can utilize faster method of scraping that doesn't require scrolling.",
+        "value_options": null
+    },
+    {
+        "name": "Posts newer than (e.g. 2023-06-15)",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "oldestPostDate",
+        "description": "Only posts uploaded after or on this date will be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Posts from last (e.g. 2) days",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "scrapeLastNDays",
+        "description": "Specify how old scraped posts can be (in days). Putting 1 will get you only today's posts, 2 - tomorrow's and today's, and so on. If the Post newer than field was set, the most recent post will be chosen.",
+        "value_options": null
+    },
+    {
+        "name": "Should download videos",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadVideos",
+        "description": "Whether to download TikTok video files. Note that this will increase time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Should download video covers (thumbnails)",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadCovers",
+        "description": "Whether to download TikTok video cover images (i.e. thumbnails). Note that this will increase time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Should download slideshow images",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadSlideshowImages",
+        "description": "Whether to download TikTok slideshow images. Note that this will increase costs and time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Video Download Key-Value Store ID or Name",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "videoKvStoreIdOrName",
+        "description": "Name (or ID) of the Key Value Store where the videos and other media like thumbnails will be stored. Omit to store in the default one. Using this option will provide a named Key-Value store can help bypass data retention and store the content forever until the store is manually deleted.\n\nThe Key-Value store's name can consist of a versatile combination of uppercase letters, lowercase letters, digits, or hyphens, all without any spaces.",
+        "value_options": null
+    },
+    {
+        "name": "Disable querying author stats if missing",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "disableEnrichAuthorStats",
+        "description": "Sometimes Tiktok's API will not return author stats (their hearts, follower count etc) for profile/hashtag/sound pages, so an additional query will be needed. This will slow the scraper down",
+        "value_options": null
+    },
+    {
+        "name": "Disable boosting with cheerio for small result count",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "disableCheerioBoost",
+        "description": "If the requested number of posts is small, the Cheerio crawler (much faster) will be used. If for some reason you need to disable this, turn on this option",
+        "value_options": null
+    }
+]

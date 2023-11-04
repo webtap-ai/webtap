@@ -1,0 +1,188 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "These could be the main page URL or any category/subpage URL, e.g. https://www.bbc.com/. Article pages are detected and crawled from these. If you prefer to use direct article URLs, use articleUrls in",
+            "example": [
+                {
+                    "url": "https://www.theguardian.com"
+                }
+            ]
+        },
+        "articleUrls": {
+            "type": "array",
+            "description": "These are direct URLs for the articles to be extracted, e.g. https://www.bbc.com/news/uk-62836057. No extra pages are crawled from article pages."
+        },
+        "onlyNewArticles": {
+            "type": "boolean",
+            "description": "This option is only viable for smaller runs. If you plan to use this on a large scale, use the 'Only new articles (saved per domain)' option below instead. If this function is selected, the extractor "
+        },
+        "onlyNewArticlesPerDomain": {
+            "type": "boolean",
+            "description": "If this function is selected, the extractor will only scrape only new articles each time you run it. (Scraped articles are saved in one dataset, named 'ARTICLES-SCRAPED-domain', per each domain, and c"
+        },
+        "onlyInsideArticles": {
+            "type": "boolean",
+            "description": "If this function is selected, the extractor will only scrape articles that are on the domain from where they are linked. If the domain presents links to articles on different domains, those articles w"
+        },
+        "enqueueFromArticles": {
+            "type": "boolean",
+            "description": "Normally, the scraper only extracts articles from category pages. This option allows the scraper to also extract articles linked within articles."
+        },
+        "crawlWholeSubdomain": {
+            "type": "boolean",
+            "description": "Automatically enqueue categories and articles from whole subdomain with the same path. E.g. if Start URL is https://apify.com/store, it will enqueue all pages starting with https://apify.com/store"
+        },
+        "onlySubdomainArticles": {
+            "type": "boolean",
+            "description": "Only loads articles which URL begins with the same path as Start URL. E.g. if Start URL is https://apify.com/store, it will only load articles starting with https://apify.com/store"
+        },
+        "scanSitemaps": {
+            "type": "boolean",
+            "description": "We recommend using Sitemap URLs instead. If this function is selected, the extractor will scan different sitemaps from the initial article URL. Keep in mind that this option can lead to the loading of"
+        },
+        "sitemapUrls": {
+            "type": "array",
+            "description": "You can provide selected sitemap URLs that include the articles you need to extract."
+        },
+        "saveHtml": {
+            "type": "boolean",
+            "description": "If this function is selected, the scraper will save the full HTML of the article page, but this will make the data less readable."
+        },
+        "saveHtmlAsLink": {
+            "type": "boolean",
+            "description": "If this function is selected, the scraper will save the full HTML of the article page as a URL to keep the dataset clean and small."
+        },
+        "saveSnapshots": {
+            "type": "boolean",
+            "description": "Stores a screenshot for each article page to Key-Value Store and provides that as screenshotUrl. Useful for debugging."
+        },
+        "useGoogleBotHeaders": {
+            "type": "boolean",
+            "description": "This option will allow you to bypass protection and paywalls on some websites. Use with caution as it might lead to getting blocked."
+        },
+        "minWords": {
+            "type": "integer",
+            "description": "The article needs to contain at least this number of words to be extracted"
+        },
+        "dateFrom": {
+            "type": "string",
+            "description": "Only articles from this day on will be scraped. If empty, all articles will be scraped. Format is YYYY-MM-DD, e.g. 2019-12-31, or number type e.g. 1 week or 20 days"
+        },
+        "onlyArticlesForLastDays": {
+            "type": "integer",
+            "description": "Only get posts that were published in the last X days from time the scraping starts. Use either this or the absolute date."
+        },
+        "mustHaveDate": {
+            "type": "boolean",
+            "description": "If checked, the article must have a date of release to be extracted."
+        },
+        "isUrlArticleDefinition": {
+            "type": "object",
+            "description": "Here you can input JSON settings to define what URLs should be considered articles by the scraper. If any of them is true, then the link will be opened and the article extracted.",
+            "example": {
+                "hasDate": true,
+                "minDashes": 4,
+                "linkIncludes": [
+                    "article",
+                    "storyid",
+                    "?p=",
+                    "id=",
+                    "/fpss/track",
+                    ".html",
+                    "/content/"
+                ]
+            }
+        },
+        "pseudoUrls": {
+            "type": "array",
+            "description": "This function can be used to enqueue more pages, i.e. include more links like pagination or categories. This doesn't work for articles, as they are recognized by the recognition system."
+        },
+        "linkSelector": {
+            "type": "string",
+            "description": "You can limit the tags whose links will be enqueued. This field is empty by default. Add a.some-class to activate it"
+        },
+        "maxDepth": {
+            "type": "integer",
+            "description": "Maximum depth of crawling, i.e. how many times the scraper picks up a link to other webpages. Level 0 refers to the start URLs, 1 are the first level links, and so on. This is only valid for pseudo UR"
+        },
+        "maxPagesPerCrawl": {
+            "type": "integer",
+            "description": "Maximum number of total pages crawled. It includes the home page, pagination pages, invalid articles, and so on. The crawler will stop automatically after reaching this number."
+        },
+        "maxArticlesPerCrawl": {
+            "type": "integer",
+            "description": "Maximum number of valid articles scraped. The crawler will stop automatically after reaching this number."
+        },
+        "maxArticlesPerStartUrl": {
+            "type": "integer",
+            "description": "Maximum number of articles scraped per start URL."
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "You can limit the speed of the scraper to avoid getting blocked."
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Proxy configuration",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "overrideProxyGroup": {
+            "type": "string",
+            "description": "If you want to override the default proxy group, you can specify it here. This is useful if you want to use a different proxy group for each crawler."
+        },
+        "useBrowser": {
+            "type": "boolean",
+            "description": "This option is more expensive, but it allows you to evaluate JavaScript and wait for dynamically loaded data."
+        },
+        "pageWaitMs": {
+            "type": "integer",
+            "description": "How many milliseconds to wait on each page before extracting data"
+        },
+        "pageWaitSelectorCategory": {
+            "type": "string",
+            "description": "For what selector to wait on each page before extracting data"
+        },
+        "pageWaitSelectorArticle": {
+            "type": "string",
+            "description": "For what selector to wait on each page before extracting data"
+        },
+        "scrollToBottom": {
+            "type": "boolean",
+            "description": "Scroll to the botton of the page, loading dynamic articles."
+        },
+        "scrollToBottomButtonSelector": {
+            "type": "string",
+            "description": "CSS selector for a button to load more articles"
+        },
+        "scrollToBottomMaxSecs": {
+            "type": "integer",
+            "description": "Limit for how long the scrolling can run so it does no go infinite."
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "This function allows you to merge your custom extraction with the default one. You can only return an object from this function. This object will be merged/overwritten with the default output for each"
+        },
+        "stopAfterCUs": {
+            "type": "integer",
+            "description": "The scraper will stop running after reaching this number of compute units."
+        },
+        "notificationEmails": {
+            "type": "array",
+            "description": "Notifications will be sent to these email addresses."
+        },
+        "notifyAfterCUs": {
+            "type": "integer",
+            "description": "The scraper will send notifications to the provided email when it reaches this number of CUs."
+        },
+        "notifyAfterCUsPeriodically": {
+            "type": "integer",
+            "description": "The scraper will send notifications to the provided email every time this number of CUs is reached since the last notification."
+        }
+    },
+    "required": []
+}

@@ -1,1 +1,172 @@
-[]
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Cooking Recipes' on Youtube and return the first 15 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Cooking Recipes",
+                "maxResults": 15
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Music Videos' on Youtube and return the first 50 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Music Videos",
+                "maxResults": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Fashion Hauls' on Youtube and return the first 10 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Fashion Hauls",
+                "maxResults": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Documentaries' on Youtube and return the first 20 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Documentaries",
+                "maxResults": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Podcasts' on Youtube and return the first 10 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Podcasts",
+                "maxResults": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Animated Shorts' on Youtube and return the first 15 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Animated Shorts",
+                "maxResults": 15
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Product Unboxing' on Youtube and return the first 20 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Product Unboxing",
+                "maxResults": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'DIY Projects' on Youtube and return the first 10 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "DIY Projects",
+                "maxResults": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Sports Highlights' on Youtube and return the first 15 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Sports Highlights",
+                "maxResults": 15
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'Reality Shows' on Youtube and return the first 20 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "searchKeywords": "Reality Shows",
+                "maxResults": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

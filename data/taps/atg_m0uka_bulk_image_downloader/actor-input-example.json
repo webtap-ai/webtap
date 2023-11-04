@@ -1,0 +1,10 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "startUrls": [
+        {
+            "url": "https://apify.com"
+        }
+    ]
+}

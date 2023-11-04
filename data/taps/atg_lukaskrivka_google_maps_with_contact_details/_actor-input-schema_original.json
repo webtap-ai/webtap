@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Google Maps Scraper dataset ID (finished run) - must not use \"only data from search page!\"",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "googleMapsDatasetId",
+        "description": "First run the Google Maps Scraper. Then provide the ID of the Google Maps Scraper dataset that will be enhanced with contact details.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum pages per start URL",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestsPerStartUrl",
+        "description": "The maximum number of pages that will be enqueued from each start URL you provide.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum link depth",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxDepth",
+        "description": "The maximum number of links away from the Start URLs that the actor will crawl. If 0, the scraper will not follow any links. If empty or null, the scraper will follow links to an arbitrary depth.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfig",
+        "description": "Proxy servers let you bypass website protections, avoid IP address blocking, and view content for other countries. Try to use a proxy if you are experiencing timeout errors.",
+        "value_options": null
+    }
+]

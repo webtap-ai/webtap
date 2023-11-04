@@ -1,0 +1,191 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Hotels in NYC'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Hotels in NYC"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Restaurants in London', country code 'gb'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Restaurants in London"
+                ],
+                "countryCode": "gb"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Things to do in Rome', country code 'it'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Things to do in Rome"
+                ],
+                "countryCode": "it"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Tech companies in San Francisco', country code 'us'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Tech companies in San Francisco"
+                ],
+                "countryCode": "us"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Best AI Marketing blogs', country code 'us'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Best AI Marketing blogs"
+                ],
+                "countryCode": "us"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Top food bloggers in Spain', country code 'es'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Top food bloggers in Spain"
+                ],
+                "countryCode": "es"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'E-commerce websites in India', country code 'in'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "E-commerce websites in India"
+                ],
+                "countryCode": "in"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Real estate agencies in Dubai', country code 'ae'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Real estate agencies in Dubai"
+                ],
+                "countryCode": "ae"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Software development companies in Canada', country code 'ca'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Software development companies in Canada"
+                ],
+                "countryCode": "ca"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Google search results for 'Fashion designers in France', country code 'fr'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Fast Google Search Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Fast Google Search Scraper is reliable and solely based on compatibility between DATA TASK and Fast Google Search Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Fast Google Search Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Fast Google Search Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": [
+                    "Fashion designers in France"
+                ],
+                "countryCode": "fr"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

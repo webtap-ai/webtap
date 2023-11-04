@@ -38,5 +38,45 @@
     "yin/yelp-scraper": {
         "status": "success",
         "message": "All steps executed successfully"
+    },
+    "apify/instagram-comment-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mstephen190/proxy-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_input_schema: Scraped data input schema not a JSON array or does not contain at least 1 item. Does the actor store listing 'input tab' exists?"
+    },
+    "petr_cermak/transfermarkt": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/article-extractor-smart": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "apify/send-mail": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "apify/screenshot-url": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "jakubbalada/content-checker": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.url is required"
+    },
+    "trudax/reddit-scraper-lite": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "maxcopell/zillow-api-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "clockworks/tiktok-profile-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
     }
 }

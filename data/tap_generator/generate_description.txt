@@ -91,6 +91,7 @@ For TripAdvisor: [ "Max results", "Hotel checkin date", "Hotel checkout date", "
 
 5. special_instructions
 A list of special instructions that the LLM should follow to use the Actor.
+Focus on instructions that are related to the technical use of the tool, don't mention anything about integration with other tools, integrate with other Apify actors, integrate with Apify API, develop a custom solution or anything that is not related to the technical use of this specific Actor.
 In special instructions do not mention anything about privacy, policy, legal or anything that is not related to the technical use of the tool.
 Some examples:
 For Google:

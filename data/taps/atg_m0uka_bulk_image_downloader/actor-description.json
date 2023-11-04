@@ -1,0 +1,19 @@
+{
+    "id": "m0uka/bulk-image-downloader",
+    "url": "https://apify.com/m0uka/bulk-image-downloader",
+    "title": "Bulk Image Downloader \u00b7 Apify",
+    "name": "Bulk Image Downloader",
+    "pricing": "No credit card required",
+    "description": "Download all images from a website with this easy-to-use Bulk Image Downloader. Scrape all images from any website by URL to a zip file with a single click.",
+    "author_name": "Lukas Moucka",
+    "maintained_by": "Maintained by Community",
+    "count_users": "1.5k users",
+    "count_runs": "4.5k runs",
+    "last_modified": "Modified 6 months ago",
+    "categories": "Automation\nOther",
+    "full_readme": "Image Scraper\n\nA simple scraper that scrapes all images from a website, archives them to a zip file, and then pushes a download link to the dataset.\n\nUse Cases\n\nYou can use this scraper in order to download images from a certain website - useful for tracking blog posts, new posts, etc..\n\nInput\n\nThe actor only needs to know which websites to get images from, and which proxies to use. You can specify multiple websites to get multiple results on one run.\n\nResults\n\nThe actor stores its result in the default dataset associated with the actor run. It can be then exported to various formats, such as JSON, XML, CSV or Excel.\n\nEach website in the dataset will contain a seperate object that follows this format (JSON is used below):\n\n{\n  \"url\": \"https://apify.com\",\n  \"urlHash\": \"d0734ca443cdd7bb52b219011c750508\",\n  \"download\": \"https://api.apify.com/v2/key-value-stores/e4QDEvYo5hNPCZeJr/records/d0734ca443cdd7bb52b219011c750508.zip\"\n}",
+    "icon": "https://images.apifyusercontent.com/nkVMKWYOES48gPiPM8GhIgTBXkEbQPjIOsaMPY8KhlQ/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9IR2NNb2poTTM5WUZKNGE3bS9xaGpIcVBwN3I1YjNaM2Rhdi1idWxrX2ltYWdlX2Rvd25sb2FkZXIucG5n.webp",
+    "author_url": "https://apify.com/m0uka",
+    "author_avatar": "https://images.apifyusercontent.com/tVIXcLeazreQ5SSMlS9qNMEXUmBE_4X_C_wCyIvkQow/rs:fill:192:192/aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2EvQUFUWEFKeU9NS2oyeFRtZWdPSE01ajB6ZEhzR24xX3lyVFRTam1iS3FkRkc9czk2LWM.webp",
+    "readme_summary": "# Image Scraper\n\nA simple scraper that scrapes all images from a website, archives them to a\nzip file, and then pushes a download link to the dataset.\n\n## Use Cases\n\nYou can use this scraper in order to download images from a certain website -\nuseful for tracking blog posts, new posts, etc..\n\n## Input\n\nThe actor only needs to know which websites to get images from, and which\nproxies to use. You can specify multiple websites to get multiple results on\none run.\n\n## Results\n\nThe actor stores its result in the default dataset associated with the actor\nrun. It can be then exported to various formats, such as JSON, XML, CSV or\nExcel.\n\nEach website in the dataset will contain a seperate object that follows this\nformat (JSON is used below):\n\n    \n    \n    {\n      \"url\": \"https://apify.com\",\n      \"urlHash\": \"d0734ca443cdd7bb52b219011c750508\",\n      \"download\": \"https://api.apify.com/v2/key-value-stores/e4QDEvYo5hNPCZeJr/records/d0734ca443cdd7bb52b219011c750508.zip\"\n    }\n\n"
+}

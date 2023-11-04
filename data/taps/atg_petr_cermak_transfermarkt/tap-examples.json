@@ -1,0 +1,252 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Lionel Messi from the following page https://www.transfermarkt.com/lionel-messi/profil/spieler/28003",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/lionel-messi/profil/spieler/28003"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Kylian Mbappe from the following page https://www.transfermarkt.com/kylian-mbappe/profil/spieler/342229",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/kylian-mbappe/profil/spieler/342229"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Mohamed Salah from the following page https://www.transfermarkt.com/mohamed-salah/profil/spieler/148455",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/mohamed-salah/profil/spieler/148455"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Kevin De Bruyne from the following page https://www.transfermarkt.com/kevin-de-bruyne/profil/spieler/88755",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/kevin-de-bruyne/profil/spieler/88755"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Robert Lewandowski from the following page https://www.transfermarkt.com/robert-lewandowski/profil/spieler/38253",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/robert-lewandowski/profil/spieler/38253"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Virgil van Dijk from the following page https://www.transfermarkt.com/virgil-van-dijk/profil/spieler/139208",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/virgil-van-dijk/profil/spieler/139208"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Sadio Mane from the following page https://www.transfermarkt.com/sadio-mane/profil/spieler/200512",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/sadio-mane/profil/spieler/200512"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Raheem Sterling from the following page https://www.transfermarkt.com/raheem-sterling/profil/spieler/134425",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/raheem-sterling/profil/spieler/134425"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Erling Haaland from the following page https://www.transfermarkt.com/erling-haaland/profil/spieler/418560",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/erling-haaland/profil/spieler/418560"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data for Alisson Becker from the following page https://www.transfermarkt.com/alisson/profil/spieler/105470",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Transfermarkt Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Transfermarkt Scraper is reliable and solely based on compatibility between DATA TASK and Transfermarkt Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Transfermarkt Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Transfermarkt Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.transfermarkt.com/alisson/profil/spieler/105470"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "crawlDepth": 1,
+                "pageDepth": 1
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

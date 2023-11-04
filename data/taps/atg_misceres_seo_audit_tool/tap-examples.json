@@ -1,0 +1,202 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://apify.com' with maximum 10 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://apify.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.facebook.com' with maximum 500 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.facebook.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 500
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.instagram.com' with maximum 1000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.instagram.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 1000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.linkedin.com' with maximum 5000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.linkedin.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 5000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.youtube.com' with maximum 100000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.youtube.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 100000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.netflix.com' with maximum 200000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.netflix.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 200000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.spotify.com' with maximum 500000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.spotify.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 500000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.apple.com' with maximum 1000000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.apple.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 1000000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.adobe.com' with maximum 5000000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.adobe.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 5000000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "SEO audit for 'https://www.ibm.com' with maximum 20000000 requests per crawl using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SEO Audit Tool INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SEO Audit Tool is reliable and solely based on compatibility between DATA TASK and SEO Audit Tool OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SEO Audit Tool OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SEO Audit Tool has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrl": "https://www.ibm.com",
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxRequestsPerCrawl": 20000000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

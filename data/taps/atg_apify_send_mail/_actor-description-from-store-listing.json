@@ -1,0 +1,13 @@
+{
+    "example_json_input": {
+        "to": "test@example.com",
+        "cc": "cc@example.com",
+        "bcc": "bcc@example.com",
+        "subject": "Test Email",
+        "text": "This is a test email."
+    },
+    "example_output_json_response": {
+        "status": "success",
+        "message": "Email sent successfully"
+    }
+}

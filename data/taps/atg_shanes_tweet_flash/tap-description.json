@@ -52,6 +52,6 @@
         "The 'max_attempts' option specifies the maximum number of attempts to be made if a scrape operation fails. After reaching this limit, the failed operation will be skipped.",
         "The 'num_threads' option overrides the number of threads/workers automatically optimized for your memory amount. Could be useful for troubleshooting.",
         "For optimal performance, it is recommended to use no more than 150MB of memory per query or profile. If you're running multiple queries or profiles, or are collecting advanced user info, increase memory allocation proportionally.",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit"
     ]
 }

@@ -1,0 +1,205 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 50 items from the category 'Toys & Games' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=toys-and-games&bbn=165793011&rh=n%3A165793011%2Cn%3A%21165795011%2Cn%3A%21165795111&ref=nav_em__nav_desktop_sa_intl_toys_and_games_0_2_5_2"
+                    }
+                ],
+                "maxItems": 50,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 25 items from the category 'Handmade Products' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=handmade&bbn=11260432011&rh=n%3A11260432011%2Cn%3A11260433011&ref=nav_em__nav_desktop_sa_intl_handmade_0_2_5_5"
+                    }
+                ],
+                "maxItems": 25,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 50 items from the category 'Cell Phones & Accessories' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=cell-phones&bbn=2335752011&rh=n%3A2335752011%2Cn%3A7072561011&ref=nav_em__nav_desktop_sa_intl_cell_phones_and_accessories_0_2_5_1"
+                    }
+                ],
+                "maxItems": 50,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 50 items from the category 'Automotive' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=automotive&bbn=15684181&rh=n%3A15684181%2Cn%3A15706581&ref=nav_em__nav_desktop_sa_intl_automotive_0_2_5_2"
+                    }
+                ],
+                "maxItems": 50,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 25 items from the category 'Musical Instruments' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=musical-instruments&bbn=11091801&rh=n%3A11091801%2Cn%3A11091801&ref=nav_em__nav_desktop_sa_intl_musical_instruments_0_2_5_1"
+                    }
+                ],
+                "maxItems": 25,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 25 items from the category 'Movies & TV' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=movies-and-tv&bbn=2625373011&rh=n%3A2625373011%2Cn%3A%212625374011%2Cn%3A%212625375011&ref=nav_em__nav_desktop_sa_intl_movies_and_tv_0_2_5_2"
+                    }
+                ],
+                "maxItems": 25,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape maximum 25 items from the category 'Handmade' on Amazon using residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free Amazon Product Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free Amazon Product Scraper is reliable and solely based on compatibility between DATA TASK and Free Amazon Product Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free Amazon Product Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free Amazon Product Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    {
+                        "url": "https://www.amazon.com/s?i=handmade&bbn=11260432011&rh=n%3A11260432011%2Cn%3A11260433011&ref=nav_em__nav_desktop_sa_intl_handmade_0_2_5_5"
+                    }
+                ],
+                "maxItems": 25,
+                "proxyConfiguration": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                },
+                "detailedInformation": false,
+                "debug": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

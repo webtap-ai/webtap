@@ -1,0 +1,9 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "query": "CEO",
+    "location": "",
+    "maxResults": 30,
+    "locationstate": ""
+}

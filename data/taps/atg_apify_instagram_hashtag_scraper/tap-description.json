@@ -16,6 +16,6 @@
         "The tool does not extract any private user data, only what the user has chosen to share publicly.",
         "The tool can be integrated with almost any cloud service or web app thanks to integrations on the Apify platform.",
         "The Apify API gives you programmatic access to the Apify platform, allowing you to manage, schedule, and run Apify actors.",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit"
     ]
 }

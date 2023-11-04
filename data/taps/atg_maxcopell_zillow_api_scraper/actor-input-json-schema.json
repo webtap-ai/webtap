@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "search": {
+            "type": "string",
+            "description": "Query to search on Zillow.com",
+            "example": "Los Angeles"
+        },
+        "type": {
+            "type": "string",
+            "description": "Property for sale/rent",
+            "example": "all",
+            "enum": [
+                "all",
+                "sale",
+                "fsbo",
+                "rent",
+                "sold"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit of home detail pages to be scraped",
+            "example": 100
+        },
+        "simple": {
+            "type": "boolean",
+            "description": "Return only a subset of possible result attributes."
+        },
+        "startUrls": {
+            "type": "array",
+            "description": "List of URLs that will be crawled."
+        },
+        "zpids": {
+            "type": "array",
+            "description": "List of ZPIDs that will be scraped."
+        },
+        "zipcodes": {
+            "type": "array",
+            "description": "List of zipcodes that will be scraped. Notice that this can take a lot of time to complete!"
+        },
+        "maxLevel": {
+            "type": "integer",
+            "description": "Maximum map splitting level. The bigger number is set, the longer the scrape will take",
+            "example": 1
+        },
+        "minDate": {
+            "type": "string",
+            "description": "Oldest date allowed in results. Can use literal dates, such as YYYY-MM-DD or relative ones, like 3 hours, 1 month, 2 days, today or yesterday"
+        },
+        "maxDate": {
+            "type": "string",
+            "description": "Newest date allowed in results. Can use literal dates, such as YYYY-MM-DD or relative ones, like 3 hours, 1 month, 2 days, today or yesterday"
+        },
+        "includeRelaxedResults": {
+            "type": "boolean",
+            "description": "Setting this option might give results close but outside to the original city / county / state."
+        },
+        "maxRetries": {
+            "type": "integer",
+            "description": "How many retries until the scraper should give up",
+            "example": 10
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "How many requests can be running simultaneously",
+            "example": 10
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "Enable debug log"
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "Extend the output item to contain more fields. The raw data is present in the 'data' variable."
+        },
+        "extendScraperFunction": {
+            "type": "string",
+            "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page"
+        },
+        "customData": {
+            "type": "object",
+            "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+            "example": {}
+        },
+        "rawOutput": {
+            "type": "boolean",
+            "description": "Output the results without any filtering or formatting. It's recommended to leave this option unchecked."
+        }
+    },
+    "required": []
+}

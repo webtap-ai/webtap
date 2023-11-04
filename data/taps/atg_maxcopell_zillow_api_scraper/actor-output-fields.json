@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "zpid, bedrooms, bathrooms, price, yearBuilt, longitude, latitude, homeStatus, description, livingArea, lotSize, currency, homeType, datePostedString, daysOnZillow"
+}

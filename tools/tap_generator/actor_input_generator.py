@@ -20,7 +20,7 @@ class ActorInputGenerator:
         ]
 
     """
-        Extract input example from actor api
+        Extract input example from actor store listing api page
     """
 
     def generate_example(self, tap_dir, actor_id, actor_apis):
@@ -255,6 +255,10 @@ class ActorInputGenerator:
 
         return minimized_schema
 
+    """
+        Generate input schema given the actor_input_schema from store listing input tab
+    """
+
     def generate_input_schema(self, tap_dir, actor_id, actor_input_schemas):
         actor_input_schema_path = tap_dir / "actor-input-json-schema.json"
         actor_input_schema_original_path = tap_dir / "_actor-input-schema_original.json"
@@ -279,7 +283,7 @@ class ActorInputGenerator:
         # Check if the returned data is a JSON array with at least 1 item
         if not isinstance(actor_input_schema, list) or len(actor_input_schema) < 1:
             raise ValueError(
-                "Input schema is not a JSON array or does not contain at least 1 item"
+                "Scraped data input schema not a JSON array or does not contain at least 1 item. Does the actor store listing 'input tab' exists?"
             )
 
         # store original schema
@@ -304,7 +308,6 @@ class ActorInputGenerator:
 
         # Check if actor-input-summary.json already exists
         if os.path.exists(actor_input_summary_path):
-            self.logger.info("Actor input summary already exists.")
             # check that it contains a key 'actor_input_summary'
             with open(actor_input_summary_path, "r") as json_file:
                 actor_input_summary = json.load(json_file)
@@ -417,7 +420,7 @@ class ActorInputGenerator:
 
         # manually add the following special instructions
         tap_description["special_instructions"].append(
-            "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+            "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
         )
 
         # check if any of the input in input schema contains a proxy mention

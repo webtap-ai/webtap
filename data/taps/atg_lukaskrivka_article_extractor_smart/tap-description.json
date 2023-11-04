@@ -1,0 +1,61 @@
+{
+    "name": "Smart Article Extractor",
+    "entities": [
+        "articles",
+        "academic papers",
+        "news articles",
+        "blog posts"
+    ],
+    "filters": [
+        "startUrls",
+        "articleUrls",
+        "onlyNewArticles",
+        "onlyNewArticlesPerDomain",
+        "onlyInsideArticles",
+        "enqueueFromArticles",
+        "crawlWholeSubdomain",
+        "onlySubdomainArticles",
+        "scanSitemaps",
+        "sitemapUrls",
+        "minWords",
+        "dateFrom",
+        "onlyArticlesForLastDays",
+        "mustHaveDate",
+        "isUrlArticleDefinition",
+        "pseudoUrls",
+        "linkSelector",
+        "maxDepth",
+        "maxPagesPerCrawl",
+        "maxArticlesPerCrawl",
+        "maxArticlesPerStartUrl",
+        "maxConcurrency",
+        "proxyConfiguration",
+        "overrideProxyGroup",
+        "useBrowser",
+        "pageWaitMs",
+        "pageWaitSelectorCategory",
+        "pageWaitSelectorArticle",
+        "scrollToBottom",
+        "scrollToBottomButtonSelector",
+        "scrollToBottomMaxSecs",
+        "extendOutputFunction",
+        "stopAfterCUs",
+        "notificationEmails",
+        "notifyAfterCUs",
+        "notifyAfterCUsPeriodically"
+    ],
+    "options": [
+        "saveHtml",
+        "saveHtmlAsLink",
+        "saveSnapshots",
+        "useGoogleBotHeaders"
+    ],
+    "special_instructions": [
+        "One of startUrls or articleUrls must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The extractor can return thousands of results on average, but the maximum number of results may vary depending on various factors",
+        "The cost of scraping articles with the actor can vary depending on the resources needed",
+        "The output can be obtained in various formats such as JSON, CSV, XML, Excel, RSS, and more",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

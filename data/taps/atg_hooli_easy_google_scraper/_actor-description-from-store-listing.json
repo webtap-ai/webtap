@@ -1,0 +1,17 @@
+{
+    "example_json_input": {
+        "url": "https://apify.com/hooli/easy-google-scraper"
+    },
+    "example_output_json_response": {
+        "product_name": "Fast Google Scraper",
+        "author": "Hooli",
+        "description": "Make collecting data from Google easy with Fast Google Scraper. Extract organic and paid Google search engine results pages, then download your data as HTML table, JSON, CSV, Excel, or XML.",
+        "price": "Free",
+        "url": "https://apify.com/hooli/easy-google-scraper",
+        "categories": [
+            "SEO tools",
+            "Marketing",
+            "Business"
+        ]
+    }
+}

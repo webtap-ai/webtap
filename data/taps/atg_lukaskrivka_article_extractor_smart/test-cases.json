@@ -1,0 +1,56 @@
+[
+    {
+        "data_task": "Extract articles from BBC News website, only new articles each time the actor is run",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from New York Times website, also extract articles linked within articles",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from The Economist website, only load articles which URL begins with the same path as Start URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from The Wall Street Journal website, scan different sitemaps from the initial article URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from The New Yorker website, use Google Bot headers to bypass protection and paywalls",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from TechCrunch website, only get posts that were published in the last 30 days from time the scraping starts",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from Gizmodo website, the article must have a date of release to be extracted",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from CNET website, limit the tags whose links will be enqueued",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract articles from ZDNet website, maximum number of total pages crawled is 1000",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

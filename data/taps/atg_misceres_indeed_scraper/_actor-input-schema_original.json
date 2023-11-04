@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Positions/keywords for search",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "position",
+        "description": "Any combination of positions or keywords for search. If Start URLs are used, search position is disabled.",
+        "value_options": null
+    },
+    {
+        "name": "Country for search",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "country",
+        "description": "Country for job search",
+        "value_options": "\"AF\": string\n\"AL\": string\n\"DZ\": string\n\"AS\": string\n\"AD\": string\n\"AO\": string\n\"AI\": string\n\"AQ\": string\n\"AG\": string\n\"AR\": string\n\"AM\": string\n\"AW\": string\n\"AU\": string\n\"AT\": string\n\"AZ\": string\n\"BS\": string\n\"BH\": string\n\"BD\": string\n\"BB\": string\n\"BY\": string\n\"BE\": string\n\"BZ\": string\n\"BJ\": string\n\"BM\": string\n\"BT\": string\n\"BO\": string\n\"BQ\": string\n\"BA\": string\n\"BW\": string\n\"BV\": string\n\"BR\": string\n\"IO\": string\n\"VG\": string\n\"BN\": string\n\"BG\": string\n\"BF\": string\n\"BI\": string\n\"KH\": string\n\"CM\": string\n\"CA\": string\n\"CV\": string\n\"KY\": string\n\"CF\": string\n\"TD\": string\n\"CL\": string\n\"CN\": string\n\"CX\": string\n\"CC\": string\n\"CO\": string\n\"KM\": string\n\"CK\": string\n\"CR\": string\n\"HR\": string\n\"CU\": string\n\"CW\": string\n\"CY\": string\n\"CZ\": string\n\"CD\": string\n\"DK\": string\n\"DJ\": string\n\"DM\": string\n\"DO\": string\n\"TL\": string\n\"EC\": string\n\"EG\": string\n\"SV\": string\n\"GQ\": string\n\"ER\": string\n\"EE\": string\n\"ET\": string\n\"FK\": string\n\"FO\": string\n\"FJ\": string\n\"FI\": string\n\"FR\": string\n\"GF\": string\n\"PF\": string\n\"TF\": string\n\"GA\": string\n\"GM\": string\n\"GE\": string\n\"DE\": string\n\"GH\": string\n\"GI\": string\n\"GR\": string\n\"GL\": string\n\"GD\": string\n\"GP\": string\n\"GU\": string\n\"GT\": string\n\"GG\": string\n\"GN\": string\n\"GW\": string\n\"GY\": string\n\"HT\": string\n\"HM\": string\n\"HN\": string\n\"HK\": string\n\"HU\": string\n\"IS\": string\n\"IN\": string\n\"ID\": string\n\"IR\": string\n\"IQ\": string\n\"IE\": string\n\"IM\": string\n\"IL\": string\n\"IT\": string\n\"CI\": string\n\"JM\": string\n\"JP\": string\n\"JE\": string\n\"JO\": string\n\"KZ\": string\n\"KE\": string\n\"KI\": string\n\"XK\": string\n\"KW\": string\n\"KG\": string\n\"LA\": string\n\"LV\": string\n\"LB\": string\n\"LS\": string\n\"LR\": string\n\"LY\": string\n\"LI\": string\n\"LT\": string\n\"LU\": string\n\"MO\": string\n\"MG\": string\n\"MW\": string\n\"MY\": string\n\"MV\": string\n\"ML\": string\n\"MT\": string\n\"MH\": string\n\"MQ\": string\n\"MR\": string\n\"MU\": string\n\"YT\": string\n\"MX\": string\n\"FM\": string\n\"MD\": string\n\"MC\": string\n\"MN\": string\n\"ME\": string\n\"MS\": string\n\"MA\": string\n\"MZ\": string\n\"MM\": string\n\"NA\": string\n\"NR\": string\n\"NP\": string\n\"NL\": string\n\"NC\": string\n\"NZ\": string\n\"NI\": string\n\"NE\": string\n\"NG\": string\n\"NU\": string\n\"NF\": string\n\"KP\": string\n\"MK\": string\n\"MP\": string\n\"NO\": string\n\"OM\": string\n\"PK\": string\n\"PW\": string\n\"PS\": string\n\"PA\": string\n\"PG\": string\n\"PY\": string\n\"PE\": string\n\"PH\": string\n\"PN\": string\n\"PL\": string\n\"PT\": string\n\"PR\": string\n\"QA\": string\n\"CG\": string\n\"RO\": string\n\"RU\": string\n\"RW\": string\n\"RE\": string\n\"BL\": string\n\"SH\": string\n\"KN\": string\n\"LC\": string\n\"MF\": string\n\"PM\": string\n\"VC\": string\n\"WS\": string\n\"SM\": string\n\"SA\": string\n\"SN\": string\n\"RS\": string\n\"SC\": string\n\"SL\": string\n\"SG\": string\n\"SX\": string\n\"SK\": string\n\"SI\": string\n\"SB\": string\n\"SO\": string\n\"ZA\": string\n\"GS\": string\n\"KR\": string\n\"SS\": string\n\"ES\": string\n\"LK\": string\n\"SD\": string\n\"SR\": string\n\"SJ\": string\n\"SZ\": string\n\"SE\": string\n\"CH\": string\n\"SY\": string\n\"ST\": string\n\"TW\": string\n\"TJ\": string\n\"TZ\": string\n\"TH\": string\n\"TG\": string\n\"TK\": string\n\"TO\": string\n\"TT\": string\n\"TN\": string\n\"TR\": string\n\"TM\": string\n\"TC\": string\n\"TV\": string\n\"UM\": string\n\"VI\": string\n\"UG\": string\n\"UA\": string\n\"AE\": string\n\"GB\": string\n\"US\": string\n\"UY\": string\n\"UZ\": string\n\"VU\": string\n\"VA\": string\n\"VE\": string\n\"VN\": string\n\"WF\": string\n\"EH\": string\n\"YE\": string\n\"ZM\": string\n\"ZW\": string\n\"AX\": string"
+    },
+    {
+        "name": "Location for search",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "location",
+        "description": "Any combination of city, zip code or locality for search",
+        "value_options": null
+    },
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Limit of detail/product pages to be scraped",
+        "value_options": null
+    },
+    {
+        "name": "Scrape company details",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "parseCompanyDetails",
+        "description": "If true, will also navigate to company page of each job posting, to scrape company info not available directly on job posting page",
+        "value_options": null
+    },
+    {
+        "name": "Save Only Unique Items",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveOnlyUniqueItems",
+        "description": "if true, only unique items will be scraped",
+        "value_options": null
+    },
+    {
+        "name": "Follow redirects for apply link",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "followApplyRedirects",
+        "description": "if true, will follow redirects of Indeed's externalApplyLink and output the final one",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "Be nice to the website, don't go over 10",
+        "value_options": null
+    },
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "List of URLs that will be scraped or crawled. Can be main website URL, category/search URLs, company jobs URL (in the format of https://www.indeed.com/cmp/Google/jobs) or detail/product URLs. Using this disables search.",
+        "value_options": null
+    }
+]

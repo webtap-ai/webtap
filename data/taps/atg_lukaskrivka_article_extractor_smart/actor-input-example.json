@@ -1,0 +1,23 @@
+{
+    "startUrls": [
+        {
+            "url": "https://www.theguardian.com"
+        }
+    ],
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    },
+    "isUrlArticleDefinition": {
+        "hasDate": true,
+        "minDashes": 4,
+        "linkIncludes": [
+            "article",
+            "storyid",
+            "?p=",
+            "id=",
+            "/fpss/track",
+            ".html",
+            "/content/"
+        ]
+    }
+}

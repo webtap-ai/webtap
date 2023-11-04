@@ -1,0 +1,28 @@
+{
+    "name": "Fast Google Search",
+    "entities": [
+        "google search result",
+        "google search ads",
+        "google search related queries"
+    ],
+    "filters": [
+        "Search queries",
+        "Country code"
+    ],
+    "options": [
+        "Max results",
+        "Result per google page",
+        "Mobile Results",
+        "Country",
+        "Language",
+        "Exact location",
+        "Include unfiltered",
+        "Return full html"
+    ],
+    "special_instructions": [
+        "One of Search queries or Country code must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Google default country is US, so if you want to search in US simply don't input any country",
+        "The actor can return up to 200-300 results on average, and the cost of scraping Google varies depending on the resources needed",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

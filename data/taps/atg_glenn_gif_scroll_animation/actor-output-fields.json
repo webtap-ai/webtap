@@ -1,1 +1,3 @@
-{}
+{
+    "actor_output_fields": "scrolling_gif_url, gifUrlOriginal, gifUrlLossy"
+}

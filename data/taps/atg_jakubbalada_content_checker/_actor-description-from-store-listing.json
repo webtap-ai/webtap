@@ -1,0 +1,17 @@
+{
+    "example_json_input": {
+        "URL": "https://blog.apify.com/how-to-set-up-a-content-change-watchdog-for-any-website-in-5-minutes-460843b12271",
+        "content_selector": ".section-content",
+        "email_address": "example@example.com",
+        "screenshot_selector": ".section-content"
+    },
+    "example_output_json_response": {
+        "content_changed": true,
+        "previous_data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "changed_data": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum finibus metus ut vulputate.",
+        "screenshots": [
+            "https://images.apifyusercontent.com/ycibwCrJcz2tw1wEp3Z5c8oLRUJfZbBWjzIgV1daiNA/aHR0cHM6Ly9hcGlmeS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9YTXVpdWJzV3pTRmJjUUVocy1TY3JlZW5fU2hvdF8yMDE5LTAxLTAyX2F0XzIzLjIzLjUxLnBuZw.png",
+            "https://images.apifyusercontent.com/ycibwCrJcz2tw1wEp3Z5c8oLRUJfZbBWjzIgV1daiNA/aHR0cHM6Ly9hcGlmeS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9YTXVpdWJzV3pTRmJjUUVocy1TY3JlZW5fU2hvdF8yMDE5LTAxLTAyX2F0XzIzLjIzLjUxLnBuZw.png"
+        ]
+    }
+}

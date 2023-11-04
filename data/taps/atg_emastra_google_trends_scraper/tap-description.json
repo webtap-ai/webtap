@@ -33,6 +33,6 @@
         "If the Google Sheet is private, authorization is needed",
         "The actor can be integrated with various cloud services or web apps",
         "It can also be accessed programmatically using the Apify API",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit"
     ]
 }

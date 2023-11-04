@@ -1,0 +1,44 @@
+[
+    {
+        "data_task": "Scrape maximum 50 items from the category 'Toys & Games' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 25 items from the category 'Handmade Products' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 50 items from the category 'Cell Phones & Accessories' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 50 items from the category 'Automotive' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 25 items from the category 'Musical Instruments' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 25 items from the category 'Movies & TV' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape maximum 25 items from the category 'Handmade' on Amazon using residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

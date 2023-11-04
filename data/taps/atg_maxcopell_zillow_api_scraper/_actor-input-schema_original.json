@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Search",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "search",
+        "description": "Query to search on Zillow.com",
+        "value_options": null
+    },
+    {
+        "name": "Type filter",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "type",
+        "description": "Property for sale/rent",
+        "value_options": "\"all\": string\n\"sale\": string\n\"fsbo\": string\n\"rent\": string\n\"sold\": string"
+    },
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Limit of home detail pages to be scraped",
+        "value_options": null
+    },
+    {
+        "name": "Simple results",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "simple",
+        "description": "Return only a subset of possible result attributes.",
+        "value_options": null
+    },
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "List of URLs that will be crawled.",
+        "value_options": null
+    },
+    {
+        "name": "Zillow home IDs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "zpids",
+        "description": "List of ZPIDs that will be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "US Zipcodes",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "zipcodes",
+        "description": "List of zipcodes that will be scraped. Notice that this can take a lot of time to complete!",
+        "value_options": null
+    },
+    {
+        "name": "Max zoom level",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxLevel",
+        "description": "Maximum map splitting level. The bigger number is set, the longer the scrape will take",
+        "value_options": null
+    },
+    {
+        "name": "Minimum date",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "minDate",
+        "description": "Oldest date allowed in results. Can use literal dates, such as YYYY-MM-DD or relative ones, like 3 hours, 1 month, 2 days, today or yesterday",
+        "value_options": null
+    },
+    {
+        "name": "Maximum date",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "maxDate",
+        "description": "Newest date allowed in results. Can use literal dates, such as YYYY-MM-DD or relative ones, like 3 hours, 1 month, 2 days, today or yesterday",
+        "value_options": null
+    },
+    {
+        "name": "Include more results",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "includeRelaxedResults",
+        "description": "Setting this option might give results close but outside to the original city / county / state.",
+        "value_options": null
+    },
+    {
+        "name": "Max retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRetries",
+        "description": "How many retries until the scraper should give up",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "How many requests can be running simultaneously",
+        "value_options": null
+    },
+    {
+        "name": "Debug log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "Enable debug log",
+        "value_options": null
+    },
+    {
+        "name": "Extend output function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendOutputFunction",
+        "description": "Extend the output item to contain more fields. The raw data is present in the 'data' variable.",
+        "value_options": null
+    },
+    {
+        "name": "Extend Scraper Function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendScraperFunction",
+        "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page",
+        "value_options": null
+    },
+    {
+        "name": "Custom data",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "customData",
+        "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+        "value_options": null
+    },
+    {
+        "name": "Raw output",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "rawOutput",
+        "description": "Output the results without any filtering or formatting. It's recommended to leave this option unchecked.",
+        "value_options": null
+    }
+]

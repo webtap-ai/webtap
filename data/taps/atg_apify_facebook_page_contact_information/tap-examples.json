@@ -1,0 +1,193 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Get contact info of the Facebook page 'https://www.facebook.com/humansofnewyork/' and 'humansofnewyork' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/humansofnewyork/",
+                    "humansofnewyork"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract contact info of the Facebook page 'https://www.facebook.com/tesla/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/tesla/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contact info of the Facebook page 'https://www.facebook.com/Apple/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Apple/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Retrieve contact info of the Facebook page 'https://www.facebook.com/Microsoft/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Microsoft/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Get contact info of the Facebook page 'https://www.facebook.com/Google/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Google/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract contact info of the Facebook page 'https://www.facebook.com/Amazon/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Amazon/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contact info of the Facebook page 'https://www.facebook.com/Netflix/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Netflix/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Retrieve contact info of the Facebook page 'https://www.facebook.com/Disney/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/Disney/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract contact info of the Facebook page 'https://www.facebook.com/adidas/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/adidas/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contact info of the Facebook page 'https://www.facebook.com/UnderArmour/' in English language",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook page contact info Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook page contact info Scraper is reliable and solely based on compatibility between DATA TASK and Facebook page contact info Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook page contact info Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook page contact info Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "pages": [
+                    "https://www.facebook.com/UnderArmour/"
+                ],
+                "language": "en-US"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

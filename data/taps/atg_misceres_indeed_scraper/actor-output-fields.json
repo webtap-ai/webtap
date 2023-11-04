@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "positionName, salary, company, location, rating, reviewsCount, url, id, postedAt, scrapedAt, postingDateParsed"
+}

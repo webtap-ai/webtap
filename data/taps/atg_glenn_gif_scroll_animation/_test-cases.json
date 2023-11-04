@@ -1,1 +1,27 @@
-[]
+[
+    "Create a GIF of the website 'https://crawlee.dev/' with a frame rate of 7, using Apify proxy, scrolling down 10% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.amazon.com/' with a frame rate of 10, using Apify proxy, scrolling down 20% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.nytimes.com/' with a frame rate of 5, using Apify proxy, scrolling down 30% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.reddit.com/' with a frame rate of 8, using Apify proxy, scrolling down 40% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.cnn.com/' with a frame rate of 6, using Apify proxy, scrolling down 50% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.bbc.com/' with a frame rate of 7, using Apify proxy, scrolling down 60% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.foxnews.com/' with a frame rate of 9, using Apify proxy, scrolling down 70% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.nbcnews.com/' with a frame rate of 10, using Apify proxy, scrolling down 80% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.cbsnews.com/' with a frame rate of 5, using Apify proxy, scrolling down 90% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.abcnews.go.com/' with a frame rate of 8, using Apify proxy, scrolling down 100% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.usatoday.com/' with a frame rate of 6, using Apify proxy, scrolling down 10% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.washingtonpost.com/' with a frame rate of 7, using Apify proxy, scrolling down 20% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.wsj.com/' with a frame rate of 9, using Apify proxy, scrolling down 30% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.bloomberg.com/' with a frame rate of 10, using Apify proxy, scrolling down 40% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.reuters.com/' with a frame rate of 5, using Apify proxy, scrolling down 50% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.cnbc.com/' with a frame rate of 8, using Apify proxy, scrolling down 60% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.msnbc.com/' with a frame rate of 6, using Apify proxy, scrolling down 70% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.huffpost.com/' with a frame rate of 7, using Apify proxy, scrolling down 80% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.politico.com/' with a frame rate of 9, using Apify proxy, scrolling down 90% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.buzzfeed.com/' with a frame rate of 10, using Apify proxy, scrolling down 100% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.vice.com/' with a frame rate of 5, using Apify proxy, scrolling down 10% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.theguardian.com/' with a frame rate of 8, using Apify proxy, scrolling down 20% of the viewport height, and recording 1000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.telegraph.co.uk/' with a frame rate of 6, using Apify proxy, scrolling down 30% of the viewport height, and recording 2000 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.independent.co.uk/' with a frame rate of 7, using Apify proxy, scrolling down 40% of the viewport height, and recording 1500 milliseconds before the action.",
+    "Create a GIF of the website 'https://www.dailymail.co.uk/' with a frame rate of 9, using Apify proxy, scrolling down 50% of the viewport height, and recording 1000 milliseconds before the action."
+]

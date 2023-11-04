@@ -26,7 +26,7 @@
         "The output of the tool is a JSON object with the business name, address, phone number, rating, and review text",
         "If the tool doesn't meet your needs, you can build your own scraper using Apify's templates or open-source library",
         "For any technical feedback or bugs, create an issue on the Actor\u2019s Issues tab in Apify Console",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit",
         "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
     ]
 }

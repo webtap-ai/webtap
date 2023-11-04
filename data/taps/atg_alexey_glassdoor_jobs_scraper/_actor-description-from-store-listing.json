@@ -1,0 +1,48 @@
+{
+    "example_json_input": {
+        "query": "project manager",
+        "category": "Jobs",
+        "location": "Prague",
+        "maxResults": 50
+    },
+    "example_output_json_response": {
+        "id": 3372440104,
+        "employerName": "Valeo",
+        "employerRating": null,
+        "jobTitle": "PROJECT TECHNICAL MANAGER",
+        "jobLocation": {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Prague",
+                "addressRegion": "52",
+                "addressCountry": {
+                    "@type": "Country",
+                    "name": "CZ"
+                }
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "50.0833",
+                "longitude": "14.4667"
+            }
+        },
+        "url": "https://www.glassdoor.com/job-listing/product-manager-pipedrive-JV_IC2296178_KO0,15_KE16,25.htm?jl=3381569011",
+        "jobDetails": "Ready to tackle the challenges of the vehicle of the future? Join Valeo and revolutionize the comfort and well-being of all passengers! We are looking for an experienced TECHNICAL PROJECT MANAGER, who...",
+        "companyDetails": {
+            "@type": "Organization",
+            "name": "Pipedrive",
+            "logo": "https://media.glassdoor.com/sqll/963206/pipedrive-squarelogo-1429226256313.png",
+            "sameAs": "www.pipedrive.com",
+            "Website": "www.valeo.com",
+            "Headquarters": "Paris (France)",
+            "Size": "10000+ employees",
+            "Founded": "1923",
+            "Type": "Company - Public (FR)",
+            "Industry": "Transportation Equipment Manufacturing",
+            "Revenue": "$10+ billion (USD) per year",
+            "Competitors": "Robert Bosch, Visteon"
+        },
+        "datePosted": "2019-11-07"
+    }
+}

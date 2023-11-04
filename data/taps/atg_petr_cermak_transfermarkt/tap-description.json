@@ -1,0 +1,26 @@
+{
+    "name": "Transfermarkt Data",
+    "entities": [
+        "player",
+        "club",
+        "competition",
+        "transfer",
+        "careerStats"
+    ],
+    "filters": [
+        "startUrls"
+    ],
+    "options": [
+        "crawlDepth",
+        "pageDepth",
+        "proxyConfig"
+    ],
+    "special_instructions": [
+        "The startUrls filter is required. It should contain the URLs to start with. If it is not provided, return can_fulfill false and explain accordingly",
+        "The crawlDepth option determines how deep the crawler will follow links from the current page",
+        "The pageDepth option determines how far the crawler will follow pagination links",
+        "The tool will return the following fields: id, url, type, nameInHomeCountry, dateOfBirth, placeOfBirth, age, height, citizenship, position, foot, playerAgent, currentClub, joined, contractExpires, contractOption, outfitter, socialMedia, transfers, careerStats",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

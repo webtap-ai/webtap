@@ -211,7 +211,9 @@ class TapGeneratorUtils:
 
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
-        actor_run = client.actor(actor_id).start(run_input=actor_input_body)
+        actor_run = client.actor(actor_id).start(
+            run_input=actor_input_body, max_items=max_items
+        )
         self.logger.info(f"Actor {actor_id} started, waiting for it to finish...")
 
         self.logger.debug(f"Actor run: {actor_run}")

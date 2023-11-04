@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Download all images from the website https://apify.com using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.google.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.amazon.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.reddit.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.wikipedia.org",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.instagram.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.twitter.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.pinterest.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.apple.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Download all images from the website https://www.adobe.com",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,51 @@
+{
+    "name": "Zillow Real Estate",
+    "entities": [
+        "property for sale",
+        "property for rent",
+        "property sold",
+        "property fsbo"
+    ],
+    "filters": [
+        "search",
+        "type",
+        "maxItems",
+        "startUrls",
+        "zpids",
+        "zipcodes",
+        "maxLevel",
+        "minDate",
+        "maxDate",
+        "includeRelaxedResults"
+    ],
+    "options": [
+        "simple",
+        "maxRetries",
+        "maxConcurrency",
+        "debugLog",
+        "extendOutputFunction",
+        "extendScraperFunction",
+        "customData",
+        "rawOutput"
+    ],
+    "special_instructions": [
+        "The 'search' filter is a query to search on Zillow.com. For example, 'Los Angeles'.",
+        "The 'type' filter is the property type. It can be 'all', 'sale', 'fsbo', 'rent', or 'sold'.",
+        "The 'maxItems' filter is the limit of home detail pages to be scraped. For example, 100.",
+        "The 'startUrls' filter is a list of URLs that will be crawled.",
+        "The 'zpids' filter is a list of ZPIDs that will be scraped.",
+        "The 'zipcodes' filter is a list of zipcodes that will be scraped. Notice that this can take a lot of time to complete!",
+        "The 'maxLevel' filter is the maximum map splitting level. The bigger number is set, the longer the scrape will take.",
+        "The 'minDate' and 'maxDate' filters are the oldest and newest dates allowed in results. Can use literal dates, such as YYYY-MM-DD or relative ones, like 3 hours, 1 month, 2 days, today or yesterday.",
+        "The 'includeRelaxedResults' filter, if set, might give results close but outside to the original city / county / state.",
+        "The 'simple' option, if set, will return only a subset of possible result attributes.",
+        "The 'maxRetries' option is how many retries until the scraper should give up.",
+        "The 'maxConcurrency' option is how many requests can be running simultaneously.",
+        "The 'debugLog' option, if set, will enable debug log.",
+        "The 'extendOutputFunction' option allows you to extend the output item to contain more fields. The raw data is present in the 'data' variable.",
+        "The 'extendScraperFunction' option is an advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page.",
+        "The 'customData' option is any data that you want to have available inside the Extend Output/Scraper Function.",
+        "The 'rawOutput' option, if set, will output the results without any filtering or formatting. It's recommended to leave this option unchecked.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

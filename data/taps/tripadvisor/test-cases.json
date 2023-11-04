@@ -1,6 +1,6 @@
 [
     {
-        "data_task": "Restaurants in Matera",
+        "data_task": "Restaurants in Miami",
         "expected_output": {
             "can_fulfill": true,
             "retriever": {
@@ -15,7 +15,7 @@
                         "includeHotels": false,
                         "includeRestaurants": true,
                         "includeVacationRentals": false,
-                        "locationFullName": "Matera",
+                        "locationFullName": "Miami",
                         "proxyConfiguration": {
                             "useApifyProxy": true
                         }
@@ -46,7 +46,7 @@
         "expected_output": { "can_fulfill": false }
     },
     {
-        "data_task": "Restaurant in Matera with email addresses",
+        "data_task": "Restaurant in Miami with email addresses",
         "expected_output": {
             "can_fulfill": true,
             "retriever": {
@@ -56,7 +56,7 @@
                     "parameters": { "actorId": "maxcopell~tripadvisor" },
                     "body": {
                         "includeRestaurants": true,
-                        "locationFullName": "Matera",
+                        "locationFullName": "Miami",
                         "proxyConfiguration": { "useApifyProxy": true }
                     }
                 }
@@ -68,7 +68,7 @@
         "expected_output": { "can_fulfill": false }
     },
     {
-        "data_task": "Restaurants in Matera, dogs friendly only",
+        "data_task": "Restaurants in Miami, dogs friendly only",
         "expected_output": { "can_fulfill": false }
     },
     {

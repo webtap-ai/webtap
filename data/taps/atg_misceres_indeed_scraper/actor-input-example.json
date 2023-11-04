@@ -1,0 +1,7 @@
+{
+    "country": "US",
+    "location": "San Francisco",
+    "maxItems": 50,
+    "position": "web developer",
+    "maxConcurrency": 5
+}

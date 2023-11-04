@@ -361,7 +361,7 @@ class ApifyTap(BaseTap):
             raise ValueError("APIFY_API_TOKEN env variable is not set")
         apify_api_token = os.environ["APIFY_API_TOKEN"]
 
-        params = {}
+        params = {"max_items": max_items}
 
         if self.memory_requirement is not None:
             params["memory_mbytes"] = self.memory_requirement

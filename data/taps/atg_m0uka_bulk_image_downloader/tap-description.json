@@ -1,0 +1,20 @@
+{
+    "name": "Bulk Image Downloader",
+    "entities": [
+        "website images"
+    ],
+    "filters": [
+        "startUrls",
+        "proxy"
+    ],
+    "options": [
+        "useApifyProxy"
+    ],
+    "special_instructions": [
+        "The tool requires a list of startUrls to download images from. If not provided, the tool will return an error.",
+        "The tool returns a zip file containing all the images from the specified websites. The download link to the zip file is provided in the 'download' field of the output.",
+        "The tool also returns a 'urlHash' for each website, which is a unique identifier for the website.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

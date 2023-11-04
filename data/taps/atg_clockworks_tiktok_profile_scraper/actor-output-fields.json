@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, text, createTime, createTimeISO, locationCreated, isAd, isMuted, authorMeta, musicMeta, webVideoUrl, mediaUrls, videoMeta, diggCount, shareCount, playCount, commentCount, mentions, hashtags, effectStickers, isSlideshow"
+}

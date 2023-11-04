@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape 20 posts from the 'r/technology' subreddit, sorted by 'hot', without comments",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 10 posts and 10 comments from the 'r/AskReddit' subreddit, sorted by 'comments', with a maximum of 2 communities",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 20 posts from the 'r/television' subreddit, sorted by 'new', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 10 posts from the 'r/food' subreddit, sorted by 'relevance', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 20 posts from the 'r/photography' subreddit, sorted by 'new', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 15 posts from the 'r/fitness' subreddit, sorted by 'hot', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 20 posts from the 'r/Art' subreddit, sorted by 'new', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 10 posts from the 'r/history' subreddit, sorted by 'top', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 15 posts from the 'r/philosophy' subreddit, sorted by 'hot', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 10 posts from the 'r/politics' subreddit, sorted by 'relevance', with a maximum of 2 communities and 2 users",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

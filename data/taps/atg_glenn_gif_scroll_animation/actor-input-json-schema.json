@@ -1,1 +1,79 @@
-{}
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "Website URL",
+            "example": "https://www.franshalsmuseum.nl/en/"
+        },
+        "proxyOptions": {
+            "type": "object",
+            "description": "Select proxies to be used by your actor.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "frameRate": {
+            "type": "integer",
+            "description": "Number of frames per second (fps)",
+            "example": 7
+        },
+        "scrollDown": {
+            "type": "boolean",
+            "description": "When selected the actor will scroll down the page and capture it to create the gif.",
+            "example": true
+        },
+        "scrollPercentage": {
+            "type": "integer",
+            "description": "Amount to scroll down determined as a percentage of the vierport height.\n\nFor example, if viewport height is 1000 pixels and scroll percentage is set to 10%. Then scroll down by 10% of viewport height",
+            "example": 10
+        },
+        "recordingTimeBeforeAction": {
+            "type": "integer",
+            "description": "Amount of time to capture the screen before doing any action like scrolling down or clicking.",
+            "example": 1500
+        },
+        "clickSelector": {
+            "type": "string",
+            "description": "Used to click an element and record it."
+        },
+        "recordingTimeAfterClick": {
+            "type": "integer",
+            "description": "Amount of time to record the screen after clicking an element with the click selector."
+        },
+        "waitToLoadPage": {
+            "type": "integer",
+            "description": "Set time to wait in the beginning so that page is fully loaded. For example when there is loading bar in the beginning that you don't want in the recording."
+        },
+        "cookieWindowSelector": {
+            "type": "string",
+            "description": "CSS selector for the cookie pop-up window that will be used to remove the element from the DOM.",
+            "example": ".cookiebar"
+        },
+        "slowDownAnimations": {
+            "type": "boolean",
+            "description": "When selected it slows down animations on the page so they can be properly captured."
+        },
+        "lossyCompression": {
+            "type": "boolean",
+            "description": "Lossy LZW compression of GIF using Giflossy (part of Gifsicle now)."
+        },
+        "loslessCompression": {
+            "type": "boolean",
+            "description": "Losless compression of GIF using Gifsicle."
+        },
+        "viewportWidth": {
+            "type": "integer",
+            "description": "Inner width of browser window"
+        },
+        "viewportHeight": {
+            "type": "integer",
+            "description": "Inner height browser window"
+        }
+    },
+    "required": [
+        "url",
+        "proxyOptions"
+    ]
+}

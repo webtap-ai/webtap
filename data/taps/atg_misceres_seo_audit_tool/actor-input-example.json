@@ -1,0 +1,7 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "startUrl": "https://apify.com",
+    "maxRequestsPerCrawl": 10
+}

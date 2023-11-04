@@ -1,0 +1,21 @@
+{
+    "name": "Instagram Comment Extractor",
+    "entities": [
+        "Instagram post comments"
+    ],
+    "filters": [
+        "Instagram post URLs"
+    ],
+    "options": [
+        "Maximum comments per post"
+    ],
+    "special_instructions": [
+        "One or more Instagram post URLs must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The maximum number of comments that can be scraped from each post is 50",
+        "The results may differ from what you see when logged in to your Instagram account",
+        "The tool only extracts comments shown to Instagram users who are not logged in",
+        "The tool can be integrated with various cloud services and web apps, and it can be used with the Apify API for programmatic access",
+        "The tool provides the following output fields: id, postId, text, position, timestamp, ownerId, ownerIsVerified, ownerUsername, ownerProfilePicUrl, postUrl, likesCount",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

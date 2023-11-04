@@ -1,0 +1,19 @@
+{
+    "name": "Instagram Reels",
+    "entities": [
+        "reels"
+    ],
+    "filters": [
+        "username",
+        "resultsLimit"
+    ],
+    "options": [
+        "Download format"
+    ],
+    "special_instructions": [
+        "Username is required to fetch the reels. If it is not provided, return can_fulfill false and explain accordingly",
+        "ResultsLimit is the maximum number of reels you want to scrape per profile. If you set it to 5, you'll get 5 reels for each profile you've included",
+        "Download format can be JSON, Excel, HTML and other formats",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

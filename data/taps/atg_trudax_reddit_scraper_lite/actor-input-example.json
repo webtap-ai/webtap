@@ -1,0 +1,16 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "maxItems": 10,
+    "startUrls": [
+        {
+            "url": "https://www.reddit.com/r/pasta/comments/vwi6jx/pasta_peperoni_and_ricotta_cheese_how_to_make/"
+        }
+    ],
+    "maxComments": 10,
+    "maxPostCount": 10,
+    "maxUserCount": 2,
+    "scrollTimeout": 40,
+    "maxCommunitiesCount": 2
+}

@@ -373,6 +373,19 @@ class TapGenerator:
                     self.logger.info(
                         f"SUCCESS: Step `{step_dict['step'].__self__.__class__.__name__}.{step_dict['step'].__self__.__class__.__name__}.{step_dict['step'].__name__}` executed successfully."
                     )
+                    files_to_edit = step_dict["generated_files"]
+                    # set each file_to_edit as self.tap_dir / file_to_edit
+                    files_to_edit = [
+                        str((self.tap_dir / file_to_edit).relative_to(Path.cwd()))
+                        for file_to_edit in files_to_edit
+                    ]
+
+                    if len(files_to_edit) > 0:
+                        self.logger.info(
+                            f"Data successfully generated in the following files: "
+                            + ", ".join(files_to_edit)
+                        )
+
                     break  # If the step is successful, break the loop and move to the next step
                 except Exception as e:
                     if attempt < max_attempts - 1:  # If this was not the last attempt
@@ -407,12 +420,16 @@ class TapGenerator:
                             error_message = f"Exiting after {max_attempts} failed attempts on step {step_dict['step'].__self__.__class__.__name__}.{step_dict['step'].__name__}. Error: {str(e)};"
                             self.logger.error(error_message, exc_info=True)
                             # output error message to stdout without raising
-                            self.logger.info(f"\n{error_message}")
+                            self.logger.info(f"{error_message}")
 
                             files_to_edit = step_dict["generated_files"]
                             # set each file_to_edit as self.tap_dir / file_to_edit
                             files_to_edit = [
-                                str(self.tap_dir / file_to_edit)
+                                str(
+                                    (self.tap_dir / file_to_edit).relative_to(
+                                        Path.cwd()
+                                    )
+                                )
                                 for file_to_edit in files_to_edit
                             ]
 

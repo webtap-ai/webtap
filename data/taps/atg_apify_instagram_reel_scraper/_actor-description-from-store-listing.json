@@ -1,0 +1,36 @@
+{
+    "example_json_input": {
+        "username": [
+            "zelenskiy_official"
+        ],
+        "resultsLimit": 10
+    },
+    "example_output_json_response": [
+        {
+            "id": 2977396167815083500,
+            "type": "ReelVideo",
+            "shortCode": "ClR1goqOjUm",
+            "caption": "We are rolling out our new \"Points of Invincibility\" project to support people across the country...",
+            "hashtags": [],
+            "mentions": [],
+            "url": "https://www.instagram.com/reel/ClR1goqOjUm/",
+            "commentsCount": 333,
+            "dimensionsHeight": 3000,
+            "dimensionsWidth": 1690,
+            "images": [
+                "https://instagram.fuln1-2.fna.fbcdn.net/v/t51.2885-15/316400537_1487126755124325_6072039105868505731_n.jpg?stp=dst-jpg_e35_p828x828_sh0.08&_nc_ht=instagram.fuln1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=yHUk8cd-GcEAX8xVByU&edm=ACHbZRIBAAAA&ccb=7-5&ig_cache_key=Mjk3NzM5NjE2NzgxNTA4MzMwMg%3D%3D.2-ccb7-5&oh=00_AfCrsoT9YxkVNGlanbRFPpRDXoqynuRQri2qQUV_WOk2qg&oe=63812BF4&_nc_sid=4a9e64",
+                "https://instagram.fuln1-2.fna.fbcdn.net/v/t51.2885-15/316400537_1487126755124325_6072039105868505731_n.jpg?stp=dst-jpg_e15_p320x320&_nc_ht=instagram.fuln1-2.fna.fbcdn.net&_nc_cat=1&_nc_ohc=yHUk8cd-GcEAX8xVByU&edm=ACHbZRIBAAAA&ccb=7-5&ig_cache_key=Mjk3NzM5NjE2NzgxNTA4MzMwMg%3D%3D.2-ccb7-5&oh=00_AfCcM55FdrSdFduyVO2NiAEXrKg_5ur2TkHg3Fzd74Y1Eg&oe=63812BF4&_nc_sid=4a9e64"
+            ],
+            "videoUrl": "https://instagram.fuln1-2.fna.fbcdn.net/v/t50.2886-16/10000000_650164979927338_5879441595623416367_n.mp4?_nc_ht=instagram.fuln1-2.fna.fbcdn.net&_nc_cat=110&_nc_ohc=qSRAaHhlIVsAX_9NixA&edm=ACHbZRIBAAAA&ccb=7-5&oh=00_AfA2mpXgIzhZT-TPjLYT6S339JAGn4oRbyQ1KT_kXHrFHg&oe=637EE950&_nc_sid=4a9e64",
+            "likesCount": 22110,
+            "videoViewCount": 93699,
+            "timestamp": "2022-11-22T21:42:42.000Z",
+            "ownerFullName": "\u0412\u043e\u043b\u043e\u0434\u0438\u043c\u0438\u0440 \u0417\u0435\u043b\u0435\u043d\u0441\u044c\u043a\u0438\u0438\u0306",
+            "ownerUsername": "zelenskiy_official",
+            "ownerId": 4731970969,
+            "productType": "clips",
+            "isSponsored": false,
+            "videoDuration": 380.459
+        }
+    ]
+}

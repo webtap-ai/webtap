@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "startUrls, articleUrls, onlyNewArticles, onlyNewArticlesPerDomain, onlyInsideArticles, enqueueFromArticles, crawlWholeSubdomain, onlySubdomainArticles, scanSitemaps, sitemapUrls, saveHtml, saveHtmlAsLink, saveSnapshots, useGoogleBotHeaders, minWords, dateFrom, onlyArticlesForLastDays, mustHaveDate, isUrlArticleDefinition, pseudoUrls, linkSelector, maxDepth, maxPagesPerCrawl, maxArticlesPerCrawl, maxArticlesPerStartUrl, maxConcurrency, proxyConfiguration, overrideProxyGroup, useBrowser, pageWaitMs, pageWaitSelectorCategory, pageWaitSelectorArticle, scrollToBottom, scrollToBottomButtonSelector, scrollToBottomMaxSecs, extendOutputFunction, stopAfterCUs, notificationEmails, notifyAfterCUs, notifyAfterCUsPeriodically"
+}

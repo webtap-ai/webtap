@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "data_task": "Create a GIF of the website 'https://www.amazon.com/' with a frame rate of 10, using Apify proxy, scrolling down 20% of the viewport height, and recording 2000 milliseconds before the action.",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Create a GIF of the website 'https://www.nytimes.com/' with a frame rate of 5, using Apify proxy, scrolling down 30% of the viewport height, and recording 1500 milliseconds before the action.",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

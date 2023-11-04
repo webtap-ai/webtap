@@ -1,0 +1,8 @@
+{
+    "url": "https://www.apify.com/",
+    "delay": 0,
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "waitUntil": "networkidle0"
+}

@@ -1,1 +1,27 @@
-[]
+[
+    "Search for 'Crawlee' on Youtube and return the first 10 results",
+    "Search for 'Travel Vlogs' on Youtube and return the first 20 results",
+    "Search for 'Cooking Recipes' on Youtube and return the first 15 results",
+    "Search for 'Workout Routines' on Youtube and return the first 10 results",
+    "Search for 'Music Videos' on Youtube and return the first 50 results",
+    "Search for 'Movie Trailers' on Youtube and return the first 30 results",
+    "Search for 'Tech Reviews' on Youtube and return the first 20 results",
+    "Search for 'Fashion Hauls' on Youtube and return the first 10 results",
+    "Search for 'Gaming Streams' on Youtube and return the first 15 results",
+    "Search for 'Documentaries' on Youtube and return the first 20 results",
+    "Search for 'Podcasts' on Youtube and return the first 10 results",
+    "Search for 'Tutorials' on Youtube and return the first 20 results",
+    "Search for 'News Updates' on Youtube and return the first 30 results",
+    "Search for 'Comedy Skits' on Youtube and return the first 10 results",
+    "Search for 'Animated Shorts' on Youtube and return the first 15 results",
+    "Search for 'Product Unboxing' on Youtube and return the first 20 results",
+    "Search for 'Interviews' on Youtube and return the first 10 results",
+    "Search for 'Webinars' on Youtube and return the first 20 results",
+    "Search for 'Lectures' on Youtube and return the first 30 results",
+    "Search for 'DIY Projects' on Youtube and return the first 10 results",
+    "Search for 'Sports Highlights' on Youtube and return the first 15 results",
+    "Search for 'Concerts' on Youtube and return the first 20 results",
+    "Search for 'Stand-up Comedy' on Youtube and return the first 10 results",
+    "Search for 'Reality Shows' on Youtube and return the first 20 results",
+    "Search for 'Dramas' on Youtube and return the first 30 results"
+]

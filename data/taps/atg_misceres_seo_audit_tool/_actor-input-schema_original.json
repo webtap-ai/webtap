@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Web URL, where we start SEO audit.",
+        "type": "String",
+        "required": "Required",
+        "param_name": "startUrl",
+        "description": "URL of webpage, where we run SEO audit",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "Use proxies to access the given website",
+        "value_options": null
+    },
+    {
+        "name": "Max pages",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestsPerCrawl",
+        "description": "Maximum number of pages to visit. Defaults to unlimited pages",
+        "value_options": null
+    },
+    {
+        "name": "Max depth",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxDepth",
+        "description": "Max depth to crawl. Defaults to unlimited depth",
+        "value_options": null
+    },
+    {
+        "name": "User Agent",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "userAgent",
+        "description": "Provide a manual User-Agent to test against mobile and desktop browsers",
+        "value_options": null
+    },
+    {
+        "name": "Viewport width",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "viewPortWidth",
+        "description": "Change the viewport width to trigger responsive breakpoints",
+        "value_options": null
+    },
+    {
+        "name": "Viewport height",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "viewPortHeight",
+        "description": "Change the viewport height to trigger responsive breakpoints",
+        "value_options": null
+    },
+    {
+        "name": "Page Navigation timeout",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "pageTimeout",
+        "description": "Change the page navigation timeout, in milliseconds",
+        "value_options": null
+    },
+    {
+        "name": "Max Request Retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "How many retries before considering a failure",
+        "value_options": null
+    },
+    {
+        "name": "Requests timeout",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "handlePageTimeoutSecs",
+        "description": "Number in seconds for how long each page should wait for processing",
+        "value_options": null
+    },
+    {
+        "name": "SEO params",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "seoParams",
+        "description": "Override the internal SEO params",
+        "value_options": null
+    }
+]

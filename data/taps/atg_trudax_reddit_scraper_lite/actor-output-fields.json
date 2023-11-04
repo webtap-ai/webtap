@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, url, price, results, description, parsedId, username, title, communityName, parsedCommunityName, body, html, numberOfComments, upVotes, isVideo, isAd, over18, createdAt, scrapedAt, parentId, category, numberOfreplies, dataType"
+}

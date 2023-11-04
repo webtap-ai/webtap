@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "SEO audit for 'https://apify.com' with maximum 10 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.facebook.com' with maximum 500 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.instagram.com' with maximum 1000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.linkedin.com' with maximum 5000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.youtube.com' with maximum 100000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.netflix.com' with maximum 200000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.spotify.com' with maximum 500000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.apple.com' with maximum 1000000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.adobe.com' with maximum 5000000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "SEO audit for 'https://www.ibm.com' with maximum 20000000 requests per crawl using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

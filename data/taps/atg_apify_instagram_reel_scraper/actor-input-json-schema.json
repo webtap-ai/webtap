@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "username": {
+            "type": "array",
+            "description": "Just insert a username or URL of the profile you want to get the reels from.",
+            "example": [
+                "zelenskiy_official"
+            ]
+        },
+        "resultsLimit": {
+            "type": "integer",
+            "description": "Maximum number of reels you want to scrape per profile. If you set it to 5, you'll get 5 reels for each profile you've included.",
+            "example": 10
+        }
+    },
+    "required": [
+        "username"
+    ]
+}

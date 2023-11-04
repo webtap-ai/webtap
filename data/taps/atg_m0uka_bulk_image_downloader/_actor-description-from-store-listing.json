@@ -1,0 +1,15 @@
+{
+    "example_json_input": {
+        "actor": "m0uka/bulk-image-downloader",
+        "input": {
+            "urls": [
+                "https://example.com"
+            ]
+        }
+    },
+    "example_output_json_response": {
+        "url": "https://apify.com",
+        "urlHash": "d0734ca443cdd7bb52b219011c750508",
+        "download": "https://api.apify.com/v2/key-value-stores/e4QDEvYo5hNPCZeJr/records/d0734ca443cdd7bb52b219011c750508.zip"
+    }
+}

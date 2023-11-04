@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "pages": {
+            "type": "array",
+            "description": "Add Facebook pages",
+            "example": [
+                "https://www.facebook.com/humansofnewyork/",
+                "humansofnewyork"
+            ]
+        },
+        "language": {
+            "type": "string",
+            "description": "Provide the language. Using this setting changes the dataset output.",
+            "example": "en-US",
+            "enum": [
+                "af-ZA",
+                "az-AZ",
+                "bs-BA",
+                "br-FR",
+                "ca-ES",
+                "cx-PH",
+                "co-FR",
+                "cs-CZ",
+                "da-DK",
+                "en-GB",
+                "en-US",
+                "eo-EO",
+                "et-EE",
+                "eu-ES",
+                "tl-PH",
+                "fo-FO",
+                "fr-CA",
+                "fr-FR",
+                "fy-NL",
+                "ff-NG",
+                "..."
+            ]
+        }
+    },
+    "required": [
+        "pages"
+    ]
+}

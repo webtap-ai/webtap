@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "url, title, isLoaded, isGoogleAnalyticsObject, isGoogleAnalyticsFunc, isCharacterEncode, isMetaDescription, metaDescription, isMetaDescriptionEnoughLong, isDoctype, isTitle, isTitleEnoughLong, isH1, h1, isH1OnlyOne, isH2, linksCount, isTooEnoughLinks, internalNoFollowLinksCount, notOptimizedImagesCount, wordsCount, isContentEnoughLong, isViewport, isAmp, isNotIframe, pageIsBlocked, robotsFileExists, faviconExists, brokenLinksCount, externalBrokenLinksCount, brokenImagesCount, microdata"
+}

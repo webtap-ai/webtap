@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "adid, adArchiveID, collationCount, collationID, currency, endDate, entityType, fevInfo, gatedType, hasUserReported, hiddenSafetyData, hideDataStatus, isAAAEligible, isActive, isProfilePage, pageID, pageIsDeleted, pageName, reachEstimate, reportCount, spend, startDate, stateMediaRunLabel, endDateFormatted, startDateFormatted, totalCount"
+}

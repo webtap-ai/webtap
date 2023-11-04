@@ -1,0 +1,232 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://apify.com using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://apify.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.google.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.google.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.amazon.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.amazon.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.reddit.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.reddit.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.wikipedia.org",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.wikipedia.org"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.instagram.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.instagram.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.twitter.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.twitter.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.pinterest.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.pinterest.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.apple.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.apple.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download all images from the website https://www.adobe.com",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Bulk Image Downloader INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Bulk Image Downloader is reliable and solely based on compatibility between DATA TASK and Bulk Image Downloader OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Bulk Image Downloader OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Bulk Image Downloader has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.adobe.com"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

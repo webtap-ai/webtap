@@ -1,0 +1,43 @@
+{
+    "name": "Website SEO Audit",
+    "entities": [
+        "webpage",
+        "broken links",
+        "missing images",
+        "page improvements",
+        "SEO performance metrics"
+    ],
+    "filters": [
+        "startUrl",
+        "maxRequestsPerCrawl",
+        "maxDepth",
+        "userAgent",
+        "viewPortWidth",
+        "viewPortHeight",
+        "pageTimeout",
+        "maxRequestRetries",
+        "handlePageTimeoutSecs",
+        "seoParams"
+    ],
+    "options": [
+        "Proxy",
+        "Max pages to visit",
+        "Max depth to crawl",
+        "User-Agent",
+        "Viewport width",
+        "Viewport height",
+        "Page navigation timeout",
+        "Max request retries",
+        "Page processing wait time",
+        "SEO params override"
+    ],
+    "special_instructions": [
+        "The 'maxRequestsPerCrawl' and 'maxDepth' options allow you to limit the scope of the audit. If not specified, the tool will crawl an unlimited number of pages and depths.",
+        "The 'userAgent', 'viewPortWidth', and 'viewPortHeight' options allow you to simulate different devices and screen sizes for the audit.",
+        "The 'pageTimeout' and 'maxRequestRetries' options allow you to control the tool's behavior in case of slow or unresponsive pages.",
+        "The 'handlePageTimeoutSecs' option allows you to specify how long the tool should wait for each page to process.",
+        "The 'seoParams' option allows you to override the internal SEO parameters used by the tool.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

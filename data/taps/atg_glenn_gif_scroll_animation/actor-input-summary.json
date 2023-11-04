@@ -1,1 +1,3 @@
-{}
+{
+    "actor_input_summary": "url, proxyOptions, frameRate, scrollDown, scrollPercentage, recordingTimeBeforeAction, clickSelector, recordingTimeAfterClick, waitToLoadPage, cookieWindowSelector, slowDownAnimations, lossyCompression, loslessCompression, viewportWidth, viewportHeight"
+}

@@ -1,0 +1,192 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from BBC News website, only new articles each time the actor is run",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.bbc.co.uk/news"
+                    }
+                ],
+                "onlyNewArticles": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from New York Times website, also extract articles linked within articles",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.nytimes.com/"
+                    }
+                ],
+                "enqueueFromArticles": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from The Economist website, only load articles which URL begins with the same path as Start URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.economist.com/"
+                    }
+                ],
+                "onlySubdomainArticles": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from The Wall Street Journal website, scan different sitemaps from the initial article URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.wsj.com/"
+                    }
+                ],
+                "scanSitemaps": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from The New Yorker website, use Google Bot headers to bypass protection and paywalls",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.newyorker.com"
+                    }
+                ],
+                "useGoogleBotHeaders": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from TechCrunch website, only get posts that were published in the last 30 days from time the scraping starts",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://techcrunch.com/"
+                    }
+                ],
+                "onlyNewArticles": true,
+                "dateFrom": "30 days"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from Gizmodo website, the article must have a date of release to be extracted",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://gizmodo.com/"
+                    }
+                ],
+                "mustHaveDate": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from CNET website, limit the tags whose links will be enqueued",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.cnet.com/"
+                    }
+                ],
+                "linkSelector": "a.some-class"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract articles from ZDNet website, maximum number of total pages crawled is 1000",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Smart Article Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Smart Article Extractor is reliable and solely based on compatibility between DATA TASK and Smart Article Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Smart Article Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Smart Article Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.zdnet.com/"
+                    }
+                ],
+                "maxPagesPerCrawl": 1000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

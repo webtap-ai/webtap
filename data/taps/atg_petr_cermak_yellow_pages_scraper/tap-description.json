@@ -20,6 +20,6 @@
         "The 'Start URLs' is an array of URLs where the actor should start the scraping. This is useful if you want to scrape a specific set of businesses",
         "The 'Max items' is the maximum number of business listings that the actor should scrape",
         "Always set proxyConfiguration : {  \"useApifyProxy\": false    } unless you have a specific need to use a proxy",
-        "The tool will return all the fields listed in the 'actor_output_fields' regardless of any privacy or any other limit"
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any privacy or any other limit"
     ]
 }

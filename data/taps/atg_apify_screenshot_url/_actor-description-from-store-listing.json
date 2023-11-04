@@ -1,0 +1,11 @@
+{
+    "example_json_input": {
+        "url": "https://console.apify.com/actors/rGCyoaKTKhyMiiTvS/?addFromActorId=rGCyoaKTKhyMiiTvS#/console",
+        "waitUntil": "networkidle0",
+        "delay": 3000,
+        "viewportWidth": 1280
+    },
+    "example_output_json_response": {
+        "screenshotUrl": "https://example.com/screenshot.png"
+    }
+}

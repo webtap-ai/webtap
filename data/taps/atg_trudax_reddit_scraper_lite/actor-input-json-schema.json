@@ -1,0 +1,110 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "If you already have URL(s) of page(s) you wish to scrape, you can set them here. If you want to use the search field below, remove all startUrls here.",
+            "example": [
+                {
+                    "url": "https://www.reddit.com/r/pasta/comments/vwi6jx/pasta_peperoni_and_ricotta_cheese_how_to_make/"
+                }
+            ]
+        },
+        "skipComments": {
+            "type": "boolean",
+            "description": "This will skip scrapping comments when going through posts"
+        },
+        "searches": {
+            "type": "array",
+            "description": "Here you can provide a search query which will be used to search Reddit`s topics."
+        },
+        "searchPosts": {
+            "type": "boolean",
+            "description": "Will search for posts with the provided search"
+        },
+        "searchComments": {
+            "type": "boolean",
+            "description": "Will search for comments with the provided search"
+        },
+        "searchCommunities": {
+            "type": "boolean",
+            "description": "Will search for communities with the provided search"
+        },
+        "searchUsers": {
+            "type": "boolean",
+            "description": "Will search for users with the provided search"
+        },
+        "sort": {
+            "type": "string",
+            "description": "Sort search by Relevance, Hot, Top, New or Comments",
+            "enum": [
+                "relevance",
+                "hot",
+                "top",
+                "new",
+                "comments"
+            ]
+        },
+        "time": {
+            "type": "string",
+            "description": "Filter posts by last hour, week, day, month or year",
+            "enum": [
+                "all",
+                "hour",
+                "day",
+                "week",
+                "month",
+                "year"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "The maximum number of items that will be saved in the dataset. If you are scrapping for Communities&Users, remember to consider that each category inside a community is saved as a separated item.",
+            "example": 10
+        },
+        "maxPostCount": {
+            "type": "integer",
+            "description": "The maximum number of posts that will be scraped for each Posts Page or Communities&Users URL",
+            "example": 10
+        },
+        "maxComments": {
+            "type": "integer",
+            "description": "The maximum number of comments that will be scraped for each Comments Page. If you don't want to scrape comments you can set this to zero.",
+            "example": 10
+        },
+        "maxCommunitiesCount": {
+            "type": "integer",
+            "description": "The maximum number of Communities's pages that will be scraped if your search or startUrl is a Communities type.",
+            "example": 2
+        },
+        "maxUserCount": {
+            "type": "integer",
+            "description": "The maximum number of Users's pages that will be scraped.",
+            "example": 2
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "Here you can write your custom javascript code to extract custom data from the page."
+        },
+        "scrollTimeout": {
+            "type": "integer",
+            "description": "Set the timeout in seconds in which the page will stop scrolling down to load new items",
+            "example": 40
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Either use Apify proxy, or provide your own proxy servers.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "debugMode": {
+            "type": "boolean",
+            "description": "Activate to see detailed logs"
+        }
+    },
+    "required": [
+        "proxy"
+    ]
+}

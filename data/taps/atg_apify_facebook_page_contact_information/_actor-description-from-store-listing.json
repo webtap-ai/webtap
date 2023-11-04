@@ -1,0 +1,10 @@
+{
+    "example_json_input": {
+        "url": "https://www.facebook.com/humansofnewyork"
+    },
+    "example_output_json_response": {
+        "address": "123 Main Street, New York, NY 10001",
+        "email": "contact@example.com",
+        "phone": "(123) 456-7890"
+    }
+}

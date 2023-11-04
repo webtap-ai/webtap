@@ -142,7 +142,7 @@ class TapGeneratorExample:
 
         # Check if the total number of test cases (existing and new) is less than the minimum limit
         if valid_test_cases < min_test_cases:
-            error_message = "Less than 5 valid test cases are available."
+            error_message = "Less than min_test_cases valid test cases are available."
             self.logger.warning(error_message)
             raise ValueError(error_message)
 
