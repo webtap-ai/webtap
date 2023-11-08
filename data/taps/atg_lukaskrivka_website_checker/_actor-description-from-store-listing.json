@@ -1,0 +1,23 @@
+{
+    "example_json_input": {
+        "actorName": "lukaskrivka/website-checker",
+        "actorUrl": "https://apify.com/lukaskrivka/website-checker",
+        "inputSchema": "https://apify.com/lukaskrivka/website-checker/input-schema"
+    },
+    "example_output_json_response": {
+        "timeouted": 0,
+        "failedToLoadOther": 9,
+        "accessDenied": 0,
+        "recaptcha": 0,
+        "distilCaptcha": 24,
+        "hCaptcha": 0,
+        "statusCodes": {
+            "200": 3,
+            "401": 2,
+            "403": 5,
+            "405": 24
+        },
+        "success": 3,
+        "total": 43
+    }
+}

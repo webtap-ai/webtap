@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "title, actor, description, categories, maintained_by, stats, related_actors, where_next, url, statusCode, captchas, wasSuccess"
+}

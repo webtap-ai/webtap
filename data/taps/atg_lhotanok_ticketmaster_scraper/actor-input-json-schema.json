@@ -1,0 +1,492 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "concerts": {
+            "type": "boolean",
+            "description": "Specifies whether concert events category should be scraped."
+        },
+        "sports": {
+            "type": "boolean",
+            "description": "Specifies whether sport events category should be scraped."
+        },
+        "arts-theater": {
+            "type": "boolean",
+            "description": "Specifies whether arts and theater events category should be scraped."
+        },
+        "family": {
+            "type": "boolean",
+            "description": "Specifies whether family events category should be scraped."
+        },
+        "sortBy": {
+            "type": "string",
+            "description": "Choose sort order for scraped events.",
+            "example": "date",
+            "enum": [
+                "date",
+                "relevance",
+                "distance",
+                "nameAsc",
+                "nameDesc"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Choose maximum number of items you want to scrape and save to the result dataset.",
+            "example": 100
+        },
+        "alternative": {
+            "type": "boolean",
+            "description": "Alternative concerts events"
+        },
+        "ballads-and-romantic": {
+            "type": "boolean",
+            "description": "Ballads/Romantic concerts events"
+        },
+        "blues": {
+            "type": "boolean",
+            "description": "Blues concerts events"
+        },
+        "chanson-francaise": {
+            "type": "boolean",
+            "description": "Chanson Francaise concerts events"
+        },
+        "childrens-music_concerts": {
+            "type": "boolean",
+            "description": "Children's Music concerts events"
+        },
+        "classical_concerts": {
+            "type": "boolean",
+            "description": "Classical concerts events"
+        },
+        "country": {
+            "type": "boolean",
+            "description": "Country concerts events"
+        },
+        "dance-and-electronic": {
+            "type": "boolean",
+            "description": "Dance/Electronic concerts events"
+        },
+        "folk": {
+            "type": "boolean",
+            "description": "Folk concerts events"
+        },
+        "hip-hop-and-rap": {
+            "type": "boolean",
+            "description": "Hip-Hop/Rap concerts events"
+        },
+        "holiday": {
+            "type": "boolean",
+            "description": "Holiday concerts events"
+        },
+        "jazz": {
+            "type": "boolean",
+            "description": "Jazz concerts events"
+        },
+        "latin": {
+            "type": "boolean",
+            "description": "Latin concerts events"
+        },
+        "medieval-and-renaissance": {
+            "type": "boolean",
+            "description": "Medieval/Renaissance concerts events"
+        },
+        "metal": {
+            "type": "boolean",
+            "description": "Metal concerts events"
+        },
+        "new-age": {
+            "type": "boolean",
+            "description": "New Age concerts events"
+        },
+        "other": {
+            "type": "boolean",
+            "description": "Other concerts events"
+        },
+        "pop": {
+            "type": "boolean",
+            "description": "Pop concerts events"
+        },
+        "randb": {
+            "type": "boolean",
+            "description": "R&B concerts events"
+        },
+        "reggae": {
+            "type": "boolean",
+            "description": "Reggae concerts events"
+        },
+        "religious": {
+            "type": "boolean",
+            "description": "Religious concerts events"
+        },
+        "rock": {
+            "type": "boolean",
+            "description": "Rock concerts events"
+        },
+        "world": {
+            "type": "boolean",
+            "description": "World concerts events"
+        },
+        "aquatics": {
+            "type": "boolean",
+            "description": "Aquatics sports events"
+        },
+        "athletic-races": {
+            "type": "boolean",
+            "description": "Athletic Races sports events"
+        },
+        "badminton": {
+            "type": "boolean",
+            "description": "Badminton sports events"
+        },
+        "bandy": {
+            "type": "boolean",
+            "description": "Bandy sports events"
+        },
+        "baseball": {
+            "type": "boolean",
+            "description": "Baseball sports events"
+        },
+        "basketball": {
+            "type": "boolean",
+            "description": "Basketball sports events"
+        },
+        "biathlon": {
+            "type": "boolean",
+            "description": "Biathlon sports events"
+        },
+        "body-building": {
+            "type": "boolean",
+            "description": "Body Building sports events"
+        },
+        "boxing": {
+            "type": "boolean",
+            "description": "Boxing sports events"
+        },
+        "cricket": {
+            "type": "boolean",
+            "description": "Cricket sports events"
+        },
+        "curling": {
+            "type": "boolean",
+            "description": "Curling sports events"
+        },
+        "cycling": {
+            "type": "boolean",
+            "description": "Cycling sports events"
+        },
+        "equestrian": {
+            "type": "boolean",
+            "description": "Equestrian sports events"
+        },
+        "esports": {
+            "type": "boolean",
+            "description": "eSports sports events"
+        },
+        "extreme": {
+            "type": "boolean",
+            "description": "Extreme sports events"
+        },
+        "field-hockey": {
+            "type": "boolean",
+            "description": "Field Hockey sports events"
+        },
+        "fitness": {
+            "type": "boolean",
+            "description": "Fitness sports events"
+        },
+        "floorball": {
+            "type": "boolean",
+            "description": "Floorball sports events"
+        },
+        "football": {
+            "type": "boolean",
+            "description": "Football sports events"
+        },
+        "golf": {
+            "type": "boolean",
+            "description": "Golf sports events"
+        },
+        "gymnastics": {
+            "type": "boolean",
+            "description": "Gymnastics sports events"
+        },
+        "handball": {
+            "type": "boolean",
+            "description": "Handball sports events"
+        },
+        "hockey": {
+            "type": "boolean",
+            "description": "Hockey sports events"
+        },
+        "ice-skating": {
+            "type": "boolean",
+            "description": "Ice Skating sports events"
+        },
+        "indoor-soccer": {
+            "type": "boolean",
+            "description": "Indoor Soccer sports events"
+        },
+        "lacrosse": {
+            "type": "boolean",
+            "description": "Lacrosse sports events"
+        },
+        "martial-arts": {
+            "type": "boolean",
+            "description": "Martial Arts sports events"
+        },
+        "miscellaneous_sports": {
+            "type": "boolean",
+            "description": "Miscellaneous sports events"
+        },
+        "motorsports-and-racing": {
+            "type": "boolean",
+            "description": "Motorsports/Racing sports events"
+        },
+        "netball": {
+            "type": "boolean",
+            "description": "Netball sports events"
+        },
+        "rodeo_sports": {
+            "type": "boolean",
+            "description": "Rodeo sports events"
+        },
+        "roller-derby": {
+            "type": "boolean",
+            "description": "Roller Derby sports events"
+        },
+        "roller-hockey": {
+            "type": "boolean",
+            "description": "Roller Hockey sports events"
+        },
+        "rugby": {
+            "type": "boolean",
+            "description": "Rugby sports events"
+        },
+        "ski-jumping": {
+            "type": "boolean",
+            "description": "Ski Jumping sports events"
+        },
+        "skiing": {
+            "type": "boolean",
+            "description": "Skiing sports events"
+        },
+        "soccer": {
+            "type": "boolean",
+            "description": "Soccer sports events"
+        },
+        "softball": {
+            "type": "boolean",
+            "description": "Softball sports events"
+        },
+        "squash": {
+            "type": "boolean",
+            "description": "Squash sports events"
+        },
+        "surfing": {
+            "type": "boolean",
+            "description": "Surfing sports events"
+        },
+        "swimming": {
+            "type": "boolean",
+            "description": "Swimming sports events"
+        },
+        "table-tennis": {
+            "type": "boolean",
+            "description": "Table Tennis sports events"
+        },
+        "tennis": {
+            "type": "boolean",
+            "description": "Tennis sports events"
+        },
+        "toros": {
+            "type": "boolean",
+            "description": "Toros sports events"
+        },
+        "track-and-field": {
+            "type": "boolean",
+            "description": "Track & Field sports events"
+        },
+        "volleyball": {
+            "type": "boolean",
+            "description": "Volleyball sports events"
+        },
+        "waterpolo": {
+            "type": "boolean",
+            "description": "Waterpolo sports events"
+        },
+        "wrestling": {
+            "type": "boolean",
+            "description": "Wrestling sports events"
+        },
+        "childrens-theatre": {
+            "type": "boolean",
+            "description": "Children's Theatre arts-theater events"
+        },
+        "circus-and-specialty-acts_arts-theater": {
+            "type": "boolean",
+            "description": "Circus & Specialty Acts arts-theater events"
+        },
+        "classical_arts-theater": {
+            "type": "boolean",
+            "description": "Classical arts-theater events"
+        },
+        "comedy": {
+            "type": "boolean",
+            "description": "Comedy arts-theater events"
+        },
+        "cultural": {
+            "type": "boolean",
+            "description": "Cultural arts-theater events"
+        },
+        "dance": {
+            "type": "boolean",
+            "description": "Dance arts-theater events"
+        },
+        "espectaculo": {
+            "type": "boolean",
+            "description": "Espectaculo arts-theater events"
+        },
+        "fashion": {
+            "type": "boolean",
+            "description": "Fashion arts-theater events"
+        },
+        "fine-art": {
+            "type": "boolean",
+            "description": "Fine Art arts-theater events"
+        },
+        "magic-and-illusion_arts-theater": {
+            "type": "boolean",
+            "description": "Magic & Illusion arts-theater events"
+        },
+        "miscellaneous_arts-theater": {
+            "type": "boolean",
+            "description": "Miscellaneous arts-theater events"
+        },
+        "miscellaneous-theatre": {
+            "type": "boolean",
+            "description": "Miscellaneous Theatre arts-theater events"
+        },
+        "multimedia": {
+            "type": "boolean",
+            "description": "Multimedia arts-theater events"
+        },
+        "music": {
+            "type": "boolean",
+            "description": "Music arts-theater events"
+        },
+        "opera": {
+            "type": "boolean",
+            "description": "Opera arts-theater events"
+        },
+        "performance-art": {
+            "type": "boolean",
+            "description": "Performance Art arts-theater events"
+        },
+        "puppetry_arts-theater": {
+            "type": "boolean",
+            "description": "Puppetry arts-theater events"
+        },
+        "spectacular": {
+            "type": "boolean",
+            "description": "Spectacular arts-theater events"
+        },
+        "theatre": {
+            "type": "boolean",
+            "description": "Theatre arts-theater events"
+        },
+        "variety": {
+            "type": "boolean",
+            "description": "Variety arts-theater events"
+        },
+        "puppetry_family": {
+            "type": "boolean",
+            "description": "Puppetry family events"
+        },
+        "ice-shows": {
+            "type": "boolean",
+            "description": "Ice Shows family events"
+        },
+        "magic-and-illusion_family": {
+            "type": "boolean",
+            "description": "Magic/Illusion family events"
+        },
+        "circus-and-specialty-acts_family": {
+            "type": "boolean",
+            "description": "Circus/Specialty Acts family events"
+        },
+        "childrens-theater": {
+            "type": "boolean",
+            "description": "Children's Theater family events"
+        },
+        "rodeo_family": {
+            "type": "boolean",
+            "description": "Rodeo family events"
+        },
+        "fairs-and-festivals": {
+            "type": "boolean",
+            "description": "Fairs/Festivals family events"
+        },
+        "latin-childrens": {
+            "type": "boolean",
+            "description": "Latin Children's family events"
+        },
+        "childrens-music_family": {
+            "type": "boolean",
+            "description": "Children's Music family events"
+        },
+        "miscellaneous-and-family": {
+            "type": "boolean",
+            "description": "Miscellaneous/Family family events"
+        },
+        "film-and-family": {
+            "type": "boolean",
+            "description": "Film/Family family events"
+        },
+        "countryCode": {
+            "type": "string",
+            "description": "Enter ISO Alpha-2 Country Code or leave blank and specify geoHash only.",
+            "example": "US"
+        },
+        "geoHash": {
+            "type": "string",
+            "description": "Add geoHash or leave blank if you don't want to specify the exact geographical point. You can look up the geoHash of your city or use various tools for conversion of longitude and latitude into geoHas",
+            "example": "dr5regw3pg6ft"
+        },
+        "distance": {
+            "type": "integer",
+            "description": "Distance radius from the given event location"
+        },
+        "thisWeekendDate": {
+            "type": "boolean",
+            "description": "Filter only those events that take place during this weekend."
+        },
+        "dateFrom": {
+            "type": "string",
+            "description": "Filter only those events that take place from this date. Valid format is: YYYY-MM-DD."
+        },
+        "dateTo": {
+            "type": "string",
+            "description": "Filter only those events that take place before this date. Valid format is: YYYY-MM-DD."
+        },
+        "includeTBA": {
+            "type": "string",
+            "description": "Represents events with date to be anounced.",
+            "enum": [
+                "yes",
+                "no",
+                "only"
+            ]
+        },
+        "includeTBD": {
+            "type": "string",
+            "description": "Represents events with date to be defined.",
+            "enum": [
+                "yes",
+                "no",
+                "only"
+            ]
+        }
+    },
+    "required": []
+}

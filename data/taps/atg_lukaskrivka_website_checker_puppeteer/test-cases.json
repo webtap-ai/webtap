@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Check the website 'https://www.amazon.com/b?ie=UTF8&node=11392907011' with link selector 'a[href]' and pseudo URL 'https://www.amazon.com[.*]/dp/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.reddit.com' with link selector 'a[href]' and pseudo URL 'https://www.reddit.com[.*]/comments/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.wikipedia.org' with link selector 'a[href]' and pseudo URL 'https://www.wikipedia.org[.*]/wiki/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.cnn.com' with link selector 'a[href]' and pseudo URL 'https://www.cnn.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.bbc.com' with link selector 'a[href]' and pseudo URL 'https://www.bbc.com[.*]/news/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.nytimes.com' with link selector 'a[href]' and pseudo URL 'https://www.nytimes.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.nbcnews.com' with link selector 'a[href]' and pseudo URL 'https://www.nbcnews.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.cbsnews.com' with link selector 'a[href]' and pseudo URL 'https://www.cbsnews.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.usatoday.com' with link selector 'a[href]' and pseudo URL 'https://www.usatoday.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check the website 'https://www.washingtonpost.com' with link selector 'a[href]' and pseudo URL 'https://www.washingtonpost.com[.*]/[.*]' without using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,107 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape first 50 comments from the video https://www.youtube.com/watch?v=ktvTqknDobU",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Comments Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Comments Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Comments Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Comments Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Comments Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+                    }
+                ],
+                "maxComments": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape first 2000 comments from the video https://www.youtube.com/watch?v=ktvTqknDobU",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Comments Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Comments Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Comments Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Comments Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Comments Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+                    }
+                ],
+                "maxComments": 2000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape first 20000 comments from the video https://www.youtube.com/watch?v=ktvTqknDobU",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Comments Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Comments Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Comments Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Comments Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Comments Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+                    }
+                ],
+                "maxComments": 20000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape first 50000 comments from the video https://www.youtube.com/watch?v=ktvTqknDobU",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Comments Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Comments Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Comments Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Comments Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Comments Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+                    }
+                ],
+                "maxComments": 50000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape first 500000 comments from the video https://www.youtube.com/watch?v=ktvTqknDobU",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Comments Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Comments Scraper is reliable and solely based on compatibility between DATA TASK and Youtube Comments Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Comments Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Comments Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.youtube.com/watch?v=ktvTqknDobU"
+                    }
+                ],
+                "maxComments": 500000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

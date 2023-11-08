@@ -1,0 +1,104 @@
+{
+    "example_json_input": {
+        "maxReviewsPerHotel": 1000,
+        "proxyConfiguration": {
+            "useApifyProxy": true
+        },
+        "startUrls": [
+            {
+                "url": "https://www.booking.com/hotel/us/chicago-t.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AuLFmqIGwAIB0gIkN2YzZmI0YzktMTY1ZS00OThkLTgzY2ItOTMxODA5OTI5NzNj2AIF4AIB&all_sr_blocks=5924324_246077187_2_0_0;checkin=2023-09-01;checkout=2023-09-15;dest_id=20033173;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=6;highlighted_blocks=5924324_246077187_2_0_0;hpos=6;matching_block_id=5924324_246077187_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=5924324_246077187_2_0_0__341393;srepoch=1682350871;srpvid=88466e4a189c0182;type=total;ucfs=1&#hotelTmpl"
+            }
+        ]
+    },
+    "example_output_json_response": [
+        {
+            "id": "65d22b83283cb5e4",
+            "hotelId": "us/chicago-t",
+            "reviewPage": 1,
+            "userName": "Simon",
+            "userLocation": "United Kingdom",
+            "roomInfo": "King Room with One King Bed - Non-Smoking",
+            "stayDate": "January 2022",
+            "stayLength": "2 nights",
+            "reviewDate": "January 12, 2022",
+            "reviewTitle": "Exceptional",
+            "rating": "10",
+            "reviewTextParts": {
+                "Liked": "Cheap and cheerful, the rooms are old school but warm and clean, staff friendly"
+            },
+            "customData": {}
+        },
+        {
+            "id": "3793d41df4ef9587",
+            "hotelId": "us/chicago-t",
+            "reviewPage": 1,
+            "userName": "Nilesh",
+            "userLocation": "United States of America",
+            "roomInfo": "King Room with One King Bed - Non-Smoking",
+            "stayDate": "April 2023",
+            "stayLength": "2 nights",
+            "reviewDate": "April 24, 2023",
+            "reviewTitle": "Great location hotel with amazing team in dated rooms.",
+            "rating": "7.0",
+            "reviewTextParts": {
+                "Liked": "Staff was incredibly helpful and kind.  They allowed me to check in early which helped me recoup from an early morning arrival.  Location was amazing! Fast wifi.  Nice lobby lounge.",
+                "Disliked": "The bathroom was tiny.  It was functional and the water pressure in the shower/tub was great, but it was too small to maneuver in."
+            },
+            "customData": {}
+        },
+        {
+            "id": "6ad30232d7be0a7b",
+            "hotelId": "us/chicago-t",
+            "reviewPage": 1,
+            "userName": "Tshepiso",
+            "userLocation": "South Africa",
+            "roomInfo": "Deluxe Double Room with Two Double Beds - Non-Smoking",
+            "stayDate": "March 2023",
+            "stayLength": "2 nights",
+            "reviewDate": "April 22, 2023",
+            "reviewTitle": "Fair",
+            "rating": "5.0",
+            "reviewTextParts": {
+                "Liked": "location",
+                "Disliked": "cleanliness"
+            },
+            "customData": {}
+        },
+        {
+            "id": "a96ed9c83e86814f",
+            "hotelId": "us/chicago-t",
+            "reviewPage": 1,
+            "userName": "Tetsuya",
+            "userLocation": "Japan",
+            "roomInfo": "Deluxe Double Room with Two Double Beds - Non-Smoking",
+            "stayDate": "April 2023",
+            "stayLength": "1 night",
+            "reviewDate": "April 21, 2023",
+            "reviewTitle": "Good ROI",
+            "rating": "7.0",
+            "reviewTextParts": {
+                "Liked": "large room, good location near subway station and restaurants with reasonable price",
+                "Disliked": "old facilities and building"
+            },
+            "customData": {}
+        },
+        {
+            "id": "f438b7c2a791b73a",
+            "hotelId": "us/chicago-t",
+            "reviewPage": 1,
+            "userName": "Joke",
+            "userLocation": "Spain",
+            "roomInfo": "Deluxe Double Room with Two Double Beds - Non-Smoking",
+            "stayDate": "April 2023",
+            "stayLength": "2 nights",
+            "reviewDate": "April 18, 2023",
+            "reviewTitle": "great location, but outdated rooms",
+            "rating": "5.0",
+            "reviewTextParts": {
+                "Liked": "Friendly staff and great location.",
+                "Disliked": "I didn't like the look of the hotel. Our room was outdated, stains on the (old) carpet, ugly wallpaper,...the heating made a lot of noise at night"
+            },
+            "customData": {}
+        }
+    ]
+}

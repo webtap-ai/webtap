@@ -1,0 +1,16 @@
+{
+    "pseudoUrls": [
+        {
+            "purl": "https://www.amazon.com[.*]/dp/[.*]"
+        }
+    ],
+    "urlsToCheck": [
+        {
+            "url": "https://www.amazon.com/b?ie=UTF8&node=11392907011"
+        }
+    ],
+    "linkSelector": "a[href]",
+    "proxyConfiguration": {
+        "useApifyProxy": false
+    }
+}

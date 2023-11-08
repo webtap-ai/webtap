@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Pinterest users or URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "Names or URLs to start with.",
+        "value_options": null
+    },
+    {
+        "name": "Max pins per profile",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxPinsCnt",
+        "description": "Max pins per profile",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfig",
+        "description": "You need to use Apify proxy or custom proxies.",
+        "value_options": null
+    }
+]

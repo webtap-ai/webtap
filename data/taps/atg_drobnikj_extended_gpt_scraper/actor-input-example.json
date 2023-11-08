@@ -1,0 +1,32 @@
+{
+    "globs": [],
+    "model": "gpt-3.5-turbo",
+    "schema": {
+        "type": "object",
+        "required": [
+            "title",
+            "description"
+        ],
+        "properties": {
+            "title": {
+                "type": "string",
+                "description": "Page title"
+            },
+            "description": {
+                "type": "string",
+                "description": "Page description"
+            }
+        }
+    },
+    "startUrls": [
+        {
+            "url": "https://news.ycombinator.com/"
+        }
+    ],
+    "instructions": "Gets the post with the most points from the page and returns it as JSON in this format: \npostTitle\npostUrl\npointsCount",
+    "linkSelector": "a[href]",
+    "targetSelector": "",
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

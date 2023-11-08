@@ -1,0 +1,224 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok video: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@apifytech/video/7200360993149553925"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok videos: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@olympics/video/7208589533632269574",
+                    "https://www.tiktok.com/@olympics/video/7210447318028455173",
+                    "https://www.tiktok.com/@olympics/video/7200420986661965061"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok video and download the video file: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@apifytech/video/7200360993149553925"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok video and download the video cover image: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@apifytech/video/7200360993149553925"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok video and download the slideshow images: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@apifytech/video/7200360993149553925"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": true,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok video and store the videos in a specific Key Value Store: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@apifytech/video/7200360993149553925"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok videos and download the video files: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@olympics/video/7208589533632269574",
+                    "https://www.tiktok.com/@olympics/video/7210447318028455173",
+                    "https://www.tiktok.com/@olympics/video/7200420986661965061"
+                ],
+                "shouldDownloadVideos": true,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok videos and download the video cover images: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@olympics/video/7208589533632269574",
+                    "https://www.tiktok.com/@olympics/video/7210447318028455173",
+                    "https://www.tiktok.com/@olympics/video/7200420986661965061"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok videos and download the slideshow images: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@olympics/video/7208589533632269574",
+                    "https://www.tiktok.com/@olympics/video/7210447318028455173",
+                    "https://www.tiktok.com/@olympics/video/7200420986661965061"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": true,
+                "videoKvStoreIdOrName": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape data from the following TikTok videos and store the videos in a specific Key Value Store: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Video Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Video Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Video Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Video Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Video Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "postURLs": [
+                    "https://www.tiktok.com/@olympics/video/7208589533632269574",
+                    "https://www.tiktok.com/@olympics/video/7210447318028455173",
+                    "https://www.tiktok.com/@olympics/video/7200420986661965061"
+                ],
+                "shouldDownloadVideos": false,
+                "shouldDownloadCovers": false,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": "specific_key_value_store"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

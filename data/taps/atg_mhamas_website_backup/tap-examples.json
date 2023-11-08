@@ -1,0 +1,246 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com with a maximum of 500 pages to be loaded",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "a",
+                "maxRequestsPerCrawl": 500,
+                "maxCrawlingDepth": 0,
+                "maxConcurrency": 1,
+                "customKeyValueStore": "",
+                "customDataset": "",
+                "timeoutForSingleUrlInSeconds": 60,
+                "navigationTimeoutInSeconds": 30,
+                "searchParamsToIgnore": [],
+                "sameOrigin": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com with a maximum crawling depth of 3 links away from the start URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "a",
+                "maxRequestsPerCrawl": 0,
+                "maxCrawlingDepth": 3,
+                "maxConcurrency": 1,
+                "customKeyValueStore": "",
+                "customDataset": "",
+                "timeoutForSingleUrlInSeconds": 60,
+                "navigationTimeoutInSeconds": 30,
+                "searchParamsToIgnore": [],
+                "sameOrigin": false,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com with a maximum concurrency of 10 pages to be processed in parallel",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "a",
+                "maxRequestsPerCrawl": 10,
+                "maxCrawlingDepth": 0,
+                "maxConcurrency": 10,
+                "customKeyValueStore": "",
+                "customDataset": "",
+                "timeoutForSingleUrlInSeconds": 60,
+                "navigationTimeoutInSeconds": 30,
+                "searchParamsToIgnore": [],
+                "sameOrigin": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com using a custom named key value store 'myStore' for saving results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "",
+                "maxRequestsPerCrawl": 1,
+                "maxCrawlingDepth": 0,
+                "maxConcurrency": 1,
+                "customKeyValueStore": "myStore",
+                "customDataset": "",
+                "timeoutForSingleUrlInSeconds": 60,
+                "navigationTimeoutInSeconds": 30,
+                "searchParamsToIgnore": [],
+                "sameOrigin": false,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com with a timeout of 60 seconds for doing a backup of a single URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "timeoutForSingleUrlInSeconds": 60
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com only backing up URLs with the same origin as the start URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "sameOrigin": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com with a timeout of 180 seconds for doing a backup of a single URL and a navigation timeout of 240 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "",
+                "maxRequestsPerCrawl": 1,
+                "maxCrawlingDepth": 0,
+                "maxConcurrency": 1,
+                "customKeyValueStore": "",
+                "customDataset": "",
+                "timeoutForSingleUrlInSeconds": 180,
+                "navigationTimeoutInSeconds": 240,
+                "searchParamsToIgnore": [],
+                "sameOrigin": false,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Backup of the website https://www.example.com ignoring 'source', 'sourceid', and 'utm_source' URL search parameters when crawling and only backing up URLs with the same origin as the start URL",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Backup INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Backup is reliable and solely based on compatibility between DATA TASK and Website Backup OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Backup OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Backup has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startURLs": [
+                    {
+                        "url": "https://www.example.com"
+                    }
+                ],
+                "linkSelector": "a",
+                "maxRequestsPerCrawl": 1000,
+                "maxCrawlingDepth": 0,
+                "maxConcurrency": 10,
+                "customKeyValueStore": "website_backup_results",
+                "customDataset": "website_backup_metadata",
+                "timeoutForSingleUrlInSeconds": 30,
+                "navigationTimeoutInSeconds": 60,
+                "searchParamsToIgnore": [
+                    "source",
+                    "sourceid",
+                    "utm_source"
+                ],
+                "sameOrigin": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "actor_name, actor_author, actor_description, api_endpoint, source_code_repository, input_parameters, future_plans"
+}

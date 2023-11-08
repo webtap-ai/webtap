@@ -1,0 +1,15 @@
+{
+    "example_json_input": {
+        "imageUrl1": "https://raw.githubusercontent.com/mapbox/pixelmatch/master/test/fixtures/4a.png",
+        "imageUrl2": "https://raw.githubusercontent.com/mapbox/pixelmatch/master/test/fixtures/4b.png",
+        "outputAsJpeg": false,
+        "pixelmatchOptions": {
+            "threshold": 0.1
+        }
+    },
+    "example_output_json_response": {
+        "imageUrl1": "https://raw.githubusercontent.com/mapbox/pixelmatch/master/test/fixtures/4a.png",
+        "imageUrl2": "https://raw.githubusercontent.com/mapbox/pixelmatch/master/test/fixtures/4b.png",
+        "outputImageUrl": "https://images.apifyusercontent.com/SxLbSP3GRvouy4MFtfI1PiqkqYvKgXxjmBqvMROmBCA/aHR0cHM6Ly9hcGlmeS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9iOGI4MWM1ZC1iYzMwLTQ0YjktOGRlZi1jYmE1MzUxMDZkNjZfT1VUUFVULnBuZw.png"
+    }
+}

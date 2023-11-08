@@ -1,0 +1,43 @@
+{
+    "example_json_input": {
+        "actor_name": "API / JSON scraper",
+        "description": "Scrape any API / JSON URLs directly to the dataset, and return them in CSV, XML, HTML, or Excel formats. Transform and filter the output. Enables you to follow pagination recursively from the payload without the need to visit the HTML page.",
+        "features": [
+            "Optimized, fast and lightweight",
+            "Small memory requirement",
+            "Works only with JSON payloads",
+            "Easy recursion",
+            "Filter and map complex JSON structures",
+            "Comes enabled with helper libraries: lodash, moment",
+            "Full access to your account resources through Apify variable",
+            "The run fails if all requests failed"
+        ],
+        "related_actors": [
+            "Fast Instagram Hashtag Scraper"
+        ],
+        "handling_errors": "You can handle the errors before the `handlePageFunction` fails using the `handleError` input. This allows you to enqueue extra requests before failing, allowing you to recover or try a different URL.",
+        "filter_map_function": "You can use the filterMap function to filter, map, and enqueue requests at the same time. The userData from the current request will pass to the next request.",
+        "examples": [
+            "Flatten an object",
+            "Submit a JSON API with POST",
+            "Follow pagination from payload",
+            "Omit output if condition is met",
+            "Unwind array of results, each item from the array in a separate dataset item"
+        ]
+    },
+    "example_output_json_response": {
+        "actor_name": "API / JSON scraper",
+        "price": "$25.00/month",
+        "trial_period": "14 days",
+        "categories": [
+            "Developer tools",
+            "Automation"
+        ],
+        "maintained_by": "Community",
+        "actor_stats": {
+            "users": 214,
+            "runs": 317800,
+            "modified_date": "6 months ago"
+        }
+    }
+}

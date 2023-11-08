@@ -1,0 +1,8 @@
+{
+    "sort": "newest",
+    "category": "All",
+    "maxResults": 50,
+    "proxyConfig": {
+        "useApifyProxy": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Gas Prices",
+    "entities": [
+        "gas station",
+        "gas price",
+        "gas company",
+        "address",
+        "open/closed status",
+        "website",
+        "reviews",
+        "postal code"
+    ],
+    "filters": [
+        "location",
+        "maxCrawledPlacesPerSearch"
+    ],
+    "options": [
+        "Download format: HTML, JSON, Excel"
+    ],
+    "special_instructions": [
+        "Location is a required field. If it is not provided, return can_fulfill false and explain accordingly",
+        "The maximum number of places you want to find is limited by what Google Maps shows, i.e. anything between 1 and 400 places",
+        "Gas prices are only available for locations within the USA. Other countries are not supported with this feature",
+        "The data is scraped from Google Maps",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

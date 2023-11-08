@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startURLs",
+        "description": "List of URL entry points. Each entry is an object of type {'url': 'http://www.example.com'}",
+        "value_options": null
+    },
+    {
+        "name": "Link selector",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "linkSelector",
+        "description": "CSS selector matching elements with 'href' attributes that should be enqueued. To enqueue urls from",
+        "value_options": null
+    },
+    {
+        "name": "Max pages per run",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestsPerCrawl",
+        "description": "The maximum number of pages that the scraper will load. The scraper will stop when this limit is reached. It's always a good idea to set this limit in order to prevent excess platform usage for misconfigured scrapers. Note that the actual number of pages loaded might be slightly higher than this value.\n\nIf set to 0, there is no limit.",
+        "value_options": null
+    },
+    {
+        "name": "Max crawling depth",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxCrawlingDepth",
+        "description": "Defines how many links away from the StartURLs will the scraper descend. 0 means unlimited.",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "Defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. Use this option to set a hard limit.",
+        "value_options": null
+    },
+    {
+        "name": "Custom key value store",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "customKeyValueStore",
+        "description": "Use custom named key value store for saving results. If the key value store with this name doesn't yet exist, it's created. The snapshots of the pages will be saved in the key value store.",
+        "value_options": null
+    },
+    {
+        "name": "Custom dataset",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "customDataset",
+        "description": "Use custom named dataset for saving metadata. If the dataset with this name doesn't yet exist, it's created. The metadata about the snapshots of the pages will be saves in the dataset.",
+        "value_options": null
+    },
+    {
+        "name": "Timeout (in seconds) for backuping a single URL.",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "timeoutForSingleUrlInSeconds",
+        "description": "Timeout in seconds for doing a backup of a single URL. Try to increase this timeout in case you see an error Error: handlePageFunction timed out after X seconds. .",
+        "value_options": null
+    },
+    {
+        "name": "Timeout (in seconds) in which page navigation needs to finish",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "navigationTimeoutInSeconds",
+        "description": "Timeout in seconds in which the navigation needs to finish. Try to increase this if you see an error Navigation timeout of XXX ms exceeded",
+        "value_options": null
+    },
+    {
+        "name": "URL search parameters to ignore",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "searchParamsToIgnore",
+        "description": "Names of URL search parameters (such as 'source', 'sourceid', etc.) that should be ignored in the URLs when crawling.",
+        "value_options": null
+    },
+    {
+        "name": "Only consider pages under the same domain as one of the provided URLs.",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "sameOrigin",
+        "description": "Only backup URLs with the same origin as any of the start URL origins. E.g. when turned on for a single start URL https://blog.apify.com, only links with prefix https://blog.apify.com will be backed up recursively.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Choose to use no proxy, Apify Proxy, or provide custom proxy URLs.",
+        "value_options": null
+    }
+]

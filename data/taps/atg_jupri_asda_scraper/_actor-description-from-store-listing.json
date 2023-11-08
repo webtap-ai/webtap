@@ -1,0 +1,138 @@
+{
+    "example_json_input": {
+        "url": "https://www.apify.com/actors/5wSOtEl8NoAuUlqvt/?addFromActorId=5wSOtEl8NoAuUlqvt#/console"
+    },
+    "example_output_json_response": {
+        "title": "ASDA Grocery Scraper",
+        "author": "jupri/asda-scraper",
+        "description": "Scrape data from ASDA.com Grocery Store",
+        "input": {
+            "url": {
+                "type": "string",
+                "description": "The URL of the ASDA.com Grocery Store to scrape"
+            }
+        },
+        "output": {
+            "inventory": {
+                "availability_info": {
+                    "availability": "A",
+                    "max_quantity": 3
+                },
+                "cin": "7388095",
+                "sku_id": "1000383107346",
+                "store_number": "4565",
+                "upc": "5057172515899"
+            },
+            "item": {
+                "all_replacement_skus": [
+                    "1000383107085",
+                    "1000383107232"
+                ],
+                "brand": "JUST ESSENTIALS by ASDA",
+                "bundle_item_count": 0,
+                "cin": "7388095",
+                "extended_item_info": {
+                    "dept_nbr": [
+                        "64"
+                    ],
+                    "vnpk_cube_volume": 2.41,
+                    "vnpk_qty": 6,
+                    "vnpk_weight": 2.32,
+                    "weight": "180g"
+                },
+                "freshness_info": {
+                    "max_ideal_day_value": 0,
+                    "min_ideal_day_value": 0
+                },
+                "images": {
+                    "scene7_host": "https://ui.assets-asda.com:443/dm/",
+                    "scene7_id": "5057172515899"
+                },
+                "is_colleague_discount": true,
+                "is_substitutable": true,
+                "item_name": "Mint Sauce",
+                "name": "JUST ESSENTIALS by ASDA Mint Sauce",
+                "picker_desc": "SP MINT SAUCE",
+                "rating_review": {
+                    "avg_star_rating": 1.75,
+                    "total_review_count": 8
+                },
+                "sales_unit": "Each",
+                "sku_id": "1000383107346",
+                "taxonomy_info": {
+                    "aisle_id": "910000975613",
+                    "aisle_name": "Sauces & Condiments",
+                    "aisle_rank": 10,
+                    "category_id": "1215337189632",
+                    "category_name": "Food Cupboard",
+                    "category_rank": 20,
+                    "dept_id": "1215354523758",
+                    "dept_name": "Condiments & Cooking Ingredients",
+                    "dept_rank": 20,
+                    "primary_shelf": "1215380375996",
+                    "shelf_id": "1215380375996",
+                    "shelf_name": "Mint, Apple & Horseradish",
+                    "shelf_rank": 120
+                },
+                "untraited_stores": [
+                    "6991",
+                    "6920",
+                    "6964",
+                    "7998",
+                    "4863",
+                    "6864",
+                    "7997",
+                    "9911",
+                    "6866",
+                    "7999",
+                    "4868",
+                    "7990",
+                    "7992",
+                    "7991",
+                    "7994",
+                    "4441",
+                    "7993",
+                    "9998",
+                    "6863",
+                    "7996",
+                    "6983",
+                    "7995",
+                    "8445",
+                    "6938",
+                    "4213",
+                    "6974",
+                    "6911",
+                    "7989",
+                    "6954",
+                    "7988"
+                ],
+                "upc_numbers": [
+                    "5057172515899"
+                ]
+            },
+            "item_id": "1000383107346",
+            "price": {
+                "cin": "7388095",
+                "price_info": {
+                    "avg_weight": 0,
+                    "price": "\u00a30.39",
+                    "price_per_uom": "21.7p/100g",
+                    "sale_price": "\u00a30.0",
+                    "sales_unit": "Each"
+                },
+                "sku_id": "1000383107346",
+                "store_number": "4565",
+                "upc": "5057172515899"
+            },
+            "promotion_info": [
+                {
+                    "base_promotion": {
+                        "item_promo_type": "No promo"
+                    },
+                    "cin": "7388095",
+                    "sku_id": "1000383107346"
+                }
+            ]
+        }
+    }
+}

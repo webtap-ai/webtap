@@ -1,0 +1,110 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'book', maximum 5 items, starting from the URLs 'https://www.gutenberg.org/browse/recent/last7' and 'https://www.gutenberg.org/browse/titles/h', using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free eBook Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free eBook Scraper is reliable and solely based on compatibility between DATA TASK and Free eBook Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free eBook Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free eBook Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "book",
+                "language": "none",
+                "startUrls": [
+                    {
+                        "url": "https://www.gutenberg.org/browse/recent/last7"
+                    },
+                    {
+                        "url": "https://www.gutenberg.org/browse/titles/h"
+                    }
+                ],
+                "maxItems": 5,
+                "extendOutputFunction": null,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'history', maximum 15 items, in Spanish language, starting from the URL 'https://www.gutenberg.org/browse/subjects/h', using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free eBook Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free eBook Scraper is reliable and solely based on compatibility between DATA TASK and Free eBook Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free eBook Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free eBook Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "history",
+                "language": "es",
+                "startUrls": [
+                    {
+                        "url": "https://www.gutenberg.org/browse/subjects/h"
+                    }
+                ],
+                "maxItems": 15,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'classic', maximum 20 items, in Polish language, starting from the URL 'https://www.gutenberg.org/browse/subjects/cl', using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free eBook Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free eBook Scraper is reliable and solely based on compatibility between DATA TASK and Free eBook Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free eBook Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free eBook Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "classic",
+                "language": "pl",
+                "startUrls": [
+                    {
+                        "url": "https://www.gutenberg.org/browse/subjects/cl"
+                    }
+                ],
+                "maxItems": 20,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'literature', maximum 10 items, in Norwegian language, starting from the URL 'https://www.gutenberg.org/browse/subjects/li', using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Free eBook Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Free eBook Scraper is reliable and solely based on compatibility between DATA TASK and Free eBook Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Free eBook Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Free eBook Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "literature",
+                "language": "no",
+                "startUrls": [
+                    {
+                        "url": "https://www.gutenberg.org/browse/subjects/li"
+                    }
+                ],
+                "maxItems": 10,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

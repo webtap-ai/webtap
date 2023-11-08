@@ -1,0 +1,197 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract keywords 'Bitcoin', 'Ethereum', 'Cryptocurrency' from the website 'https://coinmarketcap.com' and follow all links on the page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Keywords Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Keywords Extractor is reliable and solely based on compatibility between DATA TASK and Keywords Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Keywords Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Keywords Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://coinmarketcap.com"
+                    }
+                ],
+                "useBrowser": true,
+                "keywords": [
+                    "Bitcoin",
+                    "Ethereum",
+                    "Cryptocurrency"
+                ],
+                "caseSensitive": false,
+                "scanScripts": true,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [],
+                "maxDepth": 0,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "maxPagesPerCrawl": 100,
+                "maxConcurrency": 10,
+                "retireInstanceAfterRequestCount": 100,
+                "useChrome": false,
+                "waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract keywords 'Netflix', 'Streaming', 'Movies' from the website 'https://www.netflix.com' and follow all links on the page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Keywords Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Keywords Extractor is reliable and solely based on compatibility between DATA TASK and Keywords Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Keywords Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Keywords Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.netflix.com"
+                    }
+                ],
+                "useBrowser": true,
+                "keywords": [
+                    "Netflix",
+                    "Streaming",
+                    "Movies"
+                ],
+                "caseSensitive": false,
+                "scanScripts": true,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [],
+                "maxDepth": 0,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "maxPagesPerCrawl": 10,
+                "maxConcurrency": 1,
+                "retireInstanceAfterRequestCount": 100,
+                "useChrome": false,
+                "waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract keywords 'LinkedIn', 'Jobs', 'Networking' from the website 'https://www.linkedin.com' and follow all links on the page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Keywords Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Keywords Extractor is reliable and solely based on compatibility between DATA TASK and Keywords Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Keywords Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Keywords Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.linkedin.com"
+                    }
+                ],
+                "useBrowser": true,
+                "keywords": [
+                    "LinkedIn",
+                    "Jobs",
+                    "Networking"
+                ],
+                "caseSensitive": false,
+                "scanScripts": true,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [],
+                "maxDepth": 0,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "maxPagesPerCrawl": 10,
+                "maxConcurrency": 1,
+                "retireInstanceAfterRequestCount": 100,
+                "useChrome": false,
+                "waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract keywords 'Wikipedia', 'Information', 'Encyclopedia' from the website 'https://www.wikipedia.org' and follow all links on the page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Keywords Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Keywords Extractor is reliable and solely based on compatibility between DATA TASK and Keywords Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Keywords Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Keywords Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.wikipedia.org"
+                    }
+                ],
+                "useBrowser": true,
+                "keywords": [
+                    "Wikipedia",
+                    "Information",
+                    "Encyclopedia"
+                ],
+                "caseSensitive": false,
+                "scanScripts": true,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [],
+                "maxDepth": 0,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "maxPagesPerCrawl": 10,
+                "maxConcurrency": 1,
+                "retireInstanceAfterRequestCount": 100,
+                "useChrome": false,
+                "waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract keywords 'Reddit', 'Forums', 'Discussion' from the website 'https://www.reddit.com' and follow all links on the page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Keywords Extractor INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Keywords Extractor is reliable and solely based on compatibility between DATA TASK and Keywords Extractor OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Keywords Extractor OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Keywords Extractor has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.reddit.com"
+                    }
+                ],
+                "useBrowser": true,
+                "keywords": [
+                    "Reddit",
+                    "Forums",
+                    "Discussion"
+                ],
+                "caseSensitive": false,
+                "scanScripts": true,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [],
+                "maxDepth": 0,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "maxPagesPerCrawl": 10,
+                "maxConcurrency": 1,
+                "retireInstanceAfterRequestCount": 100,
+                "useChrome": false,
+                "waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

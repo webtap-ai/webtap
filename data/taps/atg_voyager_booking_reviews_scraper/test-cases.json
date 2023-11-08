@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Scrape all reviews from the following page https://www.booking.com/hotel/us/chicago-t.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AuLFmqIGwAIB0gIkN2YzZmI0YzktMTY1ZS00OThkLTgzY2ItOTMxODA5OTI5NzNj2AIF4AIB",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape all reviews from the St. Regis Hotel in San Francisco, sorted by recent ascending",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape all reviews from the Park Hyatt Hotel in Tokyo, sorted by relevance",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape all reviews from the Conrad Hotel in Hong Kong, sorted by recent ascending",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

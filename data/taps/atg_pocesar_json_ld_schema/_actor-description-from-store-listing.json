@@ -1,0 +1,15 @@
+{
+    "example_json_input": {
+        "url": "https://www.apify.com/actors/GfFgsw3793ST0yKc9/?addFromActorId=GfFgsw3793ST0yKc9#/console"
+    },
+    "example_output_json_response": {
+        "title": "LD+JSON Schema scraper",
+        "author": "Paulo Cesar",
+        "source_code": "/pocesar/json-ld-schema/source-code",
+        "categories": [
+            "Automation",
+            "SEO tools",
+            "Other"
+        ]
+    }
+}

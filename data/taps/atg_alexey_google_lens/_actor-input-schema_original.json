@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Image urls",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "Provide direct urls of images",
+        "value_options": null
+    },
+    {
+        "name": "Save web sites with visually matched images",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "addMatchedImageSources",
+        "description": "For visual matches no direct image links available, only generated thumbnail, site title and site URL",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "Either use an Apify proxy, or provide your own proxy servers.",
+        "value_options": null
+    },
+    {
+        "name": "Max request retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Try to find retries and concurrency to get best output for your image sources",
+        "value_options": null
+    },
+    {
+        "name": "Debug Log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "Enable a more verbose logging to be able to understand what's happening during the scraping.",
+        "value_options": null
+    }
+]

@@ -1,0 +1,38 @@
+{
+    "name": "Quora Questions and Answers",
+    "entities": [
+        "questions",
+        "answers"
+    ],
+    "filters": [
+        "queries",
+        "languageCode",
+        "maxAnswersPerQuestion",
+        "answersRanking",
+        "useAnswerDataset",
+        "proxy",
+        "maxPoolSize",
+        "maxAgeSecs",
+        "maxUsageCount"
+    ],
+    "options": [
+        "maxAnswersPerQuestion",
+        "answersRanking",
+        "useAnswerDataset",
+        "proxy",
+        "maxPoolSize",
+        "maxAgeSecs",
+        "maxUsageCount"
+    ],
+    "special_instructions": [
+        "One of queries or languageCode must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Depending on the popularity of your query, you may encounter questions with many thousands of answers. Scraping these will require a ton of requests, especially if there are many such questions. Set maxAnswersPerQuestion to 0 to scrape all answers.",
+        "You can sort answers by selected parameter. On original Quora website you can also include related answers with this option, but currently this isn't supported.",
+        "You can choose to store all answers in a separate dataset for easier extraction by setting useAnswerDataset to true.",
+        "The maximum number of sessions in the pool can be set using maxPoolSize.",
+        "The maximum age of sessions in the pool can be set using maxAgeSecs.",
+        "The maximum number of times a session can be used can be set using maxUsageCount.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

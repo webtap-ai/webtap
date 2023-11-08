@@ -1,0 +1,42 @@
+{
+    "example_json_input": {
+        "actor_name": "residential-proxy-probe"
+    },
+    "example_output_json_response": {
+        "stats": {
+            "probesTotal": 1290,
+            "probesMatched": 672,
+            "probesDmaMismatch": 409,
+            "probesDmaNotFound": 86,
+            "refreshesTotal": 4688,
+            "refreshesIpSame": 4197,
+            "forgotten": 289,
+            "probesFailed": 3,
+            "refreshesFailed": 16,
+            "refreshesIpChanged": 319,
+            "probesNoPostalCode": 25
+        },
+        "proxySessions": {
+            "596452102": {
+                "ipAddress": "1.2.3.4",
+                "countryCode": "US",
+                "regionName": "New York",
+                "city": "Yonkers",
+                "postalCode": "10701",
+                "dmaCode": "501",
+                "foundAt": "2019-09-11T11:32:47.727Z",
+                "lastCheckedAt": "2019-09-11T11:33:27.487Z"
+            },
+            "dbc0a42d7": {
+                "ipAddress": "4.5.6.7",
+                "countryCode": "US",
+                "regionName": "Maryland",
+                "city": "Severn",
+                "postalCode": "21144",
+                "dmaCode": "512",
+                "foundAt": "2019-09-11T11:32:08.278Z",
+                "lastCheckedAt": "2019-09-11T11:33:27.325Z"
+            }
+        }
+    }
+}

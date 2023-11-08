@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Prague-Hotels-Hotel-Krystal.h10966026.Hotel-Information",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Reviews from the following hotel https://www.hotels.com/ho125419/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3, maximum 200 reviews, sorted by most recent",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Reviews from the following hotel https://www.hotels.com/ho106123/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3, maximum 50 reviews, sorted by lowest guest rating",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Rome-Hotels-Hotel-Quirinale.h21958.Hotel-Information, maximum 200 reviews, sorted by most relevant",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Madrid-Hotels-Hotel-Ritz.h527497.Hotel-Information, maximum 50 reviews, sorted by most relevant",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

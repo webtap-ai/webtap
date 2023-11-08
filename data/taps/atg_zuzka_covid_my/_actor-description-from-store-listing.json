@@ -1,0 +1,10 @@
+{
+    "example_json_input": {
+        "url": "https://www.worldometers.info/coronavirus/"
+    },
+    "example_output_json_response": {
+        "examined_people": 12345,
+        "infected_people": 6789,
+        "deceased_people": 1234
+    }
+}

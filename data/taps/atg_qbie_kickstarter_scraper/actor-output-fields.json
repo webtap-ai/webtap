@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, photo, name, blurb, goal, pledged, state, slug, disable_communication, country, country_displayable_name, currency, currency_symbol, currency_trailing_code, deadline, state_changed_at, created_at, launched_at, staff_pick, is_starrable, backers_count, static_usd_rate, usd_pledged, converted_pledged_amount, fx_rate, usd_exchange_rate, current_currency, usd_type, spotlight, creatorId, creatorName, creatorAvatar, creatorUrl, is_starred, is_backing, image"
+}

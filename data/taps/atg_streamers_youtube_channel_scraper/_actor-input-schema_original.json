@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Direct URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "Enter a link to a channel. You can also import a CSV file or Google Sheet with a list of URLs.\n",
+        "value_options": null
+    },
+    {
+        "name": "Maximum videos",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxResults",
+        "description": "Limit the number of regular videos (not streams, not shorts) you want to get from one channel. If you use several urls on the input you will get this number for each channel.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum shorts",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxResultsShorts",
+        "description": "Limit the number of Shorts videos you want to get from the channel.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum streams",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxResultStreams",
+        "description": "Limit the number of Stream videos you want to get from the channel.",
+        "value_options": null
+    },
+    {
+        "name": "Sort videos by",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sortVideosBy",
+        "description": "Maps to the three sorting buttons on the top of the channel videos page. Currently only applies to the main tab: Videos. Note that the order is approximate, due to the asynchronous nature of the scraper, they might be a bit out of order",
+        "value_options": "\"NEWEST\": string\n\"POPULAR\": string\n\"OLDEST\": string"
+    }
+]

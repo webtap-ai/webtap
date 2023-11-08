@@ -1,0 +1,19 @@
+{
+    "id": "shmlkv/facebook-marketplace",
+    "url": "https://apify.com/shmlkv/facebook-marketplace",
+    "title": "Facebook Marketplace \u00b7 Apify",
+    "name": "Facebook Marketplace",
+    "pricing": "No credit card required",
+    "description": "This is a simple scraper for Facebook Marketplace. It uses Playwright to scrape the data",
+    "author_name": "Andre Sh",
+    "maintained_by": "Maintained by Community",
+    "count_users": "264 users",
+    "count_runs": "3.3k runs",
+    "last_modified": "Modified 10 months ago",
+    "categories": "Business\nE-commerce\nReal estate",
+    "full_readme": "Facebook Marketplace Scraper\n\nThis is a simple scraper for Facebook Marketplace. It uses Playwright to scrape the data and save it to a CSV / JSON /\n\nExample usage:\n\n{\n  \"startUrls\": [\n    { \"url\": \"https://www.facebook.com/marketplace/telaviv/apartments-for-rent\" }\n  ],\n  \"proxy\": { \"useApifyProxy\": true }\n}",
+    "icon": "https://images.apifyusercontent.com/UdCzh04dO4MzMGI-71QzLkmW2uvouJeBR-KdrI4s7Qg/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9Db3dPUUFtZnE4bzZOd2k1eC9kUWJCUG4zREQ4dG5kREdwQi1kb3dubG9hZC5wbmc.webp",
+    "author_url": "https://apify.com/shmlkv",
+    "author_avatar": "https://images.apifyusercontent.com/B7OwS16-_fV7dPuHyszAnO584bm6SKuDMEVEED-XAP4/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS84WnBpNEV1R0M2WXh3UXk2dC8yeGMzYkZRZmhDbno1cExkWS1waG90b18yMDIzLTAxLTA1XzE1LjQ2LjU4LmpwZWc.webp",
+    "readme_summary": "# Facebook Marketplace Scraper\n\nThis is a simple scraper for Facebook Marketplace. It uses Playwright to\nscrape the data and save it to a CSV / JSON /\n\nExample usage:\n\n    \n    \n    {\n      \"startUrls\": [\n        { \"url\": \"https://www.facebook.com/marketplace/telaviv/apartments-for-rent\" }\n      ],\n      \"proxy\": { \"useApifyProxy\": true }\n    }\n\n"
+}

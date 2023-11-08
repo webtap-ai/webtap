@@ -1,0 +1,13 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "sources": [
+        {
+            "url": "https://www.w3schools.com/xml/plant_catalog.xml"
+        },
+        {
+            "url": "https://www.w3schools.com/xml/cd_catalog.xml"
+        }
+    ]
+}

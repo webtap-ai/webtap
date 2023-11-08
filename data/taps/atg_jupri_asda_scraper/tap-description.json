@@ -1,0 +1,45 @@
+{
+    "name": "ASDA Grocery Store",
+    "entities": [
+        "grocery item",
+        "brand",
+        "category",
+        "nutrition information",
+        "price",
+        "availability",
+        "promotion info"
+    ],
+    "filters": [
+        "query",
+        "brand",
+        "facets",
+        "limit",
+        "sort",
+        "order",
+        "dietary",
+        "category"
+    ],
+    "options": [
+        "Sort by relevance",
+        "Sort by price",
+        "Sort by sugar",
+        "Sort by salt",
+        "Sort by fat",
+        "Sort by carbohydrate",
+        "Sort by protein",
+        "Sort by fibre",
+        "Sort by energy",
+        "Sort by saturated fat",
+        "Order ascending",
+        "Order descending",
+        "Limit number of results"
+    ],
+    "special_instructions": [
+        "The 'query' filter is required. If it is not provided, the tool will return an error.",
+        "The 'sort' filter can take one of the following values: 'relevance', 'price', 'sugar', 'salt', 'fat', 'carbohydrate', 'protein', 'fibre', 'energy', 'saturatedfat'.",
+        "The 'order' filter can take one of the following values: 'asc', 'desc'.",
+        "The 'category' filter can take one of the following values: 'Baby, Toddler & Kids', 'Bakery', 'Beer, Wine & Spirits', 'Better For You', 'Big Night In', 'Chilled Food', 'Drinks', '...'.",
+        "The 'limit' filter is used to limit the number of results returned by the tool.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

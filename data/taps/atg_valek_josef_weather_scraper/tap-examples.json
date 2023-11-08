@@ -1,0 +1,270 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Ten day weather forecast in imperial units for London, UK",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "ten_day",
+                "units": "imperial",
+                "maxItems": 0,
+                "locations": [
+                    "London, UK"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Weekend weather forecast in metric units for Tokyo, Japan",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "weekend",
+                "units": "metric",
+                "maxItems": 0,
+                "locations": [
+                    "Tokyo, Japan"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Monthly weather forecast in imperial units for Sydney, Australia",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "month",
+                "units": "imperial",
+                "maxItems": 0,
+                "locations": [
+                    "Sydney, Australia"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Today's weather forecast in metric units for Paris, France, maximum 5 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "today",
+                "units": "metric",
+                "maxItems": 5,
+                "locations": [
+                    "Paris, France"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Ten day weather forecast in metric units for Rome, Italy, maximum 15 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "ten_day",
+                "units": "metric",
+                "maxItems": 15,
+                "locations": [
+                    "Rome, Italy"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Weekend weather forecast in imperial units for Madrid, Spain, maximum 10 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "weekend",
+                "units": "imperial",
+                "maxItems": 10,
+                "locations": [
+                    "Madrid, Spain"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Monthly weather forecast in metric units for Toronto, Canada, maximum 25 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "month",
+                "units": "metric",
+                "maxItems": 25,
+                "locations": [
+                    "Toronto, Canada"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Ten day weather forecast in imperial units for Rio de Janeiro, Brazil, maximum 40 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "ten_day",
+                "units": "imperial",
+                "maxItems": 40,
+                "locations": [
+                    "Rio de Janeiro, Brazil"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Weekend weather forecast in metric units for Cape Town, South Africa, maximum 45 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "weekend",
+                "units": "metric",
+                "maxItems": 45,
+                "locations": [
+                    "Cape Town, South Africa"
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Hour by hour weather forecast in imperial units for Mexico City, Mexico, maximum 60 items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Weather Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Weather Scraper is reliable and solely based on compatibility between DATA TASK and Weather Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Weather Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Weather Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [],
+                "timeFrame": "hour_by_hour",
+                "units": "imperial",
+                "maxItems": 60,
+                "locations": [
+                    "Mexico City, Mexico"
+                ],
+                "locationIds": [],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "extendOutputFunction": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

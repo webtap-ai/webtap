@@ -1,0 +1,78 @@
+{
+    "example_json_input": {
+        "categories": {
+            "concerts": true,
+            "sport": false,
+            "arts-theater": true,
+            "family": true
+        },
+        "subcategories": {
+            "rock": true,
+            "metal": true,
+            "pop": true,
+            "jazz": false
+        },
+        "location": {
+            "countryCode": "US",
+            "geoHash": "dr5regw3pg6ft",
+            "distance": 10
+        },
+        "date": {
+            "thisWeekend": false,
+            "from": "2023-09-01",
+            "to": "2023-09-30",
+            "tbaEvents": true,
+            "tbdEvents": false
+        },
+        "maxItems": 100,
+        "sortBy": "date"
+    },
+    "example_output_json_response": {
+        "events": [
+            {
+                "id": "001",
+                "name": "Concert A",
+                "category": "Music",
+                "genre": "Rock",
+                "date": {
+                    "title": "September 10",
+                    "subtitle": "8:00 PM"
+                },
+                "location": "New York, NY",
+                "ticketPrice": "$50",
+                "performers": [
+                    {
+                        "name": "Artist A",
+                        "url": "https://www.ticketmaster.com/artist-a"
+                    },
+                    {
+                        "name": "Artist B",
+                        "url": "https://www.ticketmaster.com/artist-b"
+                    }
+                ]
+            },
+            {
+                "id": "002",
+                "name": "Concert B",
+                "category": "Music",
+                "genre": "Pop",
+                "date": {
+                    "title": "September 15",
+                    "subtitle": "7:30 PM"
+                },
+                "location": "Los Angeles, CA",
+                "ticketPrice": "$80",
+                "performers": [
+                    {
+                        "name": "Artist C",
+                        "url": "https://www.ticketmaster.com/artist-c"
+                    },
+                    {
+                        "name": "Artist D",
+                        "url": "https://www.ticketmaster.com/artist-d"
+                    }
+                ]
+            }
+        ]
+    }
+}

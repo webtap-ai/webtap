@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "aisleName, averageWeight, baseProductId, brandName, bulkBuyLimit, catchWeightList, category, context, displayType, groupBulkBuyLimit, gtin, id, image, increment, isForSale, isInFavourites, isNew, isRestrictedOrderAmendment, isSponsored, maxQuantityAllowed, maxWeight, minWeight, price, productType, promo, restrictedDelivery, restrictions, shortDescription, status, substitutions, timeRestrictedDelivery, title, unit"
+}

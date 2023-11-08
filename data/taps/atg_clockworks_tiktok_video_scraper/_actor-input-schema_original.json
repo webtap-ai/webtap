@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Direct URL(s) for scraping specific video(s)",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "postURLs",
+        "description": "Add the URLs of posted videos you want to scrape. You can enter URLs one by one, or you can upload or link to a text file.",
+        "value_options": null
+    },
+    {
+        "name": "Should download videos",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadVideos",
+        "description": "Whether to download TikTok video files. Note that this will increase costs and time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Should download video covers (thumbnails)",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadCovers",
+        "description": "Whether to download TikTok video cover images (i.e. thumbnails). Note that this will increase costs and time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Should download slideshow images",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "shouldDownloadSlideshowImages",
+        "description": "Whether to download TikTok slideshow images. Note that this will increase costs and time required for the scrape",
+        "value_options": null
+    },
+    {
+        "name": "Video Download Key-Value Store ID or Name",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "videoKvStoreIdOrName",
+        "description": "Name (or ID) of the Key Value Store where the videos will be stored. Omit to store in the default one.",
+        "value_options": null
+    }
+]

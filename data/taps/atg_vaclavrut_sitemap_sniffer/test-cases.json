@@ -1,0 +1,38 @@
+[
+    {
+        "data_task": "Check sitemap for 'https://reebok.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check sitemap for 'https://newbalance.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check sitemap for 'https://converse.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check sitemap for 'https://skechers.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check sitemap for 'https://thenorthface.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Check sitemap for 'https://patagonia.com' using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

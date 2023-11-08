@@ -1,0 +1,19 @@
+{
+    "id": "deeper/youtube-channel-scrapper",
+    "url": "https://apify.com/deeper/youtube-channel-scrapper",
+    "title": "Youtube Channel Scrapper \u00b7 Apify",
+    "name": "Youtube Channel Scrapper",
+    "pricing": "Pay $3.50 for 1,000 videos",
+    "description": "Scrape YouTube Channel pages from page URL. There is not much configuration as it uses initial data available on page load. You'll get video Id, title, descriptions, #likes, #comments, #views and similar information for channels. Feel free to try it out with our default settings by hitting \u25b7 Start.",
+    "author_name": "Deeper Scrapper",
+    "maintained_by": "Maintained by Community",
+    "count_users": "13 users",
+    "count_runs": "7.7k runs",
+    "last_modified": "Modified 2 days ago",
+    "categories": "Social media\nVideos\nBusiness",
+    "full_readme": "Youtube Channel Scrapper\n\nA simple youtube scrapper that collect recent videos list from youtube channel URLs. We collect up to 30 most recent videos per channel URL and we also get some general information about the channel itself.\n\nIf the \"details\" flag is turned on on the inputs, in addition of the channel page we also scrap every video page to get additional information about each videos.\n\nFAQ\nWhat data are collected ?\nFor the channel\n{\n  'channelId': 'UC4f0qvPJLqGTuLyy2iHOd-g',\n  'channelShortName': 'rtbf_info',\n  'channelName': 'RTBF Info',\n  'channelDescription': \"Channel description...\",\n  'channelThumbnailUrl': 'https://yt3.ggpht.com/Or4cjb2dtf_O5jVC4PKK5U5Bi4VSPgUw7ihkDpvdukmms5fQdlzTQhFWj3l3uVyT4qveYnhEgg=s176-c-k-c0x00ffffff-no-rj',\n  'channelTotalVideos': 938,\n  'numberOfSubscribers': '27.6K',\n  'channelTotalViews': 16967815,\n  'channelJoinedDate': '2022-10-14',\n  'channelLocation': 'Belgium',\n  'channelUrl': 'https://www.youtube.com/channel/@UC4f0qvPJLqGTuLyy2iHOd-g',\n}\nFor the video\n{\n  'id': 'XcdUi6O6x2w',\n  'title': 'Video Title',\n  'url': 'https://www.youtube.com/watch?v=XcdUi6O6x2w',\n  'text': \"Video description...\",  #complete only if details are collected\n  'thumbnailUrl': 'https://i.ytimg.com/vi/XcdUi6O6x2w/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDwlpqpRCSm4pMwSGzIdNZRbZMSkA',\n  'relativeDate': '22 hours ago',\n  'duration': '10:21',\n  'viewCount': 60300,\n  'commentsCount': 389, #only if details are collected\n  'likes': 826, #only if details are collected\n  'date': '2023-09-11', #only if details are collected\n  'location': None, #later\n  'subtitles': None, #later\n  'comments': [{}], #up to 5 comments in the list, see bellow for the format\n  'fromYTUrl': 'https://www.youtube.com/@rtbf_info/videos',\n}\nCan we get more than 30 videos per channel ?\n\nNo, the scrapper works using pure html (no javascript), so we can't scroll the page down to load more videos. That's one of the reason why this scrapper is so cheap.",
+    "icon": "https://images.apifyusercontent.com/ARJXWiUqWJJBmjM5Ibj4Uq9uZhClHSMUdYO8ycTY4hY/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9UeWpZZ0dER2NUTlZtaWw4ei9GbUZxbVhjVHhBWXZ6RVllRS1TY3JlZW5zaG90X2Zyb21fMjAyMy0wOS0xMl8xNS0zNS00NC5wbmc.webp",
+    "author_url": "https://apify.com/deeper",
+    "author_avatar": "https://images.apifyusercontent.com/0ouOX04H1lye9z70DnTVXbP4IwcuE1kA3bEeOnCJhd4/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9qaWRTeVpua3VSWW5SZkpZcS9HVFhYNEFmelRYOG12TUtFSC1TY3JlZW5zaG90X2Zyb21fMjAyMy0wOS0xMl8xNS0zNS00NC5wbmc.webp",
+    "readme_summary": "Scrape YouTube Channel pages from page URL. You'll get video Id, title, descriptions, #likes, #comments, #views and similar information for channels."
+}

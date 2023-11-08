@@ -1,0 +1,22 @@
+{
+    "example_json_input": {
+        "title": "Sitemap Sniffer",
+        "author": {
+            "name": "Vaclav Rut"
+        },
+        "actor_stats": {
+            "users": 230,
+            "runs": 2500,
+            "modified": "8 months ago"
+        },
+        "categories": [
+            "Developer tools"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "Sitemap Sniffer",
+        "description": "vaclavrut/sitemap-sniffer",
+        "actor_url": "https://console.apify.com/actors/r6puf53mSCQGqJyN5/?addFromActorId=r6puf53mSCQGqJyN5#/console",
+        "actor_id": "r6puf53mSCQGqJyN5"
+    }
+}

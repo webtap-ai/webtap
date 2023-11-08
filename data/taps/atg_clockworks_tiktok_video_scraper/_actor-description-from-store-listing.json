@@ -1,0 +1,102 @@
+{
+    "example_json_input": {
+        "postURLs": [
+            "https://www.tiktok.com/@olympics/video/7208589533632269574",
+            "https://www.tiktok.com/@olympics/video/7210447318028455173",
+            "https://www.tiktok.com/@olympics/video/7200420986661965061"
+        ]
+    },
+    "example_output_json_response": [
+        {
+            "id": "7200420986661965061",
+            "text": "The crossover you never expected. This is fire! \ud83d\udd25 \ud83d\udcf9: (IG) robworling14 #Olympics #Athletes #Sports #IceSkating #Hockey #Football #Soccer",
+            "createTime": 1676478656,
+            "createTimeISO": "2023-02-15T16:30:56.000Z",
+            "locationCreated": "ES",
+            "isAd": true,
+            "authorMeta": {
+                "id": "6754011909617894406",
+                "name": "olympics",
+                "nickName": "Olympics",
+                "verified": true,
+                "signature": "The Olympics, like never before",
+                "bioLink": null,
+                "avatar": "https://p16-sign-sg.tiktokcdn.com/aweme/720x720/tos-alisg-avt-0068/829ea90040553aaec7450d66caaadc10.jpeg?x-expires=1679058000&x-signature=khyGKyozz08NQRy%2BMW6YYWK1jzU%3D",
+                "privateAccount": false,
+                "roomId": "",
+                "ttSeller": false
+            },
+            "musicMeta": {
+                "musicName": "Chill Vibes",
+                "musicAuthor": "Tollan Kim",
+                "musicOriginal": false,
+                "musicAlbum": "Chill Vibes",
+                "playUrl": "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/0582a256505b4d9f91f351acd30e4aa8",
+                "coverMediumUrl": "https://p16-sg.tiktokcdn.com/aweme/200x200/tos-alisg-v-2774/30a0e8c075b041ec83b79ebdf33ba2d7.jpeg",
+                "musicId": "7084465663108089857"
+            },
+            "webVideoUrl": "https://www.tiktok.com/@olympics/video/7200420986661965061",
+            "mediaUrls": [
+                "https://v16-webapp-prime.us.tiktok.com/video/tos/useast2a/tos-useast2a-pve-0068/ogbhZC5MIdLCkh9AxtxztgvIRbAfQjooICvxUq/?a=1988&ch=0&cr=0&dr=0&lr=tiktok_m&cd=0%7C0%7C1%7C0&cv=1&br=4096&bt=2048&cs=0&ds=3&ft=4KJMyMzm8Zmo09UQOA4jVWu4dpWrKsdm&mime_type=video_mp4&qs=0&rc=NDQ2OTs2aTw0OTQ1NGVmZEBpams6dGU6ZmdqaTMzNzczM0A2YjEzX14xXjExMTBgXzJhYSNrZ2dicjRvZWpgLS1kMTZzcw%3D%3D&expire=1678908004&l=20230315131930AB77DDD1E220AB070C2A&policy=2&signature=1e76d240026833cdc17da7bc7527ab27&tk=tt_chain_token"
+            ],
+            "videoMeta": {
+                "height": 1024,
+                "width": 576,
+                "duration": 34,
+                "coverUrl": "https://p16-sign-va.tiktokcdn.com/obj/tos-maliva-p-0068/oAodkfzWICg9nIIb0thEqRAACB5oLLNZ9xtvxD?x-expires=1678906800&x-signature=c%2F34WoEMGEKAWQ6q%2BbRsCjRJ7FI%3D",
+                "definition": "720p",
+                "format": "mp4"
+            },
+            "diggCount": 7529,
+            "shareCount": 59,
+            "playCount": 120500,
+            "commentCount": 82,
+            "mentions": [],
+            "hashtags": [
+                {
+                    "id": "569333",
+                    "name": "olympics",
+                    "title": "",
+                    "cover": ""
+                },
+                {
+                    "id": "30888",
+                    "name": "athletes",
+                    "title": "",
+                    "cover": ""
+                },
+                {
+                    "id": "7887",
+                    "name": "sports",
+                    "title": "",
+                    "cover": ""
+                },
+                {
+                    "id": "5547",
+                    "name": "iceskating",
+                    "title": "It's time to wrap up warm and show us what you can do on the ice!",
+                    "cover": ""
+                },
+                {
+                    "id": "18560",
+                    "name": "hockey",
+                    "title": "Whether you're hitting the ice or getting ready for the World Juniors, we're celebrating the entire #Hockey community on TikTok.",
+                    "cover": ""
+                },
+                {
+                    "id": "5282",
+                    "name": "football",
+                    "title": "Can't keep calm when #Football is on.",
+                    "cover": ""
+                },
+                {
+                    "id": "6192",
+                    "name": "soccer",
+                    "title": "It's called #Soccer.",
+                    "cover": ""
+                }
+            ],
+            "effectStickers": []
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/CeoM7sMsLIU/' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the profile with URL 'https://www.instagram.com/kimkardashian' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/CrzMaNlP_3G' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the profile with URL 'https://www.instagram.com/therock' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/Ce1N3P1s2Kz/' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the profile with URL 'https://www.instagram.com/selenagomez' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/Ce1N3P1s2Kz/' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the profile with URL 'https://www.instagram.com/arianagrande' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/Ce1N3P1s2Kz/' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fast Instagram stats for the post with URL 'https://www.instagram.com/p/Ce1N3P1s2Kz/' using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

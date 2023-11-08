@@ -1,0 +1,8 @@
+[
+    {
+        "data_task": "Download XML files from the following URLs: 'https://www.w3schools.com/xml/plant_catalog.xml', 'https://www.w3schools.com/xml/cd_catalog.xml' using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

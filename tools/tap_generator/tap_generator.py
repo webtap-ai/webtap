@@ -27,6 +27,10 @@ class TapGenerator:
         self.logger = logging.getLogger(__name__)
         self.logger.setLevel(logging.DEBUG)  # Set root logger to DEBUG level
 
+        # Remove any existing handlers
+        for handler in self.logger.handlers[:]:
+            self.logger.removeHandler(handler)
+
         # Create a file handler for info level
         current_date_time = datetime.now().strftime("%Y%m%d_%H%M%S")
         log_dir = (

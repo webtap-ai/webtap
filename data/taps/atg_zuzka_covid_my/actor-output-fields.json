@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "examined_people, infected_people, deceased_people, testedPositive, deceased, recovered, activeCases, tested, critical, sourceUrl, readMe"
+}

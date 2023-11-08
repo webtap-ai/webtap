@@ -1,0 +1,930 @@
+[
+    {
+        "name": "Concerts Events",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "concerts",
+        "description": "Specifies whether concert events category should be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Sports Events",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "sports",
+        "description": "Specifies whether sport events category should be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Arts & Theater Events",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "arts-theater",
+        "description": "Specifies whether arts and theater events category should be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Family Events",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "family",
+        "description": "Specifies whether family events category should be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Sort by",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sortBy",
+        "description": "Choose sort order for scraped events.",
+        "value_options": "\"date\": string\n\"relevance\": string\n\"distance\": string\n\"nameAsc\": string\n\"nameDesc\": string"
+    },
+    {
+        "name": "Max Items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Choose maximum number of items you want to scrape and save to the result dataset.",
+        "value_options": null
+    },
+    {
+        "name": "Alternative",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "alternative",
+        "description": "Alternative concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Ballads/Romantic",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "ballads-and-romantic",
+        "description": "Ballads/Romantic concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Blues",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "blues",
+        "description": "Blues concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Chanson Francaise",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "chanson-francaise",
+        "description": "Chanson Francaise concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Children's Music",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "childrens-music_concerts",
+        "description": "Children's Music concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Classical",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "classical_concerts",
+        "description": "Classical concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Country",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "country",
+        "description": "Country concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Dance/Electronic",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "dance-and-electronic",
+        "description": "Dance/Electronic concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Folk",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "folk",
+        "description": "Folk concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Hip-Hop/Rap",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "hip-hop-and-rap",
+        "description": "Hip-Hop/Rap concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Holiday",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "holiday",
+        "description": "Holiday concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Jazz",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "jazz",
+        "description": "Jazz concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Latin",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "latin",
+        "description": "Latin concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Medieval/Renaissance",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "medieval-and-renaissance",
+        "description": "Medieval/Renaissance concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Metal",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "metal",
+        "description": "Metal concerts events",
+        "value_options": null
+    },
+    {
+        "name": "New Age",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "new-age",
+        "description": "New Age concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Other",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "other",
+        "description": "Other concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Pop",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "pop",
+        "description": "Pop concerts events",
+        "value_options": null
+    },
+    {
+        "name": "R&B",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "randb",
+        "description": "R&B concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Reggae",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "reggae",
+        "description": "Reggae concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Religious",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "religious",
+        "description": "Religious concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Rock",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "rock",
+        "description": "Rock concerts events",
+        "value_options": null
+    },
+    {
+        "name": "World",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "world",
+        "description": "World concerts events",
+        "value_options": null
+    },
+    {
+        "name": "Aquatics",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "aquatics",
+        "description": "Aquatics sports events",
+        "value_options": null
+    },
+    {
+        "name": "Athletic Races",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "athletic-races",
+        "description": "Athletic Races sports events",
+        "value_options": null
+    },
+    {
+        "name": "Badminton",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "badminton",
+        "description": "Badminton sports events",
+        "value_options": null
+    },
+    {
+        "name": "Bandy",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "bandy",
+        "description": "Bandy sports events",
+        "value_options": null
+    },
+    {
+        "name": "Baseball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "baseball",
+        "description": "Baseball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Basketball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "basketball",
+        "description": "Basketball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Biathlon",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "biathlon",
+        "description": "Biathlon sports events",
+        "value_options": null
+    },
+    {
+        "name": "Body Building",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "body-building",
+        "description": "Body Building sports events",
+        "value_options": null
+    },
+    {
+        "name": "Boxing",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "boxing",
+        "description": "Boxing sports events",
+        "value_options": null
+    },
+    {
+        "name": "Cricket",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "cricket",
+        "description": "Cricket sports events",
+        "value_options": null
+    },
+    {
+        "name": "Curling",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "curling",
+        "description": "Curling sports events",
+        "value_options": null
+    },
+    {
+        "name": "Cycling",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "cycling",
+        "description": "Cycling sports events",
+        "value_options": null
+    },
+    {
+        "name": "Equestrian",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "equestrian",
+        "description": "Equestrian sports events",
+        "value_options": null
+    },
+    {
+        "name": "eSports",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "esports",
+        "description": "eSports sports events",
+        "value_options": null
+    },
+    {
+        "name": "Extreme",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "extreme",
+        "description": "Extreme sports events",
+        "value_options": null
+    },
+    {
+        "name": "Field Hockey",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "field-hockey",
+        "description": "Field Hockey sports events",
+        "value_options": null
+    },
+    {
+        "name": "Fitness",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "fitness",
+        "description": "Fitness sports events",
+        "value_options": null
+    },
+    {
+        "name": "Floorball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "floorball",
+        "description": "Floorball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Football",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "football",
+        "description": "Football sports events",
+        "value_options": null
+    },
+    {
+        "name": "Golf",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "golf",
+        "description": "Golf sports events",
+        "value_options": null
+    },
+    {
+        "name": "Gymnastics",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "gymnastics",
+        "description": "Gymnastics sports events",
+        "value_options": null
+    },
+    {
+        "name": "Handball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "handball",
+        "description": "Handball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Hockey",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "hockey",
+        "description": "Hockey sports events",
+        "value_options": null
+    },
+    {
+        "name": "Ice Skating",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "ice-skating",
+        "description": "Ice Skating sports events",
+        "value_options": null
+    },
+    {
+        "name": "Indoor Soccer",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "indoor-soccer",
+        "description": "Indoor Soccer sports events",
+        "value_options": null
+    },
+    {
+        "name": "Lacrosse",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "lacrosse",
+        "description": "Lacrosse sports events",
+        "value_options": null
+    },
+    {
+        "name": "Martial Arts",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "martial-arts",
+        "description": "Martial Arts sports events",
+        "value_options": null
+    },
+    {
+        "name": "Miscellaneous",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "miscellaneous_sports",
+        "description": "Miscellaneous sports events",
+        "value_options": null
+    },
+    {
+        "name": "Motorsports/Racing",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "motorsports-and-racing",
+        "description": "Motorsports/Racing sports events",
+        "value_options": null
+    },
+    {
+        "name": "Netball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "netball",
+        "description": "Netball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Rodeo",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "rodeo_sports",
+        "description": "Rodeo sports events",
+        "value_options": null
+    },
+    {
+        "name": "Roller Derby",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "roller-derby",
+        "description": "Roller Derby sports events",
+        "value_options": null
+    },
+    {
+        "name": "Roller Hockey",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "roller-hockey",
+        "description": "Roller Hockey sports events",
+        "value_options": null
+    },
+    {
+        "name": "Rugby",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "rugby",
+        "description": "Rugby sports events",
+        "value_options": null
+    },
+    {
+        "name": "Ski Jumping",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "ski-jumping",
+        "description": "Ski Jumping sports events",
+        "value_options": null
+    },
+    {
+        "name": "Skiing",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "skiing",
+        "description": "Skiing sports events",
+        "value_options": null
+    },
+    {
+        "name": "Soccer",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "soccer",
+        "description": "Soccer sports events",
+        "value_options": null
+    },
+    {
+        "name": "Softball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "softball",
+        "description": "Softball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Squash",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "squash",
+        "description": "Squash sports events",
+        "value_options": null
+    },
+    {
+        "name": "Surfing",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "surfing",
+        "description": "Surfing sports events",
+        "value_options": null
+    },
+    {
+        "name": "Swimming",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "swimming",
+        "description": "Swimming sports events",
+        "value_options": null
+    },
+    {
+        "name": "Table Tennis",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "table-tennis",
+        "description": "Table Tennis sports events",
+        "value_options": null
+    },
+    {
+        "name": "Tennis",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "tennis",
+        "description": "Tennis sports events",
+        "value_options": null
+    },
+    {
+        "name": "Toros",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "toros",
+        "description": "Toros sports events",
+        "value_options": null
+    },
+    {
+        "name": "Track & Field",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "track-and-field",
+        "description": "Track & Field sports events",
+        "value_options": null
+    },
+    {
+        "name": "Volleyball",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "volleyball",
+        "description": "Volleyball sports events",
+        "value_options": null
+    },
+    {
+        "name": "Waterpolo",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "waterpolo",
+        "description": "Waterpolo sports events",
+        "value_options": null
+    },
+    {
+        "name": "Wrestling",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "wrestling",
+        "description": "Wrestling sports events",
+        "value_options": null
+    },
+    {
+        "name": "Children's Theatre",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "childrens-theatre",
+        "description": "Children's Theatre arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Circus & Specialty Acts",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "circus-and-specialty-acts_arts-theater",
+        "description": "Circus & Specialty Acts arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Classical",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "classical_arts-theater",
+        "description": "Classical arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Comedy",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "comedy",
+        "description": "Comedy arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Cultural",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "cultural",
+        "description": "Cultural arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Dance",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "dance",
+        "description": "Dance arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Espectaculo",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "espectaculo",
+        "description": "Espectaculo arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Fashion",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "fashion",
+        "description": "Fashion arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Fine Art",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "fine-art",
+        "description": "Fine Art arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Magic & Illusion",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "magic-and-illusion_arts-theater",
+        "description": "Magic & Illusion arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Miscellaneous",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "miscellaneous_arts-theater",
+        "description": "Miscellaneous arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Miscellaneous Theatre",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "miscellaneous-theatre",
+        "description": "Miscellaneous Theatre arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Multimedia",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "multimedia",
+        "description": "Multimedia arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Music",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "music",
+        "description": "Music arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Opera",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "opera",
+        "description": "Opera arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Performance Art",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "performance-art",
+        "description": "Performance Art arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Puppetry",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "puppetry_arts-theater",
+        "description": "Puppetry arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Spectacular",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "spectacular",
+        "description": "Spectacular arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Theatre",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "theatre",
+        "description": "Theatre arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Variety",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "variety",
+        "description": "Variety arts-theater events",
+        "value_options": null
+    },
+    {
+        "name": "Puppetry",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "puppetry_family",
+        "description": "Puppetry family events",
+        "value_options": null
+    },
+    {
+        "name": "Ice Shows",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "ice-shows",
+        "description": "Ice Shows family events",
+        "value_options": null
+    },
+    {
+        "name": "Magic/Illusion",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "magic-and-illusion_family",
+        "description": "Magic/Illusion family events",
+        "value_options": null
+    },
+    {
+        "name": "Circus/Specialty Acts",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "circus-and-specialty-acts_family",
+        "description": "Circus/Specialty Acts family events",
+        "value_options": null
+    },
+    {
+        "name": "Children's Theater",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "childrens-theater",
+        "description": "Children's Theater family events",
+        "value_options": null
+    },
+    {
+        "name": "Rodeo",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "rodeo_family",
+        "description": "Rodeo family events",
+        "value_options": null
+    },
+    {
+        "name": "Fairs/Festivals",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "fairs-and-festivals",
+        "description": "Fairs/Festivals family events",
+        "value_options": null
+    },
+    {
+        "name": "Latin Children's",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "latin-childrens",
+        "description": "Latin Children's family events",
+        "value_options": null
+    },
+    {
+        "name": "Children's Music",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "childrens-music_family",
+        "description": "Children's Music family events",
+        "value_options": null
+    },
+    {
+        "name": "Miscellaneous/Family",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "miscellaneous-and-family",
+        "description": "Miscellaneous/Family family events",
+        "value_options": null
+    },
+    {
+        "name": "Film/Family",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "film-and-family",
+        "description": "Film/Family family events",
+        "value_options": null
+    },
+    {
+        "name": "Country",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "countryCode",
+        "description": "Enter ISO Alpha-2 Country Code or leave blank and specify geoHash only.",
+        "value_options": null
+    },
+    {
+        "name": "GeoHash",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "geoHash",
+        "description": "Add geoHash or leave blank if you don't want to specify the exact geographical point. You can look up the geoHash of your city or use various tools for conversion of longitude and latitude into geoHash (such as the one at this link: http://geohash.co). Use geoHash precision of at least 4 characters.",
+        "value_options": null
+    },
+    {
+        "name": "Distance",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "distance",
+        "description": "Distance radius from the given event location",
+        "value_options": null
+    },
+    {
+        "name": "This Weekend",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "thisWeekendDate",
+        "description": "Filter only those events that take place during this weekend.",
+        "value_options": null
+    },
+    {
+        "name": "From",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "dateFrom",
+        "description": "Filter only those events that take place from this date. Valid format is: YYYY-MM-DD.",
+        "value_options": null
+    },
+    {
+        "name": "To",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "dateTo",
+        "description": "Filter only those events that take place before this date. Valid format is: YYYY-MM-DD.",
+        "value_options": null
+    },
+    {
+        "name": "TBA Events",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "includeTBA",
+        "description": "Represents events with date to be anounced.",
+        "value_options": "\"yes\": string\n\"no\": string\n\"only\": string"
+    },
+    {
+        "name": "TBD Events",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "includeTBD",
+        "description": "Represents events with date to be defined.",
+        "value_options": "\"yes\": string\n\"no\": string\n\"only\": string"
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Search for tweets with the term 'apple', maximum of 50 tweets, in live mode, with a maximum of 3 request retries",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for tweets with the term 'climate change', maximum of 200 tweets, in live mode",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for tweets with the term 'Ethereum', maximum of 4000 tweets, in video mode",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for tweets with the term 'NFT', maximum of 4500 tweets, in live mode",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

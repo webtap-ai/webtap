@@ -1,0 +1,141 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtag 'makeup', and store the videos and other media in a named Key-Value store",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "makeup"
+                ],
+                "resultsPerPage": 15,
+                "shouldDownloadVideos": true,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": true,
+                "videoKvStoreIdOrName": "myKeyValueStore",
+                "disableEnrichAuthorStats": false,
+                "disableCheerioBoost": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtag 'diy', and disable the additional query for author stats",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "diy"
+                ],
+                "disableEnrichAuthorStats": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtag 'art', and store the videos and other media in a named Key-Value store, and disable the additional query for author stats",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "art"
+                ],
+                "resultsPerPage": 15,
+                "shouldDownloadVideos": true,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": false,
+                "videoKvStoreIdOrName": "myMediaStore",
+                "disableEnrichAuthorStats": true,
+                "disableCheerioBoost": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtag 'gaming', and download the video files, cover images, and slideshow images, and store the videos and other media in a named Key-Value store",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "gaming"
+                ],
+                "resultsPerPage": 15,
+                "shouldDownloadVideos": true,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": true,
+                "videoKvStoreIdOrName": "myKeyValueStore",
+                "disableEnrichAuthorStats": false,
+                "disableCheerioBoost": false
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtag 'technology', and download the video files, cover images, and slideshow images, and store the videos and other media in a named Key-Value store, and disable the Cheerio crawler",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "technology"
+                ],
+                "resultsPerPage": 15,
+                "shouldDownloadVideos": true,
+                "shouldDownloadCovers": true,
+                "shouldDownloadSlideshowImages": true,
+                "videoKvStoreIdOrName": "myKeyValueStore",
+                "disableEnrichAuthorStats": false,
+                "disableCheerioBoost": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape TikTok data for the hashtags 'nature', 'outdoors', with a maximum of 10 results per page",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tiktok Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tiktok Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Tiktok Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tiktok Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tiktok Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "hashtags": [
+                    "nature",
+                    "outdoors"
+                ],
+                "resultsPerPage": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

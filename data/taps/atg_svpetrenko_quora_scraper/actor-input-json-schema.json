@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "queries": {
+            "type": "array",
+            "description": "Quora will search for questions using this strings.",
+            "example": [
+                "how to drink yogurt"
+            ]
+        },
+        "languageCode": {
+            "type": "string",
+            "description": "Provide preferred site language. If used, it will query [langcode].quora.com instead of www.quora.com, e.g. es.quora.com for Spanish."
+        },
+        "maxAnswersPerQuestion": {
+            "type": "integer",
+            "description": "Depending on popularity of your query you may encounter questions with many thousands of answers. Scraping these will require a ton of requests, especially if there are many such questions. Set to 0 t"
+        },
+        "answersRanking": {
+            "type": "string",
+            "description": "Sort answers by selected parameter. On original Quora website you can also include related answers with this option, but currently this isn't supported.",
+            "enum": [
+                "hide_relevant_answers",
+                "ranking_toggle_upvote",
+                "ranking_toggle_recency"
+            ]
+        },
+        "useAnswerDataset": {
+            "type": "boolean",
+            "description": "Whether to store all answers in a separate dataset for easier extraction."
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Select proxies to be used by your crawler. NOTE: residential proxies may not work with this scraper. Leave to none to use no proxy (very fitting if you run locally on your machine, will be much faster",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "maxPoolSize": {
+            "type": "integer",
+            "description": "Maximum number of sessions in the pool"
+        },
+        "maxAgeSecs": {
+            "type": "integer",
+            "description": "Maximum age of sessions in the pool"
+        },
+        "maxUsageCount": {
+            "type": "integer",
+            "description": "Maximum number of times a session can be used"
+        }
+    },
+    "required": [
+        "queries"
+    ]
+}

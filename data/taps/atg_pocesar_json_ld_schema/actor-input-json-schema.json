@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "The URLs to extract all LD+JSON data",
+            "example": [
+                {
+                    "url": "https://blog.apify.com/"
+                }
+            ]
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "A proxy required for scraping",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "customData": {
+            "type": "object",
+            "description": "Provide some custom data to output",
+            "example": {}
+        }
+    },
+    "required": [
+        "startUrls",
+        "proxyConfiguration"
+    ]
+}

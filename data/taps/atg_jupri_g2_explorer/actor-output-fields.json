@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "answers, date, id, industry, location, name, product_id, product_slug, role, score, segment, type, review_source, source_type, url, helpful, title"
+}

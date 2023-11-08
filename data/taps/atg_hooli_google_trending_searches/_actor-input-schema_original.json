@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Country",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "geo",
+        "description": "The country to fetch the information from",
+        "value_options": "\"AR\": string\n\"AU\": string\n\"AT\": string\n\"BE\": string\n\"BR\": string\n\"CA\": string\n\"CL\": string\n\"CO\": string\n\"CZ\": string\n\"DK\": string\n\"EG\": string\n\"FI\": string\n\"FR\": string\n\"DE\": string\n\"GR\": string\n\"HK\": string\n\"HU\": string\n\"IN\": string\n\"ID\": string\n\"IE\": string\n\"IL\": string\n\"IT\": string\n\"JP\": string\n\"KE\": string\n\"MY\": string\n\"MX\": string\n\"NL\": string\n\"NZ\": string\n\"NG\": string\n\"NO\": string\n\"PH\": string\n\"PL\": string\n\"PT\": string\n\"RO\": string\n\"RU\": string\n\"SA\": string\n\"SG\": string\n\"ZA\": string\n\"KR\": string\n\"SE\": string\n\"CH\": string\n\"TW\": string\n\"TH\": string\n\"TR\": string\n\"UA\": string\n\"GB\": string\n\"US\": string\n\"VN\": string"
+    },
+    {
+        "name": "Output mode",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "outputMode",
+        "description": "Select the way you want the dataset to be output",
+        "value_options": "\"complete\": string\n\"queries\": string\n\"related\": string\n\"articles\": string"
+    },
+    {
+        "name": "From date",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "fromDate",
+        "description": "Get items starting from this date going to the past. Max 29 days in the past",
+        "value_options": null
+    },
+    {
+        "name": "To date",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "toDate",
+        "description": "Get items from fromDate to this date. Max 29 days in the past",
+        "value_options": null
+    },
+    {
+        "name": "Maximum number of results",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Limit the total amount of results you get",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "The best option is usually Automatic proxy. But you can also use your own proxies or no proxy",
+        "value_options": null
+    },
+    {
+        "name": "Extend Output Function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendOutputFunction",
+        "description": "Add or remove properties on the output object or omit the output returning null",
+        "value_options": null
+    },
+    {
+        "name": "Extend Scraper Function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendScraperFunction",
+        "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page",
+        "value_options": null
+    },
+    {
+        "name": "Custom data",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "customData",
+        "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+        "value_options": null
+    }
+]

@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startURLs": {
+            "type": "array",
+            "description": "List of URL entry points. Each entry is an object of type {'url': 'http://www.example.com'}",
+            "example": [
+                {
+                    "url": "https://blog.apify.com"
+                }
+            ]
+        },
+        "linkSelector": {
+            "type": "string",
+            "description": "CSS selector matching elements with 'href' attributes that should be enqueued. To enqueue urls from",
+            "example": "a"
+        },
+        "maxRequestsPerCrawl": {
+            "type": "integer",
+            "description": "The maximum number of pages that the scraper will load. The scraper will stop when this limit is reached. It's always a good idea to set this limit in order to prevent excess platform usage for miscon"
+        },
+        "maxCrawlingDepth": {
+            "type": "integer",
+            "description": "Defines how many links away from the StartURLs will the scraper descend. 0 means unlimited."
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. Use this option to set a hard lim"
+        },
+        "customKeyValueStore": {
+            "type": "string",
+            "description": "Use custom named key value store for saving results. If the key value store with this name doesn't yet exist, it's created. The snapshots of the pages will be saved in the key value store."
+        },
+        "customDataset": {
+            "type": "string",
+            "description": "Use custom named dataset for saving metadata. If the dataset with this name doesn't yet exist, it's created. The metadata about the snapshots of the pages will be saves in the dataset."
+        },
+        "timeoutForSingleUrlInSeconds": {
+            "type": "integer",
+            "description": "Timeout in seconds for doing a backup of a single URL. Try to increase this timeout in case you see an error Error: handlePageFunction timed out after X seconds. ."
+        },
+        "navigationTimeoutInSeconds": {
+            "type": "integer",
+            "description": "Timeout in seconds in which the navigation needs to finish. Try to increase this if you see an error Navigation timeout of XXX ms exceeded"
+        },
+        "searchParamsToIgnore": {
+            "type": "array",
+            "description": "Names of URL search parameters (such as 'source', 'sourceid', etc.) that should be ignored in the URLs when crawling."
+        },
+        "sameOrigin": {
+            "type": "boolean",
+            "description": "Only backup URLs with the same origin as any of the start URL origins. E.g. when turned on for a single start URL https://blog.apify.com, only links with prefix https://blog.apify.com will be backed u"
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Choose to use no proxy, Apify Proxy, or provide custom proxy URLs.",
+            "example": {
+                "useApifyProxy": false
+            }
+        }
+    },
+    "required": []
+}

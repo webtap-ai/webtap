@@ -1,0 +1,130 @@
+[
+    {
+        "name": "\ud83d\udd0e Query",
+        "type": "String",
+        "required": "Required",
+        "param_name": "query",
+        "description": "keywords, slug(s) separated by spaces, line-break or commas",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udd0e Mode",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "mode",
+        "description": "Operation Mode",
+        "value_options": "\"review\": string\n\"product\": string\n\"article\": string\n\"discuss\": string"
+    },
+    {
+        "name": "\ud83d\udd0e Limit",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "limit",
+        "description": "Limit number of results (per slug for Search Reviews Mode).",
+        "value_options": null
+    },
+    {
+        "name": "Response Type",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "response_type",
+        "description": "",
+        "value_options": "\"text\": string\n\"video\": string"
+    },
+    {
+        "name": "Sorting",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort_review",
+        "description": "Sorting key",
+        "value_options": "\"default\": string\n\"newest\": string\n\"oldest\": string\n\"most-helpful\": string\n\"highrated\": string\n\"lowrated\": string\n\"least-helpful\": string"
+    },
+    {
+        "name": "Strict",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "strict_search",
+        "description": "Limit search to only specified (product) slugs.",
+        "value_options": null
+    },
+    {
+        "name": "Disable",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "no_parse",
+        "description": "WARNING: \ud83d\udc80 Unreliable Parser \ud83d\udc80",
+        "value_options": null
+    },
+    {
+        "name": "Sorting",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort_product",
+        "description": "Sorting key",
+        "value_options": "\"relevance\": string\n\"popular\": string\n\"rating\": string"
+    },
+    {
+        "name": "Include Contents",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "include_article_content",
+        "description": "WARNING: The results size could be huge.",
+        "value_options": null
+    },
+    {
+        "name": "Sorting",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort_discuss",
+        "description": "Sorting key",
+        "value_options": "\"comment\": string\n\"helpful\": string\n\"newest\": string\n\"pinned\": string"
+    },
+    {
+        "name": "Enable Custom Fields",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "dev_transform_enable",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Fields List",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "dev_transform_fields",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Enable Custom Storage",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "dev_dataset_enable",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Clear Storage",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "dev_dataset_clear",
+        "description": "Clear Dataset before insert/update.",
+        "value_options": null
+    },
+    {
+        "name": "Dataset Name",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "dev_dataset_name",
+        "description": "Use mask to customize dataset name:\n\n{ACTOR} = actor name\n{DATE} = date (YYYYMMDD)\n{TIME} = time (HHMMSS)\n\ndefault: data-{ACTOR}-{DATE}-{TIME}",
+        "value_options": null
+    },
+    {
+        "name": "Unique Column",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "dev_dataset_key",
+        "description": "Column name from results to use as Key for Key-Value Storage. For example: product_id (must be unique).",
+        "value_options": null
+    }
+]

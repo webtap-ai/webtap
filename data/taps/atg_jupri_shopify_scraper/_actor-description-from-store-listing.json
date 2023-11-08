@@ -1,0 +1,15 @@
+{
+    "example_json_input": {
+        "url": "https://www.example.com"
+    },
+    "example_output_json_response": {
+        "title": "Shopify Commerce",
+        "actor_name": "jupri/shopify-scraper",
+        "description": "Scrape products data from shopify e-commerce websites.",
+        "details": {
+            "README": "/jupri/shopify-scraper",
+            "Input": "/jupri/shopify-scraper/input-schema",
+            "API": "/jupri/shopify-scraper/api"
+        }
+    }
+}

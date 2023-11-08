@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Scrape the first 5 videos from the ABC News YouTube channel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the first 30 videos from the BBC News YouTube channel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the first 50 videos from the TED Talks YouTube channel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

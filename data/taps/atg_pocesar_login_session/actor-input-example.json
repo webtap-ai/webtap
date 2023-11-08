@@ -1,0 +1,33 @@
+{
+    "steps": [
+        {
+            "failed": {
+                "selector": "[role=\"alert\"]"
+            },
+            "submit": {
+                "selector": "input[type=\"submit\"]"
+            },
+            "password": {
+                "selector": "input#pass"
+            },
+            "username": {
+                "selector": "input#email"
+            },
+            "waitForMillis": 5000
+        }
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36",
+    "gotoTimeout": 30,
+    "cookieDomains": [],
+    "sessionConfig": {
+        "maxAgeSecs": 3600,
+        "maxPoolSize": 100,
+        "storageName": "login-sessions",
+        "maxUsageCount": 100
+    },
+    "extraUrlPatterns": [],
+    "maxRequestRetries": 0,
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

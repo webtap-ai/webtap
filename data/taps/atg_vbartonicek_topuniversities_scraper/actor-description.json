@@ -1,0 +1,19 @@
+{
+    "id": "vbartonicek/topuniversities-scraper",
+    "url": "https://apify.com/vbartonicek/topuniversities-scraper",
+    "title": "Top Universities Scraper \u00b7 Apify",
+    "name": "Top Universities Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrapes the QS World University Rankings to get a list of the top universities.",
+    "author_name": "Vratislav Bartonicek",
+    "maintained_by": "Maintained by Community",
+    "count_users": "419 users",
+    "count_runs": "24.1k runs",
+    "last_modified": "Modified over 1 year ago",
+    "categories": "Jobs\nEducation",
+    "full_readme": "topuniversities-scraper\n\nAn API to get a list of top universities based on the QS World University Rankings in various formats (HTML table, JSON, CSV, Excel, XML or RSS feed).\n\nCurrently, the scraper supports two modes:\n\nBasic mode (to get a list of ranked universities with basic data like name, country, and link to its detail)\nDetailed mode (to get detailed information about the universities by visiting its detail pages)\nFuture plans\nTo scrape more information in the detailed mode\nTo be able to filter countries for a region (e.g. Europe)\nInput parameters\n\nThe input of this scraper should be JSON containing the filter of universities that should be scrapped. Required fields are:\n\nField\tType\tDescription\nmode\tString\tChoose a mode (see the description above)\nyear\tString\tSelect a year of the rankings\ncountry\tString\tSelect specific country or select \"All countries\" to not filter universities\nInput example\n{\n  \"mode\": \"basic\",\n  \"year\": \"2020\",\n  \"country\": \"Canada\"\n}",
+    "icon": "https://images.apifyusercontent.com/UY1hIS4cCVIhY6rXJyuro-SIVWO-wj52e8o9DfhSrQY/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9Xd0ZoTmhlcHdodHROMnBuNC9IS0dhNHFwZnhwdnVuaFk4eS1RU19Vbml2ZXJzaXR5X1JhbmtpbmdzX0xvZ28ucG5n.webp",
+    "author_url": "https://apify.com/vbartonicek",
+    "author_avatar": "https://images.apifyusercontent.com/qcFff4oCYGQbTy7uzKpg5uKcADFbQe1i6F9Sbta0e3Y/rs:fill:192:192/aHR0cHM6Ly9saDQuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy02VGdadk9wdjI0US9BQUFBQUFBQUFBSS9BQUFBQUFBQUtmUS95OHFMY2ZSb3VWay9waG90by5qcGc.webp",
+    "readme_summary": "# topuniversities-scraper\n\nAn API to get a list of top universities based on the QS World University Rankings in various formats (HTML table, JSON, CSV, Excel, XML or RSS feed).\n\nCurrently, the scraper supports two modes:\n\n  * Basic mode (to get a list of ranked universities with basic data like name, country, and link to its detail)\n  * Detailed mode (to get detailed information about the universities by visiting its detail pages)\n\n##  Future plans\n\n  * To scrape more information in the detailed mode\n  * To be able to filter countries for a region (e.g. Europe)\n\n##  Input parameters\n\nThe input of this scraper should be JSON containing the filter of universities\nthat should be scrapped. Required fields are:\n\nField| Type| Description  \n---|---|---  \nmode| String| Choose a mode (see the description above)  \nyear| String| Select a year of the rankings  \ncountry| String| Select specific country or select \"All countries\" to not\nfilter universities\n\n###  Input example\n\n    \n    {\n      \"mode\": \"basic\",\n      \"year\": \"2020\",\n      \"country\": \"Canada\"\n    }\n"
+}

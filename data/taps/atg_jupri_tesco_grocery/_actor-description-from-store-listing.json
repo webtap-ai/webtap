@@ -1,0 +1,49 @@
+{
+    "example_json_input": {
+        "url": "https://www.example.com"
+    },
+    "example_output_json_response": {
+        "aisleName": "Milk",
+        "averageWeight": null,
+        "baseProductId": "54550994",
+        "brandName": "TESCO",
+        "bulkBuyLimit": 16,
+        "catchWeightList": null,
+        "category": {
+            "department": "Milk, Butter & Eggs",
+            "shelf": "Semi-Skimmed Milk",
+            "super": "Fresh Food"
+        },
+        "context": null,
+        "displayType": "Quantity",
+        "groupBulkBuyLimit": 0,
+        "gtin": "05000436589457",
+        "id": "254656543",
+        "image": "https://digitalcontent.api.tesco.com/v2/media/ghs/3f01a93f-35bf-4658-b980-36e96b636e9c/f8f62a30-97b1-4b10-8d7e-6fca2b14f8d7.jpeg?h=225&w=225",
+        "increment": 0,
+        "isForSale": true,
+        "isInFavourites": null,
+        "isNew": false,
+        "isRestrictedOrderAmendment": null,
+        "isSponsored": [
+            false
+        ],
+        "maxQuantityAllowed": 16,
+        "maxWeight": 0,
+        "minWeight": 0,
+        "price": 1.55,
+        "productType": "SingleProduct",
+        "promo": [],
+        "restrictedDelivery": null,
+        "restrictions": [],
+        "shortDescription": null,
+        "status": "AvailableForSale",
+        "substitutions": [],
+        "timeRestrictedDelivery": null,
+        "title": "Tesco British Semi Skimmed Milk 2.272L 4 Pints",
+        "unit": {
+            "measure": "litre",
+            "price": 0.68
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "id": "vaclavrut/sitemap-sniffer",
+    "url": "https://apify.com/vaclavrut/sitemap-sniffer",
+    "title": "Sitemap Sniffer \u00b7 Apify",
+    "name": "Sitemap Sniffer",
+    "pricing": "No credit card required",
+    "description": "Sitemap sniffer will check the most used variants of sitemaps and you can use that for crawling. This will just save you time so you don't have to check manually.",
+    "author_name": "Vaclav Rut",
+    "maintained_by": "Maintained by Community",
+    "count_users": "194 users",
+    "count_runs": "2.4k runs",
+    "last_modified": "Modified 8 months ago",
+    "categories": "Developer tools",
+    "full_readme": "My beautiful actor\n\nThe README.md file contains a documentation what your actor does and how to use it, which is then displayed in the app or Apify Store. It's always a good idea to write a good README.md, in a few months not even you will remember all the details about the actor.\n\nYou can use Markdown language for rich formatting.",
+    "icon": "https://images.apifyusercontent.com/GOHoF82oF106I27KMdpSITUIGKPuoFv0BKwYf0LNlek/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9yNnB1ZjUzbVNDUUdxSnlONS9RVFd6cDJOM0VhdVJiR3M5cC1TY2hlcnR6X2lTdG9jay04MzY3MTY3OTZfbWVkaXVtLTEwMjR4NjM5LmpwZw.webp",
+    "author_url": "https://apify.com/vaclavrut",
+    "author_avatar": "https://images.apifyusercontent.com/XGREUfCHq0p5drv2GrHpp1IMa8FjX6VY1yHUnV-HooU/rs:fill:192:192/aHR0cHM6Ly93d3cuZ3JhdmF0YXIuY29tL2F2YXRhci80ZDYxNzg3OThiZjAxZTBkOTM3Y2ZiOWY3NzQ4ZTNhMj9kPWh0dHBzJTNBJTJGJTJGY2RuLmFwaWZ5LmNvbSUyRmltZyUyRmFub255bW91c191c2VyX3BpY3R1cmUucG5n.webp",
+    "readme_summary": "# My beautiful actor\n\nThe `README.md` file contains a documentation what your actor does and how to\nuse it, which is then displayed in the app or Apify Store. It's always a good\nidea to write a good `README.md`, in a few months not even you will remember\nall the details about the actor.\n\nYou can use [Markdown](https://www.markdownguide.org/cheat-sheet) language for\nrich formatting.\n\n"
+}

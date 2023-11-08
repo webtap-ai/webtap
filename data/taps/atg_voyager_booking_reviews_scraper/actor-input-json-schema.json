@@ -1,0 +1,42 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+            "example": [
+                {
+                    "url": "https://www.booking.com/hotel/us/chicago-t.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AuLFmqIGwAIB0gIkN2YzZmI0YzktMTY1ZS00OThkLTgzY2ItOTMxODA5OTI5NzNj2AIF4AIB&all_sr_blocks=5924324_246077187_2_0_0;checkin=2023-09-01;checkout=2023-09-15;dest_id=20033173;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=6;highlighted_blocks=5924324_246077187_2_0_0;hpos=6;matching_block_id=5924324_246077187_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=5924324_246077187_2_0_0__341393;srepoch=1682350871;srpvid=88466e4a189c0182;type=total;ucfs=1&#hotelTmpl"
+                }
+            ]
+        },
+        "maxReviewsPerHotel": {
+            "type": "integer",
+            "description": "Maximum number of reviews to scrape per hotel",
+            "example": 1000
+        },
+        "sortReviewsBy": {
+            "type": "string",
+            "description": "Review attribute by which the reviews will be ordered",
+            "example": "f_relevance",
+            "enum": [
+                "f_relevance",
+                "f_recent_desc",
+                "f_recent_asc",
+                "f_score_desc",
+                "f_score_asc"
+            ]
+        },
+        "reviewScores": {
+            "type": "array",
+            "description": "Filter reviews by their score, as shown on Booking.com",
+            "example": [
+                "ALL"
+            ]
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

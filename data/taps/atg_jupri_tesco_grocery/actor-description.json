@@ -1,0 +1,19 @@
+{
+    "id": "jupri/tesco-grocery",
+    "url": "https://apify.com/jupri/tesco-grocery",
+    "title": "Tesco Grocery Scraper \u00b7 Apify",
+    "name": "Tesco Grocery Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrape data from Tesco.com grocery website",
+    "author_name": "cat",
+    "maintained_by": "Maintained by Community",
+    "count_users": "122 users",
+    "count_runs": "6.5k runs",
+    "last_modified": "Modified 10 months ago",
+    "categories": "E-commerce",
+    "full_readme": "Welcome To Tesco.com Grocery Scraper\n\nAbout Tesco.com\n\nTesco PLC (/\u02c8t\u025bs.ko\u028a/) is a British multinational groceries and general merchandise retailer headquartered in Welwyn Garden City, England.[5] In 2011 it was the third-largest retailer in the world measured by gross revenues[6][7] and the ninth-largest in the world measured by revenues. It has shops in Ireland, the United Kingdom, the Czech Republic, Hungary and Slovakia. It is the market leader of groceries in the UK (where it has a market share of around 28.4%).[8][9]\n\nOutput Example\n{\r\n    \"aisleName\": \"Milk\",\r\n    \"averageWeight\": null,\r\n    \"baseProductId\": \"54550994\",\r\n    \"brandName\": \"TESCO\",\r\n    \"bulkBuyLimit\": 16,\r\n    \"catchWeightList\": null,\r\n    \"category\": {\r\n        \"department\": \"Milk, Butter & Eggs\",\r\n        \"shelf\": \"Semi-Skimmed Milk\",\r\n        \"super\": \"Fresh Food\"\r\n    },\r\n    \"context\": null,\r\n    \"displayType\": \"Quantity\",\r\n    \"groupBulkBuyLimit\": 0,\r\n    \"gtin\": \"05000436589457\",\r\n    \"id\": \"254656543\",\r\n    \"image\": \"https://digitalcontent.api.tesco.com/v2/media/ghs/3f01a93f-35bf-4658-b980-36e96b636e9c/f8f62a30-97b1-4b10-8d7e-6fca2b14f8d7.jpeg?h=225&w=225\",\r\n    \"increment\": 0,\r\n    \"isForSale\": true,\r\n    \"isInFavourites\": null,\r\n    \"isNew\": false,\r\n    \"isRestrictedOrderAmendment\": null,\r\n    \"isSponsored\": [\r\n        false\r\n    ],\r\n    \"maxQuantityAllowed\": 16,\r\n    \"maxWeight\": 0,\r\n    \"minWeight\": 0,\r\n    \"price\": 1.55,\r\n    \"productType\": \"SingleProduct\",\r\n    \"promo\": [],\r\n    \"restrictedDelivery\": null,\r\n    \"restrictions\": [],\r\n    \"shortDescription\": null,\r\n    \"status\": \"AvailableForSale\",\r\n    \"substitutions\": [],\r\n    \"timeRestrictedDelivery\": null,\r\n    \"title\": \"Tesco British Semi Skimmed Milk 2.272L 4 Pints\",\r\n    \"unit\": {\r\n        \"measure\": \"litre\",\r\n        \"price\": 0.68\r\n    }\r\n}",
+    "icon": "https://images.apifyusercontent.com/4MKk1Q8TYqwpaSPY8M2PRzg7DVmLqhdUKvjgFRX47VQ/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS8xcXA5QnBnMDVOeWk1MWllRS9FNVR1amI4THJ5UlE5cUg0RS1UZXNjby1Mb2dvLnBuZw.webp",
+    "author_url": "https://apify.com/jupri",
+    "author_avatar": "https://images.apifyusercontent.com/Rf2kswuF5qzYsJKwpCL9nsDkBYW5YiGFUIugmui7uIA/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9zVEVtbXc2Yjd0N1dKdU13ZS8za3FZSDZkTjRRTEFwQmVUSi1jYXQuanBn.webp",
+    "readme_summary": "Scrape data from Tesco.com grocery website"
+}

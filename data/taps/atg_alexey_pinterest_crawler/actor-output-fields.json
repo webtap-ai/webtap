@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "username, fullName, bio, followersCount, followingCount, boards, pins, sourceUrl, profile, repin_count, link, title, grid_description, is_repin, embed, is_video, video_status, created_at, promoter, insertion_id, price_value, promoted_is_lead_ad, description_html, is_whitelisted_for_tried_it, price_currency, grid_title, is_oos_product, id, story_pin_data_id, alt_text, is_stale_product, description, call_to_action_text, is_eligible_for_pdp, domain, video_status_message, is_playable, story_pin_data, videos, carousel_data, promoted_lead_form, is_promoted, product_pin_data, should_open_in_stream"
+}

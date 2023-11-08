@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "urls, pageLoadTimeoutSecs, pageMaxRetryCount, waitUntil, viewportWidth, viewportHeight, delaySecs, imageType, proxyConfiguration"
+}

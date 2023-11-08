@@ -1,0 +1,20 @@
+{
+    "runMode": "PRODUCTION",
+    "startUrls": [
+        {
+            "url": "https://www.example.com"
+        }
+    ],
+    "waitUntil": [
+        "networkidle2"
+    ],
+    "customData": {},
+    "proxyRotation": "UNTIL_FAILURE",
+    "initialCookies": [],
+    "breakpointLocation": "NONE",
+    "preNavigationHooks": "// We need to return array of (possibly async) functions here.\n        // The functions accept two arguments: the \"crawlingContext\" object\n        // and \"gotoOptions\".\n        [\n            async (crawlingContext, gotoOptions) => {\n                // ...\n            },\n        ]",
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    },
+    "postNavigationHooks": "// We need to return array of (possibly async) functions here.\n        // The functions accept a single argument: the \"crawlingContext\" object.\n        [\n            async (crawlingContext) => {\n                // ...\n            },\n        ]"
+}

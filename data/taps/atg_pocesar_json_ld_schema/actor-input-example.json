@@ -1,0 +1,11 @@
+{
+    "startUrls": [
+        {
+            "url": "https://blog.apify.com/"
+        }
+    ],
+    "customData": {},
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "max_tweets": 500,
+    "language": "any",
+    "collect_user_info": false,
+    "use_experimental_scraper": false,
+    "user_info": "user info and replying info",
+    "max_attempts": 5
+}

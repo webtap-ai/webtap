@@ -1,0 +1,14 @@
+{
+    "queries": [
+        "Hotels in NYC",
+        "Restaurants in NYC",
+        "https://www.bing.com/search?q=restaurants+in+NYC"
+    ],
+    "marketCode": "en-US",
+    "languageCode": "en",
+    "resultsPerPage": 10,
+    "maxPagesPerQuery": 1,
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

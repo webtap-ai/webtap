@@ -1,0 +1,60 @@
+{
+    "example_json_input": {
+        "username": "your_username",
+        "password": "your_password",
+        "website": [
+            {
+                "url": "https://example.com"
+            }
+        ],
+        "cookieDomains": [
+            "https://example.com"
+        ],
+        "sessionConfig": {
+            "storageName": "session-example",
+            "maxAgeSecs": 3600,
+            "maxUsageCount": 10,
+            "maxPoolSize": 120
+        },
+        "steps": [
+            {
+                "username": {
+                    "selector": "input#email",
+                    "timeoutMillis": 10000
+                },
+                "password": {
+                    "selector": "input#password"
+                },
+                "submit": {
+                    "selector": "input[type=\"submit\"]"
+                },
+                "failed": {
+                    "selector": "[role=\"alert\"],#captcha",
+                    "timeoutMillis": 10000
+                },
+                "waitForMillis": 15000
+            }
+        ]
+    },
+    "example_output_json_response": {
+        "session": {
+            "id": "session_id",
+            "cookies": [
+                {
+                    "name": "cookie_name",
+                    "value": "cookie_value",
+                    "domain": "example.com"
+                }
+            ],
+            "localStorage": {
+                "item1": "value1",
+                "item2": "value2"
+            },
+            "sessionStorage": {
+                "item1": "value1",
+                "item2": "value2"
+            }
+        },
+        "error": null
+    }
+}

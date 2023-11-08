@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "title, author, source_code, categories, data, url, customData, #error, #debug"
+}

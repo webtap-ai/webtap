@@ -1,0 +1,19 @@
+{
+    "id": "lukaskrivka/website-checker-puppeteer",
+    "url": "https://apify.com/lukaskrivka/website-checker-puppeteer",
+    "title": "Website Checker Runner Puppeteer \u00b7 Apify",
+    "name": "Website Checker Runner Puppeteer",
+    "pricing": "No credit card required",
+    "description": "Checks the provided website using Puppeteer. This is a low level runner, most likely you want to use the high level master actor - https://apify.com/lukaskrivka/website-checker",
+    "author_name": "Luk\u00e1\u0161 K\u0159ivka",
+    "maintained_by": "Maintained by Community",
+    "count_users": "82 users",
+    "count_runs": "1.8k runs",
+    "last_modified": "Modified 10 months ago",
+    "categories": "Developer tools",
+    "full_readme": "Website Checker Runner with Puppeteer\n\nChecks the provided website using Puppeteer. This is a low level runner, most likely you want to use the high level master actor - https://apify.com/lukaskrivka/website-checker",
+    "icon": "",
+    "author_url": "https://apify.com/lukaskrivka",
+    "author_avatar": "https://images.apifyusercontent.com/k_avqmVwjEXP1LCaEENbtk2maruHqYN9M4rAJrvX5nc/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9tUFN5RzM1TGZmajV5YnRnei8zeE5UZlFXajhzdlpBamg1ci1iaWdnZXJfcGhvdG8uanBn.webp",
+    "readme_summary": "# Website Checker Runner with Puppeteer\n\nChecks the provided website using Puppeteer. This is a low level runner, most\nlikely you want to use the high level master actor -\n<https://apify.com/lukaskrivka/website-checker>\n\n"
+}

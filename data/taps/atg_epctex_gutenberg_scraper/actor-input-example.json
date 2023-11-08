@@ -1,0 +1,15 @@
+{
+    "search": "book",
+    "maxItems": 5,
+    "startUrls": [
+        {
+            "url": "https://www.gutenberg.org/browse/recent/last7"
+        },
+        {
+            "url": "https://www.gutenberg.org/browse/titles/h"
+        }
+    ],
+    "proxyConfig": {
+        "useApifyProxy": true
+    }
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'zuzka@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'emma@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'mike@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'lucy@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'david@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'sarah@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'paul@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'linda@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'robert@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Coronavirus stats in Malaysia with email notification to 'julia@apify.com'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

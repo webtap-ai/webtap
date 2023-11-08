@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Website URL",
+        "type": "String",
+        "required": "Required",
+        "param_name": "baseUrl",
+        "description": "The URL to crawl. Only URLs pages in the sub-directory will be probed.",
+        "value_options": null
+    },
+    {
+        "name": "Max pages",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxPages",
+        "description": "The maximum number of pages that will be crawled. If empty, the number is not limited.",
+        "value_options": null
+    },
+    {
+        "name": "Notification emails",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "notificationEmails",
+        "description": "Add email addresses to receive notifications whenever the actor discovers broken links.",
+        "value_options": null
+    },
+    {
+        "name": "Save only broken links",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveOnlyBrokenLinks",
+        "description": "If false, all checked links and all information about them will be saved (not CSV friendly).",
+        "value_options": null
+    },
+    {
+        "name": "Crawl subdomains",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "crawlSubdomains",
+        "description": "If true, actor will crawl all links recursively.",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "The maximum number of pages from the target website to crawl in parallel. You can use this number to reduce the load on the target web server.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "This is required if you want to use Apify Proxy.",
+        "value_options": null
+    }
+]

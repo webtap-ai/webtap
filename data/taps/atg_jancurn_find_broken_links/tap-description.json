@@ -1,0 +1,36 @@
+{
+    "name": "Broken Link Checker",
+    "entities": [
+        "broken links",
+        "URL fragments",
+        "website pages",
+        "subdomains",
+        "link status",
+        "error messages"
+    ],
+    "filters": [
+        "Website URL",
+        "Max pages",
+        "Notification emails",
+        "Save only broken links",
+        "Crawl subdomains"
+    ],
+    "options": [
+        "Max pages",
+        "Notification emails",
+        "Save only broken links",
+        "Crawl subdomains",
+        "Max concurrency",
+        "Proxy configuration"
+    ],
+    "special_instructions": [
+        "The Website URL is a required field. If it is not provided, the tool will not be able to perform the check.",
+        "The Max pages option allows you to limit the number of pages that will be crawled. If left empty, the tool will crawl an unlimited number of pages.",
+        "The Notification emails option allows you to receive notifications whenever the tool discovers broken links. You can add multiple email addresses.",
+        "The Save only broken links option, if set to false, will save all checked links and all information about them. This is not CSV friendly.",
+        "The Crawl subdomains option, if set to true, will allow the tool to crawl all links recursively.",
+        "The Max concurrency option allows you to limit the number of pages from the target website to crawl in parallel. This can be used to reduce the load on the target web server.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

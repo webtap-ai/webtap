@@ -1,0 +1,19 @@
+{
+    "id": "jupri/shopify-scraper",
+    "url": "https://apify.com/jupri/shopify-scraper",
+    "title": "Shopify Scraper \u00b7 Apify",
+    "name": "Shopify Commerce",
+    "pricing": "No credit card required",
+    "description": "Scrape products data from shopify e-commerce websites.",
+    "author_name": "cat",
+    "maintained_by": "Maintained by Community",
+    "count_users": "254 users",
+    "count_runs": "5.3k runs",
+    "last_modified": "Modified 12 months ago",
+    "categories": "E-commerce",
+    "full_readme": "Welcome to Shopify Scraper\n\nAbout Shopify.com\n\nShopify Inc. is a Canadian multinational e-commerce company headquartered in Ottawa, Ontario. Shopify is the name of its proprietary e-commerce platform for online stores and retail point-of-sale systems.[3] The Shopify platform offers online retailers a suite of services including payments, marketing, shipping and customer engagement tools.[4]\n\nTutorial\n\n ...almost there...\n\nRelated Actors\n\n ",
+    "icon": "https://images.apifyusercontent.com/GNp6HNLa7EzvM-ZOnXgGAsrk-yr-wD6u7Jv9kezRDsM/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9mZXpsU3RXSmV1WWtNa1JCay9hUkdjbjZiY2Z3cmtOWTNXai1zaG9waWZ5LWFwcC1kZXYud2VicA.webp",
+    "author_url": "https://apify.com/jupri",
+    "author_avatar": "https://images.apifyusercontent.com/Rf2kswuF5qzYsJKwpCL9nsDkBYW5YiGFUIugmui7uIA/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9zVEVtbXc2Yjd0N1dKdU13ZS8za3FZSDZkTjRRTEFwQmVUSi1jYXQuanBn.webp",
+    "readme_summary": "Scrape products data from shopify e-commerce websites."
+}

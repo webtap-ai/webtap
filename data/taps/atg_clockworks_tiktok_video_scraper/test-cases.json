@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape data from the following TikTok video: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok videos: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok video and download the video file: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok video and download the video cover image: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok video and download the slideshow images: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok video and store the videos in a specific Key Value Store: https://www.tiktok.com/@apifytech/video/7200360993149553925",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok videos and download the video files: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok videos and download the video cover images: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok videos and download the slideshow images: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape data from the following TikTok videos and store the videos in a specific Key Value Store: ['https://www.tiktok.com/@olympics/video/7208589533632269574', 'https://www.tiktok.com/@olympics/video/7210447318028455173', 'https://www.tiktok.com/@olympics/video/7200420986661965061']",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

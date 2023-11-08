@@ -1,0 +1,44 @@
+{
+    "example_json_input": {
+        "keywords": [
+            "watch",
+            "watches",
+            "rolex"
+        ],
+        "startUrl": "https://www.chrono24.com/watches/mens-watches--62.htm",
+        "maxDepth": 1,
+        "maxPagesPerCrawl": 10,
+        "caseSensitive": false,
+        "searchScripts": false,
+        "scrapeWithBrowser": false
+    },
+    "example_output_json_response": [
+        {
+            "url": "https://www.chrono24.com/watches/mens-watches--62.htm",
+            "depth": 0,
+            "result": {
+                "watch": 63,
+                "watches": 81,
+                "rolex": 57
+            }
+        },
+        {
+            "url": "https://www.chrono24.com/user/index.htm",
+            "depth": 1,
+            "result": {
+                "watch": 9,
+                "watches": 13,
+                "rolex": 1
+            }
+        },
+        {
+            "url": "https://www.chrono24.com/info/watch-collection.htm",
+            "depth": 1,
+            "result": {
+                "watch": 56,
+                "watches": 23,
+                "rolex": 1
+            }
+        }
+    ]
+}

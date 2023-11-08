@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, postId, feedbackId, date, url, text, likesCount, sharesCount, viewsCount, commentsCount, hashtag"
+}

@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "data_task": "Extract contact details from Google Maps data without following any links",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract contact details from Google Maps data with a maximum of 20 requests per start URL using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape contact details from Google Maps data with a maximum depth of 5 links away from the start URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,41 @@
+{
+    "name": "G2 Product Reviews",
+    "entities": [
+        "product review",
+        "product details",
+        "reviewer details"
+    ],
+    "filters": [
+        "product name slug",
+        "operation mode",
+        "response type",
+        "sorting key",
+        "strict search",
+        "include article content"
+    ],
+    "options": [
+        "Limit number of results",
+        "Sorting key for reviews",
+        "Sorting key for products",
+        "Sorting key for discussions",
+        "Enable development transformations",
+        "Enable development dataset",
+        "Clear dataset before insert/update",
+        "Customize dataset name",
+        "Use column name from results as Key for Key-Value Storage"
+    ],
+    "special_instructions": [
+        "The product name slug(s) should be separated by spaces, line-break or commas",
+        "The operation mode can be one of the following: 'review', 'product', 'article', 'discuss'",
+        "The response type can be either 'text' or 'video'",
+        "The sorting key for reviews can be one of the following: 'default', 'newest', 'oldest', 'most-helpful', 'highrated', 'lowrated', 'least-helpful'",
+        "The sorting key for products can be one of the following: 'relevance', 'popular', 'rating'",
+        "The sorting key for discussions can be one of the following: 'comment', 'helpful', 'newest', 'pinned'",
+        "The 'strict search' option limits the search to only specified (product) slugs",
+        "The 'include article content' option may result in huge result sizes",
+        "The 'dev_transform_enable', 'dev_dataset_enable', 'dev_dataset_clear' options are for development purposes and may not be necessary for all users",
+        "The 'dev_dataset_name' option allows you to customize the dataset name using the following masks: {ACTOR} = actor name, {DATE} = date (YYYYMMDD), {TIME} = time (HHMMSS). The default is: data-{ACTOR}-{DATE}-{TIME}",
+        "The 'dev_dataset_key' option allows you to use a column name from the results as a Key for Key-Value Storage. For example: product_id (must be unique)",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

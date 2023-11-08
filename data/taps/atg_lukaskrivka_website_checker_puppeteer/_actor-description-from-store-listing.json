@@ -1,0 +1,56 @@
+{
+    "example_json_input": {
+        "title": "Website Checker Runner Puppeteer",
+        "actor": "lukaskrivka/website-checker-puppeteer",
+        "description": "Checks the provided website using Puppeteer. This is a low level runner, most likely you want to use the high level master actor - https://apify.com/lukaskrivka/website-checker",
+        "categories": [
+            "Developer tools"
+        ],
+        "maintained_by": {
+            "author": "Luk\u00e1\u0161 K\u0159ivka",
+            "avatar": "https://images.apifyusercontent.com/jVuC2RyXn8hJV9Qdokz-eCvlsCQPAFOYeKJMnvQ8veY/rs:fill:32:32/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20va19hdnFtVndqRVhQMUxDYUVFTmJ0azJtYXJ1SHFZTjlNNHJBSnJ2WDVuYy9yczpmaWxsOjE5MjoxOTIvYUhSMGNITTZMeTloY0dsbWVTMXBiV0ZuWlMxMWNHeHZZV1J6TFhCeWIyUXVjek11WVcxaGVtOXVZWGR6TG1OdmJTOXRVRk41UnpNMVRHWm1halY1WW5SbmVpOHplRTVVWmxGWGFqaHpkbHBCYW1nMWNpMWlhV2RuWlhKZmNHaHZkRzh1YW5Cbi53ZWJw.webp"
+        },
+        "stats": {
+            "users": 101,
+            "runs": 1800,
+            "modified": "10 months ago"
+        },
+        "related_actors": [
+            "apify/web-scraper",
+            "apify/website-content-crawler",
+            "apify/cheerio-scraper",
+            "apify/puppeteer-scraper"
+        ],
+        "where_next": [
+            "Build new tools",
+            "Enterprise solutions"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "Website Checker Runner Puppeteer",
+        "actor": "lukaskrivka/website-checker-puppeteer",
+        "description": "Checks the provided website using Puppeteer. This is a low level runner, most likely you want to use the high level master actor - https://apify.com/lukaskrivka/website-checker",
+        "categories": [
+            "Developer tools"
+        ],
+        "maintained_by": {
+            "author": "Luk\u00e1\u0161 K\u0159ivka",
+            "avatar": "https://images.apifyusercontent.com/jVuC2RyXn8hJV9Qdokz-eCvlsCQPAFOYeKJMnvQ8veY/rs:fill:32:32/aHR0cHM6Ly9pbWFnZXMuYXBpZnl1c2VyY29udGVudC5jb20va19hdnFtVndqRVhQMUxDYUVFTmJ0azJtYXJ1SHFZTjlNNHJBSnJ2WDVuYy9yczpmaWxsOjE5MjoxOTIvYUhSMGNITTZMeTloY0dsbWVTMXBiV0ZuWlMxMWNHeHZZV1J6TFhCeWIyUXVjek11WVcxaGVtOXVZWGR6TG1OdmJTOXRVRk41UnpNMVRHWm1halY1WW5SbmVpOHplRTVVWmxGWGFqaHpkbHBCYW1nMWNpMWlhV2RuWlhKZmNHaHZkRzh1YW5Cbi53ZWJw.webp"
+        },
+        "stats": {
+            "users": 101,
+            "runs": 1800,
+            "modified": "10 months ago"
+        },
+        "related_actors": [
+            "apify/web-scraper",
+            "apify/website-content-crawler",
+            "apify/cheerio-scraper",
+            "apify/puppeteer-scraper"
+        ],
+        "where_next": [
+            "Build new tools",
+            "Enterprise solutions"
+        ]
+    }
+}

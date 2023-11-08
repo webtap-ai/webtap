@@ -1,0 +1,24 @@
+{
+    "name": "Top Universities Rankings",
+    "entities": [
+        "university ranking",
+        "university details"
+    ],
+    "filters": [
+        "mode",
+        "year",
+        "country"
+    ],
+    "options": [
+        "maxItems",
+        "proxy"
+    ],
+    "special_instructions": [
+        "The 'mode' filter can be either 'basic' or 'visitDetail'. 'Basic' mode scrapes only a list of the ranked universities with basic information. 'VisitDetail' mode visits each university's detail page to collect detailed information.",
+        "The 'year' filter selects a year of the QS rankings. It can be any year from 2017 to 2022.",
+        "The 'country' filter allows you to choose a specific country or select 'All countries' to not filter universities.",
+        "The 'maxItems' option limits the number of universities you want to get in the final dataset. The maximum value is 100.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

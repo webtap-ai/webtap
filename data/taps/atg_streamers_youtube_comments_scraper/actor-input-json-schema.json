@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "Enter a link to a specific Youtube video YouTube video. You can also import a CSV file or Google Sheet with a list of URLs.\n",
+            "example": [
+                {
+                    "url": "https://www.youtube.com/watch?v=xObhZ0Ga7EQ"
+                }
+            ]
+        },
+        "maxComments": {
+            "type": "integer",
+            "description": "Limit the number of comments you want to scrape per video. Input 0 or leave the field empty to not scrape any comments.",
+            "example": 10
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

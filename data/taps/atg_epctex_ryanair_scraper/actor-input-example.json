@@ -1,0 +1,12 @@
+{
+    "mode": "ROUND",
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "adults": 1,
+    "origin": "BER",
+    "flexDays": 2,
+    "returnDate": "2023-10-14",
+    "destination": "BCN",
+    "departureDate": "2023-10-10"
+}

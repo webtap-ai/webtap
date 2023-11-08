@@ -1,0 +1,112 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "query": {
+            "type": "string",
+            "description": "What to search Kickstarter for",
+            "example": "Board games"
+        },
+        "maxResults": {
+            "type": "integer",
+            "description": "Limit number of results",
+            "example": 100
+        },
+        "category": {
+            "type": "string",
+            "description": "Category to search in",
+            "example": "games",
+            "enum": [
+                "All",
+                "art",
+                "art/ceramics",
+                "art/conceptual art",
+                "art/digital art",
+                "art/illustration",
+                "art/installations",
+                "art/mixed media",
+                "..."
+            ]
+        },
+        "location": {
+            "type": "string",
+            "description": "Location where you want to search",
+            "example": "United States"
+        },
+        "status": {
+            "type": "string",
+            "description": "Status of the project",
+            "example": "Successful",
+            "enum": [
+                "All",
+                "Live",
+                "Successful",
+                "Upcoming"
+            ]
+        },
+        "pledged": {
+            "type": "string",
+            "description": "Amount pledged",
+            "example": "$1,000 to $10,000 pledged",
+            "enum": [
+                "All",
+                "< $1,000 pledged",
+                "$1,000 to $10,000 pledged",
+                "$10,000 to $100,000 pledged",
+                "..."
+            ]
+        },
+        "goal": {
+            "type": "string",
+            "description": "Goal",
+            "example": "$1,000 to $10,000 goal",
+            "enum": [
+                "All",
+                "< $1,000 goal",
+                "$1,000 to $10,000 goal",
+                "$10,000 to $100,000 goal",
+                "$100,000 to $1,000,000 goal",
+                "..."
+            ]
+        },
+        "raised": {
+            "type": "string",
+            "description": "% Raised",
+            "example": "All",
+            "enum": [
+                "All",
+                "< 75% raised",
+                "75% to 100% raised",
+                "> 100% raised"
+            ]
+        },
+        "sort": {
+            "type": "string",
+            "description": "Allows you to change the",
+            "example": "newest",
+            "enum": [
+                "newest",
+                "popularity",
+                "end_date",
+                "most_funded",
+                "most_backed",
+                "magic"
+            ]
+        },
+        "datasetName": {
+            "type": "string",
+            "description": "Use this if you want the data to be written into named dataset, setting this will overwrite the data with each run",
+            "example": ""
+        },
+        "proxyConfig": {
+            "type": "object",
+            "description": "Proxy group to use",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "proxyConfig"
+    ]
+}

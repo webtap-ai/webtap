@@ -1,0 +1,29 @@
+{
+    "name": "Malaysia Coronavirus Statistics",
+    "entities": [
+        "examined_people",
+        "infected_people",
+        "deceased_people",
+        "testedPositive",
+        "deceased",
+        "recovered",
+        "activeCases",
+        "tested",
+        "critical",
+        "sourceUrl",
+        "readMe"
+    ],
+    "filters": [
+        "email"
+    ],
+    "options": [
+        "Hourly updates"
+    ],
+    "special_instructions": [
+        "Email is required for the tool to function properly. If not provided, the tool will return an error.",
+        "The tool provides hourly updates on the statistics. If you need real-time data, please consider this factor.",
+        "The tool fetches data from the official Malaysia statistics and worldometers.info. If these sources are down, the tool might not function as expected.",
+        "The tool does not provide any options to filter the data. It returns the complete statistics available at the time of the request.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "XML Downloader",
+    "entities": [
+        "XML file content"
+    ],
+    "filters": [
+        "XML URLs"
+    ],
+    "options": [
+        "Proxy selection"
+    ],
+    "special_instructions": [
+        "Enter the URLs of the XML files you want to download in the 'sources' field. If it is not provided, return can_fulfill false and explain accordingly",
+        "The output fields will always include 'request.url', 'request.uniqueKey', 'request.method', 'request.noRetry', 'request.retryCount', 'request.errorMessages', 'request.headers', 'request.userData'",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "example_json_input": {
+        "name": "Abc Web Test",
+        "product_link": "https://console.apify.com/...",
+        "start_urls": [
+            "https://www.example.com"
+        ],
+        "link_selector": "a[href]",
+        "page_function": "async function pageFunction(context) {\n  const $ = context.jQuery;\n  const pageTitle = $('title').first().text();\n  return {\n    url: context.request.url,\n    pageTitle\n  };\n}"
+    },
+    "example_output_json_response": {
+        "message": "Hello world!",
+        "#error": false,
+        "#debug": {
+            "requestId": "fvwscO2UJLdr10B",
+            "url": "https://www.example.com/",
+            "loadedUrl": "https://www.example.com/",
+            "method": "GET",
+            "retryCount": 0,
+            "errorMessages": null,
+            "statusCode": 200
+        }
+    }
+}

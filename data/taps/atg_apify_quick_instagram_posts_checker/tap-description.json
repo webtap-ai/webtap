@@ -1,0 +1,22 @@
+{
+    "name": "Instagram Posts Checker",
+    "entities": [
+        "Instagram profile",
+        "Instagram post"
+    ],
+    "filters": [
+        "Instagram profile URL",
+        "Instagram post URL"
+    ],
+    "options": [
+        "Use Apify residential proxy",
+        "Provide own proxy servers"
+    ],
+    "special_instructions": [
+        "Only URLs to public profiles or posts are expected to work, everything else will return an error",
+        "The tool returns a variety of data fields for each Instagram profile or post, including url, followers_count, full_name, graphql_media, has_public_story, is_verified, owner_id, posts_count, profile_link, profile_link_ios, profile_pic_url, pronouns, type, username, verified, shortcode_media, __typename, id, shortcode, commenter_count, dimensions, display_url, display_resources, is_video, media_overlay_info, owner, taken_at_timestamp, edge_media_to_caption, edge_media_to_sponsor_user, is_affiliate, is_paid_partnership, like_and_view_counts_disabled, media_preview, location, edge_media_to_comment, edge_liked_by, coauthor_producers, pinned_for_users, edge_sidecar_to_children",
+        "The usage cost is around 0.02CUs per 100 posts or profiles",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

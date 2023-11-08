@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "data, url, title, links, normalizedUrl, httpStatus, fragment, fragmentValid, crawled, errorMessage, isBaseWebsite, linkUrls, anchors, referrer"
+}

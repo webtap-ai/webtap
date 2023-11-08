@@ -1,0 +1,21 @@
+{
+    "name": "Pinterest Data Extractor",
+    "entities": [
+        "user profile",
+        "pins"
+    ],
+    "filters": [
+        "startUrls",
+        "maxPinsCnt"
+    ],
+    "options": [
+        "useApifyProxy"
+    ],
+    "special_instructions": [
+        "startUrls is a required field, it should contain the names or URLs to start with. If it is not provided, the tool will not function properly.",
+        "maxPinsCnt is an optional field, it defines the maximum number of pins to be extracted per profile. If not provided, the tool will extract all available pins.",
+        "The tool returns a variety of fields related to the user profile and pins. If a field is not listed in the output return fields, it won't be returned.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

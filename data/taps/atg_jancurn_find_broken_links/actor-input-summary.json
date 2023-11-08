@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "baseUrl, maxPages, notificationEmails, saveOnlyBrokenLinks, crawlSubdomains, maxConcurrency, proxyConfiguration"
+}

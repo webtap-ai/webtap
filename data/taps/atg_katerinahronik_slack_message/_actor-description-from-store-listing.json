@@ -1,0 +1,12 @@
+{
+    "example_json_input": {
+        "token": "your_slack_token",
+        "message": "Hello from Apify actor!",
+        "channel": "#general"
+    },
+    "example_output_json_response": {
+        "status": "success",
+        "message": "Message sent successfully",
+        "timestamp": "2023-01-01T10:00:00Z"
+    }
+}

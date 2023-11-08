@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "query": {
+            "type": "string",
+            "description": "keywords, slug(s) separated by spaces, line-break or commas",
+            "example": "apify"
+        },
+        "mode": {
+            "type": "string",
+            "description": "Operation Mode",
+            "enum": [
+                "review",
+                "product",
+                "article",
+                "discuss"
+            ]
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Limit number of results (per slug for Search Reviews Mode).",
+            "example": 10
+        },
+        "response_type": {
+            "type": "string",
+            "description": "",
+            "enum": [
+                "text",
+                "video"
+            ]
+        },
+        "sort_review": {
+            "type": "string",
+            "description": "Sorting key",
+            "enum": [
+                "default",
+                "newest",
+                "oldest",
+                "most-helpful",
+                "highrated",
+                "lowrated",
+                "least-helpful"
+            ]
+        },
+        "strict_search": {
+            "type": "boolean",
+            "description": "Limit search to only specified (product) slugs."
+        },
+        "no_parse": {
+            "type": "boolean",
+            "description": "WARNING: \ud83d\udc80 Unreliable Parser \ud83d\udc80"
+        },
+        "sort_product": {
+            "type": "string",
+            "description": "Sorting key",
+            "enum": [
+                "relevance",
+                "popular",
+                "rating"
+            ]
+        },
+        "include_article_content": {
+            "type": "boolean",
+            "description": "WARNING: The results size could be huge."
+        },
+        "sort_discuss": {
+            "type": "string",
+            "description": "Sorting key",
+            "enum": [
+                "comment",
+                "helpful",
+                "newest",
+                "pinned"
+            ]
+        },
+        "dev_transform_enable": {
+            "type": "boolean",
+            "description": ""
+        },
+        "dev_transform_fields": {
+            "type": "array",
+            "description": ""
+        },
+        "dev_dataset_enable": {
+            "type": "boolean",
+            "description": ""
+        },
+        "dev_dataset_clear": {
+            "type": "boolean",
+            "description": "Clear Dataset before insert/update."
+        },
+        "dev_dataset_name": {
+            "type": "string",
+            "description": "Use mask to customize dataset name:\n\n{ACTOR} = actor name\n{DATE} = date (YYYYMMDD)\n{TIME} = time (HHMMSS)\n\ndefault: data-{ACTOR}-{DATE}-{TIME}"
+        },
+        "dev_dataset_key": {
+            "type": "string",
+            "description": "Column name from results to use as Key for Key-Value Storage. For example: product_id (must be unique)."
+        }
+    },
+    "required": [
+        "query"
+    ]
+}

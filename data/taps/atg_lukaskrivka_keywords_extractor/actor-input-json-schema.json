@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "A static list of URLs to scrape. To be able to add new URLs on the fly, enable the Use request queue option.\n\nFor details, see Start URLs in README.",
+            "example": [
+                {
+                    "url": "https://apify.com"
+                }
+            ]
+        },
+        "useBrowser": {
+            "type": "boolean",
+            "description": "If on, it will use regular borwser for scraping."
+        },
+        "keywords": {
+            "type": "array",
+            "description": "List of keywords to search and count on every page",
+            "example": [
+                "watch",
+                "watches",
+                "rolex"
+            ]
+        },
+        "caseSensitive": {
+            "type": "boolean",
+            "description": "If on, it will only match keywords with exact upper or lower case.",
+            "example": false
+        },
+        "scanScripts": {
+            "type": "boolean",
+            "description": "If on, it will also count keywords appearing inside scripts."
+        },
+        "linkSelector": {
+            "type": "string",
+            "description": "A CSS selector saying which links on the page (<a> elements with href attribute) shall be followed and added to the request queue. This setting only applies if Use request queue is enabled. To filter ",
+            "example": "a[href]"
+        },
+        "pseudoUrls": {
+            "type": "array",
+            "description": "Specifies what kind of URLs found by Link selector should be added to the request queue. A pseudo-URL is a URL with regular expressions enclosed in [] brackets, e.g. http://www.example.com/[.*]. This ",
+            "example": [
+                {
+                    "purl": "https://apify.com/[.*]"
+                }
+            ]
+        },
+        "maxDepth": {
+            "type": "integer",
+            "description": "How many links deep from the Start URLs do you want to crawl. Start URLs have depth 0.",
+            "example": 1
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Specifies proxy servers that will be used by the scraper in order to hide its origin.\n\nFor details, see Proxy configuration in README.",
+            "example": {
+                "useApifyProxy": false
+            }
+        },
+        "maxPagesPerCrawl": {
+            "type": "integer",
+            "description": "The maximum number of pages that the scraper will load. The scraper will stop when this limit is reached. It's always a good idea to set this limit in order to prevent excess platform usage for miscon",
+            "example": 10
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Specified the maximum number of pages that can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. This option e"
+        },
+        "retireInstanceAfterRequestCount": {
+            "type": "integer",
+            "description": "How often will the browser itself rotate. Pick higher for smaller consumption, pick less to rotate (test) more proxies"
+        },
+        "useChrome": {
+            "type": "boolean",
+            "description": "Only works for puppeteer type. Be careful that Chrome is not guaranteed to work with Puppeteer."
+        },
+        "waitFor": {
+            "type": "string",
+            "description": "Only works for puppeteer type. Will wait on each page. You can provide number in ms or a selector."
+        }
+    },
+    "required": [
+        "startUrls",
+        "keywords"
+    ]
+}

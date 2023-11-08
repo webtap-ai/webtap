@@ -1,0 +1,52 @@
+{
+    "example_json_input": {
+        "query": "Board games",
+        "maxResults": 100,
+        "category": "games",
+        "location": "United States",
+        "sort": "newest",
+        "proxyConfig": {
+            "useApifyProxy": true
+        },
+        "status": "Successful",
+        "pledged": "$1,000 to $10,000 pledged",
+        "goal": "$1,000 to $10,000 goal",
+        "raised": "All",
+        "datasetName": ""
+    },
+    "example_output_json_response": {
+        "id": 1662550845,
+        "photo": null,
+        "name": "Escape from HelL",
+        "blurb": "A board game about getting to Manhattan from Williamsburg once the L train shuts down.",
+        "goal": 2500,
+        "pledged": 7580,
+        "state": "successful",
+        "slug": "escape-from-hell",
+        "disable_communication": false,
+        "country": "US",
+        "country_displayable_name": "the United States",
+        "currency": "USD",
+        "currency_symbol": "$",
+        "currency_trailing_code": true,
+        "deadline": 1547854200,
+        "state_changed_at": 1547854200,
+        "created_at": 1543533003,
+        "launched_at": 1545138257,
+        "staff_pick": false,
+        "is_starrable": false,
+        "backers_count": 195,
+        "static_usd_rate": 1,
+        "usd_pledged": "7580.0",
+        "converted_pledged_amount": 7580,
+        "fx_rate": 1,
+        "usd_exchange_rate": 1,
+        "current_currency": "USD",
+        "usd_type": "international",
+        "spotlight": true,
+        "creatorId": 696946511,
+        "creatorName": "Escape from Hell",
+        "creatorAvatar": "https://ksr-ugc.imgix.net/assets/023/572/288/d31afa951de00ed08ad0c8876cfbb0f2_original.png?ixlib=rb-4.0.2&w=160&h=160&fit=crop&v=1544981648&auto=format&frame=1&q=92&s=c7c176c48efa1a78213c52d58f7b5b98",
+        "creatorUrl": "https://www.kickstarter.com/profile/escapefromhell"
+    }
+}

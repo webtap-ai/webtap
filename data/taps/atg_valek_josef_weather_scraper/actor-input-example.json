@@ -1,0 +1,15 @@
+{
+    "units": "imperial",
+    "maxItems": 10,
+    "locations": [],
+    "startUrls": [
+        {
+            "url": "https://weather.com/weather/today/l/f892433d7660da170347398eb8e3d722d8d362fe7dd15af16ce88324e1b96e70"
+        }
+    ],
+    "timeFrame": "today",
+    "locationIds": [],
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

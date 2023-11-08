@@ -1,0 +1,28 @@
+{
+    "example_json_input": {
+        "title": "Monitoring Reporter Slack",
+        "actor": "apify/monitoring-reporter-slack",
+        "description": "This actor generates a slack report and sends it to the specified channel.",
+        "stats": {
+            "users": 33,
+            "runs": 45000,
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "Developer tools"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "Monitoring Reporter Slack",
+        "actor": "apify/monitoring-reporter-slack",
+        "description": "This actor generates a slack report and sends it to the specified channel.",
+        "stats": {
+            "users": 33,
+            "runs": 45000,
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "Developer tools"
+        ]
+    }
+}

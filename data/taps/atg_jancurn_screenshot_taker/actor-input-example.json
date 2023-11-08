@@ -1,0 +1,10 @@
+{
+    "urls": [
+        {
+            "url": "https://www.example.com"
+        },
+        {
+            "url": "https://sdk.apify.com"
+        }
+    ]
+}

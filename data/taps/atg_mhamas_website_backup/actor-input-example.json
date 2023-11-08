@@ -1,0 +1,11 @@
+{
+    "startURLs": [
+        {
+            "url": "https://blog.apify.com"
+        }
+    ],
+    "linkSelector": "a",
+    "proxyConfiguration": {
+        "useApifyProxy": false
+    }
+}

@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "geo": {
+            "type": "string",
+            "description": "The country to fetch the information from",
+            "example": "US",
+            "enum": [
+                "AR",
+                "AU",
+                "AT",
+                "BE",
+                "BR",
+                "CA",
+                "CL",
+                "CO",
+                "CZ",
+                "DK",
+                "EG",
+                "FI",
+                "FR",
+                "DE",
+                "GR",
+                "HK",
+                "HU",
+                "IN",
+                "ID",
+                "IE",
+                "IL",
+                "IT",
+                "JP",
+                "KE",
+                "MY",
+                "MX",
+                "NL",
+                "NZ",
+                "NG",
+                "NO",
+                "PH",
+                "PL",
+                "PT",
+                "RO",
+                "RU",
+                "SA",
+                "SG",
+                "ZA",
+                "KR",
+                "SE",
+                "CH",
+                "TW",
+                "TH",
+                "TR",
+                "UA",
+                "GB",
+                "US",
+                "VN"
+            ]
+        },
+        "outputMode": {
+            "type": "string",
+            "description": "Select the way you want the dataset to be output",
+            "example": "complete",
+            "enum": [
+                "complete",
+                "queries",
+                "related",
+                "articles"
+            ]
+        },
+        "fromDate": {
+            "type": "string",
+            "description": "Get items starting from this date going to the past. Max 29 days in the past",
+            "example": "2 days"
+        },
+        "toDate": {
+            "type": "string",
+            "description": "Get items from fromDate to this date. Max 29 days in the past",
+            "example": "3 days"
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit the total amount of results you get",
+            "example": 100
+        },
+        "proxy": {
+            "type": "object",
+            "description": "The best option is usually Automatic proxy. But you can also use your own proxies or no proxy",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "Add or remove properties on the output object or omit the output returning null"
+        },
+        "extendScraperFunction": {
+            "type": "string",
+            "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page"
+        },
+        "customData": {
+            "type": "object",
+            "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+            "example": {}
+        }
+    },
+    "required": [
+        "geo",
+        "proxy"
+    ]
+}

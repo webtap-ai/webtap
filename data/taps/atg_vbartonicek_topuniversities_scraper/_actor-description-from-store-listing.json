@@ -1,0 +1,23 @@
+{
+    "example_json_input": {
+        "mode": "basic",
+        "year": "2020",
+        "country": "Canada"
+    },
+    "example_output_json_response": {
+        "actor_name": "Top Universities Scraper",
+        "actor_author": "Vratislav Bartonicek",
+        "actor_description": "Scrapes the QS World University Rankings to get a list of the top universities.",
+        "api_endpoint": "/vbartonicek/topuniversities-scraper/api",
+        "source_code_repository": "vbartonicek/topuniversities-scraper",
+        "input_parameters": {
+            "mode": "String",
+            "year": "String",
+            "country": "String"
+        },
+        "future_plans": [
+            "To scrape more information in the detailed mode",
+            "To be able to filter countries for a region (e.g. Europe)"
+        ]
+    }
+}

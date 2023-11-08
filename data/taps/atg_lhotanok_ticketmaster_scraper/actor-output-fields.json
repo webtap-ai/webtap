@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "events.id, events.name, events.category, events.genre, events.date.title, events.date.subtitle, events.location, events.ticketPrice, events.performers.name, events.performers.url, id, url, name, description, image, segmentName, genreName, dateTitle, dateSubTitle, streetAddress, addressLocality, addressRegion, postalCode, addressCountry, placeUrl, priceRanges.currency, priceRanges.min, performers.name, performers.url"
+}

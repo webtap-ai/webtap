@@ -1,0 +1,28 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Download XML files from the following URLs: 'https://www.w3schools.com/xml/plant_catalog.xml', 'https://www.w3schools.com/xml/cd_catalog.xml' using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided XMLs To Dataset INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by XMLs To Dataset is reliable and solely based on compatibility between DATA TASK and XMLs To Dataset OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given XMLs To Dataset OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: XMLs To Dataset has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "sources": [
+                    {
+                        "url": "https://www.w3schools.com/xml/plant_catalog.xml"
+                    },
+                    {
+                        "url": "https://www.w3schools.com/xml/cd_catalog.xml"
+                    }
+                ],
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

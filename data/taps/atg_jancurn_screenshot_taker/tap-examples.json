@@ -1,0 +1,293 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.google.com', 'https://www.bing.com', with a page load timeout of 10 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.google.com"
+                    },
+                    {
+                        "url": "https://www.bing.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 10,
+                "pageMaxRetryCount": 3,
+                "waitUntil": "networkidle0",
+                "viewportWidth": 1280,
+                "viewportHeight": 800,
+                "delaySecs": 0,
+                "imageType": "png",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.facebook.com', 'https://www.twitter.com', with a viewport width of 1200 and height of 800",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.facebook.com"
+                    },
+                    {
+                        "url": "https://www.twitter.com"
+                    }
+                ],
+                "viewportWidth": 1200,
+                "viewportHeight": 800
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.instagram.com', 'https://www.snapchat.com', with a viewport width of 1024 and height of 768, and a delay of 5 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.instagram.com"
+                    },
+                    {
+                        "url": "https://www.snapchat.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 60,
+                "pageMaxRetryCount": 3,
+                "waitUntil": "networkidle2",
+                "viewportWidth": 1024,
+                "viewportHeight": 768,
+                "delaySecs": 5,
+                "imageType": "png",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.linkedin.com', 'https://www.github.com', with a viewport width of 1366 and height of 768, and an image format of 'jpeg'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.linkedin.com"
+                    },
+                    {
+                        "url": "https://www.github.com"
+                    }
+                ],
+                "viewportWidth": 1366,
+                "viewportHeight": 768,
+                "imageType": "jpeg",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.disneyplus.com', 'https://www.primevideo.com', with a page load timeout of 30 seconds, retry count of 5, and wait until 'domcontentloaded'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.disneyplus.com"
+                    },
+                    {
+                        "url": "https://www.primevideo.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 30,
+                "pageMaxRetryCount": 5,
+                "waitUntil": "domcontentloaded"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.cnn.com', 'https://www.foxnews.com', with a viewport width of 1600 and height of 900, an image format of 'jpeg', and a delay of 3 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.cnn.com"
+                    },
+                    {
+                        "url": "https://www.foxnews.com"
+                    }
+                ],
+                "viewportWidth": 1600,
+                "viewportHeight": 900,
+                "delaySecs": 3,
+                "imageType": "jpeg",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.bbc.com', 'https://www.aljazeera.com', with a viewport width of 1280 and height of 720, an image format of 'png', and a delay of 8 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.bbc.com"
+                    },
+                    {
+                        "url": "https://www.aljazeera.com"
+                    }
+                ],
+                "viewportWidth": 1280,
+                "viewportHeight": 720,
+                "delaySecs": 8,
+                "imageType": "png",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.nytimes.com', 'https://www.washingtonpost.com', with a page load timeout of 35 seconds, retry count of 6, and wait until 'load'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.nytimes.com"
+                    },
+                    {
+                        "url": "https://www.washingtonpost.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 35,
+                "pageMaxRetryCount": 6,
+                "waitUntil": "load"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.nationalgeographic.com', 'https://www.discovery.com', with a page load timeout of 45 seconds, retry count of 8, and wait until 'domcontentloaded'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.nationalgeographic.com"
+                    },
+                    {
+                        "url": "https://www.discovery.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 45,
+                "pageMaxRetryCount": 8,
+                "waitUntil": "domcontentloaded"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Take screenshots of the following URLs: 'https://www.nasa.gov', 'https://www.spacex.com', with a viewport width of 1680 and height of 1050, an image format of 'jpeg', and a delay of 2 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Screenshot Taker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Screenshot Taker is reliable and solely based on compatibility between DATA TASK and Screenshot Taker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Screenshot Taker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Screenshot Taker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urls": [
+                    {
+                        "url": "https://www.nasa.gov"
+                    },
+                    {
+                        "url": "https://www.spacex.com"
+                    }
+                ],
+                "pageLoadTimeoutSecs": 60,
+                "pageMaxRetryCount": 3,
+                "waitUntil": "networkidle2",
+                "viewportWidth": 1680,
+                "viewportHeight": 1050,
+                "delaySecs": 2,
+                "imageType": "jpeg",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "startUrls": [
+        "pinterest.com/poltronafrau",
+        "bellinthewoods"
+    ],
+    "maxPinsCnt": 50,
+    "proxyConfig": {
+        "useApifyProxy": true
+    }
+}

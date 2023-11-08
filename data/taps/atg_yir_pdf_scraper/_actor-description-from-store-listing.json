@@ -1,0 +1,22 @@
+{
+    "example_json_input": {
+        "title": "Example PDF Scraper",
+        "author": "yir/pdf-scraper",
+        "description": "Scrape PDF text",
+        "actor_stats": {
+            "users": 310,
+            "runs": 4200,
+            "modified": "7 months ago"
+        }
+    },
+    "example_output_json_response": {
+        "title": "Example PDF Scraper",
+        "author": "yir/pdf-scraper",
+        "description": "Scrape PDF text",
+        "actor_stats": {
+            "users": 310,
+            "runs": 4200,
+            "modified": "7 months ago"
+        }
+    }
+}

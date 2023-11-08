@@ -1,0 +1,42 @@
+[
+    {
+        "name": "A list of Twitter search terms",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "searchTerms",
+        "description": "A list of Twitter search terms",
+        "value_options": null
+    },
+    {
+        "name": "A list of Twitter URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "urls",
+        "description": "A list of Twitter URLs",
+        "value_options": null
+    },
+    {
+        "name": "Maximum number of tweets to fecth for this run",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxTweets",
+        "description": "Maximum number of tweets to fecth for this run",
+        "value_options": null
+    },
+    {
+        "name": "Select the Search mode. Default is 'Live' - it returns more tweet results",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "searchMode",
+        "description": "Select the Search mode. Default is 'Live' - it returns more tweet results",
+        "value_options": "\"top\": string\n\"live\": string\n\"user\": string\n\"image\": string\n\"video\": string"
+    },
+    {
+        "name": "Max request retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Set the max request retries",
+        "value_options": null
+    }
+]

@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "domain, url, response, page, social, screenshot, html, text"
+}

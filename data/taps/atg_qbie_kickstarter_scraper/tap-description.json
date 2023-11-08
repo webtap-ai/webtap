@@ -1,0 +1,54 @@
+{
+    "name": "Kickstarter Projects",
+    "entities": [
+        "project",
+        "creator",
+        "backers",
+        "pledges",
+        "goal",
+        "status",
+        "location",
+        "category"
+    ],
+    "filters": [
+        "query",
+        "maxResults",
+        "category",
+        "location",
+        "status",
+        "pledged",
+        "goal",
+        "raised",
+        "sort",
+        "datasetName",
+        "proxyConfig"
+    ],
+    "options": [
+        "Max results",
+        "Search query",
+        "Category",
+        "Location",
+        "Project status",
+        "Pledged amount",
+        "Goal amount",
+        "Raised percentage",
+        "Sort by",
+        "Dataset name",
+        "Proxy configuration"
+    ],
+    "special_instructions": [
+        "The 'query' filter is used to search Kickstarter for a specific term.",
+        "The 'maxResults' filter is used to limit the number of results returned.",
+        "The 'category' filter is used to search within a specific category.",
+        "The 'location' filter is used to search within a specific location.",
+        "The 'status' filter is used to filter projects by their status.",
+        "The 'pledged' filter is used to filter projects by the amount pledged.",
+        "The 'goal' filter is used to filter projects by their goal amount.",
+        "The 'raised' filter is used to filter projects by the percentage of the goal amount that has been raised.",
+        "The 'sort' filter is used to sort the results.",
+        "The 'datasetName' filter is used to name the dataset for the run.",
+        "Always set proxyConfig : {  \"useApifyProxy\": true    }",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

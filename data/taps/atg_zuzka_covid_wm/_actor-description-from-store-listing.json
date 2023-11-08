@@ -1,0 +1,13 @@
+{
+    "example_json_input": {
+        "url": "https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true"
+    },
+    "example_output_json_response": {
+        "status": "success",
+        "data": {
+            "infected": 100000,
+            "deceased": 5000,
+            "recovered": 90000
+        }
+    }
+}

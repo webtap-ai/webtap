@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.google.com', 'https://www.bing.com', with a page load timeout of 10 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.facebook.com', 'https://www.twitter.com', with a viewport width of 1200 and height of 800",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.instagram.com', 'https://www.snapchat.com', with a viewport width of 1024 and height of 768, and a delay of 5 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.linkedin.com', 'https://www.github.com', with a viewport width of 1366 and height of 768, and an image format of 'jpeg'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.disneyplus.com', 'https://www.primevideo.com', with a page load timeout of 30 seconds, retry count of 5, and wait until 'domcontentloaded'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.cnn.com', 'https://www.foxnews.com', with a viewport width of 1600 and height of 900, an image format of 'jpeg', and a delay of 3 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.bbc.com', 'https://www.aljazeera.com', with a viewport width of 1280 and height of 720, an image format of 'png', and a delay of 8 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.nytimes.com', 'https://www.washingtonpost.com', with a page load timeout of 35 seconds, retry count of 6, and wait until 'load'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.nationalgeographic.com', 'https://www.discovery.com', with a page load timeout of 45 seconds, retry count of 8, and wait until 'domcontentloaded'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Take screenshots of the following URLs: 'https://www.nasa.gov', 'https://www.spacex.com', with a viewport width of 1680 and height of 1050, an image format of 'jpeg', and a delay of 2 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

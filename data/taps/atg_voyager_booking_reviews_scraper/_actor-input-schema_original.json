@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Hotel URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+        "value_options": null
+    },
+    {
+        "name": "Maximum reviews per hotel",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxReviewsPerHotel",
+        "description": "Maximum number of reviews to scrape per hotel",
+        "value_options": null
+    },
+    {
+        "name": "Sort reviews by",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sortReviewsBy",
+        "description": "Review attribute by which the reviews will be ordered",
+        "value_options": "\"f_relevance\": string\n\"f_recent_desc\": string\n\"f_recent_asc\": string\n\"f_score_desc\": string\n\"f_score_asc\": string"
+    },
+    {
+        "name": "Review scores filter",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "reviewScores",
+        "description": "Filter reviews by their score, as shown on Booking.com",
+        "value_options": null
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "keywords": [
+        "apify",
+        "web",
+        "scraping",
+        "automation"
+    ],
+    "startUrls": [
+        {
+            "url": "https://apify.com"
+        }
+    ],
+    "pseudoUrls": [
+        {
+            "purl": "https://apify.com/[.*]"
+        }
+    ],
+    "linkSelector": "a[href]",
+    "proxyConfiguration": {
+        "useApifyProxy": false
+    }
+}

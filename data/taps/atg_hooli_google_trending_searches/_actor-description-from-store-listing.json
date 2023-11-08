@@ -1,0 +1,38 @@
+{
+    "example_json_input": {
+        "outputMode": "complete",
+        "geo": "US",
+        "fromDate": "2 days",
+        "toDate": "3 days",
+        "proxy": {
+            "useApifyProxy": true
+        }
+    },
+    "example_output_json_response": {
+        "query": "Lady Gaga",
+        "exploreLink": "https://trends.google.com/trends/explore?q=Lady+Gaga&date=now+7-d&geo=US",
+        "geo": "US",
+        "date": "2021-01-20T03:00:00.000Z",
+        "formattedTraffic": 1000000,
+        "relatedQueries": [
+            {
+                "query": "Jennifer Lopez",
+                "exploreLink": "https://trends.google.com/trends/explore?q=Jennifer+Lopez&date=now+7-d&geo=US"
+            }
+        ],
+        "articles": [
+            {
+                "title": "...",
+                "timeAgo": "12h ago",
+                "source": "...",
+                "image": {
+                    "newsUrl": "...",
+                    "source": "...",
+                    "imageUrl": "https://t1.gstatic.com/images?q=tbn:ANd9GcTXemenozGptpcdEIVEqXAce5xohz46QYgrLgN_8jAjNyLanDyhJvDtkFXoDXwbWMBLnU4funD7"
+                },
+                "url": "...",
+                "snippet": "Lady Gaga belted out the national anthem Wednesday in a very Gaga way \u2014 with flamboyance, fashion and passion. Watch her performance here."
+            }
+        ]
+    }
+}

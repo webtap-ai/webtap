@@ -1,0 +1,25 @@
+{
+    "name": "Booking Reviews",
+    "entities": [
+        "hotel review",
+        "apartment review",
+        "accommodation review"
+    ],
+    "filters": [
+        "startUrls",
+        "maxReviewsPerHotel",
+        "sortReviewsBy",
+        "reviewScores"
+    ],
+    "options": [
+        "Download format: JSON, HTML, Excel, CSV"
+    ],
+    "special_instructions": [
+        "startUrls is a required field. It should contain URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+        "maxReviewsPerHotel is an optional field. It represents the maximum number of reviews to scrape per hotel",
+        "sortReviewsBy is an optional field. It represents the review attribute by which the reviews will be ordered. Possible values are 'f_relevance', 'f_recent_desc', 'f_recent_asc', 'f_score_desc', 'f_score_asc'",
+        "reviewScores is an optional field. It is used to filter reviews by their score, as shown on Booking.com. For example, you can set it to ['ALL'] to get all reviews",
+        "The output fields returned by the tool are 'id, hotelId, reviewPage, userName, userLocation, roomInfo, stayDate, stayLength, reviewDate, reviewTitle, rating, reviewTextParts, customData, propertyResponse, reviewOriginalLanguage, travelerType, startUrl'",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

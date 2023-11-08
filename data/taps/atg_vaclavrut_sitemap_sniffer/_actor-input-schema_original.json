@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Url to check",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "url",
+        "description": "Url to check",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxy",
+        "description": "Select proxies to be used by your crawler.",
+        "value_options": null
+    }
+]

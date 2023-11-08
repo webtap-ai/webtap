@@ -1,0 +1,38 @@
+{
+    "name": "Website Keyword Extractor",
+    "entities": [
+        "keyword counts per page",
+        "website pages"
+    ],
+    "filters": [
+        "Start URLs",
+        "Keywords",
+        "Case sensitivity",
+        "Scan scripts",
+        "Link selector",
+        "Pseudo URLs",
+        "Max depth",
+        "Max pages per crawl"
+    ],
+    "options": [
+        "Use browser",
+        "Max concurrency",
+        "Retire instance after request count",
+        "Use Chrome",
+        "Wait for"
+    ],
+    "special_instructions": [
+        "Start URLs and Keywords are required for the tool to function. If not provided, the tool will not be able to fulfill the request.",
+        "The tool can deeply crawl a website and count how many times the provided keywords are found on each page.",
+        "You can specify maxDepth and maxPagesPerCrawl to limit the scope of the scrape. Start URLs have depth 0. So if you want just the start URLs, set maxDepth to 0.",
+        "You can choose to scrape with or without a browser. Using a browser is more expensive but allows JavaScript rendering and waiting.",
+        "The tool can also count keywords appearing inside scripts if the 'Scan scripts' option is enabled.",
+        "The 'Link selector' option allows you to specify which links on the page shall be followed and added to the request queue.",
+        "The 'Pseudo URLs' option specifies what kind of URLs found by Link selector should be added to the request queue.",
+        "The 'Max concurrency' option specifies the maximum number of pages that can be processed by the scraper in parallel.",
+        "The 'Retire instance after request count' option determines how often the browser itself will rotate.",
+        "The 'Use Chrome' and 'Wait for' options only work for puppeteer type.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

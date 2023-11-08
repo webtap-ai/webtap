@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Query",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "query",
+        "description": "What to search Kickstarter for",
+        "value_options": null
+    },
+    {
+        "name": "Maximum results",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxResults",
+        "description": "Limit number of results",
+        "value_options": null
+    },
+    {
+        "name": "Category",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "category",
+        "description": "Category to search in",
+        "value_options": "\"All\": string\n\"art\": string\n\"art/ceramics\": string\n\"art/conceptual art\": string\n\"art/digital art\": string\n\"art/illustration\": string\n\"art/installations\": string\n\"art/mixed media\": string\n\"art/painting\": string\n\"art/performance art\": string\n\"art/public art\": string\n\"art/sculpture\": string\n\"art/textiles\": string\n\"art/video art\": string\n\"comics\": string\n\"comics/anthologies\": string\n\"comics/comic books\": string\n\"comics/events\": string\n\"comics/graphic novels\": string\n\"comics/webcomics\": string\n\"crafts\": string\n\"crafts/candles\": string\n\"crafts/crochet\": string\n\"crafts/diy\": string\n\"crafts/embroidery\": string\n\"crafts/glass\": string\n\"crafts/knitting\": string\n\"crafts/pottery\": string\n\"crafts/printing\": string\n\"crafts/quilts\": string\n\"crafts/stationery\": string\n\"crafts/taxidermy\": string\n\"crafts/weaving\": string\n\"crafts/woodworking\": string\n\"dance\": string\n\"dance/performances\": string\n\"dance/residencies\": string\n\"dance/spaces\": string\n\"dance/workshops\": string\n\"design\": string\n\"design/architecture\": string\n\"design/civic design\": string\n\"design/graphic design\": string\n\"design/interactive design\": string\n\"design/product design\": string\n\"design/typography\": string\n\"fashion\": string\n\"fashion/accessories\": string\n\"fashion/apparel\": string\n\"fashion/childrenswear\": string\n\"fashion/couture\": string\n\"fashion/footwear\": string\n\"fashion/jewelry\": string\n\"fashion/pet fashion\": string\n\"fashion/ready-to-wear\": string\n\"film & video\": string\n\"film & video/action\": string\n\"film & video/animation\": string\n\"film & video/comedy\": string\n\"film & video/documentary\": string\n\"film & video/drama\": string\n\"film & video/experimental\": string\n\"film & video/family\": string\n\"film & video/fantasy\": string\n\"film & video/festivals\": string\n\"film & video/horror\": string\n\"film & video/movie theaters\": string\n\"film & video/music videos\": string\n\"film & video/narrative film\": string\n\"film & video/romance\": string\n\"film & video/science fiction\": string\n\"film & video/shorts\": string\n\"film & video/television\": string\n\"film & video/thrillers\": string\n\"film & video/webseries\": string\n\"food\": string\n\"food/bacon\": string\n\"food/community gardens\": string\n\"food/cookbooks\": string\n\"food/drinks\": string\n\"food/events\": string\n\"food/farmer's markets\": string\n\"food/farms\": string\n\"food/food trucks\": string\n\"food/restaurants\": string\n\"food/small batch\": string\n\"food/spaces\": string\n\"food/vegan\": string\n\"games\": string\n\"games/gaming hardware\": string\n\"games/live games\": string\n\"games/mobile games\": string\n\"games/playing cards\": string\n\"games/puzzles\": string\n\"games/tabletop games\": string\n\"games/video games\": string\n\"journalism\": string\n\"journalism/audio\": string\n\"journalism/photo\": string\n\"journalism/print\": string\n\"journalism/video\": string\n\"journalism/web\": string\n\"music\": string\n\"music/blues\": string\n\"music/chiptune\": string\n\"music/classical music\": string\n\"music/comedy\": string\n\"music/country & folk\": string\n\"music/electronic music\": string\n\"music/faith\": string\n\"music/hip-hop\": string\n\"music/indie rock\": string\n\"music/jazz\": string\n\"music/kids\": string\n\"music/latin\": string\n\"music/metal\": string\n\"music/pop\": string\n\"music/punk\": string\n\"music/r&b\": string\n\"music/rock\": string\n\"music/world music\": string\n\"photography\": string\n\"photography/animals\": string\n\"photography/fine art\": string\n\"photography/nature\": string\n\"photography/people\": string\n\"photography/photobooks\": string\n\"photography/places\": string\n\"publishing\": string\n\"publishing/academic\": string\n\"publishing/anthologies\": string\n\"publishing/art books\": string\n\"publishing/calendars\": string\n\"publishing/children's books\": string\n\"publishing/comedy\": string\n\"publishing/fiction\": string\n\"publishing/letterpress\": string\n\"publishing/literary journals\": string\n\"publishing/nonfiction\": string\n\"publishing/periodicals\": string\n\"publishing/poetry\": string\n\"publishing/radio & podcasts\": string\n\"publishing/translations\": string\n\"publishing/young adult\": string\n\"publishing/zines\": string\n\"publishing/literary spaces\": string\n\"technology\": string\n\"technology/3d printing\": string\n\"technology/apps\": string\n\"technology/camera equipment\": string\n\"technology/diy electronics\": string\n\"technology/fabrication tools\": string\n\"technology/flight\": string\n\"technology/gadgets\": string\n\"technology/hardware\": string\n\"technology/makerspaces\": string\n\"technology/robots\": string\n\"technology/software\": string\n\"technology/sound\": string\n\"technology/space exploration\": string\n\"technology/wearables\": string\n\"technology/web\": string\n\"theater\": string\n\"theater/comedy\": string\n\"theater/experimental\": string\n\"theater/festivals\": string\n\"theater/immersive\": string\n\"theater/musical\": string\n\"theater/plays\": string\n\"theater/spaces\": string"
+    },
+    {
+        "name": "Location",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "location",
+        "description": "Location where you want to search",
+        "value_options": null
+    },
+    {
+        "name": "Status",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "status",
+        "description": "Status of the project",
+        "value_options": "\"All\": string\n\"Live\": string\n\"Successful\": string\n\"Upcoming\": string"
+    },
+    {
+        "name": "Amount pledged",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "pledged",
+        "description": "Amount pledged",
+        "value_options": "\"All\": string\n\"< $1,000 pledged\": string\n\"$1,000 to $10,000 pledged\": string\n\"$10,000 to $100,000 pledged\": string\n\"$100,000 to $1,000,000 pledged\": string\n\"> $1,000,000 pledged\": string"
+    },
+    {
+        "name": "Goal",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "goal",
+        "description": "Goal",
+        "value_options": "\"All\": string\n\"< $1,000 goal\": string\n\"$1,000 to $10,000 goal\": string\n\"$10,000 to $100,000 goal\": string\n\"$100,000 to $1,000,000 goal\": string\n\"> $1,000,000 goal\": string"
+    },
+    {
+        "name": "% Raised",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "raised",
+        "description": "% Raised",
+        "value_options": "\"All\": string\n\"< 75% raised\": string\n\"75% to 100% raised\": string\n\"> 100% raised\": string"
+    },
+    {
+        "name": "Sort",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort",
+        "description": "Allows you to change the",
+        "value_options": "\"newest\": string\n\"popularity\": string\n\"end_date\": string\n\"most_funded\": string\n\"most_backed\": string\n\"magic\": string"
+    },
+    {
+        "name": "Dataset name",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "datasetName",
+        "description": "Use this if you want the data to be written into named dataset, setting this will overwrite the data with each run",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfig",
+        "description": "Proxy group to use",
+        "value_options": null
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "data_task": "Scrape TikTok data for the hashtag 'makeup', and store the videos and other media in a named Key-Value store",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok data for the hashtag 'diy', and disable the additional query for author stats",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok data for the hashtag 'art', and store the videos and other media in a named Key-Value store, and disable the additional query for author stats",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok data for the hashtag 'gaming', and download the video files, cover images, and slideshow images, and store the videos and other media in a named Key-Value store",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok data for the hashtag 'technology', and download the video files, cover images, and slideshow images, and store the videos and other media in a named Key-Value store, and disable the Cheerio crawler",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok data for the hashtags 'nature', 'outdoors', with a maximum of 10 results per page",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

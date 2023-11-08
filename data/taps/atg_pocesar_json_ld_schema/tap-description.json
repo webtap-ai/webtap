@@ -1,0 +1,29 @@
+{
+    "name": "Website Data Extractor",
+    "entities": [
+        "title",
+        "author",
+        "source_code",
+        "categories",
+        "data",
+        "url",
+        "customData",
+        "#error",
+        "#debug"
+    ],
+    "filters": [
+        "startUrls",
+        "proxyConfiguration",
+        "customData"
+    ],
+    "options": [
+        "useApifyProxy"
+    ],
+    "special_instructions": [
+        "The 'startUrls' filter is required and must be an array of URLs from which to extract LD+JSON data.",
+        "The 'customData' filter is optional and can be used to provide some custom data to output.",
+        "The tool will return the following entities: 'title', 'author', 'source_code', 'categories', 'data', 'url', 'customData', '#error', '#debug'. If an entity is not listed here, it won't be returned.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "data_task": "Backup of the website https://www.example.com with a maximum of 500 pages to be loaded",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com with a maximum crawling depth of 3 links away from the start URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com with a maximum concurrency of 10 pages to be processed in parallel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com using a custom named key value store 'myStore' for saving results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com with a timeout of 60 seconds for doing a backup of a single URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com only backing up URLs with the same origin as the start URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com with a timeout of 180 seconds for doing a backup of a single URL and a navigation timeout of 240 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Backup of the website https://www.example.com ignoring 'source', 'sourceid', and 'utm_source' URL search parameters when crawling and only backing up URLs with the same origin as the start URL",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "name": "Sitemap Sniffer",
+    "entities": [
+        "title",
+        "description",
+        "actor_url",
+        "actor_id",
+        "url",
+        "loadedUrl",
+        "statusCode",
+        "htmlUrl"
+    ],
+    "filters": [
+        "url",
+        "proxy"
+    ],
+    "options": [
+        "useApifyProxy"
+    ],
+    "special_instructions": [
+        "The 'url' filter is required to specify the website to be checked",
+        "The 'useApifyProxy' option should always be set to true to use Apify's proxy servers",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

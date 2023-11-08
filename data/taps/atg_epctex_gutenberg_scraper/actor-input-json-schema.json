@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "search": {
+            "type": "string",
+            "description": "Keyword that you want to search in Gutenberg.org",
+            "example": "ebook"
+        },
+        "language": {
+            "type": "string",
+            "description": "Select a language that Gutenberg.org provides",
+            "example": [
+                "English"
+            ],
+            "enum": [
+                "none",
+                "en",
+                "zh",
+                "da",
+                "nl",
+                "eo",
+                "fi",
+                "fr",
+                "de",
+                "el",
+                "hu",
+                "it",
+                "la",
+                "pt",
+                "es",
+                "sv",
+                "tl",
+                "af",
+                "ale",
+                "ar",
+                "arp",
+                "brx",
+                "br",
+                "bg",
+                "rmr",
+                "ca",
+                "ceb",
+                "cs",
+                "et",
+                "fa",
+                "fy",
+                "fur",
+                "gla",
+                "gl",
+                "kld",
+                "grc",
+                "he",
+                "is",
+                "ilo",
+                "ia",
+                "iu",
+                "ga",
+                "ja",
+                "..."
+            ]
+        },
+        "startUrls": {
+            "type": "array",
+            "description": "URLs to start with. It should be category or product detail URLs",
+            "example": [
+                {
+                    "url": "https://www.gutenberg.org/browse/recent/last7"
+                },
+                {
+                    "url": "https://www.gutenberg.org/browse/titles/h"
+                }
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Maximum number of items you want on your results",
+            "example": 5
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "Function that takes a JQuery handle ($) as argument and returns data that will be merged with the default output"
+        },
+        "proxyConfig": {
+            "type": "object",
+            "description": "Select proxies to be used by your crawler.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "proxyConfig"
+    ]
+}

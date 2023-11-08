@@ -1,0 +1,31 @@
+{
+    "name": "Expedia & Hotels.com Reviews",
+    "entities": [
+        "hotel",
+        "apartment",
+        "other accommodations"
+    ],
+    "filters": [
+        "startUrls",
+        "maxReviewsPerHotel",
+        "proxyConfiguration",
+        "debugLog",
+        "maxRequestRetries",
+        "sortBy"
+    ],
+    "options": [
+        "Most relevant",
+        "Most recent",
+        "Highest guest rating",
+        "Lowest guest rating"
+    ],
+    "special_instructions": [
+        "startUrls is a required field. It should contain the URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+        "maxReviewsPerHotel is an optional field. It determines the maximum number of reviews to scrape per hotel",
+        "debugLog is an optional field. It enables more verbose logging",
+        "maxRequestRetries is an optional field. It determines the maximum number of retries when a request fails",
+        "sortBy is an optional field. It does not affect the order of reviews in the dataset, since review items are scraped in parallel, so later pages might finish before previous ones. However, it helps in the case you are limited by the number of reviews you can scrape",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

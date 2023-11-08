@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Expedia or Hotels.com URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+        "value_options": null
+    },
+    {
+        "name": "Maximum reviews per hotel",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxReviewsPerHotel",
+        "description": "Maximum number of reviews to scrape per hotel",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Optionally use Apify Proxy",
+        "value_options": null
+    },
+    {
+        "name": "Enable debug logging",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "Enables more verbose logging",
+        "value_options": null
+    },
+    {
+        "name": "Maximum request retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Maximum number of retries when a request fails",
+        "value_options": null
+    },
+    {
+        "name": "Sort by (see note)",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sortBy",
+        "description": "Note: this will not affect the order of reviews in the dataset, since review items are scraped in parallel, so later pages might finish before previous ones. However, it helps in the case you are limiting maximum number of reviews per hotel.",
+        "value_options": "\"Most relevant\": string\n\"Most recent\": string\n\"Highest guest rating\": string\n\"Lowest guest rating\": string"
+    }
+]

@@ -1,0 +1,40 @@
+{
+    "example_json_input": {
+        "title": "Website Backup",
+        "description": "Enables to create a backup of any website by crawling it, so that you don\u2019t lose any content by accident. Ideal e.g. for your personal or company blog.",
+        "author": "mhamas",
+        "input_parameters": {
+            "startURLs": [
+                "https://example.com"
+            ],
+            "linkSelector": ".link",
+            "maxRequestsPerCrawl": 100,
+            "maxCrawlingDepth": 5,
+            "maxConcurrency": 10,
+            "customKeyValueStore": "website-backup",
+            "customDataset": "website-backup-metadata",
+            "proxyConfiguration": {
+                "type": "Apify Proxy"
+            },
+            "sameOrigin": true,
+            "timeoutForSingleUrlInSeconds": 30,
+            "navigationTimeoutInSeconds": 60,
+            "searchParamsToIgnore": [
+                "source",
+                "sourceid"
+            ]
+        }
+    },
+    "example_output_json_response": {
+        "actor_name": "website-backup",
+        "description": "The purpose of this actor is to enable creation of website backups by recursively crawling them.",
+        "output": {
+            "zip_file_key": "website-backup/2023-10-01_3jdn48fn.zip",
+            "metadata_dataset_id": "website-backup-metadata",
+            "metadata_collection_id": "5c39386131a2e9000a753702",
+            "total_pages_crawled": 123,
+            "total_snapshots_created": 123
+        },
+        "compute_units_consumed": 1.5
+    }
+}

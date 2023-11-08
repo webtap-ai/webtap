@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "baseUrl": {
+            "type": "string",
+            "description": "The URL to crawl. Only URLs pages in the sub-directory will be probed.",
+            "example": "https://blog.apify.com"
+        },
+        "maxPages": {
+            "type": "integer",
+            "description": "The maximum number of pages that will be crawled. If empty, the number is not limited.",
+            "example": 1000
+        },
+        "notificationEmails": {
+            "type": "array",
+            "description": "Add email addresses to receive notifications whenever the actor discovers broken links.",
+            "example": [
+                "your.email@apify.com"
+            ]
+        },
+        "saveOnlyBrokenLinks": {
+            "type": "boolean",
+            "description": "If false, all checked links and all information about them will be saved (not CSV friendly).",
+            "example": true
+        },
+        "crawlSubdomains": {
+            "type": "boolean",
+            "description": "If true, actor will crawl all links recursively.",
+            "example": true
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "The maximum number of pages from the target website to crawl in parallel. You can use this number to reduce the load on the target web server."
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "This is required if you want to use Apify Proxy.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "baseUrl"
+    ]
+}

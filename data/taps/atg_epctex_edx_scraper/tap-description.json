@@ -1,0 +1,30 @@
+{
+    "name": "edX Online Course Data",
+    "entities": [
+        "course",
+        "course details",
+        "course owners",
+        "course topics",
+        "course enrollment count",
+        "course additional metadata",
+        "course url",
+        "course short description",
+        "course marketing url"
+    ],
+    "filters": [
+        "search keyword",
+        "course language",
+        "maximum items"
+    ],
+    "options": [
+        "Proxy configuration"
+    ],
+    "special_instructions": [
+        "The input of this tool should be JSON containing the list of pages on edx that should be visited.",
+        "The 'search' field is optional and is used to search for a specific keyword in the courses.",
+        "The 'language' field is optional and is used to filter the results by the course language.",
+        "The 'maxItems' field is optional and is used to limit the number of scraped items. This should be useful when you search through big lists or search results.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

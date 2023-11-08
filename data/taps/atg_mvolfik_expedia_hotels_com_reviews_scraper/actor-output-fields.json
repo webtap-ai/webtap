@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "contentDirectFeedbackPromptId, id, superlative, locale, title, brandType, reviewScoreWithDescription, text, seeMoreAnalytics, submissionTime, impressionAnalytics, themes, reviewFooter, reviewInteractionSections, reviewAuthorAttribution, photoSection, photos, travelers, translationInfo, propertyReviewSource, reviewRegion, managementResponses, hotelId, customData"
+}

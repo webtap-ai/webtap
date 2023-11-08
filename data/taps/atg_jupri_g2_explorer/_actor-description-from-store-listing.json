@@ -1,0 +1,36 @@
+{
+    "example_json_input": {
+        "slug": "apify",
+        "offset": 0,
+        "limit": 10
+    },
+    "example_output_json_response": {
+        "answers": [
+            "First, Apify offers a number of ready solutions that can be launched in minutes with zero or very little coding skills. I tested several of them and they work well. \r\nSecond, it's easy and quick to get custom solutions built if needed. I got a custom solution made in less than a week. \r\nPlus, their support team is just amazing (shoutout to Tsveta!).\r\nI discovered Apify less than a month ago and it's already one of the core tools in my stack.",
+            "Nothing really. It took me some time to get the outcomes I was looking for, but it's a new category of tools to me so it's understandable.",
+            null,
+            "I am scraping several websites to power my lead generation process. Without Apify, I'd have to use VAs, which would be less convenient and more time-consuming."
+        ],
+        "date": {
+            "published": "2022-08-18T09:05:00.496-05:00",
+            "submitted": "2022-08-18T05:51:54.968-05:00",
+            "updated": "2022-08-18T05:51:55.384-05:00"
+        },
+        "id": "6996026",
+        "industry": "Computer Software",
+        "location": {
+            "country": "Poland",
+            "primary": "EMEA",
+            "region": "Europe"
+        },
+        "name": "Lucjan K.",
+        "product_id": 74085,
+        "product_slug": "apify",
+        "role": "User",
+        "score": 5,
+        "segment": "small-business",
+        "type": "text",
+        "review_source": "generic",
+        "source_type": "generic"
+    }
+}

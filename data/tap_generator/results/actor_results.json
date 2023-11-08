@@ -78,5 +78,325 @@
     "clockworks/tiktok-profile-scraper": {
         "status": "success",
         "message": "All steps executed successfully"
+    },
+    "jupri/g2-explorer": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "zuzka/covid-my": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jancurn/screenshot-taker": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/download-image": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "apify/monitoring-runner": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Actor run failed with state: FAILED"
+    },
+    "apify/proxy-test": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.testUrls is required, Field input.proxy is required"
+    },
+    "apify/facebook-url-to-id": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "apify/monitoring-checker-run-status": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "apify/monitoring-checker-stats": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "mhamas/html-string-to-pdf": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "jancurn/url-to-pdf": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "petr_cermak/dropbox-upload": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "apify/monitoring-checker-schema": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.options is required"
+    },
+    "jancurn/pdf-to-html": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.url is required"
+    },
+    "apify/monitoring-reporter-dashboard": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.resultDatasetId is required"
+    },
+    "mtrunkat/article-text-extractor": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "spidoosho/bing-search-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "selcukitmis/binance-top-traders-positions": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "jancurn/analyze-domains": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "microworlds/twitter-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "katerinahronik/slack-message": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.text is required"
+    },
+    "natasha.lekh/gas-prices-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/duplications-checker": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "pocesar/covid-brazil": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "apify/monitoring-reporter-slack": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.projectName is required"
+    },
+    "valek.josef/weather-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "arcatdmz/twitter-ff": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "drobnikj/extended-gpt-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.startUrls is required"
+    },
+    "jancurn/find-broken-links": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mpj/asos": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "jaroslavhejlek/kickstarter-location-to-ids": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "fdg43jkg33455/abc-web-test-deri": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.startUrls is required"
+    },
+    "andrey_bykov/sReality-monitor": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID andrey_bykov/sReality-monitor does not exist in actor_apis'"
+    },
+    "vbartonicek/topuniversities-scraper": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "fdg43jkg33455/abc-web-test": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.startUrls is required"
+    },
+    "newpo/tiktok-30x-scraper-free-experience": {
+        "status": "failure",
+        "message": "Error in step ActorDescriptionGenerator.generate: 'actor_id'"
+    },
+    "manishrc/url-redirect": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "lukaskrivka/images-download-upload": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Actor run failed with state: FAILED"
+    },
+    "hooli/google-trending-searches": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "apify/facebook-hashtag-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "apify/quick-instagram-posts-checker": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mstephen190/vanilla-js-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID mstephen190/vanilla-js-scraper does not exist in actor_apis'"
+    },
+    "deeper/youtube-channel-scrapper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/dedup-datasets": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.datasetIds is required"
+    },
+    "qbie/kickstarter-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lhotanok/ticketmaster-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/keywords-extractor": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jupri/tesco-grocery": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "maxcopell/tripadvisor-reviews": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mhamas/website-backup": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "netscrape/free-tiktok-profile-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "lukaskrivka/website-checker": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.urlsToCheck is required"
+    },
+    "shanes/tweet-flash-plus": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "svpetrenko/quora-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jupri/shopify-scraper": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "johndon/generic-lectio-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "alexey/pinterest-crawler": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "yir/pdf-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.url is required"
+    },
+    "inutil_labs/wscrp-free": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.numbers is required"
+    },
+    "lukaskrivka/google-maps-with-contact-details": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "apify/image-diff": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "krish_patel/yellow-pages-scraper-withEmail": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID krish_patel/yellow-pages-scraper-withEmail does not exist in actor_apis'"
+    },
+    "shmlkv/facebook-marketplace": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "clockworks/tiktok-video-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "clockworks/tiktok-hashtag-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "epctex/gutenberg-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jupri/asda-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "pocesar/login-session": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Actor run failed with state: FAILED"
+    },
+    "vaclavrut/sitemap-sniffer": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mtrunkat/xmls-to-dataset": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "jancurn/residential-proxy-probe": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.countryCode is required"
+    },
+    "pocesar/json-ld-schema": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "streamers/youtube-comments-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "mvolfik/expedia-hotels-com-reviews-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jupri/freelancer-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "lukaskrivka/website-checker-puppeteer": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "alexey/google-lens": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "voyager/booking-reviews-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "streamers/youtube-channel-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "vaclavrut/bigjson2csv": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
     }
 }

@@ -1,0 +1,35 @@
+{
+    "name": "Google Trending Searches",
+    "entities": [
+        "query",
+        "exploreLink",
+        "geo",
+        "date",
+        "formattedTraffic",
+        "relatedQueries",
+        "articles"
+    ],
+    "filters": [
+        "geo",
+        "outputMode",
+        "fromDate",
+        "toDate",
+        "maxItems"
+    ],
+    "options": [
+        "proxy",
+        "extendOutputFunction",
+        "extendScraperFunction",
+        "customData"
+    ],
+    "special_instructions": [
+        "The 'geo' filter is required and it represents the country to fetch the information from. If it is not provided, return can_fulfill false and explain accordingly",
+        "The 'outputMode' filter allows you to select the way you want the dataset to be output. Options include 'complete', 'queries', 'related', 'articles'",
+        "The 'fromDate' and 'toDate' filters allow you to get items starting from a specific date going to the past. Max 29 days in the past",
+        "The 'maxItems' filter allows you to limit the total amount of results you get",
+        "The 'extendOutputFunction' and 'extendScraperFunction' options allow you to add or remove properties on the output object or omit the output returning null and to extend the default scraper functionality, allowing you to manually perform actions on the page respectively",
+        "The 'customData' option allows you to have any data that you want to have available inside the Extend Output/Scraper Function",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

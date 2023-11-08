@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Search keyword",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "search",
+        "description": "Keyword that you want to search in Gutenberg.org",
+        "value_options": null
+    },
+    {
+        "name": "Language",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "language",
+        "description": "Select a language that Gutenberg.org provides",
+        "value_options": "\"none\": string\n\"en\": string\n\"zh\": string\n\"da\": string\n\"nl\": string\n\"eo\": string\n\"fi\": string\n\"fr\": string\n\"de\": string\n\"el\": string\n\"hu\": string\n\"it\": string\n\"la\": string\n\"pt\": string\n\"es\": string\n\"sv\": string\n\"tl\": string\n\"af\": string\n\"ale\": string\n\"ar\": string\n\"arp\": string\n\"brx\": string\n\"br\": string\n\"bg\": string\n\"rmr\": string\n\"ca\": string\n\"ceb\": string\n\"cs\": string\n\"et\": string\n\"fa\": string\n\"fy\": string\n\"fur\": string\n\"gla\": string\n\"gl\": string\n\"kld\": string\n\"grc\": string\n\"he\": string\n\"is\": string\n\"ilo\": string\n\"ia\": string\n\"iu\": string\n\"ga\": string\n\"ja\": string\n\"csb\": string\n\"kha\": string\n\"ko\": string\n\"lt\": string\n\"mi\": string\n\"myn\": string\n\"enm\": string\n\"nah\": string\n\"nap\": string\n\"nav\": string\n\"nai\": string\n\"no\": string\n\"oc\": string\n\"oji\": string\n\"ang\": string\n\"pl\": string\n\"ro\": string\n\"ru\": string\n\"sa\": string\n\"sr\": string\n\"sl\": string\n\"bgs\": string\n\"te\": string\n\"cy\": string"
+    },
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "URLs to start with. It should be category or product detail URLs",
+        "value_options": null
+    },
+    {
+        "name": "Max Items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Maximum number of items you want on your results",
+        "value_options": null
+    },
+    {
+        "name": "Extend output function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendOutputFunction",
+        "description": "Function that takes a JQuery handle ($) as argument and returns data that will be merged with the default output",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfig",
+        "description": "Select proxies to be used by your crawler.",
+        "value_options": null
+    }
+]

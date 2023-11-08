@@ -1,0 +1,19 @@
+{
+    "id": "pocesar/json-ld-schema",
+    "url": "https://apify.com/pocesar/json-ld-schema",
+    "title": "LD+JSON Schema scraper \u00b7 Apify",
+    "name": "LD+JSON Schema scraper",
+    "pricing": "No credit card required",
+    "description": "Extract all LD+JSON tags from the given URLs.",
+    "author_name": "Paulo Cesar",
+    "maintained_by": "Maintained by Community",
+    "count_users": "142 users",
+    "count_runs": "2k runs",
+    "last_modified": "Modified over 1 year ago",
+    "categories": "Automation\nSEO tools\nOther",
+    "full_readme": "LD+JSON scraper\n\nExtract LD+JSON data from websites",
+    "icon": "https://images.apifyusercontent.com/lkagxHkbcOzAUynLFb_yrxKOm6tQG5tqeqsviK6APLs/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9HZkZnc3czNzkzU1QweUtjOS9OREpkNmY1RFNxYll2ZDk3RS0xMjAwcHgtSlNPTi1MRC5zdmcucG5n.webp",
+    "author_url": "https://apify.com/pocesar",
+    "author_avatar": "https://images.apifyusercontent.com/NJb9z2HqWAxbr-nJ2fpQcPcIfui_kGJUOLjEa-DDmYI/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9hdXJQUlRINDdLaG1pYVBOSi93cDJlSFdZOVdyNUt3N1d0VC00NjEwODQuanBn.webp",
+    "readme_summary": "# LD+JSON scraper\n\nExtract LD+JSON data from websites\n\n"
+}

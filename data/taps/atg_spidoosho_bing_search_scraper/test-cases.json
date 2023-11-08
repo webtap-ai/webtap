@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Bing search results for 'Hotels in NYC', 'Restaurants in NYC', and 'https://www.bing.com/search?q=restaurants+in+NYC' with market code 'en-US', language code 'en', 10 results per page, and maximum 1 page per query",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'AI Marketing blogs' with market code 'en-US', language code 'en', 50 results per page, and maximum 2 pages per query",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'Hotels in NYC', 'Restaurants in NYC', and 'https://www.bing.com/search?q=restaurants+in+NYC' with market code 'en-US' and language code 'en', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'AI Marketing blogs' with market code 'en-US' and language code 'en', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'Food bloggers' with market code 'en-US' and language code 'en', 100 results per page, maximum 5 pages per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'Things to do in Rome' with market code 'it-IT' and language code 'it', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'Hotels in Brooklyn' with market code 'en-US' and language code 'en', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'Restaurants in Madrid' with market code 'es-ES' and language code 'es', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'https://www.bing.com/search?q=food+NYC' with market code 'en-US' and language code 'en', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Bing search results for 'https://www.bing.com/search?q=AI+Marketing+blogs' with market code 'en-US' and language code 'en', 10 results per page, maximum 1 page per query, using Apify proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

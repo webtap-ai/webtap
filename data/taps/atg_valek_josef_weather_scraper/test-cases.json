@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Ten day weather forecast in imperial units for London, UK",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Weekend weather forecast in metric units for Tokyo, Japan",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Monthly weather forecast in imperial units for Sydney, Australia",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Today's weather forecast in metric units for Paris, France, maximum 5 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Ten day weather forecast in metric units for Rome, Italy, maximum 15 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Weekend weather forecast in imperial units for Madrid, Spain, maximum 10 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Monthly weather forecast in metric units for Toronto, Canada, maximum 25 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Ten day weather forecast in imperial units for Rio de Janeiro, Brazil, maximum 40 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Weekend weather forecast in metric units for Cape Town, South Africa, maximum 45 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Hour by hour weather forecast in imperial units for Mexico City, Mexico, maximum 60 items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

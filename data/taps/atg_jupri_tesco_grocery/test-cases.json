@@ -1,0 +1,44 @@
+[
+    {
+        "data_task": "Search for 'cake' in Tesco Grocery",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'bread' in Tesco Grocery",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'cheese' in Tesco Grocery, sort by price descending",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'chocolate' in Tesco Grocery, limit to 10 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'cake' in Tesco Grocery, only new items",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'bread' in Tesco Grocery, only items on promo",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'milk' in Tesco Grocery, only items from the brand 'Tesco'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

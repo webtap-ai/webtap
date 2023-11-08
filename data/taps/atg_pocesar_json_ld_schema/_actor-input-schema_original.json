@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Start Urls",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "The URLs to extract all LD+JSON data",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfiguration",
+        "description": "A proxy required for scraping",
+        "value_options": null
+    },
+    {
+        "name": "Custom data",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "customData",
+        "description": "Provide some custom data to output",
+        "value_options": null
+    }
+]

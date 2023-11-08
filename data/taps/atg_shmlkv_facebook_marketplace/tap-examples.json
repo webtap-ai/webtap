@@ -1,0 +1,63 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Furniture for sale in London from the following page https://www.facebook.com/marketplace/london/furniture",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Marketplace INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Marketplace is reliable and solely based on compatibility between DATA TASK and Facebook Marketplace OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Marketplace OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Marketplace has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.facebook.com/marketplace/london/furniture"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Electronics for sale in San Francisco from the following page https://www.facebook.com/marketplace/sanfrancisco/electronics",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Marketplace INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Marketplace is reliable and solely based on compatibility between DATA TASK and Facebook Marketplace OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Marketplace OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Marketplace has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.facebook.com/marketplace/sanfrancisco/electronics"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Furniture for sale in Istanbul with a price limit of 1000 TRY from the following page https://www.facebook.com/marketplace/istanbul/furniture",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Marketplace INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Marketplace is reliable and solely based on compatibility between DATA TASK and Facebook Marketplace OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Marketplace OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Marketplace has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.facebook.com/marketplace/istanbul/furniture"
+                    }
+                ],
+                "priceMax": 1000
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

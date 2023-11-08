@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "query": {
+            "type": "string",
+            "description": "",
+            "example": "cake"
+        },
+        "new": {
+            "type": "boolean",
+            "description": "New"
+        },
+        "offers": {
+            "type": "boolean",
+            "description": "Promo"
+        },
+        "segment": {
+            "type": "string",
+            "description": "Main Category",
+            "enum": [
+                "fresh-food",
+                "bakery",
+                "frozen-food",
+                "food-cupboard",
+                "drinks",
+                "baby",
+                "health-and-beauty",
+                "pets",
+                "household",
+                "home-and-ents",
+                "..."
+            ]
+        },
+        "department": {
+            "type": "string",
+            "description": ""
+        },
+        "category": {
+            "type": "string",
+            "description": ""
+        },
+        "shelf": {
+            "type": "string",
+            "description": ""
+        },
+        "page": {
+            "type": "integer",
+            "description": "Page index."
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Number of results."
+        },
+        "sort": {
+            "type": "string",
+            "description": "",
+            "enum": [
+                "relevance",
+                "price-ascending",
+                "price-descending"
+            ]
+        },
+        "brands": {
+            "type": "string",
+            "description": "Brand names separated by comma"
+        },
+        "dietaries": {
+            "type": "string",
+            "description": "See List of Dietaries",
+            "enum": [
+                "No gluten",
+                "Vegetarian",
+                "Vegan",
+                "Low fat",
+                "Halal",
+                "No lactose",
+                "Organic",
+                "Low sugar",
+                "Sugar-free",
+                "Low salt",
+                "Low calorie",
+                "No egg",
+                "..."
+            ]
+        }
+    },
+    "required": []
+}

@@ -1,0 +1,10 @@
+{
+    "start_urls": [
+        {
+            "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+        }
+    ],
+    "proxySettings": {
+        "useApifyProxy": true
+    }
+}

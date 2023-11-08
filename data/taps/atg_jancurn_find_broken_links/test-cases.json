@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Crawl 'https://www.educationportal.com' and find broken links, maximum 6000 pages, send notifications to 'admin@educationportal.com', save only broken links, crawl subdomains, use Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Crawl the website 'https://www.newssite.com/' and find broken links, limit the crawl to 2000 pages, send notifications to 'email@newssite.com', crawl subdomains",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Crawl the website 'https://www.travelsite.com/' and find broken links, limit the crawl to 3000 pages, send notifications to 'email@travelsite.com', crawl subdomains",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Crawl the website 'https://www.realestatesite.com/' and find broken links, limit the crawl to 1000 pages, send notifications to 'email@realestatesite.com', crawl subdomains",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

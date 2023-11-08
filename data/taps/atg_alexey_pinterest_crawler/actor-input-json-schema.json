@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "Names or URLs to start with.",
+            "example": [
+                "pinterest.com/poltronafrau",
+                "bellinthewoods"
+            ]
+        },
+        "maxPinsCnt": {
+            "type": "integer",
+            "description": "Max pins per profile",
+            "example": 50
+        },
+        "proxyConfig": {
+            "type": "object",
+            "description": "You need to use Apify proxy or custom proxies.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "startUrls",
+        "proxyConfig"
+    ]
+}

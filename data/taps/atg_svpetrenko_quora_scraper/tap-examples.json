@@ -1,0 +1,272 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'AI technology'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "AI technology"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'best programming languages'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "best programming languages"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'climate change'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "climate change"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'vegan recipes'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "vegan recipes"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'best books to read'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "best books to read"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'how to lose weight'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "how to lose weight"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'travel tips'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "travel tips"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'how to start a business'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "how to start a business"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'how to improve English'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "how to improve English"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape Quora for questions and answers related to 'how to meditate'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Quora Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Quora Scraper is reliable and solely based on compatibility between DATA TASK and Quora Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Quora Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Quora Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "queries": [
+                    "how to meditate"
+                ],
+                "languageCode": "en",
+                "maxAnswersPerQuestion": 0,
+                "answersRanking": "ranking_toggle_upvote",
+                "useAnswerDataset": false,
+                "proxy": {
+                    "useApifyProxy": true
+                },
+                "maxPoolSize": 10,
+                "maxAgeSecs": 1800,
+                "maxUsageCount": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

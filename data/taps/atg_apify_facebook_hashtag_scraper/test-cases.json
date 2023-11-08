@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Facebook posts with the hashtag 'webscraping', limit to 50 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'AI', limit to 100 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'DataScience', limit to 75 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'MachineLearning', limit to 60 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'BigData', limit to 80 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'Python', limit to 90 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'JavaScript', limit to 70 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'Coding', limit to 100 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'Programming', limit to 50 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Facebook posts with the hashtag 'WebDevelopment', limit to 60 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,39 @@
+{
+    "name": "Website Checker",
+    "entities": [
+        "website status",
+        "captchas",
+        "statusCode",
+        "wasSuccess"
+    ],
+    "filters": [
+        "urlsToCheck",
+        "proxyConfiguration",
+        "linkSelector",
+        "pseudoUrls"
+    ],
+    "options": [
+        "saveSnapshot",
+        "repeatChecksOnProvidedUrls",
+        "maxNumberOfPagesCheckedPerDomain",
+        "maxConcurrentPagesCheckedPerDomain",
+        "maxConcurrentDomainsChecked",
+        "retireBrowserInstanceAfterRequestCount",
+        "puppeteer.headfull",
+        "puppeteer.useChrome",
+        "puppeteer.waitFor"
+    ],
+    "special_instructions": [
+        "One of urlsToCheck or pseudoUrls must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Link selector is used to specify which links on the page should be followed and added to the request queue. This setting only applies if Use request queue is enabled",
+        "PseudoUrls are used to specify what kind of URLs found by Link selector should be added to the request queue",
+        "The checker will stop when the maximum number of pages checked per domain is reached. It's always a good idea to set this limit in order to prevent excess platform usage",
+        "The checker specifies the maximum number of pages that can be processed in parallel for one domain. The checker automatically increases and decreases concurrency based on available system resources",
+        "The checker specifies the maximum number of domains that should be checked at a time. This setting is relevant when passing in more than one URL to check",
+        "The retireBrowserInstanceAfterRequestCount option specifies how often the browser itself will rotate. Pick a higher number for smaller consumption, pick a lower number to rotate (test) more proxies",
+        "The puppeteer.headfull and puppeteer.useChrome options only work for Puppeteer type",
+        "The puppeteer.waitFor option only works for Puppeteer type. It will wait on each page. You can provide number in ms or a selector",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

@@ -1,0 +1,44 @@
+[
+    {
+        "data_task": "Scrape 150 children's music concert events in the US",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 100 country concert events in Canada",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 200 holiday concert events in Canada",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 50 Latin concert events in the US",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 100 other concert events in the US",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 75 R&B concert events in Canada",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 150 reggae concert events in Australia",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

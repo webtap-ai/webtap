@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Mode",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "mode",
+        "description": "Basic mode scrapes only a list of the ranked universities with basic information. Detailed mode visits each university's detail page to collect detailed information. NOTE: It slows the running time dramatically",
+        "value_options": "\"basic\": string\n\"visitDetail\": string"
+    },
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Limit of universities you want to get in final dataset. Max value is 100.",
+        "value_options": null
+    },
+    {
+        "name": "Year",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "year",
+        "description": "A year of the QS rankings",
+        "value_options": "\"2017\": string\n\"2018\": string\n\"2019\": string\n\"2020\": string\n\"2021\": string\n\"2022\": string"
+    },
+    {
+        "name": "Country",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "country",
+        "description": "Choose a country",
+        "value_options": "\"All countries\": string\n\"Argentina\": string\n\"Australia\": string\n\"Austria\": string\n\"Azerbaijan\": string\n\"Bahrain\": string\n\"Bangladesh\": string\n\"Belarus\": string\n\"Belgium\": string\n\"Brazil\": string\n\"Brunei\": string\n\"Bulgaria\": string\n\"Canada\": string\n\"Chile\": string\n\"China (Mainland)\": string\n\"Colombia\": string\n\"Costa Rica\": string\n\"Croatia\": string\n\"Cuba\": string\n\"Czechia\": string\n\"Denmark\": string\n\"Ecuador\": string\n\"Egypt\": string\n\"Estonia\": string\n\"Finland\": string\n\"France\": string\n\"Germany\": string\n\"Greece\": string\n\"Hong Kong SAR\": string\n\"Hungary\": string\n\"India\": string\n\"Indonesia\": string\n\"Iran, Islamic Republic of\": string\n\"Iraq\": string\n\"Ireland\": string\n\"Israel\": string\n\"Italy\": string\n\"Japan\": string\n\"Jordan\": string\n\"Kazakhstan\": string\n\"Kuwait\": string\n\"Latvia\": string\n\"Lebanon\": string\n\"Lithuania\": string\n\"Macau SAR\": string\n\"Malaysia\": string\n\"Mexico\": string\n\"Netherlands\": string\n\"New Zealand\": string\n\"Norway\": string\n\"Oman\": string\n\"Pakistan\": string\n\"Panama\": string\n\"Paraguay\": string\n\"Peru\": string\n\"Philippines\": string\n\"Poland\": string\n\"Portugal\": string\n\"Puerto Rico\": string\n\"Qatar\": string\n\"Romania\": string\n\"Russia\": string\n\"Saudi Arabia\": string\n\"Serbia\": string\n\"Singapore\": string\n\"Slovakia\": string\n\"Slovenia\": string\n\"South Africa\": string\n\"South Korea\": string\n\"Spain\": string\n\"Sri Lanka\": string\n\"Sweden\": string\n\"Switzerland\": string\n\"Taiwan\": string\n\"Thailand\": string\n\"Turkey\": string\n\"Ukraine\": string\n\"United Arab Emirates\": string\n\"United Kingdom\": string\n\"United States\": string\n\"Uruguay\": string\n\"Venezuela\": string\n\"Vietnam\": string"
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "Set the proxy configuration of the scraper",
+        "value_options": null
+    }
+]

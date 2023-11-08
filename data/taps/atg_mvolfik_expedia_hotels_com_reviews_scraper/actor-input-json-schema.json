@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "URLs of hotels to scrape reviews from. If you add any userData, it will be included in each review for given hotel under the key customData",
+            "example": [
+                {
+                    "url": "https://www.expedia.com/Prague-Hotels-Hotel-Krystal.h10966026.Hotel-Information"
+                }
+            ]
+        },
+        "maxReviewsPerHotel": {
+            "type": "integer",
+            "description": "Maximum number of reviews to scrape per hotel"
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Optionally use Apify Proxy"
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "Enables more verbose logging"
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "Maximum number of retries when a request fails"
+        },
+        "sortBy": {
+            "type": "string",
+            "description": "Note: this will not affect the order of reviews in the dataset, since review items are scraped in parallel, so later pages might finish before previous ones. However, it helps in the case you are limi",
+            "enum": [
+                "Most relevant",
+                "Most recent",
+                "Highest guest rating",
+                "Lowest guest rating"
+            ]
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

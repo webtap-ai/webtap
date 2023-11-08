@@ -1,0 +1,98 @@
+[
+    {
+        "name": "\ud83d\udd0e Query",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "query",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "\u2b50 New",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "new",
+        "description": "New",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udd25 Special Offers",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "offers",
+        "description": "Promo",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udcc1 Segment",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "segment",
+        "description": "Main Category",
+        "value_options": "\"fresh-food\": string\n\"bakery\": string\n\"frozen-food\": string\n\"food-cupboard\": string\n\"drinks\": string\n\"baby\": string\n\"health-and-beauty\": string\n\"pets\": string\n\"household\": string\n\"home-and-ents\": string\n\"christmas\": string\n\"inspiration-and-events\": string"
+    },
+    {
+        "name": "\ud83d\udcc1 Department",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "department",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udcc1 Category",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "category",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udcc1 Shelf",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "shelf",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udcd6 Page",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "page",
+        "description": "Page index.",
+        "value_options": null
+    },
+    {
+        "name": "\u267e\ufe0f Limit",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "limit",
+        "description": "Number of results.",
+        "value_options": null
+    },
+    {
+        "name": "\ud83d\udd00 Sorting",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort",
+        "description": "",
+        "value_options": "\"relevance\": string\n\"price-ascending\": string\n\"price-descending\": string"
+    },
+    {
+        "name": "\ud83d\udcdb Brands",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "brands",
+        "description": "Brand names separated by comma",
+        "value_options": null
+    },
+    {
+        "name": "\ud83e\udd6a Dietaries",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "dietaries",
+        "description": "See List of Dietaries",
+        "value_options": "\"No gluten\": string\n\"Vegetarian\": string\n\"Vegan\": string\n\"Low fat\": string\n\"Halal\": string\n\"No lactose\": string\n\"Organic\": string\n\"Low sugar\": string\n\"Sugar-free\": string\n\"Low salt\": string\n\"Low calorie\": string\n\"No egg\": string\n\"No milk\": string\n\"No soya\": string\n\"Paleo\": string\n\"Kosher\": string\n\"Lacto-Vegetarian\": string\n\"Ovo-Vegetarian\": string\n\"Pescetarian\": string\n\"Low alcohol\": string\n\"No alcohol\": string\n\"No caffeine\": string\n\"Low Saturated Fat\": string\n\"High Fibre\": string\n\"Source Of Fibre\": string\n\"1 of 5 a Day\": string"
+    }
+]

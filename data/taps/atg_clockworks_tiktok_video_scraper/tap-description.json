@@ -1,0 +1,26 @@
+{
+    "name": "TikTok Video Data",
+    "entities": [
+        "TikTok video",
+        "TikTok profile",
+        "TikTok music metadata",
+        "TikTok video metadata"
+    ],
+    "filters": [
+        "postURLs"
+    ],
+    "options": [
+        "shouldDownloadVideos",
+        "shouldDownloadCovers",
+        "shouldDownloadSlideshowImages",
+        "videoKvStoreIdOrName"
+    ],
+    "special_instructions": [
+        "The 'postURLs' filter is required. It should contain the URLs of the TikTok videos you want to scrape. You can enter URLs one by one, or you can upload or link to a text file.",
+        "The 'shouldDownloadVideos' option is a boolean that determines whether to download TikTok video files. Note that this will increase costs and time required for the scrape.",
+        "The 'shouldDownloadCovers' option is a boolean that determines whether to download TikTok video cover images (i.e. thumbnails). Note that this will increase costs and time required for the scrape.",
+        "The 'shouldDownloadSlideshowImages' option is a boolean that determines whether to download TikTok slideshow images. Note that this will increase costs and time required for the scrape.",
+        "The 'videoKvStoreIdOrName' option is a string that represents the name (or ID) of the Key Value Store where the videos will be stored. If omitted, videos will be stored in the default store.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

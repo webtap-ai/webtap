@@ -1,0 +1,22 @@
+{
+    "name": "Worldometer Coronavirus Stats",
+    "entities": [
+        "status",
+        "data",
+        "infected",
+        "deceased",
+        "recovered"
+    ],
+    "filters": [
+        "email"
+    ],
+    "options": [],
+    "special_instructions": [
+        "Email is required for the tool to function properly. If not provided, the tool will return an error.",
+        "The tool provides the latest data on the number of infected, deceased, and recovered people from the Worldometer website.",
+        "The data is updated every hour.",
+        "The tool does not provide any options for customization or filtering beyond the email input.",
+        "The tool does not return any data if there are no total infected data, which means something is wrong.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

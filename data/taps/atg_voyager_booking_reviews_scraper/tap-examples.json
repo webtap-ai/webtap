@@ -1,0 +1,89 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape all reviews from the following page https://www.booking.com/hotel/us/chicago-t.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AuLFmqIGwAIB0gIkN2YzZmI0YzktMTY1ZS00OThkLTgzY2ItOTMxODA5OTI5NzNj2AIF4AIB",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Reviews Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Reviews Scraper is reliable and solely based on compatibility between DATA TASK and Booking Reviews Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Reviews Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Reviews Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.booking.com/hotel/us/chicago-t.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaDqIAQGYATG4AQfIAQzYAQHoAQH4AQKIAgGoAgO4AuLFmqIGwAIB0gIkN2YzZmI0YzktMTY1ZS00OThkLTgzY2ItOTMxODA5OTI5NzNj2AIF4AIB&all_sr_blocks=5924324_246077187_2_0_0;checkin=2023-09-01;checkout=2023-09-15;dest_id=20033173;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=6;highlighted_blocks=5924324_246077187_2_0_0;hpos=6;matching_block_id=5924324_246077187_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=5924324_246077187_2_0_0__341393;srepoch=1682350871;srpvid=88466e4a189c0182;type=total;ucfs=1&#hotelTmpl"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape all reviews from the St. Regis Hotel in San Francisco, sorted by recent ascending",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Reviews Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Reviews Scraper is reliable and solely based on compatibility between DATA TASK and Booking Reviews Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Reviews Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Reviews Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.booking.com/hotel/us/st-regis-san-francisco.html"
+                    }
+                ],
+                "maxReviewsPerHotel": 1000,
+                "sortReviewsBy": "f_recent_asc",
+                "reviewScores": [
+                    "ALL"
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape all reviews from the Park Hyatt Hotel in Tokyo, sorted by relevance",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Reviews Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Reviews Scraper is reliable and solely based on compatibility between DATA TASK and Booking Reviews Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Reviews Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Reviews Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.booking.com/hotel/jp/park-hyatt-tokyo.html"
+                    }
+                ],
+                "sortReviewsBy": "f_relevance"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape all reviews from the Conrad Hotel in Hong Kong, sorted by recent ascending",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Reviews Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Reviews Scraper is reliable and solely based on compatibility between DATA TASK and Booking Reviews Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Reviews Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Reviews Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.booking.com/hotel/hk/conrad-hong-kong.html"
+                    }
+                ],
+                "sortReviewsBy": "f_recent_asc"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

@@ -1,0 +1,42 @@
+{
+    "example_json_input": {
+        "title": "PDF to HTML Converter",
+        "actor_name": "jancurn/pdf-to-html",
+        "description": "Converts a PDF document to HTML using the pdf2htmlEX tool.",
+        "author": "Jan \u010curn",
+        "actor_stats": {
+            "users": 400,
+            "runs": 211100,
+            "modified": "27 days ago"
+        },
+        "categories": [
+            "Developer tools"
+        ],
+        "related_actors": [
+            "apify/web-scraper",
+            "apify/website-content-crawler",
+            "apify/cheerio-scraper",
+            "apify/puppeteer-scraper"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "PDF to HTML Converter",
+        "actor_name": "jancurn/pdf-to-html",
+        "description": "Converts a PDF document to HTML using the pdf2htmlEX tool.",
+        "author": "Jan \u010curn",
+        "actor_stats": {
+            "users": 400,
+            "runs": 211100,
+            "modified": "27 days ago"
+        },
+        "categories": [
+            "Developer tools"
+        ],
+        "related_actors": [
+            "apify/web-scraper",
+            "apify/website-content-crawler",
+            "apify/cheerio-scraper",
+            "apify/puppeteer-scraper"
+        ]
+    }
+}

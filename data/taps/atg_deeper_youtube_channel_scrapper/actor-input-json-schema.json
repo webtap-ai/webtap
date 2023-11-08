@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "start_urls": {
+            "type": "array",
+            "description": "URLs to start with",
+            "example": [
+                {
+                    "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                }
+            ]
+        },
+        "details": {
+            "type": "boolean",
+            "description": "Scrapping details allows to get the full video description, comment counts and view counts",
+            "example": true
+        },
+        "dateFilter": {
+            "type": "string",
+            "description": "Select a date cutoff to collect only video more recent than this one. In any case, the most recent video is always returned for every channel."
+        },
+        "proxySettings": {
+            "type": "object",
+            "description": "Select proxies to be used by your crawler.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "start_urls"
+    ]
+}

@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "domains, domainsFileUrl, domainsFileOffset, domainsFileCount, useChrome, useApifyProxy, maxRequestRetries, crawlLinkCount, crawlHttpsVersion, crawlWwwSubdomain, saveScreenshot, saveHtml, saveText, considerChildFrames"
+}

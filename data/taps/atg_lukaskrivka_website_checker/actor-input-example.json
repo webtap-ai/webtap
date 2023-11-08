@@ -1,0 +1,17 @@
+{
+    "urlsToCheck": [
+        {
+            "url": "https://www.amazon.com/b?ie=UTF8&node=11392907011"
+        }
+    ],
+    "proxyConfiguration": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "SHADER",
+            "BUYPROXIES94952",
+            "RESIDENTIAL"
+        ]
+    },
+    "repeatChecksOnProvidedUrls": 10,
+    "maxNumberOfPagesCheckedPerDomain": 1000
+}

@@ -1,0 +1,34 @@
+{
+    "example_json_input": {
+        "pageNames": [
+            "nintendo"
+        ],
+        "scrollsAmount": 3
+    },
+    "example_output_json_response": [
+        {
+            "url": "https://www.facebook.com/mallplaza/posts/pfbid0ujRg5TkWErL1k3FdrAnMLdXBHkigXXaDa5ESkLhFNmdd453SdCBP76F3eo1go6Yql",
+            "time": "Monday, July 25, 2022 at 3:13 PM",
+            "timestamp": "1658787226",
+            "likes": 18,
+            "comments": 32,
+            "shares": 11,
+            "text": "Te invitamos al m\u00e1s pegajoso \ud83d\udc40 y entretenido Slime \ud83e\udd29 en Mallplaza. Ven a vivir esta experiencia por primera vez en Chile\ud83d\ude0e. Inscr\u00edbete aqu\u00ed  \ud83d\udc49https://bit.ly/3PTPxDH \u00a1Te esperamos con #SlimeEnMallplaza Tobalaba, Norte, Oeste y Alameda!",
+            "translatedText": "We invite you to the stickiest \ud83d\udc40 and entertaining Slime \ud83e\udd29 in Mallplaza. Come live this experience for the first time in Chile\ud83d\ude0e. Sign up here \ud83d\udc49 https://bit.ly/3PTPxDH\nWe are waiting for you with #SlimeEnMallPlaza Tobalaba, North, West and Alameda!",
+            "thumb": "https://scontent-sjc3-1.xx.fbcdn.net/v/t15.5256-10/295455899_187996600316644_765514970925514724_n.jpg?stp=dst-jpg_p280x280&_nc_cat=109&ccb=1-7&_nc_sid=08861d&_nc_ohc=n0UV182dI4wAX9qc06U&_nc_ht=scontent-sjc3-1.xx&oh=00_AT8SXOqTMtjxOb-5fPWFXKKLUVQGoIF5HiMiHDGOrMMHfA&oe=62FD2AFA",
+            "isVideo": true
+        },
+        {
+            "url": "https://www.facebook.com/Nintendo/posts/5408650062552736",
+            "time": "Friday, 24 June 2022 at 07:59",
+            "timestamp": "1656082757",
+            "likes": 273,
+            "comments": 15,
+            "shares": 11,
+            "text": "",
+            "link": "https://www.facebook.com/Nintendo/photos/a.271203266297467/5408649879219421/?type=3",
+            "thumb": "https://scontent-lcy1-1.xx.fbcdn.net/v/t39.30808-6/288222081_5408649869219422_7525573473741432066_n.png?stp=dst-png_s526x296&_nc_cat=106&ccb=1-7&_nc_sid=dd9801&_nc_ohc=Ex__XblJPNEAX_MttBn&_nc_ht=scontent-lcy1-1.xx&oh=00_AT_PnlaFfA4080EmLdtmg7J7Vl3auo_8FdGL3iqKX13rwA&oe=62BDEB8D",
+            "alt": "May be an anime-style image of text that says \"1 SWITCH FIRE EMBLEM WARRIORS THREE HOPES Available Now W'Fce \u00a9 Nintendo/ NTELLIGENT SYSTEMS KOEI TECMO GAMESCO, LTD Fire Emblem lintendo Switch rodemarks Nintendo. intendo. Violence Mild Suggestive Themes Alcohol Reference\""
+        }
+    ]
+}

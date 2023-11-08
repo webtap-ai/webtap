@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "startURLs, linkSelector, maxRequestsPerCrawl, maxCrawlingDepth, maxConcurrency, customKeyValueStore, customDataset, timeoutForSingleUrlInSeconds, navigationTimeoutInSeconds, searchParamsToIgnore, sameOrigin, proxyConfiguration"
+}

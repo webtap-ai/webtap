@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "mode": {
+            "type": "string",
+            "description": "Basic mode scrapes only a list of the ranked universities with basic information. Detailed mode visits each university's detail page to collect detailed information. NOTE: It slows the running time dr",
+            "example": "basic",
+            "enum": [
+                "basic",
+                "visitDetail"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit of universities you want to get in final dataset. Max value is 100.",
+            "example": 10
+        },
+        "year": {
+            "type": "string",
+            "description": "A year of the QS rankings",
+            "example": "2020",
+            "enum": [
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022"
+            ]
+        },
+        "country": {
+            "type": "string",
+            "description": "Choose a country",
+            "example": "Canada",
+            "enum": [
+                "All countries",
+                "Argentina",
+                "Australia",
+                "Austria",
+                "Azerbaijan",
+                "Bahrain",
+                "Bangladesh",
+                "Belarus",
+                "Belgium",
+                "Brazil",
+                "Brunei",
+                "Bulgaria",
+                "..."
+            ]
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Set the proxy configuration of the scraper",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "proxy"
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "",
+            "example": []
+        },
+        "timeFrame": {
+            "type": "string",
+            "description": "Select time frame",
+            "example": "today",
+            "enum": [
+                "today",
+                "hour_by_hour",
+                "ten_day",
+                "weekend",
+                "month"
+            ]
+        },
+        "units": {
+            "type": "string",
+            "description": "Select units",
+            "example": "metric",
+            "enum": [
+                "imperial",
+                "metric"
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit the number of locations to be scraped. Zero value means no limit.",
+            "example": 0
+        },
+        "locations": {
+            "type": "array",
+            "description": "Input must be in: City, State, Country or City, Country",
+            "example": []
+        },
+        "locationIds": {
+            "type": "array",
+            "description": "ID is in the last part of URL on weather.com",
+            "example": []
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Select proxies to be used by your actor.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "A function which result will get merged with the default result. It must return an object.",
+            "example": ""
+        }
+    },
+    "required": [
+        "timeFrame",
+        "units",
+        "maxItems",
+        "proxyConfiguration"
+    ]
+}

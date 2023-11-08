@@ -1,0 +1,8 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "queries": [
+        "how to drink yogurt"
+    ]
+}

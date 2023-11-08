@@ -1,0 +1,43 @@
+{
+    "name": "Tesco Grocery",
+    "entities": [
+        "grocery item",
+        "grocery brand",
+        "grocery category",
+        "grocery shelf",
+        "grocery segment"
+    ],
+    "filters": [
+        "query",
+        "new",
+        "offers",
+        "segment",
+        "department",
+        "category",
+        "shelf",
+        "page",
+        "limit",
+        "sort",
+        "brands",
+        "dietaries"
+    ],
+    "options": [
+        "Number of results",
+        "Page index",
+        "Sort by relevance, price ascending or descending",
+        "Brand names",
+        "Dietary preferences"
+    ],
+    "special_instructions": [
+        "The 'query' filter is used to search for a specific item. If it is not provided, the tool will return a general list of items.",
+        "The 'new' filter is a boolean value that determines whether to return only new items. If it is not provided, the tool will return both new and old items.",
+        "The 'offers' filter is a boolean value that determines whether to return only items on offer. If it is not provided, the tool will return both items on offer and not on offer.",
+        "The 'segment' filter is used to specify the main category of items to return. If it is not provided, the tool will return items from all categories.",
+        "The 'department', 'category', and 'shelf' filters are used to further narrow down the items to return. If they are not provided, the tool will return items from all departments, categories, and shelves.",
+        "The 'page' and 'limit' filters are used to control the number of items to return and the page index to start from. If they are not provided, the tool will return a default number of items starting from the first page.",
+        "The 'sort' filter is used to sort the items by relevance, price ascending, or price descending. If it is not provided, the tool will sort the items by relevance.",
+        "The 'brands' filter is used to return items from specific brands. If it is not provided, the tool will return items from all brands.",
+        "The 'dietaries' filter is used to return items that meet specific dietary preferences. If it is not provided, the tool will return items that meet all dietary preferences.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

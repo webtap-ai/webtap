@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "email": {
+            "type": "string",
+            "description": "Email where we should send email if there are no data about Total Infected, which means something is wrong.",
+            "example": "zuzka@apify.com"
+        }
+    },
+    "required": [
+        "email"
+    ]
+}

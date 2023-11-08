@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Hashtahs as single keywords",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "keywordList",
+        "description": "Spaces or special characters will bring no results",
+        "value_options": null
+    },
+    {
+        "name": "Results limit per keyword (0 for max)",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "resultsLimit",
+        "description": "Max amount of results per keyword",
+        "value_options": null
+    }
+]

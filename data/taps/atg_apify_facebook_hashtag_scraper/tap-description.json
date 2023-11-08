@@ -1,0 +1,21 @@
+{
+    "name": "Facebook Hashtag Search",
+    "entities": [
+        "Facebook post"
+    ],
+    "filters": [
+        "Keyword list",
+        "Results limit"
+    ],
+    "options": [
+        "Max amount of results per keyword"
+    ],
+    "special_instructions": [
+        "Spaces or special characters in keyword list will bring no results",
+        "Keyword list is required for the tool to function",
+        "Results limit is the maximum amount of results per keyword",
+        "The tool returns data such as post text&URL, time of posting, basic poster info, image&video URLs, OCR text, likes, comments and shares count, and more",
+        "The tool does not return data that is not listed in the output fields",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

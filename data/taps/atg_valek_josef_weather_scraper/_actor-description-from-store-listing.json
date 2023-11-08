@@ -1,0 +1,26 @@
+{
+    "example_json_input": {
+        "startUrls": [],
+        "units": "metric",
+        "timeFrame": "today",
+        "maxItems": 0,
+        "locations": [],
+        "locationIds": [],
+        "extendOutputFunction": "",
+        "proxyConfiguration": {
+            "useApifyProxy": true
+        }
+    },
+    "example_output_json_response": {
+        "city": "T\u0159ebo\u0148",
+        "state": "South Bohemia",
+        "country": "Czech Republic",
+        "zipCode": "379 01",
+        "time": "2020-08-15T07:00:00+0200",
+        "temperature": "24/16",
+        "forecast": "Thunderstorms/Scattered Thunderstorms",
+        "humidity": "79/88",
+        "windDirection": "W/WNW",
+        "windSpeed": "9/6"
+    }
+}

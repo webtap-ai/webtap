@@ -1,0 +1,240 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2022-01-01'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "dateFilter": "2022-01-01"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2021-01-01' with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2021-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2020-01-01' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2020-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2019-01-01' with detailed information using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2019-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2018-01-01'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "dateFilter": "2018-01-01"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2017-01-01' with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2017-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2016-01-01' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2016-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2014-01-01'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "dateFilter": "2014-01-01"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the YouTube channel 'https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g' and filter videos that are more recent than '2013-01-01' with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Youtube Channel Scrapper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Youtube Channel Scrapper is reliable and solely based on compatibility between DATA TASK and Youtube Channel Scrapper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Youtube Channel Scrapper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Youtube Channel Scrapper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "start_urls": [
+                    {
+                        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g"
+                    }
+                ],
+                "details": true,
+                "dateFilter": "2013-01-01",
+                "proxySettings": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

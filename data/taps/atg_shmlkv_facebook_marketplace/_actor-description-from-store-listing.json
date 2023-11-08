@@ -1,0 +1,24 @@
+{
+    "example_json_input": {
+        "startUrls": [
+            {
+                "url": "https://www.facebook.com/marketplace/telaviv/apartments-for-rent"
+            }
+        ],
+        "proxy": {
+            "useApifyProxy": true
+        }
+    },
+    "example_output_json_response": {
+        "maintainedBy": "Community",
+        "author": "Andre Sh",
+        "users": 288,
+        "runs": 3300,
+        "modified": "10 months ago",
+        "categories": [
+            "Business",
+            "E-commerce",
+            "Real estate"
+        ]
+    }
+}

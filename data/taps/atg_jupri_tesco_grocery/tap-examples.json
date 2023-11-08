@@ -1,0 +1,119 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'cake' in Tesco Grocery",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "cake"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'bread' in Tesco Grocery",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "bread"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'cheese' in Tesco Grocery, sort by price descending",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "cheese",
+                "sort": "price-descending"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'chocolate' in Tesco Grocery, limit to 10 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "chocolate",
+                "limit": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'cake' in Tesco Grocery, only new items",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "cake",
+                "new": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'bread' in Tesco Grocery, only items on promo",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "bread",
+                "offers": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Search for 'milk' in Tesco Grocery, only items from the brand 'Tesco'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Tesco Grocery Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Tesco Grocery Scraper is reliable and solely based on compatibility between DATA TASK and Tesco Grocery Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Tesco Grocery Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Tesco Grocery Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "milk",
+                "brands": "Tesco"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

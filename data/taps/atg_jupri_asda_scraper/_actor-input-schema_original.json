@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Query",
+        "type": "String",
+        "required": "Required",
+        "param_name": "query",
+        "description": "Search keyword for ingredients",
+        "value_options": null
+    },
+    {
+        "name": "Brand",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "brand",
+        "description": "Brand",
+        "value_options": null
+    },
+    {
+        "name": "Show Facets",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "facets",
+        "description": "Print facets informations in Log",
+        "value_options": null
+    },
+    {
+        "name": "Limit",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "limit",
+        "description": "Limit number of results",
+        "value_options": null
+    },
+    {
+        "name": "Sorting",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sort",
+        "description": "Sorting key",
+        "value_options": "\"relevance\": string\n\"price\": string\n\"sugar\": string\n\"salt\": string\n\"fat\": string\n\"carbohydrate\": string\n\"protein\": string\n\"fibre\": string\n\"energy\": string\n\"saturatedfat\": string"
+    },
+    {
+        "name": "Order",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "order",
+        "description": "Sorting order",
+        "value_options": "\"asc\": string\n\"desc\": string"
+    },
+    {
+        "name": "Dietary",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "dietary",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Category",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "category",
+        "description": "Category",
+        "value_options": "\"Baby, Toddler & Kids\": string\n\"Bakery\": string\n\"Beer, Wine & Spirits\": string\n\"Better For You\": string\n\"Big Night In\": string\n\"Chilled Food\": string\n\"Drinks\": string\n\"Eid Mubarak\": string\n\"Extra Special\": string\n\"Food Cupboard\": string\n\"Free From...\": string\n\"Frozen Food\": string\n\"Fruit, Veg & Flowers\": string\n\"Health & Wellness\": string\n\"Home & Entertainment\": string\n\"Laundry & Household\": string\n\"Meat, Poultry & Fish\": string\n\"Organic\": string\n\"Pet Food & Accessories\": string\n\"Price Locked\": string\n\"Price Match\": string\n\"Summer\": string\n\"Toiletries & Beauty\": string\n\"Vegan & Plant Based\": string\n\"World & Local Food\": string"
+    }
+]

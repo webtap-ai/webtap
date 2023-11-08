@@ -1,0 +1,12 @@
+{
+    "startUrls": [
+        {
+            "url": "https://www.booking.com/hotel/cz/old-town-square-apartments.html?aid=304142&&dest_id=-553173;dest_type=city;dist=0;group_adults=2"
+        }
+    ],
+    "reviewScores": [
+        "ALL"
+    ],
+    "sortReviewsBy": "f_relevance",
+    "maxReviewsPerHotel": 9999999
+}

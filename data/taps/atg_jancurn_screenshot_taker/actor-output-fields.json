@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "request, url, method, payload, userData, response, status, headers, content-encoding, cache-control, content-type, content-length, finishedAt, screenshotUrl, screenshot, size"
+}

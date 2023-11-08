@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://www.example.com/",
+    "maxPages": 1000,
+    "notificationEmails": [
+        "email@example.com"
+    ],
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

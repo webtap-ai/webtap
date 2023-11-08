@@ -1,0 +1,75 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "urlsToCheck": {
+            "type": "array",
+            "description": "A static list of URLs to check for captchas. To be able to add new URLs on the fly, enable the Use request queue option.\n\nFor details, see Start URLs in README.",
+            "example": [
+                {
+                    "url": "https://www.amazon.com/b?ie=UTF8&node=11392907011"
+                }
+            ]
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Specifies proxy servers that will be used by the scraper in order to hide its origin.\n\nFor details, see Proxy configuration in README.",
+            "example": {
+                "useApifyProxy": false
+            }
+        },
+        "saveSnapshot": {
+            "type": "boolean",
+            "description": "Will save HTML for Cheerio and HTML + screenshot for Puppeteer/Playwright"
+        },
+        "linkSelector": {
+            "type": "string",
+            "description": "A CSS selector saying which links on the page (<a> elements with href attribute) shall be followed and added to the request queue. This setting only applies if Use request queue is enabled. To filter ",
+            "example": "a[href]"
+        },
+        "pseudoUrls": {
+            "type": "array",
+            "description": "Specifies what kind of URLs found by Link selector should be added to the request queue. A pseudo-URL is a URL with regular expressions enclosed in [] brackets, e.g. http://www.example.com/[.*]. This ",
+            "example": [
+                {
+                    "purl": "https://www.amazon.com[.*]/dp/[.*]"
+                }
+            ]
+        },
+        "repeatChecksOnProvidedUrls": {
+            "type": "integer",
+            "description": "Will access each URL multiple times. Useful to test the same URL or bypass blocking of the first page."
+        },
+        "maxNumberOfPagesCheckedPerDomain": {
+            "type": "integer",
+            "description": "The maximum number of pages that the checker will load. The checker will stop when this limit is reached. It's always a good idea to set this limit in order to prevent excess platform usage for miscon"
+        },
+        "maxConcurrentPagesCheckedPerDomain": {
+            "type": "integer",
+            "description": "Specifies the maximum number of pages that can be processed by the checker in parallel for one domain. The checker automatically increases and decreases concurrency based on available system resources"
+        },
+        "maxConcurrentDomainsChecked": {
+            "type": "integer",
+            "description": "Specifies the maximum number of domains that should be checked at a time. This setting is relevant when passing in more than one URL to check."
+        },
+        "retireBrowserInstanceAfterRequestCount": {
+            "type": "integer",
+            "description": "How often will the browser itself rotate. Pick a higher number for smaller consumption, pick a lower number to rotate (test) more proxies."
+        },
+        "puppeteer.headfull": {
+            "type": "boolean",
+            "description": "Only works for Puppeteer type!"
+        },
+        "puppeteer.useChrome": {
+            "type": "boolean",
+            "description": "Only works for Puppeteer type! Be careful that Chrome is not guaranteed to work with Puppeteer."
+        },
+        "puppeteer.waitFor": {
+            "type": "string",
+            "description": "Only works for Puppeteer type. Will wait on each page. You can provide number in ms or a selector."
+        }
+    },
+    "required": [
+        "urlsToCheck"
+    ]
+}

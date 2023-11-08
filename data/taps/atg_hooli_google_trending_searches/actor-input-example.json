@@ -1,0 +1,11 @@
+{
+    "geo": "US",
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "toDate": "3 days",
+    "fromDate": "today",
+    "maxItems": 100,
+    "customData": {},
+    "outputMode": "complete"
+}

@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "domains": {
+            "type": "string",
+            "description": "List of domains to crawl. The domains must be naked, i.e. specified without a protocol and sub-domains (e.g. example.com).",
+            "example": "example.com\n        iana.org\n        apify.com"
+        },
+        "domainsFileUrl": {
+            "type": "string",
+            "description": "URL of a text file that contains the list of domains to crawl. The domains must be naked, i.e. specified without a protocol and sub-domains (e.g. example.com).\n\nThis field is useful if you have a larg"
+        },
+        "domainsFileOffset": {
+            "type": "integer",
+            "description": "Indicates how many domains from the file should be skipped in the beginning. This is useful if you only want to crawl a portion of the domains."
+        },
+        "domainsFileCount": {
+            "type": "integer",
+            "description": "Indicates how many domains from the file should be crawled, starting from the offset. This is useful if you only want to crawl a portion of the domains. Leave empty to crawl all domains."
+        },
+        "useChrome": {
+            "type": "boolean",
+            "description": "If checked, the actor uses Chrome instead of Puppeteer's Chromium for the crawling. This might help to prevent blocking of some pages."
+        },
+        "useApifyProxy": {
+            "type": "boolean",
+            "description": "If checked, the actor uses Apify Proxy to access the target pages. This might help to prevent blocking of some pages."
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "Indicates how many times shall the crawler retry to load a page on error.",
+            "example": 2
+        },
+        "crawlLinkCount": {
+            "type": "integer",
+            "description": "Indicates how many links from the main page going to the same domain shall also be crawled.",
+            "example": 5
+        },
+        "crawlHttpsVersion": {
+            "type": "boolean",
+            "description": "If checked, the actor attempts to crawl HTTPs version of the website (e.g. https://example.com for domain example.com)."
+        },
+        "crawlWwwSubdomain": {
+            "type": "boolean",
+            "description": "If checked, the actor attempts to crawl www. sub-domain of the website (e.g. http://www.example.com for domain example.com)."
+        },
+        "saveScreenshot": {
+            "type": "boolean",
+            "description": "If checked, the actor stores screenshots of all loaded pages into the key-value store."
+        },
+        "saveHtml": {
+            "type": "boolean",
+            "description": "If checked, the actor stores HTML content of all loaded pages into the key-value store."
+        },
+        "saveText": {
+            "type": "boolean",
+            "description": "If checked, the actor stores text content of all loaded pages into the dataset results."
+        },
+        "considerChildFrames": {
+            "type": "boolean",
+            "description": "If checked, the actor searches for social handles even in the content of the first-level child frames. The 'page.text' also contains the combined text of the main frame and direct child frames."
+        }
+    },
+    "required": []
+}

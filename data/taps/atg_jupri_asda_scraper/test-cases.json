@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Search for 'bread' and sort the results by 'price' in ascending order",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'cheese' and sort the results by 'protein' in descending order",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'wine' in the 'Beer, Wine & Spirits' category and sort by 'price' in ascending order",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'ice cream' in the 'Frozen Food' category with a limit of 15 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'vodka' in the 'Beer, Wine & Spirits' category and sort by 'price' in descending order",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

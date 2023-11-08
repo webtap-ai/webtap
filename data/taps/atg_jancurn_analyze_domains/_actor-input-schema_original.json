@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Domains",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "domains",
+        "description": "List of domains to crawl. The domains must be naked, i.e. specified without a protocol and sub-domains (e.g. example.com).",
+        "value_options": null
+    },
+    {
+        "name": "Domains file URL",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "domainsFileUrl",
+        "description": "URL of a text file that contains the list of domains to crawl. The domains must be naked, i.e. specified without a protocol and sub-domains (e.g. example.com).\n\nThis field is useful if you have a large number of domains.",
+        "value_options": null
+    },
+    {
+        "name": "Domains file offset",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "domainsFileOffset",
+        "description": "Indicates how many domains from the file should be skipped in the beginning. This is useful if you only want to crawl a portion of the domains.",
+        "value_options": null
+    },
+    {
+        "name": "Domains file count",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "domainsFileCount",
+        "description": "Indicates how many domains from the file should be crawled, starting from the offset. This is useful if you only want to crawl a portion of the domains. Leave empty to crawl all domains.",
+        "value_options": null
+    },
+    {
+        "name": "Use Chrome",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "useChrome",
+        "description": "If checked, the actor uses Chrome instead of Puppeteer's Chromium for the crawling. This might help to prevent blocking of some pages.",
+        "value_options": null
+    },
+    {
+        "name": "Use Apify Proxy",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "useApifyProxy",
+        "description": "If checked, the actor uses Apify Proxy to access the target pages. This might help to prevent blocking of some pages.",
+        "value_options": null
+    },
+    {
+        "name": "Max page retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Indicates how many times shall the crawler retry to load a page on error.",
+        "value_options": null
+    },
+    {
+        "name": "Crawl domain links",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "crawlLinkCount",
+        "description": "Indicates how many links from the main page going to the same domain shall also be crawled.",
+        "value_options": null
+    },
+    {
+        "name": "Crawl HTTPS version",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "crawlHttpsVersion",
+        "description": "If checked, the actor attempts to crawl HTTPs version of the website (e.g. https://example.com for domain example.com).",
+        "value_options": null
+    },
+    {
+        "name": "Crawl www. sub-domain",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "crawlWwwSubdomain",
+        "description": "If checked, the actor attempts to crawl www. sub-domain of the website (e.g. http://www.example.com for domain example.com).",
+        "value_options": null
+    },
+    {
+        "name": "Save screenshots",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveScreenshot",
+        "description": "If checked, the actor stores screenshots of all loaded pages into the key-value store.",
+        "value_options": null
+    },
+    {
+        "name": "Save HTML content",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveHtml",
+        "description": "If checked, the actor stores HTML content of all loaded pages into the key-value store.",
+        "value_options": null
+    },
+    {
+        "name": "Save text content",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveText",
+        "description": "If checked, the actor stores text content of all loaded pages into the dataset results.",
+        "value_options": null
+    },
+    {
+        "name": "Consider child frames",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "considerChildFrames",
+        "description": "If checked, the actor searches for social handles even in the content of the first-level child frames. The 'page.text' also contains the combined text of the main frame and direct child frames.",
+        "value_options": null
+    }
+]

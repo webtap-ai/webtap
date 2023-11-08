@@ -1,0 +1,25 @@
+{
+    "name": "Free eBook Finder",
+    "entities": [
+        "ebook"
+    ],
+    "filters": [
+        "search",
+        "language",
+        "startUrls",
+        "maxItems"
+    ],
+    "options": [
+        "extendOutputFunction",
+        "proxyConfig"
+    ],
+    "special_instructions": [
+        "The 'search' filter is optional. If not provided, the tool will return a general list of ebooks.",
+        "The 'language' filter is optional. If not provided, the tool will return ebooks in all languages.",
+        "The 'startUrls' filter is optional. If not provided, the tool will start from the main Gutenberg.org page.",
+        "The 'maxItems' filter is optional. If not provided, the tool will return all available ebooks.",
+        "The 'extendOutputFunction' option is a function that takes a JQuery handle ($) as argument and returns data that will be merged with the default output.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

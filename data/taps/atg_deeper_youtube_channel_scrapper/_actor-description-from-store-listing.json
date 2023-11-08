@@ -1,0 +1,40 @@
+{
+    "example_json_input": {
+        "url": "https://www.youtube.com/channel/UC4f0qvPJLqGTuLyy2iHOd-g",
+        "details": true
+    },
+    "example_output_json_response": {
+        "channelId": "UC4f0qvPJLqGTuLyy2iHOd-g",
+        "channelShortName": "rtbf_info",
+        "channelName": "RTBF Info",
+        "channelDescription": "Channel description...",
+        "channelThumbnailUrl": "https://yt3.ggpht.com/Or4cjb2dtf_O5jVC4PKK5U5Bi4VSPgUw7ihkDpvdukmms5fQdlzTQhFWj3l3uVyT4qveYnhEgg=s176-c-k-c0x00ffffff-no-rj",
+        "channelTotalVideos": 938,
+        "numberOfSubscribers": "27.6K",
+        "channelTotalViews": 16967815,
+        "channelJoinedDate": "2022-10-14",
+        "channelLocation": "Belgium",
+        "channelUrl": "https://www.youtube.com/channel/@UC4f0qvPJLqGTuLyy2iHOd-g",
+        "videos": [
+            {
+                "id": "XcdUi6O6x2w",
+                "title": "Video Title",
+                "url": "https://www.youtube.com/watch?v=XcdUi6O6x2w",
+                "text": "Video description...",
+                "thumbnailUrl": "https://i.ytimg.com/vi/XcdUi6O6x2w/hqdefault.jpg?sqp=-oaymwEjCNACELwBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDwlpqpRCSm4pMwSGzIdNZRbZMSkA",
+                "relativeDate": "22 hours ago",
+                "duration": "10:21",
+                "viewCount": 60300,
+                "commentsCount": 389,
+                "likes": 826,
+                "date": "2023-09-11",
+                "location": null,
+                "subtitles": null,
+                "comments": [
+                    {}
+                ],
+                "fromYTUrl": "https://www.youtube.com/@rtbf_info/videos"
+            }
+        ]
+    }
+}

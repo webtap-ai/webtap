@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Scrape TikTok profiles with tags '#travel', '#adventure', maximum 20 results per tag, and minimum follower count of 1000",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok profiles with tags '#fitness', '#workout', maximum 25 results per tag, and minimum follower count of 2000",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape TikTok profiles with tags '#sports', '#games', maximum 25 results per tag, and minimum follower count of 7000",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

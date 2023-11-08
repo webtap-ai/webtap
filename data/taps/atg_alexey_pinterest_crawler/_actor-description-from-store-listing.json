@@ -1,0 +1,36 @@
+{
+    "example_json_input": {
+        "actorId": "alexey/pinterest-crawler",
+        "url": "https://www.pinterest.com/example",
+        "proxyConfiguration": {
+            "useApifyProxy": true
+        }
+    },
+    "example_output_json_response": {
+        "username": "example_user",
+        "fullName": "John Doe",
+        "bio": "Example bio",
+        "followersCount": 100000,
+        "followingCount": 500,
+        "boards": [
+            {
+                "name": "Recipes",
+                "url": "https://www.pinterest.com/example/recipes"
+            },
+            {
+                "name": "Fashion",
+                "url": "https://www.pinterest.com/example/fashion"
+            }
+        ],
+        "pins": [
+            {
+                "imageUrl": "https://www.pinterest.com/example/pin1",
+                "description": "This is a pin about food!"
+            },
+            {
+                "imageUrl": "https://www.pinterest.com/example/pin2",
+                "description": "This is a pin about fashion!"
+            }
+        ]
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "queries": {
+            "type": "array",
+            "description": "Bing Search queries (e.g. food in NYC) and/or full URLs (e.g. https://www.bing.com/search?q=food+NYC). Enter one item per field.",
+            "example": [
+                "Hotels in NYC",
+                "Restaurants in NYC",
+                "https://www.bing.com/search?q=restaurants+in+NYC"
+            ]
+        },
+        "resultsPerPage": {
+            "type": "integer",
+            "description": "Number of search results per page. By default, Bing Search returns 10 results. The allowed values are between 1 and 100.",
+            "example": 10
+        },
+        "maxPagesPerQuery": {
+            "type": "integer",
+            "description": "The maximum number of search result pages crawled for each search query or URL. Note that a value greater than one might significantly slow down the actor.",
+            "example": 1
+        },
+        "marketCode": {
+            "type": "string",
+            "description": "Bing Search returns content for set market.",
+            "example": "en-US",
+            "enum": [
+                "en-US",
+                "en-GB",
+                "es-AR",
+                "en-AU",
+                "de-AT",
+                "nl-BE",
+                "fr-BE",
+                "pt-BR",
+                "en-CA",
+                "fr-CA",
+                "es-CL",
+                "da-DK",
+                "fi-FI",
+                "fr-FR",
+                "de-DE",
+                "zh-HK",
+                "en-IN",
+                "en-ID",
+                "it-IT",
+                "ja-JP",
+                "..."
+            ]
+        },
+        "languageCode": {
+            "type": "string",
+            "description": "Language for the search results.",
+            "example": "en",
+            "enum": [
+                "en",
+                "en-gb",
+                "ar",
+                "eu",
+                "bn",
+                "bg",
+                "ca",
+                "zh-hans",
+                "zh-hant",
+                "hr",
+                "cs",
+                "da",
+                "nl",
+                "et",
+                "fi",
+                "fr",
+                "gl",
+                "de",
+                "gu",
+                "he",
+                "hi",
+                "hu",
+                "is",
+                "it",
+                "jp",
+                "kn",
+                "ko",
+                "lv",
+                "lt",
+                "ms",
+                "ml",
+                "mr",
+                "nb",
+                "pl",
+                "pt-br",
+                "pt-pt",
+                "pa",
+                "ro",
+                "ru",
+                "sr",
+                "..."
+            ]
+        },
+        "csvFriendliness": {
+            "type": "boolean",
+            "description": "Remove results that are not CSV friendly."
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Automatic proxy and the country of your choice is usually the best option, but you can also select specific proxies, or use your own custom proxies.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "The maximum number of search results pages the crawler will load in parallel. A higher number means you will get your results faster, but also it will burn through your available proxies quicker."
+        }
+    },
+    "required": [
+        "queries",
+        "marketCode"
+    ]
+}

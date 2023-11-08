@@ -1,0 +1,15 @@
+{
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    },
+    "maxPosts": 3,
+    "pageNames": [
+        "humansofnewyork"
+    ],
+    "groupLimit": 0,
+    "resultsLimit": 10,
+    "commentsLimit": 0
+}

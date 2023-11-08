@@ -1,0 +1,5 @@
+{
+    "domains": "example.com\n        iana.org\n        apify.com",
+    "crawlLinkCount": 5,
+    "maxRequestRetries": 2
+}

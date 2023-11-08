@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'AI technology'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'best programming languages'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'climate change'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'vegan recipes'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'best books to read'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'how to lose weight'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'travel tips'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'how to start a business'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'how to improve English'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape Quora for questions and answers related to 'how to meditate'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

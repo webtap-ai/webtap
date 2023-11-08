@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Instagram PROFILES or POST URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "Only URLs to public profiles or posts expected to work, everything else will return error",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxy",
+        "description": "Either use an Apify residential proxy, or provide your own proxy servers. Datacenter proxies will not work.",
+        "value_options": null
+    }
+]

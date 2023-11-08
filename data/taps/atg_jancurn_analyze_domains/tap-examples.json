@@ -1,0 +1,197 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domains 'example.com', 'iana.org', 'apify.com', crawl 5 links on each domain, and retry each request up to 2 times on error",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "example.com\niana.org\napify.com",
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'google.com', crawl 10 links on the domain, and retry each request up to 3 times on error",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "google.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 3,
+                "crawlLinkCount": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'facebook.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Chrome instead of Puppeteer's Chromium",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "facebook.com",
+                "useChrome": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'twitter.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Apify Proxy to access the target pages",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "twitter.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'linkedin.com', crawl 5 links on the domain, and retry each request up to 2 times on error, attempt to crawl HTTPs version of the website",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "linkedin.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "crawlHttpsVersion": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'instagram.com', crawl 5 links on the domain, and retry each request up to 2 times on error, attempt to crawl www. sub-domain of the website",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "instagram.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "crawlWwwSubdomain": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'pinterest.com', crawl 5 links on the domain, and retry each request up to 2 times on error, store HTML content of all loaded pages into the key-value store",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "pinterest.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "saveHtml": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'reddit.com', crawl 5 links on the domain, and retry each request up to 2 times on error, store text content of all loaded pages into the dataset results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "reddit.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "saveText": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'tumblr.com', crawl 5 links on the domain, and retry each request up to 2 times on error, search for social handles even in the content of the first-level child frames",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "tumblr.com",
+                "useApifyProxy": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "considerChildFrames": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Analyze the domain 'ebay.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Chrome and attempt to crawl HTTPs version of the website",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Naked Domains Analyzer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Naked Domains Analyzer is reliable and solely based on compatibility between DATA TASK and Naked Domains Analyzer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Naked Domains Analyzer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Naked Domains Analyzer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "domains": "ebay.com",
+                "useChrome": true,
+                "maxRequestRetries": 2,
+                "crawlLinkCount": 5,
+                "crawlHttpsVersion": true
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

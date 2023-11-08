@@ -1,0 +1,39 @@
+{
+    "name": "Website Backup",
+    "entities": [
+        "website backup",
+        "metadata",
+        "snapshot"
+    ],
+    "filters": [
+        "startURLs",
+        "linkSelector",
+        "sameOrigin",
+        "searchParamsToIgnore"
+    ],
+    "options": [
+        "maxRequestsPerCrawl",
+        "maxCrawlingDepth",
+        "maxConcurrency",
+        "customKeyValueStore",
+        "customDataset",
+        "timeoutForSingleUrlInSeconds",
+        "navigationTimeoutInSeconds",
+        "proxyConfiguration"
+    ],
+    "special_instructions": [
+        "startURLs is a list of URL entry points. Each entry is an object of type {'url': 'http://www.example.com'}",
+        "linkSelector is a CSS selector matching elements with 'href' attributes that should be enqueued.",
+        "sameOrigin is a boolean value. If true, only backup URLs with the same origin as any of the start URL origins will be backed up.",
+        "searchParamsToIgnore is a list of names of URL search parameters (such as 'source', 'sourceid', etc.) that should be ignored in the URLs when crawling.",
+        "maxRequestsPerCrawl is the maximum number of pages that the scraper will load. The scraper will stop when this limit is reached.",
+        "maxCrawlingDepth defines how many links away from the StartURLs will the scraper descend. 0 means unlimited.",
+        "maxConcurrency defines how many pages can be processed by the scraper in parallel.",
+        "customKeyValueStore is a custom named key value store for saving results. If the key value store with this name doesn't yet exist, it's created. The snapshots of the pages will be saved in the key value store.",
+        "customDataset is a custom named dataset for saving metadata. If the dataset with this name doesn't yet exist, it's created. The metadata about the snapshots of the pages will be saves in the dataset.",
+        "timeoutForSingleUrlInSeconds is the timeout in seconds for doing a backup of a single URL.",
+        "navigationTimeoutInSeconds is the timeout in seconds in which the navigation needs to finish.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

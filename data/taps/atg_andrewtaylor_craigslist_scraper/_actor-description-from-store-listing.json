@@ -1,0 +1,12 @@
+{
+    "example_json_input": {
+        "search_url": "https://sfbay.craigslist.org/d/apartments-housing-for-rent/search/apa",
+        "email_addr": "xxx@xxx.com",
+        "email_subj": "New Apartments Search"
+    },
+    "example_output_json_response": {
+        "search_url": "https://sfbay.craigslist.org/d/apartments-housing-for-rent/search/apa",
+        "email_addr": "xxx@xxx.com",
+        "email_subj": "New Apartments Search"
+    }
+}

@@ -1,0 +1,126 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Prague-Hotels-Hotel-Krystal.h10966026.Hotel-Information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Expedia & Hotels.com reviews scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Expedia & Hotels.com reviews scraper is reliable and solely based on compatibility between DATA TASK and Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Expedia & Hotels.com reviews scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.expedia.com/Prague-Hotels-Hotel-Krystal.h10966026.Hotel-Information"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Reviews from the following hotel https://www.hotels.com/ho125419/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3, maximum 200 reviews, sorted by most recent",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Expedia & Hotels.com reviews scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Expedia & Hotels.com reviews scraper is reliable and solely based on compatibility between DATA TASK and Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Expedia & Hotels.com reviews scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.hotels.com/ho125419/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3"
+                    }
+                ],
+                "maxReviewsPerHotel": 200,
+                "sortBy": "Most recent",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "debugLog": false,
+                "maxRequestRetries": 3
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Reviews from the following hotel https://www.hotels.com/ho106123/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3, maximum 50 reviews, sorted by lowest guest rating",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Expedia & Hotels.com reviews scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Expedia & Hotels.com reviews scraper is reliable and solely based on compatibility between DATA TASK and Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Expedia & Hotels.com reviews scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.hotels.com/ho106123/?q-check-out=2022-03-01&FPQ=2&q-check-in=2022-02-28&WOE=2&WOD=1&q-room-0-children=0&pa=1&tab=description&JHR=1&q-room-0-adults=2&YGF=14&MGT=1&ZSX=0&SYE=3"
+                    }
+                ],
+                "maxReviewsPerHotel": 50,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "debugLog": false,
+                "maxRequestRetries": 3,
+                "sortBy": "Lowest guest rating"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Rome-Hotels-Hotel-Quirinale.h21958.Hotel-Information, maximum 200 reviews, sorted by most relevant",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Expedia & Hotels.com reviews scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Expedia & Hotels.com reviews scraper is reliable and solely based on compatibility between DATA TASK and Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Expedia & Hotels.com reviews scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.expedia.com/Rome-Hotels-Hotel-Quirinale.h21958.Hotel-Information"
+                    }
+                ],
+                "maxReviewsPerHotel": 200,
+                "sortBy": "Most relevant",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Reviews from the following hotel https://www.expedia.com/Madrid-Hotels-Hotel-Ritz.h527497.Hotel-Information, maximum 50 reviews, sorted by most relevant",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Expedia & Hotels.com reviews scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Expedia & Hotels.com reviews scraper is reliable and solely based on compatibility between DATA TASK and Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Expedia & Hotels.com reviews scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Expedia & Hotels.com reviews scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.expedia.com/Madrid-Hotels-Hotel-Ritz.h527497.Hotel-Information"
+                    }
+                ],
+                "maxReviewsPerHotel": 50,
+                "sortBy": "Most relevant",
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

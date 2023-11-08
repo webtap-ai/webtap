@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Start urls",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Time Frame",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "timeFrame",
+        "description": "Select time frame",
+        "value_options": "\"today\": string\n\"hour_by_hour\": string\n\"ten_day\": string\n\"weekend\": string\n\"month\": string"
+    },
+    {
+        "name": "Units",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "units",
+        "description": "Select units",
+        "value_options": "\"imperial\": string\n\"metric\": string"
+    },
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Required",
+        "param_name": "maxItems",
+        "description": "Limit the number of locations to be scraped. Zero value means no limit.",
+        "value_options": null
+    },
+    {
+        "name": "Search Locations by name",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "locations",
+        "description": "Input must be in: City, State, Country or City, Country",
+        "value_options": null
+    },
+    {
+        "name": "Search Locations by location id",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "locationIds",
+        "description": "ID is in the last part of URL on weather.com",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfiguration",
+        "description": "Select proxies to be used by your actor.",
+        "value_options": null
+    },
+    {
+        "name": "Extend output function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendOutputFunction",
+        "description": "A function which result will get merged with the default result. It must return an object.",
+        "value_options": null
+    }
+]

@@ -1,0 +1,106 @@
+[
+    {
+        "name": "URLs to check",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "urlsToCheck",
+        "description": "A static list of URLs to check for captchas. To be able to add new URLs on the fly, enable the Use request queue option.\n\nFor details, see Start URLs in README.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy Configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Specifies proxy servers that will be used by the scraper in order to hide its origin.\n\nFor details, see Proxy configuration in README.",
+        "value_options": null
+    },
+    {
+        "name": "Enabled",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "saveSnapshot",
+        "description": "Will save HTML for Cheerio and HTML + screenshot for Puppeteer/Playwright",
+        "value_options": null
+    },
+    {
+        "name": "Link Selector",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "linkSelector",
+        "description": "A CSS selector saying which links on the page (<a> elements with href attribute) shall be followed and added to the request queue. This setting only applies if Use request queue is enabled. To filter the links added to the queue, use the Pseudo-URLs setting.\n\nIf Link selector is empty, the page links are ignored.\n\nFor details, see Link selector in README.",
+        "value_options": null
+    },
+    {
+        "name": "Pseudo-URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "pseudoUrls",
+        "description": "Specifies what kind of URLs found by Link selector should be added to the request queue. A pseudo-URL is a URL with regular expressions enclosed in [] brackets, e.g. http://www.example.com/[.*]. This setting only applies if the Use request queue option is enabled.\n\nIf Pseudo-URLs are omitted, the actor enqueues all links matched by the Link selector.\n\nFor details, see Pseudo-URLs in README.",
+        "value_options": null
+    },
+    {
+        "name": "Repeat checks on provided URLs",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "repeatChecksOnProvidedUrls",
+        "description": "Will access each URL multiple times. Useful to test the same URL or bypass blocking of the first page.",
+        "value_options": null
+    },
+    {
+        "name": "Max number of pages checked per domain",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxNumberOfPagesCheckedPerDomain",
+        "description": "The maximum number of pages that the checker will load. The checker will stop when this limit is reached. It's always a good idea to set this limit in order to prevent excess platform usage for misconfigured scrapers. Note that the actual number of pages loaded might be slightly higher than this value.\n\nIf set to 0, there is no limit.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum concurrent pages checked per domain",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrentPagesCheckedPerDomain",
+        "description": "Specifies the maximum number of pages that can be processed by the checker in parallel for one domain. The checker automatically increases and decreases concurrency based on available system resources. This option enables you to set an upper limit, for example to reduce the load on a target website.",
+        "value_options": null
+    },
+    {
+        "name": "Maximum number of concurrent domains checked",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrentDomainsChecked",
+        "description": "Specifies the maximum number of domains that should be checked at a time. This setting is relevant when passing in more than one URL to check.",
+        "value_options": null
+    },
+    {
+        "name": "Retire browser instance after request count",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "retireBrowserInstanceAfterRequestCount",
+        "description": "How often will the browser itself rotate. Pick a higher number for smaller consumption, pick a lower number to rotate (test) more proxies.",
+        "value_options": null
+    },
+    {
+        "name": "Headfull browser (XVFB)",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "puppeteer.headfull",
+        "description": "Only works for Puppeteer type!",
+        "value_options": null
+    },
+    {
+        "name": "Use Chrome",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "puppeteer.useChrome",
+        "description": "Only works for Puppeteer type! Be careful that Chrome is not guaranteed to work with Puppeteer.",
+        "value_options": null
+    },
+    {
+        "name": "Wait for",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "puppeteer.waitFor",
+        "description": "Only works for Puppeteer type. Will wait on each page. You can provide number in ms or a selector.",
+        "value_options": null
+    }
+]

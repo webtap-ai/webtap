@@ -1,0 +1,31 @@
+{
+    "example_json_input": {
+        "title": "Monitoring Runner",
+        "actor_name": "apify/monitoring-runner",
+        "stats": {
+            "users": 112,
+            "runs": "1.4M",
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "Developer tools"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "Monitoring Runner",
+        "actor_name": "apify/monitoring-runner",
+        "stats": {
+            "users": 112,
+            "runs": "1.4M",
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "Developer tools"
+        ],
+        "related_articles": [
+            "What are the top 8 advantages of web scraping for e-commerce?",
+            "How Apify uses traffic monitoring to ensure fair billing",
+            "Definitive guide to price monitoring and tracking your competitors"
+        ]
+    }
+}

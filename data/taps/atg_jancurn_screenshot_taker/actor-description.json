@@ -1,0 +1,19 @@
+{
+    "id": "jancurn/screenshot-taker",
+    "url": "https://apify.com/jancurn/screenshot-taker",
+    "title": "Screenshot Taker \u00b7 Apify",
+    "name": "Screenshot Taker",
+    "pricing": "No credit card required",
+    "description": "Takes a screenshot of one or more web pages using the Chrome browser. The actor enables the setting of custom viewport size, page load timeout, delay, proxies, and output image format.",
+    "author_name": "Jan \u010curn",
+    "maintained_by": "Maintained by Community",
+    "count_users": "324 users",
+    "count_runs": "132.6k runs",
+    "last_modified": "Modified about 2 years ago",
+    "categories": "Developer tools",
+    "full_readme": "This Apify actor takes a screenshot of one or more web pages using Chrome browser. The actor enables the setting of custom viewport size, page load timeout, delay, proxies, and output image format.\n\nResults\n\nThe screenshots are stored in the the default key-value store associated with the actor run. For each web page on input, the dataset contains a record such as:\n\n{\n  \"request\": {\n    \"url\": \"https://www.example.com\",\n    \"method\": \"GET\",\n    \"payload\": null,\n    \"userData\": {}\n  },\n  \"response\": {\n    \"status\": 200,\n    \"headers\": {\n      \"status\": \"200\",\n      \"content-encoding\": \"gzip\",\n      \"cache-control\": \"max-age=604800\",\n      \"content-type\": \"text/html; charset=UTF-8\",\n      \"content-length\": \"606\"\n    }\n  },\n  \"finishedAt\": \"2019-07-14T16:16:56.230Z\",\n  \"screenshotUrl\": \"https://api.apify.com/v2/key-value-stores/x2xiRLsycdTpFQFSo/records/screenshot-2c730012.jpeg\"\n}\n\nIf an error occurs during loading or processing of a web page, the page is retried (up to pageMaxRetryCount times - see input schema). If the error persists, the resulting dataset will contain a record such as the following:\n\n{\n  \"request\": {\n    \"url\": \"https://non-existing-page.net\",\n    \"method\": \"GET\",\n    \"payload\": null,\n    \"userData\": {}\n  },\n  \"response\": null,\n  \"finishedAt\": \"2019-07-14T16:24:41.257Z\",\n  \"errorMessages\": [\n    \"Error: net::ERR_NAME_NOT_RESOLVED at https://non-existing-page.net\\n    at navigate ...\",\n    \"Error: net::ERR_NAME_NOT_RESOLVED at https://non-existing-page.net\\n    at navigate ...\",\n    \"Error: net::ERR_NAME_NOT_RESOLVED at https://non-existing-page.net\\n    at navigate ...\"\n  ]\n}",
+    "icon": "https://images.apifyusercontent.com/rQ12jxjfFZwyKxB9CAEgv1BBsCd27gYNYjuCaiy77XM/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS94RE02OUxnU2R5M3RzY2JxUy9FNXJmNGQzTHpGTW5XcDlkaS1zY3JlZW5zaG90LnBuZw.webp",
+    "author_url": "https://apify.com/jancurn",
+    "author_avatar": "https://images.apifyusercontent.com/H3aKDtXiftLU9atk8wkogcJxXh993G46JwiHcTm5e2Y/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS85ZkJIcTRGcEh4ZFdZN3I1Yy96VHY5d2NYZ1dwUkRZOUN2eC1NYXhpa180bWVzXzA2XzAyXzIwX18wMDguanBn.webp",
+    "readme_summary": "Takes a screenshot of one or more web pages using the Chrome browser. The actor enables the setting of custom viewport size, page load timeout, delay, proxies, and output image format. The screenshots are stored in the default key-value store associated with the actor run. If an error occurs during loading or processing of a web page, the page is retried up to `pageMaxRetryCount` times. If the error persists, the resulting dataset will contain an error record."
+}

@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "urls": {
+            "type": "array",
+            "description": "List of URLs of web pages to take the screenshot of.",
+            "example": [
+                {
+                    "url": "https://www.example.com"
+                },
+                {
+                    "url": "https://sdk.apify.com"
+                }
+            ]
+        },
+        "pageLoadTimeoutSecs": {
+            "type": "integer",
+            "description": "Timeout for the web page load, in seconds. If the web page does not load in this time frame, it is considered to have failed and will be retried, similarly as with other page load errors."
+        },
+        "pageMaxRetryCount": {
+            "type": "integer",
+            "description": "How many times to retry to load the page on error or timeout."
+        },
+        "waitUntil": {
+            "type": "string",
+            "description": "Indicates when to consider the navigation to the page as succeeded. For more details, see waitUntil parameter of Page.goto() function in Puppeteer documention.",
+            "enum": [
+                "load",
+                "domcontentloaded",
+                "networkidle0",
+                "networkidle2"
+            ]
+        },
+        "viewportWidth": {
+            "type": "integer",
+            "description": "Width of the browser window."
+        },
+        "viewportHeight": {
+            "type": "integer",
+            "description": "Height of the browser window."
+        },
+        "delaySecs": {
+            "type": "integer",
+            "description": "How long time to wait after loading the page before taking the screenshot."
+        },
+        "imageType": {
+            "type": "string",
+            "description": "Format of the image.",
+            "enum": [
+                "jpeg",
+                "png"
+            ]
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Specifies the type of proxy servers that will be used by the crawler in order to hide its origin."
+        }
+    },
+    "required": [
+        "urls"
+    ]
+}

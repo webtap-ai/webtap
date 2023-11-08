@@ -1,0 +1,187 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.bbc.com/news'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.bbc.com/news"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "customData": {}
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.foxnews.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.foxnews.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.nbcnews.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.nbcnews.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.usatoday.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.usatoday.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.businessinsider.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.businessinsider.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.economist.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.economist.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.history.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.history.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.espn.com/'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided LD+JSON Schema scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by LD+JSON Schema scraper is reliable and solely based on compatibility between DATA TASK and LD+JSON Schema scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given LD+JSON Schema scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: LD+JSON Schema scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.espn.com/"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

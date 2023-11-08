@@ -1,0 +1,301 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.amazon.com/b?ie=UTF8&node=11392907011' with link selector 'a[href]' and pseudo URL 'https://www.amazon.com[.*]/dp/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.amazon.com/b?ie=UTF8&node=11392907011"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.amazon.com[.*]/dp/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.reddit.com' with link selector 'a[href]' and pseudo URL 'https://www.reddit.com[.*]/comments/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.reddit.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.reddit.com[.*]/comments/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.wikipedia.org' with link selector 'a[href]' and pseudo URL 'https://www.wikipedia.org[.*]/wiki/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.wikipedia.org"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                },
+                "saveSnapshot": false,
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.wikipedia.org[.*]/wiki/[.*]"
+                    }
+                ],
+                "repeatChecksOnProvidedUrls": 1,
+                "maxNumberOfPagesCheckedPerDomain": 100,
+                "maxConcurrentPagesCheckedPerDomain": 5,
+                "maxConcurrentDomainsChecked": 10,
+                "retireBrowserInstanceAfterRequestCount": 100,
+                "puppeteer.headfull": false,
+                "puppeteer.useChrome": false,
+                "puppeteer.waitFor": ""
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.cnn.com' with link selector 'a[href]' and pseudo URL 'https://www.cnn.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.cnn.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.cnn.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.bbc.com' with link selector 'a[href]' and pseudo URL 'https://www.bbc.com[.*]/news/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.bbc.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.bbc.com[.*]/news/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.nytimes.com' with link selector 'a[href]' and pseudo URL 'https://www.nytimes.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.nytimes.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.nytimes.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.nbcnews.com' with link selector 'a[href]' and pseudo URL 'https://www.nbcnews.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.nbcnews.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.nbcnews.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.cbsnews.com' with link selector 'a[href]' and pseudo URL 'https://www.cbsnews.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.cbsnews.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.cbsnews.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.usatoday.com' with link selector 'a[href]' and pseudo URL 'https://www.usatoday.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.usatoday.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.usatoday.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check the website 'https://www.washingtonpost.com' with link selector 'a[href]' and pseudo URL 'https://www.washingtonpost.com[.*]/[.*]' without using Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Website Checker Runner Puppeteer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Website Checker Runner Puppeteer is reliable and solely based on compatibility between DATA TASK and Website Checker Runner Puppeteer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Website Checker Runner Puppeteer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Website Checker Runner Puppeteer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "urlsToCheck": [
+                    {
+                        "url": "https://www.washingtonpost.com"
+                    }
+                ],
+                "proxyConfiguration": {
+                    "useApifyProxy": false
+                },
+                "linkSelector": "a[href]",
+                "pseudoUrls": [
+                    {
+                        "purl": "https://www.washingtonpost.com[.*]/[.*]"
+                    }
+                ]
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

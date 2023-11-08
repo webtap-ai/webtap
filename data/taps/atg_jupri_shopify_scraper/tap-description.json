@@ -1,0 +1,25 @@
+{
+    "name": "Shopify Commerce",
+    "entities": [
+        "product"
+    ],
+    "filters": [
+        "url",
+        "collection",
+        "currency",
+        "page",
+        "limit"
+    ],
+    "options": [
+        "Start from specific page",
+        "Number of results per page"
+    ],
+    "special_instructions": [
+        "The 'url' is required for the tool to function. If it is not provided, return can_fulfill false and explain accordingly",
+        "The 'collection' and 'currency' are optional filters. If not provided, the tool will scrape all collections and use the default currency",
+        "The 'page' option allows you to start from a specific page. If not provided, the tool will start from the first page",
+        "The 'limit' option allows you to limit the number of results per page. If not provided, the tool will return all results",
+        "The tool returns three fields for each product: 'id', 'title', and 'handle'",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

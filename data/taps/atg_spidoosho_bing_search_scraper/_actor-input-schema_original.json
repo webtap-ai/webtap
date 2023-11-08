@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Search queries or URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "queries",
+        "description": "Bing Search queries (e.g. food in NYC) and/or full URLs (e.g. https://www.bing.com/search?q=food+NYC). Enter one item per field.",
+        "value_options": null
+    },
+    {
+        "name": "Results per page",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "resultsPerPage",
+        "description": "Number of search results per page. By default, Bing Search returns 10 results. The allowed values are between 1 and 100.",
+        "value_options": null
+    },
+    {
+        "name": "Max pages per query",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxPagesPerQuery",
+        "description": "The maximum number of search result pages crawled for each search query or URL. Note that a value greater than one might significantly slow down the actor.",
+        "value_options": null
+    },
+    {
+        "name": "Market Code",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "marketCode",
+        "description": "Bing Search returns content for set market.",
+        "value_options": "\"en-US\": string\n\"en-GB\": string\n\"es-AR\": string\n\"en-AU\": string\n\"de-AT\": string\n\"nl-BE\": string\n\"fr-BE\": string\n\"pt-BR\": string\n\"en-CA\": string\n\"fr-CA\": string\n\"es-CL\": string\n\"da-DK\": string\n\"fi-FI\": string\n\"fr-FR\": string\n\"de-DE\": string\n\"zh-HK\": string\n\"en-IN\": string\n\"en-ID\": string\n\"it-IT\": string\n\"ja-JP\": string\n\"ko-KR\": string\n\"en-MY\": string\n\"es-MX\": string\n\"nl-NL\": string\n\"en-NZ\": string\n\"no-NO\": string\n\"zh-CN\": string\n\"pl-PL\": string\n\"en-PH\": string\n\"ru-RU\": string\n\"en-ZA\": string\n\"es-ES\": string\n\"sv-SE\": string\n\"fr-CH\": string\n\"de-CH\": string\n\"zh-TW\": string\n\"tr-TR\": string\n\"es-US\": string"
+    },
+    {
+        "name": "Language",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "languageCode",
+        "description": "Language for the search results.",
+        "value_options": "\"en\": string\n\"en-gb\": string\n\"ar\": string\n\"eu\": string\n\"bn\": string\n\"bg\": string\n\"ca\": string\n\"zh-hans\": string\n\"zh-hant\": string\n\"hr\": string\n\"cs\": string\n\"da\": string\n\"nl\": string\n\"et\": string\n\"fi\": string\n\"fr\": string\n\"gl\": string\n\"de\": string\n\"gu\": string\n\"he\": string\n\"hi\": string\n\"hu\": string\n\"is\": string\n\"it\": string\n\"jp\": string\n\"kn\": string\n\"ko\": string\n\"lv\": string\n\"lt\": string\n\"ms\": string\n\"ml\": string\n\"mr\": string\n\"nb\": string\n\"pl\": string\n\"pt-br\": string\n\"pt-pt\": string\n\"pa\": string\n\"ro\": string\n\"ru\": string\n\"sr\": string\n\"sk\": string\n\"sl\": string\n\"es\": string\n\"sv\": string\n\"ta\": string\n\"te\": string\n\"th\": string\n\"tr\": string\n\"uk\": string\n\"vi\": string"
+    },
+    {
+        "name": "CSV friendliness",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "csvFriendliness",
+        "description": "Remove results that are not CSV friendly.",
+        "value_options": null
+    },
+    {
+        "name": "Set up your proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Automatic proxy and the country of your choice is usually the best option, but you can also select specific proxies, or use your own custom proxies.",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "The maximum number of search results pages the crawler will load in parallel. A higher number means you will get your results faster, but also it will burn through your available proxies quicker.",
+        "value_options": null
+    }
+]

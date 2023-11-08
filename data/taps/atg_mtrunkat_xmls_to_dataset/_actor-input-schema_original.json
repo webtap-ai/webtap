@@ -1,0 +1,18 @@
+[
+    {
+        "name": "URLs of XML files",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "sources",
+        "description": "Enter the XML URLs you want to be downloaded.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "Select proxies to be used to download XML files.",
+        "value_options": null
+    }
+]

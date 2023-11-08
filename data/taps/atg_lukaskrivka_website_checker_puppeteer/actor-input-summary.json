@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "urlsToCheck, proxyConfiguration, saveSnapshot, linkSelector, pseudoUrls, repeatChecksOnProvidedUrls, maxNumberOfPagesCheckedPerDomain, maxConcurrentPagesCheckedPerDomain, maxConcurrentDomainsChecked, retireBrowserInstanceAfterRequestCount, puppeteer.headfull, puppeteer.useChrome, puppeteer.waitFor"
+}

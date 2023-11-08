@@ -1,0 +1,46 @@
+{
+    "example_json_input": {
+        "search": "span",
+        "language": "English",
+        "maxItems": 10,
+        "proxy": {
+            "useApifyProxy": true
+        }
+    },
+    "example_output_json_response": {
+        "uuid": "09222e6c-a1bc-4307-ba80-294ea4281117",
+        "title": "Shaping Work of the Future",
+        "inProspectus": true,
+        "prospectusPath": "/course/shaping-work-of-the-future",
+        "organizationShortCodeOverride": "",
+        "organizationLogoOverrideUrl": null,
+        "courseType": "verified-audit",
+        "inYearValue": null,
+        "activeCourseRun": {
+            "key": "course-v1:MITx+15.662x+1T2020",
+            "type": "verified",
+            "marketingUrl": "https://www.edx.org/course/shaping-work-of-the-future-3",
+            "minEffort": 4,
+            "maxEffort": 5,
+            "weeksToComplete": 8
+        },
+        "image": {
+            "src": "https://prod-discovery.edx-cdn.org/media/course/image/09222e6c-a1bc-4307-ba80-294ea4281117-e28e19d05647.small.jpg"
+        },
+        "locationRestriction": null,
+        "owners": [
+            {
+                "key": "MITx",
+                "logoImageUrl": "https://prod-discovery.edx-cdn.org/organization/logos/2a73d2ce-c34a-4e08-8223-83bca9d2f01d-2cc8854c6fee.png",
+                "name": "Massachusetts Institute of Technology"
+            }
+        ],
+        "recentEnrollmentCount": 1149,
+        "topics": [],
+        "additionalMetadata": null,
+        "objectID": "course-09222e6c-a1bc-4307-ba80-294ea4281117",
+        "cardType": "course",
+        "cardIndex": 3,
+        "url": "https://learning.edx.org/course/course-v1:MITx+15.662x+1T2020/home."
+    }
+}

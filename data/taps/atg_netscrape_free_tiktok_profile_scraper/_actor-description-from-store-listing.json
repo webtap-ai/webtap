@@ -1,0 +1,20 @@
+{
+    "example_json_input": {
+        "actor_name": "netscrape/free-tiktok-profile-scraper",
+        "profile_url": "https://tiktok.com/@jadavis19"
+    },
+    "example_output_json_response": {
+        "profile_url": "https://tiktok.com/@jadavis19",
+        "profile_picture": "https://p16-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/26c2f2fa3872a0c2ba47e2b4781214b9~c5_1080x1080.jpeg",
+        "following_count": 22,
+        "follower_count": 260200,
+        "heart_count": 4900000,
+        "video_count": 161,
+        "digg_count": 16,
+        "verified": false,
+        "bio": "Josh & Ashley\ud83e\uddd4\ud83c\udffb\u200d\u2642\ufe0f\ud83d\udc69\ud83c\udffc\njoshashleyd@gmail.com 4collabs\ud83d\udce9\nFB- Symply Davis\u2665\ufe0f",
+        "email": "joshashleyd@gmail.com",
+        "username": "jadavis19",
+        "name": "Symply Davis"
+    }
+}

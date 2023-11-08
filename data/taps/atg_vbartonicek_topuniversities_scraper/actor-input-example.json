@@ -1,0 +1,9 @@
+{
+    "mode": "basic",
+    "year": "2022",
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "country": "All countries",
+    "maxItems": 10
+}

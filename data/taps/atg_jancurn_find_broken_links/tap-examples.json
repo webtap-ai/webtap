@@ -1,0 +1,102 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Crawl 'https://www.educationportal.com' and find broken links, maximum 6000 pages, send notifications to 'admin@educationportal.com', save only broken links, crawl subdomains, use Apify Proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Broken Link Checker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Broken Link Checker is reliable and solely based on compatibility between DATA TASK and Broken Link Checker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Broken Link Checker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Broken Link Checker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "baseUrl": "https://www.educationportal.com",
+                "maxPages": 6000,
+                "notificationEmails": [
+                    "admin@educationportal.com"
+                ],
+                "saveOnlyBrokenLinks": true,
+                "crawlSubdomains": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Crawl the website 'https://www.newssite.com/' and find broken links, limit the crawl to 2000 pages, send notifications to 'email@newssite.com', crawl subdomains",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Broken Link Checker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Broken Link Checker is reliable and solely based on compatibility between DATA TASK and Broken Link Checker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Broken Link Checker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Broken Link Checker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "baseUrl": "https://www.newssite.com/",
+                "maxPages": 2000,
+                "notificationEmails": [
+                    "email@newssite.com"
+                ],
+                "saveOnlyBrokenLinks": false,
+                "crawlSubdomains": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Crawl the website 'https://www.travelsite.com/' and find broken links, limit the crawl to 3000 pages, send notifications to 'email@travelsite.com', crawl subdomains",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Broken Link Checker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Broken Link Checker is reliable and solely based on compatibility between DATA TASK and Broken Link Checker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Broken Link Checker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Broken Link Checker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "baseUrl": "https://www.travelsite.com/",
+                "maxPages": 3000,
+                "notificationEmails": [
+                    "email@travelsite.com"
+                ],
+                "saveOnlyBrokenLinks": false,
+                "crawlSubdomains": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Crawl the website 'https://www.realestatesite.com/' and find broken links, limit the crawl to 1000 pages, send notifications to 'email@realestatesite.com', crawl subdomains",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Broken Link Checker INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Broken Link Checker is reliable and solely based on compatibility between DATA TASK and Broken Link Checker OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Broken Link Checker OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Broken Link Checker has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "baseUrl": "https://www.realestatesite.com/",
+                "maxPages": 1000,
+                "notificationEmails": [
+                    "email@realestatesite.com"
+                ],
+                "saveOnlyBrokenLinks": false,
+                "crawlSubdomains": true,
+                "proxyConfiguration": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

@@ -1,0 +1,31 @@
+{
+    "name": "Tripadvisor Reviews",
+    "entities": [
+        "review",
+        "reviewer info",
+        "owner's response",
+        "helpful votes",
+        "images",
+        "review language",
+        "place details"
+    ],
+    "filters": [
+        "startUrls",
+        "maxReviews",
+        "lastReviewDate",
+        "scrapeReviewerInfo",
+        "language"
+    ],
+    "options": [
+        "debugLog"
+    ],
+    "special_instructions": [
+        "startUrls is a required field. Paste here a URL(s) of a specific place you want to get reviews from.",
+        "Use a large value (for example 1 million) for maxReviews to get all reviews from each place.",
+        "lastReviewDate is a date where the scraper stops loading older reviews.",
+        "Scrape reviewer info (name, profile picture, location etc.). You should only extract reviewer's info if you have a legit reason to do so.",
+        "Select the desired language for the reviews.",
+        "Enable verbose logs for debugging purposes with debugLog.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

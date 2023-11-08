@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "startUrls, useBrowser, keywords, caseSensitive, scanScripts, linkSelector, pseudoUrls, maxDepth, proxyConfiguration, maxPagesPerCrawl, maxConcurrency, retireInstanceAfterRequestCount, useChrome, waitFor"
+}

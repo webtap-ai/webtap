@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "search": {
+            "type": "string",
+            "description": "Keyword that you want to search in edx.org",
+            "example": "span"
+        },
+        "language": {
+            "type": "string",
+            "description": "Select a language that edx.org provides",
+            "example": "English",
+            "enum": [
+                "none",
+                "English",
+                "Spanish",
+                "French",
+                "Chinese - Mandarin",
+                "Italian",
+                "Russian",
+                "Chinese - Simplified",
+                "German",
+                "Portuguese",
+                "Japanese",
+                "..."
+            ]
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Maximum number of items you want on your results",
+            "example": 10
+        },
+        "proxy": {
+            "type": "object",
+            "description": "Select proxies to be used by your crawler.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": []
+}

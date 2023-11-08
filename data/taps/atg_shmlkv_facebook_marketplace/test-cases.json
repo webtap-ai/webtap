@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Furniture for sale in London from the following page https://www.facebook.com/marketplace/london/furniture",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Electronics for sale in San Francisco from the following page https://www.facebook.com/marketplace/sanfrancisco/electronics",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Furniture for sale in Istanbul with a price limit of 1000 TRY from the following page https://www.facebook.com/marketplace/istanbul/furniture",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "url": "https://mall.cz",
+    "proxy": {
+        "useApifyProxy": true
+    }
+}

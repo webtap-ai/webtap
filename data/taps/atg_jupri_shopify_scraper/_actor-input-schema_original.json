@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Homepage URL",
+        "type": "String",
+        "required": "Required",
+        "param_name": "url",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Collection",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "collection",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Currency",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "currency",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Page",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "page",
+        "description": "Start from specific page",
+        "value_options": null
+    },
+    {
+        "name": "Limit (per page)",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "limit",
+        "description": "Number of results per page",
+        "value_options": null
+    }
+]

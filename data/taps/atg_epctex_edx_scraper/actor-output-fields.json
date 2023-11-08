@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "uuid, title, inProspectus, prospectusPath, organizationShortCodeOverride, organizationLogoOverrideUrl, courseType, inYearValue, activeCourseRun, image, locationRestriction, owners, recentEnrollmentCount, topics, additionalMetadata, objectID, cardType, cardIndex, url, shortDescription, marketingUrl, enrollmentCount, productSource"
+}

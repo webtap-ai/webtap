@@ -1,0 +1,42 @@
+{
+    "name": "Weather Forecasts",
+    "entities": [
+        "city",
+        "state",
+        "country",
+        "zipCode",
+        "time",
+        "temperature",
+        "forecast",
+        "humidity",
+        "windDirection",
+        "windSpeed",
+        "locationId"
+    ],
+    "filters": [
+        "startUrls",
+        "timeFrame",
+        "units",
+        "maxItems",
+        "locations",
+        "locationIds"
+    ],
+    "options": [
+        "timeFrame",
+        "units",
+        "maxItems",
+        "proxyConfiguration",
+        "extendOutputFunction"
+    ],
+    "special_instructions": [
+        "One of startUrls, locations or locationIds must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The timeFrame can be one of the following: 'today', 'hour_by_hour', 'ten_day', 'weekend', 'month'",
+        "The units can be either 'imperial' or 'metric'",
+        "maxItems is used to limit the number of locations to be scraped. Zero value means no limit",
+        "locations input must be in: City, State, Country or City, Country",
+        "locationIds is the ID in the last part of URL on weather.com",
+        "extendOutputFunction is a function which result will get merged with the default result. It must return an object",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

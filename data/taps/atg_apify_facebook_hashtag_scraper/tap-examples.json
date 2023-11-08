@@ -1,0 +1,192 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'webscraping', limit to 50 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "webscraping"
+                ],
+                "resultsLimit": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'AI', limit to 100 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "AI"
+                ],
+                "resultsLimit": 100
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'DataScience', limit to 75 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "DataScience"
+                ],
+                "resultsLimit": 75
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'MachineLearning', limit to 60 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "MachineLearning"
+                ],
+                "resultsLimit": 60
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'BigData', limit to 80 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "BigData"
+                ],
+                "resultsLimit": 80
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'Python', limit to 90 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "Python"
+                ],
+                "resultsLimit": 90
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'JavaScript', limit to 70 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "JavaScript"
+                ],
+                "resultsLimit": 70
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'Coding', limit to 100 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "Coding"
+                ],
+                "resultsLimit": 100
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'Programming', limit to 50 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "Programming"
+                ],
+                "resultsLimit": 50
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Facebook posts with the hashtag 'WebDevelopment', limit to 60 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Facebook Hashtag Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Facebook Hashtag Scraper is reliable and solely based on compatibility between DATA TASK and Facebook Hashtag Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Facebook Hashtag Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Facebook Hashtag Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "keywordList": [
+                    "WebDevelopment"
+                ],
+                "resultsLimit": 60
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

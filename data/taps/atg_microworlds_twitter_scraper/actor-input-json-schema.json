@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "searchTerms": {
+            "type": "array",
+            "description": "A list of Twitter search terms",
+            "example": [
+                "cnn"
+            ]
+        },
+        "urls": {
+            "type": "array",
+            "description": "A list of Twitter URLs",
+            "example": [
+                "https://twitter.com/search?q=wikipedia&f=live&src=typed_query"
+            ]
+        },
+        "maxTweets": {
+            "type": "integer",
+            "description": "Maximum number of tweets to fecth for this run",
+            "example": 500
+        },
+        "searchMode": {
+            "type": "string",
+            "description": "Select the Search mode. Default is 'Live' - it returns more tweet results",
+            "example": "live",
+            "enum": [
+                "top",
+                "live",
+                "user",
+                "image",
+                "video"
+            ]
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "Set the max request retries",
+            "example": 3
+        }
+    },
+    "required": []
+}

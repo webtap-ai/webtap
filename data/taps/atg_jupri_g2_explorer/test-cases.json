@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape product reviews for 'apify'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', limit to 10 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', sort by 'newest'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', sort by 'most-helpful'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', sort by 'highrated'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', sort by 'least-helpful'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', in 'review' mode",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', in 'discuss' mode",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', response type 'text'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape product reviews for 'apify', response type 'video'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

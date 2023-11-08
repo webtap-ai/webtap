@@ -1,0 +1,8 @@
+[
+    {
+        "data_task": "Scrape 50 pins from the profiles 'pinterest.com/poltronafrau' and 'bellinthewoods'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

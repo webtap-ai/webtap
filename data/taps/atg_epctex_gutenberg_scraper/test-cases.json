@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Search for 'book', maximum 5 items, starting from the URLs 'https://www.gutenberg.org/browse/recent/last7' and 'https://www.gutenberg.org/browse/titles/h', using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'history', maximum 15 items, in Spanish language, starting from the URL 'https://www.gutenberg.org/browse/subjects/h', using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'classic', maximum 20 items, in Polish language, starting from the URL 'https://www.gutenberg.org/browse/subjects/cl', using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Search for 'literature', maximum 10 items, in Norwegian language, starting from the URL 'https://www.gutenberg.org/browse/subjects/li', using Apify Proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

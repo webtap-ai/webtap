@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, hotelId, reviewPage, userName, userLocation, roomInfo, stayDate, stayLength, reviewDate, reviewTitle, rating, reviewTextParts, customData, propertyResponse, reviewOriginalLanguage, travelerType, startUrl"
+}

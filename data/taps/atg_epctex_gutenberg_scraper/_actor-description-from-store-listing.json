@@ -1,0 +1,25 @@
+{
+    "example_json_input": {
+        "search": "ebook",
+        "language": [
+            "English"
+        ],
+        "startUrls": [
+            {
+                "url": "https://www.gutenberg.org/browse/recent/last7"
+            },
+            {
+                "url": "https://www.gutenberg.org/browse/titles/h"
+            }
+        ]
+    },
+    "example_output_json_response": {
+        "author": "United States. National Park Service",
+        "title": "Cumberland Island: Junior Ranger Program Activity Guide for Ages 5-7",
+        "language": "English",
+        "htmlURL": "https://www.gutenberg.org/files/61452/61452-h/61452-h.htm",
+        "epubURL": "https://www.gutenberg.org/ebooks/61452.epub.images?session_id=24e44a13d40847bb8d8b13a9216689880a3221cf",
+        "kindleURL": "https://www.gutenberg.org/ebooks/61452.kindle.images?session_id=24e44a13d40847bb8d8b13a9216689880a3221cf",
+        "plainTextURL": "https://www.gutenberg.org/files/61452/61452-0.txt"
+    }
+}

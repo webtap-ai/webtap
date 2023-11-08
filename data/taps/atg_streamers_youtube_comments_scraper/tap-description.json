@@ -1,0 +1,27 @@
+{
+    "name": "YouTube Comments",
+    "entities": [
+        "comments",
+        "comment",
+        "cid",
+        "author",
+        "videoId",
+        "pageUrl",
+        "commentsCount",
+        "title"
+    ],
+    "filters": [
+        "startUrls",
+        "maxComments"
+    ],
+    "options": [
+        "Download format: JSON, CSV, Excel"
+    ],
+    "special_instructions": [
+        "startUrls is a required field. It should contain a link to a specific Youtube video or a list of URLs in a CSV file or Google Sheet.",
+        "maxComments is an optional field. It limits the number of comments you want to scrape per video. Input 0 or leave the field empty to not scrape any comments.",
+        "The tool returns the full comment text, posting date, author username, video title, videoId for each comment.",
+        "The tool has no limits or quotas.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, url, title, lang, locationId, publishedDate, publishedPlatform, rating, helpfulVotes, text, roomTip, travelDate, tripType, ownerResponse"
+}

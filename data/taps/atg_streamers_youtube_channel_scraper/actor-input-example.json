@@ -1,0 +1,10 @@
+{
+    "startUrls": [
+        {
+            "url": "https://www.youtube.com/@Apify"
+        }
+    ],
+    "maxResults": 10,
+    "maxResultStreams": 0,
+    "maxResultsShorts": 0
+}

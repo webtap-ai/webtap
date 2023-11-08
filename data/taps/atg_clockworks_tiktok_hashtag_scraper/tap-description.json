@@ -1,0 +1,33 @@
+{
+    "name": "TikTok Hashtag Search",
+    "entities": [
+        "TikTok video",
+        "TikTok creator",
+        "TikTok music metadata",
+        "TikTok video metadata",
+        "TikTok video URL",
+        "TikTok video likes",
+        "TikTok video country of creation"
+    ],
+    "filters": [
+        "Hashtags",
+        "Results per page"
+    ],
+    "options": [
+        "Download videos",
+        "Download cover images",
+        "Download slideshow images",
+        "Video Key Value Store ID or Name",
+        "Disable enrich author stats",
+        "Disable Cheerio boost"
+    ],
+    "special_instructions": [
+        "Hashtags are required for the tool to function. If not provided, the tool will not be able to fulfill the request.",
+        "The maximum number of posts that will be scraped from every hashtag can be set. If set to 15 or lower, the scraper can utilize a faster method of scraping that doesn't require scrolling.",
+        "The tool can download TikTok video files, cover images, and slideshow images. Note that enabling these options will increase the time required for the scrape.",
+        "The name (or ID) of the Key Value Store where the videos and other media like thumbnails will be stored can be specified. Omit to store in the default one.",
+        "Sometimes Tiktok's API will not return author stats (their hearts, follower count etc) for profile/hashtag/sound pages, so an additional query will be needed. This will slow the scraper down. This can be disabled.",
+        "If the requested number of posts is small, the Cheerio crawler (much faster) will be used. If for some reason you need to disable this, turn on this option.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "",
+            "example": "https://www.example.com"
+        },
+        "collection": {
+            "type": "string",
+            "description": ""
+        },
+        "currency": {
+            "type": "string",
+            "description": ""
+        },
+        "page": {
+            "type": "integer",
+            "description": "Start from specific page"
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Number of results per page"
+        }
+    },
+    "required": [
+        "url"
+    ]
+}

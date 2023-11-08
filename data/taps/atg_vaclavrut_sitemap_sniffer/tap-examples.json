@@ -1,0 +1,116 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://reebok.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://reebok.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://newbalance.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://newbalance.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://converse.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://converse.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://skechers.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://skechers.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://thenorthface.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://thenorthface.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Check sitemap for 'https://patagonia.com' using Apify proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Sitemap Sniffer INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Sitemap Sniffer is reliable and solely based on compatibility between DATA TASK and Sitemap Sniffer OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Sitemap Sniffer OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Sitemap Sniffer has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://patagonia.com",
+                "proxy": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

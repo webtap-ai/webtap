@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Search keyword",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "search",
+        "description": "Keyword that you want to search in edx.org",
+        "value_options": null
+    },
+    {
+        "name": "Language",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "language",
+        "description": "Select a language that edx.org provides",
+        "value_options": "\"none\": string\n\"English\": string\n\"Spanish\": string\n\"French\": string\n\"Chinese - Mandarin\": string\n\"Italian\": string\n\"Russian\": string\n\"Chinese - Simplified\": string\n\"German\": string\n\"Portuguese\": string\n\"Japanese\": string\n\"Arabic\": string\n\"Dutch\": string\n\"Korean\": string\n\"Turkish\": string\n\"Hindi\": string\n\"Hungarian\": string\n\"Tibetan\": string"
+    },
+    {
+        "name": "Max Items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Maximum number of items you want on your results",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxy",
+        "description": "Select proxies to be used by your crawler.",
+        "value_options": null
+    }
+]

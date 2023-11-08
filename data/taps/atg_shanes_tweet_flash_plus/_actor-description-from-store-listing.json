@@ -1,0 +1,26 @@
+{
+    "example_json_input": {
+        "title": "Tweet Flash Plus (working as of 10/13)",
+        "price": "$0.30 for 1,000 tweets",
+        "features": [
+            "Advanced User Info",
+            "Increased Max Memory",
+            "Automatic Language Detection",
+            "Blazing Fast Speeds",
+            "Historical Search",
+            "No Date Limit"
+        ]
+    },
+    "example_output_json_response": {
+        "title": "Tweet Flash Plus (working as of 10/13)",
+        "price": "$0.30 for 1,000 tweets",
+        "features": [
+            "Advanced User Info",
+            "Increased Max Memory",
+            "Automatic Language Detection",
+            "Blazing Fast Speeds",
+            "Historical Search",
+            "No Date Limit"
+        ]
+    }
+}

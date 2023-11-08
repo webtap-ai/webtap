@@ -1,0 +1,19 @@
+{
+    "id": "mtrunkat/xmls-to-dataset",
+    "url": "https://apify.com/mtrunkat/xmls-to-dataset",
+    "title": "XMLs To Dataset \u00b7 Apify",
+    "name": "XMLs To Dataset",
+    "pricing": "No credit card required",
+    "description": "Go to actor anytime you need to download XML files and store them in the dataset.",
+    "author_name": "Marek Trunk\u00e1t",
+    "maintained_by": "Maintained by Community",
+    "count_users": "65 users",
+    "count_runs": "2.3k runs",
+    "last_modified": "Modified over 1 year ago",
+    "categories": "Automation",
+    "full_readme": "This actor simply takes URLs of XML files hosted elsewhere, downloads them, and saves their contents into the dataset.",
+    "icon": "https://images.apifyusercontent.com/XAgUMCI9osTvGdWkN8vHPkeURjR-vNyyJDpeqEHz56U/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS81ZXJTcnVZR1JKNnF2dWgydi85TTdYRHpMV1haNHF5bTlwYy04LnBuZw.webp",
+    "author_url": "https://apify.com/mtrunkat",
+    "author_avatar": "https://images.apifyusercontent.com/54sUV4x76f_Vbi0_1suPAOcAdbWYB3a1FMfZgd8KtKE/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS85andCNHVRQldKUUNLRGtNaS9xWFp0Z2Z6R3lXWFB1OHZadC1waWN0dXJlLTMuanBlZw.webp",
+    "readme_summary": "This actor simply takes URLs of XML files hosted elsewhere, downloads them,\nand saves their contents into the dataset.\n\n"
+}

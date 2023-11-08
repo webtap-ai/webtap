@@ -1,0 +1,53 @@
+{
+    "example_json_input": {
+        "baseUrl": "https://blog.apify.com",
+        "maxPages": 1000,
+        "notificationEmails": [
+            "your.email@apify.com"
+        ],
+        "saveOnlyBrokenLinks": true,
+        "crawlSubdomains": true
+    },
+    "example_output_json_response": {
+        "data": [
+            {
+                "url": "https://blog.apify.com",
+                "title": "Apify Blog: Web scraping and automation stories",
+                "links": [
+                    {
+                        "url": "https://apify.com/",
+                        "normalizedUrl": "https://apify.com",
+                        "httpStatus": 200,
+                        "fragment": "",
+                        "fragmentValid": true,
+                        "crawled": true
+                    },
+                    {
+                        "url": "https://apify.com/about",
+                        "normalizedUrl": "https://apify.com/about",
+                        "httpStatus": 200,
+                        "fragment": "",
+                        "fragmentValid": true,
+                        "crawled": true
+                    },
+                    {
+                        "url": "https://apify.com/jobs",
+                        "normalizedUrl": "https://apify.com/jobs",
+                        "httpStatus": 200,
+                        "fragment": "",
+                        "fragmentValid": true,
+                        "crawled": true
+                    },
+                    {
+                        "url": "https://apify.com/web-scraping",
+                        "normalizedUrl": "https://apify.com/web-scraping",
+                        "httpStatus": null,
+                        "errorMessage": "Error: Navigation timed out after 120 seconds.\n    at handleRequestTimeout (/home/myuser/node_modules/apify/build/crawlers/crawler_utils.js:19:11)\n    at PuppeteerCrawler._handleNavigationTimeout (/home/myuser/node_modules/apify/build/crawlers/browser_crawler.js:418:54)\n    at PuppeteerCrawler._handleNavigation (/home/myuser/node_modules/apify/build/crawlers/browser_crawler.js:401:18)\n    at async PuppeteerCrawler._handleRequestFunction (/home/myuser/node_modules/apify/build/crawlers/browser_crawler.js:343:13)\n    at async wrap (/home/myuser/node_modules/@apify/timeout/index.js:73:27)",
+                        "fragmentValid": true,
+                        "crawled": true
+                    }
+                ]
+            }
+        ]
+    }
+}

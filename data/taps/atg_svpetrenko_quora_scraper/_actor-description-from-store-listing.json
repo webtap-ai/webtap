@@ -1,0 +1,57 @@
+{
+    "example_json_input": {
+        "scraper_name": "Quora Scraper",
+        "author": "svpetrenko",
+        "description": "Unofficial Quora API for scraping questions and answers",
+        "input_options": [
+            {
+                "name": "search_query",
+                "type": "string",
+                "description": "The search query used to find questions and their answers"
+            },
+            {
+                "name": "proxy_configuration",
+                "type": "string",
+                "description": "The proxy configuration to use for making requests"
+            }
+        ]
+    },
+    "example_output_json_response": {
+        "questions": [
+            {
+                "question_id": "qid_123",
+                "question_content": "What are the benefits of web scraping?",
+                "question_url": "https://www.quora.com/What-are-the-benefits-of-web-scraping",
+                "answers": [
+                    {
+                        "answer_id": "aid_456",
+                        "answer_content": "Web scraping allows you to extract data from websites and use it for various purposes such as market research, competitor analysis, and data analysis.",
+                        "answer_url": "https://www.quora.com/What-are-the-benefits-of-web-scraping/answer/JohnDoe"
+                    },
+                    {
+                        "answer_id": "aid_789",
+                        "answer_content": "With web scraping, you can gather data from multiple sources and create datasets that can be analyzed to gain insights and make informed decisions.",
+                        "answer_url": "https://www.quora.com/What-are-the-benefits-of-web-scraping/answer/JaneSmith"
+                    }
+                ]
+            },
+            {
+                "question_id": "qid_234",
+                "question_content": "How does web scraping work?",
+                "question_url": "https://www.quora.com/How-does-web-scraping-work",
+                "answers": [
+                    {
+                        "answer_id": "aid_567",
+                        "answer_content": "Web scraping involves sending HTTP requests to a website, parsing the HTML response, and extracting the desired data using techniques like XPath or CSS selectors.",
+                        "answer_url": "https://www.quora.com/How-does-web-scraping-work/answer/JohnDoe"
+                    },
+                    {
+                        "answer_id": "aid_890",
+                        "answer_content": "Once the data is extracted, it can be saved in various formats such as CSV, JSON, or Excel for further analysis or use in applications.",
+                        "answer_url": "https://www.quora.com/How-does-web-scraping-work/answer/JaneSmith"
+                    }
+                ]
+            }
+        ]
+    }
+}

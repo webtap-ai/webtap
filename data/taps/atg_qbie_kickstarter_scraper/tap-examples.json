@@ -1,0 +1,150 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 100 most popular board games on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "board games",
+                "maxResults": 100,
+                "category": "games",
+                "location": "All",
+                "status": "All",
+                "pledged": "All",
+                "goal": "All",
+                "raised": "All",
+                "sort": "popularity",
+                "datasetName": "",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 50 successful projects in the games category with more than $10,000 pledged on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "games",
+                "maxResults": 50,
+                "category": "games",
+                "status": "Successful",
+                "pledged": "$10,000 to $100,000 pledged"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 50 projects in the art category with a goal of less than $1,000 on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "",
+                "maxResults": 50,
+                "category": "art",
+                "location": "",
+                "status": "All",
+                "pledged": "All",
+                "goal": "< $1,000 goal",
+                "raised": "All",
+                "sort": "newest",
+                "datasetName": "",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 50 projects in the games category sorted by most backed on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "games",
+                "maxResults": 50,
+                "category": "games",
+                "sort": "most_backed",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 50 projects in the art category with a goal of less than $1,000 on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "",
+                "maxResults": 50,
+                "category": "art",
+                "location": "",
+                "status": "All",
+                "pledged": "All",
+                "goal": "< $1,000 goal",
+                "raised": "All",
+                "sort": "newest",
+                "datasetName": "",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the 200 projects in the games category with $1,000 to $10,000 pledged on Kickstarter",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Kickstarter Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Kickstarter Scraper is reliable and solely based on compatibility between DATA TASK and Kickstarter Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Kickstarter Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Kickstarter Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "query": "games",
+                "maxResults": 200,
+                "category": "games",
+                "pledged": "$1,000 to $10,000 pledged",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

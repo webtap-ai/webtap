@@ -1,0 +1,10 @@
+{
+    "proxy": {
+        "useApifyProxy": true
+    },
+    "testUrls": [
+        {
+            "url": "https://example.com"
+        }
+    ]
+}

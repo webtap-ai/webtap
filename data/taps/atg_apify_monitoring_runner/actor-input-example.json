@@ -1,0 +1,41 @@
+{
+    "limit": 1000,
+    "checkersInput": {
+        "DEDUPLICATION_CHECKER": {
+            "uniqueKey": "email"
+        },
+        "RESOURCE_STATS_CHECKER": {},
+        "SCHEMA_VALIDATOR_CHECKER": {
+            "options": [
+                {
+                    "maxItemCount": 5000,
+                    "minItemCount": 100,
+                    "resourceList": [
+                        "id",
+                        "id"
+                    ],
+                    "resourceRegex": "",
+                    "validationSchema": "{ address: String, open: Boolean }"
+                }
+            ]
+        }
+    },
+    "reportersInput": {
+        "EMAIL_REPORTER": {
+            "sendMailInput": {
+                "to": "info@apify.com",
+                "subject": "My monitoring task report"
+            }
+        },
+        "SLACK_REPORTER": {
+            "slackInput": {
+                "token": "Your token",
+                "channel": "#monitoring",
+                "message": "Hey, look what I have done!"
+            }
+        },
+        "DASHBOARD_REPORTER": {
+            "notifyOnUpdate": true
+        }
+    }
+}

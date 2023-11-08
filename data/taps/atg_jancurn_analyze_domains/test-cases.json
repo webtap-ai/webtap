@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Analyze the domains 'example.com', 'iana.org', 'apify.com', crawl 5 links on each domain, and retry each request up to 2 times on error",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'google.com', crawl 10 links on the domain, and retry each request up to 3 times on error",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'facebook.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Chrome instead of Puppeteer's Chromium",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'twitter.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Apify Proxy to access the target pages",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'linkedin.com', crawl 5 links on the domain, and retry each request up to 2 times on error, attempt to crawl HTTPs version of the website",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'instagram.com', crawl 5 links on the domain, and retry each request up to 2 times on error, attempt to crawl www. sub-domain of the website",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'pinterest.com', crawl 5 links on the domain, and retry each request up to 2 times on error, store HTML content of all loaded pages into the key-value store",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'reddit.com', crawl 5 links on the domain, and retry each request up to 2 times on error, store text content of all loaded pages into the dataset results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'tumblr.com', crawl 5 links on the domain, and retry each request up to 2 times on error, search for social handles even in the content of the first-level child frames",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Analyze the domain 'ebay.com', crawl 5 links on the domain, and retry each request up to 2 times on error, using Chrome and attempt to crawl HTTPs version of the website",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

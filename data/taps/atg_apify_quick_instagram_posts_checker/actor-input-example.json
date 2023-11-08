@@ -1,0 +1,13 @@
+{
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    },
+    "startUrls": [
+        {
+            "url": "https://www.instagram.com/p/CeoM7sMsLIU/"
+        }
+    ]
+}

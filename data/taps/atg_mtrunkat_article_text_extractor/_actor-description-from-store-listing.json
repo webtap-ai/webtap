@@ -1,0 +1,24 @@
+{
+    "example_json_input": {
+        "url": "https://apify.com/mtrunkat/article-text-extractor"
+    },
+    "example_output_json_response": {
+        "title": "Article Text Extractor",
+        "softTitle": "Article Text Extractor",
+        "date": "16/06/2019 22:03",
+        "author": [
+            "Madrid"
+        ],
+        "publisher": "La Vanguardia",
+        "copyright": "La Vanguardia Ediciones Todos los derechos reservados",
+        "favicon": "https://www.lavanguardia.com/rsc/images/ico/favicon.ico",
+        "description": "El PSOE gan\u00f3 el pasado 26 de mayo las elecciones municipales y auton\u00f3micas de manera 'clara y rotunda', seg\u00fan celebr\u00f3 el propio Pedro S\u00e1nchez aquella misma noche. Aunque la victoria socialista se ti\u00f1\u00f3...",
+        "lang": "es",
+        "canonicalLink": "https://www.lavanguardia.com/politica/20190617/462906149711/psoe-pedro-sanchez-elecciones-26m-alcaldias-gobiernos-espana.html",
+        "tags": [],
+        "image": "https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/06/17/Recortada/20190614-636961455890161857_20190614215051428-kvhE-U462903686315FDE-992x558@LaVanguardia-Web.jpg",
+        "videos": [],
+        "links": [],
+        "text": "..."
+    }
+}

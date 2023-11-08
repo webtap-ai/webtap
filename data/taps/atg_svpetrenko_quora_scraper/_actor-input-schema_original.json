@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Search term",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "queries",
+        "description": "Quora will search for questions using this strings.",
+        "value_options": null
+    },
+    {
+        "name": "Language code",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "languageCode",
+        "description": "Provide preferred site language. If used, it will query [langcode].quora.com instead of www.quora.com, e.g. es.quora.com for Spanish.",
+        "value_options": null
+    },
+    {
+        "name": "Max answers per question",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxAnswersPerQuestion",
+        "description": "Depending on popularity of your query you may encounter questions with many thousands of answers. Scraping these will require a ton of requests, especially if there are many such questions. Set to 0 to avoid scraping questions altogether and to -1 to disable this limit. Current approximate batch of answers per request is about 46-50, so if you set this limit to a lower value, you'd still get this much answers.",
+        "value_options": null
+    },
+    {
+        "name": "Answers ranking",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "answersRanking",
+        "description": "Sort answers by selected parameter. On original Quora website you can also include related answers with this option, but currently this isn't supported.",
+        "value_options": "\"hide_relevant_answers\": string\n\"ranking_toggle_upvote\": string\n\"ranking_toggle_recency\": string"
+    },
+    {
+        "name": "Use answer dataset",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "useAnswerDataset",
+        "description": "Whether to store all answers in a separate dataset for easier extraction.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxy",
+        "description": "Select proxies to be used by your crawler. NOTE: residential proxies may not work with this scraper. Leave to none to use no proxy (very fitting if you run locally on your machine, will be much faster).",
+        "value_options": null
+    },
+    {
+        "name": "Max pool size",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxPoolSize",
+        "description": "Maximum number of sessions in the pool",
+        "value_options": null
+    },
+    {
+        "name": "Max age of each session",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxAgeSecs",
+        "description": "Maximum age of sessions in the pool",
+        "value_options": null
+    },
+    {
+        "name": "Max usage count of each session",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxUsageCount",
+        "description": "Maximum number of times a session can be used",
+        "value_options": null
+    }
+]

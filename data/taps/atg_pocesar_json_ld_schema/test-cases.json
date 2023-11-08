@@ -1,0 +1,50 @@
+[
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.bbc.com/news'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.foxnews.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.nbcnews.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.usatoday.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.businessinsider.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.economist.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.history.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Extract all LD+JSON tags from the URL 'https://www.espn.com/'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

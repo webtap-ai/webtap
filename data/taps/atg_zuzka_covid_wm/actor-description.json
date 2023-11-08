@@ -1,0 +1,19 @@
+{
+    "id": "zuzka/covid-wm",
+    "url": "https://apify.com/zuzka/covid-wm",
+    "title": "Coronavirus stats from Worldometer \u00b7 Apify",
+    "name": "Coronavirus stats from Worldometer",
+    "pricing": "No credit card required",
+    "description": "Gets the statistics of COVID-19 in the world from https://www.worldometers.info/coronavirus/.",
+    "author_name": "Zuzka Pelechov\u00e1",
+    "maintained_by": "Maintained by Community",
+    "count_users": "70 users",
+    "count_runs": "128.5k runs",
+    "last_modified": "Modified about 2 years ago",
+    "categories": "Covid-19",
+    "full_readme": "Coronavirus stats from Worldometers\n\nActor gets an actual number of infected, deceased and recovered people from https://www.worldometers.info/coronavirus/.\n\nLatest data are available at this URL: https://api.apify.com/v2/key-value-stores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true.\n\nYou can find a dataset with unique history items here: https://api.apify.com/v2/datasets/6isaRliLnb31IoAIL/items?format=json&clean=1.\n\nURL is being actualized every hour.",
+    "icon": "https://images.apifyusercontent.com/imoIoyBWguc4lYU5oYx4NxB-_2JdE0zXkyWjpdwmGA8/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS80T3RrbGRSMWJJeDg1RHJUbS9hUHM2dW9Rd2NGcUFHc3hEUC0xZm5KUHp4TV80MDB4NDAwLnBuZw.webp",
+    "author_url": "https://apify.com/zuzka",
+    "author_avatar": "https://images.apifyusercontent.com/e8p5bn0zDfz7fmKycwgfVQsp1CCVPFm02YqyAbIJyMw/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9aamk3UnQ2TUtHQ242QWU2QS9lY2hEY2RxcUZYS3VGSlJpUS0yMDE4LTEyXyUyODUlMjkuanBn.webp",
+    "readme_summary": "# Coronavirus stats from Worldometers\n\nActor gets an actual number of infected, deceased and recovered people from\n<https://www.worldometers.info/coronavirus/>.\n\nLatest data are available at this URL: <https://api.apify.com/v2/key-value-\nstores/SmuuI0oebnTWjRTUh/records/LATEST?disableRedirect=true>.\n\nYou can find a dataset with unique history items here:\n[https://api.apify.com/v2/datasets/6isaRliLnb31IoAIL/items?format=json&clean=1](https://api.apify.com/v2/datasets/6isaRliLnb31IoAIL/items?format=json&clean=1).\n\nURL is being actualized every hour.\n\n"
+}

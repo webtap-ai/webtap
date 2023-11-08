@@ -1,0 +1,28 @@
+{
+    "example_json_input": {
+        "actor_name": "screenshot-taker",
+        "url": "https://www.example.com",
+        "viewport_size": "1280x800",
+        "format": "jpeg"
+    },
+    "example_output_json_response": {
+        "request": {
+            "url": "https://www.example.com",
+            "method": "GET",
+            "payload": null,
+            "userData": {}
+        },
+        "response": {
+            "status": 200,
+            "headers": {
+                "status": "200",
+                "content-encoding": "gzip",
+                "cache-control": "max-age=604800",
+                "content-type": "text/html; charset=UTF-8",
+                "content-length": "606"
+            }
+        },
+        "finishedAt": "2019-07-14T16:16:56.230Z",
+        "screenshotUrl": "https://api.apify.com/v2/key-value-stores/x2xiRLsycdTpFQFSo/records/screenshot-2c730012.jpeg"
+    }
+}
