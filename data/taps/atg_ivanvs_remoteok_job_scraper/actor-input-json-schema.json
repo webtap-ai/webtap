@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "tag": {
+            "type": "string",
+            "description": "Tag for which we scraper will search job listings on RemoteOK site (java, node, etc.)",
+            "example": "java"
+        },
+        "maxNumberOfListings": {
+            "type": "integer",
+            "description": "Limit the amount of results you want. Higher limits will take longer to scrape.",
+            "example": 500
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Use Apify Proxy or your custom Proxy.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. Use this option to set a hard lim",
+            "example": 1
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "Shows additional debugging information."
+        }
+    },
+    "required": []
+}

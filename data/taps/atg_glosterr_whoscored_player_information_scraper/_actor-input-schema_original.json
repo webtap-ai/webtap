@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "URLs to start with.",
+        "value_options": null
+    }
+]

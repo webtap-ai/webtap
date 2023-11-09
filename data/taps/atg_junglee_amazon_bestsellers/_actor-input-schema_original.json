@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Amazon category URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "categoryUrls",
+        "description": "Pick one or a few Best Seller categories to scrape. If you enter a top-level category, all subcategories will be scraped (up to max depth).\nCategory URL has to contain Best-Sellers, best-sellers or bestsellers. To see examples of all accepted URLs, check out the readme.",
+        "value_options": null
+    },
+    {
+        "name": "How many subcategories do you want to scrape?",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "depthOfCrawl",
+        "description": "Minimum value is 1, maximum is 4. Amazon Best Sellers covers 37 main categories. Each of those have at least one more subcategory level.\nSetting this field to 2 will get you roughly 550 subcategories, each with 100 results.",
+        "value_options": null
+    },
+    {
+        "name": "Detailed information",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "detailedInformation",
+        "description": "Check this if you want to get the maximum amount of information about individual products. However, choosing this option means the scraper could take longer, since it is extracting more data.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "You can set proxy groups from specific countries. Amazon shows you the products that can be shipped to your address based on the proxy you use. You don't need to worry about it if globally shipped products are enough for you.",
+        "value_options": null
+    }
+]

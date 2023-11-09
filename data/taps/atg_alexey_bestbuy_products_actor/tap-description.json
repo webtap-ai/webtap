@@ -1,0 +1,37 @@
+{
+    "name": "BestBuy Products",
+    "entities": [
+        "product"
+    ],
+    "filters": [
+        "startUrls",
+        "proxyConfig",
+        "maxProductsCnt",
+        "addImages",
+        "addTopReviews",
+        "maxRequestRetries",
+        "minConcurrency",
+        "maxConcurrency",
+        "handleRequestTimeoutSecs"
+    ],
+    "options": [
+        "maxProductsCnt",
+        "addImages",
+        "addTopReviews",
+        "maxRequestRetries",
+        "minConcurrency",
+        "maxConcurrency",
+        "handleRequestTimeoutSecs"
+    ],
+    "special_instructions": [
+        "maxProductsCnt is the maximum number of products to be scraped. Few (2-3) product in progress might be scraped above this limit",
+        "addImages is a boolean field. If set to true, links to HD images of each product will be added",
+        "addTopReviews is a boolean field. If set to true, recommended reviews will be added",
+        "maxRequestRetries indicates how many times the request is retried",
+        "minConcurrency sets the minimum concurrency (parallelism) for the crawl",
+        "maxConcurrency sets the maximum concurrency (parallelism) for the crawl",
+        "handleRequestTimeoutSecs is the timeout in which the function passed as handleRequestFunction needs to finish",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

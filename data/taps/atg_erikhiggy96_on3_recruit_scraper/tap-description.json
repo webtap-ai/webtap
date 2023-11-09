@@ -1,0 +1,32 @@
+{
+    "name": "American College Football Recruits",
+    "entities": [
+        "playerName",
+        "position",
+        "industries",
+        "on3Consensus",
+        "rating",
+        "rank",
+        "national",
+        "state",
+        "position",
+        "on3",
+        "twoFourSeven",
+        "espn",
+        "rivals"
+    ],
+    "filters": [
+        "recruitingClass",
+        "numCroots"
+    ],
+    "options": [
+        "Year of the desired recruiting class",
+        "Amount of recruits you want to get. Max 500"
+    ],
+    "special_instructions": [
+        "The 'recruitingClass' filter is required. It represents the year of the desired recruiting class.",
+        "The 'numCroots' filter is optional. It represents the amount of recruits you want to get with a maximum of 500.",
+        "The data can be downloaded in various formats such as HTML table, JSON, CSV, Excel, XML, and RSS feed.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

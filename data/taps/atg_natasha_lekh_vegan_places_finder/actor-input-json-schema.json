@@ -1,0 +1,78 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "countryCode": {
+            "type": "string",
+            "description": "Set the country where the search should be carried out, e.g., 'United States'. Currently, the scraper doesn't work well for full-country searching of sparsely populated countries like USA or Russia. F",
+            "example": "us",
+            "enum": [
+                "us",
+                "af",
+                "al",
+                "dz",
+                "as",
+                "ad",
+                "ao",
+                "ai",
+                "aq",
+                "ag",
+                "ar",
+                "am",
+                "aw",
+                "au",
+                "at",
+                "az",
+                "bs",
+                "bh",
+                "bd",
+                "bb",
+                "by",
+                "be",
+                "bz",
+                "bj",
+                "bm",
+                "bt",
+                "bo",
+                "ba",
+                "bw",
+                "bv",
+                "br",
+                "io",
+                "bn",
+                "bg",
+                "bf",
+                "bi",
+                "kh",
+                "cm",
+                "ca",
+                "cv",
+                "ky",
+                "cf",
+                "td",
+                "cl",
+                "cn",
+                "cx",
+                "cc",
+                "co",
+                "km",
+                "cg",
+                "..."
+            ]
+        },
+        "city": {
+            "type": "string",
+            "description": "Set the city where the search should be carried out, e.g., 'New York'.",
+            "example": "Chicago"
+        },
+        "maxCrawledPlacesPerSearch": {
+            "type": "integer",
+            "description": "This is the maximum number of results you will obtain. A higher number will take longer to scrape. If you want to scrape all places available, set this value to '9999999'.",
+            "example": 10
+        }
+    },
+    "required": [
+        "countryCode",
+        "city"
+    ]
+}

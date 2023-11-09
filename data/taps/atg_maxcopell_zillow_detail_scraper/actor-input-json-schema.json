@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "URLs to scrape - should be in format https://www.zillow.com/homedetails/Address/12345678_zpid/",
+            "example": [
+                {
+                    "url": "https://www.zillow.com/homedetails/17-Zelma-Dr-Greenville-SC-29617/11026031_zpid/"
+                },
+                {
+                    "url": "https://www.zillow.com/apartments/san-antonio-tx/westpond/5XkVjF/"
+                },
+                {
+                    "url": "https://www.zillow.com/community/greens-at-indian-river-preserve/39987_plid/"
+                },
+                {
+                    "url": "https://www.zillow.com/b/Cashiers-NC/35.09787,-83.080475_ll/"
+                },
+                {
+                    "url": "https://www.zillow.com/community/greens-at-indian-river-preserve/2072679238_zpid/"
+                },
+                {
+                    "url": "https://www.zillow.com/b/2202-sandlewood-cv-san-antonio-tx-C2tftd/"
+                }
+            ]
+        },
+        "propertyStatus": {
+            "type": "string",
+            "description": "Since Zillow uses different methods to fetch properties for sale, for rent and sold, the Actor needs to know the status of the properties in Start URLs. If you this is provided incorrectly, the Actor ",
+            "enum": [
+                "FOR_SALE",
+                "RECENTLY_SOLD",
+                "FOR_RENT"
+            ]
+        },
+        "searchResultsDatasetId": {
+            "type": "string",
+            "description": "For easy integration, this actor can use output of these Zillow search scrapers to scrape more details: Zillow ZIP Code Search Scraper.",
+            "example": "MCrom9yPhGqh8X1Yr"
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "If checked, the actor will log very detailed info into the output."
+        }
+    },
+    "required": []
+}

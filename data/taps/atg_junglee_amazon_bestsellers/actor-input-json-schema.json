@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "categoryUrls": {
+            "type": "array",
+            "description": "Pick one or a few Best Seller categories to scrape. If you enter a top-level category, all subcategories will be scraped (up to max depth).\nCategory URL has to contain Best-Sellers, best-sellers or be",
+            "example": [
+                "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/"
+            ]
+        },
+        "depthOfCrawl": {
+            "type": "integer",
+            "description": "Minimum value is 1, maximum is 4. Amazon Best Sellers covers 37 main categories. Each of those have at least one more subcategory level.\nSetting this field to 2 will get you roughly 550 subcategories,",
+            "example": 1
+        },
+        "detailedInformation": {
+            "type": "boolean",
+            "description": "Check this if you want to get the maximum amount of information about individual products. However, choosing this option means the scraper could take longer, since it is extracting more data."
+        },
+        "proxy": {
+            "type": "object",
+            "description": "You can set proxy groups from specific countries. Amazon shows you the products that can be shipped to your address based on the proxy you use. You don't need to worry about it if globally shipped pro",
+            "example": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": [
+                    "RESIDENTIAL"
+                ]
+            }
+        }
+    },
+    "required": [
+        "proxy"
+    ]
+}

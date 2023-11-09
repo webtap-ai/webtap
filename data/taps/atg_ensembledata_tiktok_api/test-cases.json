@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Fetch post info and comments for the following TikTok posts: 'https://www.tiktok.com/@animalrescue243/video/7206488344535125290', 'https://www.tiktok.com/@evitastork/video/7197406477001198854'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fetch comments for the following TikTok posts: 'https://www.tiktok.com/@olympics/video/7200420986661965061'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Fetch post info and comments for the following TikTok posts: 'https://www.tiktok.com/@user5/video/6677889900', 'https://www.tiktok.com/@user6/video/0099887766'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -9,6 +9,7 @@
         [
             "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
             "Twitter Search Scraper Tap supports only Twitter profile URLs as input",
-            "Twitter Search Scraper Tap doesn't support #hashtajs or @mentions"
+            "Twitter Search Scraper Tap doesn't support #hashtajs or @mentions",
+            "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
         ]
 }

@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "title, author, description, url, appHandle, appUrl, pageTitle, grades, gradeInt"
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "informationType": {
+            "type": "string",
+            "description": "Defines the information that will be scraped. If you are scraping matches between two weeks, you should also define array of two weeks as the selectedWeeks input",
+            "example": "CURRENTWEEK",
+            "enum": [
+                "TABLES",
+                "CURRENTWEEK",
+                "SELECTEDWEEKS",
+                "FULLSCHEDULE"
+            ]
+        },
+        "selectedLeagues": {
+            "type": "array",
+            "description": "Array of leagues that will be scraped. Available leagues: brazil, czechrepublic, germany, germany2, denmark, england, england2, spain, spain2, france, france2, greece, netherlands, italy, italy2, pola",
+            "example": [
+                "England"
+            ]
+        },
+        "season": {
+            "type": "string",
+            "description": "Selects the season.",
+            "example": "2021-2022",
+            "enum": [
+                "2021-2022",
+                "2020-2021"
+            ]
+        },
+        "startWeek": {
+            "type": "integer",
+            "description": "Picks a start match week to scrape selected weeks.",
+            "example": 1
+        },
+        "endWeek": {
+            "type": "integer",
+            "description": "Picks an end match week to scrape selected weeks.",
+            "example": 10
+        },
+        "proxyConfig": {
+            "type": "object",
+            "description": "Allows user to use Apify proxy or custom proxies.",
+            "example": {
+                "useApifyProxy": true
+            }
+        }
+    },
+    "required": [
+        "informationType",
+        "season"
+    ]
+}

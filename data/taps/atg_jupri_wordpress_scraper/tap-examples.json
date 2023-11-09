@@ -1,0 +1,72 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contents from https://www.sonymusic.com with a limit of 10 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided WordPress Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by WordPress Scraper is reliable and solely based on compatibility between DATA TASK and WordPress Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given WordPress Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: WordPress Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://www.sonymusic.com",
+                "limit": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contents from https://www.sonymusic.com in text format",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided WordPress Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by WordPress Scraper is reliable and solely based on compatibility between DATA TASK and WordPress Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given WordPress Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: WordPress Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://www.sonymusic.com",
+                "search": "",
+                "limit": 0,
+                "format": "text"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contents from https://www.techcrunch.com with a limit of 30 results",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided WordPress Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by WordPress Scraper is reliable and solely based on compatibility between DATA TASK and WordPress Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given WordPress Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: WordPress Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://www.techcrunch.com",
+                "limit": 30
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape contents from https://www.techcrunch.com searching for 'startups'",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided WordPress Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by WordPress Scraper is reliable and solely based on compatibility between DATA TASK and WordPress Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given WordPress Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: WordPress Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "url": "https://www.techcrunch.com",
+                "search": "startups"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

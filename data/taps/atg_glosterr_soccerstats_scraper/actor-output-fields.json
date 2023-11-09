@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "matchWeek, date, home, score, away, ht, season, league, position, name, played, win, draw, lose, goalsFor, goalsAgainst, goalDifference, points"
+}

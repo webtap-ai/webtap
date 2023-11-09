@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Scrape contents from https://www.sonymusic.com with a limit of 10 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape contents from https://www.sonymusic.com in text format",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape contents from https://www.techcrunch.com with a limit of 30 results",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape contents from https://www.techcrunch.com searching for 'startups'",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

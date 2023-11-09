@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, channelName, authorName, authorTelegram, date, viewsCount, text, linkPreview"
+}

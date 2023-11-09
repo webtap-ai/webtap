@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestsPerCrawl",
+        "description": "How many items to extract from ocs.ca",
+        "value_options": null
+    },
+    {
+        "name": "Extend Output Function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendOutputFunction",
+        "description": "Add or remove properties on the output object or omit the output returning null",
+        "value_options": null
+    },
+    {
+        "name": "Extend Scraper Function",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "extendScraperFunction",
+        "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page",
+        "value_options": null
+    },
+    {
+        "name": "Custom data",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "customData",
+        "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+        "value_options": null
+    },
+    {
+        "name": "Fetch HTML",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "fetchHtml",
+        "description": "If you decide to fetch the HTML of the pages, it will take twice as long. Make sure to only enable this if needed",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "Max concurrency to use",
+        "value_options": null
+    },
+    {
+        "name": "Max request retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Set the max request retries",
+        "value_options": null
+    },
+    {
+        "name": "Debug Log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "Enable a more verbose logging to be able to understand what's happening during the scraping",
+        "value_options": null
+    }
+]

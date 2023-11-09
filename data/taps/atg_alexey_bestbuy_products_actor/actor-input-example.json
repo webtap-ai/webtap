@@ -1,0 +1,11 @@
+{
+    "startUrls": [
+        {
+            "url": "https://www.bestbuy.com/site/promo/tv-deals"
+        }
+    ],
+    "proxyConfig": {
+        "useApifyProxy": true
+    },
+    "maxProductsCnt": 100
+}

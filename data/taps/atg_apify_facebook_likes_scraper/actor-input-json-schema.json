@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "Valid facebook URL",
+            "example": [
+                {
+                    "url": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl"
+                }
+            ]
+        },
+        "resultsLimit": {
+            "type": "integer",
+            "description": "If this limit is not set only initial page of results returned",
+            "example": 10
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

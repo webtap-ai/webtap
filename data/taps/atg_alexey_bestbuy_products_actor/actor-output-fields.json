@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "name, image, url, description, sku, gtin13, model, color, brand, aggregateRating, offers, images, width, upc, productSeries, modelFamily"
+}

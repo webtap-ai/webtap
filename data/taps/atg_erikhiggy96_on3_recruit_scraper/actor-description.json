@@ -1,0 +1,19 @@
+{
+    "id": "erikhiggy96/on3-recruit-scraper",
+    "url": "https://apify.com/erikhiggy96/on3-recruit-scraper",
+    "title": "On3 Recruit Scraper \u00b7 Apify",
+    "name": "On3 Recruit Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrape and download American college football recruits information from all industries including On3, 247Sports, ESPN, and Rivals. Supports recruits by year. Download your data as HTML table, JSON, CSV, Excel, XML, and RSS feed.",
+    "author_name": "Erik Higginbotham",
+    "maintained_by": "Maintained by Community",
+    "count_users": "37 users",
+    "count_runs": "508 runs",
+    "last_modified": "Modified about 1 year ago",
+    "categories": "Sports",
+    "full_readme": "What does On3 Recruit Scraper do?\n\nOn3 Recruit Scraper will enable you to retrieve the industry comparison data of the top college football recruits from https://www.on3.com/db/rankings/industry-comparison/football/{insert-year} and download it to popular formats such as Excel, CSV, HTML table, JSON, and others. This data covers recruting rankings for all the major industries including On3, 247Sports, Rivals, and ESPN.\n\nOn3 Recruit Scraper can scrape the following:\n\nRecruit name\nPosition\nNational/State/Positional Rating (from each of the above industries)\nNational/State/Positional Rank (from each of the above industries)\nOn3 Recruit Scraper use cases\nPerform comparative analysis on the top recruits across the different industries.\nPlot trends in how recruting rankings change over the year for specific players.\nFeed the scraped data to a DB to be used for web or mobile apps.\nInput options\n\nThe On3 Recruit Scraper has the following input configurations:\n\nRecruiting Class required - The recruriting class year. Example: 2022\nRecruit Count optional - The amount of recruits you'd like to scrape. Max 500. Example: 300\nOutput format\n\nEach record represents a recruit. The following is what a typical output will look like:\n\n{\n\t\"playerName\": \"Arch Manning\",\n\t\"position\": \"QB\",\n\t\"industries\": [\n\t\t{\n\t\t\t\"on3Consensus\": {\n\t\t\t\t\"rating\": \"98\",\n\t\t\t\t\"rank\": {\n\t\t\t\t\t\"national\": \"1\",\n\t\t\t\t\t\"state\": \"1\",\n\t\t\t\t\t\"position\": \"1\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"on3\": {\n\t\t\t\t\"rating\": \"98\",\n\t\t\t\t\"rank\": {\n\t\t\t\t\t\"national\": \"1\",\n\t\t\t\t\t\"state\": \"1\",\n\t\t\t\t\t\"position\": \"1\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"twoFourSeven\": {\n\t\t\t\t\"rating\": \"93\",\n\t\t\t\t\"rank\": {\n\t\t\t\t\t\"national\": \"1\",\n\t\t\t\t\t\"state\": \"1\",\n\t\t\t\t\t\"position\": \"1\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"espn\": {\n\t\t\t\t\"rating\": \"6.1\",\n\t\t\t\t\"rank\": {\n\t\t\t\t\t\"national\": \"2\",\n\t\t\t\t\t\"state\": \"2\",\n\t\t\t\t\t\"position\": \"1\"\n\t\t\t\t}\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"rivals\": {\n\t\t\t\t\"rating\": \"98\",\n\t\t\t\t\"rank\": {\n\t\t\t\t\t\"national\": \"1\",\n\t\t\t\t\t\"state\": \"1\",\n\t\t\t\t\t\"position\": \"1\"\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t]\n}",
+    "icon": "https://images.apifyusercontent.com/z8cAMK9I3UW_nSNkYRjWZkek6Y68L_WMW6M94PEEjP0/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9xbVZic3pBZWNDU1YyeU1BRS9mcXdZWUVXdmpCUTZ6dHN1RC1vbjMtcmVkLndlYnA.webp",
+    "author_url": "https://apify.com/erikhiggy96",
+    "author_avatar": "https://images.apifyusercontent.com/Sk7gIxfvcMB-YL7UXx1yXR02FBts1TrKs42oz9atphM/rs:fill:192:192/aHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzE2Njg4NjYz.webp",
+    "readme_summary": "Scrape and download American college football recruits information from all industries including On3, 247Sports, ESPN, and Rivals. Supports recruits by year. Download your data as HTML table, JSON, CSV, Excel, XML, and RSS feed."
+}

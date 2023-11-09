@@ -1,0 +1,132 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the first 40 posts from the 'photography' Telegram channel",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Telegram Channel Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Telegram Channel Scraper is reliable and solely based on compatibility between DATA TASK and Telegram Channel Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Telegram Channel Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Telegram Channel Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "channels": [
+                    "photography"
+                ],
+                "postsFrom": 1,
+                "postsTo": 40,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape posts from 200 to 220 from the 'businessnews' Telegram channel using Apify residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Telegram Channel Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Telegram Channel Scraper is reliable and solely based on compatibility between DATA TASK and Telegram Channel Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Telegram Channel Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Telegram Channel Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "channels": [
+                    "businessnews"
+                ],
+                "postsFrom": 200,
+                "postsTo": 220,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape posts from 10 to 20 from the 'mediumcom' Telegram channel using Apify residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Telegram Channel Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Telegram Channel Scraper is reliable and solely based on compatibility between DATA TASK and Telegram Channel Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Telegram Channel Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Telegram Channel Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "channels": [
+                    "mediumcom"
+                ],
+                "postsFrom": 10,
+                "postsTo": 20,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the first 30 posts from the 'cryptocurrency' Telegram channel",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Telegram Channel Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Telegram Channel Scraper is reliable and solely based on compatibility between DATA TASK and Telegram Channel Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Telegram Channel Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Telegram Channel Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "channels": [
+                    "cryptocurrency"
+                ],
+                "postsFrom": 1,
+                "postsTo": 30,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape posts from 15 to 45 from the 'scienceupdates' Telegram channel using Apify residential proxy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Telegram Channel Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Telegram Channel Scraper is reliable and solely based on compatibility between DATA TASK and Telegram Channel Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Telegram Channel Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Telegram Channel Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "channels": [
+                    "scienceupdates"
+                ],
+                "postsFrom": 15,
+                "postsTo": 45,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

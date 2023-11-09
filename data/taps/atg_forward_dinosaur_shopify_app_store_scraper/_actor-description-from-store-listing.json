@@ -1,0 +1,14 @@
+{
+    "example_json_input": {
+        "title": "Shopify App Store Scraper",
+        "author": "forward_dinosaur",
+        "description": "Use this scraper to collect data about apps on the Shopify app store, including titles, handles, descriptions, ratings, and more.",
+        "url": "https://console.apify.com/actors/cHVyKGpfAa4uNyCwm/?addFromActorId=cHVyKGpfAa4uNyCwm#/console"
+    },
+    "example_output_json_response": {
+        "title": "Shopify App Store Scraper",
+        "author": "forward_dinosaur",
+        "description": "Use this scraper to collect data about apps on the Shopify app store, including titles, handles, descriptions, ratings, and more.",
+        "url": "https://console.apify.com/actors/cHVyKGpfAa4uNyCwm/?addFromActorId=cHVyKGpfAa4uNyCwm#/console"
+    }
+}

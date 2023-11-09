@@ -1,0 +1,136 @@
+{
+    "example_json_input": {
+        "url": "https://www.booking.com/hotel/us/three-bedroom-rental-new-york.html?selected_currency=USD&changed_currency=1&lang=en-us&group_adults=2&no_rooms=1&checkin=2023-09-01&checkout=2023-09-02&nflt=price%3DUSD-0-999999-1"
+    },
+    "example_output_json_response": {
+        "order": 24,
+        "url": "https://www.booking.com/hotel/us/three-bedroom-rental-new-york.html?selected_currency=USD&changed_currency=1&lang=en-us&group_adults=2&no_rooms=1&checkin=2023-09-01&checkout=2023-09-02&nflt=price%3DUSD-0-999999-1",
+        "name": "Three Bedroom Rental",
+        "type": "apartment",
+        "description": "Located a 13-minute walk from Central Park and 0.6 miles from Strawberry Fields, Three Bedroom Rental offers accommodations with a kitchen in New York. The property is a 4-minute walk from the Lincoln Center and features free Wifithroughout the property.\n\nThis 3-bedroom apartment will provide you with a flat-screen TV, air conditioning and a living room.\n\nPopular points of interest near the apartment include Carnegie Hall, Broadway Theatre and Museum of Modern Art. The nearest airport is LaGuardia Airport, 7.5 miles from Three Bedroom Rental.",
+        "stars": null,
+        "price": 1.118,
+        "currency": "US$",
+        "rating": 10,
+        "reviews": 1,
+        "breakfast": null,
+        "checkIn": "From 4:00 PM",
+        "checkOut": "Until 11:00 AM",
+        "location": {
+            "lat": "40.7744900",
+            "lng": "-73.9829649"
+        },
+        "address": {
+            "full": "207 Columbus Avenue, Upper West Side, New York, NY 10023, United States of America",
+            "postalCode": "NY 10023",
+            "street": "207 Columbus Avenue",
+            "country": "USA",
+            "region": "New York State"
+        },
+        "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/415624316.jpg?k=e36c46833a2d526139f6a1211e9ef4a4ec19c55904affcdc214a15ce32877701&o=&hp=1",
+        "rooms": [
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 2,
+                "price": 1.118,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            },
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 2,
+                "price": 1.209,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            },
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 3,
+                "price": 1.204,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            },
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 3,
+                "price": 1.295,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            },
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 4,
+                "price": 1.289,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            },
+            {
+                "available": true,
+                "roomType": "Three-Bedroom Apartment",
+                "bedType": "Bedroom 1: 1 queen bed Bedroom 2: 2 bunk beds Bedroom 3: 1 bunk bed Living room: 1 sofa bed",
+                "persons": 4,
+                "price": 1.381,
+                "currency": "US$",
+                "features": [
+                    "",
+                    "Private kitchen",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Free WiFi",
+                    "Kitchen",
+                    "Heating"
+                ]
+            }
+        ]
+    }
+}

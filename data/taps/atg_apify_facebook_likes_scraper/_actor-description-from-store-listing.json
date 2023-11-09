@@ -1,0 +1,50 @@
+{
+    "example_json_input": {
+        "actorName": "apify/facebook-likes-scraper",
+        "startUrls": [
+            {
+                "url": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl"
+            }
+        ]
+    },
+    "example_output_json_response": {
+        "data": [
+            {
+                "facebookUrl": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl",
+                "reaction": "love",
+                "name": "Michelle Smith",
+                "profileUrl": null,
+                "profilePicture": "https://scontent-man2-1.xx.fbcdn.net/v/t1.18169-1/22800_10207336193869748_1821910971530943054_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=105&ccb=1-7&_nc_sid=7206a8&_nc_ohc=_6ChvYNvDBMAX-J2bUl&_nc_oc=AQmF-nSdG94uKGQzDb_IHiQyu97QPNKqfndGF7uG_O950jt8L36m0o6DOhDmQPFtVqvwvqGsqGfcoFVXUvpgRrLx&_nc_ht=scontent-man2-1.xx&oh=00_AfB2hFdjSrD6F7ZsGHJoOSPgaGeMbIGeKW0PgGnO6hhguA&oe=64649844",
+                "facebookId": "6375219342552112",
+                "postId": "6375219342552112"
+            },
+            {
+                "facebookUrl": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl",
+                "reaction": "like",
+                "name": "Sarah Dampson",
+                "profileUrl": "https://www.facebook.com/people/Sarah-Dampson/pfbid0VQgN3GwLtyQLXMjxKc1TM9ion7B7r9oHAcVbM4EkCZwRNbh12FbpNs6neZhHm7dFl/",
+                "profilePicture": "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-1/324069204_843562506947134_5065400659853604584_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=111&ccb=1-7&_nc_sid=7206a8&_nc_ohc=etfsyQ9lpW8AX8fIjHb&_nc_ht=scontent-man2-1.xx&oh=00_AfA5iEcJ7IU_yGK-cZyvJWEOSqGUv2Z31Eq4xDBQEC8OhA&oe=644230AF",
+                "facebookId": "6375219342552112",
+                "postId": "6375219342552112"
+            },
+            {
+                "facebookUrl": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl",
+                "reaction": "like",
+                "name": "Caroline Paavola",
+                "profileUrl": null,
+                "profilePicture": "https://scontent-man2-1.xx.fbcdn.net/v/t39.30808-1/340095828_2223834257819881_2999023177662489964_n.jpg?stp=cp0_dst-jpg_p40x40&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_ohc=a95c1A4ZAKIAX8Jy8sL&_nc_ht=scontent-man2-1.xx&oh=00_AfBXtH73Wi1cC6pDuprFD_RF-aAK1KKnL4-V1yEOyoNTnA&oe=64427771",
+                "facebookId": "6375219342552112",
+                "postId": "6375219342552112"
+            },
+            {
+                "facebookUrl": "https://www.facebook.com/humansofnewyork/posts/pfbid0BbKbkisExKGSKuhee9a7i86RwRuMKFC8NSkKStB7CsM3uXJuAAfZLrkcJMXxhH4Yl",
+                "reaction": "love",
+                "name": "Penny Brill",
+                "profileUrl": null,
+                "profilePicture": "https://scontent-man2-1.xx.fbcdn.net/v/t31.18172-1/209387_1863556022561_7170678_o.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=100&ccb=1-7&_nc_sid=7206a8&_nc_ohc=yZ9FmYzoqBsAX_mDZVJ&_nc_ht=scontent-man2-1.xx&oh=00_AfBsMxH5CKqlEslCQLbzT1YPN9RjWbKksqu9pCyv561o-A&oe=64647994",
+                "facebookId": "6375219342552112",
+                "postId": "6375219342552112"
+            }
+        ]
+    }
+}

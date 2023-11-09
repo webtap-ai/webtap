@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape current week matches for the Italian league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape full schedule for the Spanish league for the 2021-2022 season",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape selected weeks (from week 5 to week 10) for the German league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape current week matches for the Dutch league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape full schedule for the Greek league for the 2021-2022 season",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape selected weeks (from week 3 to week 8) for the Czech Republic league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape full schedule for the England2 league for the 2021-2022 season",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape selected weeks (from week 2 to week 7) for the Spain2 league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape current week matches for the Italy2 league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape selected weeks (from week 4 to week 9) for the Poland league",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

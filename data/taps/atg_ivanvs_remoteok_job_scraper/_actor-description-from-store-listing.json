@@ -1,0 +1,30 @@
+{
+    "example_json_input": {
+        "tag": "java",
+        "maxNumberOfListings": 500
+    },
+    "example_output_json_response": [
+        {
+            "id": "112230",
+            "company": "SportyBet",
+            "url": "https://remoteok.com/remote-jobs/112230-remote-backend-engineer-sportybet",
+            "title": "Backend Engineer",
+            "tags": [
+                "Engineer",
+                "Senior",
+                "Finance"
+            ],
+            "time": "2022-08-26T11:24:54+00:00",
+            "locations": [
+                "\ud83c\uddea\ud83c\uddfa Europe",
+                "\ud83d\udc83 Latin America",
+                "\ud83c\udde8\ud83c\udde6 Canada",
+                "\ud83c\uddf7\ud83c\uddfa Russia",
+                "\ud83c\uddfa\ud83c\udde6 Ukraine"
+            ],
+            "minSalary": "$40k",
+            "maxSalary": "$80k",
+            "offset": "1"
+        }
+    ]
+}

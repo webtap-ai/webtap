@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "title, description, author, published_date, content, image, id, created, modified"
+}

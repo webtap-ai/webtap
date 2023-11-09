@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, advertiserName, lastShownAt, format, image, shownCountries, advertiserId, creativeId, textContent, htmlContent, copy"
+}

@@ -7,6 +7,7 @@
         [ "Maximum posts per profile"],
     "special_instructions" :
         [
-            "Always set username as an array of strings, even if you only want to scrape one profile."
+            "Always set username as an array of strings, even if you only want to scrape one profile.",
+            "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
         ]
 }

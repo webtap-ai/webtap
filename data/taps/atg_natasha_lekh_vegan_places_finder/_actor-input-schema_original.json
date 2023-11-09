@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Country",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "countryCode",
+        "description": "Set the country where the search should be carried out, e.g., 'United States'. Currently, the scraper doesn't work well for full-country searching of sparsely populated countries like USA or Russia. For these, prefer searching city by city or focus on populated states.",
+        "value_options": "\"us\": string\n\"af\": string\n\"al\": string\n\"dz\": string\n\"as\": string\n\"ad\": string\n\"ao\": string\n\"ai\": string\n\"aq\": string\n\"ag\": string\n\"ar\": string\n\"am\": string\n\"aw\": string\n\"au\": string\n\"at\": string\n\"az\": string\n\"bs\": string\n\"bh\": string\n\"bd\": string\n\"bb\": string\n\"by\": string\n\"be\": string\n\"bz\": string\n\"bj\": string\n\"bm\": string\n\"bt\": string\n\"bo\": string\n\"ba\": string\n\"bw\": string\n\"bv\": string\n\"br\": string\n\"io\": string\n\"bn\": string\n\"bg\": string\n\"bf\": string\n\"bi\": string\n\"kh\": string\n\"cm\": string\n\"ca\": string\n\"cv\": string\n\"ky\": string\n\"cf\": string\n\"td\": string\n\"cl\": string\n\"cn\": string\n\"cx\": string\n\"cc\": string\n\"co\": string\n\"km\": string\n\"cg\": string\n\"cd\": string\n\"ck\": string\n\"cr\": string\n\"ci\": string\n\"hr\": string\n\"cu\": string\n\"cy\": string\n\"cz\": string\n\"dk\": string\n\"dj\": string\n\"dm\": string\n\"do\": string\n\"ec\": string\n\"eg\": string\n\"sv\": string\n\"gq\": string\n\"er\": string\n\"ee\": string\n\"et\": string\n\"fk\": string\n\"fo\": string\n\"fj\": string\n\"fi\": string\n\"fr\": string\n\"gf\": string\n\"pf\": string\n\"tf\": string\n\"ga\": string\n\"gm\": string\n\"ge\": string\n\"de\": string\n\"gh\": string\n\"gi\": string\n\"gr\": string\n\"gl\": string\n\"gd\": string\n\"gp\": string\n\"gu\": string\n\"gt\": string\n\"gn\": string\n\"gw\": string\n\"gy\": string\n\"ht\": string\n\"hm\": string\n\"va\": string\n\"hn\": string\n\"hk\": string\n\"hu\": string\n\"is\": string\n\"in\": string\n\"id\": string\n\"ir\": string\n\"iq\": string\n\"ie\": string\n\"il\": string\n\"it\": string\n\"jm\": string\n\"jp\": string\n\"jo\": string\n\"kz\": string\n\"ke\": string\n\"ki\": string\n\"kp\": string\n\"kr\": string\n\"kw\": string\n\"kg\": string\n\"la\": string\n\"lv\": string\n\"lb\": string\n\"ls\": string\n\"lr\": string\n\"ly\": string\n\"li\": string\n\"lt\": string\n\"lu\": string\n\"mo\": string\n\"mk\": string\n\"mg\": string\n\"mw\": string\n\"my\": string\n\"mv\": string\n\"ml\": string\n\"mt\": string\n\"mh\": string\n\"mq\": string\n\"mr\": string\n\"mu\": string\n\"yt\": string\n\"mx\": string\n\"fm\": string\n\"md\": string\n\"mc\": string\n\"mn\": string\n\"ms\": string\n\"ma\": string\n\"mz\": string\n\"mm\": string\n\"na\": string\n\"nr\": string\n\"np\": string\n\"nl\": string\n\"an\": string\n\"nc\": string\n\"nz\": string\n\"ni\": string\n\"ne\": string\n\"ng\": string\n\"nu\": string\n\"nf\": string\n\"mp\": string\n\"no\": string\n\"om\": string\n\"pk\": string\n\"pw\": string\n\"ps\": string\n\"pa\": string\n\"pg\": string\n\"py\": string\n\"pe\": string\n\"ph\": string\n\"pn\": string\n\"pl\": string\n\"pt\": string\n\"pr\": string\n\"qa\": string\n\"re\": string\n\"ro\": string\n\"ru\": string\n\"rw\": string\n\"sh\": string\n\"kn\": string\n\"lc\": string\n\"pm\": string\n\"vc\": string\n\"ws\": string\n\"sm\": string\n\"st\": string\n\"sa\": string\n\"sn\": string\n\"cs\": string\n\"sc\": string\n\"sl\": string\n\"sg\": string\n\"sk\": string\n\"si\": string\n\"sb\": string\n\"so\": string\n\"za\": string\n\"gs\": string\n\"es\": string\n\"lk\": string\n\"sd\": string\n\"sr\": string\n\"sj\": string\n\"sz\": string\n\"se\": string\n\"ch\": string\n\"sy\": string\n\"tw\": string\n\"tj\": string\n\"tz\": string\n\"th\": string\n\"tl\": string\n\"tg\": string\n\"tk\": string\n\"to\": string\n\"tt\": string\n\"tn\": string\n\"tr\": string\n\"tm\": string\n\"tc\": string\n\"tv\": string\n\"ug\": string\n\"ua\": string\n\"ae\": string\n\"gb\": string\n\"um\": string\n\"uy\": string\n\"uz\": string\n\"vu\": string\n\"ve\": string\n\"vn\": string\n\"vg\": string\n\"vi\": string\n\"wf\": string\n\"eh\": string\n\"ye\": string\n\"zm\": string\n\"zw\": string"
+    },
+    {
+        "name": "City",
+        "type": "String",
+        "required": "Required",
+        "param_name": "city",
+        "description": "Set the city where the search should be carried out, e.g., 'New York'.",
+        "value_options": null
+    },
+    {
+        "name": "Limit the number of places",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxCrawledPlacesPerSearch",
+        "description": "This is the maximum number of results you will obtain. A higher number will take longer to scrape. If you want to scrape all places available, set this value to '9999999'.",
+        "value_options": null
+    }
+]

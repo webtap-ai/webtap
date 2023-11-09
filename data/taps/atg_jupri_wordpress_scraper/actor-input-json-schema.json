@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "",
+            "example": "https://example.com"
+        },
+        "search": {
+            "type": "string",
+            "description": "Search title or content for specific Keywords"
+        },
+        "limit": {
+            "type": "integer",
+            "description": "Limit number of results"
+        },
+        "format": {
+            "type": "string",
+            "description": "Content Format",
+            "enum": [
+                "html",
+                "text"
+            ]
+        }
+    },
+    "required": []
+}

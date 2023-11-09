@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, company, url, title, tags, time, locations, minSalary, maxSalary, offset, description"
+}

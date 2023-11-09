@@ -1,0 +1,92 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Find vegan places in Pittsburg, United States, maximum 10 places",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided \ud83c\udf31 Vegan Places Finder INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by \ud83c\udf31 Vegan Places Finder is reliable and solely based on compatibility between DATA TASK and \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: \ud83c\udf31 Vegan Places Finder has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "countryCode": "us",
+                "city": "Pittsburg",
+                "maxCrawledPlacesPerSearch": 10
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Find vegan places in New York, United States, maximum 20 places",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided \ud83c\udf31 Vegan Places Finder INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by \ud83c\udf31 Vegan Places Finder is reliable and solely based on compatibility between DATA TASK and \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: \ud83c\udf31 Vegan Places Finder has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "countryCode": "us",
+                "city": "New York",
+                "maxCrawledPlacesPerSearch": 20
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Find vegan places in Los Angeles, United States, maximum 30 places",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided \ud83c\udf31 Vegan Places Finder INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by \ud83c\udf31 Vegan Places Finder is reliable and solely based on compatibility between DATA TASK and \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: \ud83c\udf31 Vegan Places Finder has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "countryCode": "us",
+                "city": "Los Angeles",
+                "maxCrawledPlacesPerSearch": 30
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Find vegan places in Phoenix, United States, maximum 60 places",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided \ud83c\udf31 Vegan Places Finder INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by \ud83c\udf31 Vegan Places Finder is reliable and solely based on compatibility between DATA TASK and \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: \ud83c\udf31 Vegan Places Finder has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "countryCode": "us",
+                "city": "Phoenix",
+                "maxCrawledPlacesPerSearch": 60
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Find vegan places in Philadelphia, United States, maximum 70 places",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided \ud83c\udf31 Vegan Places Finder INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by \ud83c\udf31 Vegan Places Finder is reliable and solely based on compatibility between DATA TASK and \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given \ud83c\udf31 Vegan Places Finder OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: \ud83c\udf31 Vegan Places Finder has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "countryCode": "us",
+                "city": "Philadelphia",
+                "maxCrawledPlacesPerSearch": 70
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

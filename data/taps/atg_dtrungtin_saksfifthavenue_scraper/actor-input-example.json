@@ -1,0 +1,10 @@
+{
+    "startUrls": [
+        {
+            "url": "https://www.saksfifthavenue.com/"
+        }
+    ],
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    }
+}

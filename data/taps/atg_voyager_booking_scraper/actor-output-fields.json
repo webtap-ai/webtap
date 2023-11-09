@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "order, url, name, type, description, stars, price, currency, rating, reviews, breakfast, checkIn, checkOut, location, address, image, rooms"
+}

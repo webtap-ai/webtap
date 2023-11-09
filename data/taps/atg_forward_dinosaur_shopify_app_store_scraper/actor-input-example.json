@@ -1,0 +1,7 @@
+{
+    "maxItems": 10,
+    "proxyConfiguration": {
+        "useApifyProxy": true,
+        "apifyProxyCountry": "US"
+    }
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "data_task": "Scrape product data from the home appliances deals page on BestBuy with a maximum of 200 products and set the minimum concurrency for the crawl to 5",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 100 products from the TV deals page on BestBuy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape 100 products from the TV deals page on BestBuy with a minimum concurrency of 5 and a handle request timeout of 60 seconds",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

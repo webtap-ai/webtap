@@ -1,0 +1,19 @@
+{
+    "id": "curious_coder/facebook-marketplace",
+    "url": "https://apify.com/curious_coder/facebook-marketplace",
+    "title": "Facebook marketplace scraper \u2705 FREE \u2705 \u00b7 Apify",
+    "name": "Facebook marketplace scraper \u2705 FREE \u2705",
+    "pricing": "No credit card required",
+    "description": "Scrape facebook marketplace listings and export data to CSV, JSON or use as API",
+    "author_name": "Curious Coder",
+    "maintained_by": "Maintained by Community",
+    "count_users": "16 users",
+    "count_runs": "82 runs",
+    "last_modified": "Modified 5 days ago",
+    "categories": "E-commerce\nBusiness\nSocial media",
+    "full_readme": "Sample data\n\nHere is the sample json output of this actor:\n\n{\n\t\"id\": \"3538478943097027\",\n\t\"primary_listing_photo\": {\n\t\t\"image\": {\n\t\t\t\"uri\": \"https://scontent.fixe2-1.fna.fbcdn.net/v/t45.5328-4/364256913_6441277079261122_2519672102930910407_n.jpg?stp=c0.140.843.843a_dst-jpg_p843x403&_nc_cat=108&ccb=1-7&_nc_sid=1a0e84&_nc_ohc=JJYX4d-xh5MAX_uTp28&_nc_ht=scontent.fixe2-1.fna&oh=00_AfBfoQtltivIpKdykAdwrnTDxw8z58b4UDdKdgiGx-Nokw&oe=650E1DEB\"\n\t\t},\n\t\t\"id\": \"6441277069261123\"\n\t},\n\t\"listing_price\": {\n\t\t\"formatted_amount\": \"\u20aa3,300\",\n\t\t\"amount_with_offset_in_currency\": \"85764\",\n\t\t\"amount\": \"3300.00\"\n\t},\n\t\"strikethrough_price\": null,\n\t\"comparable_price\": null,\n\t\"comparable_price_type\": null,\n\t\"location\": {\n\t\t\"reverse_geocode\": {\n\t\t\t\"city\": \"\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1-\u05d9\u05e4\u05d5\",\n\t\t\t\"state\": \"\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1\",\n\t\t\t\"city_page\": {\n\t\t\t\t\"display_name\": \"Tel Aviv, Israel\",\n\t\t\t\t\"id\": \"106371992735156\"\n\t\t\t}\n\t\t}\n\t},\n\t\"is_hidden\": false,\n\t\"is_live\": true,\n\t\"is_pending\": false,\n\t\"is_sold\": false,\n\t\"is_viewer_seller\": false,\n\t\"min_listing_price\": null,\n\t\"max_listing_price\": null,\n\t\"marketplace_listing_category_id\": \"1468271819871448\",\n\t\"marketplace_listing_title\": \"Mikve Studio- Fully Furnished\",\n\t\"custom_title\": \"Mikve Studio- Fully Furnished\",\n\t\"custom_sub_titles_with_rendering_flags\": [\n\t\t{\n\t\t\t\"subtitle\": \"\u200e\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1-\u05d9\u05e4\u05d5\u200e, \u200e\u05ea\u05dc \u05d0\u05d1\u05d9\u05d1\u200e\"\n\t\t}\n\t],\n\t\"origin_group\": null,\n\t\"pre_recorded_videos\": [],\n\t\"parent_listing\": null,\n\t\"marketplace_listing_seller\": {\n\t\t\"name\": \"Sasha Volkov\",\n\t\t\"id\": \"pfbid02xutW1kgnYVozigY7WHnwikG1JeyrkMQgSkNgdwk8e287XbLkbYYfwnwftCKdfSZdl\"\n\t},\n\t\"delivery_types\": [\n\t\t\"IN_PERSON\"\n\t]\n}",
+    "icon": "https://images.apifyusercontent.com/a-KG8Ogp-_oH6DtVjDjHaq8zKg39ETNZXcbRWJT83ZE/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9ZMFFHSDdjdXFnS3ROYkVndC84cXJadXFqVDh5U2NxUzRwTC1mYWNlYm9vay5qcGVn.webp",
+    "author_url": "https://apify.com/curious_coder",
+    "author_avatar": "https://images.apifyusercontent.com/bNoHiUJ8WEwN7mfpC42CKRc5DGgPcKVGIN-zoX5v7l0/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9qb2RBOGRLVEdEV3lBdmRUNC9mWjdnQ295akR3UHBFY2pybS1teUF2YXRhci5wbmc.webp",
+    "readme_summary": "Scrape facebook marketplace listings and export data to CSV, JSON or use as API"
+}

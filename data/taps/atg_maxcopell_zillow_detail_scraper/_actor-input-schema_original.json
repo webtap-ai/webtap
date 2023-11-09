@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Home detail URLs",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "URLs to scrape - should be in format https://www.zillow.com/homedetails/Address/12345678_zpid/",
+        "value_options": null
+    },
+    {
+        "name": "Status of properties in Start URLs",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "propertyStatus",
+        "description": "Since Zillow uses different methods to fetch properties for sale, for rent and sold, the Actor needs to know the status of the properties in Start URLs. If you this is provided incorrectly, the Actor will figure out the correct status and use it, but it will require additional requests to Zillow.",
+        "value_options": "\"FOR_SALE\": string\n\"RECENTLY_SOLD\": string\n\"FOR_RENT\": string"
+    },
+    {
+        "name": "Dataset ID with search scraper results",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "searchResultsDatasetId",
+        "description": "For easy integration, this actor can use output of these Zillow search scrapers to scrape more details: Zillow ZIP Code Search Scraper.",
+        "value_options": null
+    },
+    {
+        "name": "Debug Log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "If checked, the actor will log very detailed info into the output.",
+        "value_options": null
+    }
+]

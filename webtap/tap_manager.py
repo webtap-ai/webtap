@@ -121,12 +121,28 @@ class TapManager:
         if "memory_requirement" not in tap_description:
             tap_description["memory_requirement"] = None
 
+        """
         if "actor_output_views" not in actor_output_fields_data:
             actor_output_views = {"overview": {"title": "Overview"}}
         else:
             actor_output_views = actor_output_fields_data["actor_output_views"]
+        """
 
         # create apify_tap and init all values
+        apify_tap_actor_params = {
+            "actor": Actor(**actor_description),
+            "input_body_schema": actor_input_schema,
+            "input_body_summary": actor_input_body_summary,
+            "output_fields": actor_output_fields,
+        }
+
+        if "actor_output_views" in actor_output_fields_data:
+            apify_tap_actor_params["output_views"] = actor_output_fields_data[
+                "actor_output_views"
+            ]
+
+        apify_tap_actor = ApifyTapActor(**apify_tap_actor_params)
+
         tap = ApifyTap(
             name=tap_description["name"],
             entities=tap_description["entities"],
@@ -136,13 +152,7 @@ class TapManager:
             memory_requirement=tap_description["memory_requirement"],
             examples=examples,
             test_cases=test_cases,
-            apify_tap_actor=ApifyTapActor(
-                actor=Actor(**actor_description),
-                input_body_schema=actor_input_schema,
-                input_body_summary=actor_input_body_summary,
-                output_fields=actor_output_fields,
-                output_views=actor_output_views,
-            ),
+            apify_tap_actor=apify_tap_actor,
         )
         return tap
 

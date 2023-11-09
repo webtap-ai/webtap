@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "channels": {
+            "type": "array",
+            "description": "Provide one or several Telegram channel names you want to scrape the posts from.",
+            "example": [
+                "mediumcom"
+            ]
+        },
+        "postsFrom": {
+            "type": "integer",
+            "description": "Channel posts numbered by auto increment from 1",
+            "example": 10
+        },
+        "postsTo": {
+            "type": "integer",
+            "description": "Channel posts numbered by auto increment from 1",
+            "example": 20
+        },
+        "proxy": {
+            "type": "object",
+            "description": "A proxy server is required to run this actor! Either use an Apify residential proxy, or provide your own proxy servers. Datacenter proxies will not work.",
+            "example": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": [
+                    "RESIDENTIAL"
+                ]
+            }
+        }
+    },
+    "required": [
+        "channels"
+    ]
+}

@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Start URLs",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "startUrls",
+        "description": "URLs to start with.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxyConfig",
+        "description": "You need to use Apify proxy or custom proxies.",
+        "value_options": null
+    },
+    {
+        "name": "Max count of products (0 for all)",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxProductsCnt",
+        "description": "Few (2-3) product in progress might be scraped above this limit",
+        "value_options": null
+    },
+    {
+        "name": "Add images",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "addImages",
+        "description": "Add links to HD images of each product",
+        "value_options": null
+    },
+    {
+        "name": "Add reviews",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "addTopReviews",
+        "description": "Add recommended reviews",
+        "value_options": null
+    },
+    {
+        "name": "Max Request Retries",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxRequestRetries",
+        "description": "Indicates how many times the request is retried",
+        "value_options": null
+    },
+    {
+        "name": "Min Concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "minConcurrency",
+        "description": "Sets the minimum concurrency (parallelism) for the crawl",
+        "value_options": null
+    },
+    {
+        "name": "Max Concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "Sets the maximum concurrency (parallelism) for the crawl",
+        "value_options": null
+    },
+    {
+        "name": "Handle Request Timeout Secs",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "handleRequestTimeoutSecs",
+        "description": "Timeout in which the function passed as handleRequestFunction needs to finish",
+        "value_options": null
+    }
+]

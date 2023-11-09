@@ -1,0 +1,26 @@
+[
+    {
+        "data_task": "Scrape property details from URLs with debug log enabled for detailed output",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape property details from URLs and return the 'state' field",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape property details from URLs and return the 'isListingClaimedByCurrentSignedInUser' field",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape property details from URLs and return the 'price' field",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

@@ -1,0 +1,55 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "URLs to start with.",
+            "example": [
+                {
+                    "url": "https://www.bestbuy.com/site/promo/tv-deals"
+                }
+            ]
+        },
+        "proxyConfig": {
+            "type": "object",
+            "description": "You need to use Apify proxy or custom proxies.",
+            "example": {
+                "useApifyProxy": true
+            }
+        },
+        "maxProductsCnt": {
+            "type": "integer",
+            "description": "Few (2-3) product in progress might be scraped above this limit",
+            "example": 100
+        },
+        "addImages": {
+            "type": "boolean",
+            "description": "Add links to HD images of each product"
+        },
+        "addTopReviews": {
+            "type": "boolean",
+            "description": "Add recommended reviews"
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "Indicates how many times the request is retried"
+        },
+        "minConcurrency": {
+            "type": "integer",
+            "description": "Sets the minimum concurrency (parallelism) for the crawl"
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Sets the maximum concurrency (parallelism) for the crawl"
+        },
+        "handleRequestTimeoutSecs": {
+            "type": "integer",
+            "description": "Timeout in which the function passed as handleRequestFunction needs to finish"
+        }
+    },
+    "required": [
+        "startUrls",
+        "proxyConfig"
+    ]
+}

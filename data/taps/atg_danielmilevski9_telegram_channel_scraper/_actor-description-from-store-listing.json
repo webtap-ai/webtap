@@ -1,0 +1,19 @@
+{
+    "example_json_input": {
+        "channels": [
+            "mediumcom"
+        ],
+        "postsFrom": 10,
+        "postsTo": 20
+    },
+    "example_output_json_response": {
+        "id": 18,
+        "channelName": "mediumcom",
+        "authorName": "Medium / Medium.com",
+        "authorTelegram": "https://t.me/mediumcom",
+        "date": "2018-03-02T12:24:33+00:00",
+        "viewsCount": "15",
+        "text": "https://journal.thriveglobal.com/look-for-people-who-are-need-you-instead-of-convincing-people-who-dont-need-you-to-work-with-you-11c19dcca442",
+        "linkPreview": "Thrive Global\n\n\u201cLook For People Who Need You Instead Of Convincing People Who Don\u2019t Need You To Work With You\u201d Words Of Wisdom With Mandy Morris\n\u201cLook for people who are looking/need you instead of convincing people who don\u2019t need you to work with you \u2014 you can\u2019t please everyone, so\u2026"
+    }
+}

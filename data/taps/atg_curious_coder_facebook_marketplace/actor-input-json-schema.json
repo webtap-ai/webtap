@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "url": {
+            "type": "string",
+            "description": "Publicly accessible facebook marketplace listing page URL.\n\n**Tip**: Start with this url and customize your search: https://www.facebook.com/marketplace/nyc/cars",
+            "example": "https://www.facebook.com/marketplace/nyc/cars/"
+        },
+        "count": {
+            "type": "integer",
+            "description": "Leave this field empty if you want to scrape all items."
+        },
+        "cursor": {
+            "type": "string",
+            "description": "Use this field if you want to resume scraping from where the scraper stopped last time. You can find this value in default storage of scraper runs under lastCursor key"
+        },
+        "proxy": {
+            "type": "object",
+            "description": "You can use proxy from your account's country if needed for extra safety.",
+            "example": {
+                "useApifyProxy": true,
+                "apifyProxyGroups": [
+                    "RESIDENTIAL"
+                ],
+                "apifyProxyCountry": "US"
+            }
+        },
+        "myEmail": {
+            "type": "string",
+            "description": "We will use it to commnicate important updates related to this actor, and assist you in case you face any issues"
+        }
+    },
+    "required": [
+        "url",
+        "proxy"
+    ]
+}

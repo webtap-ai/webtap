@@ -1,0 +1,62 @@
+{
+    "example_json_input": {
+        "Recruiting Class": "2022",
+        "Recruit Count": 300
+    },
+    "example_output_json_response": {
+        "playerName": "Arch Manning",
+        "position": "QB",
+        "industries": [
+            {
+                "on3Consensus": {
+                    "rating": "98",
+                    "rank": {
+                        "national": "1",
+                        "state": "1",
+                        "position": "1"
+                    }
+                }
+            },
+            {
+                "on3": {
+                    "rating": "98",
+                    "rank": {
+                        "national": "1",
+                        "state": "1",
+                        "position": "1"
+                    }
+                }
+            },
+            {
+                "twoFourSeven": {
+                    "rating": "93",
+                    "rank": {
+                        "national": "1",
+                        "state": "1",
+                        "position": "1"
+                    }
+                }
+            },
+            {
+                "espn": {
+                    "rating": "6.1",
+                    "rank": {
+                        "national": "2",
+                        "state": "2",
+                        "position": "1"
+                    }
+                }
+            },
+            {
+                "rivals": {
+                    "rating": "98",
+                    "rank": {
+                        "national": "1",
+                        "state": "1",
+                        "position": "1"
+                    }
+                }
+            }
+        ]
+    }
+}

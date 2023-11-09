@@ -1,0 +1,42 @@
+{
+    "name": "Soccer Statistics",
+    "entities": [
+        "matchWeek",
+        "date",
+        "home",
+        "score",
+        "away",
+        "ht",
+        "season",
+        "league",
+        "position",
+        "name",
+        "played",
+        "win",
+        "draw",
+        "lose",
+        "goalsFor",
+        "goalsAgainst",
+        "goalDifference",
+        "points"
+    ],
+    "filters": [
+        "informationType",
+        "selectedLeagues",
+        "season",
+        "startWeek",
+        "endWeek"
+    ],
+    "options": [
+        "useApifyProxy"
+    ],
+    "special_instructions": [
+        "The 'informationType' filter defines the information that will be scraped. If you are scraping matches between two weeks, you should also define array of two weeks as the 'selectedWeeks' input",
+        "The 'selectedLeagues' filter is an array of leagues that will be scraped. Available leagues: brazil, czechrepublic, germany, germany2, denmark, england, england2, spain, spain2, france, france2, greece, netherlands, italy, italy2, pola",
+        "The 'season' filter selects the season. Available options are '2021-2022' and '2020-2021'",
+        "The 'startWeek' and 'endWeek' filters pick a start and end match week to scrape selected weeks.",
+        "The 'informationType' and 'season' filters are required for the tool to work",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

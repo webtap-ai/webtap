@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Marketplace listings page url",
+        "type": "String",
+        "required": "Required",
+        "param_name": "url",
+        "description": "Publicly accessible facebook marketplace listing page URL.\n\n**Tip**: Start with this url and customize your search: https://www.facebook.com/marketplace/nyc/cars",
+        "value_options": null
+    },
+    {
+        "name": "#\ufe0f\u20e3 Total number of records required",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "count",
+        "description": "Leave this field empty if you want to scrape all items.",
+        "value_options": null
+    },
+    {
+        "name": "Start from cursor",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "cursor",
+        "description": "Use this field if you want to resume scraping from where the scraper stopped last time. You can find this value in default storage of scraper runs under lastCursor key",
+        "value_options": null
+    },
+    {
+        "name": "Proxy",
+        "type": "Object",
+        "required": "Required",
+        "param_name": "proxy",
+        "description": "You can use proxy from your account's country if needed for extra safety.",
+        "value_options": null
+    },
+    {
+        "name": "Email address to receive updates",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "myEmail",
+        "description": "We will use it to commnicate important updates related to this actor, and assist you in case you face any issues",
+        "value_options": null
+    }
+]

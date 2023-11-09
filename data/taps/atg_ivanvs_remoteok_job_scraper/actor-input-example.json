@@ -1,0 +1,8 @@
+{
+    "tag": "",
+    "maxConcurrency": 1,
+    "proxyConfiguration": {
+        "useApifyProxy": true
+    },
+    "maxNumberOfListings": 50
+}

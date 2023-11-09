@@ -1,0 +1,8 @@
+[
+    {
+        "data_task": "Scrape 50 job listings for 'vue' tag",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

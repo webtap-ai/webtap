@@ -1,0 +1,13 @@
+{
+    "example_json_input": {
+        "url": "https://example.com"
+    },
+    "example_output_json_response": {
+        "title": "Example Website",
+        "description": "This is an example website.",
+        "author": "John Doe",
+        "published_date": "2023-01-01",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam faucibus ligula mauris, ac pharetra ante posuere ac. Fusce hendrerit quam et mauris efficitur, quis egestas ipsum facilisis. Nulla nec leo tortor. Quisque semper erat nec arcu lacinia, eu consequat mi accumsan. Mauris vitae vulputate massa, non mattis elit. Ut a facilisis est. Donec tristique sem et risus ultricies rutrum. Aliquam erat volutpat. Nulla facilisi. Sed non dolor lobortis, feugiat erat nec, suscipit ligula. Suspendisse fermentum tincidunt ligula eu pellentesque. Aliquam placerat condimentum lorem, in rutrum augue semper ut. Curabitur vehicula, nunc eget euismod auctor, nisl sem eleifend nulla, ac vehicula odio nulla nec lectus. Vestibulum sem justo, consectetur id lorem in, feugiat cursus nunc. Nam in tincidunt lectus.",
+        "image": "https://www.example.com/image.jpg"
+    }
+}

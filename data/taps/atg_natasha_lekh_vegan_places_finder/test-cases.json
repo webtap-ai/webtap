@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Find vegan places in Pittsburg, United States, maximum 10 places",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Find vegan places in New York, United States, maximum 20 places",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Find vegan places in Los Angeles, United States, maximum 30 places",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Find vegan places in Phoenix, United States, maximum 60 places",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Find vegan places in Philadelphia, United States, maximum 70 places",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

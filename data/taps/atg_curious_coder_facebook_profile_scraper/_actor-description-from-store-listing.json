@@ -1,0 +1,81 @@
+{
+    "example_json_input": {
+        "actor_name": "curious_coder/facebook-profile-scraper",
+        "features": [
+            "proxy support",
+            "cookies support",
+            "scalability and performance",
+            "safety of Facebook account",
+            "data export and integration",
+            "automatic retry and error handling"
+        ],
+        "sample_input": {
+            "profile_url": "https://www.facebook.com/example-profile"
+        }
+    },
+    "example_output_json_response": {
+        "bio": {
+            "delight_ranges": [],
+            "image_ranges": [],
+            "inline_style_ranges": [],
+            "aggregated_ranges": [],
+            "ranges": [],
+            "color_ranges": [],
+            "text": "Aurora coffee shop offering locally roasted coffee, fresh house made coffee syrups and food options."
+        },
+        "influencer_category": {
+            "text": "Page \u00b7 Coffee shop",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yV/r/zZaEKuhZ6qh.png"
+        },
+        "address": {
+            "text": "15600 E. Alameda Parkway, Aurora, CO, United States, Colorado",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/6AitI08mYhY.png",
+            "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL21hcHMuZ29vZ2xlLmNvbS9tYXBzP3E9MTU2MDArRS4rQWxhbWVkYStQYXJrd2F5JTJDK0F1cm9yYSUyQytDTyUyQytVbml0ZWQrU3RhdGVzJTJDK0NvbG9yYWRvJmhsPWVuOjo6Og==",
+            "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fmaps.google.com%2Fmaps%3Fq%3D15600%2BE.%2BAlameda%2BParkway%252C%2BAurora%252C%2BCO%252C%2BUnited%2BStates%252C%2BColorado%26hl%3Den&h=AT2MpPP_E7ZyxyN5oUfd1znBh6OSeLPbkheTqru6GCwUBX-wsQvn2VNji6pNu-O8DYTcBWUvzMoISjq4TVtDHzLFIH-kbi1BWnN7IuTrHfAtIhrb4PVoTdTAFyBB8XiduT2KJnDs99aw4cAv-q4Dn3KRwA&s=1",
+            "external_url": "https://maps.google.com/maps?q=15600+E.+Alameda+Parkway%2C+Aurora%2C+CO%2C+United+States%2C+Colorado&hl=en"
+        },
+        "profile_phone": {
+            "text": "+1 720-830-5166",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/7i_YTpprMRX.png"
+        },
+        "profile_email": {
+            "text": "smiller@millyscommunitycafe.com",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/szoH_eR2qR7.png"
+        },
+        "website": {
+            "text": "millyscommunitycafe.com",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/y3/r/0ho4nG26KLt.png",
+            "id": "NjQyMTgzOTU5MjA4MTA3Omh0dHBzXGEvL2wuZmFjZWJvb2suY29tL2wucGhwP3U9aHR0cCUzQSUyRiUyRnd3dy5taWxseXNjb21tdW5pdHljYWZlLmNvbSUyRiZoPUFUMVM4bXdtM2RhVkhFb2owNVNnTy11MmlWekNoSk9iZGZEei1kQmsyMTdyUDRKLUNSaXdUd0xxZ3VLZEFZWVAteEFmNTR0eGNHekpuYW5SV3pMWHN2V29MbHpDUnEzNXZKOWE1R1owVE5yQ1JpUVdYa1hBME5LaklmTTNEVjRWYVlYUUJpYVN4ZVdYcGgtay1CTEJ0YkItdTRVJnM9MTo6Ojo=",
+            "url": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.millyscommunitycafe.com%2F&h=AT3mb3UoJ_lGGsZ76ejDDVYMEr4DN9z7LgpS8FP3PSqIYJ7Hp1CHIVGz-fSIYMoFF_CfUWmOwiXrVyfwMURt_oAdLEzRXpOm1uA7C2srYC7sUwhDISCI_miOl_dQK51nI80OyYJOqPES_eGB24jcmgYxeA&s=1",
+            "external_url": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.millyscommunitycafe.com%2F&h=AT1S8mwm3daVHEoj05SgO-u2iVzChJObdfDz-dBk217rP4J-CRiwTwLqguKdAYYP-xAf54txcGzJnanRWzLXsvWoLlzCRq35vJ9a5GZ0TNrCRiQWXkXA0NKjIfM3DV4VaYXQBiaSxeWXph-k-BLBtbB-u4U&s=1"
+        },
+        "business_hours": {
+            "text": "Closed now",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/RSpVEGhhd5g.png"
+        },
+        "business_services": {
+            "text": "Dine in \u00b7 Outdoor seating \u00b7 In-store collection",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/A7e-6vUUTAa.png"
+        },
+        "business_price": {
+            "text": "Price range \u00b7 \u00a3",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yz/r/dzyr74nFgzx.png"
+        },
+        "rating": {
+            "text": "Rating \u00b7 4.4 (94 reviews)",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/2OpWWH3SYgH.png"
+        },
+        "wifi": "Offers free Wi-Fi with purchase",
+        "category": "Coffee shop",
+        "Address": "15600 E. Alameda Parkway, Aurora, CO, United States, 80017",
+        "Mobile": "+1 720-830-5166",
+        "Email": "smiller@millyscommunitycafe.com",
+        "Website": "http://www.millyscommunitycafe.com/",
+        "ratings": "Rating \u00b7 4.4 (94 reviews)",
+        "Hours": "Closed now",
+        "Price": "Price range \u00b7 \u00a3",
+        "Services": "Dine in \u00b7 Outdoor seating \u00b7 In-store collection",
+        "url": "https://www.facebook.com/millyscommunitycafe",
+        "bioText": "Aurora coffee shop offering locally roasted coffee, fresh house made coffee syrups and food options."
+    }
+}

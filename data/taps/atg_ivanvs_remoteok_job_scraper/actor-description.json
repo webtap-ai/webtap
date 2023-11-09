@@ -1,0 +1,19 @@
+{
+    "id": "ivanvs/remoteok-job-scraper",
+    "url": "https://apify.com/ivanvs/remoteok-job-scraper",
+    "title": "RemoteOK Job Scraper \u00b7 Apify",
+    "name": "RemoteOK Job Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrape data from RemoteOK site (https://remoteok.com/)",
+    "author_name": "Ivan Vasiljevi\u0107",
+    "maintained_by": "Maintained by Community",
+    "count_users": "72 users",
+    "count_runs": "913 runs",
+    "last_modified": "Modified 10 days ago",
+    "categories": "Jobs",
+    "full_readme": "Scrape data from RemoteOK easily with RemoteOK Job Scraper\n\nHow to use\n\nIn order to use RemoteOK Job Scraper you don't really need to provide any input. In that case you will get 50 results without any filtering.\n\nIn order to scrape jobs by tag and to get more results you can provide input values for tag and maxNumberOfListings.\n\nExample\n\nIf we want to scrape jobs for java and to get 500 results input would look like this:\n\n{\n  \"tag\": \"java\",\n  \"maxNumberOfListings\": 500\n}\nData Output Example\n[\n  {\n    \"id\": \"112230\",\n    \"company\": \"SportyBet\",\n    \"url\": \"https://remoteok.com/remote-jobs/112230-remote-backend-engineer-sportybet\",\n    \"title\": \"Backend Engineer\",\n    \"tags\": [\"Engineer\", \"Senior\", \"Finance\"],\n    \"time\": \"2022-08-26T11:24:54+00:00\",\n    \"locations\": [\"\ud83c\uddea\ud83c\uddfa Europe\", \"\ud83d\udc83 Latin America\", \"\ud83c\udde8\ud83c\udde6 Canada\", \"\ud83c\uddf7\ud83c\uddfa Russia\", \"\ud83c\uddfa\ud83c\udde6 Ukraine\"],\n    \"minSalary\": \"$40k\",\n    \"maxSalary\": \"$80k\",\n    \"offset\": \"1\"\n  }\n]\nRemoteOK data output\n\nThe output from RemoteOK Job Scraper is stored in the dataset. After the run is finished, you can download the dataset in various data formats (JSON, CSV, XML, RSS, HTML Table).\n\nHow much does it cost to scrape RemoteOK?\n\nRunning RemoteOK Job Scraper once will get you 1,000 results for less than USD 1 in Apify platform credits. For more details about the plans offer, platform credits, and usage, see the platform pricing page.\n\nPlanning board\n\nTrello Planning Board\n\nSupport\n\nFor more custom/simplify outputs or Bug report please contact the developer (me) or report an issue.",
+    "icon": "https://images.apifyusercontent.com/xbpjL4rNO4eVyN3zOomk6q6F6_n1JVMRqzgRajbS0Ag/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9uUVUweHZiQ1NzUVVCbDYyYi9UV1FvdGc3VE1CdWEzUVJBVC1sb2dvLXJvay5wbmc.webp",
+    "author_url": "https://apify.com/ivanvs",
+    "author_avatar": "https://images.apifyusercontent.com/ruOucHDoYltXzmjRpCZ4NlMmQx1nkZ_MvoMIYmcrMqo/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS96TG1xRjJHY0x3OUNiNlF3eS9tUmF0TnF1N2F4NnkzM25xcy0xNDk3NTk3XzEwMjAyOTIyMDc2NTE5Mjk3XzUzNDQ4NjUxOF9uLmpwZw.webp",
+    "readme_summary": "Scrape data from RemoteOK site (https://remoteok.com/). In order to use RemoteOK Job Scraper you don't really need to provide any input. In that case you will get 50 results without any filtering. If we want to scrape jobs for `java` and to get 500 results input would look like this: {\"tag\": \"java\", \"maxNumberOfListings\": 500}. The output from RemoteOK Job Scraper is stored in the dataset. After the run is finished, you can download the dataset in various data formats (JSON, CSV, XML, RSS, HTML Table). Running RemoteOK Job Scraper once will get you 1,000 results for less than USD 1 in Apify platform credits. For more details about the plans offer, platform credits, and usage, see the platform pricing page (https://apify.com/pricing/actors)."
+}

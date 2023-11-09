@@ -1,0 +1,48 @@
+{
+    "name": "Hotel Booking Data",
+    "entities": [
+        "hotel",
+        "apartment",
+        "hostel",
+        "guest house",
+        "homestay",
+        "bed and breakfast",
+        "holiday home",
+        "boat",
+        "villa",
+        "motel"
+    ],
+    "filters": [
+        "search",
+        "startUrls",
+        "maxItems",
+        "propertyType",
+        "sortBy",
+        "minScore",
+        "starsCountFilter",
+        "currency",
+        "language",
+        "checkIn",
+        "checkOut",
+        "rooms",
+        "adults",
+        "children",
+        "minMaxPrice"
+    ],
+    "options": [
+        "Limit the number of places to be scraped",
+        "Choose type of property",
+        "Hotel attribute by which the results will be ordered",
+        "Minimum rating of a hotel",
+        "Only scrape places with the selected stars count",
+        "Currency to be set on the website",
+        "Language to be set on the website",
+        "Insert the minimum and maximum price per night"
+    ],
+    "special_instructions": [
+        "One of search or startUrls must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The tool can't filter by 'cats' friendly or '5 stars hotel only'",
+        "The tool provides the following output fields: order, url, name, type, description, stars, price, currency, rating, reviews, breakfast, checkIn, checkOut, location, address, image, rooms",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

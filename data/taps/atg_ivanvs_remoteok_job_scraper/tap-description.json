@@ -1,0 +1,23 @@
+{
+    "name": "Remote Job Listings",
+    "entities": [
+        "job listing"
+    ],
+    "filters": [
+        "tag",
+        "maxNumberOfListings"
+    ],
+    "options": [
+        "proxyConfiguration",
+        "maxConcurrency",
+        "debugLog"
+    ],
+    "special_instructions": [
+        "The 'tag' filter is used to search for job listings related to a specific technology or skill (e.g., 'java', 'node', etc.).",
+        "The 'maxNumberOfListings' filter is used to limit the number of results. Higher limits will take longer to scrape.",
+        "The 'maxConcurrency' option defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources.",
+        "The 'debugLog' option, when set to true, shows additional debugging information.",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

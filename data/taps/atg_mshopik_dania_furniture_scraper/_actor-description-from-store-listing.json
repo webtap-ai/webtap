@@ -1,0 +1,31 @@
+{
+    "example_json_input": {
+        "scraper_name": "Dania Furniture Scraper",
+        "author": "Mark Carter",
+        "actor_stats": {
+            "users": 64,
+            "runs": 888,
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "E-commerce"
+        ],
+        "cost_information": {
+            "description": "Running Dania Furniture Scraper will consume platform credits. Platform credits are counted in USD and each plan includes a set amount. Check our platform pricing page for details.",
+            "pricing_page": "https://apify.com/pricing/actors",
+            "how_to_find_credits_usage": "The exact number of platform credits consumed will depend on the actor input settings, the type of job it performs, how often it runs, and for how long. The best way to find out how many platform credits an actor will consume is to perform a test run. You can then review platform usage in Billing and figure out the best Apify subscription plan for your needs."
+        }
+    },
+    "example_output_json_response": {
+        "scraper_name": "Dania Furniture Scraper",
+        "author": "Mark Carter",
+        "actor_stats": {
+            "users": 64,
+            "runs": 888,
+            "modified": "about 1 year ago"
+        },
+        "categories": [
+            "E-commerce"
+        ]
+    }
+}

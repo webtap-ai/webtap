@@ -1,0 +1,13 @@
+{
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    },
+    "postsTo": 20,
+    "channels": [
+        "mediumcom"
+    ],
+    "postsFrom": 10
+}

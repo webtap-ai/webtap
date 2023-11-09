@@ -1,0 +1,22 @@
+{
+    "name": "TikTok Data Extractor",
+    "entities": [
+        "post info & stats",
+        "author metadata",
+        "video metadata",
+        "audio metadata",
+        "post comments"
+    ],
+    "filters": [
+        "TikTok post URLs"
+    ],
+    "options": [
+        "Number of posts to fetch info for",
+        "Number of posts to fetch comments for"
+    ],
+    "special_instructions": [
+        "The input parameter is a list of TikTok post URLs to scrape. If it is not provided, return can_fulfill false and explain accordingly",
+        "The actor is currently offered for free, with minimal platform costs",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

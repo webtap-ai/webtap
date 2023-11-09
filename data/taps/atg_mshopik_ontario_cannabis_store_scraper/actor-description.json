@@ -1,0 +1,19 @@
+{
+    "id": "mshopik/ontario-cannabis-store-scraper",
+    "url": "https://apify.com/mshopik/ontario-cannabis-store-scraper",
+    "title": "Ontario Cannabis Store Scraper \u00b7 Apify",
+    "name": "Ontario Cannabis Store Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrape Ontario Cannabis Store and extract data on cannabis from ocs.ca. Our Ontario Cannabis Store API lets you crawl product information and pricing. The saved data can be downloaded as HTML, JSON, CSV, Excel, and XML.",
+    "author_name": "Mark Carter",
+    "maintained_by": "Maintained by Community",
+    "count_users": "35 users",
+    "count_runs": "763 runs",
+    "last_modified": "Modified about 1 year ago",
+    "categories": "E-commerce",
+    "full_readme": "What does Ontario Cannabis Store Scraper do?\n\nThis scraper creates an API for Ontario Cannabis Store to enable you to extract product information and pricing from the ocs.ca online store.\n\nThe Ontario Cannabis Store API is free to use and will let you scrape and extract e-commerce data as often as you need to. The data you extract can be downloaded in structured format so that you can use it in your own applications, spreadsheets, reports, or tools.\n\nScraping Ontario Cannabis Store could help you identify competition, opportunities, potential leads, and useful contacts. The right data can help you with product tracking, market research, and price monitoring in the cannabis category.\n\nIf you need more inspiration, check out how scraping can help you get an edge over the competition and stay ahead in e-commerce.\n\nHow much will it cost to scrape Ontario Cannabis Store?\n\nRunning Ontario Cannabis Store Scraper will consume platform credits. Platform credits are counted in USD and each plan includes a set amount. Check our platform pricing page for details.\n\nThe exact number of platform credits consumed will depend on the actor input settings, the type of job it performs, how often it runs, and for how long.\n\nThe best way to find out how many platform credits an actor will consume is to perform a test run. You can then review platform usage in Billing and figure out the best Apify subscription plan for your needs.\n\nHow to scrape Ontario Cannabis Store\n\nocs.ca is built using Shopify and Ontario Cannabis Store Scraper is one of our huge range of online e-commerce scrapers designed to create a universal Shopify API.\n\nCheck out our quick start guide to using any Apify scraper or feel free to send an email to support@apify.com if you have any questions.\n\nYou can also watch our video about scraping Amazon to understand more about scraping e-commerce data and how it can help your business succeed.\n\nFor more ideas, read about our top 5 web scraping tools to help you gather retail analytics.",
+    "icon": "https://images.apifyusercontent.com/Ngsca6k3ALtEuHBUDSWL89FhWiFbQDXQjhrWxlwkxd0/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS5jb20vaW1nL3N0b3JlL2FjdG9yX3BpY3R1cmUuc3Zn.webp",
+    "author_url": "https://apify.com/mshopik",
+    "author_avatar": "https://images.apifyusercontent.com/ivgey5k-SS9HUBsmbKpBoBJgLAQ8j-l-TYRoI7wzSWc/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9ZN2c3RmhMcTd3TVA1V0pNUC9zd2VBendqZFRpYXBlcU1iNy1jcmltZS1tYW4tdGhpZWYtMi10aXQ0cDV1aGR6cnNkd2pxdWt3Yi5wbmc.webp",
+    "readme_summary": "Scrape Ontario Cannabis Store and extract data on cannabis from ocs.ca. Our Ontario Cannabis Store API lets you crawl product information and pricing. The saved data can be downloaded as HTML, JSON, CSV, Excel, and XML."
+}

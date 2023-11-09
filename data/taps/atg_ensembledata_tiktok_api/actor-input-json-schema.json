@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "post_info": {
+            "type": "array",
+            "description": "list of posts to fetch info for",
+            "example": [
+                "https://www.tiktok.com/@olympics/video/7200420986661965061"
+            ]
+        },
+        "post_comments": {
+            "type": "array",
+            "description": "list of posts to fetch comments for",
+            "example": [
+                "https://www.tiktok.com/@olympics/video/7200420986661965061"
+            ]
+        }
+    },
+    "required": []
+}

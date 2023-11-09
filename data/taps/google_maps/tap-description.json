@@ -11,6 +11,7 @@
             "Never add the zoom param, simply skip it",
             "Set countryCode to lowercase, e.g. \"us\" instead of \"US\"",
             "If you input an URL skip searchStringsArray and locationQuery",
-            "If a URL is requested use start url and skip searchStringsArray and locationQuery"
+            "If a URL is requested use start url and skip searchStringsArray and locationQuery",
+            "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
         ]
 }

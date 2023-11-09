@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "startUrls, proxyConfig, maxProductsCnt, addImages, addTopReviews, maxRequestRetries, minConcurrency, maxConcurrency, handleRequestTimeoutSecs"
+}

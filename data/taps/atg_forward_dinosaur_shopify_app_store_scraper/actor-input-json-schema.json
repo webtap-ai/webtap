@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "appsUrls": {
+            "type": "array",
+            "description": "Url of the apps you want to crawl, leave empty to crawl all apps"
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Maximum number of apps you want to scrape. Set to 0 to scrape all.",
+            "example": 10
+        },
+        "proxyConfiguration": {
+            "type": "object",
+            "description": "Select proxies to be used by your crawler.",
+            "example": {
+                "useApifyProxy": true,
+                "apifyProxyCountry": "US"
+            }
+        }
+    },
+    "required": []
+}

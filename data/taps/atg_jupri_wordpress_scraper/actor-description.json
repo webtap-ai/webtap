@@ -1,0 +1,19 @@
+{
+    "id": "jupri/wordpress-scraper",
+    "url": "https://apify.com/jupri/wordpress-scraper",
+    "title": "WordPress Scraper \u00b7 Apify",
+    "name": "WordPress Scraper",
+    "pricing": "No credit card required",
+    "description": "Scrape contents from WordPress websites.",
+    "author_name": "cat",
+    "maintained_by": "Maintained by Community",
+    "count_users": "49 users",
+    "count_runs": "510 runs",
+    "last_modified": "Modified 5 months ago",
+    "categories": "E-commerce\nMarketing\nNews",
+    "full_readme": "Welcome To WordPress Scraper\n\nAbout WordPress\n\nWordPress (also known as WP or WordPress.org) is a web content management system. It was originally created as a tool to publish blogs but has evolved to support publishing other web content, including more traditional websites, mailing lists and Internet forum, media galleries, membership sites, learning management systems and online stores. Available as free and open-source software, WordPress is among the most popular content management systems \u2013 it was used by 42.8% of the top 10 million websites as of October 2021.[4][5]\n\nAbout This Actor\n\nScrape blog, article, news, author, products. media, images from a WordPress website. Format content as HTML or Plain Text (Markdown)\n\nImportant Notes: For this Actor to work, The WordPress must be installed on target website.\n\nTutorial\n\n... almost there ... ",
+    "icon": "https://images.apifyusercontent.com/SKVYy6dy9_obhtNyoAOrhk4QpO6yHkBwqUqeEM8cue4/rs:fill:92:92/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9iSFhhZGVDMjBtb25JanF6bS9MbnNXemdZdVptZWVwNTV6Si13b3JkcHJlc3Mtc3ZncmVwby1jb20ucG5n.webp",
+    "author_url": "https://apify.com/jupri",
+    "author_avatar": "https://images.apifyusercontent.com/Rf2kswuF5qzYsJKwpCL9nsDkBYW5YiGFUIugmui7uIA/rs:fill:192:192/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMuYW1hem9uYXdzLmNvbS9zVEVtbXc2Yjd0N1dKdU13ZS8za3FZSDZkTjRRTEFwQmVUSi1jYXQuanBn.webp",
+    "readme_summary": "Scrape contents from WordPress websites. This Apify Actor allows you to scrape blog, article, news, author, products, media, and images from a WordPress website. The scraped content can be formatted as HTML or Plain Text (Markdown). Please note that the target website must have WordPress installed for this Actor to work."
+}

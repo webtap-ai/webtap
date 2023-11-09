@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Post URLs (for info)",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "post_info",
+        "description": "list of posts to fetch info for",
+        "value_options": null
+    },
+    {
+        "name": "Post URLs (for comments)",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "post_comments",
+        "description": "list of posts to fetch comments for",
+        "value_options": null
+    }
+]

@@ -1,0 +1,24 @@
+{
+    "name": "Telegram Channel Messages",
+    "entities": [
+        "channel messages",
+        "forwarded messages",
+        "telegram reply URLs"
+    ],
+    "filters": [
+        "Channel names",
+        "Posts from",
+        "Posts to"
+    ],
+    "options": [
+        "Use Apify Proxy",
+        "Apify Proxy Groups"
+    ],
+    "special_instructions": [
+        "Provide one or several Telegram channel names you want to scrape the posts from",
+        "Channel posts are numbered by auto increment from 1",
+        "The tool returns public messages without requiring login, phone number, or Telegram app",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Zillow Property Details",
+    "entities": [
+        "property details",
+        "property status",
+        "property location",
+        "property price",
+        "property description"
+    ],
+    "filters": [
+        "startUrls",
+        "propertyStatus",
+        "searchResultsDatasetId"
+    ],
+    "options": [
+        "debugLog"
+    ],
+    "special_instructions": [
+        "Start URLs should be in the format https://www.zillow.com/homedetails/Address/12345678_zpid/",
+        "Property status can be one of the following: FOR_SALE, RECENTLY_SOLD, FOR_RENT",
+        "Search Results Dataset ID is used for easy integration with Zillow search scrapers",
+        "Debug Log, if checked, will log very detailed info into the output",
+        "The tool does not require any of the filters to be provided, but providing them will yield more accurate results",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

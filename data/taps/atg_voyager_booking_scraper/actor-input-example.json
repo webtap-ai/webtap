@@ -1,0 +1,9 @@
+{
+    "search": "New York",
+    "sortBy": "distance_from_search",
+    "currency": "USD",
+    "language": "en-gb",
+    "maxItems": 10,
+    "minMaxPrice": "0-999999",
+    "starsCountFilter": "any"
+}

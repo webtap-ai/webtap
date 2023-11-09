@@ -1,0 +1,26 @@
+{
+    "example_json_input": {
+        "url": "https://adstransparency.google.com/advertiser/AR09717407487665111041?region=anywhere"
+    },
+    "example_output_json_response": {
+        "id": "1940414785234249426",
+        "advertiserName": "DigitalOcean, LLC",
+        "lastShownAt": "Sep 28, 2023",
+        "format": "Text",
+        "image": "https://tpc.googlesyndication.com/archive/simgad/5901216088332964125?f=.png",
+        "shownCountries": [
+            "Argentina",
+            "France",
+            "Mexico",
+            "Portugal",
+            "Spain",
+            "United Kingdom",
+            "Europe"
+        ],
+        "advertiserId": "AR16111588221938302977",
+        "creativeId": "CR18224966324914749441",
+        "textContent": "Sponsored\nDigitalOcean\nwww.digitalocean.com/\nDigitalOcean\u00ae Developer Cloud\nSee why more than a million developers choose DigitalOcean. Try for free.",
+        "htmlContent": "<!DOCTYPE html><html>...</html>",
+        "copy": "DigitalOcean\u00ae Developer Cloud\nSee why more than a million developers choose DigitalOcean. Try for free."
+    }
+}

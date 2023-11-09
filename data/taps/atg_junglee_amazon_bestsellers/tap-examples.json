@@ -1,0 +1,262 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Electronics category on Amazon using residential proxies",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/"
+                ],
+                "depthOfCrawl": 1,
+                "detailedInformation": false,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Books category on Amazon with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Books/zgbs/books/"
+                ],
+                "depthOfCrawl": 1,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Home & Kitchen category on Amazon with a depth of crawl set to 2",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Home-Kitchen/zgbs/home-garden/"
+                ],
+                "depthOfCrawl": 2,
+                "detailedInformation": false,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Toys & Games category on Amazon using residential proxies and with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Toys-Games/zgbs/toys-and-games/"
+                ],
+                "depthOfCrawl": 1,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Beauty & Personal Care category on Amazon with detailed information and a depth of crawl set to 3",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Beauty/zgbs/beauty/"
+                ],
+                "depthOfCrawl": 3,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Industrial & Scientific category on Amazon with detailed information and a depth of crawl set to 4",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Industrial-Scientific/zgbs/industrial"
+                ],
+                "depthOfCrawl": 4,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Pet Supplies category on Amazon using residential proxies, with detailed information and a depth of crawl set to 3",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Pet-Supplies/zgbs/pet-supplies/"
+                ],
+                "depthOfCrawl": 3,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Musical Instruments category on Amazon using residential proxies and with detailed information",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Musical-Instruments/zgbs/musical-instruments/"
+                ],
+                "depthOfCrawl": 1,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Appliances category on Amazon using residential proxies, with detailed information and a depth of crawl set to 2",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/"
+                ],
+                "depthOfCrawl": 2,
+                "detailedInformation": true,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape the top 100 most popular items in the Movies & TV category on Amazon with a depth of crawl set to 4",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Amazon Bestsellers Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Amazon Bestsellers Scraper is reliable and solely based on compatibility between DATA TASK and Amazon Bestsellers Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Amazon Bestsellers Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Amazon Bestsellers Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "categoryUrls": [
+                    "https://www.amazon.com/Best-Sellers-Movies-TV/zgbs/movies-tv/"
+                ],
+                "depthOfCrawl": 4,
+                "detailedInformation": false,
+                "proxy": {
+                    "useApifyProxy": true,
+                    "apifyProxyGroups": [
+                        "RESIDENTIAL"
+                    ]
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

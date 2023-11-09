@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Destination",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "search",
+        "description": "Insert the destination name here",
+        "value_options": null
+    },
+    {
+        "name": "Or use Start URLs instead",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "startUrls",
+        "description": "URLs to start with instead of a destination name. It is better to use a simple URL and filter other options in filters here. You can also use shared list URLs. These links are generated for properties you saved in your Booking account.",
+        "value_options": null
+    },
+    {
+        "name": "Max results per destination or URL",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Limit the number of places to be scraped.",
+        "value_options": null
+    },
+    {
+        "name": "Property type",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "propertyType",
+        "description": "Choose type of property",
+        "value_options": "\"none\": string\n\"Hotels\": string\n\"Apartments\": string\n\"Hostels\": string\n\"Guest houses\": string\n\"Homestays\": string\n\"Bed and breakfasts\": string\n\"Holiday homes\": string\n\"Boats\": string\n\"Villas\": string\n\"Motels\": string\n\"Resorts\": string\n\"Holiday parks\": string\n\"Campsites\": string\n\"Luxury tents\": string"
+    },
+    {
+        "name": "Order results by",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "sortBy",
+        "description": "Hotel attribute by which the results will be ordered",
+        "value_options": "\"bayesian_review_score\": string\n\"distance_from_search\": string\n\"class_asc\": string\n\"price\": string\n\"review_score_and_price\": string\n\"class_and_price\": string"
+    },
+    {
+        "name": "Minimum rating",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "minScore",
+        "description": "Minimum rating of a hotel in \"8.4\" format",
+        "value_options": null
+    },
+    {
+        "name": "Stars count",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "starsCountFilter",
+        "description": "Only scrape places with the selected stars count. Also includes Booking's apartment-like properties 'square' rating.",
+        "value_options": "\"any\": string\n\"1\": string\n\"2\": string\n\"3\": string\n\"4\": string\n\"5\": string\n\"unrated\": string"
+    },
+    {
+        "name": "Preferred currency",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "currency",
+        "description": "Currency to be set on the website",
+        "value_options": "\"ARS\": string\n\"AUD\": string\n\"AZN\": string\n\"BHD\": string\n\"BRL\": string\n\"BGN\": string\n\"CAD\": string\n\"XOF\": string\n\"CLP\": string\n\"CNY\": string\n\"COP\": string\n\"CZK\": string\n\"DKK\": string\n\"EGP\": string\n\"EUR\": string\n\"FJD\": string\n\"GEL\": string\n\"HKD\": string\n\"HUF\": string\n\"INR\": string\n\"IDR\": string\n\"ILS\": string\n\"JPY\": string\n\"JOD\": string\n\"KZT\": string\n\"KRW\": string\n\"KWD\": string\n\"MYR\": string\n\"MXN\": string\n\"MDL\": string\n\"NAD\": string\n\"TWD\": string\n\"NZD\": string\n\"NOK\": string\n\"OMR\": string\n\"PLN\": string\n\"GBP\": string\n\"QAR\": string\n\"RON\": string\n\"RUB\": string\n\"SAR\": string\n\"SGD\": string\n\"ZAR\": string\n\"SEK\": string\n\"CHF\": string\n\"THB\": string\n\"TRY\": string\n\"AED\": string\n\"USD\": string\n\"UAH\": string"
+    },
+    {
+        "name": "Language",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "language",
+        "description": "Language to be set on the website (does not apply to reviews)",
+        "value_options": "\"en-gb\": string\n\"de\": string\n\"nl\": string\n\"fr\": string\n\"es\": string\n\"es-ar\": string\n\"ca\": string\n\"it\": string\n\"pt-pt\": string\n\"pt-br\": string\n\"no\": string\n\"fi\": string\n\"sv\": string\n\"da\": string\n\"cs\": string\n\"hu\": string\n\"ro\": string\n\"ja\": string\n\"zh-cn\": string\n\"zh-tw\": string\n\"pl\": string\n\"el\": string\n\"ru\": string\n\"tr\": string\n\"bg\": string\n\"ar\": string\n\"ko\": string\n\"he\": string\n\"lv\": string\n\"uk\": string\n\"id\": string\n\"ms\": string\n\"th\": string\n\"et\": string\n\"hr\": string\n\"lt\": string\n\"sk\": string\n\"sr\": string\n\"sl\": string\n\"vi\": string\n\"tl\": string\n\"is\": string"
+    },
+    {
+        "name": "Check-in date (yyyy-mm-dd)",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "checkIn",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Check-out date (yyyy-mm-dd)",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "checkOut",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Number of rooms",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "rooms",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Number of adults",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "adults",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Number of children",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "children",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Price range",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "minMaxPrice",
+        "description": "Insert the minimum and maximum price per night, e.g. '100-150' or '100+.'",
+        "value_options": null
+    }
+]

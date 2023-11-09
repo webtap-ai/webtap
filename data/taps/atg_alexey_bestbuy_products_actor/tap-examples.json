@@ -1,0 +1,92 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape product data from the home appliances deals page on BestBuy with a maximum of 200 products and set the minimum concurrency for the crawl to 5",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided BestBuy products INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by BestBuy products is reliable and solely based on compatibility between DATA TASK and BestBuy products OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given BestBuy products OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: BestBuy products has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.bestbuy.com/site/promo/tv-deals"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "maxProductsCnt": 200,
+                "addImages": false,
+                "addTopReviews": false,
+                "maxRequestRetries": 3,
+                "minConcurrency": 5,
+                "maxConcurrency": 10,
+                "handleRequestTimeoutSecs": 30
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape 100 products from the TV deals page on BestBuy",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided BestBuy products INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by BestBuy products is reliable and solely based on compatibility between DATA TASK and BestBuy products OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given BestBuy products OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: BestBuy products has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.bestbuy.com/site/promo/tv-deals"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "maxProductsCnt": 100,
+                "addImages": false,
+                "addTopReviews": false,
+                "maxRequestRetries": 3,
+                "minConcurrency": 1,
+                "maxConcurrency": 1,
+                "handleRequestTimeoutSecs": 30
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape 100 products from the TV deals page on BestBuy with a minimum concurrency of 5 and a handle request timeout of 60 seconds",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided BestBuy products INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by BestBuy products is reliable and solely based on compatibility between DATA TASK and BestBuy products OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given BestBuy products OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: BestBuy products has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "startUrls": [
+                    {
+                        "url": "https://www.bestbuy.com/site/promo/tv-deals"
+                    }
+                ],
+                "proxyConfig": {
+                    "useApifyProxy": true
+                },
+                "maxProductsCnt": 100,
+                "addImages": false,
+                "addTopReviews": false,
+                "maxRequestRetries": 3,
+                "minConcurrency": 5,
+                "maxConcurrency": 10,
+                "handleRequestTimeoutSecs": 60
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

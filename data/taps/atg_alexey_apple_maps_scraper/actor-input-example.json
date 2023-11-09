@@ -1,0 +1,10 @@
+{
+    "address": "Old Town Prague",
+    "searchTerm": "hotel",
+    "proxyConfig": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    }
+}

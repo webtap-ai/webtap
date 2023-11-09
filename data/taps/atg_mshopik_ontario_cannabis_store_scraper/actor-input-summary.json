@@ -1,0 +1,3 @@
+{
+    "actor_input_summary": "maxRequestsPerCrawl, extendOutputFunction, extendScraperFunction, customData, fetchHtml, maxConcurrency, maxRequestRetries, debugLog"
+}

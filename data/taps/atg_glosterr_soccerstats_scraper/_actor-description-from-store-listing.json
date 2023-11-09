@@ -1,0 +1,24 @@
+{
+    "example_json_input": {
+        "informationType": "CURRENTWEEK",
+        "selectedLeagues": [
+            "England"
+        ],
+        "startWeek": 1,
+        "endWeek": 10,
+        "proxyConfig": {
+            "useApifyProxy": true
+        },
+        "season": "2021-2022"
+    },
+    "example_output_json_response": {
+        "matchWeek": "14",
+        "date": "30-11",
+        "home": "Newcastle Utd",
+        "score": "1 - 1",
+        "away": "Norwich City",
+        "ht": "0 - 0",
+        "season": "2021-2022",
+        "league": "england"
+    }
+}

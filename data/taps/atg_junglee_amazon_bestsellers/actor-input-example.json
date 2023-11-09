@@ -1,0 +1,12 @@
+{
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ]
+    },
+    "categoryUrls": [
+        "https://www.amazon.com/Best-Sellers-Electronics/zgbs/electronics/"
+    ],
+    "depthOfCrawl": 1
+}

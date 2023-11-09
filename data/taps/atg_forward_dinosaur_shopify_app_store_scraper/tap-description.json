@@ -1,0 +1,30 @@
+{
+    "name": "Shopify App Store",
+    "entities": [
+        "app title",
+        "app author",
+        "app description",
+        "app url",
+        "app handle",
+        "app page title",
+        "app grades",
+        "app gradeInt"
+    ],
+    "filters": [
+        "appsUrls",
+        "maxItems",
+        "proxyConfiguration"
+    ],
+    "options": [
+        "Max number of apps to scrape",
+        "Specific apps to scrape by URL",
+        "Proxy configuration"
+    ],
+    "special_instructions": [
+        "appsUrls is an array of URLs of the apps you want to crawl, leave empty to crawl all apps",
+        "maxItems is the maximum number of apps you want to scrape. Set to 0 to scrape all.",
+        "The output fields that will be returned are: title, author, description, url, appHandle, appUrl, pageTitle, grades, gradeInt",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

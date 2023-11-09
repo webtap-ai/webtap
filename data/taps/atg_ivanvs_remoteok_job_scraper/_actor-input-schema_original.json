@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Tag",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "tag",
+        "description": "Tag for which we scraper will search job listings on RemoteOK site (java, node, etc.)",
+        "value_options": null
+    },
+    {
+        "name": "Number of results",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxNumberOfListings",
+        "description": "Limit the amount of results you want. Higher limits will take longer to scrape.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Use Apify Proxy or your custom Proxy.",
+        "value_options": null
+    },
+    {
+        "name": "Max concurrency",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxConcurrency",
+        "description": "Defines how many pages can be processed by the scraper in parallel. The scraper automatically increases and decreases concurrency based on available system resources. Use this option to set a hard limit.",
+        "value_options": null
+    },
+    {
+        "name": "Debug Log",
+        "type": "Boolean",
+        "required": "Optional",
+        "param_name": "debugLog",
+        "description": "Shows additional debugging information.",
+        "value_options": null
+    }
+]

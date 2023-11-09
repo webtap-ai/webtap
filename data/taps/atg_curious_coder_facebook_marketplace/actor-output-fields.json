@@ -1,0 +1,3 @@
+{
+    "actor_output_fields": "id, strikethrough_price, comparable_price, comparable_price_type, location, is_hidden, is_live, is_pending, is_sold, is_viewer_seller, min_listing_price, max_listing_price, marketplace_listing_category_id, marketplace_listing_title, custom_title, custom_sub_titles_with_rendering_flags, origin_group, pre_recorded_videos, parent_listing, marketplace_listing_seller, delivery_types"
+}

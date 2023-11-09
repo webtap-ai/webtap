@@ -1,0 +1,240 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape current week matches for the Italian league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "CURRENTWEEK",
+                "selectedLeagues": [
+                    "italy"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape full schedule for the Spanish league for the 2021-2022 season",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "FULLSCHEDULE",
+                "selectedLeagues": [
+                    "spain"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape selected weeks (from week 5 to week 10) for the German league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "SELECTEDWEEKS",
+                "selectedLeagues": [
+                    "germany"
+                ],
+                "season": "2021-2022",
+                "startWeek": 5,
+                "endWeek": 10,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape current week matches for the Dutch league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "CURRENTWEEK",
+                "selectedLeagues": [
+                    "netherlands"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape full schedule for the Greek league for the 2021-2022 season",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "FULLSCHEDULE",
+                "selectedLeagues": [
+                    "greece"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape selected weeks (from week 3 to week 8) for the Czech Republic league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "SELECTEDWEEKS",
+                "selectedLeagues": [
+                    "czechrepublic"
+                ],
+                "season": "2021-2022",
+                "startWeek": 3,
+                "endWeek": 8,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape full schedule for the England2 league for the 2021-2022 season",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "FULLSCHEDULE",
+                "selectedLeagues": [
+                    "england2"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape selected weeks (from week 2 to week 7) for the Spain2 league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "SELECTEDWEEKS",
+                "selectedLeagues": [
+                    "spain2"
+                ],
+                "season": "2021-2022",
+                "startWeek": 2,
+                "endWeek": 7,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape current week matches for the Italy2 league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "CURRENTWEEK",
+                "selectedLeagues": [
+                    "italy2"
+                ],
+                "season": "2021-2022",
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Scrape selected weeks (from week 4 to week 9) for the Poland league",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided SoccerSTATS.com Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by SoccerSTATS.com Scraper is reliable and solely based on compatibility between DATA TASK and SoccerSTATS.com Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given SoccerSTATS.com Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: SoccerSTATS.com Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "informationType": "SELECTEDWEEKS",
+                "selectedLeagues": [
+                    "poland"
+                ],
+                "season": "2021-2022",
+                "startWeek": 4,
+                "endWeek": 9,
+                "proxyConfig": {
+                    "useApifyProxy": true
+                }
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

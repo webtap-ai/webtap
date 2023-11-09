@@ -1,0 +1,126 @@
+[
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Hotels in New York, sorted by distance from search, currency in USD, language in English, maximum 10 items, price range from 0 to 999999, any star rating",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Scraper is reliable and solely based on compatibility between DATA TASK and Booking Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "New York",
+                "maxItems": 10,
+                "currency": "USD",
+                "language": "en-gb",
+                "minMaxPrice": "0-999999"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Hotels in Dubai, sorted by distance from search, currency in AED, language in Arabic, maximum 10 items, price range from 200 to 1000, star rating 5",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Scraper is reliable and solely based on compatibility between DATA TASK and Booking Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "Dubai",
+                "maxItems": 10,
+                "propertyType": "Hotels",
+                "sortBy": "distance_from_search",
+                "minScore": "8.4",
+                "starsCountFilter": "5",
+                "currency": "AED",
+                "language": "ar",
+                "checkIn": "",
+                "checkOut": "",
+                "rooms": 1,
+                "adults": 1,
+                "children": 0,
+                "minMaxPrice": "200-1000"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Holiday homes in Sydney, sorted by class ascending, currency in AUD, language in English, maximum 10 items, price range from 100 to 500, star rating 5",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Scraper is reliable and solely based on compatibility between DATA TASK and Booking Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "Sydney",
+                "maxItems": 10,
+                "propertyType": "Holiday homes",
+                "sortBy": "class_asc",
+                "minScore": "",
+                "starsCountFilter": "5",
+                "currency": "AUD",
+                "language": "en-gb",
+                "checkIn": "",
+                "checkOut": "",
+                "rooms": 1,
+                "adults": 1,
+                "children": 0,
+                "minMaxPrice": "100-500"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Boats in Amsterdam, sorted by distance from search, currency in EUR, language in Dutch, maximum 10 items, price range from 100 to 500, star rating unrated",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Scraper is reliable and solely based on compatibility between DATA TASK and Booking Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "Amsterdam",
+                "maxItems": 10,
+                "propertyType": "Boats",
+                "sortBy": "distance_from_search",
+                "starsCountFilter": "unrated",
+                "currency": "EUR",
+                "language": "nl",
+                "minMaxPrice": "100-500"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    },
+    {
+        "title": null,
+        "public": true,
+        "post_run_chat_message": null,
+        "data_task": "Boats in Venice, sorted by distance from search, currency in EUR, language in Italian, maximum 10 items, price range from 100 to 500, star rating unrated",
+        "final_json_response": {
+            "inputCompatibility": "Only using the params provided Booking Scraper INPUT SCHEMA: Yes, I am 100% sure that I can fulfill the params required by given task",
+            "outputCompatibility": "Assuming data returned by Booking Scraper is reliable and solely based on compatibility between DATA TASK and Booking Scraper OUTPUT RETURN FIELDS: Yes, I am 100% sure that I can fulfill the given task given Booking Scraper OUTPUT RETURN FIELDS",
+            "can_fulfill": true,
+            "explanation": "The data task requested can be fulfilled: Booking Scraper has the options to fulfill the given task. In input_params you can find the params needed to fulfill the given task.",
+            "input_params": {
+                "search": "Venice",
+                "maxItems": 10,
+                "propertyType": "Boats",
+                "sortBy": "distance_from_search",
+                "starsCountFilter": "unrated",
+                "currency": "EUR",
+                "language": "it",
+                "minMaxPrice": "100-500"
+            },
+            "alternative_fulfillable_data_task": null
+        }
+    }
+]

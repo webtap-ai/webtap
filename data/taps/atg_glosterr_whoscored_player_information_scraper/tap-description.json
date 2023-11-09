@@ -1,0 +1,23 @@
+{
+    "name": "Player Information",
+    "entities": [
+        "player",
+        "team",
+        "competition"
+    ],
+    "filters": [
+        "startUrls"
+    ],
+    "options": [
+        "Player",
+        "Team",
+        "Competition"
+    ],
+    "special_instructions": [
+        "The startUrls filter must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The startUrls filter should be an array of URLs to start with. For example: [{'url': 'https://www.whoscored.com/Teams/37/Show/Germany-Bayern-Munich'}]",
+        "The options can be one of the three types: Player, Team, and Competition",
+        "The output format is a JSON object containing player information for different competitions",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

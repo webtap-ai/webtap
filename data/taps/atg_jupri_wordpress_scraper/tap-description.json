@@ -1,0 +1,28 @@
+{
+    "name": "WordPress Content",
+    "entities": [
+        "blog",
+        "article",
+        "news",
+        "author",
+        "products",
+        "media",
+        "images"
+    ],
+    "filters": [
+        "url",
+        "search"
+    ],
+    "options": [
+        "limit",
+        "format"
+    ],
+    "special_instructions": [
+        "The target website must have WordPress installed for this tool to work",
+        "The 'search' filter allows you to search title or content for specific keywords",
+        "The 'limit' option allows you to limit the number of results",
+        "The 'format' option allows you to choose the content format, either 'html' or 'text'",
+        "The 'url' filter is the URL of the WordPress website you want to scrape",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

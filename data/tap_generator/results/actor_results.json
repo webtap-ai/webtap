@@ -398,5 +398,217 @@
     "vaclavrut/bigjson2csv": {
         "status": "failure",
         "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "epctex/edx-scraper": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "glosterr/soccerstats-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "petr_cermak/json-to-xlsx": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "parse/google-search": {
+        "status": "failure",
+        "message": "Error in step ActorDescriptionGenerator.generate: 'actor_id'"
+    },
+    "apify/monitoring": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID apify/monitoring does not exist in actor_apis'"
+    },
+    "epctex/canva-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID epctex/canva-scraper does not exist in actor_apis'"
+    },
+    "kristoferlund/apify-metascraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "wandersonsousa/cnpj-brasil-extrator": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "drobnikj/js-code-2-flowchart": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "gololobov/unsplash-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "mscraper/similarweb-quick-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: You must rent a paid Actor in order to run it."
+    },
+    "alexey/bestbuy-products-actor": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "maxcopell/zillow-detail-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "apify/facebook-likes-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "junglee/amazon-bestsellers": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "natasha.lekh/vegan-places-finder": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "ivanvs/remoteok-job-scraper": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: An error occurred during the execution of `TapGeneratorExample.generate_raw_test_examples` while executing `self.tap_generator_utils.run_json_prompt_llm` the following error was raised: Bad gateway. {\"error\":{\"code\":502,\"message\":\"Bad gateway.\",\"param\":null,\"type\":\"cf_bad_gateway\"}} 502 {'error': {'code': 502, 'message': 'Bad gateway.', 'param': None, 'type': 'cf_bad_gateway'}} {'Date': 'Wed, 08 Nov 2023 14:04:26 GMT', 'Content-Type': 'application/json', 'Content-Length': '84', 'Connection': 'keep-alive', 'X-Frame-Options': 'SAMEORIGIN', 'Referrer-Policy': 'same-origin', 'Cache-Control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'Expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'Server': 'cloudflare', 'CF-RAY': '822e5d43b9c06d8b-MUC', 'alt-svc': 'h3=\":443\"; ma=86400'}"
+    },
+    "maxcopell/zillow-zip-search": {
+        "status": "failure",
+        "message": "Error in step ActorDescriptionGenerator.generate: 'actor_id'"
+    },
+    "katerinahronik/heureka-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.startUrls is required"
+    },
+    "valehprague/image-to-text": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.input_image is required"
+    },
+    "mshopik/dania-furniture-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorDescriptionGenerator.generate: 'actor_id'"
+    },
+    "sergeylukin/steam-puppeteer": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "curious_coder/apollo-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.searchUrl is required"
+    },
+    "dtrungtin/saksfifthavenue-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "juansgaitan/link-extractor": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "m0uka/steam-store-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "zyberg/RightMove": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID zyberg/RightMove does not exist in actor_apis'"
+    },
+    "mshopik/ontario-cannabis-store-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorDescriptionGenerator.generate_output_field_names: Invalid response object from API: '{\\n\"status\": \"come back later\"\\n}' (HTTP response code was 429)"
+    },
+    "apify/monitoring-teardown": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "mshopik/mapscom-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "pocesar/crypto-watcher": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: No items returned from the actor test run with secondary input."
+    },
+    "vaclavrut/Mall-cz": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID vaclavrut/Mall-cz does not exist in actor_apis'"
+    },
+    "zyberg/spareroom": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "curious_coder/facebook-profile-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: You must rent a paid Actor in order to run it."
+    },
+    "voyager/booking-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "danielmilevski9/telegram-channel-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "medh/ASINs-Extractor": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID medh/ASINs-Extractor does not exist in actor_apis'"
+    },
+    "jan.turon/baidu-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Input is not valid: Field input.searchPhrases is required"
+    },
+    "juansgaitan/dns-extractor": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "jupri/indiegogo": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "ensembledata/tiktok-api": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "jupri/wordpress-scraper": {
+        "status": "success",
+        "message": "All steps executed successfully"
+    },
+    "emastra/anti-captcha-geetest": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "glosterr/whoscored-player-information-scraper": {
+        "status": "failure",
+        "message": "Error in step TapGeneratorExample.generate_test_examples: Less than min_test_cases valid test cases are available."
+    },
+    "jupri/argos-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "erikhiggy96/on3-recruit-scraper": {
+        "status": "failure",
+        "message": "Stopped manually"
+    },
+    "hamza.alwan/craiyon-crawler": {
+        "status": "failure",
+        "message": "Stopped manually"
+    },
+    "https://apify.com/datastorm/amazon-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID https://apify.com/datastorm/amazon-scraper does not exist in actor_apis'"
+    },
+    "https://apify.com/curious_coder/facebook-marketplace": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID https://apify.com/curious_coder/facebook-marketplace does not exist in actor_apis'"
+    },
+    "https://apify.com/lexis-solutions/google-ads-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID https://apify.com/lexis-solutions/google-ads-scraper does not exist in actor_apis'"
+    },
+    "facebook-marketplace": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: 'Actor ID facebook-marketplace does not exist in actor_apis'"
+    },
+    "datastorm/amazon-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorInputGenerator.generate_example: Example data is not a JSON object or does not contain at least 1 property"
+    },
+    "curious_coder/whatsapp-scraper": {
+        "status": "failure",
+        "message": "Error in step ActorTestRun.test_run: An error occurred during the execution of `apify_call_with_retry` while executing `self.tap_generator_utils.apify_run_actor` with secondary input data. The following error was raised: Monthly usage hard limit exceeded. Please upgrade your subscription or contact support@apify.com"
     }
 }

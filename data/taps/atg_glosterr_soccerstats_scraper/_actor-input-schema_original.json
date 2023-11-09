@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Information Type",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "informationType",
+        "description": "Defines the information that will be scraped. If you are scraping matches between two weeks, you should also define array of two weeks as the selectedWeeks input",
+        "value_options": "\"TABLES\": string\n\"CURRENTWEEK\": string\n\"SELECTEDWEEKS\": string\n\"FULLSCHEDULE\": string"
+    },
+    {
+        "name": "Selected Leagues",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "selectedLeagues",
+        "description": "Array of leagues that will be scraped. Available leagues: brazil, czechrepublic, germany, germany2, denmark, england, england2, spain, spain2, france, france2, greece, netherlands, italy, italy2, poland, portugal, russia, turkey",
+        "value_options": null
+    },
+    {
+        "name": "Season",
+        "type": "Enum",
+        "required": "Required",
+        "param_name": "season",
+        "description": "Selects the season.",
+        "value_options": "\"2021-2022\": string\n\"2020-2021\": string"
+    },
+    {
+        "name": "Start Week",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "startWeek",
+        "description": "Picks a start match week to scrape selected weeks.",
+        "value_options": null
+    },
+    {
+        "name": "End Week",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "endWeek",
+        "description": "Picks an end match week to scrape selected weeks.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfig",
+        "description": "Allows user to use Apify proxy or custom proxies.",
+        "value_options": null
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Hotels in New York, sorted by distance from search, currency in USD, language in English, maximum 10 items, price range from 0 to 999999, any star rating",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Hotels in Dubai, sorted by distance from search, currency in AED, language in Arabic, maximum 10 items, price range from 200 to 1000, star rating 5",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Holiday homes in Sydney, sorted by class ascending, currency in AUD, language in English, maximum 10 items, price range from 100 to 500, star rating 5",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Boats in Amsterdam, sorted by distance from search, currency in EUR, language in Dutch, maximum 10 items, price range from 100 to 500, star rating unrated",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Boats in Venice, sorted by distance from search, currency in EUR, language in Italian, maximum 10 items, price range from 100 to 500, star rating unrated",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

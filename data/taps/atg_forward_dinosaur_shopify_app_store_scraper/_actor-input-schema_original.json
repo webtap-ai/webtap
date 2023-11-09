@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Apps url(s)",
+        "type": "Array",
+        "required": "Optional",
+        "param_name": "appsUrls",
+        "description": "Url of the apps you want to crawl, leave empty to crawl all apps",
+        "value_options": null
+    },
+    {
+        "name": "Max items",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "maxItems",
+        "description": "Maximum number of apps you want to scrape. Set to 0 to scrape all.",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxyConfiguration",
+        "description": "Select proxies to be used by your crawler.",
+        "value_options": null
+    }
+]

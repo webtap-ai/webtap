@@ -1,0 +1,62 @@
+[
+    {
+        "data_task": "Scrape the top 100 most popular items in the Electronics category on Amazon using residential proxies",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Books category on Amazon with detailed information",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Home & Kitchen category on Amazon with a depth of crawl set to 2",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Toys & Games category on Amazon using residential proxies and with detailed information",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Beauty & Personal Care category on Amazon with detailed information and a depth of crawl set to 3",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Industrial & Scientific category on Amazon with detailed information and a depth of crawl set to 4",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Pet Supplies category on Amazon using residential proxies, with detailed information and a depth of crawl set to 3",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Musical Instruments category on Amazon using residential proxies and with detailed information",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Appliances category on Amazon using residential proxies, with detailed information and a depth of crawl set to 2",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the top 100 most popular items in the Movies & TV category on Amazon with a depth of crawl set to 4",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

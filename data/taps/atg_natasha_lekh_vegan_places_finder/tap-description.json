@@ -1,0 +1,23 @@
+{
+    "name": "Vegan Places Finder",
+    "entities": [
+        "vegan restaurant"
+    ],
+    "filters": [
+        "countryCode",
+        "city",
+        "maxCrawledPlacesPerSearch"
+    ],
+    "options": [
+        "Output format (CSV, JSON, HTML, Excel)",
+        "Download data",
+        "Integrate with other apps"
+    ],
+    "special_instructions": [
+        "One of countryCode or city must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "The scraper doesn't work well for full-country searching of sparsely populated countries like USA or Russia",
+        "maxCrawledPlacesPerSearch is the maximum number of results you will obtain. A higher number will take longer to scrape. If you want to scrape all places available, set this value to '9999999'",
+        "The actor is free for up to 2,000 results, and there are subscription plans available for more data",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
+    ]
+}

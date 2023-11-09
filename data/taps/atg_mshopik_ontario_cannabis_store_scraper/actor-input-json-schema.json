@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "maxRequestsPerCrawl": {
+            "type": "integer",
+            "description": "How many items to extract from ocs.ca",
+            "example": 20
+        },
+        "extendOutputFunction": {
+            "type": "string",
+            "description": "Add or remove properties on the output object or omit the output returning null"
+        },
+        "extendScraperFunction": {
+            "type": "string",
+            "description": "Advanced function that allows you to extend the default scraper functionality, allowing you to manually perform actions on the page"
+        },
+        "customData": {
+            "type": "object",
+            "description": "Any data that you want to have available inside the Extend Output/Scraper Function",
+            "example": {}
+        },
+        "fetchHtml": {
+            "type": "boolean",
+            "description": "If you decide to fetch the HTML of the pages, it will take twice as long. Make sure to only enable this if needed"
+        },
+        "maxConcurrency": {
+            "type": "integer",
+            "description": "Max concurrency to use",
+            "example": 20
+        },
+        "maxRequestRetries": {
+            "type": "integer",
+            "description": "Set the max request retries",
+            "example": 3
+        },
+        "debugLog": {
+            "type": "boolean",
+            "description": "Enable a more verbose logging to be able to understand what's happening during the scraping"
+        }
+    },
+    "required": []
+}

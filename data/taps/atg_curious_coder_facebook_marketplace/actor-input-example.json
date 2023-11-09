@@ -1,0 +1,10 @@
+{
+    "url": "https://www.facebook.com/marketplace/nyc/cars/",
+    "proxy": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": [
+            "RESIDENTIAL"
+        ],
+        "apifyProxyCountry": "US"
+    }
+}

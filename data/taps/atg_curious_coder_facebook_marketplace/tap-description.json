@@ -1,0 +1,27 @@
+{
+    "name": "Facebook Marketplace",
+    "entities": [
+        "marketplace listing"
+    ],
+    "filters": [
+        "url",
+        "count",
+        "cursor",
+        "proxy",
+        "myEmail"
+    ],
+    "options": [
+        "useApifyProxy",
+        "apifyProxyGroups",
+        "apifyProxyCountry"
+    ],
+    "special_instructions": [
+        "The 'url' field is required and should be a publicly accessible Facebook marketplace listing page URL. You can start with this url and customize your search: https://www.facebook.com/marketplace/nyc/cars",
+        "The 'count' field is optional. Leave this field empty if you want to scrape all items.",
+        "The 'cursor' field is optional. Use this field if you want to resume scraping from where the scraper stopped last time. You can find this value in default storage of scraper runs under lastCursor key",
+        "The 'myEmail' field is optional. We will use it to communicate important updates related to this actor, and assist you in case you face any issues",
+        "The output fields that will be returned are: 'id, strikethrough_price, comparable_price, comparable_price_type, location, is_hidden, is_live, is_pending, is_sold, is_viewer_seller, min_listing_price, max_listing_price, marketplace_listing_category_id, marketplace_listing_title, custom_title, custom_sub_titles_with_rendering_flags, origin_group, pre_recorded_videos, parent_listing, marketplace_listing_seller, delivery_types'",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

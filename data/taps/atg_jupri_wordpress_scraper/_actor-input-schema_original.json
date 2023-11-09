@@ -1,0 +1,34 @@
+[
+    {
+        "name": "URL",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "url",
+        "description": "",
+        "value_options": null
+    },
+    {
+        "name": "Search",
+        "type": "String",
+        "required": "Optional",
+        "param_name": "search",
+        "description": "Search title or content for specific Keywords",
+        "value_options": null
+    },
+    {
+        "name": "Limit",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "limit",
+        "description": "Limit number of results",
+        "value_options": null
+    },
+    {
+        "name": "Format",
+        "type": "Enum",
+        "required": "Optional",
+        "param_name": "format",
+        "description": "Content Format",
+        "value_options": "\"html\": string\n\"text\": string"
+    }
+]

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "startUrls": {
+            "type": "array",
+            "description": "Google Ads Transparency Center URLs",
+            "example": [
+                {
+                    "url": "https://adstransparency.google.com/advertiser/AR18135649662495883265?region=anywhere"
+                }
+            ]
+        },
+        "scrollsAmount": {
+            "type": "integer",
+            "description": "Number of scrolls to perform on the ad list"
+        }
+    },
+    "required": [
+        "startUrls"
+    ]
+}

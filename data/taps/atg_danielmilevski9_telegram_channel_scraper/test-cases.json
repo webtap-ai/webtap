@@ -1,0 +1,32 @@
+[
+    {
+        "data_task": "Scrape the first 40 posts from the 'photography' Telegram channel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape posts from 200 to 220 from the 'businessnews' Telegram channel using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape posts from 10 to 20 from the 'mediumcom' Telegram channel using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape the first 30 posts from the 'cryptocurrency' Telegram channel",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape posts from 15 to 45 from the 'scienceupdates' Telegram channel using Apify residential proxy",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

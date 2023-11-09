@@ -1,0 +1,23 @@
+{
+    "example_json_input": {
+        "title": "Getting started with Apify actors",
+        "content": "The README.md file documents what your actor does and how to use it, which is then displayed in the Console or Apify Store. It's always a good idea to write a README.md. In a few months, not even you will remember all the details about the actor."
+    },
+    "example_output_json_response": {
+        "actor_name": "google-search",
+        "actor_category": "Business",
+        "actor_author": "Community",
+        "actor_stats": {
+            "users": 169,
+            "runs": 1400,
+            "modified": "8 months ago"
+        },
+        "related_actors": [
+            "compass/crawler-google-places",
+            "apify/website-content-crawler",
+            "equidem/ai-product-matcher",
+            "yin/yelp-scraper",
+            "apify/facebook-ads-scraper"
+        ]
+    }
+}

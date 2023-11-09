@@ -1,0 +1,154 @@
+{
+    "example_json_input": {
+        "city": "Chicago",
+        "countryCode": "us",
+        "maxCrawledPlacesPerSearch": 10,
+        "searchStringsArray": [
+            "vegan"
+        ]
+    },
+    "example_output_json_response": [
+        {
+            "title": "IM Vegan Restaurant",
+            "subTitle": null,
+            "price": "$$",
+            "menu": null,
+            "categoryName": "Vegan restaurant",
+            "address": "2907 N Lincoln Ave, Chicago, IL 60657",
+            "locatedIn": null,
+            "neighborhood": "Lake View",
+            "street": "2907 N Lincoln Ave",
+            "city": "Chicago",
+            "postalCode": "60657",
+            "state": "Illinois",
+            "countryCode": "US",
+            "plusCode": "W8MQ+VF Chicago, Illinois",
+            "website": "http://imveganchicago.com/",
+            "phone": "(773) 904-8905",
+            "temporarilyClosed": false,
+            "location": {
+                "lat": 41.9347109,
+                "lng": -87.6613486
+            },
+            "permanentlyClosed": false,
+            "totalScore": 4.7,
+            "isAdvertisement": false,
+            "rank": 14,
+            "placeId": "ChIJlfIdTY3TD4gRlXe2VIwKiHI",
+            "categories": [
+                "Vegan restaurant",
+                "Asian restaurant",
+                "Thai restaurant"
+            ],
+            "cid": "8252857914989377429",
+            "url": "https://www.google.com/maps/place/IM+Vegan+Restaurant/@41.9347109,-87.6613486,17z/data=!3m1!4b1!4m5!3m4!1s0x880fd38d4d1df295:0x72880a8c54b67795!8m2!3d41.9347109!4d-87.6613486?hl=en",
+            "searchPageUrl": "https://www.google.com/maps/search/vegan/@41.986966,-87.9373868,15z?hl=en",
+            "searchString": "vegan",
+            "scrapedAt": "2022-09-07T18:01:32.360Z",
+            "reviewsCount": 112,
+            "reviewsDistribution": {
+                "oneStar": 6,
+                "twoStar": 0,
+                "threeStar": 1,
+                "fourStar": 7,
+                "fiveStar": 98
+            },
+            "reviews": [],
+            "orderBy": [
+                {
+                    "name": "Postmates",
+                    "url": "11119966709964935892"
+                },
+                {
+                    "name": "Caviar",
+                    "url": "trycaviar.com",
+                    "orderUrl": "https://www.trycaviar.com/store/i%27m-vegan-%26-vegetarian-chicago-854137?pickup=true&utm_campaign=gpa"
+                },
+                {
+                    "name": "DoorDash",
+                    "url": "doordash.com",
+                    "orderUrl": "https://www.doordash.com/store/i%27m-vegan-%26-vegetarian-chicago-854137/?pickup=true&utm_campaign=gpa"
+                },
+                {
+                    "name": "Seamless",
+                    "url": "seamless.com",
+                    "orderUrl": "https://www.seamless.com/menu/im-vegan-2907-n-lincoln-ave-chicago/1943911?utm_source=google&utm_medium=organic&utm_campaign=place-action-link"
+                },
+                {
+                    "name": "Grubhub",
+                    "url": "grubhub.com",
+                    "orderUrl": "https://www.grubhub.com/restaurant/im-vegan-2907-n-lincoln-ave-chicago/1943911?utm_source=google&utm_medium=organic&utm_campaign=place-action-link"
+                },
+                {
+                    "name": "UberEats",
+                    "url": "ubereats.com",
+                    "orderUrl": "https://www.ubereats.com/store/im-vegan/2TL2gEkiQziZomwDfCaK5g/?diningMode=PICKUP&utm_source=google&utm_medium=organic&utm_campaign=place-action-link"
+                },
+                {
+                    "name": "smiledining.com",
+                    "url": "smiledining.com",
+                    "orderUrl": "https://iamveganil.smiledining.com/"
+                }
+            ]
+        },
+        {
+            "title": "Upton's Breakroom",
+            "subTitle": null,
+            "price": "$",
+            "menu": null,
+            "categoryName": "Vegan restaurant",
+            "address": "2054 W Grand Ave, Chicago, IL 60612",
+            "locatedIn": null,
+            "neighborhood": "West Town",
+            "street": "2054 W Grand Ave",
+            "city": "Chicago",
+            "postalCode": "60612",
+            "state": "Illinois",
+            "countryCode": "US",
+            "plusCode": "V8RC+99 Chicago, Illinois",
+            "website": "https://www.uptonsnaturals.com/restaurants",
+            "phone": "(312) 872-7838",
+            "temporarilyClosed": false,
+            "location": {
+                "lat": 41.890979,
+                "lng": -87.679076
+            },
+            "permanentlyClosed": false,
+            "totalScore": 4.7,
+            "isAdvertisement": false,
+            "rank": 14,
+            "placeId": "ChIJZZasjEktDogRFT7Yck_a-LE",
+            "categories": [
+                "Vegan restaurant",
+                "Cafe",
+                "Vegetarian restaurant"
+            ],
+            "cid": "12824239973701533205",
+            "url": "https://www.google.com/maps/place/Upton's+Breakroom/@41.890979,-87.679076,17z/data=!3m1!4b1!4m5!3m4!1s0x880e2d498cac9665:0xb1f8da4f72d83e15!8m2!3d41.890979!4d-87.679076?hl=en",
+            "searchPageUrl": "https://www.google.com/maps/search/vegan/@41.9614328,-87.9373868,15z?hl=en",
+            "searchString": "vegan",
+            "scrapedAt": "2022-09-07T18:01:43.525Z",
+            "reviewsCount": 552,
+            "reviewsDistribution": {
+                "oneStar": 10,
+                "twoStar": 8,
+                "threeStar": 22,
+                "fourStar": 83,
+                "fiveStar": 429
+            },
+            "reviews": [],
+            "orderBy": [
+                {
+                    "name": "Caviar",
+                    "url": "trycaviar.com",
+                    "orderUrl": "https://www.trycaviar.com/store/upton%27s-breakroom-chicago-17196?pickup=true&utm_campaign=gpa"
+                },
+                {
+                    "name": "DoorDash",
+                    "url": "doordash.com",
+                    "orderUrl": "https://www.doordash.com/store/upton%27s-breakroom-chicago-17196/?pickup=true&utm_campaign=gpa"
+                }
+            ]
+        }
+    ]
+}

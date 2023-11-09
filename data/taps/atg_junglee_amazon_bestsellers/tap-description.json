@@ -1,0 +1,30 @@
+{
+    "name": "Amazon Bestsellers",
+    "entities": [
+        "product name",
+        "price",
+        "URL",
+        "thumbnail image",
+        "category name",
+        "category full name",
+        "category URL"
+    ],
+    "filters": [
+        "categoryUrls",
+        "depthOfCrawl",
+        "detailedInformation",
+        "proxy"
+    ],
+    "options": [
+        "useApifyProxy",
+        "apifyProxyGroups"
+    ],
+    "special_instructions": [
+        "One of categoryUrls or depthOfCrawl must be provided, if it is not provided return can_fulfill false and explain accordingly",
+        "Amazon Best Sellers covers 37 main categories. Each of those have at least one more subcategory level. Setting depthOfCrawl field to 2 will get you roughly 550 subcategories",
+        "Check detailedInformation if you want to get the maximum amount of information about individual products. However, choosing this option means the scraper could take longer, since it is extracting more data",
+        "Always set useApifyProxy to true",
+        "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit",
+        "Always set proxyConfiguration : {{  \"useApifyProxy\": true    }}"
+    ]
+}

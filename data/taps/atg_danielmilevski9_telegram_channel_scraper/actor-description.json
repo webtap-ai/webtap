@@ -1,0 +1,19 @@
+{
+    "id": "danielmilevski9/telegram-channel-scraper",
+    "url": "https://apify.com/danielmilevski9/telegram-channel-scraper",
+    "title": "Telegram Channel Scraper \u00b7 Apify",
+    "name": "Telegram Channel Scraper",
+    "pricing": "No credit card required",
+    "description": "Telegram channel Scraper for getting public messages without login, phone number, or Telegram app. In the message supported forward and telegram reply URLs.",
+    "author_name": "Daniel Milevski",
+    "maintained_by": "Maintained by Community",
+    "count_users": "231 users",
+    "count_runs": "705 runs",
+    "last_modified": "Modified 5 months ago",
+    "categories": "Social media",
+    "full_readme": "Free Telegram channel Scraper designed to get messages from public channels. In the channel, messages are numbered by auto-increment from 1. You need to specify range of message IDs as from-to numbers and actor will try to get them. If you not sure what is the last posted ID start from small initial range i.e. from 10 to 20 and expand it based on run results. Some messages might not be available without Telegram app and actor will skip them with warning in logs.\n\nInput example\n{\n    \"channels\": [\"mediumcom\"],\n    \"postsFrom\": 10,\n    \"postsTo\": 20\n}\nOutput example\n[{\n\t\"id\": 18,\n\t\"channelName\": \"mediumcom\",\n\t\"authorName\": \"Medium / Medium.com\",\n\t\"authorTelegram\": \"https://t.me/mediumcom\",\n\t\"date\": \"2018-03-02T12:24:33+00:00\",\n\t\"viewsCount\": \"15\",\n\t\"text\": \"https://journal.thriveglobal.com/look-for-people-who-are-need-you-instead-of-convincing-people-who-dont-need-you-to-work-with-you-11c19dcca442\",\n\t\"linkPreview\": \"Thrive Global\\n  \\n  \u201cLook For People Who Need You Instead Of Convincing People Who Don\u2019t Need You To Work With You\u201d Words Of Wisdom With Mandy\u00a0Morris\\n  \u201cLook for people who are looking/need you instead of convincing people who don\u2019t need you to work with you \u2014 you can\u2019t please everyone, so\u2026\"\n}]",
+    "icon": "",
+    "author_url": "https://apify.com/danielmilevski9",
+    "author_avatar": "https://images.apifyusercontent.com/DoexMs573M3Bv5AoRALo-SAEbBZoaNVdq5O5r1U0PZg/rs:fill:192:192/aHR0cHM6Ly9hdmF0YXJzLmdpdGh1YnVzZXJjb250ZW50LmNvbS91LzEyNzA1NzkzNA.webp",
+    "readme_summary": "Telegram channel Scraper for getting public messages without login, phone number, or Telegram app. In the message supported forward and telegram reply URLs."
+}

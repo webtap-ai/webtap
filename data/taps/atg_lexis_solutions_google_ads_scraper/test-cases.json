@@ -1,0 +1,14 @@
+[
+    {
+        "data_task": "Scrape ads from the following Google Ads Transparency Center URL: https://adstransparency.google.com/advertiser/AR18135649662495883265?region=anywhere with 5 scrolls",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
+        "data_task": "Scrape ads from the following Google Ads Transparency Center URL: https://adstransparency.google.com/advertiser/AR18135649662495883265?region=anywhere with 20 scrolls",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    }
+]

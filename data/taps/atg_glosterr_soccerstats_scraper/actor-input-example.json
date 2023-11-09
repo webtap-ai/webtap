@@ -1,0 +1,11 @@
+{
+    "endWeek": 4,
+    "startWeek": 1,
+    "proxyConfig": {
+        "useApifyProxy": true
+    },
+    "informationType": "TABLES",
+    "selectedLeagues": [
+        "England"
+    ]
+}

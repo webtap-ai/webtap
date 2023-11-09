@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Telegram channel(s)",
+        "type": "Array",
+        "required": "Required",
+        "param_name": "channels",
+        "description": "Provide one or several Telegram channel names you want to scrape the posts from.",
+        "value_options": null
+    },
+    {
+        "name": "Order number of the first post to scrape",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "postsFrom",
+        "description": "Channel posts numbered by auto increment from 1",
+        "value_options": null
+    },
+    {
+        "name": "Order number of the first post to scrape",
+        "type": "Integer",
+        "required": "Optional",
+        "param_name": "postsTo",
+        "description": "Channel posts numbered by auto increment from 1",
+        "value_options": null
+    },
+    {
+        "name": "Proxy configuration",
+        "type": "Object",
+        "required": "Optional",
+        "param_name": "proxy",
+        "description": "A proxy server is required to run this actor! Either use an Apify residential proxy, or provide your own proxy servers. Datacenter proxies will not work.",
+        "value_options": null
+    }
+]

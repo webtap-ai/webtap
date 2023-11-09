@@ -1,0 +1,185 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "search": {
+            "type": "string",
+            "description": "Insert the destination name here",
+            "example": "New York"
+        },
+        "startUrls": {
+            "type": "array",
+            "description": "URLs to start with instead of a destination name. It is better to use a simple URL and filter other options in filters here. You can also use shared list URLs. These links are generated for properties"
+        },
+        "maxItems": {
+            "type": "integer",
+            "description": "Limit the number of places to be scraped.",
+            "example": 10
+        },
+        "propertyType": {
+            "type": "string",
+            "description": "Choose type of property",
+            "enum": [
+                "none",
+                "Hotels",
+                "Apartments",
+                "Hostels",
+                "Guest houses",
+                "Homestays",
+                "Bed and breakfasts",
+                "Holiday homes",
+                "Boats",
+                "Villas",
+                "Motels",
+                "..."
+            ]
+        },
+        "sortBy": {
+            "type": "string",
+            "description": "Hotel attribute by which the results will be ordered",
+            "example": "distance_from_search",
+            "enum": [
+                "bayesian_review_score",
+                "distance_from_search",
+                "class_asc",
+                "price",
+                "review_score_and_price",
+                "class_and_price"
+            ]
+        },
+        "minScore": {
+            "type": "string",
+            "description": "Minimum rating of a hotel in \"8.4\" format"
+        },
+        "starsCountFilter": {
+            "type": "string",
+            "description": "Only scrape places with the selected stars count. Also includes Booking's apartment-like properties 'square' rating.",
+            "example": "any",
+            "enum": [
+                "any",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "unrated"
+            ]
+        },
+        "currency": {
+            "type": "string",
+            "description": "Currency to be set on the website",
+            "example": "USD",
+            "enum": [
+                "ARS",
+                "AUD",
+                "AZN",
+                "BHD",
+                "BRL",
+                "BGN",
+                "CAD",
+                "XOF",
+                "CLP",
+                "CNY",
+                "COP",
+                "CZK",
+                "DKK",
+                "EGP",
+                "EUR",
+                "FJD",
+                "GEL",
+                "HKD",
+                "HUF",
+                "INR",
+                "IDR",
+                "ILS",
+                "JPY",
+                "JOD",
+                "KZT",
+                "KRW",
+                "KWD",
+                "MYR",
+                "MXN",
+                "MDL",
+                "NAD",
+                "TWD",
+                "NZD",
+                "..."
+            ]
+        },
+        "language": {
+            "type": "string",
+            "description": "Language to be set on the website (does not apply to reviews)",
+            "example": "en-gb",
+            "enum": [
+                "en-gb",
+                "de",
+                "nl",
+                "fr",
+                "es",
+                "es-ar",
+                "ca",
+                "it",
+                "pt-pt",
+                "pt-br",
+                "no",
+                "fi",
+                "sv",
+                "da",
+                "cs",
+                "hu",
+                "ro",
+                "ja",
+                "zh-cn",
+                "zh-tw",
+                "pl",
+                "el",
+                "ru",
+                "tr",
+                "bg",
+                "ar",
+                "ko",
+                "he",
+                "lv",
+                "uk",
+                "id",
+                "ms",
+                "th",
+                "et",
+                "hr",
+                "lt",
+                "sk",
+                "sr",
+                "sl",
+                "vi",
+                "tl",
+                "..."
+            ]
+        },
+        "checkIn": {
+            "type": "string",
+            "description": ""
+        },
+        "checkOut": {
+            "type": "string",
+            "description": ""
+        },
+        "rooms": {
+            "type": "integer",
+            "description": ""
+        },
+        "adults": {
+            "type": "integer",
+            "description": ""
+        },
+        "children": {
+            "type": "integer",
+            "description": ""
+        },
+        "minMaxPrice": {
+            "type": "string",
+            "description": "Insert the minimum and maximum price per night, e.g. '100-150' or '100+.'",
+            "example": "0-999999"
+        }
+    },
+    "required": []
+}
