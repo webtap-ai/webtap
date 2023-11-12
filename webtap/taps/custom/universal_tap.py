@@ -1,4 +1,4 @@
-import json, os, re
+import json, os, re, pkg_resources
 from importlib.resources import files
 from abc import ABC, abstractmethod
 from webtap.base_tap import BaseTap
@@ -7,6 +7,7 @@ from pydantic import BaseModel
 from langchain.prompts import load_prompt, PromptTemplate
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from typing import List, Any, Optional
+import pkg_resources
 
 
 class UniversalTap(ApifyTap):
@@ -24,6 +25,12 @@ class UniversalTap(ApifyTap):
                 return version_match.group(1)
             else:
                 return None
+
+    def get_version(self):
+        try:
+            return pkg_resources.get_distribution("webtap").version
+        except pkg_resources.DistributionNotFound:
+            return None
 
     def load_json_data(self, json_file):
         file_content = (files(__package__) / json_file).read_text()
@@ -95,7 +102,8 @@ class UniversalTap(ApifyTap):
         # add an "EXPERIMENTAL" tag and info
         self.description = "EXPERIMENTAL TAP: " + self.description
 
-        version = self.get_version_from_setup()
+        # version = self.get_version_from_setup()
+        version = self.get_version()
         self.chat_presentation = (
             "This is an experimental tap: use it only if other taps are not available for your use case. Differently from other taps this tap will `try` to fulfill your request, but it may (and will) fail in some cases.\n\n"
             + self.chat_presentation
