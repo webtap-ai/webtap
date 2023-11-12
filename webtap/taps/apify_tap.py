@@ -152,7 +152,7 @@ class ApifyTap(BaseTap):
 
         # Generate the chat presentation
         # This is done before calling the super init function to ensure that the chat presentation is available for use in the parent class's init function
-        chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
+        chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. \nTo maximiize successfull results, write queries as similar as possible to the provided example. Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data. \n If you are unable to get the data you need, please write in our Slack channel #use-case-help."
 
         # Add the description and chat presentation to kwargs
         kwargs["description"] = description
