@@ -83,9 +83,9 @@ class UniversalTap(ApifyTap):
 
         # add an "EXPERIMENTAL" tag and info
         self.description = "EXPERIMENTAL TAP: " + self.description
-        self.special_instructions = (
+        self.chat_presentation = (
             "This is an experimental tap: use it only if other taps are not available for your use case. Differently from other taps this tap will `try` to fulfill your request, but it may (and will) fail in some cases.\n\n"
-            + self.special_instructions
+            + self.chat_presentation
         )
 
         # customize prompt template
