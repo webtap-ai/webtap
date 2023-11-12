@@ -16,7 +16,8 @@ class UniversalTap(ApifyTap):
 
     # Function to extract version from setup.py
     def get_version_from_setup(self):
-        with open("setup.py", "r") as setup_file:
+        project_setup_file = files(__package__).joinpath("../../../setup.py")
+        with open(project_setup_file, "r") as setup_file:
             setup_content = setup_file.read()
             version_match = re.search(r'version="(.*)"', setup_content)
             if version_match:
