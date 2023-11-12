@@ -1,4 +1,4 @@
-import json, os
+import json, os, re
 from importlib.resources import files
 from abc import ABC, abstractmethod
 from webtap.base_tap import BaseTap
@@ -13,6 +13,16 @@ class UniversalTap(ApifyTap):
     """ """
 
     output_response_schema_custom: Optional[dict] = None
+
+    # Function to extract version from setup.py
+    def get_version_from_setup(self):
+        with open("setup.py", "r") as setup_file:
+            setup_content = setup_file.read()
+            version_match = re.search(r'version="(.*)"', setup_content)
+            if version_match:
+                return version_match.group(1)
+            else:
+                return None
 
     def load_json_data(self, json_file):
         file_content = (files(__package__) / json_file).read_text()
@@ -83,9 +93,12 @@ class UniversalTap(ApifyTap):
 
         # add an "EXPERIMENTAL" tag and info
         self.description = "EXPERIMENTAL TAP: " + self.description
+
+        version = self.get_version_from_setup()
         self.chat_presentation = (
             "This is an experimental tap: use it only if other taps are not available for your use case. Differently from other taps this tap will `try` to fulfill your request, but it may (and will) fail in some cases.\n\n"
             + self.chat_presentation
+            + f"\nV{version}"
         )
 
         # customize prompt template

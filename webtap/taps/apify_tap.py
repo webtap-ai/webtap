@@ -4,7 +4,7 @@ from langchain import PromptTemplate, OpenAI, LLMChain
 from langchain.chains import create_extraction_chain
 import json, logging, os, openai, re, time
 from importlib.resources import files
-from langchain.chat_models import ChatOpenAI
+from webtap.custom_chat_openai import CustomChatOpenAI
 from langchain.prompts import ChatPromptTemplate, HumanMessagePromptTemplate
 from typing import Any, Optional
 from pathlib import Path
@@ -122,7 +122,7 @@ class ApifyTap(BaseTap):
         "output_response_schema.json"
     )
     prompt_template: str = prompt_file.read_text()
-    _llm: ChatOpenAI = PrivateAttr()
+    _llm: CustomChatOpenAI = PrivateAttr()
     _logger: logging.Logger = PrivateAttr()
 
     @property
@@ -137,7 +137,9 @@ class ApifyTap(BaseTap):
         openai.api_key = os.environ["OPENAI_API_KEY"]
         # set langchanin verbose to true if loggin level is info or above
         verbose = self._logger.getEffectiveLevel() <= logging.INFO
-        self._llm = ChatOpenAI(temperature=0, model=self.openai_model, verbose=verbose)
+        self._llm = CustomChatOpenAI(
+            temperature=0, model=self.openai_model, verbose=verbose
+        )
 
     def __init__(self, *args, **kwargs):
         # Extract the necessary attributes from kwargs

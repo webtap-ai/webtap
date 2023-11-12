@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="webtap",
-    version="0.3.33",
+    version="0.3.34",
     packages=find_packages(),
     install_requires=[
         "aiohttp==3.8.3",

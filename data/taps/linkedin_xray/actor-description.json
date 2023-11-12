@@ -1,5 +1,5 @@
 {
     "id": "apify~google-search-scraper",
-    "name": "Google Search Scraper",
-    "description": "This Google Scraper enables you to scrape Google Search Engine Results Pages (SERPs) and extract organic and paid results, ads, queries, People Also Ask, prices, reviews, like a Google SERP API. Select country or language and extraction of custom attributes, and download your data, no coding needed."
+    "name": "LinkedIn X-Ray (through Google Search)",
+    "description": "This LinkedIn X-Ray (through Google Search) enables you to scrape Google Search Engine Results Pages (SERPs) and extract organic and paid results, ads, queries, People Also Ask, prices, reviews, like a Google SERP API. Select country or language and extraction of custom attributes, and download your data, no coding needed."
 }

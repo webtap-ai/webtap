@@ -1,5 +1,11 @@
 [
     {
+        "data_task": "Graduates of 'Imperial College London' who now work at Google in London.",
+        "expected_output": {
+            "can_fulfill": true
+        }
+    },
+    {
         "data_task": "Content writers or bloggers in San Francisco.",
         "expected_output": {
             "can_fulfill": true
