@@ -1,7 +1,4 @@
 {
-    "universal": {
-        "class_": "webtap.taps.custom.universal_tap.UniversalTap"
-    },
     "google": {
         "config_dir": "google"
     },
@@ -10,6 +7,12 @@
     },
     "tripadvisor": {
         "config_dir": "tripadvisor"
+    },
+    "twitter_search": {
+        "config_dir": "twitter_search"
+    },
+    "universal": {
+        "class_": "webtap.taps.custom.universal_tap.UniversalTap"
     },
     "twitter": {
         "config_dir": "twitter"
@@ -22,9 +25,6 @@
     },
     "airbnb": {
         "config_dir": "airbnb"
-    },
-    "twitter_search": {
-        "config_dir": "twitter_search"
     },
     "google_maps": {
         "config_dir": "google_maps"

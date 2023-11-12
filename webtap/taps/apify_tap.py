@@ -262,18 +262,73 @@ class ApifyTap(BaseTap):
         messages = chat_prompt_formatted.to_messages()
         return messages
 
+    def _run_chain_and_get_response(self, messages: List[str]) -> dict:
+        """
+        Helper method to run the chain and get the response.
+        This method will retry once if an exception occurs or if can_fulfill is false.
+        """
+        for _ in range(2):  # Retry once
+            try:
+                # Run the chain
+                chain_output = self._llm(messages)
+
+                # Log prompt response
+                self._logger.info(
+                    "Chain executed correctly, chain plain response: %s", chain_output
+                )
+
+                # Check that chain_output is not empty and is object with content property
+                if chain_output is None or not hasattr(chain_output, "content"):
+                    raise ValueError(
+                        "Data returned from LLM is empty or doesn't contain content property"
+                    )
+
+                # Extract list of json values from chain_output
+                prompt_response = self.extract_last_json_object(chain_output.content)
+
+                # Check that prompt_response contains can_fulfill and explanation
+                if (
+                    "can_fulfill" not in prompt_response
+                    or "explanation" not in prompt_response
+                ):
+                    raise ValueError(
+                        "Data returned from LLM doesn't contain can_fulfill or explanation"
+                    )
+
+                # If can_fulfill is true, return the prompt_response
+                if prompt_response["can_fulfill"]:
+                    return prompt_response
+                else:
+                    # Log the attempt and the decision to retry or return false
+                    if _ == 0:
+                        self._logger.info(
+                            "can_fulfill is false on first attempt, retrying..."
+                        )
+                    else:
+                        self._logger.info(
+                            "can_fulfill is false on second attempt, returning false..."
+                        )
+                        return prompt_response
+
+            except ValueError as e:
+                self._logger.error("Error occurred: %s", e)
+
+        # If the method hasn't returned after 2 attempts, raise an exception
+        raise ValueError("Failed to get a valid response after 2 attempts")
+
     def get_retriever(self, data_task: str) -> ApifyRetrieverResult:
-        # init execution start time
+        # Init execution start time
         execution_start_time = time.time()
         self._logger.info(" **** Starting retriever retrieval ****")
 
-        # generate the chat messages
+        # Generate the chat messages
         messages = self.generate_prompt_messages(data_task)
-        # log the full chat prompt
+
+        # Log the full chat prompt
         self._logger.info("Full chat prompt: %s", messages)
 
-        # if with gpt3.5 messages length is over 2000 chars use gpt 16k
-        # if with gpt4 messages length is over 32000 chars use gpt4-32k
+        # If with gpt3.5 messages length is over 2000 chars use gpt 16k
+        # If with gpt4 messages length is over 32000 chars use gpt4-32k
         messages_length = len("".join(str(message) for message in messages))
         if (
             self.openai_model == "gpt-3.5-turbo"
@@ -294,37 +349,14 @@ class ApifyTap(BaseTap):
                 self.MESSAGE_LENGTH_GPT4_USE_32k,
             )
             openai_model = "gpt-4-32k"
-            # currently gpt-4-32k is not yet enabled to use
+            # Currently gpt-4-32k is not yet enabled to use
             openai_model = "gpt-4"
             self.set_llm_model(openai_model)
 
-        # run the chain
-        chain_output = self._llm(messages)
+        # Run the chain and get the response
+        prompt_response = self._run_chain_and_get_response(messages)
 
-        # log prompt response
-        self._logger.info(
-            "Chain executed correctly, chain plain response: %s", chain_output
-        )
-
-        # check that chain_output is not empty and is object with content property
-        if chain_output is None or not hasattr(chain_output, "content"):
-            raise ValueError(
-                "Data returned from LLM is empty or doesn't contain content property"
-            )
-
-        # extract list of json values from chain_output
-        try:
-            prompt_response = self.extract_last_json_object(chain_output.content)
-        except ValueError:
-            raise ValueError("Data returned from LLM doesn't contain a valid json")
-
-        # check that prompt_response contains can_fulfill and explanation
-        if "can_fulfill" not in prompt_response or "explanation" not in prompt_response:
-            raise ValueError(
-                "Data returned from LLM doesn't contain can_fulfill or explanation"
-            )
-
-        # log prompt response
+        # Log prompt response
         self._logger.info(
             "Prompt executed correctly, prompt response: %s", prompt_response
         )
@@ -339,7 +371,7 @@ class ApifyTap(BaseTap):
                 ),
             )
 
-        # create tap return
+        # Create tap return
         tapReturn = ApifyRetrieverResult(
             can_fulfill=prompt_response["can_fulfill"],
             explanation=prompt_response["explanation"],
@@ -367,6 +399,8 @@ class ApifyTap(BaseTap):
             params["memory_mbytes"] = self.memory_requirement
 
         params["run_input"] = actor_input.body
+
+        self._logger.info(f"Actor params: {params}")
 
         client = ApifyClient(apify_api_token)
         # Start the actor and immediately return the Run object
@@ -500,10 +534,10 @@ class ApifyTap(BaseTap):
         self._logger.info("Actor data returned: %s", actor_return)
 
         # Load the actor return data using the new method
-        loaded_data = self.load_json_data(actor_return)
+        # loaded_data = self.load_json_data(actor_return)
 
-        # Convert the loaded data back to a JSON string
-        result["data"] = json.dumps(loaded_data)
+        # Convert the loaded data to a JSON string
+        result["data"] = json.dumps(actor_return)
 
         return result
 

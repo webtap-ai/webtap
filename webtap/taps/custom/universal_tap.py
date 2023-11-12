@@ -70,6 +70,7 @@ class UniversalTap(ApifyTap):
             filters=tap_description["filters"],
             options=tap_description["options"],
             special_instructions=tap_description["special_instructions"],
+            memory_requirement=tap_description["memory_requirement"],
             examples=examples,
             test_cases=test_cases,
             apify_tap_actor=ApifyTapActor(
@@ -78,6 +79,13 @@ class UniversalTap(ApifyTap):
                 input_body_summary=actor_input_body_summary,
                 output_fields=actor_output_fields,
             ),
+        )
+
+        # add an "EXPERIMENTAL" tag and info
+        self.description = "EXPERIMENTAL TAP: " + self.description
+        self.special_instructions = (
+            "This is an experimental tap: use it only if other taps are not available for your use case. Differently from other taps this tap will `try` to fulfill your request, but it may (and will) fail in some cases.\n\n"
+            + self.special_instructions
         )
 
         # customize prompt template

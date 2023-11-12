@@ -117,17 +117,6 @@ class TapManager:
         examples = self.load_json_data(data_templates["examples"])
         test_cases = self.load_json_data(data_templates["test_cases"])
 
-        # handling optional fields (actor_output_views and memory_requirements)
-        if "memory_requirement" not in tap_description:
-            tap_description["memory_requirement"] = None
-
-        """
-        if "actor_output_views" not in actor_output_fields_data:
-            actor_output_views = {"overview": {"title": "Overview"}}
-        else:
-            actor_output_views = actor_output_fields_data["actor_output_views"]
-        """
-
         # create apify_tap and init all values
         apify_tap_actor_params = {
             "actor": Actor(**actor_description),
@@ -136,6 +125,7 @@ class TapManager:
             "output_fields": actor_output_fields,
         }
 
+        # handling optional fields actor_output_views
         if "actor_output_views" in actor_output_fields_data:
             apify_tap_actor_params["output_views"] = actor_output_fields_data[
                 "actor_output_views"
@@ -143,17 +133,22 @@ class TapManager:
 
         apify_tap_actor = ApifyTapActor(**apify_tap_actor_params)
 
-        tap = ApifyTap(
-            name=tap_description["name"],
-            entities=tap_description["entities"],
-            filters=tap_description["filters"],
-            options=tap_description["options"],
-            special_instructions=tap_description["special_instructions"],
-            memory_requirement=tap_description["memory_requirement"],
-            examples=examples,
-            test_cases=test_cases,
-            apify_tap_actor=apify_tap_actor,
-        )
+        tap_params = {
+            "name": tap_description["name"],
+            "entities": tap_description["entities"],
+            "filters": tap_description["filters"],
+            "options": tap_description["options"],
+            "special_instructions": tap_description["special_instructions"],
+            "examples": examples,
+            "test_cases": test_cases,
+            "apify_tap_actor": apify_tap_actor,
+        }
+
+        # handling optional fields memory_requirement
+        if "memory_requirement" in tap_description:
+            tap_params["memory_requirement"] = tap_description["memory_requirement"]
+
+        tap = ApifyTap(**tap_params)
         return tap
 
     def load_custom_tap(self, tap_config_params: TapParams):
