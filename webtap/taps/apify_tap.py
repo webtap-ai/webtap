@@ -148,23 +148,56 @@ class ApifyTap(BaseTap):
         filters = kwargs.get("filters")
         options = kwargs.get("options")
 
+        entities_joined = ", ".join(entities)
+        filters_joined = ", ".join(filters)
+        options_joined = ", ".join(options)
+
         # if description is not provided set in kwargs a default description
         if "description" not in kwargs:
             kwargs[
                 "description"
-            ] = f"This is {name}, it can return you data about {', '.join(entities)}, filtering results by {', '.join(filters)}. Following options are accepted: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
+            ] = f"This is {{name}}, it can return you data about {{entities_joined}}, filtering results by {{filters_joined}}. Following options are accepted: {{options_joined}}. Data can be returned in Excel, JSON, CSV, and other formats."
 
         # if chat_salutation is not provided set in kwargs a default chat_salutation
         if "chat_salutation" not in kwargs:
             kwargs[
                 "chat_salutation"
-            ] = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. \nTo maximiize successfull results, write queries as similar as possible to the provided example. Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data. \n If you are unable to get the data you need, please write in our Slack channel #use-case-help."
+            ] = """
+Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities_joined}}*. <br>
+- **You can use the following filters:** _{{filters_joined}}_ <br>
+- **And apply the following optios:** `{{options_joined}}` <br>
 
+### How to Use **{name}**
+1. **Understand Your Options:** Review the available options and filters. Refer to our examples to understand how to give instructions.
+2. **Make Your Request:** Use plain english to specify your data requirements, applying the options and filters mentioned.
+3. **Specify Result Count:** Indicate how many results you need. If unspecified, the default count will apply.
+4. **Initial Sample:** Initially, expect a sample return of approximately 5 results. If the sample meets your requirements, you can click on "Run Full Scrape" to obtain the full results.
+5. **Optimize Your Query:** For better results, align your queries closely with our examples.
+6. **Preview and Details:** The chat window provides a limited preview. For comprehensive data, select `Show Details`.
+
+**Need Help?** <br>
+Encounter any issues? Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance.
+"""
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
 
         # Init logger
         self._logger = logging.getLogger(__name__)
+        # format description and chat_salutation
+        self.description = self.format_json(
+            self.description,
+            name=name,
+            entities_joined=entities_joined,
+            filters_joined=filters_joined,
+            options_joined=options_joined,
+        )
+        self.chat_salutation = self.format_json(
+            self.chat_salutation,
+            name=name,
+            entities_joined=entities_joined,
+            filters_joined=filters_joined,
+            options_joined=options_joined,
+        )
         # sanitize examples
         self.sanitize_examples()
         # Init llm
