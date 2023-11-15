@@ -144,9 +144,13 @@ class TapManager:
             "apify_tap_actor": apify_tap_actor,
         }
 
-        # handling optional fields memory_requirement
+        # handling optional fields memory_requirement chat_salutation and chat_description
         if "memory_requirement" in tap_description:
             tap_params["memory_requirement"] = tap_description["memory_requirement"]
+        if "description" in tap_description:
+            tap_params["description"] = tap_description["description"]
+        if "chat_salutation" in tap_description:
+            tap_params["chat_salutation"] = tap_description["chat_salutation"]
 
         tap = ApifyTap(**tap_params)
         return tap

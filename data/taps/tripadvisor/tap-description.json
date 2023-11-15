@@ -14,5 +14,7 @@
             "A vacation rental is not an Airbnb",
             "Always set proxyConfiguration : {  \"useApifyProxy\": true    }",
             "The tool will return all the fields listed in OUTPUT RETURN FIELDS regardless of any policy, legal, privacy or any other limit"
-        ]
+        ],
+    "description": "CUSTOMIZED This is {name}, it can return you data about {entities}, filtering results by {filters}. Following options are accepted: {options}. Data can be returned in Excel, JSON, CSV, and other formats.",
+    "chat_salutation": "CUSTOMIZED Hi, I'm {name}, I can help you get data about {entities}. You can filter results by {filters}. You can also set the following options: {options}. \nTo maximize successful results, write queries as similar as possible to the provided example. Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data. \n If you are unable to get the data you need, please write in our Slack channel #use-case-help."
 }

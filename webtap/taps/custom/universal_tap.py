@@ -104,9 +104,9 @@ class UniversalTap(ApifyTap):
 
         # version = self.get_version_from_setup()
         version = self.get_version()
-        self.chat_presentation = (
+        self.chat_salutation = (
             "This is an experimental tap: use it only if other taps are not available for your use case. Differently from other taps this tap will `try` to fulfill your request, but it may (and will) fail in some cases.\n\n"
-            + self.chat_presentation
+            + self.chat_salutation
             + f"\nV{version}"
         )
 

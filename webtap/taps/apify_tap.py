@@ -148,35 +148,17 @@ class ApifyTap(BaseTap):
         filters = kwargs.get("filters")
         options = kwargs.get("options")
 
-        # Generate the description
-        # This is done before calling the super init function to ensure that the description is available for use in the parent class's init function
-        description = f"This is {name}, it can return you data about {', '.join(entities)}, filtering results by {', '.join(filters)}. Following options are accepted: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
+        # if description is not provided set in kwargs a default description
+        if "description" not in kwargs:
+            kwargs[
+                "description"
+            ] = f"This is {name}, it can return you data about {', '.join(entities)}, filtering results by {', '.join(filters)}. Following options are accepted: {', '.join(options)}. Data can be returned in Excel, JSON, CSV, and other formats."
 
-        # Generate the chat presentation
-        # This is done before calling the super init function to ensure that the chat presentation is available for use in the parent class's init function
-        """
-        chat_presentation = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. \nTo maximiize successfull results, write queries as similar as possible to the provided example. Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data. \n If you are unable to get the data you need, please write in our Slack channel #use-case-help."
-        """
-
-        chat_presentation = (
-            f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}.<br>\n"
-            f"You can filter results by {', '.join(filters)}.<br>\\n"
-            f"You can also set the following options: {', '.join(options)}.<br />\n\n"
-            f"To maximize successful results, write queries as similar as possible to the provided example.<br><br>\n"
-            f"Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data.<br>\\n\\n"
-            f"If you are unable to get the data you need, please write in our Slack channel #use-case-help."
-            f"<p>New paragraph using HTML p tag.</p>\n"
-            f"## Markdown Heading Level 2\n"
-            f"**Bold text using Markdown**\n"
-            f"*Italic text using Markdown*\n"
-            f"1. First item in Markdown list\n"
-            f"2. Second item in Markdown list\n"
-            f"```\nCode block in Markdown\n```"
-        )
-
-        # Add the description and chat presentation to kwargs
-        kwargs["description"] = description
-        kwargs["chat_presentation"] = chat_presentation
+        # if chat_salutation is not provided set in kwargs a default chat_salutation
+        if "chat_salutation" not in kwargs:
+            kwargs[
+                "chat_salutation"
+            ] = f"Hi, I'm {name}, I can help you get data about {', '.join(entities)}. You can filter results by {', '.join(filters)}. You can also set the following options: {', '.join(options)}. \nTo maximiize successfull results, write queries as similar as possible to the provided example. Returned data in chat window is a limited preview, and sometimes it's not a meaningful preview: click on `Show Details` to check returned data. \n If you are unable to get the data you need, please write in our Slack channel #use-case-help."
 
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
