@@ -167,7 +167,7 @@ Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities
 - **You can use the following filters:** _{{filters_joined}}_ <br>
 - **And apply the following optios:** `{{options_joined}}` <br>
 
-### How to Use **{name}**
+### How to Use **{{name}}**
 1. **Understand Your Options:** Review the available options and filters. Refer to our examples to understand how to give instructions.
 2. **Make Your Request:** Use plain english to specify your data requirements, applying the options and filters mentioned.
 3. **Specify Result Count:** Indicate how many results you need. If unspecified, the default count will apply.
