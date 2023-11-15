@@ -156,7 +156,7 @@ class ApifyTap(BaseTap):
         if "description" not in kwargs:
             kwargs[
                 "description"
-            ] = f"This is {{name}}, it can return you data about {{entities_joined}}, filtering results by {{filters_joined}}. Following options are accepted: {{options_joined}}. Data can be returned in Excel, JSON, CSV, and other formats."
+            ] = """This is {{name}}, it can return you data about {{entities_joined}}, filtering results by {{filters_joined}}. Following options are accepted: {{options_joined}}. Data can be returned in Excel, JSON, CSV, and other formats."""
 
         # if chat_salutation is not provided set in kwargs a default chat_salutation
         if "chat_salutation" not in kwargs:
@@ -166,15 +166,9 @@ class ApifyTap(BaseTap):
 Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities_joined}}*. <br>
 - **You can use the following filters:** _{{filters_joined}}_ <br>
 - **And apply the following optios:** `{{options_joined}}` <br>
-
-### How to Use **{{name}}**
-1. **Understand Your Options:** Review the available options and filters. Refer to our examples to understand how to give instructions.
-2. **Make Your Request:** Use plain english to specify your data requirements, applying the options and filters mentioned.
-3. **Specify Result Count:** Indicate how many results you need. If unspecified, the default count will apply.
-4. **Initial Sample:** Initially, expect a sample return of approximately 5 results. If the sample meets your requirements, you can click on "Run Full Scrape" to obtain the full results.
-5. **Optimize Your Query:** For better results, align your queries closely with our examples.
-6. **Preview and Details:** The chat window provides a limited preview. For comprehensive data, select `Show Details`.
-
+- **Ensure your queries closely resemble the provided examples.** <br>
+- **Always specify in query the number of results needed.** <br>
+- **For {{name}}, max 200 results will be returned in output.** <br>
 **Need Help?** <br>
 Encounter any issues? Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance.
 """
