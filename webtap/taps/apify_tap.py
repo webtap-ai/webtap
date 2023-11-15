@@ -168,14 +168,13 @@ Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities
 - And apply the following options: `{{options_joined}}` <br>
 - Ensure your queries closely resemble the provided examples. <br>
 - Always specify in query the number of results needed. <br>
-- For {{name}}, max 200 results will be returned in output. <br><br>
+- For {{name}}, max 200 results will be returned in output. <br>
 
 **Need Help?** <br>
 Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance. <br><br>
 
 **Getting started** <br>
-Try running one of the pre-built queries below.
-
+Try running one of the pre-built queries below. Get stuck? Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance. <br><br>
 """
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
