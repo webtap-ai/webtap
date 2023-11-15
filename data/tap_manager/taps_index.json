@@ -8,8 +8,8 @@
     "tripadvisor": {
         "config_dir": "tripadvisor"
     },
-    "twitter_search": {
-        "config_dir": "twitter_search"
+    "atg_shanes_tweet_flash": {
+        "config_dir": "atg_shanes_tweet_flash"
     },
     "universal": {
         "class_": "webtap.taps.custom.universal_tap.UniversalTap"
@@ -46,9 +46,6 @@
     },
     "atg_petr_cermak_yellow_pages_scraper": {
         "config_dir": "atg_petr_cermak_yellow_pages_scraper"
-    },
-    "atg_shanes_tweet_flash": {
-        "config_dir": "atg_shanes_tweet_flash"
     },
     "atg_yin_yelp_scraper": {
         "config_dir": "atg_yin_yelp_scraper"

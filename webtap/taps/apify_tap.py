@@ -164,13 +164,18 @@ class ApifyTap(BaseTap):
                 "chat_salutation"
             ] = """
 Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities_joined}}*. <br>
-- **You can use the following filters:** _{{filters_joined}}_ <br>
-- **And apply the following optios:** `{{options_joined}}` <br>
-- **Ensure your queries closely resemble the provided examples.** <br>
-- **Always specify in query the number of results needed.** <br>
-- **For {{name}}, max 200 results will be returned in output.** <br>
+- You can use the following filters: _{{filters_joined}}_ <br>
+- And apply the following options: `{{options_joined}}` <br>
+- Ensure your queries closely resemble the provided examples. <br>
+- Always specify in query the number of results needed. <br>
+- For {{name}}, max 200 results will be returned in output. <br><br>
+
 **Need Help?** <br>
-Encounter any issues? Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance.
+Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance. <br><br>
+
+**Getting started** <br>
+Try running one of the pre-built queries below.
+
 """
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
