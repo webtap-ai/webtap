@@ -17,9 +17,6 @@
     "twitter": {
         "config_dir": "twitter"
     },
-    "facebook_pages": {
-        "config_dir": "facebook_pages"
-    },
     "instagram_profiles": {
         "config_dir": "instagram_profiles"
     },
