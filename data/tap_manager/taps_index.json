@@ -176,9 +176,6 @@
     "atg_alexey_pinterest_crawler": {
         "config_dir": "atg_alexey_pinterest_crawler"
     },
-    "atg_shmlkv_facebook_marketplace": {
-        "config_dir": "atg_shmlkv_facebook_marketplace"
-    },
     "atg_clockworks_tiktok_video_scraper": {
         "config_dir": "atg_clockworks_tiktok_video_scraper"
     },
