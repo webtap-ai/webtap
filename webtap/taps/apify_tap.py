@@ -98,7 +98,6 @@ class ApifyTapActor(BaseModel):
 
 
 class ApifyTap(BaseTap):
-
     """
     Apify Tap is a generic tap that is able to manage/scrape/validate data from an Apify Actor.
     It works by defining info about the actor and the prompt template
@@ -154,9 +153,9 @@ class ApifyTap(BaseTap):
 
         # if description is not provided set in kwargs a default description
         if "description" not in kwargs:
-            kwargs[
-                "description"
-            ] = """This is {{name}}, it can return you data about {{entities_joined}}, filtering results by {{filters_joined}}. Following options are accepted: {{options_joined}}. Data can be returned in Excel, JSON, CSV, and other formats."""
+            kwargs["description"] = (
+                """This is {{name}}, it can return you data about {{entities_joined}}, filtering results by {{filters_joined}}. Following options are accepted: {{options_joined}}. Data can be returned in Excel, JSON, CSV, and other formats."""
+            )
 
         # if chat_salutation is not provided set in kwargs a default chat_salutation
         if "chat_salutation" not in kwargs:
@@ -170,7 +169,7 @@ Hi, I'm **{{name}}**. I'm here to assist you in obtaining data about *{{entities
 - Always specify in query the number of results needed. <br>
 
 **Getting started** <br>
-Try running one of the pre-built queries below. Get stuck? Reach out to us in our Slack channel [#use-case-help](https://webtap-ai.slack.com/archives/C0639JYQ8JZ) for personalized assistance. <br>
+Try running one of the pre-built queries below.  If you get stuck, contact us through our [in app chat](mailto:info+contact@webtap.ai). <br>
 """
         # Call the parent class's init function
         super().__init__(*args, **kwargs)
