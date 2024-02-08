@@ -20,9 +20,6 @@
     "instagram_profiles": {
         "config_dir": "instagram_profiles"
     },
-    "airbnb": {
-        "config_dir": "airbnb"
-    },
     "google_maps": {
         "config_dir": "google_maps"
     },
@@ -74,8 +71,8 @@
     "atg_m0uka_bulk_image_downloader": {
         "config_dir": "atg_m0uka_bulk_image_downloader"
     },
-    "atg_maxcopell_zillow_api_scraper": {
-        "config_dir": "atg_maxcopell_zillow_api_scraper"
+    "atg_maxcopell_zillow_detail_scraper": {
+        "config_dir": "atg_maxcopell_zillow_detail_scraper"
     },
     "atg_glenn_gif_scroll_animation": {
         "config_dir": "atg_glenn_gif_scroll_animation"
@@ -226,9 +223,6 @@
     },
     "atg_alexey_bestbuy_products_actor": {
         "config_dir": "atg_alexey_bestbuy_products_actor"
-    },
-    "atg_maxcopell_zillow_detail_scraper": {
-        "config_dir": "atg_maxcopell_zillow_detail_scraper"
     },
     "atg_apify_facebook_likes_scraper": {
         "config_dir": "atg_apify_facebook_likes_scraper"

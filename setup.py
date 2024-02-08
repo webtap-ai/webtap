@@ -1,8 +1,14 @@
+import yaml
 from setuptools import setup, find_packages
+
+# Load version from config.yml
+with open("config.yml", "r") as file:
+    config = yaml.safe_load(file)
+    version = config["library"]["version"]
 
 setup(
     name="webtap",
-    version="0.3.60",
+    version=version,
     packages=find_packages(),
     install_requires=[
         "aiohttp==3.8.3",
