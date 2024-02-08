@@ -19,6 +19,7 @@ setup(
         "demjson3",
         "black",
         "html2text",
+        "PyYAML",
     ],
     include_package_data=True,
     package_data={"": ["*.json", "*.txt"]},
