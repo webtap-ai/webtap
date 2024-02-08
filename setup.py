@@ -1,14 +1,17 @@
-import yaml
 from setuptools import setup, find_packages
 
+
+""" This doesn't work currently
+import yaml
 # Load version from config.yml
 with open("config.yml", "r") as file:
     config = yaml.safe_load(file)
     version = config["library"]["version"]
+"""
 
 setup(
     name="webtap",
-    version=version,
+    version="0.3.63",
     packages=find_packages(),
     install_requires=[
         "aiohttp==3.8.3",
@@ -19,7 +22,6 @@ setup(
         "demjson3",
         "black",
         "html2text",
-        "PyYAML",
     ],
     include_package_data=True,
     package_data={"": ["*.json", "*.txt"]},
