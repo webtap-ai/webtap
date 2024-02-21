@@ -11,7 +11,7 @@ with open("config.yml", "r") as file:
 
 setup(
     name="webtap",
-    version="0.3.63",
+    version="0.3.64",
     packages=find_packages(),
     install_requires=[
         "aiohttp==3.8.3",

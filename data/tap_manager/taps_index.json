@@ -8,9 +8,6 @@
     "tripadvisor": {
         "config_dir": "tripadvisor"
     },
-    "atg_shanes_tweet_flash": {
-        "config_dir": "atg_shanes_tweet_flash"
-    },
     "universal": {
         "class_": "webtap.taps.custom.universal_tap.UniversalTap"
     },
@@ -115,9 +112,6 @@
     },
     "atg_jancurn_analyze_domains": {
         "config_dir": "atg_jancurn_analyze_domains"
-    },
-    "atg_microworlds_twitter_scraper": {
-        "config_dir": "atg_microworlds_twitter_scraper"
     },
     "atg_natasha_lekh_gas_prices_scraper": {
         "config_dir": "atg_natasha_lekh_gas_prices_scraper"
