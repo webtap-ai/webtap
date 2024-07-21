@@ -26,9 +26,6 @@
     "contact_details": {
         "config_dir": "contact_details"
     },
-    "atg_emastra_google_trends_scraper": {
-        "config_dir": "atg_emastra_google_trends_scraper"
-    },
     "atg_clockworks_free_tiktok_scraper": {
         "config_dir": "atg_clockworks_free_tiktok_scraper"
     },
@@ -43,9 +40,6 @@
     },
     "atg_apify_instagram_comment_scraper": {
         "config_dir": "atg_apify_instagram_comment_scraper"
-    },
-    "atg_petr_cermak_transfermarkt": {
-        "config_dir": "atg_petr_cermak_transfermarkt"
     },
     "atg_lukaskrivka_article_extractor_smart": {
         "config_dir": "atg_lukaskrivka_article_extractor_smart"
@@ -112,9 +106,6 @@
     },
     "atg_jancurn_analyze_domains": {
         "config_dir": "atg_jancurn_analyze_domains"
-    },
-    "atg_natasha_lekh_gas_prices_scraper": {
-        "config_dir": "atg_natasha_lekh_gas_prices_scraper"
     },
     "atg_valek_josef_weather_scraper": {
         "config_dir": "atg_valek_josef_weather_scraper"
@@ -244,12 +235,6 @@
     },
     "atg_glosterr_whoscored_player_information_scraper": {
         "config_dir": "atg_glosterr_whoscored_player_information_scraper"
-    },
-    "atg_lexis_solutions_google_ads_scraper": {
-        "config_dir": "atg_lexis_solutions_google_ads_scraper"
-    },
-    "atg_curious_coder_facebook_marketplace": {
-        "config_dir": "atg_curious_coder_facebook_marketplace"
     },
     "atg_forward_dinosaur_shopify_app_store_scraper": {
         "config_dir": "atg_forward_dinosaur_shopify_app_store_scraper"
