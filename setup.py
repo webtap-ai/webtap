@@ -14,7 +14,7 @@ setup(
     version="0.3.65",
     packages=find_packages(),
     install_requires=[
-        "aiohttp==3.8.3",
+        "aiohttp==3.9.4",
         "langchain==0.0.251",
         "openai==0.27.8",
         "tiktoken==0.4.0",
