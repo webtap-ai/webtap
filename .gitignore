@@ -8,7 +8,7 @@ __pycache__/
 *.swo
 *.swn
 *.log
-logs/
+logs
 *.sqlite
 *.pid
 *.pyc
@@ -20,3 +20,4 @@ dist/
 build/
 your_env/
 venv/
+.zshrc
