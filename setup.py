@@ -1,14 +1,5 @@
 from setuptools import setup, find_packages
 
-
-""" This doesn't work currently
-import yaml
-# Load version from config.yml
-with open("config.yml", "r") as file:
-    config = yaml.safe_load(file)
-    version = config["library"]["version"]
-"""
-
 setup(
     name="webtap",
     version="0.3.65",
