@@ -15,7 +15,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "aiohttp==3.8.3",
-        "langchain==0.0.251",
+        "langchain==0.2.3",
         "openai==0.27.8",
         "tiktoken==0.4.0",
         "apify-client==1.5.0",
