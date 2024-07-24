@@ -9,29 +9,24 @@ from typing import List
 
 
 def apify_tap_with_tap_manager_example():
-    logging.basicConfig(level=logging.INFO)
-    logging.info("Apify tap example")
-    # Load tap_manager
+    # Set logging level
+    logging.basicConfig(level=logging.WARNING)
+    # Set tap_id and data_task to be used
+    tap_id = "atg_epctex_gutenberg_scraper" # Project Gutenberg: a collection of 70,000 free ebooks
+    data_task = "Search for 'history', maximum 15 items, in Italian language, using Apify Proxy"
+
+    print("Starting Apify Tap <{}> with data task <{}>".format(tap_id, data_task))
+    print("...")
+
     tap_manager = TapManager()
-    print("Tap manager", tap_manager)
-    # get tap "tripadvisor"
-    tap = tap_manager.get_tap("google")
-    print("Tap", tap)
-    # set tap to use gpt4
-    # tap.openai_model = "gpt-4"
+    tap = tap_manager.get_tap( tap_id )
+    
+    # get data given the data task
+    data_return = tap.get_retriever_and_run(data_task)
 
-    # Get data for a specific data task
-    data_task = "10 search results about web scraping, country italy"
-
-    # get sample data
-    sample_data_return = tap.retrieve_sample_data(data_task)
-    logging.info("Apify tap sample data return: %s", sample_data_return)
-    sample_data = sample_data_return["data"]
-
-    # validate data
-    validate_data_return = tap.validate_data(data_task, sample_data)
-    logging.info("Apify tap validate data return: %s", validate_data_return.is_valid)
-
+    print("\n################################\n")
+    print("## Sample of data returned ##")
+    print(data_return['data'])
 
 if __name__ == "__main__":
     apify_tap_with_tap_manager_example()

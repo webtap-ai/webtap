@@ -1,3 +1,0 @@
-{
-    "actor_input_summary": "searchTerms, isMultiple, timeRange, geo, viewedFrom, skipDebugScreen, startUrls, spreadsheetId, isPublic, category, maxItems, customTimeRange, extendOutputFunction, outputAsISODate, csvOutput, maxConcurrency, maxRequestRetries, pageLoadTimeoutSecs"
-}

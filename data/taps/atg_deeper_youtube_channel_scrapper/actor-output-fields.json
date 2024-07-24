@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "channelId, channelShortName, channelName, channelDescription, channelThumbnailUrl, channelTotalVideos, numberOfSubscribers, channelTotalViews, channelJoinedDate, channelLocation, channelUrl, videos, id, title, url, text, thumbnailUrl, relativeDate, duration, viewCount, commentsCount, likes, date, location, subtitles, comments, fromYTUrl"
-}

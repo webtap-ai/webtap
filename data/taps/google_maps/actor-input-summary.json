@@ -1,3 +1,0 @@
-{
-    "actor_input_summary" : "searchStringsArray, locationQuery, maxCrawledPlacesPerSearch, language, onlyDataFromSearchPage, includeWebResults, deeperCityScrape, oneReviewPerRow, reviewsSort, reviewsFilterString, scrapeReviewerName, scrapeReviewerId, scrapeReviewerUrl, scrapeReviewId, scrapeReviewUrl, scrapeResponseFromOwnerText, searchMatching, skipClosedPlaces, maxImages, zoom, countryCode, city, state, county, postalCode, customGeolocation, placeMinimumStars, startUrls, allPlacesNoSearchAction"
-}

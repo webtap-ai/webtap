@@ -1,3 +1,0 @@
-{
-    "actor_input_summary" : "queries, maxPagesPerQuery, resultsPerPage, mobileResults, countryCode, languageCode, locationUule, maxConcurrency, saveHtml, saveHtmlToKeyValueStore, includeUnfilteredResults, customDataFunction"
-}

@@ -1,7 +1,0 @@
-{
-    "proxy": {
-        "useApifyProxy": true
-    },
-    "customData": {},
-    "maxTransactions": 10
-}
