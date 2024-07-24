@@ -1,3 +1,0 @@
-{
-    "actor_input_summary": "queries, max_tweets, absolute_max_tweets, language, from_user, use_experimental_scraper, tweet_urls, user_info, search_urls, only_tweets, filter:verified, filter:blue_verified, filter:nativeretweets, filter:retweets, filter:replies, filter:quote, filter:has_engagement, filter:media, filter:images, filter:videos, filter:twimg, filter:safe, from_, to, mentioning, geo_near, within_radius, geocode, place, min_retweets, min_faves, min_replies, newer_than, older_than, max_attempts, num_threads"
-}

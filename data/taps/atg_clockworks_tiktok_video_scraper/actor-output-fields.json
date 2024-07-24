@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "id, text, createTime, createTimeISO, locationCreated, isAd, authorMeta.id, authorMeta.name, authorMeta.nickName, authorMeta.verified, authorMeta.signature, authorMeta.bioLink, authorMeta.avatar, authorMeta.privateAccount, authorMeta.roomId, authorMeta.ttSeller, musicMeta.musicName, musicMeta.musicAuthor, musicMeta.musicOriginal, musicMeta.musicAlbum, musicMeta.playUrl, musicMeta.coverMediumUrl, musicMeta.musicId, webVideoUrl, mediaUrls, videoMeta.height, videoMeta.width, videoMeta.duration, videoMeta.coverUrl, videoMeta.definition, videoMeta.format, diggCount, shareCount, playCount, commentCount, mentions, hashtags.id, hashtags.name, hashtags.title, hashtags.cover, effectStickers, isSlideshow, submittedVideoUrl"
-}

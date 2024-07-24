@@ -1,3 +1,0 @@
-{
-    "options": "/* global t */\n        // t variable definition because of type validation ... \n         [{\n            schema: {\n                url: t.string.url,\n                date: t.string.date,\n                messages: t.array,\n            },\n        }, \n        {\n            filter: 'eshop', // you can also use IDs definition as: Ids: [\"id\", \"id\"]\n            minItemCount: 100,  \n            maxItemCount: 1000\n        }]"
-}

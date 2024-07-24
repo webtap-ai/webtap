@@ -1,36 +1,9 @@
 {
-    "google": {
-        "config_dir": "google"
-    },
-    "linkedin_xray": {
-        "config_dir": "linkedin_xray"
-    },
-    "tripadvisor": {
-        "config_dir": "tripadvisor"
-    },
     "universal": {
         "class_": "webtap.taps.custom.universal_tap.UniversalTap"
     },
-    "twitter": {
-        "config_dir": "twitter"
-    },
-    "instagram_profiles": {
-        "config_dir": "instagram_profiles"
-    },
-    "google_maps": {
-        "config_dir": "google_maps"
-    },
-    "instagram_post": {
-        "config_dir": "instagram_post"
-    },
     "contact_details": {
         "config_dir": "contact_details"
-    },
-    "atg_clockworks_free_tiktok_scraper": {
-        "config_dir": "atg_clockworks_free_tiktok_scraper"
-    },
-    "atg_apify_instagram_hashtag_scraper": {
-        "config_dir": "atg_apify_instagram_hashtag_scraper"
     },
     "atg_petr_cermak_yellow_pages_scraper": {
         "config_dir": "atg_petr_cermak_yellow_pages_scraper"
@@ -38,26 +11,11 @@
     "atg_yin_yelp_scraper": {
         "config_dir": "atg_yin_yelp_scraper"
     },
-    "atg_apify_instagram_comment_scraper": {
-        "config_dir": "atg_apify_instagram_comment_scraper"
-    },
     "atg_lukaskrivka_article_extractor_smart": {
         "config_dir": "atg_lukaskrivka_article_extractor_smart"
     },
     "atg_misceres_seo_audit_tool": {
         "config_dir": "atg_misceres_seo_audit_tool"
-    },
-    "atg_apify_facebook_ads_scraper": {
-        "config_dir": "atg_apify_facebook_ads_scraper"
-    },
-    "atg_trudax_reddit_scraper_lite": {
-        "config_dir": "atg_trudax_reddit_scraper_lite"
-    },
-    "atg_junglee_free_amazon_product_scraper": {
-        "config_dir": "atg_junglee_free_amazon_product_scraper"
-    },
-    "atg_hooli_easy_google_scraper": {
-        "config_dir": "atg_hooli_easy_google_scraper"
     },
     "atg_m0uka_bulk_image_downloader": {
         "config_dir": "atg_m0uka_bulk_image_downloader"
@@ -68,26 +26,8 @@
     "atg_glenn_gif_scroll_animation": {
         "config_dir": "atg_glenn_gif_scroll_animation"
     },
-    "atg_apify_instagram_reel_scraper": {
-        "config_dir": "atg_apify_instagram_reel_scraper"
-    },
-    "atg_streamers_youtube_scraper": {
-        "config_dir": "atg_streamers_youtube_scraper"
-    },
-    "atg_lukaskrivka_google_maps_with_contact_details": {
-        "config_dir": "atg_lukaskrivka_google_maps_with_contact_details"
-    },
-    "atg_clockworks_tiktok_profile_scraper": {
-        "config_dir": "atg_clockworks_tiktok_profile_scraper"
-    },
     "atg_misceres_indeed_scraper": {
         "config_dir": "atg_misceres_indeed_scraper"
-    },
-    "atg_apify_facebook_page_contact_information": {
-        "config_dir": "atg_apify_facebook_page_contact_information"
-    },
-    "atg_apify_facebook_url_to_id": {
-        "config_dir": "atg_apify_facebook_url_to_id"
     },
     "atg_jupri_g2_explorer": {
         "config_dir": "atg_jupri_g2_explorer"
@@ -101,9 +41,6 @@
     "atg_zuzka_covid_wm": {
         "config_dir": "atg_zuzka_covid_wm"
     },
-    "atg_spidoosho_bing_search_scraper": {
-        "config_dir": "atg_spidoosho_bing_search_scraper"
-    },
     "atg_jancurn_analyze_domains": {
         "config_dir": "atg_jancurn_analyze_domains"
     },
@@ -115,18 +52,6 @@
     },
     "atg_vbartonicek_topuniversities_scraper": {
         "config_dir": "atg_vbartonicek_topuniversities_scraper"
-    },
-    "atg_hooli_google_trending_searches": {
-        "config_dir": "atg_hooli_google_trending_searches"
-    },
-    "atg_apify_facebook_hashtag_scraper": {
-        "config_dir": "atg_apify_facebook_hashtag_scraper"
-    },
-    "atg_apify_quick_instagram_posts_checker": {
-        "config_dir": "atg_apify_quick_instagram_posts_checker"
-    },
-    "atg_deeper_youtube_channel_scrapper": {
-        "config_dir": "atg_deeper_youtube_channel_scrapper"
     },
     "atg_qbie_kickstarter_scraper": {
         "config_dir": "atg_qbie_kickstarter_scraper"
@@ -140,14 +65,8 @@
     "atg_jupri_tesco_grocery": {
         "config_dir": "atg_jupri_tesco_grocery"
     },
-    "atg_maxcopell_tripadvisor_reviews": {
-        "config_dir": "atg_maxcopell_tripadvisor_reviews"
-    },
     "atg_mhamas_website_backup": {
         "config_dir": "atg_mhamas_website_backup"
-    },
-    "atg_netscrape_free_tiktok_profile_scraper": {
-        "config_dir": "atg_netscrape_free_tiktok_profile_scraper"
     },
     "atg_svpetrenko_quora_scraper": {
         "config_dir": "atg_svpetrenko_quora_scraper"
@@ -158,17 +77,8 @@
     "atg_alexey_pinterest_crawler": {
         "config_dir": "atg_alexey_pinterest_crawler"
     },
-    "atg_shmlkv_facebook_marketplace": {
-        "config_dir": "atg_shmlkv_facebook_marketplace"
-    },
-    "atg_clockworks_tiktok_video_scraper": {
-        "config_dir": "atg_clockworks_tiktok_video_scraper"
-    },
-    "atg_clockworks_tiktok_hashtag_scraper": {
-        "config_dir": "atg_clockworks_tiktok_hashtag_scraper"
-    },
     "atg_epctex_gutenberg_scraper": {
-        "config_dir": "atg_epctex_gutenberg_scraper"
+      "config_dir": "atg_epctex_gutenberg_scraper"
     },
     "atg_jupri_asda_scraper": {
         "config_dir": "atg_jupri_asda_scraper"
@@ -182,23 +92,14 @@
     "atg_pocesar_json_ld_schema": {
         "config_dir": "atg_pocesar_json_ld_schema"
     },
-    "atg_streamers_youtube_comments_scraper": {
-        "config_dir": "atg_streamers_youtube_comments_scraper"
-    },
     "atg_mvolfik_expedia_hotels_com_reviews_scraper": {
         "config_dir": "atg_mvolfik_expedia_hotels_com_reviews_scraper"
     },
     "atg_lukaskrivka_website_checker_puppeteer": {
         "config_dir": "atg_lukaskrivka_website_checker_puppeteer"
     },
-    "atg_alexey_google_lens": {
-        "config_dir": "atg_alexey_google_lens"
-    },
     "atg_voyager_booking_reviews_scraper": {
         "config_dir": "atg_voyager_booking_reviews_scraper"
-    },
-    "atg_streamers_youtube_channel_scraper": {
-        "config_dir": "atg_streamers_youtube_channel_scraper"
     },
     "atg_epctex_edx_scraper": {
         "config_dir": "atg_epctex_edx_scraper"
@@ -208,9 +109,6 @@
     },
     "atg_alexey_bestbuy_products_actor": {
         "config_dir": "atg_alexey_bestbuy_products_actor"
-    },
-    "atg_apify_facebook_likes_scraper": {
-        "config_dir": "atg_apify_facebook_likes_scraper"
     },
     "atg_junglee_amazon_bestsellers": {
         "config_dir": "atg_junglee_amazon_bestsellers"
@@ -226,9 +124,6 @@
     },
     "atg_danielmilevski9_telegram_channel_scraper": {
         "config_dir": "atg_danielmilevski9_telegram_channel_scraper"
-    },
-    "atg_ensembledata_tiktok_api": {
-        "config_dir": "atg_ensembledata_tiktok_api"
     },
     "atg_jupri_wordpress_scraper": {
         "config_dir": "atg_jupri_wordpress_scraper"

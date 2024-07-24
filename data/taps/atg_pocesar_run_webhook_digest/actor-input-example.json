@@ -1,9 +1,0 @@
-{
-    "method": "POST",
-    "statuses": [
-        "ACTOR.RUN.SUCCEEDED",
-        "ACTOR.RUN.FAILED",
-        "ACTOR.RUN.TIMED_OUT"
-    ],
-    "customData": {}
-}

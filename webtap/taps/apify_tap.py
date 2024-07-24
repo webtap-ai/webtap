@@ -421,7 +421,9 @@ Try running one of the pre-built queries below.  If you get stuck, contact us th
             raise ValueError("APIFY_API_TOKEN env variable is not set")
         apify_api_token = os.environ["APIFY_API_TOKEN"]
 
-        params = {"max_items": max_items}
+        # disabling as it only works for "paid" actors
+        #params = {"max_items": max_items}
+        params = {}
 
         if self.memory_requirement is not None:
             params["memory_mbytes"] = self.memory_requirement

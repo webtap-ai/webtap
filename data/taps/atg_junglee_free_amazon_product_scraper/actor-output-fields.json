@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "title, url, asin, inStock, inStockText, brand, price, listPrice, shippingPrice, stars, starsBreakdown, reviewsCount, answeredQuestions, breadCrumbs, thumbnailImage, description, features, variantAsins, reviewsLink, delivery, fastestDelivery, returnPolicy, support, variantAttributes, priceVariants, seller, bestsellerRanks, locationText"
-}

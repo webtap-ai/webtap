@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "id, type, shortCode, caption, hashtags, mentions, url, commentsCount, dimensionsHeight, dimensionsWidth, images, videoUrl, likesCount, videoViewCount, timestamp, ownerFullName, ownerUsername, ownerId, productType, isSponsored, videoDuration"
-}

@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "actor_name, actor_url, price_per_scrape, results_limit, data_format, data_sample, id, text, createTime, createTimeISO, locationCreated, isAd, isMuted, authorMeta, musicMeta, webVideoUrl, mediaUrls, videoMeta, diggCount, shareCount, playCount, commentCount, mentions, hashtags, effectStickers, searchHashtag, isSlideshow"
-}

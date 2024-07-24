@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "title, subTitle, price, menu, categoryName, address, locatedIn, neighborhood, street, city, postalCode, state, countryCode, plusCode, website, phone, temporarilyClosed, location, permanentlyClosed, totalScore, isAdvertisement, rank, placeId, categories, cid, url, searchPageUrl, searchString, scrapedAt, reviewsCount, reviewsDistribution, imageUrls, reviews, orderBy, gasPrices"
-}

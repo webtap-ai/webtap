@@ -1,3 +1,0 @@
-{
-    "actor_output_fields": "title, subTitle, description, price, menu, categoryName, address, locatedIn, neighborhood, street, city, postalCode, state, countryCode, plusCode, website, phone, temporarilyClosed, claimThisBusiness, location, permanentlyClosed, totalScore, placeId, categories, media, contactDetails"
-}

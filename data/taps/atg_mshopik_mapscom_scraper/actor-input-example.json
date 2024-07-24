@@ -1,6 +1,0 @@
-{
-    "customData": {},
-    "maxConcurrency": 20,
-    "maxRequestRetries": 3,
-    "maxRequestsPerCrawl": 20
-}

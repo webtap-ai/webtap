@@ -1,8 +1,0 @@
-{
-    "actor_output_fields" : "id, text, likes, replies, retweets, quotes, timestamp, url, images",
-    "actor_output_views": {
-        "overview": {
-            "title": "Overview"
-        }
-    }
-}

@@ -1,8 +1,0 @@
-[
-    {
-        "data_task": "Scrape car listings from New York City marketplace with the following URL: https://www.facebook.com/marketplace/nyc/cars/",
-        "expected_output": {
-            "can_fulfill": true
-        }
-    }
-]
