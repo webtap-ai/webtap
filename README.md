@@ -25,7 +25,6 @@ Set the following environment variables in your shell ( Add these to your .bashr
 ```bash
 export OPENAI_API_KEY="{your api key}"
 export APIFY_API_TOKEN="{your api key}"
-
 ```
 Optionally setup LangSmith (signup at https://langsmith.com) environment variables if you want to use LangSmith for tracing:
 ```bash
@@ -50,31 +49,54 @@ You can run tests by using the following command:
 ```bash
     python -m tests.apify_tap_test --apify_tap_id={actor_id} --model=gpt-3.5-turbo --test_num={test_num}
 ```
+# Installing Webtap library from PyPI
 
-# Usage from third party project
-Usage is pretty straihghtforward: get a tap from Tap Manager, given a data_task (data you would like to get) retriever sample data (a way to get that data through this tap.
+To use Webtap in your project, you can install it directly from the Python Package Index (PyPI) using pip:
 
-Include the library in your pip requirements.txt (make sure that you git environment is correctly setup so that you can clone git private repos without typing password):
 ```bash
-    webtap @ git+https://github.com/webtap-ai/webtap.git
+pip install webtap
 ```
-After that include and use the library in the following way:
+
+Alternatively, if you are managing your project's dependencies through a `requirements.txt` file, you can add Webtap to it:
+    
+```bash
+webtap
+```
+
+After adding the line to your `requirements.txt`, you can install all your dependencies with:
+    
+```bash
+pip install -r requirements.txt
+```
+
+Add the following environment variables to your shell ( Add these to your .bashrc or .bash_profile to make them permanent):
+```bash
+export OPENAI_API_KEY="{your api key}"
+export APIFY_API_TOKEN="{your api key}"
+```
+
+After that you can use the library in your project:
 ```python
-    from webtap.tap_manager import TapManager
-    # Load tap_manager
-    tap_manager = TapManager()
-    # get tap "tripadvisor"
-    tap = tap_manager.get_tap("tripadvisor")
-    # Get data for a specific data task
-    sample_data_return = tap.retrieve_sample_data("Restaurants in Miami")
-    logging.info("Apify tap sample data return: %s", sample_data_return)
-    sample_data = sample_data_return["data"]
+from webtap.tap_manager import TapManager
+from webtap.base_tap import BaseTap
 
-    # validate data
-    validate_data_return = tap.validate_data(data_task, sample_data)
-    logging.info("Apify tap validate data return: %s", validate_data_return)
+tap_manager = TapManager()
+tap = tap_manager.get_tap( "atg_epctex_gutenberg_scraper" ) # Project Gutenberg: a collection of 70,000 free ebooks
+print(tap.get_retriever_and_run("Search for 'history', maximum 15 items, in Italian language, using Apify Proxy"))
 
 ```
+# Creating a new Apify Tap using AI based Tap Generator
+
+Webtap also offers a tool to automatically generate a new Apify Tap. 
+It often works; when it doesn't work, it provides a good starting point for manual editing.
+To do so, you can use the following python code:
+(This feature is exclusive to the full GitHub repository and is not included in the PyPI package distribution.)
+
+```bash
+# make sure you Webtap project is setup(venv is activated, requirements are installed, environment variables are set and you are in the webtap directory)
+python -m examples.tap_generator_example epctex/gutenberg-scraper
+```
+Check out the code in the `examples/tap_generator_example.py` file to see how to use the Tap Generator and how to customize the generated Tap.
 
 # Creating a new standard Apify Tap using json definition
 

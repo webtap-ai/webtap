@@ -6,7 +6,6 @@ def run_example(actor_id):
     if not actor_id:
         print("Error: No actor_id provided.")
         print("Usage: python tap_generator_example.py <actor_id>")
-        print("Example: python tap_generator_example.py shanes/tweet-flash")
         return
 
     tap_generator = TapGenerator(actor_id)
