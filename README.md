@@ -1,11 +1,6 @@
 # Webtap
 
-Webtap is a Python library designed to access any type of web data by using natural language.
-
-# Example queries that can fulfilled by webtap
-
-1. (Using Tripdvisor Tap) Hotels or vacation rentals in Paris, first week of September 2023, currency in EUR, language in Spanish, with email addresses
-2. (Using Twitter Tap) Tweets from @ZelenskyyUa
+Webtap is a Python library designed to ...
 
 # Requirements
 
@@ -24,17 +19,15 @@ cd webtap
 python3 -m venv venv
 source venv/bin/activate
 ```
-2. Setup openai key: 
-You must have an openai key set in your environment. You can setup one by adding the following in your ~/.zshrc file
+3. Setup openai key and Apify Key
+You must have an openai key and a Apify key in order to use the project. You can get an openai key by signing up at https://platform.openai.com/ and an Apify key by signing up at https://apify.com/
+Set the following environment variables in your shell ( Add these to your .bashrc or .bash_profile to make them permanent):
 ```bash
 export OPENAI_API_KEY="{your api key}"
-```
-3. Optionally you can setup:
-Apify to run Apify actors (you need it to get actual data and run tests)
-```bash
 export APIFY_API_TOKEN="{your api key}"
+
 ```
-and LangSmith for LLM debugging by adding the following enviroment variables
+Optionally setup LangSmith (signup at https://langsmith.com) environment variables if you want to use LangSmith for tracing:
 ```bash
 export LANGCHAIN_TRACING_V2=true
 export LANGCHAIN_PROJECT="{Your dev environment project}"
@@ -90,3 +83,25 @@ In order to see how to create a standard new ApifyTap (using json definition) se
 # Creating a new Custom Apify Tap by extending the ApifyTap class
 
 In order to see how to create a standard new ApifyTap (using json definition) see [CUSTOM_GUIDE.md](docs/taps_definition/CUSTOM_GUIDE.md)
+
+
+## Ownership and Responsibility
+
+This project was initially developed and is owned by **Webtap Technologies LLC**.
+
+### Founding Contributors
+
+- [stefanopochet Stefano](https://github.com/stefanopochet)
+- [alpha8eta](https://github.com/alpha8eta)
+- [klokt-valg H. H.](https://github.com/klokt-valg)
+
+### Legal Disclaimer
+
+All contributions to this project are made on a voluntary basis and do not imply any legal responsibility for individual contributors, including but not limited to founding contributors. Legal responsibility for this project and its use rests solely with Webtap Technologies LLC, as stated in the license.
+
+### Contact Information
+
+**Webtap Technologies LLC**  
+30 N Gould ST STE R  
+Sheridan, WY 82801  
+EIN: 32-0763057
