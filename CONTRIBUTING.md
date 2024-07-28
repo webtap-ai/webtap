@@ -15,11 +15,14 @@ Webtap Technologies LLC retains all rights and legal responsibilities for this p
 
 ### How to Contribute
 
-1. **Create a Branch**: Create a new branch for your work (e.g., `feat/new-feature` or `fix/issue-123`).
-2. **Make Your Changes**: Implement your changes in your branch.
-3. **Write Commit Messages**: Use [conventional commits](https://www.conventionalcommits.org/) for clear and structured commit messages (e.g., `feat: add new user login feature` or `fix: resolve issue with data parsing`).
-4. **Push Your Changes**: Push your changes to your branch.
-5. **Submit a Pull Request**: Create a pull request (PR) to the main repository's `main` branch.
+### How to Contribute
+
+1. **Fork the Repository**: Start by forking the repository to your own GitHub account.
+2. **Create a Branch**: In your forked repository, create a new branch for your work (e.g., `feat/new-feature` or `fix/issue-123`).
+3. **Make Your Changes**: Implement your changes in your new branch.
+4. **Write Commit Messages**: Use [conventional commits](https://www.conventionalcommits.org/) for clear and structured commit messages (e.g., `feat: add new user login feature` or `fix: resolve issue with data parsing`).
+5. **Push Your Changes**: Push your changes to your branch in your forked repository.
+6. **Submit a Pull Request**: Create a pull request (PR) from your branch in the forked repository to the original repository's `main` branch.
 
 By following these steps, you help maintain a clear and organized project history, making it easier for maintainers to review and integrate your contributions.
 
