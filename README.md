@@ -83,7 +83,7 @@ cd webtap
 ```
 2. It is recommended, though not mandatory, to create a virtual environment for your project.
 ```bash
-python3 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
 ```
 3. Setup openai key and Apify Key
@@ -102,14 +102,14 @@ export LANGCHAIN_API_KEY={your api_key}
 ```
 4. Install requirements
 ```bash
-python setup.py install
+python3.11 setup.py install
 ```
 
 ## Run examples
 
 After installation you can run an example using the following command:
 ```bash
-python -m examples.apify_tap_example
+python3.11 -m examples.apify_tap_example
 ```
 
 ## Alternativelly you can install the library using pip
